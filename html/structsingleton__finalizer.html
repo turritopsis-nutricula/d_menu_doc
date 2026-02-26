@@ -18,6 +18,8 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -148,13 +150,7 @@ $(function(){initNavTree('structsingleton__finalizer.html','','structsingleton__
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="singleton_8cpp_source.html">singleton.cpp</a> の <a class="el" href="singleton_8cpp_source.html#l00020">20</a> 行目に定義があります。</p>
-<div class="fragment"><div class="line"><span class="lineno">   22</span>{</div>
-<div class="line"><span class="lineno">   23</span>    <a class="code hl_typedef" href="singleton_8cpp.html#a54ca9ede052ed846c1c5138ec694b365">lock_t</a> lock( g_mutex );</div>
-<div class="line"><span class="lineno">   24</span>    assert( g_num_filalizer &lt; max_filalizer_count );</div>
-<div class="line"><span class="lineno">   25</span>    g_finalizers[ g_num_filalizer++ ] = f;</div>
-<div class="line"><span class="lineno">   26</span>}</div>
-<div class="ttc" id="asingleton_8cpp_html_a54ca9ede052ed846c1c5138ec694b365"><div class="ttname"><a href="singleton_8cpp.html#a54ca9ede052ed846c1c5138ec694b365">lock_t</a></div><div class="ttdeci">std::lock_guard&lt; std::mutex &gt; lock_t</div><div class="ttdef"><b>Definition</b> <a href="singleton_8cpp_source.html#l00017">singleton.cpp:17</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a31e1cb648d54d9eaf17e15c6250e3a92" name="a31e1cb648d54d9eaf17e15c6250e3a92"></a>
@@ -181,14 +177,7 @@ $(function(){initNavTree('structsingleton__finalizer.html','','structsingleton__
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="singleton_8cpp_source.html">singleton.cpp</a> の <a class="el" href="singleton_8cpp_source.html#l00029">29</a> 行目に定義があります。</p>
-<div class="fragment"><div class="line"><span class="lineno">   30</span>{</div>
-<div class="line"><span class="lineno">   31</span>    <a class="code hl_typedef" href="singleton_8cpp.html#a54ca9ede052ed846c1c5138ec694b365">lock_t</a> lock( g_mutex );</div>
-<div class="line"><span class="lineno">   32</span>    <span class="keywordflow">for</span> ( <span class="keyword">auto</span> i = g_num_filalizer - 1; i &gt;= 0; --i )</div>
-<div class="line"><span class="lineno">   33</span>        ( *g_finalizers[ i ] )( );</div>
-<div class="line"><span class="lineno">   34</span> </div>
-<div class="line"><span class="lineno">   35</span>    g_num_filalizer = 0;</div>
-<div class="line"><span class="lineno">   36</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <hr/>この構造体詳解は次のファイルから抽出されました:<ul>

@@ -18,6 +18,8 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -132,6 +134,8 @@ dll_main.cpp の依存先関係図:</div>
 
 <p class="definition"> <a class="el" href="dll__main_8cpp_source.html">dll_main.cpp</a> の <a class="el" href="dll__main_8cpp_source.html#l00039">39</a> 行目に定義があります。</p>
 
+<p class="reference">参照元 <a class="el" href="dll__main_8cpp_source.html#l00043">DllMain()</a>.</p>
+
 </div>
 </div>
 <a id="a1ca888bd091694c05472e1b91df1a97b" name="a1ca888bd091694c05472e1b91df1a97b"></a>
@@ -176,42 +180,9 @@ dll_main.cpp の依存先関係図:</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="dll__main_8cpp_source.html">dll_main.cpp</a> の <a class="el" href="dll__main_8cpp_source.html#l00043">43</a> 行目に定義があります。</p>
-<div class="fragment"><div class="line"><span class="lineno">   44</span>{</div>
-<div class="line"><span class="lineno">   45</span>    <span class="comment">// DllMainを呼び出す理由を表すマクロが格納されたfdwReasonごとに振り分ける.</span></div>
-<div class="line"><span class="lineno">   46</span>    <span class="keywordflow">switch</span> ( fdwReason )</div>
-<div class="line"><span class="lineno">   47</span>    {</div>
-<div class="line"><span class="lineno">   48</span>        <span class="comment">// プロセスがアタッチされた時.</span></div>
-<div class="line"><span class="lineno">   49</span>    <span class="keywordflow">case</span> DLL_PROCESS_ATTACH:</div>
-<div class="line"><span class="lineno">   50</span>    {</div>
-<div class="line"><span class="lineno">   51</span>        <a class="code hl_define" href="#a9ba3ef3bcc53ed3cbdd6dafd63cf980e">DEBUG_MESSAGE</a>( <span class="stringliteral">&quot;DLL_PROCESS_ATTACH\n&quot;</span> );</div>
-<div class="line"><span class="lineno">   52</span>    }</div>
-<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   54</span>        <span class="comment">// プロセスがデタッチされた時.</span></div>
-<div class="line"><span class="lineno">   55</span>    <span class="keywordflow">case</span> DLL_PROCESS_DETACH:</div>
-<div class="line"><span class="lineno">   56</span>    {</div>
-<div class="line"><span class="lineno">   57</span>        <a class="code hl_define" href="#a9ba3ef3bcc53ed3cbdd6dafd63cf980e">DEBUG_MESSAGE</a>( <span class="stringliteral">&quot;DLL_PROCESS_DETACH\n&quot;</span> );</div>
-<div class="line"><span class="lineno">   58</span>    }</div>
-<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   60</span>        <span class="comment">// スレッドがアタッチされた時.</span></div>
-<div class="line"><span class="lineno">   61</span>    <span class="keywordflow">case</span> DLL_THREAD_ATTACH:</div>
-<div class="line"><span class="lineno">   62</span>    {</div>
-<div class="line"><span class="lineno">   63</span>        <a class="code hl_define" href="#a9ba3ef3bcc53ed3cbdd6dafd63cf980e">DEBUG_MESSAGE</a>( <span class="stringliteral">&quot;DLL_THREAD_ATTACH\n&quot;</span> );</div>
-<div class="line"><span class="lineno">   64</span>    }</div>
-<div class="line"><span class="lineno">   65</span>    <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   66</span>        <span class="comment">// スレッドがデタッチされた時.</span></div>
-<div class="line"><span class="lineno">   67</span>    <span class="keywordflow">case</span> DLL_THREAD_DETACH:</div>
-<div class="line"><span class="lineno">   68</span>    {</div>
-<div class="line"><span class="lineno">   69</span>        <a class="code hl_define" href="#a9ba3ef3bcc53ed3cbdd6dafd63cf980e">DEBUG_MESSAGE</a>( <span class="stringliteral">&quot;DLL_THREAD_DETACH\n&quot;</span> );</div>
-<div class="line"><span class="lineno">   70</span>    }</div>
-<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   72</span>    <span class="keywordflow">default</span>:</div>
-<div class="line"><span class="lineno">   73</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   74</span>    }</div>
-<div class="line"><span class="lineno">   75</span>    <span class="comment">// 成功ならTRUE.</span></div>
-<div class="line"><span class="lineno">   76</span>    <span class="keywordflow">return</span> TRUE;</div>
-<div class="line"><span class="lineno">   77</span>}</div>
-<div class="ttc" id="adll__main_8cpp_html_a9ba3ef3bcc53ed3cbdd6dafd63cf980e"><div class="ttname"><a href="#a9ba3ef3bcc53ed3cbdd6dafd63cf980e">DEBUG_MESSAGE</a></div><div class="ttdeci">#define DEBUG_MESSAGE(mes)</div><div class="ttdef"><b>Definition</b> <a href="dll__main_8cpp_source.html#l00039">dll_main.cpp:39</a></div></div>
-</div><!-- fragment -->
+
+<p class="reference">参照先 <a class="el" href="dll__main_8cpp_source.html#l00039">DEBUG_MESSAGE</a>.</p>
+
 </div>
 </div>
 <a id="a8fbf56b05d5e79279908d34e50c6f6e1" name="a8fbf56b05d5e79279908d34e50c6f6e1"></a>
@@ -230,11 +201,7 @@ dll_main.cpp の依存先関係図:</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="dll__main_8cpp_source.html">dll_main.cpp</a> の <a class="el" href="dll__main_8cpp_source.html#l00032">32</a> 行目に定義があります。</p>
-<div class="fragment"><div class="line"><span class="lineno">   33</span>    {</div>
-<div class="line"><span class="lineno">   34</span>        <span class="comment">// TODO</span></div>
-<div class="line"><span class="lineno">   35</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;load application&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   36</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a143e19691f5709bf3df4ab1af5219908" name="a143e19691f5709bf3df4ab1af5219908"></a>
@@ -253,14 +220,7 @@ dll_main.cpp の依存先関係図:</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="dll__main_8cpp_source.html">dll_main.cpp</a> の <a class="el" href="dll__main_8cpp_source.html#l00020">20</a> 行目に定義があります。</p>
-<div class="fragment"><div class="line"><span class="lineno">   21</span>    {</div>
-<div class="line"><span class="lineno">   22</span> </div>
-<div class="line"><span class="lineno">   23</span>        d_menu::application_info_archiver arc;</div>
-<div class="line"><span class="lineno">   24</span>        arc.save_file( <span class="stringliteral">&quot;data.xml&quot;</span> );</div>
-<div class="line"><span class="lineno">   25</span> </div>
-<div class="line"><span class="lineno">   26</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;save application&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   27</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 </div><!-- contents -->

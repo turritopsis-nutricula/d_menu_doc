@@ -18,6 +18,8 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -143,32 +145,9 @@ client_main.cpp の依存先関係図:</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="client__main_8cpp_source.html">client_main.cpp</a> の <a class="el" href="client__main_8cpp_source.html#l00093">93</a> 行目に定義があります。</p>
-<div class="fragment"><div class="line"><span class="lineno">   98</span>{</div>
-<div class="line"><span class="lineno">   99</span>    <a class="code hl_class" href="classcommand__line__trans.html">command_line_trans</a> com_line( ::GetCommandLineA( ) );</div>
-<div class="line"><span class="lineno">  100</span> </div>
-<div class="line"><span class="lineno">  101</span>    <span class="keywordflow">if</span> ( !com_line )</div>
-<div class="line"><span class="lineno">  102</span>    {    <span class="comment">// CommandLineToArgW Failed</span></div>
-<div class="line"><span class="lineno">  103</span>        <span class="keywordflow">return</span> 1;</div>
-<div class="line"><span class="lineno">  104</span>    }</div>
-<div class="line"><span class="lineno">  105</span> </div>
-<div class="line"><span class="lineno">  106</span>    <span class="keyword">auto</span>                  buffer = std::move( com_line.argv( ) );</div>
-<div class="line"><span class="lineno">  107</span>    [[maybe_unused]] <span class="keyword">auto</span> send_result</div>
-<div class="line"><span class="lineno">  108</span>        = d_menu::application::proceses::send_ipc_message(</div>
-<div class="line"><span class="lineno">  109</span>            <span class="stringliteral">&quot;depicture_menu_main_process&quot;</span>,</div>
-<div class="line"><span class="lineno">  110</span>            d_menu::application::proceses::process_signal::make_data(</div>
-<div class="line"><span class="lineno">  111</span>                com_line.argc( ), std::move( buffer )</div>
-<div class="line"><span class="lineno">  112</span>            )</div>
-<div class="line"><span class="lineno">  113</span>        );</div>
-<div class="line"><span class="lineno">  114</span> </div>
-<div class="line"><span class="lineno">  115</span><span class="preprocessor">#ifdef _DEBUG</span></div>
-<div class="line"><span class="lineno">  116</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;send result: &quot;</span> &lt;&lt; send_result &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  117</span>    std::this_thread::sleep_for( 3s );</div>
-<div class="line"><span class="lineno">  118</span><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="lineno">  119</span> </div>
-<div class="line"><span class="lineno">  120</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  121</span>}</div>
-<div class="ttc" id="aclasscommand__line__trans_html"><div class="ttname"><a href="classcommand__line__trans.html">command_line_trans</a></div><div class="ttdef"><b>Definition</b> <a href="client__main_8cpp_source.html#l00015">client_main.cpp:16</a></div></div>
-</div><!-- fragment --><div class="dynheader">
+
+<p class="reference">参照先 <a class="el" href="client__main_8cpp_source.html#l00073">command_line_trans::argc()</a>, <a class="el" href="client__main_8cpp_source.html#l00079">command_line_trans::argv()</a>.</p>
+<div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="client__main_8cpp_a4ef28e14a9a6db79e04bd6b382ffdcd4_cgraph.svg" width="272" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>

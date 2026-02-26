@@ -18,6 +18,8 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -142,40 +144,7 @@ template&lt;std::ranges::range Source, std::ranges::range Dist, std::invocable&l
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="sync__ranges_8hpp_source.html">sync_ranges.hpp</a> の <a class="el" href="sync__ranges_8hpp_source.html#l00045">45</a> 行目に定義があります。</p>
-<div class="fragment"><div class="line"><span class="lineno">   53</span>{</div>
-<div class="line"><span class="lineno">   54</span>    <span class="comment">// delete</span></div>
-<div class="line"><span class="lineno">   55</span>    {</div>
-<div class="line"><span class="lineno">   56</span>        <span class="keyword">auto</span> iter = std::ranges::remove_if(</div>
-<div class="line"><span class="lineno">   57</span>            dist,</div>
-<div class="line"><span class="lineno">   58</span>            [ &amp;sample, comp_expr ]( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; d )</div>
-<div class="line"><span class="lineno">   59</span>            {</div>
-<div class="line"><span class="lineno">   60</span>                <span class="keywordflow">return</span> std::ranges::none_of(</div>
-<div class="line"><span class="lineno">   61</span>                    sample,</div>
-<div class="line"><span class="lineno">   62</span>                    [ &amp;d, &amp;comp_expr ]( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; j )</div>
-<div class="line"><span class="lineno">   63</span>                    { <span class="keywordflow">return</span> comp_expr( j, d ); }</div>
-<div class="line"><span class="lineno">   64</span>                );</div>
-<div class="line"><span class="lineno">   65</span>            }</div>
-<div class="line"><span class="lineno">   66</span>        );</div>
-<div class="line"><span class="lineno">   67</span> </div>
-<div class="line"><span class="lineno">   68</span>        dist.erase( iter.begin( ), dist.end( ) );</div>
-<div class="line"><span class="lineno">   69</span>    }</div>
-<div class="line"><span class="lineno">   70</span> </div>
-<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">for</span> ( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; s : sample )</div>
-<div class="line"><span class="lineno">   72</span>    {</div>
-<div class="line"><span class="lineno">   73</span>        <span class="keyword">auto</span> iter = std::ranges::find_if(</div>
-<div class="line"><span class="lineno">   74</span>            dist,</div>
-<div class="line"><span class="lineno">   75</span>            [ &amp;comp_expr, &amp;s ]( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; d ) { <span class="keywordflow">return</span> comp_expr( s, d ); }</div>
-<div class="line"><span class="lineno">   76</span>        );</div>
-<div class="line"><span class="lineno">   77</span> </div>
-<div class="line"><span class="lineno">   78</span>        <span class="keywordflow">if</span> ( iter == dist.end( ) )</div>
-<div class="line"><span class="lineno">   79</span>        {</div>
-<div class="line"><span class="lineno">   80</span>            dist.push_back( gen( s ) );</div>
-<div class="line"><span class="lineno">   81</span>            iter = dist.end( ) - 1;</div>
-<div class="line"><span class="lineno">   82</span>        }</div>
-<div class="line"><span class="lineno">   83</span>        sync_expr( s, *iter );</div>
-<div class="line"><span class="lineno">   84</span>    }</div>
-<div class="line"><span class="lineno">   85</span>}</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a885469ee42c92bfa4a916d9e79003093" name="a885469ee42c92bfa4a916d9e79003093"></a>
@@ -215,13 +184,7 @@ template&lt;std::ranges::range Source, std::ranges::range Dist, std::invocable&l
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="sync__ranges_8hpp_source.html">sync_ranges.hpp</a> の <a class="el" href="sync__ranges_8hpp_source.html#l00111">111</a> 行目に定義があります。</p>
-<div class="fragment"><div class="line"><span class="lineno">  118</span>{</div>
-<div class="line"><span class="lineno">  119</span>    <a class="code hl_function" href="#ad6b0437e683382b7b816bcd9c4d7f08b">sync_ranges</a>(</div>
-<div class="line"><span class="lineno">  120</span>        sample, dist, comp_expr, []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; ) {}, gen, sync_expr</div>
-<div class="line"><span class="lineno">  121</span>    );</div>
-<div class="line"><span class="lineno">  122</span>}</div>
-<div class="ttc" id="anamespacedepicture__menu_1_1util_1_1ranges_html_ad6b0437e683382b7b816bcd9c4d7f08b"><div class="ttname"><a href="#ad6b0437e683382b7b816bcd9c4d7f08b">depicture_menu::util::ranges::sync_ranges</a></div><div class="ttdeci">void sync_ranges(Source const &amp;sample, Dist &amp;dist, Comp comp_expr, Dele on_erase, Generator gen, Sync sync_expr)</div><div class="ttdef"><b>Definition</b> <a href="sync__ranges_8hpp_source.html#l00045">sync_ranges.hpp:45</a></div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 </div><!-- contents -->

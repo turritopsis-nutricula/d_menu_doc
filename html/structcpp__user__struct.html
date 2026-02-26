@@ -18,6 +18,8 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -130,12 +132,11 @@ $(function(){initNavTree('structcpp__user__struct.html','','structcpp__user__str
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="workaround_8cpp_source.html">workaround.cpp</a> の <a class="el" href="workaround_8cpp_source.html#l00077">77</a> 行目に定義があります。</p>
-<div class="fragment"><div class="line"><span class="lineno">   78</span>    {</div>
-<div class="line"><span class="lineno">   79</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;cpp_user_struct::func()&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   80</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="#a402437d948980b5bb26f6ba34ba81a03">value_</a> * 2;</div>
-<div class="line"><span class="lineno">   81</span>    }</div>
-<div class="ttc" id="astructcpp__user__struct_html_a402437d948980b5bb26f6ba34ba81a03"><div class="ttname"><a href="#a402437d948980b5bb26f6ba34ba81a03">cpp_user_struct::value_</a></div><div class="ttdeci">int value_</div><div class="ttdef"><b>Definition</b> <a href="workaround_8cpp_source.html#l00075">workaround.cpp:75</a></div></div>
-</div><!-- fragment --><div class="dynheader">
+
+<p class="reference">参照先 <a class="el" href="workaround_8cpp_source.html#l00075">value_</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="workaround_8cpp_source.html#l00141">get_user_struct_vtbl()</a>.</p>
+<div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structcpp__user__struct_a4296cd0e18e606ca4d61686ae949b911_icgraph.svg" width="346" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
@@ -171,13 +172,7 @@ $(function(){initNavTree('structcpp__user__struct.html','','structcpp__user__str
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="workaround_8cpp_source.html">workaround.cpp</a> の <a class="el" href="workaround_8cpp_source.html#l00090">90</a> 行目に定義があります。</p>
-<div class="fragment"><div class="line"><span class="lineno">   91</span>    {</div>
-<div class="line"><span class="lineno">   92</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;std_out recive:&quot;</span> &lt;&lt; b &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   93</span>        <span class="keyword">constexpr</span> <span class="keywordtype">char</span> <span class="keyword">const</span>* c = <span class="stringliteral">&quot;char by cpp.&quot;</span>;</div>
-<div class="line"><span class="lineno">   94</span>        ::strcpy( b, c );</div>
-<div class="line"><span class="lineno">   95</span>        <span class="keywordflow">return</span> 12;</div>
-<div class="line"><span class="lineno">   96</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="adcc680eb1b947048e2d65f58cad92e2b" name="adcc680eb1b947048e2d65f58cad92e2b"></a>
@@ -204,10 +199,9 @@ $(function(){initNavTree('structcpp__user__struct.html','','structcpp__user__str
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="workaround_8cpp_source.html">workaround.cpp</a> の <a class="el" href="workaround_8cpp_source.html#l00084">84</a> 行目に定義があります。</p>
-<div class="fragment"><div class="line"><span class="lineno">   85</span>    {</div>
-<div class="line"><span class="lineno">   86</span>        <a class="code hl_variable" href="#a402437d948980b5bb26f6ba34ba81a03">value_</a> = v;</div>
-<div class="line"><span class="lineno">   87</span>    }</div>
-</div><!-- fragment -->
+
+<p class="reference">参照先 <a class="el" href="workaround_8cpp_source.html#l00075">value_</a>.</p>
+
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">メンバ詳解</h2>
@@ -224,6 +218,8 @@ $(function(){initNavTree('structcpp__user__struct.html','','structcpp__user__str
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="workaround_8cpp_source.html">workaround.cpp</a> の <a class="el" href="workaround_8cpp_source.html#l00075">75</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="workaround_8cpp_source.html#l00077">func()</a>, <a class="el" href="workaround_8cpp_source.html#l00084">value()</a>.</p>
 
 </div>
 </div>

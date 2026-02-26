@@ -18,6 +18,8 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -193,11 +195,7 @@ workaround.cpp の依存先関係図:</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="workaround_8cpp_source.html">workaround.cpp</a> の <a class="el" href="workaround_8cpp_source.html#l00173">173</a> 行目に定義があります。</p>
-<div class="fragment"><div class="line"><span class="lineno">  174</span>    {</div>
-<div class="line"><span class="lineno">  175</span> </div>
-<div class="line"><span class="lineno">  176</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">  177</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a77c881d4d2a3da499ae549e88d5e80aa" name="a77c881d4d2a3da499ae549e88d5e80aa"></a>
@@ -220,10 +218,7 @@ workaround.cpp の依存先関係図:</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="workaround_8cpp_source.html">workaround.cpp</a> の <a class="el" href="workaround_8cpp_source.html#l00180">180</a> 行目に定義があります。</p>
-<div class="fragment"><div class="line"><span class="lineno">  181</span>    {</div>
-<div class="line"><span class="lineno">  182</span>        <span class="keywordflow">return</span> 0u;</div>
-<div class="line"><span class="lineno">  183</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a2a0446805ddd380d959bbc5167c19a80" name="a2a0446805ddd380d959bbc5167c19a80"></a>
@@ -242,10 +237,7 @@ workaround.cpp の依存先関係図:</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="workaround_8cpp_source.html">workaround.cpp</a> の <a class="el" href="workaround_8cpp_source.html#l00134">134</a> 行目に定義があります。</p>
-<div class="fragment"><div class="line"><span class="lineno">  135</span>    {</div>
-<div class="line"><span class="lineno">  136</span>        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span> <span class="keywordtype">void</span>* <span class="keyword">&gt;</span>( &amp;user_data );</div>
-<div class="line"><span class="lineno">  137</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a2ab23a98b98cbf5a50730631f7b46f00" name="a2ab23a98b98cbf5a50730631f7b46f00"></a>
@@ -268,19 +260,9 @@ workaround.cpp の依存先関係図:</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="workaround_8cpp_source.html">workaround.cpp</a> の <a class="el" href="workaround_8cpp_source.html#l00141">141</a> 行目に定義があります。</p>
-<div class="fragment"><div class="line"><span class="lineno">  142</span>    {</div>
-<div class="line"><span class="lineno">  143</span> </div>
-<div class="line"><span class="lineno">  144</span>        <span class="keyword">auto</span>* p = &amp;<a class="code hl_function" href="struct_prox.html#a9664e2484c7afc41dbb6ad6245e3fafb">Prox&lt; cpp_user_struct, int &gt;::Func</a>&lt; &amp;<a class="code hl_function" href="structcpp__user__struct.html#a4296cd0e18e606ca4d61686ae949b911">cpp_user_struct::func</a> &gt;;</div>
-<div class="line"><span class="lineno">  145</span>        <span class="keywordtype">void</span>* np    = <span class="keyword">reinterpret_cast&lt;</span> <span class="keywordtype">void</span>* <span class="keyword">&gt;</span>( p );</div>
-<div class="line"><span class="lineno">  146</span>        result[ 0 ] = np;</div>
-<div class="line"><span class="lineno">  147</span>        <span class="comment">//      int ( *mem_func )( cpp_user_struct * )</span></div>
-<div class="line"><span class="lineno">  148</span>        <span class="comment">//          = &amp;Prox&lt; cpp_user_struct, int &gt;::ConstFunc&lt;</span></div>
-<div class="line"><span class="lineno">  149</span>        <span class="comment">//              &amp;cpp_user_struct::func &gt;;</span></div>
-<div class="line"><span class="lineno">  150</span>        <span class="keywordflow">return</span> np;</div>
-<div class="line"><span class="lineno">  151</span>    }</div>
-<div class="ttc" id="astruct_prox_html_a9664e2484c7afc41dbb6ad6245e3fafb"><div class="ttname"><a href="struct_prox.html#a9664e2484c7afc41dbb6ad6245e3fafb">Prox::Func</a></div><div class="ttdeci">static RT STDMETHODCALLTYPE Func(T *self, Args... args)</div><div class="ttdef"><b>Definition</b> <a href="workaround_8cpp_source.html#l00116">workaround.cpp:116</a></div></div>
-<div class="ttc" id="astructcpp__user__struct_html_a4296cd0e18e606ca4d61686ae949b911"><div class="ttname"><a href="structcpp__user__struct.html#a4296cd0e18e606ca4d61686ae949b911">cpp_user_struct::func</a></div><div class="ttdeci">int func() const</div><div class="ttdef"><b>Definition</b> <a href="workaround_8cpp_source.html#l00077">workaround.cpp:77</a></div></div>
-</div><!-- fragment --><div class="dynheader">
+
+<p class="reference">参照先 <a class="el" href="workaround_8cpp_source.html#l00116">Prox&lt; T, RT, Args &gt;::Func()</a>, <a class="el" href="workaround_8cpp_source.html#l00077">cpp_user_struct::func()</a>.</p>
+<div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="workaround_8cpp_a2ab23a98b98cbf5a50730631f7b46f00_cgraph.svg" width="346" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
@@ -308,22 +290,7 @@ workaround.cpp の依存先関係図:</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="workaround_8cpp_source.html">workaround.cpp</a> の <a class="el" href="workaround_8cpp_source.html#l00154">154</a> 行目に定義があります。</p>
-<div class="fragment"><div class="line"><span class="lineno">  155</span>    {</div>
-<div class="line"><span class="lineno">  156</span> </div>
-<div class="line"><span class="lineno">  157</span>        <span class="keyword">using </span>vtbl_t</div>
-<div class="line"><span class="lineno">  158</span>            = depicture_menu::cs_binding::vtbl_table&lt; cpp_user_struct &gt;;</div>
-<div class="line"><span class="lineno">  159</span>        <span class="keywordtype">void</span>**         table = vtbl_t::get_function_pointer_table( );</div>
-<div class="line"><span class="lineno">  160</span>        <span class="keyword">constexpr</span> <span class="keyword">auto</span> count = vtbl_t::public_function_count;</div>
-<div class="line"><span class="lineno">  161</span>        <span class="keywordflow">for</span> ( std::remove_const_t&lt; <span class="keyword">decltype</span>( count ) &gt; i = 0;</div>
-<div class="line"><span class="lineno">  162</span>              i &lt; std::min( count, length );</div>
-<div class="line"><span class="lineno">  163</span>              ++i )</div>
-<div class="line"><span class="lineno">  164</span>        {</div>
-<div class="line"><span class="lineno">  165</span>            result[ i ] = table[ i ];</div>
-<div class="line"><span class="lineno">  166</span>        }</div>
-<div class="line"><span class="lineno">  167</span> </div>
-<div class="line"><span class="lineno">  168</span>        <span class="keywordflow">return</span> count;</div>
-<div class="line"><span class="lineno">  169</span>    }</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ac3810367e5f569391eb69fbaa2db3b74" name="ac3810367e5f569391eb69fbaa2db3b74"></a>
@@ -350,46 +317,9 @@ workaround.cpp の依存先関係図:</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="workaround_8cpp_source.html">workaround.cpp</a> の <a class="el" href="workaround_8cpp_source.html#l00033">33</a> 行目に定義があります。</p>
-<div class="fragment"><div class="line"><span class="lineno">   34</span>{</div>
-<div class="line"><span class="lineno">   35</span>    <span class="keyword">constexpr</span> <span class="keywordtype">char</span> <span class="keyword">const</span>* class_name = <span class="stringliteral">&quot;HookTest&quot;</span>;</div>
-<div class="line"><span class="lineno">   36</span> </div>
-<div class="line"><span class="lineno">   37</span>    WNDCLASS window_class{</div>
-<div class="line"><span class="lineno">   38</span>        .style         = CS_HREDRAW | CS_VREDRAW,</div>
-<div class="line"><span class="lineno">   39</span>        .lpfnWndProc   = <a class="code hl_function" href="#ab01c69758901cb8401e8b23b52b8c42b">WindowProc</a>,</div>
-<div class="line"><span class="lineno">   40</span>        .cbClsExtra    = 0,</div>
-<div class="line"><span class="lineno">   41</span>        .cbWndExtra    = 0,</div>
-<div class="line"><span class="lineno">   42</span>        .hInstance     = hInstance,</div>
-<div class="line"><span class="lineno">   43</span>        .hIcon         = <span class="keyword">nullptr</span>,</div>
-<div class="line"><span class="lineno">   44</span>        .hCursor       = ::LoadCursor( NULL, IDC_ARROW ),</div>
-<div class="line"><span class="lineno">   45</span>        .hbrBackground = ( HBRUSH )::GetStockObject( WHITE_BRUSH ),</div>
-<div class="line"><span class="lineno">   46</span>        .lpszMenuName  = <span class="keyword">nullptr</span>,</div>
-<div class="line"><span class="lineno">   47</span>        .lpszClassName = class_name</div>
-<div class="line"><span class="lineno">   48</span>    };</div>
-<div class="line"><span class="lineno">   49</span> </div>
-<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">if</span> ( !::RegisterClass( &amp;window_class ) )</div>
-<div class="line"><span class="lineno">   51</span>        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">   52</span> </div>
-<div class="line"><span class="lineno">   53</span>    <span class="keyword">auto</span>* hwnd = ::CreateWindowEx(</div>
-<div class="line"><span class="lineno">   54</span>        WS_EX_LEFT,</div>
-<div class="line"><span class="lineno">   55</span>        class_name,</div>
-<div class="line"><span class="lineno">   56</span>        <span class="stringliteral">&quot;Hook Test&quot;</span>,</div>
-<div class="line"><span class="lineno">   57</span>        0,</div>
-<div class="line"><span class="lineno">   58</span>        CW_USEDEFAULT,</div>
-<div class="line"><span class="lineno">   59</span>        CW_USEDEFAULT,</div>
-<div class="line"><span class="lineno">   60</span>        400,</div>
-<div class="line"><span class="lineno">   61</span>        300,</div>
-<div class="line"><span class="lineno">   62</span>        <span class="keyword">nullptr</span>,</div>
-<div class="line"><span class="lineno">   63</span>        <span class="keyword">nullptr</span>,</div>
-<div class="line"><span class="lineno">   64</span>        hInstance,</div>
-<div class="line"><span class="lineno">   65</span>        <span class="keyword">nullptr</span></div>
-<div class="line"><span class="lineno">   66</span>    );</div>
-<div class="line"><span class="lineno">   67</span> </div>
-<div class="line"><span class="lineno">   68</span>    ::ShowWindow( hwnd, SW_SHOW );</div>
-<div class="line"><span class="lineno">   69</span> </div>
-<div class="line"><span class="lineno">   70</span>    <span class="keywordflow">return</span> hwnd;</div>
-<div class="line"><span class="lineno">   71</span>}</div>
-<div class="ttc" id="aworkaround_8cpp_html_ab01c69758901cb8401e8b23b52b8c42b"><div class="ttname"><a href="#ab01c69758901cb8401e8b23b52b8c42b">WindowProc</a></div><div class="ttdeci">LRESULT CALLBACK WindowProc(HWND hWnd, UINT msg, WPARAM wp, LPARAM lp)</div><div class="ttdef"><b>Definition</b> <a href="workaround_8cpp_source.html#l00019">workaround.cpp:19</a></div></div>
-</div><!-- fragment --><div class="dynheader">
+
+<p class="reference">参照先 <a class="el" href="workaround_8cpp_source.html#l00019">WindowProc()</a>.</p>
+<div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="workaround_8cpp_ac3810367e5f569391eb69fbaa2db3b74_cgraph.svg" width="314" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
@@ -427,16 +357,11 @@ workaround.cpp の依存先関係図:</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="workaround_8cpp_source.html">workaround.cpp</a> の <a class="el" href="workaround_8cpp_source.html#l00019">19</a> 行目に定義があります。</p>
-<div class="fragment"><div class="line"><span class="lineno">   20</span>{</div>
-<div class="line"><span class="lineno">   21</span>    <span class="keywordflow">if</span> ( <a class="code hl_variable" href="#a0cc6667db42ed3f3bfe9cbced1e0639b">hook_message_id</a> == msg )</div>
-<div class="line"><span class="lineno">   22</span>    {</div>
-<div class="line"><span class="lineno">   23</span>        std::cout &lt;&lt; std::format( <span class="stringliteral">&quot;call hook_message : {}, {}&quot;</span>, wp, lp )</div>
-<div class="line"><span class="lineno">   24</span>                  &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   25</span>    }</div>
-<div class="line"><span class="lineno">   26</span>    return ::DefWindowProc( hWnd, msg, wp, lp );</div>
-<div class="line"><span class="lineno">   27</span>}</div>
-<div class="ttc" id="aworkaround_8cpp_html_a0cc6667db42ed3f3bfe9cbced1e0639b"><div class="ttname"><a href="#a0cc6667db42ed3f3bfe9cbced1e0639b">hook_message_id</a></div><div class="ttdeci">static UINT hook_message_id</div><div class="ttdef"><b>Definition</b> <a href="workaround_8cpp_source.html#l00013">workaround.cpp:13</a></div></div>
-</div><!-- fragment --><div class="dynheader">
+
+<p class="reference">参照先 <a class="el" href="workaround_8cpp_source.html#l00013">hook_message_id</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="workaround_8cpp_source.html#l00033">make_novisual_window()</a>.</p>
+<div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="workaround_8cpp_ab01c69758901cb8401e8b23b52b8c42b_icgraph.svg" width="314" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
@@ -466,6 +391,8 @@ workaround.cpp の依存先関係図:</div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="workaround_8cpp_source.html">workaround.cpp</a> の <a class="el" href="workaround_8cpp_source.html#l00013">13</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="workaround_8cpp_source.html#l00019">WindowProc()</a>.</p>
 
 </div>
 </div>
