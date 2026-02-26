@@ -1,0 +1,12 @@
+var structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__menu_1_1menu__create__operator__impl =
+[
+    [ "menu_create_operator_impl", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__menu_1_1menu__create__operator__impl.html#a6ba05c8fbb3901aaa40ce6c0df836f56", null ],
+    [ "item_only", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__menu_1_1menu__create__operator__impl.html#a71d3b572448ec73a91e5be79688eec60", null ],
+    [ "item_only", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__menu_1_1menu__create__operator__impl.html#aaf936e9df7657d58cb724cda544fe6e1", null ],
+    [ "sync", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__menu_1_1menu__create__operator__impl.html#a5f2c67742c37edab5016ea4971d1f8ef", null ],
+    [ "sync", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__menu_1_1menu__create__operator__impl.html#ad42098e37ca58698d270de20666c0bee", null ],
+    [ "sync", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__menu_1_1menu__create__operator__impl.html#a590187e263b9febfef3d974a8421050b", null ],
+    [ "sync", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__menu_1_1menu__create__operator__impl.html#a1a83d5f99d1e10864e89f9a9ff61a758", null ],
+    [ "sync", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__menu_1_1menu__create__operator__impl.html#a7a7205a6fd029ab05f982d86f11f7baa", null ],
+    [ "sync", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__menu_1_1menu__create__operator__impl.html#abf084b33913d0bdcdc840f1bb7c95e50", null ]
+];

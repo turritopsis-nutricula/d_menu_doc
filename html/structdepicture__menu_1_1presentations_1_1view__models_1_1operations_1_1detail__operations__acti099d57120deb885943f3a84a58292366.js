@@ -1,0 +1,6 @@
+var structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operations__acti099d57120deb885943f3a84a58292366 =
+[
+    [ "action_erase_operator_impl", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operations__acti099d57120deb885943f3a84a58292366.html#a5996877139380d6c41b44d684dcf0011", null ],
+    [ "sync", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operations__acti099d57120deb885943f3a84a58292366.html#a69b27c753737d8f7832c58f2c6857883", null ],
+    [ "value_", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operations__acti099d57120deb885943f3a84a58292366.html#a0c8f236e1c112d7ee5c44fb4c0cddf35", null ]
+];

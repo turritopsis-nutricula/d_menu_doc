@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/src/core/application/log.hpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('log_8hpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">log.hpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;source_location&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+log.hpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="log_8hpp__incl.svg" width="219" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="log_8hpp__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+<p><a href="log_8hpp_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:abc1ed92a47502763ce1348b052d995ca" id="r_abc1ed92a47502763ce1348b052d995ca"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#abc1ed92a47502763ce1348b052d995ca">DPM_DETAIL_LOG_IMPL</a>(S,  X)</td></tr>
+<tr class="memitem:a0e5c3fbaba4e904d11a3b45f7ef47c1a" id="r_a0e5c3fbaba4e904d11a3b45f7ef47c1a"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a0e5c3fbaba4e904d11a3b45f7ef47c1a">DPM_DETAIL_LOG_IMPL_W</a>(S,  X)</td></tr>
+<tr class="memitem:a3b6caf5bb776302aacc06de15b389b66" id="r_a3b6caf5bb776302aacc06de15b389b66"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a3b6caf5bb776302aacc06de15b389b66">DPM_LOG_TRACE</a>(X)</td></tr>
+<tr class="memitem:a6a81e4b32bb7210d0366ac20d9fe82f7" id="r_a6a81e4b32bb7210d0366ac20d9fe82f7"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a6a81e4b32bb7210d0366ac20d9fe82f7">DPM_LOG_DEBUG</a>(X)</td></tr>
+<tr class="memitem:aab404ff912acd168e0342f9b7f641131" id="r_aab404ff912acd168e0342f9b7f641131"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aab404ff912acd168e0342f9b7f641131">DPM_LOG_WRAN</a>(X)</td></tr>
+<tr class="memitem:a4750aa57a19cfdc1b2fb037ceab18ae1" id="r_a4750aa57a19cfdc1b2fb037ceab18ae1"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a4750aa57a19cfdc1b2fb037ceab18ae1">DPM_LOG_ERROR</a>(X)</td></tr>
+<tr class="memitem:a2663b4351c541ec36cdbd0a49ae10d8f" id="r_a2663b4351c541ec36cdbd0a49ae10d8f"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a2663b4351c541ec36cdbd0a49ae10d8f">DPM_LOG_TRACE_W</a>(X)</td></tr>
+<tr class="memitem:a0c47ffca1ee7d31686b4b8b42af3311b" id="r_a0c47ffca1ee7d31686b4b8b42af3311b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a0c47ffca1ee7d31686b4b8b42af3311b">DPM_LOG_DEBUG_W</a>(X)</td></tr>
+<tr class="memitem:a90da7a9b17a0accfedddd43db57306b9" id="r_a90da7a9b17a0accfedddd43db57306b9"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a90da7a9b17a0accfedddd43db57306b9">DPM_LOG_WRAN_W</a>(X)</td></tr>
+<tr class="memitem:a62196923190b6b69a253e8734c0226fc" id="r_a62196923190b6b69a253e8734c0226fc"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a62196923190b6b69a253e8734c0226fc">DPM_LOG_ERROR_W</a>(X)</td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">マクロ定義詳解</h2>
+<a id="abc1ed92a47502763ce1348b052d995ca" name="abc1ed92a47502763ce1348b052d995ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc1ed92a47502763ce1348b052d995ca">&#9670;&#160;</a></span>DPM_DETAIL_LOG_IMPL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_DETAIL_LOG_IMPL</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>S</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>X</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">{                                                                          \</div>
+<div class="line">    <span class="keyword">auto</span> loc = std::source_location::current( );                           \</div>
+<div class="line">    std::cout &lt;&lt; S &lt;&lt; X &lt;&lt; <span class="stringliteral">&quot;  &lt;&quot;</span> &lt;&lt; loc.file_name( ) &lt;&lt; <span class="stringliteral">&quot;:&quot;</span> &lt;&lt; loc.line( ) \</div>
+<div class="line">              &lt;&lt; <span class="stringliteral">&quot;&gt;&quot;</span> &lt;&lt; std::endl;                                         \</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00008">8</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a0e5c3fbaba4e904d11a3b45f7ef47c1a" name="a0e5c3fbaba4e904d11a3b45f7ef47c1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e5c3fbaba4e904d11a3b45f7ef47c1a">&#9670;&#160;</a></span>DPM_DETAIL_LOG_IMPL_W</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_DETAIL_LOG_IMPL_W</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>S</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>X</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">{                                                                          \</div>
+<div class="line">    <span class="keyword">auto</span> loc = std::source_location::current( );                           \</div>
+<div class="line">    std::wcout &lt;&lt; S &lt;&lt; X &lt;&lt; L<span class="stringliteral">&quot;  &lt;&quot;</span> &lt;&lt; loc.file_name( ) &lt;&lt; L<span class="stringliteral">&quot;:&quot;</span>             \</div>
+<div class="line">               &lt;&lt; loc.line( ) &lt;&lt; L<span class="stringliteral">&quot;&gt;&quot;</span> &lt;&lt; std::endl;                        \</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00015">15</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a6a81e4b32bb7210d0366ac20d9fe82f7" name="a6a81e4b32bb7210d0366ac20d9fe82f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a81e4b32bb7210d0366ac20d9fe82f7">&#9670;&#160;</a></span>DPM_LOG_DEBUG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_LOG_DEBUG</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>X</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00034">34</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="deploy__default__setting_8cpp_source.html#l00128">add_default_menu()</a>, <a class="el" href="deploy__default__setting_8cpp_source.html#l00272">add_default_settings()</a>, <a class="el" href="config__view__arg__builder_8cpp_source.html#l00362">depicture_menu::applications::view_factories::config_view_arg_builder::build()</a>, <a class="el" href="menu__view__arg__builder_8cpp_source.html#l00037">depicture_menu::applications::view_factories::menu_view_arg_builder::build()</a>, <a class="el" href="common__action__builder_8hpp_source.html#l00262">depicture_menu::domain::services::common_action_builder::build_open_sub_menu_action()</a>, <a class="el" href="config__view__arg__builder_8cpp_source.html#l00462">depicture_menu::applications::view_factories::config_view_arg_builder::build_publisher()</a>, <a class="el" href="update__menu__config_8cpp_source.html#l00153">depicture_menu::usecase::menu_item_sync::create_new_action()</a>, <a class="el" href="update__menu__config_8cpp_source.html#l00169">depicture_menu::usecase::menu_item_sync::create_new_command()</a>, <a class="el" href="change__action__config_8cpp_source.html#l00022">depicture_menu::usecase::detail_usecase_change::do_basic_action_config_change()</a>, <a class="el" href="update__menu__config_8cpp_source.html#l00298">depicture_menu::usecase::do_change_menu_config_impl()</a>, <a class="el" href="action__invoke_8cpp_source.html#l00065">depicture_menu::usecase::detail_usecase_invoke_action::do_invoke_action()</a>, <a class="el" href="duplicate__menu__item_8cpp_source.html#l00020">depicture_menu::usecase::duplicate_menu_item::duplicate()</a>, <a class="el" href="configview__observer_8cpp_source.html#l00509">depicture_menu::cs_binding::observer::generate_observe_configview()</a>, <a class="el" href="command__invoker_8cpp_source.html#l00010">depicture_menu::presentations::command_invoker::invoke()</a>, <a class="el" href="shellexecute__invoker_8hpp_source.html#l00166">depicture_menu::presentations::shellexecute_invoker::invoke()</a>, <a class="el" href="remove__menu__item_8hpp_source.html#l00052">depicture_menu::usecase::remove_menu_item&lt; menu_query_t, presenter_t &gt;::operator()()</a>, <a class="el" href="change__action__config_8hpp_source.html#l00064">depicture_menu::usecase::update_basic_action_config&lt; ActionChangeControl &gt;::operator()()</a>, <a class="el" href="global__hotkey__presenter_8hpp_source.html#l00020">depicture_menu::presentations::global_hotkey_presenter::regist()</a>, <a class="el" href="global__hotkey__presenter_8hpp_source.html#l00053">depicture_menu::presentations::global_hotkey_presenter::regist()</a>, <a class="el" href="unmanaged__generator_8hpp_source.html#l00187">depicture_menu::cs_binding::detail_cs_binding::unmanaged_generator_impl&lt; T &gt;::release_resource()</a>, <a class="el" href="deploy__default__setting_8cpp_source.html#l00038">setup_application_command()</a>, <a class="el" href="setup__core_8cpp_source.html#l00219">setup_core()</a>, <a class="el" href="config__view__presenter_8cpp_source.html#l00537">depicture_menu::presentations::config_view_presenter::show_config_view()</a>, <a class="el" href="global__hotkey__presenter_8hpp_source.html#l00038">depicture_menu::presentations::global_hotkey_presenter::unregist()</a>, <a class="el" href="global__hotkey__presenter_8hpp_source.html#l00065">depicture_menu::presentations::global_hotkey_presenter::unregist()</a> (計25項目).</p>
+
+</div>
+</div>
+<a id="a0c47ffca1ee7d31686b4b8b42af3311b" name="a0c47ffca1ee7d31686b4b8b42af3311b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c47ffca1ee7d31686b4b8b42af3311b">&#9670;&#160;</a></span>DPM_LOG_DEBUG_W</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_LOG_DEBUG_W</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>X</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00039">39</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="shellexecute__invoker_8hpp_source.html#l00166">depicture_menu::presentations::shellexecute_invoker::invoke()</a>.</p>
+
+</div>
+</div>
+<a id="a4750aa57a19cfdc1b2fb037ceab18ae1" name="a4750aa57a19cfdc1b2fb037ceab18ae1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4750aa57a19cfdc1b2fb037ceab18ae1">&#9670;&#160;</a></span>DPM_LOG_ERROR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_LOG_ERROR</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>X</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00036">36</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a62196923190b6b69a253e8734c0226fc" name="a62196923190b6b69a253e8734c0226fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62196923190b6b69a253e8734c0226fc">&#9670;&#160;</a></span>DPM_LOG_ERROR_W</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_LOG_ERROR_W</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>X</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00041">41</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a3b6caf5bb776302aacc06de15b389b66" name="a3b6caf5bb776302aacc06de15b389b66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b6caf5bb776302aacc06de15b389b66">&#9670;&#160;</a></span>DPM_LOG_TRACE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_LOG_TRACE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>X</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00033">33</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="show__menu__view_8hpp_source.html#l00075">depicture_menu::usecase::show_menu_view&lt; menu_presenter &gt;::dispatch_show_menu()</a>, <a class="el" href="update__menu__config_8cpp_source.html#l00298">depicture_menu::usecase::do_change_menu_config_impl()</a>, <a class="el" href="action__invoke_8cpp_source.html#l00065">depicture_menu::usecase::detail_usecase_invoke_action::do_invoke_action()</a>.</p>
+
+</div>
+</div>
+<a id="a2663b4351c541ec36cdbd0a49ae10d8f" name="a2663b4351c541ec36cdbd0a49ae10d8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2663b4351c541ec36cdbd0a49ae10d8f">&#9670;&#160;</a></span>DPM_LOG_TRACE_W</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_LOG_TRACE_W</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>X</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00038">38</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aab404ff912acd168e0342f9b7f641131" name="aab404ff912acd168e0342f9b7f641131"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab404ff912acd168e0342f9b7f641131">&#9670;&#160;</a></span>DPM_LOG_WRAN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_LOG_WRAN</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>X</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00035">35</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="on__memory__repository_8hpp_source.html#l00041">depicture_menu::repositories::on_memory_repository&lt; T &gt;::create()</a>.</p>
+
+</div>
+</div>
+<a id="a90da7a9b17a0accfedddd43db57306b9" name="a90da7a9b17a0accfedddd43db57306b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90da7a9b17a0accfedddd43db57306b9">&#9670;&#160;</a></span>DPM_LOG_WRAN_W</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_LOG_WRAN_W</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>X</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00040">40</a> 行目に定義があります。</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_d26f0ed8b287a778d960ad2241e01057.html">src</a></li><li class="navelem"><a href="dir_eb29242f55d2489f6c4d008365c270b7.html">core</a></li><li class="navelem"><a href="dir_62153e020276f17450b004104a906c1d.html">application</a></li><li class="navelem"><a href="log_8hpp.html">log.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

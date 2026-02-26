@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/src/core/cs_binding/macro/detail/csharp/config.hpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('cs__binding_2macro_2detail_2csharp_2config_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">config.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef SRC_CORE_CS_BINDING_MACRO_DETAIL_CSHARP_CONFIG_HPP_</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define SRC_CORE_CS_BINDING_MACRO_DETAIL_CSHARP_CONFIG_HPP_</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="glue__code__sequence__data_8hpp.html">../glue_code_sequence_data.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// Glue Seq Data Index</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a7949ecaded053b108eac00c5aec05fbc">    7</a></span><span class="preprocessor">#define DPM_METHOD_SEQ_PUBLIC_RETURN( SEQ_ ) DPM_GLUE_METHOD_EXTEND( 0, SEQ_ )</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a742113a9cef02cebb013d4a747a5b4de">    8</a></span><span class="preprocessor">#define DPM_METHOD_SEQ_PUBLIC_ARGS( SEQ_ ) DPM_GLUE_METHOD_EXTEND( 1, SEQ_ )</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a63a11369d2aaaf0e13ca21d43a3dd757">    9</a></span><span class="preprocessor">#define DPM_METHOD_SEQ_PUBLIC_BODY( SEQ_ ) DPM_GLUE_METHOD_EXTEND( 2, SEQ_ )</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// config value</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#acaec34938aba0f449ed1595584f4643d">   13</a></span><span class="preprocessor">#define DPM_CS_DLL_NAME( ) libdepicture_menu_core.dll</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a9029904c764ea75f089e520091d93bc5">   15</a></span><span class="preprocessor">#define DPM_UNMANEGED_GLAB_METHODNAME GlabUnmanagedResource</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a5c88e678374f400ca49cb5c8c14c045f">   16</a></span><span class="preprocessor">#define DPM_UNMANEGED_RELEASE_METHODNAME ReleaseUnmangedResource</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a7b79459dc336f4c1b6703a5736673567">   18</a></span><span class="preprocessor">#define DPM_CS_INSTANCE_VALUE_NAME( ) inst_</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a000d8ad6803e14bc1a21fae4a29c3599">   19</a></span><span class="preprocessor">#define DPM_CS_VTBL_VALUE_NAME( ) vtbl_</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="foldopen" id="foldopen00021" data-start="" data-end="">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#aaab3519a63770ebf3ec3ea82fb112966">   21</a></span><span class="preprocessor">#define DPM_CS_INSTANCE_LOAD_FUNC_NAME( CLASS_ )                               \</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">    BOOST_PP_CAT( get_struct_, CLASS_ )</span></div>
+</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="" data-end="">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#adc273e25d28e1d7e9331bdde2d95b4b9">   24</a></span><span class="preprocessor">#define DPM_CS_VTBL_LOAD_FUNC_NAME( CLASS_ )                                   \</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">    BOOST_PP_CAT( get_struct_vtbl_, CLASS_ )</span></div>
+</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a9b72cb7d9f6421162f309aff5d651b39">   27</a></span><span class="preprocessor">#define CS_DELEGATE_TYPE( t_ ) t_##_Delegate</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a2a2174854230132f98a4603cee65eb79">   28</a></span><span class="preprocessor">#define CS_FUNCTION_VALUE( t_ ) _##t_</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#aca79564c45656fdce3e1db68b5b69168">   30</a></span><span class="preprocessor">#define DPM_CS_GLUE_METHOD_NAME( NAME ) BOOST_PP_CAT( NAME, _impl )</span></div>
+<div class="foldopen" id="foldopen00031" data-start="" data-end="">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a2b6b9fb5e7a13e58c64f407432264e4c">   31</a></span><span class="preprocessor">#define DPM_CS_GLUE_METHOD_NAME_AND_FOOTER( NAME, F )                          \</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">    BOOST_PP_CAT( BOOST_PP_CAT( NAME, F ), _impl )</span></div>
+</div>
+<div class="foldopen" id="foldopen00033" data-start="" data-end="">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a5026fac69f8786dc87a3dbfc3228737f">   33</a></span><span class="preprocessor">#define DPM_CS_GLUE_METHOD_NAME_AND_PREFIX( P, NAME )                          \</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">    BOOST_PP_CAT( BOOST_PP_CAT( P, NAME ), _impl )</span></div>
+</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="foldopen" id="foldopen00036" data-start="" data-end="">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a552865f69d1e58400d75c575c22eb655">   36</a></span><span class="preprocessor">#define DPM_CS_GLUE_METHOD_CONSTRACTOR_FLAG( CLASS )                           \</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">    BOOST_PP_CAT( _is_default_constract_, CLASS )</span></div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">// TODO:deplacated</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a228103742d654f3370530428ca0c7ff3">   40</a></span><span class="preprocessor">#define CS_DLL_NAME( ) DPM_CS_DLL_NAME( )</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00042" data-start="" data-end="">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a891ebdd26667b456b28ec23e3b198f59">   42</a></span><span class="preprocessor">#define CS_INSTANCE_LOAD_FUNC_NAME( CLASS_ )                                   \</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">    DPM_CS_INSTANCE_LOAD_FUNC_NAME( CLASS_ )</span></div>
+</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a9235d9b7679275bb15d8a603a3dcdd8d">   45</a></span><span class="preprocessor">#define CS_VTBL_LOAD_FUNC_NAME( CLASS_ ) DPM_CS_VTBL_LOAD_FUNC_NAME( CLASS_ )</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a923446da243c70caef68d52085a4b976">   47</a></span><span class="preprocessor">#define CS_INSTANCE_VALUE_NAME( ) DPM_CS_INSTANCE_VALUE_NAME( )</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a1296a103006f7c7414fcf23a8c5ccf15">   48</a></span><span class="preprocessor">#define CS_VTBL_VALUE_NAME( ) DPM_CS_VTBL_VALUE_NAME( )</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_CORE_CS_BINDING_MACRO_DETAIL_CSHARP_CONFIG_HPP_</span></div>
+<div class="ttc" id="aglue__code__sequence__data_8hpp_html"><div class="ttname"><a href="glue__code__sequence__data_8hpp.html">glue_code_sequence_data.hpp</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_d26f0ed8b287a778d960ad2241e01057.html">src</a></li><li class="navelem"><a href="dir_eb29242f55d2489f6c4d008365c270b7.html">core</a></li><li class="navelem"><a href="dir_cea6b123251f3cedcaebc32d093e626d.html">cs_binding</a></li><li class="navelem"><a href="dir_6a2ead08366c94e741a9e88f830ac342.html">macro</a></li><li class="navelem"><a href="dir_4ef1cfedfd4be9f42b382dc143404819.html">detail</a></li><li class="navelem"><a href="dir_279594cbae54ce2334a02ddbf4a6283b.html">csharp</a></li><li class="navelem"><a href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html">config.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

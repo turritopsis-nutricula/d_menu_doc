@@ -1,0 +1,334 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/src/core/usecase/backup/convert/config.cpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('config_8cpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">config.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="config_8cpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;./config.hpp&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="dto__converter_8hpp.html">dto_converter.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1usecase_1_1backup.html">depicture_menu::usecase::backup</a></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">auto</span></div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="}">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1usecase_1_1backup.html#aa119e67f0ce64b2f8e57e6b634f686fa">    8</a></span><a class="code hl_function" href="namespacedepicture__menu_1_1usecase_1_1backup.html#aa119e67f0ce64b2f8e57e6b634f686fa">create_config_dto</a>( <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1app_1_1config.html">domain::app::config</a> <span class="keyword">const</span>&amp; e ) -&gt; <a class="code hl_struct" href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1config__data.html">dto::config_data</a></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">using </span>id_to_str_t</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        = <span class="keyword">decltype</span>( []&lt; <span class="keyword">typename</span> Tag &gt;(</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>                        <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1models_1_1entity__id__base.html">domain::models::entity_id_base&lt; Tag &gt;</a> <span class="keyword">const</span>&amp; id</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                    ) { <span class="keywordflow">return</span> <span class="keywordtype">id</span>.to_uuid_string( ); } );</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">using </span>ids_to_strs_t = <span class="keyword">decltype</span>([]( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; <a class="code hl_namespace" href="namespaceids.html">ids</a> ) -&gt; std::vector&lt;std::string&gt;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            <span class="keywordflow">return</span> <a class="code hl_namespace" href="namespaceids.html">ids</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            | std::views::transform( [](<span class="keyword">auto</span> <span class="keyword">const</span>&amp; <span class="keywordtype">id</span>){ <span class="keywordflow">return</span> <span class="keywordtype">id</span>.to_uuid_string(); } )</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            | std::ranges::to&lt; std::vector&lt;std::string&gt;&gt;();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            }</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            );</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">using </span>cm_t = <a class="code hl_struct" href="structdepicture__menu_1_1conv__mapping_1_1converter.html">conv_mapping::converter</a>&lt;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1app_1_1config.html">domain::app::config</a>,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <a class="code hl_struct" href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1config__data.html">dto::config_data</a>,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="comment">// id</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1conv__mapping.html#aeb630d6bb9c2dabfd90831a166e37f4e">conv_mapping::read_method_mapping</a>&lt;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            &amp;<a class="code hl_function" href="structdepicture__menu_1_1domain_1_1models_1_1base_1_1entity__base.html#adce587e64220cc3a3407233c1fc61ba4">domain::app::config::entity_id</a>,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            <span class="stringliteral">&quot;id&quot;</span>,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            id_to_str_t &gt;,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="comment">// default_menu_id</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1conv__mapping.html#aeb630d6bb9c2dabfd90831a166e37f4e">conv_mapping::read_method_mapping</a>&lt;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            &amp;<a class="code hl_function" href="classdepicture__menu_1_1domain_1_1app_1_1config.html#aa58dfc16ed99e7aeeffa6c9015b6f846">domain::app::config::get_default_menu_id</a>,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <span class="stringliteral">&quot;default_menu_id&quot;</span>,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            id_to_str_t &gt;,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="comment">// menus</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1conv__mapping.html#aeb630d6bb9c2dabfd90831a166e37f4e">conv_mapping::read_method_mapping</a>&lt;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            &amp;domain::app::config::get_menu_ids,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="stringliteral">&quot;menu_ids&quot;</span>,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            ids_to_strs_t &gt;,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="comment">// actions</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1conv__mapping.html#aeb630d6bb9c2dabfd90831a166e37f4e">conv_mapping::read_method_mapping</a>&lt;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            &amp;domain::app::config::get_action_ids,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="stringliteral">&quot;action_ids&quot;</span>,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            ids_to_strs_t &gt;,</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="comment">// commands</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1conv__mapping.html#aeb630d6bb9c2dabfd90831a166e37f4e">conv_mapping::read_method_mapping</a>&lt;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            &amp;domain::app::config::get_command_ids,</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="stringliteral">&quot;command_ids&quot;</span>,</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            ids_to_strs_t &gt;,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="comment">// triggers</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1conv__mapping.html#aeb630d6bb9c2dabfd90831a166e37f4e">conv_mapping::read_method_mapping</a>&lt;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            &amp;domain::app::config::get_trigger_ids,</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="stringliteral">&quot;trigger_ids&quot;</span>,</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            ids_to_strs_t &gt;,</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="comment">// command_invoker</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="comment">// common_command_invoker</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <a class="code hl_struct" href="structdepicture__menu_1_1conv__mapping_1_1direct__mapping.html">conv_mapping::direct_mapping</a>&lt; <span class="keyword">decltype</span>(</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; e, <span class="keyword">auto</span>&amp; res )</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                <span class="comment">// command_invoker</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                boost::mp11::mp_for_each&lt; boost::describe::describe_enumerators&lt;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                    domain::commands::command_kind &gt; &gt;(</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                    [ &amp;e, &amp;res ]( <span class="keyword">auto</span> D )</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                    {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                        <span class="keyword">auto</span> <span class="keyword">const</span> <span class="keywordtype">id</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                            = e.get_application_command_invoker( D.value );</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                        <span class="keywordflow">if</span> ( <span class="keywordtype">id</span>.is_valid( )</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                             || D.value == domain::commands::command_kind::nop )</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                            res.command_invoker.push_back(</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                                std::make_pair( D.name, <span class="keywordtype">id</span>.to_uuid_string( ) )</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                            );</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                    }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                );</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                <span class="comment">// common_command_invoker</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                boost::mp11::mp_for_each&lt; boost::describe::describe_enumerators&lt;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                    domain::commands::common_command_kind &gt; &gt;(</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                    [ &amp;e, &amp;res ]( <span class="keyword">auto</span> D )</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                    {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                        <span class="keyword">auto</span> <span class="keyword">const</span> <span class="keywordtype">id</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                            = e.get_common_command_invoker_id( D.value );</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                        <span class="keywordflow">if</span> ( <span class="keywordtype">id</span>.is_valid( )</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                             || D.value</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                                    == domain::commands::common_command_kind::</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                                        <a class="code hl_enumvalue" href="namespacedepicture__menu_1_1usecase.html#aef21ae05476e651e7e1dd16ff96cd6cda334c4a4c42fdb79d7ebc3e73b517e6f8">none</a> )</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                            res.common_command_invoker.push_back(</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                                std::make_pair( D.name, <span class="keywordtype">id</span>.to_uuid_string( ) )</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                            );</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                    }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                );</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        ) &gt;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        &gt;;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <a class="code hl_struct" href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1config__data.html">dto::config_data</a> res;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    cm_t{ }.convert( e, res );</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordflow">return</span> res;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>}</div>
+</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="keyword">auto</span></div>
+<div class="foldopen" id="foldopen00111" data-start="{" data-end="}">
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1usecase_1_1backup.html#abdcff53881bb37c6cd4cce8bd8385973">  111</a></span><a class="code hl_function" href="namespacedepicture__menu_1_1usecase_1_1backup.html#abdcff53881bb37c6cd4cce8bd8385973">create_config_entity</a>( <a class="code hl_struct" href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1config__data.html">dto::config_data</a> <span class="keyword">const</span>&amp; <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> ) -&gt; <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1app_1_1config.html">domain::app::config</a></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>{</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keyword">using </span>str_to_id_t = <span class="keyword">decltype</span>([]( std::string <span class="keyword">const</span>&amp; s ){</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            <span class="keyword">auto</span> uuid =  boost::uuids::string_generator{}( s );</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            <span class="keywordflow">return</span> <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1menu.html#a2b51ff146c22769b74c23c37851fa801">domain::menu::menu_id</a>( uuid );</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            });</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="preprocessor">#if 1</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keyword">using </span>cm_t = <a class="code hl_struct" href="structdepicture__menu_1_1conv__mapping_1_1converter.html">conv_mapping::converter</a>&lt;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <a class="code hl_struct" href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1config__data.html">dto::config_data</a>,</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1app_1_1config.html">domain::app::config</a>,</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <span class="comment">// default_menu_id</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1conv__mapping.html#a1bcd7a78cddb12f1a05c27b1f86d8912">conv_mapping::write_method_mapping</a>&lt;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            <span class="stringliteral">&quot;default_menu_id&quot;</span>,</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            &amp;<a class="code hl_function" href="classdepicture__menu_1_1domain_1_1app_1_1config.html#aed6b79f3c53c524d7e8223c385d4a258">domain::app::config::set_default_menu_id</a>,</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            str_to_id_t &gt;,</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="comment">// menu_ids</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup.html#a592b57f10b22d86968bc23d3562dee58">detail_backup::strings_to_entity_ids</a>&lt;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            <span class="stringliteral">&quot;menu_ids&quot;</span>,</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1menu.html#a2b51ff146c22769b74c23c37851fa801">domain::menu::menu_id</a>,</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            &amp;domain::app::config::add_menu_id &gt;,</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        <span class="comment">// action_ids</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup.html#a592b57f10b22d86968bc23d3562dee58">detail_backup::strings_to_entity_ids</a>&lt;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            <span class="stringliteral">&quot;action_ids&quot;</span>,</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">domain::actions::publisher_id</a>,</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            &amp;domain::app::config::add_action_id &gt;,</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        <span class="comment">// command_ids</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup.html#a592b57f10b22d86968bc23d3562dee58">detail_backup::strings_to_entity_ids</a>&lt;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            <span class="stringliteral">&quot;command_ids&quot;</span>,</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1commands.html#a255579014c08ea612b006aa3a641ca7a">domain::commands::command_id</a>,</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            &amp;domain::app::config::add_command_id &gt;,</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        <span class="comment">// trigger_ids</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup.html#a592b57f10b22d86968bc23d3562dee58">detail_backup::strings_to_entity_ids</a>&lt;</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            <span class="stringliteral">&quot;trigger_ids&quot;</span>,</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1triggers.html#ab0086bbfe1ea3c9e8ebf6e362ec544c3">domain::triggers::trigger_id</a>,</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>            &amp;domain::app::config::add_trigger_id &gt;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        &gt;;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="comment">//  auto id = boost::uuids::string_generator{}( o.id );</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1app_1_1config.html">domain::app::config</a> e( <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1app.html#a86ba4957782ffa7d60cfa8b3e4a67914">domain::app::config_id</a>( str_to_id_t{ }( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.id ) ) );</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    cm_t{ }.convert( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>, e );</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="comment">// command_invoker</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    std::ranges::for_each(</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.command_invoker,</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        [ &amp;e ]( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; p )</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        {</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            auto k = domain::commands::command_kind::nop;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>            boost::describe::enum_from_string( p.first, k );</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            e.set_application_command_invoker(</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>                k,</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>                domain::commands::invoker_id(</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                    boost::uuids::string_generator{ }( p.second )</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>                )</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>            );</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        }</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    );</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <span class="comment">// commond_command_map</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    std::ranges::for_each(</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.common_command_invoker,</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        [ &amp;e ]( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; p )</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        {</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>            auto k = domain::commands::common_command_kind::none;</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>            boost::describe::enum_from_string( p.first, k );</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>            e.set_common_command_invoker_id(</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>                k,</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>                domain::commands::invoker_id(</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>                    boost::uuids::string_generator{ }( p.second )</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>                )</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            );</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        }</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    );</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <span class="keywordflow">return</span> e;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>}</div>
+</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>}    <span class="comment">// namespace depicture_menu::usecase::backup</span></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1app_1_1config_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1app_1_1config.html">depicture_menu::domain::app::config</a></div><div class="ttdef"><b>Definition</b> <a href="domain_2model_2app_2config_8hpp_source.html#l00052">config.hpp:53</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1app_1_1config_html_aa58dfc16ed99e7aeeffa6c9015b6f846"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1app_1_1config.html#aa58dfc16ed99e7aeeffa6c9015b6f846">depicture_menu::domain::app::config::get_default_menu_id</a></div><div class="ttdeci">auto get_default_menu_id() const noexcept</div><div class="ttdef"><b>Definition</b> <a href="domain_2model_2app_2config_8hpp_source.html#l00061">config.hpp:61</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1app_1_1config_html_aed6b79f3c53c524d7e8223c385d4a258"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1app_1_1config.html#aed6b79f3c53c524d7e8223c385d4a258">depicture_menu::domain::app::config::set_default_menu_id</a></div><div class="ttdeci">void set_default_menu_id(menu::menu_id const &amp;id)</div><div class="ttdef"><b>Definition</b> <a href="domain_2model_2app_2config_8hpp_source.html#l00066">config.hpp:66</a></div></div>
+<div class="ttc" id="adto__converter_8hpp_html"><div class="ttname"><a href="dto__converter_8hpp.html">dto_converter.hpp</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1conv__mapping_html_a1bcd7a78cddb12f1a05c27b1f86d8912"><div class="ttname"><a href="namespacedepicture__menu_1_1conv__mapping.html#a1bcd7a78cddb12f1a05c27b1f86d8912">depicture_menu::conv_mapping::write_method_mapping</a></div><div class="ttdeci">mapping_base&lt; buildin::field_name_reader&lt; source_field &gt;, buildin::method_pointer_writer&lt; M &gt;, C &gt; write_method_mapping</div><div class="ttdef"><b>Definition</b> <a href="conv__mapping_8hpp_source.html#l00357">conv_mapping.hpp:357</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1conv__mapping_html_aeb630d6bb9c2dabfd90831a166e37f4e"><div class="ttname"><a href="namespacedepicture__menu_1_1conv__mapping.html#aeb630d6bb9c2dabfd90831a166e37f4e">depicture_menu::conv_mapping::read_method_mapping</a></div><div class="ttdeci">mapping_base&lt; buildin::method_pointer_reader&lt; read_method_pointer &gt;, buildin::field_name_writer&lt; target_field &gt;, Converter &gt; read_method_mapping</div><div class="ttdef"><b>Definition</b> <a href="conv__mapping_8hpp_source.html#l00342">conv_mapping.hpp:342</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1actions_html_af913742220f232fcc0d0433f4e0da3f3"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">depicture_menu::domain::actions::publisher_id</a></div><div class="ttdeci">models::entity_id_base&lt; action_publisher_id_tag &gt; publisher_id</div><div class="ttdef"><b>Definition</b> <a href="action__ids_8hpp_source.html#l00017">action_ids.hpp:17</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1app_html_a86ba4957782ffa7d60cfa8b3e4a67914"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1app.html#a86ba4957782ffa7d60cfa8b3e4a67914">depicture_menu::domain::app::config_id</a></div><div class="ttdeci">models::entity_id_base&lt; detail_app::config_id_tag &gt; config_id</div><div class="ttdef"><b>Definition</b> <a href="app__ids_8hpp_source.html#l00071">app_ids.hpp:71</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1commands_html_a255579014c08ea612b006aa3a641ca7a"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1commands.html#a255579014c08ea612b006aa3a641ca7a">depicture_menu::domain::commands::command_id</a></div><div class="ttdeci">models::entity_id_base&lt; detail_commands::command_id_tag &gt; command_id</div><div class="ttdef"><b>Definition</b> <a href="command__ids_8hpp_source.html#l00018">command_ids.hpp:18</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1menu_html_a2b51ff146c22769b74c23c37851fa801"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1menu.html#a2b51ff146c22769b74c23c37851fa801">depicture_menu::domain::menu::menu_id</a></div><div class="ttdeci">models::entity_id_base&lt; detail_menu::menu_id_tag &gt; menu_id</div><div class="ttdef"><b>Definition</b> <a href="menu__ids_8hpp_source.html#l00022">menu_ids.hpp:22</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1triggers_html_ab0086bbfe1ea3c9e8ebf6e362ec544c3"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1triggers.html#ab0086bbfe1ea3c9e8ebf6e362ec544c3">depicture_menu::domain::triggers::trigger_id</a></div><div class="ttdeci">models::entity_id_base&lt; detail_triggers::trigger_id_tag &gt; trigger_id</div><div class="ttdef"><b>Definition</b> <a href="trigger__ids_8hpp_source.html#l00016">trigger_ids.hpp:16</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_html"><div class="ttname"><a href="namespacedepicture__menu_1_1domain.html">depicture_menu::domain</a></div><div class="ttdef"><b>Definition</b> <a href="colors_8hpp_source.html#l00006">colors.hpp:7</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup_html_a592b57f10b22d86968bc23d3562dee58"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup.html#a592b57f10b22d86968bc23d3562dee58">depicture_menu::usecase::backup::detail_backup::strings_to_entity_ids</a></div><div class="ttdeci">conv_mapping::mapping_base&lt; conv_mapping::buildin::field_name_reader&lt; S &gt;, conv_mapping::buildin::range_repeater&lt; conv_mapping::buildin::method_pointer_writer&lt; M &gt; &gt;, detail_backup::strings_to_entity_ids_conv&lt; E &gt; &gt; strings_to_entity_ids</div><div class="ttdef"><b>Definition</b> <a href="dto__converter_8hpp_source.html#l00223">dto_converter.hpp:223</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1backup_html"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1backup.html">depicture_menu::usecase::backup</a></div><div class="ttdef"><b>Definition</b> <a href="action_8cpp_source.html#l00012">action.cpp:13</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1backup_html_aa119e67f0ce64b2f8e57e6b634f686fa"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1backup.html#aa119e67f0ce64b2f8e57e6b634f686fa">depicture_menu::usecase::backup::create_config_dto</a></div><div class="ttdeci">auto create_config_dto(domain::app::config const &amp;e) -&gt; dto::config_data</div><div class="ttdef"><b>Definition</b> <a href="#l00008">config.cpp:8</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1backup_html_abdcff53881bb37c6cd4cce8bd8385973"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1backup.html#abdcff53881bb37c6cd4cce8bd8385973">depicture_menu::usecase::backup::create_config_entity</a></div><div class="ttdeci">auto create_config_entity(dto::config_data const &amp;d) -&gt; domain::app::config</div><div class="ttdef"><b>Definition</b> <a href="#l00111">config.cpp:111</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_html_aef21ae05476e651e7e1dd16ff96cd6cda334c4a4c42fdb79d7ebc3e73b517e6f8"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase.html#aef21ae05476e651e7e1dd16ff96cd6cda334c4a4c42fdb79d7ebc3e73b517e6f8">depicture_menu::usecase::domain_update_event::none</a></div><div class="ttdeci">@ none</div><div class="ttdef"><b>Definition</b> <a href="domains__notify_8hpp_source.html#l00020">domains_notify.hpp:20</a></div></div>
+<div class="ttc" id="anamespaceids_html"><div class="ttname"><a href="namespaceids.html">ids</a></div><div class="ttdef"><b>Definition</b> <a href="test__compare_8cpp_source.html#l00015">test_compare.cpp:16</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1conv__mapping_1_1converter_html"><div class="ttname"><a href="structdepicture__menu_1_1conv__mapping_1_1converter.html">depicture_menu::conv_mapping::converter</a></div><div class="ttdef"><b>Definition</b> <a href="conv__mapping_8hpp_source.html#l00409">conv_mapping.hpp:410</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1conv__mapping_1_1direct__mapping_html"><div class="ttname"><a href="structdepicture__menu_1_1conv__mapping_1_1direct__mapping.html">depicture_menu::conv_mapping::direct_mapping</a></div><div class="ttdef"><b>Definition</b> <a href="conv__mapping_8hpp_source.html#l00305">conv_mapping.hpp:306</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1models_1_1base_1_1entity__base_html_adce587e64220cc3a3407233c1fc61ba4"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1models_1_1base_1_1entity__base.html#adce587e64220cc3a3407233c1fc61ba4">depicture_menu::domain::models::base::entity_base&lt; V, ID &gt;::entity_id</a></div><div class="ttdeci">auto entity_id() const noexcept</div><div class="ttdef"><b>Definition</b> <a href="model_2entity_8hpp_source.html#l00090">entity.hpp:90</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1models_1_1entity__id__base_html"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1models_1_1entity__id__base.html">depicture_menu::domain::models::entity_id_base</a></div><div class="ttdef"><b>Definition</b> <a href="model_2entity__id_8hpp_source.html#l00054">entity_id.hpp:55</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1config__data_html"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1config__data.html">depicture_menu::usecase::backup::dto::config_data</a></div><div class="ttdef"><b>Definition</b> <a href="backup__data_8hpp_source.html#l00153">backup_data.hpp:154</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_d26f0ed8b287a778d960ad2241e01057.html">src</a></li><li class="navelem"><a href="dir_eb29242f55d2489f6c4d008365c270b7.html">core</a></li><li class="navelem"><a href="dir_43f8aa2529ec47ad37b553a33a2ea717.html">usecase</a></li><li class="navelem"><a href="dir_3df51733557b1db99185f48545fc5193.html">backup</a></li><li class="navelem"><a href="dir_64c5832d0c441ea541f0df7b15cec459.html">convert</a></li><li class="navelem"><a href="config_8cpp.html">config.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

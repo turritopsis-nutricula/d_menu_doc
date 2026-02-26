@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/test/core/usecase/injection_mock.hpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('injection__mock_8hpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">injection_mock.hpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;dddca/aa.hpp&gt;</code><br />
+<code>#include &lt;turtle/mock.hpp&gt;</code><br />
+<code>#include &lt;boost/preprocessor.hpp&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+injection_mock.hpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="injection__mock_8hpp__incl.svg" width="427" height="144"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="injection__mock_8hpp_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:injection_5Fmock_3C_20Tag_20_3E" id="r_injection_5Fmock_3C_20Tag_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structinjection__mock.html">injection_mock&lt; Tag &gt;</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:af53f58f5ce24a77b8c7257ef48330146" id="r_af53f58f5ce24a77b8c7257ef48330146"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#af53f58f5ce24a77b8c7257ef48330146">IMPLEMENT_INJECTION</a>(tag_name)</td></tr>
+<tr class="memitem:ad09eac2d4d1dcc249abd7012893e6d8c" id="r_ad09eac2d4d1dcc249abd7012893e6d8c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ad09eac2d4d1dcc249abd7012893e6d8c">DEFINE_INJECTION</a>(NS_,  tag_name)</td></tr>
+<tr class="memitem:a805b743fd929a1224460557ad6c1f9b8" id="r_a805b743fd929a1224460557ad6c1f9b8"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a805b743fd929a1224460557ad6c1f9b8">INJECTIONS_OP</a>(_,  I_,  data_)</td></tr>
+<tr class="memitem:a79d8c56053e935b95fdbcc68c1ae3641" id="r_a79d8c56053e935b95fdbcc68c1ae3641"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a79d8c56053e935b95fdbcc68c1ae3641">DEFINE_FIXTURE_INJECTIONS</a>(NS_,  TAGS)</td></tr>
+<tr class="memitem:a267721b4a609eb4d72d9fdc31adcbe7d" id="r_a267721b4a609eb4d72d9fdc31adcbe7d"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a267721b4a609eb4d72d9fdc31adcbe7d">ING_ARGS</a>(_,  I_,  SEQ_)</td></tr>
+<tr class="memitem:a9310765f8052309ce1d20167ad4c6db4" id="r_a9310765f8052309ce1d20167ad4c6db4"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a9310765f8052309ce1d20167ad4c6db4">KICK_INJECTION</a>(usecase_functor_,  TAGS)</td></tr>
+<tr class="memitem:a24c569ca4c7d40018e3ea02b79eb9578" id="r_a24c569ca4c7d40018e3ea02b79eb9578"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a24c569ca4c7d40018e3ea02b79eb9578">INJECTION_INVOKE_FIXUTURE</a>( fixuture_name_,  usecase_functor_,  tag_name_space_, ...)</td></tr>
+<tr class="memitem:aa2ffed84b5b116a940c85a2f3032db89" id="r_aa2ffed84b5b116a940c85a2f3032db89"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aa2ffed84b5b116a940c85a2f3032db89">INJ_MOCK</a>(tag_name)</td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">マクロ定義詳解</h2>
+<a id="a79d8c56053e935b95fdbcc68c1ae3641" name="a79d8c56053e935b95fdbcc68c1ae3641"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79d8c56053e935b95fdbcc68c1ae3641">&#9670;&#160;</a></span>DEFINE_FIXTURE_INJECTIONS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFINE_FIXTURE_INJECTIONS</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>NS_</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>TAGS</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">BOOST_PP_REPEAT( BOOST_PP_SEQ_SIZE( TAGS ), <a class="code hl_define" href="#a805b743fd929a1224460557ad6c1f9b8">INJECTIONS_OP</a>, TAGS )</div>
+<div class="ttc" id="ainjection__mock_8hpp_html_a805b743fd929a1224460557ad6c1f9b8"><div class="ttname"><a href="#a805b743fd929a1224460557ad6c1f9b8">INJECTIONS_OP</a></div><div class="ttdeci">#define INJECTIONS_OP(_, I_, data_)</div><div class="ttdef"><b>Definition</b> <a href="injection__mock_8hpp_source.html#l00036">injection_mock.hpp:36</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="injection__mock_8hpp_source.html">injection_mock.hpp</a> の <a class="el" href="injection__mock_8hpp_source.html#l00038">38</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ad09eac2d4d1dcc249abd7012893e6d8c" name="ad09eac2d4d1dcc249abd7012893e6d8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad09eac2d4d1dcc249abd7012893e6d8c">&#9670;&#160;</a></span>DEFINE_INJECTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEFINE_INJECTION</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>NS_</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>tag_name</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line"><a class="code hl_struct" href="structinjection__mock.html">injection_mock&lt; NS_ tag_name &gt;</a> <a class="code hl_define" href="#af53f58f5ce24a77b8c7257ef48330146">IMPLEMENT_INJECTION</a>( tag_name );</div>
+<div class="ttc" id="ainjection__mock_8hpp_html_af53f58f5ce24a77b8c7257ef48330146"><div class="ttname"><a href="#af53f58f5ce24a77b8c7257ef48330146">IMPLEMENT_INJECTION</a></div><div class="ttdeci">#define IMPLEMENT_INJECTION(tag_name)</div><div class="ttdef"><b>Definition</b> <a href="injection__mock_8hpp_source.html#l00030">injection_mock.hpp:30</a></div></div>
+<div class="ttc" id="astructinjection__mock_html"><div class="ttname"><a href="structinjection__mock.html">injection_mock</a></div><div class="ttdef"><b>Definition</b> <a href="injection__mock_8hpp_source.html#l00012">injection_mock.hpp:13</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="injection__mock_8hpp_source.html">injection_mock.hpp</a> の <a class="el" href="injection__mock_8hpp_source.html#l00031">31</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="af53f58f5ce24a77b8c7257ef48330146" name="af53f58f5ce24a77b8c7257ef48330146"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af53f58f5ce24a77b8c7257ef48330146">&#9670;&#160;</a></span>IMPLEMENT_INJECTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IMPLEMENT_INJECTION</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>tag_name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">BOOST_PP_CAT( mock_func_, tag_name )</div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="injection__mock_8hpp_source.html">injection_mock.hpp</a> の <a class="el" href="injection__mock_8hpp_source.html#l00030">30</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a267721b4a609eb4d72d9fdc31adcbe7d" name="a267721b4a609eb4d72d9fdc31adcbe7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a267721b4a609eb4d72d9fdc31adcbe7d">&#9670;&#160;</a></span>ING_ARGS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ING_ARGS</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>_</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>I_</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>SEQ_</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#af53f58f5ce24a77b8c7257ef48330146">IMPLEMENT_INJECTION</a>( BOOST_PP_SEQ_ELEM( I_, SEQ_ ) ).get( )</div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="injection__mock_8hpp_source.html">injection_mock.hpp</a> の <a class="el" href="injection__mock_8hpp_source.html#l00041">41</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aa2ffed84b5b116a940c85a2f3032db89" name="aa2ffed84b5b116a940c85a2f3032db89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2ffed84b5b116a940c85a2f3032db89">&#9670;&#160;</a></span>INJ_MOCK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INJ_MOCK</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>tag_name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line"><a class="code hl_function" href="test__command__line__option_8cpp.html#a8804cd4df220b4dbe58067cd7f91dcbd">MOCK_EXPECT</a>( <a class="code hl_define" href="#af53f58f5ce24a77b8c7257ef48330146">IMPLEMENT_INJECTION</a>( tag_name ).func )</div>
+<div class="ttc" id="atest__command__line__option_8cpp_html_a8804cd4df220b4dbe58067cd7f91dcbd"><div class="ttname"><a href="test__command__line__option_8cpp.html#a8804cd4df220b4dbe58067cd7f91dcbd">MOCK_EXPECT</a></div><div class="ttdeci">MOCK_EXPECT(mock_close).never()</div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="injection__mock_8hpp_source.html">injection_mock.hpp</a> の <a class="el" href="injection__mock_8hpp_source.html#l00073">73</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a24c569ca4c7d40018e3ea02b79eb9578" name="a24c569ca4c7d40018e3ea02b79eb9578"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24c569ca4c7d40018e3ea02b79eb9578">&#9670;&#160;</a></span>INJECTION_INVOKE_FIXUTURE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INJECTION_INVOKE_FIXUTURE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>fixuture_name_</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>usecase_functor_</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>tag_name_space_</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em></em></span>...&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line"><span class="keyword">struct </span>fixuture_name_                                                      \</div>
+<div class="line">{                                                                          \</div>
+<div class="line">    DEFINE_FIXTURE_INJECTIONS(                                             \</div>
+<div class="line">        tag_name_space_, BOOST_PP_VARIADIC_TO_SEQ( __VA_ARGS__ )           \</div>
+<div class="line">    )                                                                      \</div>
+<div class="line">    void                                                                   \</div>
+<div class="line">    kick_invoke( )                                                         \</div>
+<div class="line">    {                                                                      \</div>
+<div class="line">        KICK_INJECTION(                                                    \</div>
+<div class="line">            usecase_functor_, BOOST_PP_VARIADIC_TO_SEQ( __VA_ARGS__ )      \</div>
+<div class="line">        )                                                                  \</div>
+<div class="line">    }                                                                      \</div>
+<div class="line">    ~fixuture_name_( )                                                     \</div>
+<div class="line">    {                                                                      \</div>
+<div class="line">        kick_invoke( );                                                    \</div>
+<div class="line">        mock::verify( );                                                   \</div>
+<div class="line">    }                                                                      \</div>
+<div class="line">};</div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="injection__mock_8hpp_source.html">injection_mock.hpp</a> の <a class="el" href="injection__mock_8hpp_source.html#l00050">50</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a805b743fd929a1224460557ad6c1f9b8" name="a805b743fd929a1224460557ad6c1f9b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a805b743fd929a1224460557ad6c1f9b8">&#9670;&#160;</a></span>INJECTIONS_OP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INJECTIONS_OP</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>_</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>I_</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>data_</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#ad09eac2d4d1dcc249abd7012893e6d8c">DEFINE_INJECTION</a>( <a class="code hl_namespace" href="namespacedepicture__menu_1_1usecase_1_1tag.html">du::tag</a>::, BOOST_PP_SEQ_ELEM( I_, data_ ) )</div>
+<div class="ttc" id="ainjection__mock_8hpp_html_ad09eac2d4d1dcc249abd7012893e6d8c"><div class="ttname"><a href="#ad09eac2d4d1dcc249abd7012893e6d8c">DEFINE_INJECTION</a></div><div class="ttdeci">#define DEFINE_INJECTION(NS_, tag_name)</div><div class="ttdef"><b>Definition</b> <a href="injection__mock_8hpp_source.html#l00031">injection_mock.hpp:31</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1tag_html"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1tag.html">depicture_menu::usecase::tag</a></div><div class="ttdef"><b>Definition</b> <a href="show__app__option__window_8hpp_source.html#l00006">show_app_option_window.hpp:7</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="injection__mock_8hpp_source.html">injection_mock.hpp</a> の <a class="el" href="injection__mock_8hpp_source.html#l00036">36</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a9310765f8052309ce1d20167ad4c6db4" name="a9310765f8052309ce1d20167ad4c6db4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9310765f8052309ce1d20167ad4c6db4">&#9670;&#160;</a></span>KICK_INJECTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KICK_INJECTION</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>usecase_functor_</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>TAGS</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">aa::invoke(                                                                \</div>
+<div class="line">    usecase_functor_,                                                      \</div>
+<div class="line">    BOOST_PP_ENUM( BOOST_PP_SEQ_SIZE( TAGS ), <a class="code hl_define" href="#a267721b4a609eb4d72d9fdc31adcbe7d">ING_ARGS</a>, TAGS )             \</div>
+<div class="line">);</div>
+<div class="ttc" id="ainjection__mock_8hpp_html_a267721b4a609eb4d72d9fdc31adcbe7d"><div class="ttname"><a href="#a267721b4a609eb4d72d9fdc31adcbe7d">ING_ARGS</a></div><div class="ttdeci">#define ING_ARGS(_, I_, SEQ_)</div><div class="ttdef"><b>Definition</b> <a href="injection__mock_8hpp_source.html#l00041">injection_mock.hpp:41</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="injection__mock_8hpp_source.html">injection_mock.hpp</a> の <a class="el" href="injection__mock_8hpp_source.html#l00043">43</a> 行目に定義があります。</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_0281b912293b0150165693b325cfab25.html">test</a></li><li class="navelem"><a href="dir_13bb975b5c6918e0cdb932e8baceeae5.html">core</a></li><li class="navelem"><a href="dir_21066f585cae410d48f5ec08b14be068.html">usecase</a></li><li class="navelem"><a href="injection__mock_8hpp.html">injection_mock.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

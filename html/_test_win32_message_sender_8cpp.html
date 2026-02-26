@@ -1,0 +1,467 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/test/win32/TestWin32MessageSender.cpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_test_win32_message_sender_8cpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">TestWin32MessageSender.cpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;config.hpp&quot;</code><br />
+<code>#include &lt;boost/test/data/test_case.hpp&gt;</code><br />
+<code>#include &lt;boost/test/unit_test.hpp&gt;</code><br />
+<code>#include &quot;<a class="el" href="win32_2win32__message__sender_8hpp_source.html">win32/win32_message_sender.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ipc__queue_8hpp_source.html">ipc_queue.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="win32__message_8hpp_source.html">win32_message.hpp</a>&quot;</code><br />
+<code>#include &lt;windows.h&gt;</code><br />
+<code>#include &lt;boost/leaf.hpp&gt;</code><br />
+<code>#include &lt;chrono&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;thread&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+TestWin32MessageSender.cpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="_test_win32_message_sender_8cpp__incl.svg" width="100%" height="476"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+<p><a href="_test_win32_message_sender_8cpp_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:message_5Ftest_5Ffixture" id="r_message_5Ftest_5Ffixture"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structmessage__test__fixture.html">message_test_fixture</a></td></tr>
+<tr class="memitem:notepad_5Ffixture" id="r_notepad_5Ffixture"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structnotepad__fixture.html">notepad_fixture</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a2842cabcb6634ddd26fcc8baa33df559" id="r_a2842cabcb6634ddd26fcc8baa33df559"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a2842cabcb6634ddd26fcc8baa33df559">BOOST_LEAF_CFG_WIN32</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:a139f00d2466d591f60b8d6a73c8273f1" id="r_a139f00d2466d591f60b8d6a73c8273f1"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a139f00d2466d591f60b8d6a73c8273f1">BOOST_TEST_DYN_LINK</a></td></tr>
+<tr class="memitem:ab340a5e76af466a5f20ec5500d30a80b" id="r_ab340a5e76af466a5f20ec5500d30a80b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab340a5e76af466a5f20ec5500d30a80b">BOOST_TEST_MAIN</a></td></tr>
+<tr class="memitem:a66c6b83f681a220979098643fbcd3aa3" id="r_a66c6b83f681a220979098643fbcd3aa3"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a66c6b83f681a220979098643fbcd3aa3">MESSAGE</a>(mem_)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a28053793a7db8aefa46bc5982aa92c90" id="r_a28053793a7db8aefa46bc5982aa92c90"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a28053793a7db8aefa46bc5982aa92c90">wchar_to_string</a> (const wchar_t *in_wstr)</td></tr>
+<tr class="memitem:a7fb92416ea8ab76fc60df1ecaf425ab9" id="r_a7fb92416ea8ab76fc60df1ecaf425ab9"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a7fb92416ea8ab76fc60df1ecaf425ab9">format_error_message</a> (DWORD errn)</td></tr>
+<tr class="memitem:a0ba4ff3ec435915cea4dd0214e61051d" id="r_a0ba4ff3ec435915cea4dd0214e61051d"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a0ba4ff3ec435915cea4dd0214e61051d">BOOST_AUTO_TEST_CASE</a> (constract)</td></tr>
+<tr class="memitem:af72b86077179af64a0b2151e8d1a0f3a" id="r_af72b86077179af64a0b2151e8d1a0f3a"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#af72b86077179af64a0b2151e8d1a0f3a">BOOST_FIXTURE_TEST_CASE</a> (fixture_test, <a class="el" href="structmessage__test__fixture.html">message_test_fixture</a>)</td></tr>
+<tr class="memitem:a71e7a72c253a1f54d7b79fd21d60c744" id="r_a71e7a72c253a1f54d7b79fd21d60c744"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a71e7a72c253a1f54d7b79fd21d60c744">BOOST_AUTO_TEST_CASE</a> (test_hwnd_not_running)</td></tr>
+<tr class="memitem:aa816833a7f90635f6ea957131ad42def" id="r_aa816833a7f90635f6ea957131ad42def"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aa816833a7f90635f6ea957131ad42def">BOOST_FIXTURE_TEST_CASE</a> (test_postmessage, <a class="el" href="structmessage__test__fixture.html">message_test_fixture</a>)</td></tr>
+<tr class="memitem:a83cf73cd7adacff519e3b811d207f251" id="r_a83cf73cd7adacff519e3b811d207f251"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a83cf73cd7adacff519e3b811d207f251">BOOST_AUTO_TEST_CASE</a> (notepad_search_edit)</td></tr>
+<tr class="memitem:a3c3da837ba1398c1fd43a7a9cd2bd930" id="r_a3c3da837ba1398c1fd43a7a9cd2bd930"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a3c3da837ba1398c1fd43a7a9cd2bd930">BOOST_FIXTURE_TEST_CASE</a> (test_code, <a class="el" href="structmessage__test__fixture.html">message_test_fixture</a>)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+変数</h2></td></tr>
+<tr class="memitem:aec398e3f93231ae3851d1502ff6fc53e" id="r_aec398e3f93231ae3851d1502ff6fc53e"><td class="memItemLeft">constexpr wchar_t const  *&#160;</td><td class="memItemRight"><a class="el" href="#aec398e3f93231ae3851d1502ff6fc53e">test_recive_exe_name</a> = L&quot;win32_message_sender_test_helper.exe&quot;</td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">マクロ定義詳解</h2>
+<a id="a2842cabcb6634ddd26fcc8baa33df559" name="a2842cabcb6634ddd26fcc8baa33df559"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2842cabcb6634ddd26fcc8baa33df559">&#9670;&#160;</a></span>BOOST_LEAF_CFG_WIN32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOOST_LEAF_CFG_WIN32&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_win32_message_sender_8cpp_source.html">TestWin32MessageSender.cpp</a> の <a class="el" href="_test_win32_message_sender_8cpp_source.html#l00002">2</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a139f00d2466d591f60b8d6a73c8273f1" name="a139f00d2466d591f60b8d6a73c8273f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a139f00d2466d591f60b8d6a73c8273f1">&#9670;&#160;</a></span>BOOST_TEST_DYN_LINK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOOST_TEST_DYN_LINK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_win32_message_sender_8cpp_source.html">TestWin32MessageSender.cpp</a> の <a class="el" href="_test_win32_message_sender_8cpp_source.html#l00003">3</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ab340a5e76af466a5f20ec5500d30a80b" name="ab340a5e76af466a5f20ec5500d30a80b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab340a5e76af466a5f20ec5500d30a80b">&#9670;&#160;</a></span>BOOST_TEST_MAIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOOST_TEST_MAIN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_win32_message_sender_8cpp_source.html">TestWin32MessageSender.cpp</a> の <a class="el" href="_test_win32_message_sender_8cpp_source.html#l00004">4</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a66c6b83f681a220979098643fbcd3aa3" name="a66c6b83f681a220979098643fbcd3aa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66c6b83f681a220979098643fbcd3aa3">&#9670;&#160;</a></span>MESSAGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MESSAGE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>mem_</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">BOOST_TEST_MESSAGE( #mem_ &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; gui_info.mem_ )</div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="_test_win32_message_sender_8cpp_source.html">TestWin32MessageSender.cpp</a> の <a class="el" href="_test_win32_message_sender_8cpp_source.html#l00354">354</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="_test_win32_message_sender_8cpp_source.html#l00357">BOOST_AUTO_TEST_CASE()</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="a0ba4ff3ec435915cea4dd0214e61051d" name="a0ba4ff3ec435915cea4dd0214e61051d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ba4ff3ec435915cea4dd0214e61051d">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">constract</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_win32_message_sender_8cpp_source.html">TestWin32MessageSender.cpp</a> の <a class="el" href="_test_win32_message_sender_8cpp_source.html#l00278">278</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="_test_backup_json_8cpp_source.html#l00203">BOOST_AUTO_TEST_CASE()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="_test_win32_message_sender_8cpp_a0ba4ff3ec435915cea4dd0214e61051d_cgraph.svg" width="100%" height="496"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a83cf73cd7adacff519e3b811d207f251" name="a83cf73cd7adacff519e3b811d207f251"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83cf73cd7adacff519e3b811d207f251">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">notepad_search_edit</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_win32_message_sender_8cpp_source.html">TestWin32MessageSender.cpp</a> の <a class="el" href="_test_win32_message_sender_8cpp_source.html#l00357">357</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="win32_2win32__message__sender_8hpp_source.html#l00189">depicture_menu::win32::win32_message_sender::enum_window_handle()</a>, <a class="el" href="_test_win32_message_sender_8cpp_source.html#l00252">format_error_message()</a>, <a class="el" href="win32_2win32__message__sender_8hpp_source.html#l00181">depicture_menu::win32::win32_message_sender::hwnd()</a>, <a class="el" href="_test_win32_message_sender_8cpp_source.html#l00354">MESSAGE</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="_test_win32_message_sender_8cpp_a83cf73cd7adacff519e3b811d207f251_cgraph.svg" width="100%" height="490"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a71e7a72c253a1f54d7b79fd21d60c744" name="a71e7a72c253a1f54d7b79fd21d60c744"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71e7a72c253a1f54d7b79fd21d60c744">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">test_hwnd_not_running</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_win32_message_sender_8cpp_source.html">TestWin32MessageSender.cpp</a> の <a class="el" href="_test_win32_message_sender_8cpp_source.html#l00290">290</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="win32_2win32__message__sender_8hpp_source.html#l00181">depicture_menu::win32::win32_message_sender::hwnd()</a>, <a class="el" href="_test_win32_message_sender_8cpp_source.html#l00030">test_recive_exe_name</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="_test_win32_message_sender_8cpp_a71e7a72c253a1f54d7b79fd21d60c744_cgraph.svg" width="464" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="af72b86077179af64a0b2151e8d1a0f3a" name="af72b86077179af64a0b2151e8d1a0f3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af72b86077179af64a0b2151e8d1a0f3a">&#9670;&#160;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">fixture_test</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmessage__test__fixture.html">message_test_fixture</a></td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_win32_message_sender_8cpp_source.html">TestWin32MessageSender.cpp</a> の <a class="el" href="_test_win32_message_sender_8cpp_source.html#l00283">283</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a3c3da837ba1398c1fd43a7a9cd2bd930" name="a3c3da837ba1398c1fd43a7a9cd2bd930"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c3da837ba1398c1fd43a7a9cd2bd930">&#9670;&#160;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">test_code</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmessage__test__fixture.html">message_test_fixture</a></td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_win32_message_sender_8cpp_source.html">TestWin32MessageSender.cpp</a> の <a class="el" href="_test_win32_message_sender_8cpp_source.html#l00568">568</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="win32_2win32__message__sender_8hpp_source.html#l00120">depicture_menu::win32::process::enum_toplevel_window_handle()</a>, <a class="el" href="win32_2win32__message__sender_8hpp_source.html#l00050">depicture_menu::win32::process::detail_process::get_proc_handle_ptr()</a>, <a class="el" href="_test_config_view_presenter_8cpp.html#a21b35e47ac3d8358063ede6968e59eaa">name()</a>, <a class="el" href="win32_2win32__message__sender_8hpp_source.html#l00079">depicture_menu::win32::process::query_process_image_name()</a>, <a class="el" href="_test_win32_message_sender_8cpp_source.html#l00030">test_recive_exe_name</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="_test_win32_message_sender_8cpp_a3c3da837ba1398c1fd43a7a9cd2bd930_cgraph.svg" width="444" height="286"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aa816833a7f90635f6ea957131ad42def" name="aa816833a7f90635f6ea957131ad42def"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa816833a7f90635f6ea957131ad42def">&#9670;&#160;</a></span>BOOST_FIXTURE_TEST_CASE() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_FIXTURE_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">test_postmessage</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmessage__test__fixture.html">message_test_fixture</a></td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_win32_message_sender_8cpp_source.html">TestWin32MessageSender.cpp</a> の <a class="el" href="_test_win32_message_sender_8cpp_source.html#l00298">298</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST()</a>, <a class="el" href="_test_config_view_presenter_8cpp.html#a7f6be0f696e3b7a5113c43a07d67e9cd">BOOST_TEST_REQUIRE()</a>, <a class="el" href="win32_2win32__message__sender_8hpp_source.html#l00189">depicture_menu::win32::win32_message_sender::enum_window_handle()</a>, <a class="el" href="_test_win32_message_sender_8cpp_source.html#l00252">format_error_message()</a>, <a class="el" href="win32_2win32__message__sender_8hpp_source.html#l00181">depicture_menu::win32::win32_message_sender::hwnd()</a>, <a class="el" href="win32_2win32__message__sender_8hpp_source.html#l00175">depicture_menu::win32::win32_message_sender::process_id()</a>, <a class="el" href="_test_win32_message_sender_8cpp_source.html#l00030">test_recive_exe_name</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="_test_win32_message_sender_8cpp_aa816833a7f90635f6ea957131ad42def_cgraph.svg" width="100%" height="578"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a7fb92416ea8ab76fc60df1ecaf425ab9" name="a7fb92416ea8ab76fc60df1ecaf425ab9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fb92416ea8ab76fc60df1ecaf425ab9">&#9670;&#160;</a></span>format_error_message()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string format_error_message </td>
+          <td>(</td>
+          <td class="paramtype">DWORD</td>          <td class="paramname"><span class="paramname"><em>errn</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_win32_message_sender_8cpp_source.html">TestWin32MessageSender.cpp</a> の <a class="el" href="_test_win32_message_sender_8cpp_source.html#l00252">252</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="test___test_list___unmanaged_access_8cpp_source.html#l00010">buffer</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="_test_win32_message_sender_8cpp_source.html#l00357">BOOST_AUTO_TEST_CASE()</a>, <a class="el" href="_test_win32_message_sender_8cpp_source.html#l00298">BOOST_FIXTURE_TEST_CASE()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="_test_win32_message_sender_8cpp_a7fb92416ea8ab76fc60df1ecaf425ab9_icgraph.svg" width="428" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a28053793a7db8aefa46bc5982aa92c90" name="a28053793a7db8aefa46bc5982aa92c90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28053793a7db8aefa46bc5982aa92c90">&#9670;&#160;</a></span>wchar_to_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string wchar_to_string </td>
+          <td>(</td>
+          <td class="paramtype">const wchar_t *</td>          <td class="paramname"><span class="paramname"><em>in_wstr</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_win32_message_sender_8cpp_source.html">TestWin32MessageSender.cpp</a> の <a class="el" href="_test_win32_message_sender_8cpp_source.html#l00241">241</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">変数詳解</h2>
+<a id="aec398e3f93231ae3851d1502ff6fc53e" name="aec398e3f93231ae3851d1502ff6fc53e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec398e3f93231ae3851d1502ff6fc53e">&#9670;&#160;</a></span>test_recive_exe_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wchar_t const* test_recive_exe_name = L&quot;win32_message_sender_test_helper.exe&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_win32_message_sender_8cpp_source.html">TestWin32MessageSender.cpp</a> の <a class="el" href="_test_win32_message_sender_8cpp_source.html#l00029">29</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="_test_win32_message_sender_8cpp_source.html#l00290">BOOST_AUTO_TEST_CASE()</a>, <a class="el" href="_test_win32_message_sender_8cpp_source.html#l00568">BOOST_FIXTURE_TEST_CASE()</a>, <a class="el" href="_test_win32_message_sender_8cpp_source.html#l00298">BOOST_FIXTURE_TEST_CASE()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_0281b912293b0150165693b325cfab25.html">test</a></li><li class="navelem"><a href="dir_51c7c95231b50db2eececad90cf11611.html">win32</a></li><li class="navelem"><a href="_test_win32_message_sender_8cpp.html">TestWin32MessageSender.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

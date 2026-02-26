@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/src/core/domain/service/create_command_domain_service.hpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('create__command__domain__service_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">create_command_domain_service.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="create__command__domain__service_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef SRC_CORE_DOMAIN_SERVICE_CREATE_COMMAND_DOMAIN_SERVICE_HPP_</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define SRC_CORE_DOMAIN_SERVICE_CREATE_COMMAND_DOMAIN_SERVICE_HPP_</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="crud__repository_8hpp.html">core/domain/crud_repository.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="domain_2model_2app_2config_8hpp.html">core/domain/model/app/config.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="buildin__command__parameter_8hpp.html">core/domain/model/command/buildin/buildin_command_parameter.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="command_8hpp.html">core/domain/model/command/command.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1domain_1_1services.html">depicture_menu::domain::services</a></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html">   12</a></span><span class="keyword">class </span><a class="code hl_function" href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html#ae05be5568810d6e2964df2d82fbdf3dd">create_command_domain_service</a></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html#a9d8ad022921bef1b296be996016fb3de">   15</a></span>    <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1commands_1_1command.html">domain::commands::command</a> <a class="code hl_variable" href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html#a9d8ad022921bef1b296be996016fb3de">article_</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">template</span> &lt; commands::buildin::concepts::buildin_command_parametarize P &gt;</div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html#ae05be5568810d6e2964df2d82fbdf3dd">   19</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html#ae05be5568810d6e2964df2d82fbdf3dd">create_command_domain_service</a>(</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1app_1_1config.html">app::config</a> <span class="keyword">const</span>&amp;                                            cfg,</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1crud__repository__interface.html">domain::crud_repository_interface&lt; commands::invoker &gt;</a> <span class="keyword">const</span>&amp; inv_repos,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        P <span class="keyword">const</span>&amp;                                                      p</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    )</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        : <a class="code hl_variable" href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html#a9d8ad022921bef1b296be996016fb3de">article_</a>(</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>              <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">domain</a>::<a class="code hl_namespace" href="namespacedepicture__menu_1_1domain_1_1commands.html">commands</a>::command_id::random_id( ),</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>              p,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>              [ &amp; ]( )</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>              {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                  <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1commands.html#a1c0ac1fd1e425dc8356866408432c4e1">domain::commands::invoker_id</a> id( <a class="code hl_variable" href="namespacedepicture__menu_1_1domain_1_1id__tags.html#af11f0e793ab4cb991715509986b3bf60">id_tags::nil_uuid</a> );</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                  <span class="keywordflow">if</span> ( domain::commands::command_kind::user_command</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                       != p.get_application_command_kind( ) )</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                      <span class="keywordtype">id</span> = cfg.<a class="code hl_function" href="classdepicture__menu_1_1domain_1_1app_1_1config.html#adf2d413409d4c579876d7294bf508573">get_application_command_invoker</a>(</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                          p.get_application_command_kind( )</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                      );</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                  <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                      <span class="keywordtype">id</span> = cfg.<a class="code hl_function" href="classdepicture__menu_1_1domain_1_1app_1_1config.html#a021964283ce369d91acc01f581eddf56">get_common_command_invoker_id</a>(</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                          p.get_command_kind( )</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                      );</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                  <span class="keyword">auto</span> opt = inv_repos.<a class="code hl_function" href="classdepicture__menu_1_1domain_1_1crud__repository__interface.html#ac170ece1adbf7138a6322bba5beea167">read</a>( <span class="keywordtype">id</span> );</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                  <span class="keywordflow">if</span> ( opt )</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                      <span class="keywordflow">return</span> *opt;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                  <span class="keywordflow">return</span> <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1commands_1_1invoker.html">domain::commands::invoker</a>(</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                      <a class="code hl_function" href="structdepicture__menu_1_1domain_1_1models_1_1entity__id__base.html#a71866154646981ed1213a76e8e7c9d6b">domain::commands::invoker_id::nil_id</a>( )</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                  );</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>              }( )</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>          )</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
+</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html#a0fef3f47886db8eb7acc32d552cc186b">   53</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html#a0fef3f47886db8eb7acc32d552cc186b">create_command_domain_service</a>(</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html#ae05be5568810d6e2964df2d82fbdf3dd">create_command_domain_service</a> <span class="keyword">const</span>&amp;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    ) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html#afffb978f1f6ec57995ad0fdf072a3ab2">   57</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html#afffb978f1f6ec57995ad0fdf072a3ab2">create_command_domain_service</a>( <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html#ae05be5568810d6e2964df2d82fbdf3dd">create_command_domain_service</a>&amp;&amp; ) noexcept</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        = default;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html#ae05be5568810d6e2964df2d82fbdf3dd">create_command_domain_service</a>&amp;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html#a44072fd8b200120ab19cf3cf9f8eb8ea">   60</a></span>    operator=( <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html#ae05be5568810d6e2964df2d82fbdf3dd">create_command_domain_service</a> const&amp; ) noexcept</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        = delete;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html#ae05be5568810d6e2964df2d82fbdf3dd">create_command_domain_service</a>&amp;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html#a7fbb4004eb6b7b517769bd7471e81ed2">   63</a></span>    operator=( <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html#ae05be5568810d6e2964df2d82fbdf3dd">create_command_domain_service</a>&amp;&amp; ) noexcept</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        = default;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    auto</div>
+<div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html#a2f09328b402370565a47ba74be843a49">   67</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html#a2f09328b402370565a47ba74be843a49">result</a>( )<span class="keyword"> const</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html#a9d8ad022921bef1b296be996016fb3de">article_</a>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    }</div>
+</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00073" data-start="{" data-end="}">
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html#a19bcd4dc063b34275d59b559df6b7fde">   73</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html#a19bcd4dc063b34275d59b559df6b7fde">update_config</a>( <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1app_1_1config.html">app::config</a>&amp; cfg )<span class="keyword"> const</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        cfg.add_command_id( <a class="code hl_variable" href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html#a9d8ad022921bef1b296be996016fb3de">article_</a>.entity_id( ) );</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
+</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>};</div>
+</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}    <span class="comment">// namespace depicture_menu::domain::services</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_CORE_DOMAIN_SERVICE_CREATE_COMMAND_DOMAIN_SERVICE_HPP_</span></div>
+<div class="ttc" id="abuildin__command__parameter_8hpp_html"><div class="ttname"><a href="buildin__command__parameter_8hpp.html">buildin_command_parameter.hpp</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1app_1_1config_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1app_1_1config.html">depicture_menu::domain::app::config</a></div><div class="ttdef"><b>Definition</b> <a href="domain_2model_2app_2config_8hpp_source.html#l00052">config.hpp:53</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1app_1_1config_html_a021964283ce369d91acc01f581eddf56"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1app_1_1config.html#a021964283ce369d91acc01f581eddf56">depicture_menu::domain::app::config::get_common_command_invoker_id</a></div><div class="ttdeci">commands::invoker_id get_common_command_invoker_id(commands::common_command_kind k) const</div><div class="ttdef"><b>Definition</b> <a href="domain_2model_2app_2config_8hpp_source.html#l00115">config.hpp:115</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1app_1_1config_html_adf2d413409d4c579876d7294bf508573"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1app_1_1config.html#adf2d413409d4c579876d7294bf508573">depicture_menu::domain::app::config::get_application_command_invoker</a></div><div class="ttdeci">commands::invoker_id get_application_command_invoker(commands::command_kind k) const</div><div class="ttdef"><b>Definition</b> <a href="domain_2model_2app_2config_8hpp_source.html#l00096">config.hpp:96</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1commands_1_1command_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1commands_1_1command.html">depicture_menu::domain::commands::command</a></div><div class="ttdef"><b>Definition</b> <a href="command_8hpp_source.html#l00036">command.hpp:38</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1commands_1_1invoker_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1commands_1_1invoker.html">depicture_menu::domain::commands::invoker</a></div><div class="ttdef"><b>Definition</b> <a href="invoker_8hpp_source.html#l00027">invoker.hpp:29</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1crud__repository__interface_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1crud__repository__interface.html">depicture_menu::domain::crud_repository_interface</a></div><div class="ttdef"><b>Definition</b> <a href="crud__repository_8hpp_source.html#l00036">crud_repository.hpp:38</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1crud__repository__interface_html_ac170ece1adbf7138a6322bba5beea167"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1crud__repository__interface.html#ac170ece1adbf7138a6322bba5beea167">depicture_menu::domain::crud_repository_interface::read</a></div><div class="ttdeci">virtual std::optional&lt; aggregate_t &gt; read(id_t) const =0</div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service_html_a0fef3f47886db8eb7acc32d552cc186b"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html#a0fef3f47886db8eb7acc32d552cc186b">depicture_menu::domain::services::create_command_domain_service::create_command_domain_service</a></div><div class="ttdeci">create_command_domain_service(create_command_domain_service const &amp;) noexcept=delete</div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service_html_a19bcd4dc063b34275d59b559df6b7fde"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html#a19bcd4dc063b34275d59b559df6b7fde">depicture_menu::domain::services::create_command_domain_service::update_config</a></div><div class="ttdeci">void update_config(app::config &amp;cfg) const</div><div class="ttdef"><b>Definition</b> <a href="#l00073">create_command_domain_service.hpp:73</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service_html_a2f09328b402370565a47ba74be843a49"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html#a2f09328b402370565a47ba74be843a49">depicture_menu::domain::services::create_command_domain_service::result</a></div><div class="ttdeci">auto result() const</div><div class="ttdef"><b>Definition</b> <a href="#l00067">create_command_domain_service.hpp:67</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service_html_a9d8ad022921bef1b296be996016fb3de"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html#a9d8ad022921bef1b296be996016fb3de">depicture_menu::domain::services::create_command_domain_service::article_</a></div><div class="ttdeci">domain::commands::command article_</div><div class="ttdef"><b>Definition</b> <a href="#l00015">create_command_domain_service.hpp:15</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service_html_ae05be5568810d6e2964df2d82fbdf3dd"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html#ae05be5568810d6e2964df2d82fbdf3dd">depicture_menu::domain::services::create_command_domain_service::create_command_domain_service</a></div><div class="ttdeci">create_command_domain_service(app::config const &amp;cfg, domain::crud_repository_interface&lt; commands::invoker &gt; const &amp;inv_repos, P const &amp;p)</div><div class="ttdef"><b>Definition</b> <a href="#l00019">create_command_domain_service.hpp:19</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service_html_afffb978f1f6ec57995ad0fdf072a3ab2"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html#afffb978f1f6ec57995ad0fdf072a3ab2">depicture_menu::domain::services::create_command_domain_service::create_command_domain_service</a></div><div class="ttdeci">create_command_domain_service(create_command_domain_service &amp;&amp;) noexcept=default</div></div>
+<div class="ttc" id="acommand_8hpp_html"><div class="ttname"><a href="command_8hpp.html">command.hpp</a></div></div>
+<div class="ttc" id="acrud__repository_8hpp_html"><div class="ttname"><a href="crud__repository_8hpp.html">crud_repository.hpp</a></div></div>
+<div class="ttc" id="adomain_2model_2app_2config_8hpp_html"><div class="ttname"><a href="domain_2model_2app_2config_8hpp.html">config.hpp</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1commands_html"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1commands.html">depicture_menu::domain::commands</a></div><div class="ttdef"><b>Definition</b> <a href="application__command__arg_8hpp_source.html#l00007">application_command_arg.hpp:8</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1commands_html_a1c0ac1fd1e425dc8356866408432c4e1"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1commands.html#a1c0ac1fd1e425dc8356866408432c4e1">depicture_menu::domain::commands::invoker_id</a></div><div class="ttdeci">models::entity_id_base&lt; detail_commands::invoker_id_tag &gt; invoker_id</div><div class="ttdef"><b>Definition</b> <a href="command__ids_8hpp_source.html#l00019">command_ids.hpp:19</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1id__tags_html_af11f0e793ab4cb991715509986b3bf60"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1id__tags.html#af11f0e793ab4cb991715509986b3bf60">depicture_menu::domain::id_tags::nil_uuid</a></div><div class="ttdeci">constexpr nil_uuid_t nil_uuid</div><div class="ttdef"><b>Definition</b> <a href="model_2entity__id_8hpp_source.html#l00030">entity_id.hpp:30</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1services_html"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1services.html">depicture_menu::domain::services</a></div><div class="ttdef"><b>Definition</b> <a href="action__default__name__update__service_8hpp_source.html#l00008">action_default_name_update_service.hpp:9</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_html"><div class="ttname"><a href="namespacedepicture__menu_1_1domain.html">depicture_menu::domain</a></div><div class="ttdef"><b>Definition</b> <a href="colors_8hpp_source.html#l00006">colors.hpp:7</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1models_1_1entity__id__base_html_a71866154646981ed1213a76e8e7c9d6b"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1models_1_1entity__id__base.html#a71866154646981ed1213a76e8e7c9d6b">depicture_menu::domain::models::entity_id_base&lt; detail_commands::invoker_id_tag &gt;::nil_id</a></div><div class="ttdeci">static constexpr entity_id_base nil_id()</div><div class="ttdef"><b>Definition</b> <a href="model_2entity__id_8hpp_source.html#l00094">entity_id.hpp:94</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_d26f0ed8b287a778d960ad2241e01057.html">src</a></li><li class="navelem"><a href="dir_eb29242f55d2489f6c4d008365c270b7.html">core</a></li><li class="navelem"><a href="dir_4099da298ded5c89b37f083ec42d8d40.html">domain</a></li><li class="navelem"><a href="dir_89ed77ae2c92ff877b5c799b7aed8b77.html">service</a></li><li class="navelem"><a href="create__command__domain__service_8hpp.html">create_command_domain_service.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

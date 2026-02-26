@@ -1,0 +1,471 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/src/core/cs_binding/macro/csharp_shared_load.hpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('csharp__shared__load_8hpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">csharp_shared_load.hpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="add__cpp__expand_8hpp_source.html">entrys/add_cpp_expand.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="anci__string__property_8hpp_source.html">entrys/anci_string_property.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ansci__string_8hpp_source.html">entrys/ansci_string.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="binding__property_8hpp_source.html">entrys/binding_property.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="color__property_8hpp_source.html">entrys/color_property.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="command__entry_8hpp_source.html">entrys/command_entry.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="csharp__binding_8hpp_source.html">entrys/csharp_binding.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="decl__only_8hpp_source.html">entrys/decl_only.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="enum__property__entry_8hpp_source.html">entrys/enum_property_entry.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="event__entry_8hpp_source.html">entrys/event_entry.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="list__entry_8hpp_source.html">entrys/list_entry.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="notify__changed_8hpp_source.html">entrys/notify_changed.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="public__method_8hpp_source.html">entrys/public_method.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="resource__base_8hpp_source.html">entrys/resource_base.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="struct__property_8hpp_source.html">entrys/struct_property.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="time__duration__property__entry_8hpp_source.html">entrys/time_duration_property_entry.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="uuid__entry_8hpp_source.html">entrys/uuid_entry.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="uuid__property_8hpp_source.html">entrys/uuid_property.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="view__create__event__entry_8hpp_source.html">entrys/view_create_event_entry.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="wide__string__property_8hpp_source.html">entrys/wide_string_property.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="entry_8hpp_source.html">detail/entry.hpp</a>&quot;</code><br />
+<code>#include &lt;boost/preprocessor.hpp&gt;</code><br />
+<code>#include &quot;<a class="el" href="cpp_2load_8hpp_source.html">detail/cpp/load.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="class__define_8hpp_source.html">detail/class_define.hpp</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+csharp_shared_load.hpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="csharp__shared__load_8hpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="csharp__shared__load_8hpp__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+<p><a href="csharp__shared__load_8hpp_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a7338bf6d036118e3193f5708b72a31be" id="r_a7338bf6d036118e3193f5708b72a31be"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a7338bf6d036118e3193f5708b72a31be">CS_CLASS_DEF</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:a8e0f4efde0e9674b69ee1b27cb9372e1" id="r_a8e0f4efde0e9674b69ee1b27cb9372e1"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a8e0f4efde0e9674b69ee1b27cb9372e1">DPM_CPP_DEF</a></td></tr>
+<tr class="memitem:ad51c2b4ecd4e8ccbc0e1960ae343dfaf" id="r_ad51c2b4ecd4e8ccbc0e1960ae343dfaf"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ad51c2b4ecd4e8ccbc0e1960ae343dfaf">DPM_CPP_DEPLOY_DECL_ONLY</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:a65498c767651c1396a0e3d0a913d603c" id="r_a65498c767651c1396a0e3d0a913d603c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a65498c767651c1396a0e3d0a913d603c">DPM_CPP_DEPLOY_DEFINE_ONLY</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:a187704db50f9d09595653d06f74a305b" id="r_a187704db50f9d09595653d06f74a305b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a187704db50f9d09595653d06f74a305b">DPM_CPP_HEADER_EXPAND</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:a204ac5ab399875e0db21eaa5431f3991" id="r_a204ac5ab399875e0db21eaa5431f3991"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a204ac5ab399875e0db21eaa5431f3991">DPM_CSHARP_EXPAND</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:af91ed3c0885d55b124e6e5e754a9f782" id="r_af91ed3c0885d55b124e6e5e754a9f782"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#af91ed3c0885d55b124e6e5e754a9f782">DPM_DEFINE_ENTRY_MACRO</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:abe1c6f0ae70c792b0607dd9c42e777e3" id="r_abe1c6f0ae70c792b0607dd9c42e777e3"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#abe1c6f0ae70c792b0607dd9c42e777e3">DPM_DEFINE_VOID_ENTRY</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:a42eb16ab612743bdc840f7df4b45f6ec" id="r_a42eb16ab612743bdc840f7df4b45f6ec"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a42eb16ab612743bdc840f7df4b45f6ec">DPM_FILE_HEADER</a>(key_word_)</td></tr>
+<tr class="memdesc:a42eb16ab612743bdc840f7df4b45f6ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">C# file  <br /></td></tr>
+<tr class="memitem:aad317635a541d0a03e46f2157467e14c" id="r_aad317635a541d0a03e46f2157467e14c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aad317635a541d0a03e46f2157467e14c">DPM_FILE_FOOTER</a>()</td></tr>
+<tr class="memitem:a43b6066802d84e93ade5114978883f3f" id="r_a43b6066802d84e93ade5114978883f3f"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a43b6066802d84e93ade5114978883f3f">DPM_INCLUDE</a>(...)</td></tr>
+<tr class="memitem:a67eccfd9e074ef3d7a978dc280d9911e" id="r_a67eccfd9e074ef3d7a978dc280d9911e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a67eccfd9e074ef3d7a978dc280d9911e">DPM_NAMESPACE_BEGIN</a>()</td></tr>
+<tr class="memitem:a128c026acfae089c2749b839832e7b70" id="r_a128c026acfae089c2749b839832e7b70"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a128c026acfae089c2749b839832e7b70">DPM_NAMESPACE_END</a>()</td></tr>
+<tr class="memitem:aca06a03ece86ca2205318479b86b3ffd" id="r_aca06a03ece86ca2205318479b86b3ffd"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aca06a03ece86ca2205318479b86b3ffd">DPM_NOTIFY_CHANGED_BINDING_CLASS</a>(<a class="el" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a>, ...)</td></tr>
+<tr class="memitem:a5e047ffa81e56813afc8a3e47a126d24" id="r_a5e047ffa81e56813afc8a3e47a126d24"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a5e047ffa81e56813afc8a3e47a126d24">DPM_SINGLETON_BINDING_CLASS</a>(<a class="el" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a>, ...)</td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">マクロ定義詳解</h2>
+<a id="a7338bf6d036118e3193f5708b72a31be" name="a7338bf6d036118e3193f5708b72a31be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7338bf6d036118e3193f5708b72a31be">&#9670;&#160;</a></span>CS_CLASS_DEF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CS_CLASS_DEF&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="csharp__shared__load_8hpp_source.html">csharp_shared_load.hpp</a> の <a class="el" href="csharp__shared__load_8hpp_source.html#l00036">36</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a8e0f4efde0e9674b69ee1b27cb9372e1" name="a8e0f4efde0e9674b69ee1b27cb9372e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e0f4efde0e9674b69ee1b27cb9372e1">&#9670;&#160;</a></span>DPM_CPP_DEF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_CPP_DEF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="csharp__shared__load_8hpp_source.html">csharp_shared_load.hpp</a> の <a class="el" href="csharp__shared__load_8hpp_source.html#l00037">37</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ad51c2b4ecd4e8ccbc0e1960ae343dfaf" name="ad51c2b4ecd4e8ccbc0e1960ae343dfaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad51c2b4ecd4e8ccbc0e1960ae343dfaf">&#9670;&#160;</a></span>DPM_CPP_DEPLOY_DECL_ONLY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_CPP_DEPLOY_DECL_ONLY&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="csharp__shared__load_8hpp_source.html">csharp_shared_load.hpp</a> の <a class="el" href="csharp__shared__load_8hpp_source.html#l00041">41</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a65498c767651c1396a0e3d0a913d603c" name="a65498c767651c1396a0e3d0a913d603c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65498c767651c1396a0e3d0a913d603c">&#9670;&#160;</a></span>DPM_CPP_DEPLOY_DEFINE_ONLY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_CPP_DEPLOY_DEFINE_ONLY&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="csharp__shared__load_8hpp_source.html">csharp_shared_load.hpp</a> の <a class="el" href="csharp__shared__load_8hpp_source.html#l00044">44</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a187704db50f9d09595653d06f74a305b" name="a187704db50f9d09595653d06f74a305b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a187704db50f9d09595653d06f74a305b">&#9670;&#160;</a></span>DPM_CPP_HEADER_EXPAND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_CPP_HEADER_EXPAND&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="csharp__shared__load_8hpp_source.html">csharp_shared_load.hpp</a> の <a class="el" href="csharp__shared__load_8hpp_source.html#l00054">54</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a204ac5ab399875e0db21eaa5431f3991" name="a204ac5ab399875e0db21eaa5431f3991"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a204ac5ab399875e0db21eaa5431f3991">&#9670;&#160;</a></span>DPM_CSHARP_EXPAND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_CSHARP_EXPAND&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="csharp__shared__load_8hpp_source.html">csharp_shared_load.hpp</a> の <a class="el" href="csharp__shared__load_8hpp_source.html#l00055">55</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="af91ed3c0885d55b124e6e5e754a9f782" name="af91ed3c0885d55b124e6e5e754a9f782"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af91ed3c0885d55b124e6e5e754a9f782">&#9670;&#160;</a></span>DPM_DEFINE_ENTRY_MACRO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_DEFINE_ENTRY_MACRO&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="csharp__shared__load_8hpp_source.html">csharp_shared_load.hpp</a> の <a class="el" href="csharp__shared__load_8hpp_source.html#l00061">61</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="abe1c6f0ae70c792b0607dd9c42e777e3" name="abe1c6f0ae70c792b0607dd9c42e777e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe1c6f0ae70c792b0607dd9c42e777e3">&#9670;&#160;</a></span>DPM_DEFINE_VOID_ENTRY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_DEFINE_VOID_ENTRY&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="csharp__shared__load_8hpp_source.html">csharp_shared_load.hpp</a> の <a class="el" href="csharp__shared__load_8hpp_source.html#l00062">62</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aad317635a541d0a03e46f2157467e14c" name="aad317635a541d0a03e46f2157467e14c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad317635a541d0a03e46f2157467e14c">&#9670;&#160;</a></span>DPM_FILE_FOOTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_FILE_FOOTER</td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="cpp_2file__namespace_8hpp.html#ab6b8536355002294509b8ba90cc54fbb">DEF_FILE_FOOTER</a>( )</div>
+<div class="ttc" id="acpp_2file__namespace_8hpp_html_ab6b8536355002294509b8ba90cc54fbb"><div class="ttname"><a href="cpp_2file__namespace_8hpp.html#ab6b8536355002294509b8ba90cc54fbb">DEF_FILE_FOOTER</a></div><div class="ttdeci">#define DEF_FILE_FOOTER()</div><div class="ttdef"><b>Definition</b> <a href="cpp_2file__namespace_8hpp_source.html#l00007">file_namespace.hpp:7</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="csharp__shared__load_8hpp_source.html">csharp_shared_load.hpp</a> の <a class="el" href="csharp__shared__load_8hpp_source.html#l00124">124</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="types_2_app_options_arg_8hpp.html#a28b9b2751c2a55abab2b8400164055ae">DPM_LIST_ENTRY()</a>.</p>
+
+</div>
+</div>
+<a id="a42eb16ab612743bdc840f7df4b45f6ec" name="a42eb16ab612743bdc840f7df4b45f6ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42eb16ab612743bdc840f7df4b45f6ec">&#9670;&#160;</a></span>DPM_FILE_HEADER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_FILE_HEADER</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>key_word_</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="cpp_2file__namespace_8hpp.html#addf62bf505d0ac363d10ab351407b660">DEF_FILE_HEADER</a>( key_word_ )</div>
+<div class="ttc" id="acpp_2file__namespace_8hpp_html_addf62bf505d0ac363d10ab351407b660"><div class="ttname"><a href="cpp_2file__namespace_8hpp.html#addf62bf505d0ac363d10ab351407b660">DEF_FILE_HEADER</a></div><div class="ttdeci">#define DEF_FILE_HEADER(key_word_)</div><div class="ttdef"><b>Definition</b> <a href="cpp_2file__namespace_8hpp_source.html#l00006">file_namespace.hpp:6</a></div></div>
+</div><!-- fragment -->
+<p>C# file </p>
+
+<p class="definition"> <a class="el" href="csharp__shared__load_8hpp_source.html">csharp_shared_load.hpp</a> の <a class="el" href="csharp__shared__load_8hpp_source.html#l00123">123</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a43b6066802d84e93ade5114978883f3f" name="a43b6066802d84e93ade5114978883f3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43b6066802d84e93ade5114978883f3f">&#9670;&#160;</a></span>DPM_INCLUDE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_INCLUDE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em></em></span>...</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="cpp_2file__namespace_8hpp.html#a3cd5e6ccebcedefa4dfe33f9263e16da">DEF_INCLUDE</a>( __VA_ARGS__ )</div>
+<div class="ttc" id="acpp_2file__namespace_8hpp_html_a3cd5e6ccebcedefa4dfe33f9263e16da"><div class="ttname"><a href="cpp_2file__namespace_8hpp.html#a3cd5e6ccebcedefa4dfe33f9263e16da">DEF_INCLUDE</a></div><div class="ttdeci">#define DEF_INCLUDE(...)</div><div class="ttdef"><b>Definition</b> <a href="cpp_2file__namespace_8hpp_source.html#l00009">file_namespace.hpp:9</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="csharp__shared__load_8hpp_source.html">csharp_shared_load.hpp</a> の <a class="el" href="csharp__shared__load_8hpp_source.html#l00125">125</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a67eccfd9e074ef3d7a978dc280d9911e" name="a67eccfd9e074ef3d7a978dc280d9911e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67eccfd9e074ef3d7a978dc280d9911e">&#9670;&#160;</a></span>DPM_NAMESPACE_BEGIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_NAMESPACE_BEGIN</td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="cpp_2file__namespace_8hpp.html#a870cb4e1f71b82752ecef448fc7570be">DEF_NAMESPACE_BEGIN</a>( )</div>
+<div class="ttc" id="acpp_2file__namespace_8hpp_html_a870cb4e1f71b82752ecef448fc7570be"><div class="ttname"><a href="cpp_2file__namespace_8hpp.html#a870cb4e1f71b82752ecef448fc7570be">DEF_NAMESPACE_BEGIN</a></div><div class="ttdeci">#define DEF_NAMESPACE_BEGIN()</div><div class="ttdef"><b>Definition</b> <a href="cpp_2file__namespace_8hpp_source.html#l00014">file_namespace.hpp:14</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="csharp__shared__load_8hpp_source.html">csharp_shared_load.hpp</a> の <a class="el" href="csharp__shared__load_8hpp_source.html#l00127">127</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a128c026acfae089c2749b839832e7b70" name="a128c026acfae089c2749b839832e7b70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a128c026acfae089c2749b839832e7b70">&#9670;&#160;</a></span>DPM_NAMESPACE_END</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_NAMESPACE_END</td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="cpp_2file__namespace_8hpp.html#a46b981a05c22242605049c15f928ed4a">DEF_NAMESPACE_END</a>( )</div>
+<div class="ttc" id="acpp_2file__namespace_8hpp_html_a46b981a05c22242605049c15f928ed4a"><div class="ttname"><a href="cpp_2file__namespace_8hpp.html#a46b981a05c22242605049c15f928ed4a">DEF_NAMESPACE_END</a></div><div class="ttdeci">#define DEF_NAMESPACE_END()</div><div class="ttdef"><b>Definition</b> <a href="cpp_2file__namespace_8hpp_source.html#l00017">file_namespace.hpp:17</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="csharp__shared__load_8hpp_source.html">csharp_shared_load.hpp</a> の <a class="el" href="csharp__shared__load_8hpp_source.html#l00128">128</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="types_2_app_options_arg_8hpp.html#a28b9b2751c2a55abab2b8400164055ae">DPM_LIST_ENTRY()</a>.</p>
+
+</div>
+</div>
+<a id="aca06a03ece86ca2205318479b86b3ffd" name="aca06a03ece86ca2205318479b86b3ffd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca06a03ece86ca2205318479b86b3ffd">&#9670;&#160;</a></span>DPM_NOTIFY_CHANGED_BINDING_CLASS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_NOTIFY_CHANGED_BINDING_CLASS</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em><a class="el" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em></em></span>...&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="cpp_2load_8hpp.html#a68dec6cc3fa4249212f8bb7682cbbc7d">DPM_NOTIFY_CHANGED_BINDING_CLASS_IMPL</a>(                                     \</div>
+<div class="line">    <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a>,                                                                 \</div>
+<div class="line">    <a class="code hl_define" href="entry_8hpp.html#af5e129f5f2a193eecb76a8c1d2ff8458">DPM_ENTRY_EXPAND_OPTION_SEQ</a>(                                           \</div>
+<div class="line">        DPM_CSHARP_PROXY_SUBJECT_ACCESS_ENTRY( ), __VA_ARGS__              \</div>
+<div class="line">    )                                                                      \</div>
+<div class="line">)</div>
+<div class="ttc" id="acpp_2load_8hpp_html_a68dec6cc3fa4249212f8bb7682cbbc7d"><div class="ttname"><a href="cpp_2load_8hpp.html#a68dec6cc3fa4249212f8bb7682cbbc7d">DPM_NOTIFY_CHANGED_BINDING_CLASS_IMPL</a></div><div class="ttdeci">#define DPM_NOTIFY_CHANGED_BINDING_CLASS_IMPL(CLASS, ENT_SEQ)</div><div class="ttdef"><b>Definition</b> <a href="cpp_2load_8hpp_source.html#l00072">load.hpp:72</a></div></div>
+<div class="ttc" id="aentry_8hpp_html_af5e129f5f2a193eecb76a8c1d2ff8458"><div class="ttname"><a href="entry_8hpp.html#af5e129f5f2a193eecb76a8c1d2ff8458">DPM_ENTRY_EXPAND_OPTION_SEQ</a></div><div class="ttdeci">#define DPM_ENTRY_EXPAND_OPTION_SEQ(...)</div><div class="ttdef"><b>Definition</b> <a href="entry_8hpp_source.html#l00036">entry.hpp:36</a></div></div>
+<div class="ttc" id="atrigger_8hpp_html_aeb04f2e0012cb07d68538599161c9693"><div class="ttname"><a href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a></div><div class="ttdeci">#define CLASS</div><div class="ttdef"><b>Definition</b> <a href="trigger_8hpp_source.html#l00016">trigger.hpp:16</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="csharp__shared__load_8hpp_source.html">csharp_shared_load.hpp</a> の <a class="el" href="csharp__shared__load_8hpp_source.html#l00139">139</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="types_2_app_options_arg_8hpp.html#af7ee3130319ce0d780e897df6255ed10">DPM_NOTIFY_CHANGED_BINDING_CLASS()</a>.</p>
+
+</div>
+</div>
+<a id="a5e047ffa81e56813afc8a3e47a126d24" name="a5e047ffa81e56813afc8a3e47a126d24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e047ffa81e56813afc8a3e47a126d24">&#9670;&#160;</a></span>DPM_SINGLETON_BINDING_CLASS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_SINGLETON_BINDING_CLASS</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em><a class="el" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em></em></span>...&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="cpp_2load_8hpp.html#a57c932da98b599838befa6046663f9e0">DPM_SINGLETON_BINDING_CLASS_IMPL</a>(                                          \</div>
+<div class="line">    <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a>, <a class="code hl_define" href="entry_8hpp.html#af5e129f5f2a193eecb76a8c1d2ff8458">DPM_ENTRY_EXPAND_OPTION_SEQ</a>( __VA_ARGS__ )                      \</div>
+<div class="line">)</div>
+<div class="ttc" id="acpp_2load_8hpp_html_a57c932da98b599838befa6046663f9e0"><div class="ttname"><a href="cpp_2load_8hpp.html#a57c932da98b599838befa6046663f9e0">DPM_SINGLETON_BINDING_CLASS_IMPL</a></div><div class="ttdeci">#define DPM_SINGLETON_BINDING_CLASS_IMPL(CLASS, EMT_SEQ)</div><div class="ttdef"><b>Definition</b> <a href="cpp_2load_8hpp_source.html#l00081">load.hpp:81</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="csharp__shared__load_8hpp_source.html">csharp_shared_load.hpp</a> の <a class="el" href="csharp__shared__load_8hpp_source.html#l00149">149</a> 行目に定義があります。</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_d26f0ed8b287a778d960ad2241e01057.html">src</a></li><li class="navelem"><a href="dir_eb29242f55d2489f6c4d008365c270b7.html">core</a></li><li class="navelem"><a href="dir_cea6b123251f3cedcaebc32d093e626d.html">cs_binding</a></li><li class="navelem"><a href="dir_6a2ead08366c94e741a9e88f830ac342.html">macro</a></li><li class="navelem"><a href="csharp__shared__load_8hpp.html">csharp_shared_load.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

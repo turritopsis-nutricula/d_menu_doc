@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/test/utility/reflection/TestReflection.cpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_test_reflection_8cpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">TestReflection.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_test_reflection_8cpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="_test_reflection_8cpp.html#a139f00d2466d591f60b8d6a73c8273f1">    1</a></span><span class="preprocessor">#define BOOST_TEST_DYN_LINK</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno"><a class="line" href="_test_reflection_8cpp.html#ab340a5e76af466a5f20ec5500d30a80b">    2</a></span><span class="preprocessor">#define BOOST_TEST_MAIN</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#pragma GCC diagnostic ignored &quot;-Wattributes&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;boost/test/data/test_case.hpp&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;boost/test/unit_test.hpp&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#pragma GCC diagnostic warning &quot;-Wattributes&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="reflection_8hpp.html">utility/reflection.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="pfr__assign_8hpp.html">utility/reflection/pfr_assign.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu.html">d_menu</a> = <a class="code hl_namespace" href="namespacedepicture__menu.html">depicture_menu</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1repositories.html">dr</a>     = <a class="code hl_namespace" href="namespacedepicture__menu_1_1reflection.html">d_menu::reflection</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"></span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">/// boost::pfrが未対応</span></div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="structnot__copy.html">   16</a></span><span class="keyword">struct </span><a class="code hl_function" href="structnot__copy.html#afeece5b41a229efa5aa21fa1c9f99147">not_copy</a></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structnot__copy.html#a41fb5d929fe78c96cd66c99667ad5bf9">   18</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="structnot__copy.html#a41fb5d929fe78c96cd66c99667ad5bf9">value</a>                                                 = 32;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="structnot__copy.html#afeece5b41a229efa5aa21fa1c9f99147">   19</a></span>    <a class="code hl_function" href="structnot__copy.html#afeece5b41a229efa5aa21fa1c9f99147">not_copy</a>( ) noexcept                                      = default;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structnot__copy.html#a5b34577f746cbfaaeb8525c047fd8ff7">   20</a></span>    constexpr <a class="code hl_function" href="structnot__copy.html#afeece5b41a229efa5aa21fa1c9f99147">not_copy</a>( <a class="code hl_function" href="structnot__copy.html#afeece5b41a229efa5aa21fa1c9f99147">not_copy</a> const&amp; ) noexcept            = delete;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structnot__copy.html#ae2dbcf8f7f7f790d31796babe7943f57">   21</a></span>    constexpr <a class="code hl_function" href="structnot__copy.html#afeece5b41a229efa5aa21fa1c9f99147">not_copy</a>( <a class="code hl_function" href="structnot__copy.html#afeece5b41a229efa5aa21fa1c9f99147">not_copy</a>&amp;&amp; ) noexcept                 = delete;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structnot__copy.html#acd7eb3646efe9c02854719db30ea7527">   22</a></span>    constexpr <a class="code hl_function" href="structnot__copy.html#afeece5b41a229efa5aa21fa1c9f99147">not_copy</a>&amp; operator=( <a class="code hl_function" href="structnot__copy.html#afeece5b41a229efa5aa21fa1c9f99147">not_copy</a> const&amp; ) noexcept = delete;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="structnot__copy.html#a952a3adc3abdf269d7d8375f7032613b">   23</a></span>    constexpr <a class="code hl_function" href="structnot__copy.html#afeece5b41a229efa5aa21fa1c9f99147">not_copy</a>&amp; operator=( <a class="code hl_function" href="structnot__copy.html#afeece5b41a229efa5aa21fa1c9f99147">not_copy</a>&amp;&amp; ) noexcept      = delete;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>};</div>
+</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>struct <a class="code hl_struct" href="structa__struct.html">a_struct</a></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">int</span>         int_value;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="structa__struct.html#af333e1262a388a3918199230960c42ea">   28</a></span>    std::string <a class="code hl_variable" href="structa__struct.html#af333e1262a388a3918199230960c42ea">str_value</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">struct </span><a class="code hl_struct" href="structb__struct.html">b_struct</a></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    std::string                str_value;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structb__struct.html#a0fbb52ae7e3b93d944b118df4c45f3e9">   34</a></span>    std::vector&lt; std::string &gt; <a class="code hl_variable" href="structb__struct.html#a0fbb52ae7e3b93d944b118df4c45f3e9">str_vec</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structb__struct.html#aa5bb1355100162a7b00a4df5c4d04513">   35</a></span>    <span class="keywordtype">int</span>                        <a class="code hl_variable" href="structb__struct.html#aa5bb1355100162a7b00a4df5c4d04513">str_i</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="structb__struct.html#a62d1f8a5fc1d207ab93df46af78dcbbd">   36</a></span>    <span class="keywordtype">int</span>                        <a class="code hl_variable" href="structb__struct.html#a62d1f8a5fc1d207ab93df46af78dcbbd">str_j</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>};</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">//</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">// test_reflection : TestSuite</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">//</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><a class="code hl_function" href="menu__change__operation_8cpp.html#ae692b9f25c84027b486e3f198b05369c">BOOST_AUTO_TEST_SUITE</a>( test_reflection )</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="_test_reflection_8cpp.html#a5d695cb181db2d186de057c9a74cd53d">   47</a></span><a class="code hl_function" href="_test_backup_json_8cpp.html#ac60c25c7e7fe69dfd220f4fb5bc17c5d">BOOST_AUTO_TEST_CASE</a>( test_accsess_field )</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">static_assert</span>( dr::has_field&lt; <a class="code hl_struct" href="structa__struct.html">a_struct</a>, <span class="stringliteral">&quot;int_value&quot;</span> &gt;( ) );</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">static_assert</span>( dr::get_field_index&lt; <a class="code hl_struct" href="structa__struct.html">a_struct</a>, <span class="stringliteral">&quot;int_value&quot;</span> &gt;( ) == 0u );</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">static_assert</span>( dr::get_field_index&lt; <a class="code hl_struct" href="structa__struct.html">a_struct</a>, <span class="stringliteral">&quot;str_value&quot;</span> &gt;( ) == 1u );</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_struct" href="structa__struct.html">a_struct</a> s;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( s.<a class="code hl_variable" href="structa__struct.html#af333e1262a388a3918199230960c42ea">str_value</a> == <span class="stringliteral">&quot;&quot;</span> );</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">auto</span>&amp; ref = dr::access_field&lt; <span class="stringliteral">&quot;str_value&quot;</span> &gt;( s );</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    ref       = <span class="stringliteral">&quot;sakusaku&quot;</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( s.<a class="code hl_variable" href="structa__struct.html#af333e1262a388a3918199230960c42ea">str_value</a> == <span class="stringliteral">&quot;sakusaku&quot;</span> );</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    dr::access_field&lt; <span class="stringliteral">&quot;str_value&quot;</span> &gt;(</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        s,</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        []( <span class="keyword">auto</span>&amp; v )</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            v = <span class="stringliteral">&quot;hogehoge&quot;</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    );</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( s.<a class="code hl_variable" href="structa__struct.html#af333e1262a388a3918199230960c42ea">str_value</a> == <span class="stringliteral">&quot;hogehoge&quot;</span> );</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">auto</span> l = dr::access_field&lt; <span class="stringliteral">&quot;str_value&quot;</span> &gt;(</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        s, []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; v ) { <span class="keywordflow">return</span> v.length( ); }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    );</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( l == 8u );</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">auto</span> <span class="keyword">const</span>&amp; const_s = s;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">static_assert</span>( std::same_as&lt;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                   <span class="keyword">decltype</span>( dr::access_field&lt; <span class="stringliteral">&quot;str_value&quot;</span> &gt;( const_s ) ),</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                   std::string <span class="keyword">const</span>&amp; &gt; );</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}</div>
+</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="foldopen" id="foldopen00085" data-start="{" data-end="}">
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="_test_reflection_8cpp.html#a773ac09788182ab39b932fa77674368b">   85</a></span><a class="code hl_function" href="_test_reflection_8cpp.html#a5d695cb181db2d186de057c9a74cd53d">BOOST_AUTO_TEST_CASE</a>( test_vec_access_field )</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>{</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( ( boost::pfr::get_name&lt; 2u, b_struct &gt;( ) == <span class="stringliteral">&quot;str_i&quot;</span> ) );</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keyword">static_assert</span>( dr::has_field&lt; <a class="code hl_struct" href="structb__struct.html">b_struct</a>, <span class="stringliteral">&quot;str_value&quot;</span> &gt;( ) );</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keyword">static_assert</span>( dr::has_field&lt; <a class="code hl_struct" href="structb__struct.html">b_struct</a>, <span class="stringliteral">&quot;str_vec&quot;</span> &gt;( ) );</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keyword">static_assert</span>( dr::has_field&lt; <a class="code hl_struct" href="structb__struct.html">b_struct</a>, <span class="stringliteral">&quot;str_i&quot;</span> &gt;( ) );</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keyword">static_assert</span>( dr::get_field_index&lt; <a class="code hl_struct" href="structb__struct.html">b_struct</a>, <span class="stringliteral">&quot;str_value&quot;</span> &gt;( ) == 0u );</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keyword">static_assert</span>( dr::get_field_index&lt; <a class="code hl_struct" href="structb__struct.html">b_struct</a>, <span class="stringliteral">&quot;str_vec&quot;</span> &gt;( ) == 1u );</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keyword">static_assert</span>( dr::get_field_index&lt; <a class="code hl_struct" href="structb__struct.html">b_struct</a>, <span class="stringliteral">&quot;str_i&quot;</span> &gt;( ) == 2u );</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keyword">static_assert</span>( dr::get_field_index&lt; <a class="code hl_struct" href="structb__struct.html">b_struct</a>, <span class="stringliteral">&quot;str_j&quot;</span> &gt;( ) == 3u );</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <a class="code hl_struct" href="structb__struct.html">b_struct</a> s;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    s.<a class="code hl_variable" href="structb__struct.html#a0fbb52ae7e3b93d944b118df4c45f3e9">str_vec</a> = { <span class="stringliteral">&quot;hoge&quot;</span>, <span class="stringliteral">&quot;bar&quot;</span> };</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <a class="code hl_function" href="namespacedepicture__menu_1_1reflection.html#aaf69402efde67d3327b0a5878e0bb46c">d_menu::reflection::access_field</a>&lt; <span class="stringliteral">&quot;str_vec&quot;</span> &gt;(</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        s,</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        []( std::vector&lt; std::string &gt;&amp; v )</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        {</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            std::vector&lt; std::string &gt; expect = { <span class="stringliteral">&quot;hoge&quot;</span>, <span class="stringliteral">&quot;bar&quot;</span> };</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( v == expect );</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            v.push_back( <span class="stringliteral">&quot;ga&quot;</span> );</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        }</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    );</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    std::vector&lt; std::string &gt; expect = { <span class="stringliteral">&quot;hoge&quot;</span>, <span class="stringliteral">&quot;bar&quot;</span>, <span class="stringliteral">&quot;ga&quot;</span> };</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( s.<a class="code hl_variable" href="structb__struct.html#a0fbb52ae7e3b93d944b118df4c45f3e9">str_vec</a> == expect );</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>}</div>
+</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="foldopen" id="foldopen00117" data-start="{" data-end="}">
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="_test_reflection_8cpp.html#a7c4f58b60f313562fca4523f409b55eb">  117</a></span><a class="code hl_function" href="_test_reflection_8cpp.html#a5d695cb181db2d186de057c9a74cd53d">BOOST_AUTO_TEST_CASE</a>( test_get_field_type )</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>{</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keyword">static_assert</span>(</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        std::is_same_v&lt; dr::field_type&lt; <a class="code hl_struct" href="structa__struct.html">a_struct</a>, <span class="stringliteral">&quot;int_value&quot;</span> &gt;, <span class="keywordtype">int</span> &gt;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    );</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keyword">static_assert</span>( std::is_same_v&lt;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                   dr::field_type&lt; <a class="code hl_struct" href="structb__struct.html">b_struct</a>, <span class="stringliteral">&quot;str_vec&quot;</span> &gt;,</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>                   std::vector&lt; std::string &gt; &gt; );</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>}</div>
+</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">//</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">// pfr_assign</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment">//</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="foldopen" id="foldopen00132" data-start="{" data-end="};">
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="structb.html">  132</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structb.html">b</a></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>{</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="structb.html#ae2f94a6cd3401c70990de736ee648d0e">  134</a></span>    <span class="keywordtype">int</span>         <a class="code hl_variable" href="structb.html#ae2f94a6cd3401c70990de736ee648d0e">i</a>;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="structb.html#a45ba51faf60cabb122f66c5468234394">  135</a></span>    std::string <a class="code hl_variable" href="structb.html#a45ba51faf60cabb122f66c5468234394">str</a>;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>};</div>
+</div>
+<div class="foldopen" id="foldopen00137" data-start="{" data-end="};">
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="structa.html">  137</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structa.html">a</a></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>{</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="structa.html#aa62ad325f92ebf96aabdde71dae774d4">  139</a></span>    std::string <a class="code hl_variable" href="structa.html#aa62ad325f92ebf96aabdde71dae774d4">str</a>;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="structa.html#ad8efa163dd099a60dc345d5adbc068d3">  140</a></span>    <span class="keywordtype">int</span>         <a class="code hl_variable" href="structa.html#ad8efa163dd099a60dc345d5adbc068d3">i</a>;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>};</div>
+</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment"></span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment">/// pfr_assign : TestCase</span></div>
+<div class="foldopen" id="foldopen00144" data-start="{" data-end="}">
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="_test_reflection_8cpp.html#abd02166eb6b7faa95d947b2163f4deb9">  144</a></span><a class="code hl_function" href="_test_reflection_8cpp.html#a5d695cb181db2d186de057c9a74cd53d">BOOST_AUTO_TEST_CASE</a>( test_pfr_assign )</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>{</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <a class="code hl_struct" href="structb.html">b</a> v0{ .i = 10, .str = <span class="stringliteral">&quot;hoge&quot;</span> };</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <a class="code hl_struct" href="structa.html">a</a> v1;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    dr::pfr_assign( v1, v0 );</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( v1.<a class="code hl_variable" href="structa.html#ad8efa163dd099a60dc345d5adbc068d3">i</a> == 10 );</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( v1.<a class="code hl_variable" href="structa.html#aa62ad325f92ebf96aabdde71dae774d4">str</a> == <span class="stringliteral">&quot;hoge&quot;</span> );</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>}</div>
+</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="foldopen" id="foldopen00154" data-start="{" data-end="};">
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="structc.html">  154</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structc.html">c</a></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>{</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="structc.html#aad98b30a08fc57a4856e83b3188e32ff">  156</a></span>    std::vector&lt; a &gt; <a class="code hl_variable" href="structc.html#aad98b30a08fc57a4856e83b3188e32ff">vec</a>;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>};</div>
+</div>
+<div class="foldopen" id="foldopen00158" data-start="{" data-end="};">
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="structd.html">  158</a></span><span class="keyword">struct </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>{</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="structd.html#accc0f4cb1742bd06529a49df8c4fdf65">  160</a></span>    std::vector&lt; b &gt; <a class="code hl_variable" href="structd.html#accc0f4cb1742bd06529a49df8c4fdf65">vec</a>;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>};</div>
+</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="foldopen" id="foldopen00163" data-start="{" data-end="};">
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="structvector__comp.html">  163</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structvector__comp.html">vector_comp</a></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>{</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="keyword">template</span> &lt; <span class="keyword">typename</span> T, <span class="keyword">typename</span> O &gt;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00167" data-start="{" data-end="}">
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="structvector__comp.html#ab67f8722a2b61f701ce83c20ac6e3109">  167</a></span>    operator( )( std::vector&lt; T &gt;&amp; l, std::vector&lt; O &gt; <span class="keyword">const</span>&amp; r ) <span class="keyword">const</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    {</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        l.resize( r.size( ) );</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <span class="keywordflow">for</span> ( <span class="keyword">auto</span> index = 0u; index &lt; r.size( ); ++index )</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        {</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>            dr::pfr_assign( l[ index ], r[ index ] );</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        }    <span class="comment">// for index</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    }</div>
+</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>};</div>
+</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment"></span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">/// pfr_assign : TestCase</span></div>
+<div class="foldopen" id="foldopen00179" data-start="{" data-end="}">
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="_test_reflection_8cpp.html#ad948c3c404785aa29485337809b101c1">  179</a></span><a class="code hl_function" href="_test_reflection_8cpp.html#a5d695cb181db2d186de057c9a74cd53d">BOOST_AUTO_TEST_CASE</a>( test_pfr_assign_opton )</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>{</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    <a class="code hl_struct" href="structc.html">c</a> v0{ .vec = { { .str = <span class="stringliteral">&quot;hoge&quot;</span>, .i = 1 } } };</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> v1;</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    dr::pfr_assign&lt; vector_comp &gt;( v1, v0 );</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( v1.<a class="code hl_variable" href="structd.html#accc0f4cb1742bd06529a49df8c4fdf65">vec</a>.size( ) == 1u );</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <span class="comment">//  BOOST_TEST( v1.vec == 10 );</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="comment">//  BOOST_TEST( v1.str == &quot;hoge&quot; );</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>}</div>
+</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>BOOST_AUTO_TEST_SUITE_END( )    <span class="comment">// test_reflection</span></div>
+<div class="ttc" id="a_test_backup_json_8cpp_html_ac60c25c7e7fe69dfd220f4fb5bc17c5d"><div class="ttname"><a href="_test_backup_json_8cpp.html#ac60c25c7e7fe69dfd220f4fb5bc17c5d">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(test_test_write_backup_json)</div><div class="ttdoc">test_write_backup_json : TestCase</div><div class="ttdef"><b>Definition</b> <a href="_test_backup_json_8cpp_source.html#l00203">TestBackupJson.cpp:203</a></div></div>
+<div class="ttc" id="a_test_config_view_presenter_8cpp_html_a7845eb0c68b997d6d329618f36f7e794"><div class="ttname"><a href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a></div><div class="ttdeci">BOOST_TEST(get_menu(config_arg, 0u) -&gt;get_MenuId()==m_id)</div></div>
+<div class="ttc" id="a_test_reflection_8cpp_html_a5d695cb181db2d186de057c9a74cd53d"><div class="ttname"><a href="_test_reflection_8cpp.html#a5d695cb181db2d186de057c9a74cd53d">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(test_accsess_field)</div><div class="ttdef"><b>Definition</b> <a href="#l00047">TestReflection.cpp:47</a></div></div>
+<div class="ttc" id="amenu__change__operation_8cpp_html_ae692b9f25c84027b486e3f198b05369c"><div class="ttname"><a href="menu__change__operation_8cpp.html#ae692b9f25c84027b486e3f198b05369c">BOOST_AUTO_TEST_SUITE</a></div><div class="ttdeci">BOOST_AUTO_TEST_SUITE(item_propertes, *bt::depends_on(&quot;test_config_view_presenter/add_menu_item&quot;)) dd</div><div class="ttdef"><b>Definition</b> <a href="menu__change__operation_8cpp_source.html#l00216">menu_change_operation.cpp:216</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_html"><div class="ttname"><a href="namespacedepicture__menu_1_1domain.html">depicture_menu::domain</a></div><div class="ttdef"><b>Definition</b> <a href="colors_8hpp_source.html#l00006">colors.hpp:7</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1reflection_html"><div class="ttname"><a href="namespacedepicture__menu_1_1reflection.html">depicture_menu::reflection</a></div><div class="ttdef"><b>Definition</b> <a href="pfr__assign_8hpp_source.html#l00015">pfr_assign.hpp:16</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1reflection_html_aaf69402efde67d3327b0a5878e0bb46c"><div class="ttname"><a href="namespacedepicture__menu_1_1reflection.html#aaf69402efde67d3327b0a5878e0bb46c">depicture_menu::reflection::access_field</a></div><div class="ttdeci">auto access_field(T &amp;v, F &amp;&amp;expr) -&gt; decltype(std::declval&lt; F &gt;()(std::declval&lt; Arg &amp; &gt;()))</div><div class="ttdef"><b>Definition</b> <a href="reflection_2reflection_8hpp_source.html#l00089">reflection.hpp:89</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1repositories_html"><div class="ttname"><a href="namespacedepicture__menu_1_1repositories.html">depicture_menu::repositories</a></div><div class="ttdef"><b>Definition</b> <a href="diff__snapshots__repository_8hpp_source.html#l00008">diff_snapshots_repository.hpp:9</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_html"><div class="ttname"><a href="namespacedepicture__menu.html">depicture_menu</a></div><div class="ttdef"><b>Definition</b> <a href="constexpr__string_8hpp_source.html#l00012">constexpr_string.hpp:13</a></div></div>
+<div class="ttc" id="apfr__assign_8hpp_html"><div class="ttname"><a href="pfr__assign_8hpp.html">pfr_assign.hpp</a></div></div>
+<div class="ttc" id="areflection_8hpp_html"><div class="ttname"><a href="reflection_8hpp.html">reflection.hpp</a></div></div>
+<div class="ttc" id="astructa__struct_html"><div class="ttname"><a href="structa__struct.html">a_struct</a></div><div class="ttdef"><b>Definition</b> <a href="_test_conv_mapping_8cpp_source.html#l00028">TestConvMapping.cpp:29</a></div></div>
+<div class="ttc" id="astructa__struct_html_af333e1262a388a3918199230960c42ea"><div class="ttname"><a href="structa__struct.html#af333e1262a388a3918199230960c42ea">a_struct::str_value</a></div><div class="ttdeci">std::string str_value</div><div class="ttdef"><b>Definition</b> <a href="#l00028">TestReflection.cpp:28</a></div></div>
+<div class="ttc" id="astructa_html"><div class="ttname"><a href="structa.html">a</a></div><div class="ttdef"><b>Definition</b> <a href="#l00137">TestReflection.cpp:138</a></div></div>
+<div class="ttc" id="astructa_html_aa62ad325f92ebf96aabdde71dae774d4"><div class="ttname"><a href="structa.html#aa62ad325f92ebf96aabdde71dae774d4">a::str</a></div><div class="ttdeci">std::string str</div><div class="ttdef"><b>Definition</b> <a href="#l00139">TestReflection.cpp:139</a></div></div>
+<div class="ttc" id="astructa_html_ad8efa163dd099a60dc345d5adbc068d3"><div class="ttname"><a href="structa.html#ad8efa163dd099a60dc345d5adbc068d3">a::i</a></div><div class="ttdeci">int i</div><div class="ttdef"><b>Definition</b> <a href="#l00140">TestReflection.cpp:140</a></div></div>
+<div class="ttc" id="astructb__struct_html"><div class="ttname"><a href="structb__struct.html">b_struct</a></div><div class="ttdef"><b>Definition</b> <a href="_test_conv_mapping_8cpp_source.html#l00034">TestConvMapping.cpp:35</a></div></div>
+<div class="ttc" id="astructb__struct_html_a0fbb52ae7e3b93d944b118df4c45f3e9"><div class="ttname"><a href="structb__struct.html#a0fbb52ae7e3b93d944b118df4c45f3e9">b_struct::str_vec</a></div><div class="ttdeci">std::vector&lt; std::string &gt; str_vec</div><div class="ttdef"><b>Definition</b> <a href="#l00034">TestReflection.cpp:34</a></div></div>
+<div class="ttc" id="astructb__struct_html_a62d1f8a5fc1d207ab93df46af78dcbbd"><div class="ttname"><a href="structb__struct.html#a62d1f8a5fc1d207ab93df46af78dcbbd">b_struct::str_j</a></div><div class="ttdeci">int str_j</div><div class="ttdef"><b>Definition</b> <a href="#l00036">TestReflection.cpp:36</a></div></div>
+<div class="ttc" id="astructb__struct_html_aa5bb1355100162a7b00a4df5c4d04513"><div class="ttname"><a href="structb__struct.html#aa5bb1355100162a7b00a4df5c4d04513">b_struct::str_i</a></div><div class="ttdeci">int str_i</div><div class="ttdef"><b>Definition</b> <a href="#l00035">TestReflection.cpp:35</a></div></div>
+<div class="ttc" id="astructb_html"><div class="ttname"><a href="structb.html">b</a></div><div class="ttdef"><b>Definition</b> <a href="#l00132">TestReflection.cpp:133</a></div></div>
+<div class="ttc" id="astructb_html_a45ba51faf60cabb122f66c5468234394"><div class="ttname"><a href="structb.html#a45ba51faf60cabb122f66c5468234394">b::str</a></div><div class="ttdeci">std::string str</div><div class="ttdef"><b>Definition</b> <a href="#l00135">TestReflection.cpp:135</a></div></div>
+<div class="ttc" id="astructb_html_ae2f94a6cd3401c70990de736ee648d0e"><div class="ttname"><a href="structb.html#ae2f94a6cd3401c70990de736ee648d0e">b::i</a></div><div class="ttdeci">int i</div><div class="ttdef"><b>Definition</b> <a href="#l00134">TestReflection.cpp:134</a></div></div>
+<div class="ttc" id="astructc_html"><div class="ttname"><a href="structc.html">c</a></div><div class="ttdef"><b>Definition</b> <a href="#l00154">TestReflection.cpp:155</a></div></div>
+<div class="ttc" id="astructc_html_aad98b30a08fc57a4856e83b3188e32ff"><div class="ttname"><a href="structc.html#aad98b30a08fc57a4856e83b3188e32ff">c::vec</a></div><div class="ttdeci">std::vector&lt; a &gt; vec</div><div class="ttdef"><b>Definition</b> <a href="#l00156">TestReflection.cpp:156</a></div></div>
+<div class="ttc" id="astructd_html_accc0f4cb1742bd06529a49df8c4fdf65"><div class="ttname"><a href="structd.html#accc0f4cb1742bd06529a49df8c4fdf65">d::vec</a></div><div class="ttdeci">std::vector&lt; b &gt; vec</div><div class="ttdef"><b>Definition</b> <a href="#l00160">TestReflection.cpp:160</a></div></div>
+<div class="ttc" id="astructnot__copy_html_a41fb5d929fe78c96cd66c99667ad5bf9"><div class="ttname"><a href="structnot__copy.html#a41fb5d929fe78c96cd66c99667ad5bf9">not_copy::value</a></div><div class="ttdeci">int value</div><div class="ttdef"><b>Definition</b> <a href="#l00018">TestReflection.cpp:18</a></div></div>
+<div class="ttc" id="astructnot__copy_html_afeece5b41a229efa5aa21fa1c9f99147"><div class="ttname"><a href="structnot__copy.html#afeece5b41a229efa5aa21fa1c9f99147">not_copy::not_copy</a></div><div class="ttdeci">not_copy() noexcept=default</div></div>
+<div class="ttc" id="astructvector__comp_html"><div class="ttname"><a href="structvector__comp.html">vector_comp</a></div><div class="ttdef"><b>Definition</b> <a href="#l00163">TestReflection.cpp:164</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_0281b912293b0150165693b325cfab25.html">test</a></li><li class="navelem"><a href="dir_f658070ed8b248803b784f135aa6130b.html">utility</a></li><li class="navelem"><a href="dir_eeef3d0bbd871488165b4dde586341da.html">reflection</a></li><li class="navelem"><a href="_test_reflection_8cpp.html">TestReflection.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

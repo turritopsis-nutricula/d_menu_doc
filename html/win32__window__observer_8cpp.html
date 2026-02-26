@@ -1,0 +1,576 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/src/core/repository/win32_window_observer.cpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('win32__window__observer_8cpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">win32_window_observer.cpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;config.hpp&quot;</code><br />
+<code>#include &quot;<a class="el" href="win32__window__observer_8hpp_source.html">win32_window_observer.hpp</a>&quot;</code><br />
+<code>#include &lt;array&gt;</code><br />
+<code>#include &lt;windows.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+win32_window_observer.cpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="win32__window__observer_8cpp__incl.svg" width="487" height="294"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="win32__window__observer_8cpp_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Arepository_3A_3Adetail_5Frepository_3A_3Awin32_5Fwindow_5Fobserver_5Fimpl" id="r_depicture_5Fmenu_3A_3Arepository_3A_3Adetail_5Frepository_3A_3Awin32_5Fwindow_5Fobserver_5Fimpl"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer__impl.html">depicture_menu::repository::detail_repository::win32_window_observer_impl</a></td></tr>
+<tr class="memitem:global_5Fhook" id="r_global_5Fhook"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structglobal__hook.html">global_hook</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:depicture_5Fmenu" id="r_depicture_5Fmenu"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu.html">depicture_menu</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Arepository" id="r_depicture_5Fmenu_3A_3Arepository"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1repository.html">depicture_menu::repository</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Arepository_3A_3Adetail_5Frepository" id="r_depicture_5Fmenu_3A_3Arepository_3A_3Adetail_5Frepository"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1repository_1_1detail__repository.html">depicture_menu::repository::detail_repository</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a84d52a373ca6f1bddc909382f859a48b" id="r_a84d52a373ca6f1bddc909382f859a48b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a84d52a373ca6f1bddc909382f859a48b">DEBUG_MESSAGE</a>(MSG)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:ab7a6da5c4c1109b8f27e05a43d95da83" id="r_ab7a6da5c4c1109b8f27e05a43d95da83"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#ab7a6da5c4c1109b8f27e05a43d95da83">proc_t</a> = bool ( * )( int, WPARAM, LPARAM )</td></tr>
+<tr class="memitem:a3c5c420793095d64e544ba54053312b3" id="r_a3c5c420793095d64e544ba54053312b3"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a3c5c420793095d64e544ba54053312b3">proce_base_t</a> = LRESULT ( * )( int, WPARAM, LPARAM )</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:abce91584982097b02b766f9970cbe65b" id="r_abce91584982097b02b766f9970cbe65b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abce91584982097b02b766f9970cbe65b">reset</a> (<a class="el" href="structglobal__hook.html">global_hook</a> *h)</td></tr>
+<tr class="memitem:a1890f8cb42478c3f21696a3ccedc2f51" id="r_a1890f8cb42478c3f21696a3ccedc2f51"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a1890f8cb42478c3f21696a3ccedc2f51">valied</a> (<a class="el" href="structglobal__hook.html">global_hook</a> *h)</td></tr>
+<tr class="memitem:aa394533962861689e89a99b17d1420b7" id="r_aa394533962861689e89a99b17d1420b7"><td class="memItemLeft">LRESULT&#160;</td><td class="memItemRight"><a class="el" href="#aa394533962861689e89a99b17d1420b7">proceger_base</a> (std::size_t index, int nCode, WPARAM wparam, LPARAM lparam)</td></tr>
+<tr class="memitem:aefb42ec95a4f1ae95025a9fd8e36d6e4" id="r_aefb42ec95a4f1ae95025a9fd8e36d6e4"><td class="memItemLeft">LRESULT CALLBACK&#160;</td><td class="memItemRight"><a class="el" href="#aefb42ec95a4f1ae95025a9fd8e36d6e4">Proc0</a> (int nCode, WPARAM wparam, LPARAM lparam)</td></tr>
+<tr class="memitem:a47eb66190c521a03265852bfeb9468e6" id="r_a47eb66190c521a03265852bfeb9468e6"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a47eb66190c521a03265852bfeb9468e6">is_regist_handle</a> (std::size_t index)</td></tr>
+<tr class="memitem:ae7204ebb4cf6c4a63d5dd71458d5607d" id="r_ae7204ebb4cf6c4a63d5dd71458d5607d"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ae7204ebb4cf6c4a63d5dd71458d5607d">release_hook</a> (int index)</td></tr>
+<tr class="memitem:a42ef8357cf8d1e976ece24aebb534750" id="r_a42ef8357cf8d1e976ece24aebb534750"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a42ef8357cf8d1e976ece24aebb534750">regist_hook</a> (std::size_t index, int hook_kind, <a class="el" href="#ab7a6da5c4c1109b8f27e05a43d95da83">proc_t</a> proc)</td></tr>
+<tr class="memitem:a73cf05e5043a7241d32a6a508d053394" id="r_a73cf05e5043a7241d32a6a508d053394"><td class="memItemLeft">int WINAPI&#160;</td><td class="memItemRight"><a class="el" href="#a73cf05e5043a7241d32a6a508d053394">DllMain</a> (HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+変数</h2></td></tr>
+<tr class="memitem:a625260ac09ea01cb578d6fa0cd1cff8b" id="r_a625260ac09ea01cb578d6fa0cd1cff8b"><td class="memItemLeft">constexpr std::size_t&#160;</td><td class="memItemRight"><a class="el" href="#a625260ac09ea01cb578d6fa0cd1cff8b">max_hook_count</a> = 128llu</td></tr>
+<tr class="memitem:a7f9e7d1ff67fba96f13fbe22994eb245" id="r_a7f9e7d1ff67fba96f13fbe22994eb245"><td class="memItemLeft">std::array&lt; <a class="el" href="structglobal__hook.html">global_hook</a>, <a class="el" href="#a625260ac09ea01cb578d6fa0cd1cff8b">max_hook_count</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a7f9e7d1ff67fba96f13fbe22994eb245">hooks</a> = { }</td></tr>
+<tr class="memitem:a0eef82e2448a9cbd616924d6a2721155" id="r_a0eef82e2448a9cbd616924d6a2721155"><td class="memItemLeft">constexpr std::array&lt; <a class="el" href="#a3c5c420793095d64e544ba54053312b3">proce_base_t</a>, <a class="el" href="#a625260ac09ea01cb578d6fa0cd1cff8b">max_hook_count</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a0eef82e2448a9cbd616924d6a2721155">procs</a> = { { &amp;<a class="el" href="#aefb42ec95a4f1ae95025a9fd8e36d6e4">Proc0</a> } }</td></tr>
+<tr class="memitem:a65d21d0bff3df03434d61f3f5d5a8f6d" id="r_a65d21d0bff3df03434d61f3f5d5a8f6d"><td class="memItemLeft">HINSTANCE&#160;</td><td class="memItemRight"><a class="el" href="#a65d21d0bff3df03434d61f3f5d5a8f6d">dll_instance</a> = nullptr</td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">マクロ定義詳解</h2>
+<a id="a84d52a373ca6f1bddc909382f859a48b" name="a84d52a373ca6f1bddc909382f859a48b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84d52a373ca6f1bddc909382f859a48b">&#9670;&#160;</a></span>DEBUG_MESSAGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEBUG_MESSAGE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>MSG</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="win32__window__observer_8cpp_source.html">win32_window_observer.cpp</a> の <a class="el" href="win32__window__observer_8cpp_source.html#l00157">157</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">型定義詳解</h2>
+<a id="ab7a6da5c4c1109b8f27e05a43d95da83" name="ab7a6da5c4c1109b8f27e05a43d95da83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7a6da5c4c1109b8f27e05a43d95da83">&#9670;&#160;</a></span>proc_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ab7a6da5c4c1109b8f27e05a43d95da83">proc_t</a> = bool ( * )( int, WPARAM, LPARAM )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="win32__window__observer_8cpp_source.html">win32_window_observer.cpp</a> の <a class="el" href="win32__window__observer_8cpp_source.html#l00042">42</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a3c5c420793095d64e544ba54053312b3" name="a3c5c420793095d64e544ba54053312b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c5c420793095d64e544ba54053312b3">&#9670;&#160;</a></span>proce_base_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a3c5c420793095d64e544ba54053312b3">proce_base_t</a> = LRESULT ( * )( int, WPARAM, LPARAM )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="win32__window__observer_8cpp_source.html">win32_window_observer.cpp</a> の <a class="el" href="win32__window__observer_8cpp_source.html#l00102">102</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="a73cf05e5043a7241d32a6a508d053394" name="a73cf05e5043a7241d32a6a508d053394"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73cf05e5043a7241d32a6a508d053394">&#9670;&#160;</a></span>DllMain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int WINAPI DllMain </td>
+          <td>(</td>
+          <td class="paramtype">HINSTANCE</td>          <td class="paramname"><span class="paramname"><em>hinstDLL</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DWORD</td>          <td class="paramname"><span class="paramname"><em>fdwReason</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPVOID</td>          <td class="paramname"><span class="paramname"><em>lpvReserved</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="win32__window__observer_8cpp_source.html">win32_window_observer.cpp</a> の <a class="el" href="win32__window__observer_8cpp_source.html#l00160">160</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="dll__main_8cpp_source.html#l00039">DEBUG_MESSAGE</a>, <a class="el" href="win32__window__observer_8cpp_source.html#l00109">dll_instance</a>.</p>
+
+</div>
+</div>
+<a id="a47eb66190c521a03265852bfeb9468e6" name="a47eb66190c521a03265852bfeb9468e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47eb66190c521a03265852bfeb9468e6">&#9670;&#160;</a></span>is_regist_handle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool is_regist_handle </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="win32__window__observer_8cpp_source.html">win32_window_observer.cpp</a> の <a class="el" href="win32__window__observer_8cpp_source.html#l00112">112</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="win32__window__observer_8cpp_source.html#l00066">hooks</a>, <a class="el" href="win32__window__observer_8cpp_source.html#l00058">valied()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="win32__window__observer_8cpp_source.html#l00135">regist_hook()</a>, <a class="el" href="win32__window__observer_8cpp_source.html#l00118">release_hook()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="win32__window__observer_8cpp_a47eb66190c521a03265852bfeb9468e6_cgraph.svg" width="230" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="win32__window__observer_8cpp_a47eb66190c521a03265852bfeb9468e6_icgraph.svg" width="410" height="63"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aefb42ec95a4f1ae95025a9fd8e36d6e4" name="aefb42ec95a4f1ae95025a9fd8e36d6e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefb42ec95a4f1ae95025a9fd8e36d6e4">&#9670;&#160;</a></span>Proc0()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LRESULT CALLBACK Proc0 </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>nCode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WPARAM</td>          <td class="paramname"><span class="paramname"><em>wparam</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPARAM</td>          <td class="paramname"><span class="paramname"><em>lparam</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="win32__window__observer_8cpp_source.html">win32_window_observer.cpp</a> の <a class="el" href="win32__window__observer_8cpp_source.html#l00095">95</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="win32__window__observer_8cpp_source.html#l00072">proceger_base()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="win32__window__observer_8cpp_aefb42ec95a4f1ae95025a9fd8e36d6e4_cgraph.svg" width="324" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aa394533962861689e89a99b17d1420b7" name="aa394533962861689e89a99b17d1420b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa394533962861689e89a99b17d1420b7">&#9670;&#160;</a></span>proceger_base()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LRESULT proceger_base </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>nCode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WPARAM</td>          <td class="paramname"><span class="paramname"><em>wparam</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LPARAM</td>          <td class="paramname"><span class="paramname"><em>lparam</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="win32__window__observer_8cpp_source.html">win32_window_observer.cpp</a> の <a class="el" href="win32__window__observer_8cpp_source.html#l00072">72</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="win32__window__observer_8cpp_source.html#l00066">hooks</a>, <a class="el" href="win32__window__observer_8cpp_source.html#l00058">valied()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="win32__window__observer_8cpp_source.html#l00095">Proc0()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="win32__window__observer_8cpp_aa394533962861689e89a99b17d1420b7_cgraph.svg" width="220" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="win32__window__observer_8cpp_aa394533962861689e89a99b17d1420b7_icgraph.svg" width="220" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a42ef8357cf8d1e976ece24aebb534750" name="a42ef8357cf8d1e976ece24aebb534750"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42ef8357cf8d1e976ece24aebb534750">&#9670;&#160;</a></span>regist_hook()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool regist_hook </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>hook_kind</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ab7a6da5c4c1109b8f27e05a43d95da83">proc_t</a></td>          <td class="paramname"><span class="paramname"><em>proc</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="win32__window__observer_8cpp_source.html">win32_window_observer.cpp</a> の <a class="el" href="win32__window__observer_8cpp_source.html#l00135">135</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="win32__window__observer_8cpp_source.html#l00109">dll_instance</a>, <a class="el" href="win32__window__observer_8cpp_source.html#l00066">hooks</a>, <a class="el" href="win32__window__observer_8cpp_source.html#l00112">is_regist_handle()</a>, <a class="el" href="win32__window__observer_8cpp_source.html#l00065">max_hook_count</a>, <a class="el" href="win32__window__observer_8cpp_source.html#l00104">procs</a>, <a class="el" href="win32__window__observer_8cpp_source.html#l00118">release_hook()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="win32__window__observer_8cpp_a42ef8357cf8d1e976ece24aebb534750_cgraph.svg" width="512" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ae7204ebb4cf6c4a63d5dd71458d5607d" name="ae7204ebb4cf6c4a63d5dd71458d5607d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7204ebb4cf6c4a63d5dd71458d5607d">&#9670;&#160;</a></span>release_hook()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool release_hook </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="win32__window__observer_8cpp_source.html">win32_window_observer.cpp</a> の <a class="el" href="win32__window__observer_8cpp_source.html#l00118">118</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="win32__window__observer_8cpp_source.html#l00066">hooks</a>, <a class="el" href="win32__window__observer_8cpp_source.html#l00112">is_regist_handle()</a>, <a class="el" href="win32__window__observer_8cpp_source.html#l00065">max_hook_count</a>, <a class="el" href="win32__window__observer_8cpp_source.html#l00052">reset()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="win32__window__observer_8cpp_source.html#l00135">regist_hook()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="win32__window__observer_8cpp_ae7204ebb4cf6c4a63d5dd71458d5607d_cgraph.svg" width="376" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="win32__window__observer_8cpp_ae7204ebb4cf6c4a63d5dd71458d5607d_icgraph.svg" width="246" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="abce91584982097b02b766f9970cbe65b" name="abce91584982097b02b766f9970cbe65b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abce91584982097b02b766f9970cbe65b">&#9670;&#160;</a></span>reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structglobal__hook.html">global_hook</a> *</td>          <td class="paramname"><span class="paramname"><em>h</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="win32__window__observer_8cpp_source.html">win32_window_observer.cpp</a> の <a class="el" href="win32__window__observer_8cpp_source.html#l00052">52</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="win32__window__observer_8cpp_source.html#l00048">global_hook::hook_handle</a>, <a class="el" href="win32__window__observer_8cpp_source.html#l00049">global_hook::hook_proc</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="_test_export_backup__action_8cpp_source.html#l00047">action_data_initializer::action_data_initializer()</a>, <a class="el" href="_test_export_backup__menu_8cpp_source.html#l00209">menu_data_initializer::menu_data_initializer()</a>, <a class="el" href="_test_export_backup__menu_8cpp_source.html#l00050">menu_item_data_initializer::menu_item_data_initializer()</a>, <a class="el" href="win32__window__observer_8cpp_source.html#l00118">release_hook()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="win32__window__observer_8cpp_abce91584982097b02b766f9970cbe65b_icgraph.svg" width="430" height="238"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a1890f8cb42478c3f21696a3ccedc2f51" name="a1890f8cb42478c3f21696a3ccedc2f51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1890f8cb42478c3f21696a3ccedc2f51">&#9670;&#160;</a></span>valied()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool valied </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structglobal__hook.html">global_hook</a> *</td>          <td class="paramname"><span class="paramname"><em>h</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="win32__window__observer_8cpp_source.html">win32_window_observer.cpp</a> の <a class="el" href="win32__window__observer_8cpp_source.html#l00058">58</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="win32__window__observer_8cpp_source.html#l00048">global_hook::hook_handle</a>, <a class="el" href="win32__window__observer_8cpp_source.html#l00049">global_hook::hook_proc</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="win32__window__observer_8cpp_source.html#l00112">is_regist_handle()</a>, <a class="el" href="win32__window__observer_8cpp_source.html#l00072">proceger_base()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="win32__window__observer_8cpp_a1890f8cb42478c3f21696a3ccedc2f51_icgraph.svg" width="512" height="114"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">変数詳解</h2>
+<a id="a65d21d0bff3df03434d61f3f5d5a8f6d" name="a65d21d0bff3df03434d61f3f5d5a8f6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65d21d0bff3df03434d61f3f5d5a8f6d">&#9670;&#160;</a></span>dll_instance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HINSTANCE dll_instance = nullptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="win32__window__observer_8cpp_source.html">win32_window_observer.cpp</a> の <a class="el" href="win32__window__observer_8cpp_source.html#l00109">109</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="win32__window__observer_8cpp_source.html#l00160">DllMain()</a>, <a class="el" href="win32__window__observer_8cpp_source.html#l00135">regist_hook()</a>.</p>
+
+</div>
+</div>
+<a id="a7f9e7d1ff67fba96f13fbe22994eb245" name="a7f9e7d1ff67fba96f13fbe22994eb245"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f9e7d1ff67fba96f13fbe22994eb245">&#9670;&#160;</a></span>hooks</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt; <a class="el" href="structglobal__hook.html">global_hook</a>, <a class="el" href="#a625260ac09ea01cb578d6fa0cd1cff8b">max_hook_count</a> &gt; hooks = { }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="win32__window__observer_8cpp_source.html">win32_window_observer.cpp</a> の <a class="el" href="win32__window__observer_8cpp_source.html#l00066">66</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="win32__window__observer_8cpp_source.html#l00112">is_regist_handle()</a>, <a class="el" href="win32__window__observer_8cpp_source.html#l00072">proceger_base()</a>, <a class="el" href="win32__window__observer_8cpp_source.html#l00135">regist_hook()</a>, <a class="el" href="win32__window__observer_8cpp_source.html#l00118">release_hook()</a>.</p>
+
+</div>
+</div>
+<a id="a625260ac09ea01cb578d6fa0cd1cff8b" name="a625260ac09ea01cb578d6fa0cd1cff8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a625260ac09ea01cb578d6fa0cd1cff8b">&#9670;&#160;</a></span>max_hook_count</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t max_hook_count = 128llu</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="win32__window__observer_8cpp_source.html">win32_window_observer.cpp</a> の <a class="el" href="win32__window__observer_8cpp_source.html#l00065">65</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="win32__window__observer_8cpp_source.html#l00135">regist_hook()</a>, <a class="el" href="win32__window__observer_8cpp_source.html#l00118">release_hook()</a>.</p>
+
+</div>
+</div>
+<a id="a0eef82e2448a9cbd616924d6a2721155" name="a0eef82e2448a9cbd616924d6a2721155"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eef82e2448a9cbd616924d6a2721155">&#9670;&#160;</a></span>procs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt; <a class="el" href="#a3c5c420793095d64e544ba54053312b3">proce_base_t</a>, <a class="el" href="#a625260ac09ea01cb578d6fa0cd1cff8b">max_hook_count</a> &gt; procs = { { &amp;<a class="el" href="#aefb42ec95a4f1ae95025a9fd8e36d6e4">Proc0</a> } }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="win32__window__observer_8cpp_source.html">win32_window_observer.cpp</a> の <a class="el" href="win32__window__observer_8cpp_source.html#l00103">103</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="win32__window__observer_8cpp_source.html#l00135">regist_hook()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_d26f0ed8b287a778d960ad2241e01057.html">src</a></li><li class="navelem"><a href="dir_eb29242f55d2489f6c4d008365c270b7.html">core</a></li><li class="navelem"><a href="dir_6c154d7510949a2b37f111126ba92ccf.html">repository</a></li><li class="navelem"><a href="win32__window__observer_8cpp.html">win32_window_observer.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

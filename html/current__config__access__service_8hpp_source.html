@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/src/core/domain/service/current_config_access_service.hpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('current__config__access__service_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">current_config_access_service.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="current__config__access__service_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef SRC_CORE_DOMAIN_SERVICE_CURRENT_CONFIG_ACCESS_SERVICE_HPP_</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define SRC_CORE_DOMAIN_SERVICE_CURRENT_CONFIG_ACCESS_SERVICE_HPP_</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="crud__repository_8hpp.html">core/domain/crud_repository.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="app__ids_8hpp.html">core/domain/model/app/app_ids.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="domain_2model_2app_2config_8hpp.html">core/domain/model/app/config.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="option_8hpp.html">core/domain/model/app/option.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1domain_1_1services.html">depicture_menu::domain::services</a></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1services_1_1current__config__access__service.html">   12</a></span><span class="keyword">class </span><a class="code hl_function" href="classdepicture__menu_1_1domain_1_1services_1_1current__config__access__service.html#a895dce8fcefd14ac2de74dd96eaff55b">current_config_access_service</a></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1services_1_1current__config__access__service.html#a2ed1c10b92ac89b27f82a7cf979cfe24">   14</a></span>    <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1app.html#af0e6c7311ee1bb69c424c9ee029bf91e">app::option_id</a> <a class="code hl_variable" href="classdepicture__menu_1_1domain_1_1services_1_1current__config__access__service.html#a2ed1c10b92ac89b27f82a7cf979cfe24">opt_id_</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1services_1_1current__config__access__service.html#a895dce8fcefd14ac2de74dd96eaff55b">   17</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1services_1_1current__config__access__service.html#a895dce8fcefd14ac2de74dd96eaff55b">current_config_access_service</a>( std::string_view opt_name )</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        : <a class="code hl_variable" href="classdepicture__menu_1_1domain_1_1services_1_1current__config__access__service.html#a2ed1c10b92ac89b27f82a7cf979cfe24">opt_id_</a>( opt_name )</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    }</div>
+</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">template</span> &lt; <span class="keyword">typename</span> F &gt;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keyword">requires</span> std::invocable&lt; F, app::config &gt;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1services_1_1current__config__access__service.html#a982a04e702fc1ea5a0acfb20e458289e">   25</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1services_1_1current__config__access__service.html#a982a04e702fc1ea5a0acfb20e458289e">current_config</a>(</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1crud__repository__interface.html">crud_repository_interface&lt; app::option &gt;</a> <span class="keyword">const</span>&amp; o,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1crud__repository__interface.html">crud_repository_interface&lt; app::config &gt;</a> <span class="keyword">const</span>&amp; <a class="code hl_struct" href="structc.html">c</a>,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        F&amp;&amp;                                             f</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    )<span class="keyword"> const</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordflow">if</span> ( <span class="keyword">auto</span> opt = o.<a class="code hl_function" href="classdepicture__menu_1_1domain_1_1crud__repository__interface.html#ac170ece1adbf7138a6322bba5beea167">read</a>( <a class="code hl_variable" href="classdepicture__menu_1_1domain_1_1services_1_1current__config__access__service.html#a2ed1c10b92ac89b27f82a7cf979cfe24">opt_id_</a> ) )</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            <span class="keywordflow">if</span> ( <span class="keyword">auto</span> cfg = <a class="code hl_struct" href="structc.html">c</a>.read( opt-&gt;get_config_id( ) ) )</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                f( *cfg );</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
+</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    std::optional&lt; app::config &gt;</div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1services_1_1current__config__access__service.html#a7c1a62c96a9cdc48442e9f9665b5f9cb">   41</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1services_1_1current__config__access__service.html#a7c1a62c96a9cdc48442e9f9665b5f9cb">current_config</a>(</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1crud__repository__interface.html">crud_repository_interface&lt; app::option &gt;</a> <span class="keyword">const</span>&amp; o,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1crud__repository__interface.html">crud_repository_interface&lt; app::config &gt;</a> <span class="keyword">const</span>&amp; <a class="code hl_struct" href="structc.html">c</a></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    )<span class="keyword"> const</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        std::optional&lt; app::config &gt; res;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1services_1_1current__config__access__service.html#a982a04e702fc1ea5a0acfb20e458289e">current_config</a>( o, <a class="code hl_struct" href="structc.html">c</a>, [ &amp;res ]( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; <a class="code hl_struct" href="structc.html">c</a> ) { res = <a class="code hl_struct" href="structc.html">c</a>; } );</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">return</span> res;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
+</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>};</div>
+</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}    <span class="comment">// namespace depicture_menu::domain::services</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_CORE_DOMAIN_SERVICE_CURRENT_CONFIG_ACCESS_SERVICE_HPP_</span></div>
+<div class="ttc" id="aapp__ids_8hpp_html"><div class="ttname"><a href="app__ids_8hpp.html">app_ids.hpp</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1crud__repository__interface_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1crud__repository__interface.html">depicture_menu::domain::crud_repository_interface</a></div><div class="ttdef"><b>Definition</b> <a href="crud__repository_8hpp_source.html#l00036">crud_repository.hpp:38</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1crud__repository__interface_html_ac170ece1adbf7138a6322bba5beea167"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1crud__repository__interface.html#ac170ece1adbf7138a6322bba5beea167">depicture_menu::domain::crud_repository_interface::read</a></div><div class="ttdeci">virtual std::optional&lt; aggregate_t &gt; read(id_t) const =0</div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1services_1_1current__config__access__service_html_a2ed1c10b92ac89b27f82a7cf979cfe24"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1services_1_1current__config__access__service.html#a2ed1c10b92ac89b27f82a7cf979cfe24">depicture_menu::domain::services::current_config_access_service::opt_id_</a></div><div class="ttdeci">app::option_id opt_id_</div><div class="ttdef"><b>Definition</b> <a href="#l00014">current_config_access_service.hpp:14</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1services_1_1current__config__access__service_html_a7c1a62c96a9cdc48442e9f9665b5f9cb"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1services_1_1current__config__access__service.html#a7c1a62c96a9cdc48442e9f9665b5f9cb">depicture_menu::domain::services::current_config_access_service::current_config</a></div><div class="ttdeci">std::optional&lt; app::config &gt; current_config(crud_repository_interface&lt; app::option &gt; const &amp;o, crud_repository_interface&lt; app::config &gt; const &amp;c) const</div><div class="ttdef"><b>Definition</b> <a href="#l00041">current_config_access_service.hpp:41</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1services_1_1current__config__access__service_html_a895dce8fcefd14ac2de74dd96eaff55b"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1services_1_1current__config__access__service.html#a895dce8fcefd14ac2de74dd96eaff55b">depicture_menu::domain::services::current_config_access_service::current_config_access_service</a></div><div class="ttdeci">current_config_access_service(std::string_view opt_name)</div><div class="ttdef"><b>Definition</b> <a href="#l00017">current_config_access_service.hpp:17</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1services_1_1current__config__access__service_html_a982a04e702fc1ea5a0acfb20e458289e"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1services_1_1current__config__access__service.html#a982a04e702fc1ea5a0acfb20e458289e">depicture_menu::domain::services::current_config_access_service::current_config</a></div><div class="ttdeci">void current_config(crud_repository_interface&lt; app::option &gt; const &amp;o, crud_repository_interface&lt; app::config &gt; const &amp;c, F &amp;&amp;f) const</div><div class="ttdef"><b>Definition</b> <a href="#l00025">current_config_access_service.hpp:25</a></div></div>
+<div class="ttc" id="acrud__repository_8hpp_html"><div class="ttname"><a href="crud__repository_8hpp.html">crud_repository.hpp</a></div></div>
+<div class="ttc" id="adomain_2model_2app_2config_8hpp_html"><div class="ttname"><a href="domain_2model_2app_2config_8hpp.html">config.hpp</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1app_html_af0e6c7311ee1bb69c424c9ee029bf91e"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1app.html#af0e6c7311ee1bb69c424c9ee029bf91e">depicture_menu::domain::app::option_id</a></div><div class="ttdeci">detail_app::option_id_base option_id</div><div class="ttdef"><b>Definition</b> <a href="app__ids_8hpp_source.html#l00070">app_ids.hpp:70</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1services_html"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1services.html">depicture_menu::domain::services</a></div><div class="ttdef"><b>Definition</b> <a href="action__default__name__update__service_8hpp_source.html#l00008">action_default_name_update_service.hpp:9</a></div></div>
+<div class="ttc" id="aoption_8hpp_html"><div class="ttname"><a href="option_8hpp.html">option.hpp</a></div></div>
+<div class="ttc" id="astructc_html"><div class="ttname"><a href="structc.html">c</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00154">TestReflection.cpp:155</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_d26f0ed8b287a778d960ad2241e01057.html">src</a></li><li class="navelem"><a href="dir_eb29242f55d2489f6c4d008365c270b7.html">core</a></li><li class="navelem"><a href="dir_4099da298ded5c89b37f083ec42d8d40.html">domain</a></li><li class="navelem"><a href="dir_89ed77ae2c92ff877b5c799b7aed8b77.html">service</a></li><li class="navelem"><a href="current__config__access__service_8hpp.html">current_config_access_service.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

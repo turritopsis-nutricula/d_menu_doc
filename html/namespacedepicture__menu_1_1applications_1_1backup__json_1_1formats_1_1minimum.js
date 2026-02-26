@@ -1,0 +1,4 @@
+var namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1minimum =
+[
+    [ "backup_json", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1minimum_1_1backup__json.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1minimum_1_1backup__json" ]
+];

@@ -1,0 +1,4 @@
+var structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operations__acti266e39852521694f3a47636c76745b86 =
+[
+    [ "operator()", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operations__acti266e39852521694f3a47636c76745b86.html#ab6dc67caa1961e1e679b837de333f282", null ]
+];

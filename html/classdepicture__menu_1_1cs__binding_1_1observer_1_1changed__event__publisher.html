@@ -1,0 +1,941 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu::cs_binding::observer::changed_event_publisher クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('classdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher.html','','classdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">depicture_menu::cs_binding::observer::changed_event_publisher クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="change__event__publisher_8hpp_source.html">change_event_publisher.hpp</a>&gt;</code></p>
+<div class="dynheader">
+depicture_menu::cs_binding::observer::changed_event_publisher 連携図</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher__coll__graph.svg" width="179" height="216"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:signals_5Fholder" id="r_signals_5Fholder"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher_1_1signals__holder.html">signals_holder</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a37c23cf8fe4a742058a50a3db7dccd77" id="r_a37c23cf8fe4a742058a50a3db7dccd77"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a37c23cf8fe4a742058a50a3db7dccd77">event_id_t</a> = boost::uuids::uuid</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:add784c2bcc062b8b857ae4cbad8415ec" id="r_add784c2bcc062b8b857ae4cbad8415ec"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#add784c2bcc062b8b857ae4cbad8415ec">is_lock</a> () const</td></tr>
+<tr class="memitem:ac620d902892d4ecb65ad80111f589005" id="r_ac620d902892d4ecb65ad80111f589005"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac620d902892d4ecb65ad80111f589005">lock_publish</a> ()</td></tr>
+<tr class="memitem:ae8fdc8bd208e7d66852f99090cc9e81d" id="r_ae8fdc8bd208e7d66852f99090cc9e81d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae8fdc8bd208e7d66852f99090cc9e81d">unlock_publish</a> ()</td></tr>
+<tr class="memitem:aff52fa32fd715f195474a9d870e2ca93" id="r_aff52fa32fd715f195474a9d870e2ca93"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aff52fa32fd715f195474a9d870e2ca93">publish</a> (config_view_notify_topic <a class="el" href="structc.html">c</a>, <a class="el" href="#aa0388c5fc03160f415acd31ab524fce6">uuid_t</a> subject_id)</td></tr>
+<tr class="memitem:a241e7ec02aba0b174a6dd814babcc7fc" id="r_a241e7ec02aba0b174a6dd814babcc7fc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a241e7ec02aba0b174a6dd814babcc7fc">publish</a> (config_view_notify_topic <a class="el" href="structc.html">c</a>, <a class="el" href="#aa0388c5fc03160f415acd31ab524fce6">uuid_t</a> <a class="el" href="_test_config_view_presenter_8cpp.html#ad626f8fa63f6e36344ef9eb70ce8c857">id0</a>, <a class="el" href="#aa0388c5fc03160f415acd31ab524fce6">uuid_t</a> <a class="el" href="_test_config_view_presenter_8cpp.html#ac9b463afce48cb69007cde57bb95dc56">id1</a>)</td></tr>
+<tr class="memitem:a9743a56cf308b72f98fc427daf69594a" id="r_a9743a56cf308b72f98fc427daf69594a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9743a56cf308b72f98fc427daf69594a">publish_changed_collection</a> (config_view_notify_topic <a class="el" href="structc.html">c</a>, <a class="el" href="#aa0388c5fc03160f415acd31ab524fce6">uuid_t</a> container_id, <a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html#a79cdb028c057b8d92655a898c11ecff1">collection_changed_kind</a> k, int current_index, int sub_index)</td></tr>
+<tr class="memitem:ab0691b831617fe9162c1819ed8137742" id="r_ab0691b831617fe9162c1819ed8137742"><td class="memTemplParams" colspan="2">template&lt;config_view_notify_topic E&gt; </td></tr>
+<tr class="memitem:ab0691b831617fe9162c1819ed8137742 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab0691b831617fe9162c1819ed8137742">publish_topiced</a> (<a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html#aa2e6d3bc29da116433057ba199bb0b49">config_view_topic_data_type_t</a>&lt; E &gt; const &amp;<a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer_1_1data.html">data</a>)</td></tr>
+<tr class="memitem:a56fa5b6223efe9ef3a14fdbbf97fcab9" id="r_a56fa5b6223efe9ef3a14fdbbf97fcab9"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="#a56fa5b6223efe9ef3a14fdbbf97fcab9">subscribe_control</a> (std::function&lt; void(config_view_notify_topic, <a class="el" href="#aa0388c5fc03160f415acd31ab524fce6">uuid_t</a>) &gt; <a class="el" href="structobs.html">obs</a>)</td></tr>
+<tr class="memitem:a44626b700d2c12690ced778309752cc0" id="r_a44626b700d2c12690ced778309752cc0"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="#a44626b700d2c12690ced778309752cc0">subscribe</a> (std::function&lt; <a class="el" href="#a76bccdcd0feecaac81a914b925aef2eb">notify_t</a> &gt; f)</td></tr>
+<tr class="memitem:a86e0ca0a7b38970cde5b3b49ab58e649" id="r_a86e0ca0a7b38970cde5b3b49ab58e649"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="#a86e0ca0a7b38970cde5b3b49ab58e649">subscribe</a> (config_view_notify_topic channel, std::function&lt; void(<a class="el" href="#a37c23cf8fe4a742058a50a3db7dccd77">event_id_t</a>, <a class="el" href="#aa0388c5fc03160f415acd31ab524fce6">uuid_t</a>) &gt; <a class="el" href="structobs.html">obs</a>)</td></tr>
+<tr class="memitem:a61ffa3375bff43f1a0fa136ea612b1f8" id="r_a61ffa3375bff43f1a0fa136ea612b1f8"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="#a61ffa3375bff43f1a0fa136ea612b1f8">subscribe</a> (std::function&lt; <a class="el" href="#a18b05467770598de1ff4f5d4db87f073">two_subject_notify_t</a> &gt; f)</td></tr>
+<tr class="memitem:abf15e525130dec5b87fa2f7fb26a2fe7" id="r_abf15e525130dec5b87fa2f7fb26a2fe7"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="#abf15e525130dec5b87fa2f7fb26a2fe7">subscribe_collection</a> (std::function&lt; <a class="el" href="#a5fd4083b8d029d9dc8029526518801bb">collection_notify_t</a> &gt; <a class="el" href="structobs.html">obs</a>)</td></tr>
+<tr class="memitem:a40f1cebbc13b24cb143581c03f234be2" id="r_a40f1cebbc13b24cb143581c03f234be2"><td class="memTemplParams" colspan="2">template&lt;config_view_notify_topic E, typename F&gt; </td></tr>
+<tr class="memitem:a40f1cebbc13b24cb143581c03f234be2 template"><td class="memItemLeft">boost::signals2::connection&#160;</td><td class="memItemRight"><a class="el" href="#a40f1cebbc13b24cb143581c03f234be2">subscribe</a> (F &amp;&amp;f)</td></tr>
+<tr class="memitem:a8c71b7ea2745ff9484b8af1ec64aa8bc" id="r_a8c71b7ea2745ff9484b8af1ec64aa8bc"><td class="memTemplParams" colspan="2">template&lt;config_view_notify_topic E&gt; </td></tr>
+<tr class="memitem:a8c71b7ea2745ff9484b8af1ec64aa8bc template"><td class="memItemLeft">std::size_t&#160;</td><td class="memItemRight"><a class="el" href="#a8c71b7ea2745ff9484b8af1ec64aa8bc">count_subscriber</a> () const</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-types" class="groupheader"><a id="pri-types" name="pri-types"></a>
+非公開型</h2></td></tr>
+<tr class="memitem:aa0388c5fc03160f415acd31ab524fce6" id="r_aa0388c5fc03160f415acd31ab524fce6"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#aa0388c5fc03160f415acd31ab524fce6">uuid_t</a> = boost::uuids::uuid</td></tr>
+<tr class="memitem:a76bccdcd0feecaac81a914b925aef2eb" id="r_a76bccdcd0feecaac81a914b925aef2eb"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a76bccdcd0feecaac81a914b925aef2eb">notify_t</a> = void( config_view_notify_topic, <a class="el" href="#a37c23cf8fe4a742058a50a3db7dccd77">event_id_t</a>, <a class="el" href="#aa0388c5fc03160f415acd31ab524fce6">uuid_t</a> )</td></tr>
+<tr class="memitem:a5fd4083b8d029d9dc8029526518801bb" id="r_a5fd4083b8d029d9dc8029526518801bb"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a5fd4083b8d029d9dc8029526518801bb">collection_notify_t</a></td></tr>
+<tr class="memitem:a18b05467770598de1ff4f5d4db87f073" id="r_a18b05467770598de1ff4f5d4db87f073"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a18b05467770598de1ff4f5d4db87f073">two_subject_notify_t</a> = void( config_view_notify_topic, <a class="el" href="#a37c23cf8fe4a742058a50a3db7dccd77">event_id_t</a>, <a class="el" href="#aa0388c5fc03160f415acd31ab524fce6">uuid_t</a>, <a class="el" href="#aa0388c5fc03160f415acd31ab524fce6">uuid_t</a> )</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a0156b982133a7871db7ba6a93404ed49" id="r_a0156b982133a7871db7ba6a93404ed49"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a0156b982133a7871db7ba6a93404ed49">is_publish_lock_</a> = false</td></tr>
+<tr class="memitem:a73badec07c331aa9ecc9307a3ac64a32" id="r_a73badec07c331aa9ecc9307a3ac64a32"><td class="memItemLeft">boost::signals2::signal&lt; <a class="el" href="#a76bccdcd0feecaac81a914b925aef2eb">notify_t</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a73badec07c331aa9ecc9307a3ac64a32">event_sig_</a></td></tr>
+<tr class="memitem:a82491ac83643ec91a2b5fac65ba9ac85" id="r_a82491ac83643ec91a2b5fac65ba9ac85"><td class="memItemLeft">boost::signals2::signal&lt; <a class="el" href="#a18b05467770598de1ff4f5d4db87f073">two_subject_notify_t</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a82491ac83643ec91a2b5fac65ba9ac85">event_2_sig_</a></td></tr>
+<tr class="memitem:ad13546b16d9053bbd6828dc5e1acc4b7" id="r_ad13546b16d9053bbd6828dc5e1acc4b7"><td class="memItemLeft">boost::signals2::signal&lt; <a class="el" href="#a76bccdcd0feecaac81a914b925aef2eb">notify_t</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ad13546b16d9053bbd6828dc5e1acc4b7">begin_end_sig_</a></td></tr>
+<tr class="memitem:a9b390ede460f34a49df147c7ffce3e30" id="r_a9b390ede460f34a49df147c7ffce3e30"><td class="memItemLeft">boost::signals2::signal&lt; <a class="el" href="#a5fd4083b8d029d9dc8029526518801bb">collection_notify_t</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a9b390ede460f34a49df147c7ffce3e30">collection_sig_</a></td></tr>
+<tr class="memitem:adc30c0c6254971f5df3e66e5f37be648" id="r_adc30c0c6254971f5df3e66e5f37be648"><td class="memItemLeft"><a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher_1_1signals__holder.html">signals_holder</a>&#160;</td><td class="memItemRight"><a class="el" href="#adc30c0c6254971f5df3e66e5f37be648">signals_</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock">
+<p class="definition"> <a class="el" href="change__event__publisher_8hpp_source.html">change_event_publisher.hpp</a> の <a class="el" href="change__event__publisher_8hpp_source.html#l00022">22</a> 行目に定義があります。</p>
+</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">型定義メンバ詳解</h2>
+<a id="a5fd4083b8d029d9dc8029526518801bb" name="a5fd4083b8d029d9dc8029526518801bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fd4083b8d029d9dc8029526518801bb">&#9670;&#160;</a></span>collection_notify_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a5fd4083b8d029d9dc8029526518801bb">depicture_menu::cs_binding::observer::changed_event_publisher::collection_notify_t</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>初期値:</b><div class="fragment"><div class="line">void(</div>
+<div class="line">       config_view_notify_topic,</div>
+<div class="line">       <a class="code hl_typedef" href="#a37c23cf8fe4a742058a50a3db7dccd77">event_id_t</a> ,</div>
+<div class="line">       <a class="code hl_enumeration" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html#a79cdb028c057b8d92655a898c11ecff1">collection_changed_kind</a>,</div>
+<div class="line">       <a class="code hl_typedef" href="#aa0388c5fc03160f415acd31ab524fce6">uuid_t</a> ,</div>
+<div class="line">       <span class="keywordtype">int</span> ,</div>
+<div class="line">       <span class="keywordtype">int</span> </div>
+<div class="line">   )</div>
+<div class="ttc" id="aclassdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher_html_a37c23cf8fe4a742058a50a3db7dccd77"><div class="ttname"><a href="#a37c23cf8fe4a742058a50a3db7dccd77">depicture_menu::cs_binding::observer::changed_event_publisher::event_id_t</a></div><div class="ttdeci">boost::uuids::uuid event_id_t</div><div class="ttdef"><b>Definition</b> <a href="change__event__publisher_8hpp_source.html#l00026">change_event_publisher.hpp:26</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher_html_aa0388c5fc03160f415acd31ab524fce6"><div class="ttname"><a href="#aa0388c5fc03160f415acd31ab524fce6">depicture_menu::cs_binding::observer::changed_event_publisher::uuid_t</a></div><div class="ttdeci">boost::uuids::uuid uuid_t</div><div class="ttdef"><b>Definition</b> <a href="change__event__publisher_8hpp_source.html#l00137">change_event_publisher.hpp:137</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1cs__binding_1_1observer_html_a79cdb028c057b8d92655a898c11ecff1"><div class="ttname"><a href="namespacedepicture__menu_1_1cs__binding_1_1observer.html#a79cdb028c057b8d92655a898c11ecff1">depicture_menu::cs_binding::observer::collection_changed_kind</a></div><div class="ttdeci">collection_changed_kind</div><div class="ttdef"><b>Definition</b> <a href="collection__changed__kind_8hpp_source.html#l00008">collection_changed_kind.hpp:9</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="change__event__publisher_8hpp_source.html">change_event_publisher.hpp</a> の <a class="el" href="change__event__publisher_8hpp_source.html#l00139">139</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a37c23cf8fe4a742058a50a3db7dccd77" name="a37c23cf8fe4a742058a50a3db7dccd77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37c23cf8fe4a742058a50a3db7dccd77">&#9670;&#160;</a></span>event_id_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a37c23cf8fe4a742058a50a3db7dccd77">depicture_menu::cs_binding::observer::changed_event_publisher::event_id_t</a> = boost::uuids::uuid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="change__event__publisher_8hpp_source.html">change_event_publisher.hpp</a> の <a class="el" href="change__event__publisher_8hpp_source.html#l00026">26</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a76bccdcd0feecaac81a914b925aef2eb" name="a76bccdcd0feecaac81a914b925aef2eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76bccdcd0feecaac81a914b925aef2eb">&#9670;&#160;</a></span>notify_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a76bccdcd0feecaac81a914b925aef2eb">depicture_menu::cs_binding::observer::changed_event_publisher::notify_t</a> = void( config_view_notify_topic, <a class="el" href="#a37c23cf8fe4a742058a50a3db7dccd77">event_id_t</a>, <a class="el" href="#aa0388c5fc03160f415acd31ab524fce6">uuid_t</a> )</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="change__event__publisher_8hpp_source.html">change_event_publisher.hpp</a> の <a class="el" href="change__event__publisher_8hpp_source.html#l00138">138</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a18b05467770598de1ff4f5d4db87f073" name="a18b05467770598de1ff4f5d4db87f073"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18b05467770598de1ff4f5d4db87f073">&#9670;&#160;</a></span>two_subject_notify_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a18b05467770598de1ff4f5d4db87f073">depicture_menu::cs_binding::observer::changed_event_publisher::two_subject_notify_t</a> = void( config_view_notify_topic, <a class="el" href="#a37c23cf8fe4a742058a50a3db7dccd77">event_id_t</a>, <a class="el" href="#aa0388c5fc03160f415acd31ab524fce6">uuid_t</a>, <a class="el" href="#aa0388c5fc03160f415acd31ab524fce6">uuid_t</a> )</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="change__event__publisher_8hpp_source.html">change_event_publisher.hpp</a> の <a class="el" href="change__event__publisher_8hpp_source.html#l00147">147</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aa0388c5fc03160f415acd31ab524fce6" name="aa0388c5fc03160f415acd31ab524fce6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0388c5fc03160f415acd31ab524fce6">&#9670;&#160;</a></span>uuid_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#aa0388c5fc03160f415acd31ab524fce6">depicture_menu::cs_binding::observer::changed_event_publisher::uuid_t</a> = boost::uuids::uuid</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="change__event__publisher_8hpp_source.html">change_event_publisher.hpp</a> の <a class="el" href="change__event__publisher_8hpp_source.html#l00137">137</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="a8c71b7ea2745ff9484b8af1ec64aa8bc" name="a8c71b7ea2745ff9484b8af1ec64aa8bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c71b7ea2745ff9484b8af1ec64aa8bc">&#9670;&#160;</a></span>count_subscriber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;config_view_notify_topic E&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t depicture_menu::cs_binding::observer::changed_event_publisher::count_subscriber </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="change__event__publisher_8hpp_source.html">change_event_publisher.hpp</a> の <a class="el" href="change__event__publisher_8hpp_source.html#l00327">327</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="change__event__publisher_8hpp_source.html#l00156">signals_</a>.</p>
+
+</div>
+</div>
+<a id="add784c2bcc062b8b857ae4cbad8415ec" name="add784c2bcc062b8b857ae4cbad8415ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add784c2bcc062b8b857ae4cbad8415ec">&#9670;&#160;</a></span>is_lock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool depicture_menu::cs_binding::observer::changed_event_publisher::is_lock </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="change__event__publisher_8hpp_source.html">change_event_publisher.hpp</a> の <a class="el" href="change__event__publisher_8hpp_source.html#l00162">162</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="change__event__publisher_8hpp_source.html#l00148">is_publish_lock_</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="change__event__publisher_8hpp_source.html#l00211">publish()</a>, <a class="el" href="change__event__publisher_8hpp_source.html#l00180">publish()</a>, <a class="el" href="change__event__publisher_8hpp_source.html#l00224">publish_changed_collection()</a>, <a class="el" href="change__event__publisher_8hpp_source.html#l00251">publish_topiced()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher_add784c2bcc062b8b857ae4cbad8415ec_icgraph.svg" width="416" height="382"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ac620d902892d4ecb65ad80111f589005" name="ac620d902892d4ecb65ad80111f589005"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac620d902892d4ecb65ad80111f589005">&#9670;&#160;</a></span>lock_publish()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::cs_binding::observer::changed_event_publisher::lock_publish </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="change__event__publisher_8hpp_source.html">change_event_publisher.hpp</a> の <a class="el" href="change__event__publisher_8hpp_source.html#l00167">167</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="change__event__publisher_8hpp_source.html#l00148">is_publish_lock_</a>.</p>
+
+</div>
+</div>
+<a id="a241e7ec02aba0b174a6dd814babcc7fc" name="a241e7ec02aba0b174a6dd814babcc7fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a241e7ec02aba0b174a6dd814babcc7fc">&#9670;&#160;</a></span>publish() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::cs_binding::observer::changed_event_publisher::publish </td>
+          <td>(</td>
+          <td class="paramtype">config_view_notify_topic</td>          <td class="paramname"><span class="paramname"><em>c</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#aa0388c5fc03160f415acd31ab524fce6">uuid_t</a></td>          <td class="paramname"><span class="paramname"><em>id0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#aa0388c5fc03160f415acd31ab524fce6">uuid_t</a></td>          <td class="paramname"><span class="paramname"><em>id1</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="change__event__publisher_8hpp_source.html">change_event_publisher.hpp</a> の <a class="el" href="change__event__publisher_8hpp_source.html#l00211">211</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="change__event__publisher_8hpp_source.html#l00152">begin_end_sig_</a>, <a class="el" href="change__event__publisher_8hpp_source.html#l00151">event_2_sig_</a>, <a class="el" href="_test_config_view_presenter_8cpp_source.html#l00210">id0</a>, <a class="el" href="_test_config_view_presenter_8cpp_source.html#l00211">id1</a>, <a class="el" href="change__event__publisher_8hpp_source.html#l00162">is_lock()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher_a241e7ec02aba0b174a6dd814babcc7fc_cgraph.svg" width="396" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aff52fa32fd715f195474a9d870e2ca93" name="aff52fa32fd715f195474a9d870e2ca93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff52fa32fd715f195474a9d870e2ca93">&#9670;&#160;</a></span>publish() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::cs_binding::observer::changed_event_publisher::publish </td>
+          <td>(</td>
+          <td class="paramtype">config_view_notify_topic</td>          <td class="paramname"><span class="paramname"><em>c</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#aa0388c5fc03160f415acd31ab524fce6">uuid_t</a></td>          <td class="paramname"><span class="paramname"><em>subject_id</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="change__event__publisher_8hpp_source.html">change_event_publisher.hpp</a> の <a class="el" href="change__event__publisher_8hpp_source.html#l00180">180</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="change__event__publisher_8hpp_source.html#l00152">begin_end_sig_</a>, <a class="el" href="change__event__publisher_8hpp_source.html#l00150">event_sig_</a>, <a class="el" href="change__event__publisher_8hpp_source.html#l00162">is_lock()</a>, <a class="el" href="change__event__publisher_8hpp_source.html#l00156">signals_</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher_aff52fa32fd715f195474a9d870e2ca93_cgraph.svg" width="396" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a9743a56cf308b72f98fc427daf69594a" name="a9743a56cf308b72f98fc427daf69594a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9743a56cf308b72f98fc427daf69594a">&#9670;&#160;</a></span>publish_changed_collection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::cs_binding::observer::changed_event_publisher::publish_changed_collection </td>
+          <td>(</td>
+          <td class="paramtype">config_view_notify_topic</td>          <td class="paramname"><span class="paramname"><em>c</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#aa0388c5fc03160f415acd31ab524fce6">uuid_t</a></td>          <td class="paramname"><span class="paramname"><em>container_id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html#a79cdb028c057b8d92655a898c11ecff1">collection_changed_kind</a></td>          <td class="paramname"><span class="paramname"><em>k</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>current_index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>sub_index</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="change__event__publisher_8hpp_source.html">change_event_publisher.hpp</a> の <a class="el" href="change__event__publisher_8hpp_source.html#l00224">224</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="change__event__publisher_8hpp_source.html#l00152">begin_end_sig_</a>, <a class="el" href="change__event__publisher_8hpp_source.html#l00153">collection_sig_</a>, <a class="el" href="change__event__publisher_8hpp_source.html#l00162">is_lock()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher_a9743a56cf308b72f98fc427daf69594a_cgraph.svg" width="416" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ab0691b831617fe9162c1819ed8137742" name="ab0691b831617fe9162c1819ed8137742"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0691b831617fe9162c1819ed8137742">&#9670;&#160;</a></span>publish_topiced()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;config_view_notify_topic E&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::cs_binding::observer::changed_event_publisher::publish_topiced </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html#aa2e6d3bc29da116433057ba199bb0b49">config_view_topic_data_type_t</a>&lt; E &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="change__event__publisher_8hpp_source.html">change_event_publisher.hpp</a> の <a class="el" href="change__event__publisher_8hpp_source.html#l00251">251</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="change__event__publisher_8hpp_source.html#l00162">is_lock()</a>, <a class="el" href="change__event__publisher_8hpp_source.html#l00156">signals_</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher_ab0691b831617fe9162c1819ed8137742_cgraph.svg" width="396" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a86e0ca0a7b38970cde5b3b49ab58e649" name="a86e0ca0a7b38970cde5b3b49ab58e649"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86e0ca0a7b38970cde5b3b49ab58e649">&#9670;&#160;</a></span>subscribe() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto depicture_menu::cs_binding::observer::changed_event_publisher::subscribe </td>
+          <td>(</td>
+          <td class="paramtype">config_view_notify_topic</td>          <td class="paramname"><span class="paramname"><em>channel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="#a37c23cf8fe4a742058a50a3db7dccd77">event_id_t</a>, <a class="el" href="#aa0388c5fc03160f415acd31ab524fce6">uuid_t</a>) &gt;</td>          <td class="paramname"><span class="paramname"><em>obs</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="change__event__publisher_8hpp_source.html">change_event_publisher.hpp</a> の <a class="el" href="change__event__publisher_8hpp_source.html#l00283">283</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="change__event__publisher_8hpp_source.html#l00276">subscribe()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher_a86e0ca0a7b38970cde5b3b49ab58e649_cgraph.svg" width="396" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a40f1cebbc13b24cb143581c03f234be2" name="a40f1cebbc13b24cb143581c03f234be2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40f1cebbc13b24cb143581c03f234be2">&#9670;&#160;</a></span>subscribe() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;config_view_notify_topic E, typename F&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::signals2::connection depicture_menu::cs_binding::observer::changed_event_publisher::subscribe </td>
+          <td>(</td>
+          <td class="paramtype">F &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>f</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="change__event__publisher_8hpp_source.html">change_event_publisher.hpp</a> の <a class="el" href="change__event__publisher_8hpp_source.html#l00320">320</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="change__event__publisher_8hpp_source.html#l00156">signals_</a>.</p>
+
+</div>
+</div>
+<a id="a44626b700d2c12690ced778309752cc0" name="a44626b700d2c12690ced778309752cc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44626b700d2c12690ced778309752cc0">&#9670;&#160;</a></span>subscribe() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto depicture_menu::cs_binding::observer::changed_event_publisher::subscribe </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; <a class="el" href="#a76bccdcd0feecaac81a914b925aef2eb">notify_t</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>f</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="change__event__publisher_8hpp_source.html">change_event_publisher.hpp</a> の <a class="el" href="change__event__publisher_8hpp_source.html#l00276">276</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="change__event__publisher_8hpp_source.html#l00150">event_sig_</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="change__event__publisher_8hpp_source.html#l00283">subscribe()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher_a44626b700d2c12690ced778309752cc0_icgraph.svg" width="396" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a61ffa3375bff43f1a0fa136ea612b1f8" name="a61ffa3375bff43f1a0fa136ea612b1f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61ffa3375bff43f1a0fa136ea612b1f8">&#9670;&#160;</a></span>subscribe() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto depicture_menu::cs_binding::observer::changed_event_publisher::subscribe </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; <a class="el" href="#a18b05467770598de1ff4f5d4db87f073">two_subject_notify_t</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>f</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="change__event__publisher_8hpp_source.html">change_event_publisher.hpp</a> の <a class="el" href="change__event__publisher_8hpp_source.html#l00302">302</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="change__event__publisher_8hpp_source.html#l00151">event_2_sig_</a>.</p>
+
+</div>
+</div>
+<a id="abf15e525130dec5b87fa2f7fb26a2fe7" name="abf15e525130dec5b87fa2f7fb26a2fe7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf15e525130dec5b87fa2f7fb26a2fe7">&#9670;&#160;</a></span>subscribe_collection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto depicture_menu::cs_binding::observer::changed_event_publisher::subscribe_collection </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; <a class="el" href="#a5fd4083b8d029d9dc8029526518801bb">collection_notify_t</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>obs</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="change__event__publisher_8hpp_source.html">change_event_publisher.hpp</a> の <a class="el" href="change__event__publisher_8hpp_source.html#l00308">308</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="change__event__publisher_8hpp_source.html#l00153">collection_sig_</a>.</p>
+
+</div>
+</div>
+<a id="a56fa5b6223efe9ef3a14fdbbf97fcab9" name="a56fa5b6223efe9ef3a14fdbbf97fcab9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56fa5b6223efe9ef3a14fdbbf97fcab9">&#9670;&#160;</a></span>subscribe_control()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto depicture_menu::cs_binding::observer::changed_event_publisher::subscribe_control </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(config_view_notify_topic, <a class="el" href="#aa0388c5fc03160f415acd31ab524fce6">uuid_t</a>) &gt;</td>          <td class="paramname"><span class="paramname"><em>obs</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="change__event__publisher_8hpp_source.html">change_event_publisher.hpp</a> の <a class="el" href="change__event__publisher_8hpp_source.html#l00264">264</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="change__event__publisher_8hpp_source.html#l00152">begin_end_sig_</a>.</p>
+
+</div>
+</div>
+<a id="ae8fdc8bd208e7d66852f99090cc9e81d" name="ae8fdc8bd208e7d66852f99090cc9e81d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8fdc8bd208e7d66852f99090cc9e81d">&#9670;&#160;</a></span>unlock_publish()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::cs_binding::observer::changed_event_publisher::unlock_publish </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="change__event__publisher_8hpp_source.html">change_event_publisher.hpp</a> の <a class="el" href="change__event__publisher_8hpp_source.html#l00172">172</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="change__event__publisher_8hpp_source.html#l00148">is_publish_lock_</a>.</p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">メンバ詳解</h2>
+<a id="ad13546b16d9053bbd6828dc5e1acc4b7" name="ad13546b16d9053bbd6828dc5e1acc4b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad13546b16d9053bbd6828dc5e1acc4b7">&#9670;&#160;</a></span>begin_end_sig_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::signals2::signal&lt; <a class="el" href="#a76bccdcd0feecaac81a914b925aef2eb">notify_t</a> &gt; depicture_menu::cs_binding::observer::changed_event_publisher::begin_end_sig_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="change__event__publisher_8hpp_source.html">change_event_publisher.hpp</a> の <a class="el" href="change__event__publisher_8hpp_source.html#l00152">152</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="change__event__publisher_8hpp_source.html#l00211">publish()</a>, <a class="el" href="change__event__publisher_8hpp_source.html#l00180">publish()</a>, <a class="el" href="change__event__publisher_8hpp_source.html#l00224">publish_changed_collection()</a>, <a class="el" href="change__event__publisher_8hpp_source.html#l00264">subscribe_control()</a>.</p>
+
+</div>
+</div>
+<a id="a9b390ede460f34a49df147c7ffce3e30" name="a9b390ede460f34a49df147c7ffce3e30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b390ede460f34a49df147c7ffce3e30">&#9670;&#160;</a></span>collection_sig_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::signals2::signal&lt; <a class="el" href="#a5fd4083b8d029d9dc8029526518801bb">collection_notify_t</a> &gt; depicture_menu::cs_binding::observer::changed_event_publisher::collection_sig_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="change__event__publisher_8hpp_source.html">change_event_publisher.hpp</a> の <a class="el" href="change__event__publisher_8hpp_source.html#l00153">153</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="change__event__publisher_8hpp_source.html#l00224">publish_changed_collection()</a>, <a class="el" href="change__event__publisher_8hpp_source.html#l00308">subscribe_collection()</a>.</p>
+
+</div>
+</div>
+<a id="a82491ac83643ec91a2b5fac65ba9ac85" name="a82491ac83643ec91a2b5fac65ba9ac85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82491ac83643ec91a2b5fac65ba9ac85">&#9670;&#160;</a></span>event_2_sig_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::signals2::signal&lt; <a class="el" href="#a18b05467770598de1ff4f5d4db87f073">two_subject_notify_t</a> &gt; depicture_menu::cs_binding::observer::changed_event_publisher::event_2_sig_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="change__event__publisher_8hpp_source.html">change_event_publisher.hpp</a> の <a class="el" href="change__event__publisher_8hpp_source.html#l00151">151</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="change__event__publisher_8hpp_source.html#l00211">publish()</a>, <a class="el" href="change__event__publisher_8hpp_source.html#l00302">subscribe()</a>.</p>
+
+</div>
+</div>
+<a id="a73badec07c331aa9ecc9307a3ac64a32" name="a73badec07c331aa9ecc9307a3ac64a32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73badec07c331aa9ecc9307a3ac64a32">&#9670;&#160;</a></span>event_sig_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::signals2::signal&lt; <a class="el" href="#a76bccdcd0feecaac81a914b925aef2eb">notify_t</a> &gt; depicture_menu::cs_binding::observer::changed_event_publisher::event_sig_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="change__event__publisher_8hpp_source.html">change_event_publisher.hpp</a> の <a class="el" href="change__event__publisher_8hpp_source.html#l00150">150</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="change__event__publisher_8hpp_source.html#l00180">publish()</a>, <a class="el" href="change__event__publisher_8hpp_source.html#l00276">subscribe()</a>.</p>
+
+</div>
+</div>
+<a id="a0156b982133a7871db7ba6a93404ed49" name="a0156b982133a7871db7ba6a93404ed49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0156b982133a7871db7ba6a93404ed49">&#9670;&#160;</a></span>is_publish_lock_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool depicture_menu::cs_binding::observer::changed_event_publisher::is_publish_lock_ = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="change__event__publisher_8hpp_source.html">change_event_publisher.hpp</a> の <a class="el" href="change__event__publisher_8hpp_source.html#l00148">148</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="change__event__publisher_8hpp_source.html#l00162">is_lock()</a>, <a class="el" href="change__event__publisher_8hpp_source.html#l00167">lock_publish()</a>, <a class="el" href="change__event__publisher_8hpp_source.html#l00172">unlock_publish()</a>.</p>
+
+</div>
+</div>
+<a id="adc30c0c6254971f5df3e66e5f37be648" name="adc30c0c6254971f5df3e66e5f37be648"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc30c0c6254971f5df3e66e5f37be648">&#9670;&#160;</a></span>signals_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher_1_1signals__holder.html">signals_holder</a> depicture_menu::cs_binding::observer::changed_event_publisher::signals_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="change__event__publisher_8hpp_source.html">change_event_publisher.hpp</a> の <a class="el" href="change__event__publisher_8hpp_source.html#l00156">156</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="change__event__publisher_8hpp_source.html#l00327">count_subscriber()</a>, <a class="el" href="change__event__publisher_8hpp_source.html#l00180">publish()</a>, <a class="el" href="change__event__publisher_8hpp_source.html#l00251">publish_topiced()</a>, <a class="el" href="change__event__publisher_8hpp_source.html#l00320">subscribe()</a>.</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>depicture_menu/src/core/cs_binding/observer/<a class="el" href="change__event__publisher_8hpp_source.html">change_event_publisher.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespacedepicture__menu.html">depicture_menu</a></li><li class="navelem"><a href="namespacedepicture__menu_1_1cs__binding.html">cs_binding</a></li><li class="navelem"><a href="namespacedepicture__menu_1_1cs__binding_1_1observer.html">observer</a></li><li class="navelem"><a href="classdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher.html">changed_event_publisher</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

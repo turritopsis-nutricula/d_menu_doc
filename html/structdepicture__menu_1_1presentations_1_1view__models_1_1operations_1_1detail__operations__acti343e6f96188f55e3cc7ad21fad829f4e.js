@@ -1,0 +1,13 @@
+var structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operations__acti343e6f96188f55e3cc7ad21fad829f4e =
+[
+    [ "action_create_operator_impl", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operations__acti343e6f96188f55e3cc7ad21fad829f4e.html#a46d04fa3bc05b18c3b36db1cae47c644", null ],
+    [ "item_only", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operations__acti343e6f96188f55e3cc7ad21fad829f4e.html#a557b2382e4cda1b39958dafbdba34fff", null ],
+    [ "item_only", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operations__acti343e6f96188f55e3cc7ad21fad829f4e.html#ab08457969bc54b66824e79464219e3de", null ],
+    [ "item_only", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operations__acti343e6f96188f55e3cc7ad21fad829f4e.html#a79d205e596386ceebd578f6b95708d16", null ],
+    [ "sync", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operations__acti343e6f96188f55e3cc7ad21fad829f4e.html#a3319bdd5d22b89d3e48ece4775be261b", null ],
+    [ "sync", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operations__acti343e6f96188f55e3cc7ad21fad829f4e.html#ad670aa97dc9e22a0a1244c9031349c7b", null ],
+    [ "sync", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operations__acti343e6f96188f55e3cc7ad21fad829f4e.html#a3a450317a11f0d97c1e4dfb1c6834fa8", null ],
+    [ "sync", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operations__acti343e6f96188f55e3cc7ad21fad829f4e.html#ada5feb8647f865f6d2261ffbeb64ace1", null ],
+    [ "sync", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operations__acti343e6f96188f55e3cc7ad21fad829f4e.html#ab44f2bd0d7ee99f201f473cc54fb36c7", null ],
+    [ "sync", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operations__acti343e6f96188f55e3cc7ad21fad829f4e.html#a481c8d1ee9f5c3a2681130a7fcb6acb2", null ]
+];

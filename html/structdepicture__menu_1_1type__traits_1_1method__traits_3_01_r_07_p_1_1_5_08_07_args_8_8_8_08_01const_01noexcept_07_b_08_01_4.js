@@ -1,0 +1,6 @@
+var structdepicture__menu_1_1type__traits_1_1method__traits_3_01_r_07_p_1_1_5_08_07_args_8_8_8_08_01const_01noexcept_07_b_08_01_4 =
+[
+    [ "arg_tuple_t", "structdepicture__menu_1_1type__traits_1_1method__traits_3_01_r_07_p_1_1_5_08_07_args_8_8_8_08_01const_01noexcept_07_b_08_01_4.html#a8f89761cdf842c7e2b5fc9ebf943394c", null ],
+    [ "result_t", "structdepicture__menu_1_1type__traits_1_1method__traits_3_01_r_07_p_1_1_5_08_07_args_8_8_8_08_01const_01noexcept_07_b_08_01_4.html#a37f10ae6f00681413b27849da75ccda4", null ],
+    [ "type", "structdepicture__menu_1_1type__traits_1_1method__traits_3_01_r_07_p_1_1_5_08_07_args_8_8_8_08_01const_01noexcept_07_b_08_01_4.html#a9beeb6fb49daf86b02ed3d2d124202a0", null ]
+];

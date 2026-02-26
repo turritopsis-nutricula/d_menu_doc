@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/src/core/application/hotkey_event_source.hpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('hotkey__event__source_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">hotkey_event_source.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="hotkey__event__source_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef SRC_CORE_APPLICATION_HOTKEY_EVENT_SOURCE_HPP_</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define SRC_CORE_APPLICATION_HOTKEY_EVENT_SOURCE_HPP_</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;atomic&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;boost/signals2.hpp&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu.html">depicture_menu</a></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1hotkey__event__source.html">   11</a></span><span class="keyword">class </span><a class="code hl_function" href="classdepicture__menu_1_1hotkey__event__source.html#a092ab54db23e4766a3c1593fddb6fc91">hotkey_event_source</a></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1hotkey__event__source.html#a61428e3730a6e2ce1dac0b6f57a50c57">   14</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classdepicture__menu_1_1hotkey__event__source.html#a61428e3730a6e2ce1dac0b6f57a50c57">vk_key_code_t</a>      = <span class="keywordtype">unsigned</span> int;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1hotkey__event__source.html#a307c8798376ab5edede3771ef043db11">   15</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classdepicture__menu_1_1hotkey__event__source.html#a307c8798376ab5edede3771ef043db11">modifier_code_t</a>    = <span class="keywordtype">unsigned</span> int;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1hotkey__event__source.html#a2a941d45fec99e555dfd2f79326412a2">   16</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classdepicture__menu_1_1hotkey__event__source.html#a2a941d45fec99e555dfd2f79326412a2">hotkey_id_t</a>        = int;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1hotkey__event__source.html#ad136a0f717acb7083b08288f53d7f852">   17</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classdepicture__menu_1_1hotkey__event__source.html#ad136a0f717acb7083b08288f53d7f852">win32_thread_id_t</a>  = <span class="keywordtype">unsigned</span> int;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1hotkey__event__source.html#a66d32138cbb6fa7cf14fb2ab5296251e">   18</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classdepicture__menu_1_1hotkey__event__source.html#a66d32138cbb6fa7cf14fb2ab5296251e">sig_func_t</a>         = void( <span class="keywordtype">bool</span> );</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1hotkey__event__source.html#a067873204fb7510803e2949f7a6ad793">   19</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classdepicture__menu_1_1hotkey__event__source.html#a067873204fb7510803e2949f7a6ad793">sig_t</a>              = boost::signals2::signal&lt; sig_func_t &gt;;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1hotkey__event__source.html#ad1f431407cb63ce2a9650cb658423aae">   20</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classdepicture__menu_1_1hotkey__event__source.html#ad1f431407cb63ce2a9650cb658423aae">thread_condition_t</a> = std::shared_ptr&lt; std::atomic&lt; bool &gt; &gt;;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1hotkey__event__source.html#ad533bfdb6602511e14b88d77774f0cff">   22</a></span>    <a class="code hl_typedef" href="classdepicture__menu_1_1hotkey__event__source.html#a2a941d45fec99e555dfd2f79326412a2">hotkey_id_t</a>     <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#ad533bfdb6602511e14b88d77774f0cff">id_</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1hotkey__event__source.html#aff35a42e3a68294d9921583f3f42fcf0">   23</a></span>    <a class="code hl_typedef" href="classdepicture__menu_1_1hotkey__event__source.html#a61428e3730a6e2ce1dac0b6f57a50c57">vk_key_code_t</a>   <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#aff35a42e3a68294d9921583f3f42fcf0">key_code_</a>      = 0x00;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1hotkey__event__source.html#a3e251221cdffc0ab0a288ca9235db8ca">   24</a></span>    <a class="code hl_typedef" href="classdepicture__menu_1_1hotkey__event__source.html#a307c8798376ab5edede3771ef043db11">modifier_code_t</a> <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#a3e251221cdffc0ab0a288ca9235db8ca">modifier_code_</a> = 0x00;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1hotkey__event__source.html#ae076600803e9923170eee955b8100338">   27</a></span>    std::optional&lt; win32_thread_id_t &gt; <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#ae076600803e9923170eee955b8100338">thread_id_</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1hotkey__event__source.html#aab92a00b99bc318c0ea4282e530395ed">   28</a></span>    std::shared_ptr&lt; sig_t &gt;           <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#aab92a00b99bc318c0ea4282e530395ed">sig_</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1hotkey__event__source.html#a55f3d3b35efccb1ac869e47fff443a79">   29</a></span>    <a class="code hl_typedef" href="classdepicture__menu_1_1hotkey__event__source.html#ad1f431407cb63ce2a9650cb658423aae">thread_condition_t</a>                 <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#a55f3d3b35efccb1ac869e47fff443a79">thread_condithion_</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_function" href="classdepicture__menu_1_1hotkey__event__source.html#a092ab54db23e4766a3c1593fddb6fc91">hotkey_event_source</a>( <a class="code hl_typedef" href="classdepicture__menu_1_1hotkey__event__source.html#a2a941d45fec99e555dfd2f79326412a2">hotkey_id_t</a> <span class="keywordtype">id</span>, <a class="code hl_typedef" href="classdepicture__menu_1_1hotkey__event__source.html#a61428e3730a6e2ce1dac0b6f57a50c57">vk_key_code_t</a> <a class="code hl_struct" href="structc.html">c</a>, <a class="code hl_typedef" href="classdepicture__menu_1_1hotkey__event__source.html#a307c8798376ab5edede3771ef043db11">modifier_code_t</a> m );</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1hotkey__event__source.html#a55e09d52ed279765dbea4055c3361851">   34</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1hotkey__event__source.html#a55e09d52ed279765dbea4055c3361851">hotkey_event_source</a>( <span class="keyword">const</span> <a class="code hl_function" href="classdepicture__menu_1_1hotkey__event__source.html#a092ab54db23e4766a3c1593fddb6fc91">hotkey_event_source</a>&amp; )            = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1hotkey__event__source.html#a9e41b9c25b3764eab877ad1c05d7db74">   35</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1hotkey__event__source.html#a9e41b9c25b3764eab877ad1c05d7db74">hotkey_event_source</a>( <a class="code hl_function" href="classdepicture__menu_1_1hotkey__event__source.html#a092ab54db23e4766a3c1593fddb6fc91">hotkey_event_source</a>&amp;&amp; )                 = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1hotkey__event__source.html#a2cb41c84e0997b98f35d50e0c2439969">   36</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1hotkey__event__source.html#a092ab54db23e4766a3c1593fddb6fc91">hotkey_event_source</a>&amp; <a class="code hl_function" href="classdepicture__menu_1_1hotkey__event__source.html#a2cb41c84e0997b98f35d50e0c2439969">operator=</a>( <span class="keyword">const</span> <a class="code hl_function" href="classdepicture__menu_1_1hotkey__event__source.html#a092ab54db23e4766a3c1593fddb6fc91">hotkey_event_source</a>&amp; ) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1hotkey__event__source.html#a8df578a138a30dacfa99a25ca5e49cdd">   37</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1hotkey__event__source.html#a092ab54db23e4766a3c1593fddb6fc91">hotkey_event_source</a>&amp; <a class="code hl_function" href="classdepicture__menu_1_1hotkey__event__source.html#a8df578a138a30dacfa99a25ca5e49cdd">operator=</a>( <a class="code hl_function" href="classdepicture__menu_1_1hotkey__event__source.html#a092ab54db23e4766a3c1593fddb6fc91">hotkey_event_source</a>&amp;&amp; )      = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1hotkey__event__source.html#add388159845af4285eda1cde9bc07bd0">   39</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1hotkey__event__source.html#add388159845af4285eda1cde9bc07bd0">~hotkey_event_source</a>( ) { <a class="code hl_function" href="classdepicture__menu_1_1hotkey__event__source.html#a645433fff63255dc08bfd8c2bd20bee6">unregist_hotkey</a>( ); }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">bool</span></div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1hotkey__event__source.html#aa0bcabb7e0bc55ab93d2e4f4bc92b0e5">   42</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1hotkey__event__source.html#aa0bcabb7e0bc55ab93d2e4f4bc92b0e5">is_regist_hotkey</a>( )<span class="keyword"> const</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#a55f3d3b35efccb1ac869e47fff443a79">thread_condithion_</a>-&gt;load( );</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
+</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">template</span> &lt; <span class="keyword">typename</span> Arg &gt;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    [[nodiscard]] <span class="keyword">auto</span></div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1hotkey__event__source.html#ab946b4b17774962fd62b3a208daba645">   49</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1hotkey__event__source.html#ab946b4b17774962fd62b3a208daba645">connect</a>( Arg <span class="keyword">const</span>&amp; subscriber )</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#aab92a00b99bc318c0ea4282e530395ed">sig_</a>-&gt;connect( subscriber );</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
+</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdepicture__menu_1_1hotkey__event__source.html#a5f26d9e259a542d15520e4aabe213579">setup_hotkey</a>( );</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdepicture__menu_1_1hotkey__event__source.html#a645433fff63255dc08bfd8c2bd20bee6">unregist_hotkey</a>( );</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>};</div>
+</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}    <span class="comment">// namespace depicture_menu</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_CORE_APPLICATION_HOTKEY_EVENT_SOURCE_HPP_</span></div>
+<div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_a067873204fb7510803e2949f7a6ad793"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#a067873204fb7510803e2949f7a6ad793">depicture_menu::hotkey_event_source::sig_t</a></div><div class="ttdeci">boost::signals2::signal&lt; sig_func_t &gt; sig_t</div><div class="ttdef"><b>Definition</b> <a href="#l00019">hotkey_event_source.hpp:19</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_a092ab54db23e4766a3c1593fddb6fc91"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#a092ab54db23e4766a3c1593fddb6fc91">depicture_menu::hotkey_event_source::hotkey_event_source</a></div><div class="ttdeci">hotkey_event_source(hotkey_id_t id, vk_key_code_t c, modifier_code_t m)</div><div class="ttdef"><b>Definition</b> <a href="hotkey__event__source_8cpp_source.html#l00011">hotkey_event_source.cpp:11</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_a2a941d45fec99e555dfd2f79326412a2"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#a2a941d45fec99e555dfd2f79326412a2">depicture_menu::hotkey_event_source::hotkey_id_t</a></div><div class="ttdeci">int hotkey_id_t</div><div class="ttdef"><b>Definition</b> <a href="#l00016">hotkey_event_source.hpp:16</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_a2cb41c84e0997b98f35d50e0c2439969"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#a2cb41c84e0997b98f35d50e0c2439969">depicture_menu::hotkey_event_source::operator=</a></div><div class="ttdeci">hotkey_event_source &amp; operator=(const hotkey_event_source &amp;)=delete</div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_a307c8798376ab5edede3771ef043db11"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#a307c8798376ab5edede3771ef043db11">depicture_menu::hotkey_event_source::modifier_code_t</a></div><div class="ttdeci">unsigned int modifier_code_t</div><div class="ttdef"><b>Definition</b> <a href="#l00015">hotkey_event_source.hpp:15</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_a3e251221cdffc0ab0a288ca9235db8ca"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#a3e251221cdffc0ab0a288ca9235db8ca">depicture_menu::hotkey_event_source::modifier_code_</a></div><div class="ttdeci">modifier_code_t modifier_code_</div><div class="ttdef"><b>Definition</b> <a href="#l00024">hotkey_event_source.hpp:24</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_a55e09d52ed279765dbea4055c3361851"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#a55e09d52ed279765dbea4055c3361851">depicture_menu::hotkey_event_source::hotkey_event_source</a></div><div class="ttdeci">hotkey_event_source(const hotkey_event_source &amp;)=delete</div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_a55f3d3b35efccb1ac869e47fff443a79"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#a55f3d3b35efccb1ac869e47fff443a79">depicture_menu::hotkey_event_source::thread_condithion_</a></div><div class="ttdeci">thread_condition_t thread_condithion_</div><div class="ttdef"><b>Definition</b> <a href="#l00029">hotkey_event_source.hpp:29</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_a5f26d9e259a542d15520e4aabe213579"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#a5f26d9e259a542d15520e4aabe213579">depicture_menu::hotkey_event_source::setup_hotkey</a></div><div class="ttdeci">void setup_hotkey()</div><div class="ttdef"><b>Definition</b> <a href="hotkey__event__source_8cpp_source.html#l00061">hotkey_event_source.cpp:61</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_a61428e3730a6e2ce1dac0b6f57a50c57"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#a61428e3730a6e2ce1dac0b6f57a50c57">depicture_menu::hotkey_event_source::vk_key_code_t</a></div><div class="ttdeci">unsigned int vk_key_code_t</div><div class="ttdef"><b>Definition</b> <a href="#l00014">hotkey_event_source.hpp:14</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_a645433fff63255dc08bfd8c2bd20bee6"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#a645433fff63255dc08bfd8c2bd20bee6">depicture_menu::hotkey_event_source::unregist_hotkey</a></div><div class="ttdeci">void unregist_hotkey()</div><div class="ttdef"><b>Definition</b> <a href="hotkey__event__source_8cpp_source.html#l00026">hotkey_event_source.cpp:26</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_a66d32138cbb6fa7cf14fb2ab5296251e"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#a66d32138cbb6fa7cf14fb2ab5296251e">depicture_menu::hotkey_event_source::sig_func_t</a></div><div class="ttdeci">void(bool) sig_func_t</div><div class="ttdef"><b>Definition</b> <a href="#l00018">hotkey_event_source.hpp:18</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_a8df578a138a30dacfa99a25ca5e49cdd"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#a8df578a138a30dacfa99a25ca5e49cdd">depicture_menu::hotkey_event_source::operator=</a></div><div class="ttdeci">hotkey_event_source &amp; operator=(hotkey_event_source &amp;&amp;)=delete</div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_a9e41b9c25b3764eab877ad1c05d7db74"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#a9e41b9c25b3764eab877ad1c05d7db74">depicture_menu::hotkey_event_source::hotkey_event_source</a></div><div class="ttdeci">hotkey_event_source(hotkey_event_source &amp;&amp;)=delete</div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_aa0bcabb7e0bc55ab93d2e4f4bc92b0e5"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#aa0bcabb7e0bc55ab93d2e4f4bc92b0e5">depicture_menu::hotkey_event_source::is_regist_hotkey</a></div><div class="ttdeci">bool is_regist_hotkey() const</div><div class="ttdef"><b>Definition</b> <a href="#l00042">hotkey_event_source.hpp:42</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_aab92a00b99bc318c0ea4282e530395ed"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#aab92a00b99bc318c0ea4282e530395ed">depicture_menu::hotkey_event_source::sig_</a></div><div class="ttdeci">std::shared_ptr&lt; sig_t &gt; sig_</div><div class="ttdef"><b>Definition</b> <a href="#l00028">hotkey_event_source.hpp:28</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_ab946b4b17774962fd62b3a208daba645"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#ab946b4b17774962fd62b3a208daba645">depicture_menu::hotkey_event_source::connect</a></div><div class="ttdeci">auto connect(Arg const &amp;subscriber)</div><div class="ttdef"><b>Definition</b> <a href="#l00049">hotkey_event_source.hpp:49</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_ad136a0f717acb7083b08288f53d7f852"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#ad136a0f717acb7083b08288f53d7f852">depicture_menu::hotkey_event_source::win32_thread_id_t</a></div><div class="ttdeci">unsigned int win32_thread_id_t</div><div class="ttdef"><b>Definition</b> <a href="#l00017">hotkey_event_source.hpp:17</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_ad1f431407cb63ce2a9650cb658423aae"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#ad1f431407cb63ce2a9650cb658423aae">depicture_menu::hotkey_event_source::thread_condition_t</a></div><div class="ttdeci">std::shared_ptr&lt; std::atomic&lt; bool &gt; &gt; thread_condition_t</div><div class="ttdef"><b>Definition</b> <a href="#l00020">hotkey_event_source.hpp:20</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_ad533bfdb6602511e14b88d77774f0cff"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#ad533bfdb6602511e14b88d77774f0cff">depicture_menu::hotkey_event_source::id_</a></div><div class="ttdeci">hotkey_id_t id_</div><div class="ttdef"><b>Definition</b> <a href="#l00022">hotkey_event_source.hpp:22</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_add388159845af4285eda1cde9bc07bd0"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#add388159845af4285eda1cde9bc07bd0">depicture_menu::hotkey_event_source::~hotkey_event_source</a></div><div class="ttdeci">~hotkey_event_source()</div><div class="ttdef"><b>Definition</b> <a href="#l00039">hotkey_event_source.hpp:39</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_ae076600803e9923170eee955b8100338"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#ae076600803e9923170eee955b8100338">depicture_menu::hotkey_event_source::thread_id_</a></div><div class="ttdeci">std::optional&lt; win32_thread_id_t &gt; thread_id_</div><div class="ttdef"><b>Definition</b> <a href="#l00027">hotkey_event_source.hpp:27</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_aff35a42e3a68294d9921583f3f42fcf0"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#aff35a42e3a68294d9921583f3f42fcf0">depicture_menu::hotkey_event_source::key_code_</a></div><div class="ttdeci">vk_key_code_t key_code_</div><div class="ttdef"><b>Definition</b> <a href="#l00023">hotkey_event_source.hpp:23</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_html"><div class="ttname"><a href="namespacedepicture__menu.html">depicture_menu</a></div><div class="ttdef"><b>Definition</b> <a href="constexpr__string_8hpp_source.html#l00012">constexpr_string.hpp:13</a></div></div>
+<div class="ttc" id="astructc_html"><div class="ttname"><a href="structc.html">c</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00154">TestReflection.cpp:155</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_d26f0ed8b287a778d960ad2241e01057.html">src</a></li><li class="navelem"><a href="dir_eb29242f55d2489f6c4d008365c270b7.html">core</a></li><li class="navelem"><a href="dir_62153e020276f17450b004104a906c1d.html">application</a></li><li class="navelem"><a href="hotkey__event__source_8hpp.html">hotkey_event_source.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

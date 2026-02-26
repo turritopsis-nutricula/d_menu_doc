@@ -1,5 +1,15 @@
 var searchData=
 [
-  ['name_0',['Name',['../structdepicture__menu_1_1reflection_1_1detail__reflection_1_1pfr__assign__helper.html#a7d77317d94932f3ad06e7084ee8cf4a0',1,'depicture_menu::reflection::detail_reflection::pfr_assign_helper']]],
-  ['need_5funlock_1',['need_unlock',['../structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html#a8406f7af3038b907eab28beac29e9fd7',1,'depicture_menu::util::detail_util::upgradable_mutex::need_unlock'],['../structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#a13f007e92089dc0f1e38be54871a40e1',1,'depicture_menu::util::detail_util::write_lock_mutex::need_unlock']]]
+  ['handle_5f_0',['handle_',['../structprocess__handler.html#a605205720b314d89042b6da19b6822c9',1,'process_handler::handle_'],['../structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1unmanaged__generator__impl.html#ad24252dc5ced7aa62ed66b4d1d587b84',1,'depicture_menu::cs_binding::detail_cs_binding::unmanaged_generator_impl::handle_']]],
+  ['handler_5fmtx_5f_1',['handler_mtx_',['../structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1unmanaged__generator__impl.html#aa18123181897e45e6b5713fbdab3fb75',1,'depicture_menu::cs_binding::detail_cs_binding::unmanaged_generator_impl']]],
+  ['handler_5fptr_5f_2',['handler_ptr_',['../structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1pre__registration__impl.html#a28df0c0bd7166f62074bb2de0c2bf107',1,'depicture_menu::cs_binding::detail_cs_binding::pre_registration_impl']]],
+  ['holder_5f_3',['holder_',['../classdepicture__menu_1_1presentations_1_1command__invoker.html#a9a9be6a72fd10a26612e5cda08b4ce54',1,'depicture_menu::presentations::command_invoker']]],
+  ['hook_5fhandle_4',['hook_handle',['../structglobal__hook.html#af51c55e84892d471159e4ef299d6ce01',1,'global_hook']]],
+  ['hook_5fmessage_5fid_5',['hook_message_id',['../workaround_8cpp.html#a0cc6667db42ed3f3bfe9cbced1e0639b',1,'workaround.cpp']]],
+  ['hook_5fproc_6',['hook_proc',['../structglobal__hook.html#ae8f5a67afe33be2f9311a9b4434cb77a',1,'global_hook']]],
+  ['hooks_7',['hooks',['../win32__window__observer_8cpp.html#a7f9e7d1ff67fba96f13fbe22994eb245',1,'win32_window_observer.cpp']]],
+  ['hot_5fkey_5fmap_5f_8',['hot_key_map_',['../classdepicture__menu_1_1hotkey__manager.html#a737243a93d9accbfd2b8d59360be21bc',1,'depicture_menu::hotkey_manager']]],
+  ['hotkey_5fmanager_5f_9',['hotkey_manager_',['../structdepicture__menu_1_1usecase_1_1detail__usecases_1_1deploy__default__setting__impl.html#a96d3bfe3e5117716fb19fc5e754d24e7',1,'depicture_menu::usecase::detail_usecases::deploy_default_setting_impl::hotkey_manager_'],['../classdepicture__menu_1_1usecase_1_1deploy__default__setting.html#aca53bf8ea40988f79edecc4b8f994de1',1,'depicture_menu::usecase::deploy_default_setting::hotkey_manager_']]],
+  ['hotkey_5fpresenter_5f_10',['hotkey_presenter_',['../classdepicture__menu_1_1usecase_1_1change__trigger__config.html#a9b8d752e0a1082d381453f7b16035308',1,'depicture_menu::usecase::change_trigger_config']]],
+  ['hwnd_5f_11',['hwnd_',['../structdepicture__menu_1_1win32_1_1win32__message__sender.html#a87ffb99f6279a96f5f2ea3db2656a5a3',1,'depicture_menu::win32::win32_message_sender::hwnd_'],['../structdepicture__menu_1_1presentation_1_1win32__message.html#addc4dbb855232ad17211295b246810e7',1,'depicture_menu::presentation::win32_message::hwnd_'],['../structwin32__message.html#ada67e394c850f9bf0a72e08e08d39e16',1,'win32_message::hwnd_'],['../structwin32__message__sender.html#a87ffb99f6279a96f5f2ea3db2656a5a3',1,'win32_message_sender::hwnd_']]]
 ];

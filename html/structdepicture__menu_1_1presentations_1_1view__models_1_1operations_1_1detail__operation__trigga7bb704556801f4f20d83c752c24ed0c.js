@@ -1,0 +1,7 @@
+var structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__trigga7bb704556801f4f20d83c752c24ed0c =
+[
+    [ "trigger_create_operator_impl", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__trigga7bb704556801f4f20d83c752c24ed0c.html#aecf44a654164b803b425d9548e1d5aa0", null ],
+    [ "sync", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__trigga7bb704556801f4f20d83c752c24ed0c.html#adebfa4e86d3eaf254031ba2fcaf64975", null ],
+    [ "sync", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__trigga7bb704556801f4f20d83c752c24ed0c.html#aa706d02033347224f5576871e78dd053", null ],
+    [ "sync", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__trigga7bb704556801f4f20d83c752c24ed0c.html#a1ad2d4952fdb9bfff1806ff77b99d676", null ]
+];

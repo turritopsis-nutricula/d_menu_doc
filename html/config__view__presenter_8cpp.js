@@ -1,0 +1,25 @@
+var config__view__presenter_8cpp =
+[
+    [ "detail::operators::operator_base&lt; CRTP &gt;", "structdetail_1_1operators_1_1operator__base.html", "structdetail_1_1operators_1_1operator__base" ],
+    [ "detail::id_access_handler", "conceptdetail_1_1id__access__handler.html", null ],
+    [ "detail::entites_range", "conceptdetail_1_1entites__range.html", null ],
+    [ "detail::operators::action_create_operator", "namespacedetail_1_1operators.html#a6f5706c5f02e3d490d920d0dc7adf612", null ],
+    [ "detail::operators::action_erase_operator", "namespacedetail_1_1operators.html#a983c26c516b1e7ccb1a1ebe97dfef22f", null ],
+    [ "detail::action_query", "namespacedetail.html#a6e8f197205427704875f19d471273b34", null ],
+    [ "detail::operators::action_update_operator", "namespacedetail_1_1operators.html#a7183498031041efb013fd84c3e269fa1", null ],
+    [ "detail::operators::command_create_operator", "namespacedetail_1_1operators.html#a19bf55dd53e70b7875c64bfbbba5b7db", null ],
+    [ "detail::operators::command_erase_operator", "namespacedetail_1_1operators.html#a61bba873ba7f709153308ae5bfa8c895", null ],
+    [ "detail::command_query", "namespacedetail.html#af59d6a58d5e4f3d7bc0b2b308d218dc1", null ],
+    [ "detail::operators::command_update_operator", "namespacedetail_1_1operators.html#aeb36a4895f1502036d0eb18be0696721", null ],
+    [ "detail::operators::menu_create_operator_t", "namespacedetail_1_1operators.html#ab4cb1dfb95bd5eff2bd7df051a1db71e", null ],
+    [ "detail::operators::menu_erase_operator_t", "namespacedetail_1_1operators.html#af2e5f8971f205378afaf79c141c25691", null ],
+    [ "detail::operators::menu_operator_t", "namespacedetail_1_1operators.html#af844a5db644c80bad0761c8e8227de54", null ],
+    [ "detail::operators::trigger_create_operator", "namespacedetail_1_1operators.html#a0b5e864b5a6332708196bced0db083ce", null ],
+    [ "detail::operators::trigger_erase_operator", "namespacedetail_1_1operators.html#a417917b9ae2f6ae851f6623de655910f", null ],
+    [ "detail::operators::trigger_operator", "namespacedetail_1_1operators.html#a287eff4db743758a97ded27bae2e1365", null ],
+    [ "detail::operators::view_id_accumulator_operator", "namespacedetail_1_1operators.html#a8b6b4293f507da0f54bda343acbacbe3", null ],
+    [ "detail::id_buffer::add", "namespacedetail_1_1id__buffer.html#a40c60f3376b1be380acd059cf3818763", null ],
+    [ "detail::id_buffer::buffer_transform", "namespacedetail_1_1id__buffer.html#a75c64765d139e3063258f666d3fca251", null ],
+    [ "detail::id_buffer::contains", "namespacedetail_1_1id__buffer.html#ad551e32a3c0b04b6f45a1d71313b82bd", null ],
+    [ "detail::id_buffer::erase", "namespacedetail_1_1id__buffer.html#ad98701077096461aaae59c5a0d33b556", null ]
+];

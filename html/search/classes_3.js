@@ -1,4 +1,26 @@
 var searchData=
 [
-  ['inner_5fworker_0',['inner_worker',['../classdepicture__menu_1_1util_1_1worker__pool_1_1inner__worker.html',1,'depicture_menu::util::worker_pool']]]
+  ['d_0',['d',['../structd.html',1,'']]],
+  ['d_5fstruct_1',['d_struct',['../structd__struct.html',1,'']]],
+  ['data_5fbuffer_2',['data_buffer',['../structdepicture__menu_1_1application_1_1proceses_1_1process__signal_1_1data__buffer.html',1,'depicture_menu::application::proceses::process_signal']]],
+  ['data_5floader_3',['data_loader',['../structdepicture__menu_1_1applications_1_1data__loader.html',1,'depicture_menu::applications']]],
+  ['data_5fpack_4',['data_pack',['../structdepicture__menu_1_1applications_1_1data__pack.html',1,'depicture_menu::applications']]],
+  ['data_5fsaver_5',['data_saver',['../structdepicture__menu_1_1applications_1_1data__saver.html',1,'depicture_menu::applications']]],
+  ['debug_5finterface_5fimpl_6',['debug_interface_impl',['../structdepicture__menu_1_1debug__interface__impl.html',1,'depicture_menu']]],
+  ['decay_5fmember_7',['decay_member',['../structdepicture__menu_1_1cs__binding_1_1detail__vtbl__table_1_1decay__member.html',1,'depicture_menu::cs_binding::detail_vtbl_table']]],
+  ['decay_5fmember_3c_20r_28t_3a_3a_2a_29_28args_2e_2e_2e_29_20_3e_8',['decay_member&lt; R(T::*)(Args...) &gt;',['../structdepicture__menu_1_1cs__binding_1_1detail__vtbl__table_1_1decay__member_3_01_r_07_t_1_1_5_08_07_args_8_8_8_08_01_4.html',1,'depicture_menu::cs_binding::detail_vtbl_table']]],
+  ['decay_5fmember_3c_20r_28t_3a_3a_2a_29_28args_2e_2e_2e_29_20const_20_3e_9',['decay_member&lt; R(T::*)(Args...) const &gt;',['../structdepicture__menu_1_1cs__binding_1_1detail__vtbl__table_1_1decay__member_3_01_r_07_t_1_1_5_08_07_args_8_8_8_08_01const_01_4.html',1,'depicture_menu::cs_binding::detail_vtbl_table']]],
+  ['default_5fassign_10',['default_assign',['../structdepicture__menu_1_1conv__mapping_1_1buildin_1_1default__assign.html',1,'depicture_menu::conv_mapping::buildin']]],
+  ['default_5fconstract_11',['default_constract',['../structns_1_1default__constract.html',1,'ns']]],
+  ['default_5fmenu_5fitem_5flabel_5fquery_12',['default_menu_item_label_query',['../structdepicture__menu_1_1usecase_1_1query_1_1default__menu__item__label__query.html',1,'depicture_menu::usecase::query']]],
+  ['define_5fspec_13',['define_spec',['../structuser_1_1define__spec.html',1,'user']]],
+  ['deploy_5fdefault_5fsetting_14',['deploy_default_setting',['../classdepicture__menu_1_1usecase_1_1deploy__default__setting.html',1,'depicture_menu::usecase']]],
+  ['deploy_5fdefault_5fsetting_5fimpl_15',['deploy_default_setting_impl',['../structdepicture__menu_1_1usecase_1_1detail__usecases_1_1deploy__default__setting__impl.html',1,'depicture_menu::usecase::detail_usecases']]],
+  ['diff_5fsnapshots_5frepository_16',['diff_snapshots_repository',['../classdepicture__menu_1_1repositories_1_1diff__snapshots__repository.html',1,'depicture_menu::repositories']]],
+  ['diff_5fsnapshots_5frepository_3c_20value_5ft_20_3e_17',['diff_snapshots_repository&lt; value_t &gt;',['../classdepicture__menu_1_1repositories_1_1diff__snapshots__repository.html',1,'depicture_menu::repositories']]],
+  ['direct_5fmapping_18',['direct_mapping',['../structdepicture__menu_1_1conv__mapping_1_1direct__mapping.html',1,'depicture_menu::conv_mapping']]],
+  ['dispatch_5fproxy_19',['dispatch_proxy',['../structdepicture__menu_1_1applications_1_1detail__applications_1_1gui__dispatch__impl_1_1dispatch__proxy.html',1,'depicture_menu::applications::detail_applications::gui_dispatch_impl']]],
+  ['domain_5fconverter_5ffixture_20',['domain_converter_fixture',['../structtest__helper_1_1domain__converter__fixture.html',1,'test_helper']]],
+  ['domain_5fdata_5ffixture_21',['domain_data_fixture',['../structdomain__data__fixture.html',1,'']]],
+  ['duplicate_5fmenu_5fitem_22',['duplicate_menu_item',['../classdepicture__menu_1_1usecase_1_1duplicate__menu__item.html',1,'depicture_menu::usecase']]]
 ];

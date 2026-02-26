@@ -1,0 +1,6 @@
+var structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__trigg21dadebda280c7698be3d2664a60099d =
+[
+    [ "trigger_erase_operator_impl", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__trigg21dadebda280c7698be3d2664a60099d.html#aa5caf0f808786077bcf1435207127fb8", null ],
+    [ "sync", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__trigg21dadebda280c7698be3d2664a60099d.html#a3e22e0e4d2d2bb624a4a857ba6cfc7c5", null ],
+    [ "id_", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__trigg21dadebda280c7698be3d2664a60099d.html#aea473b3d179728a62cd9cf1f73d0e60a", null ]
+];

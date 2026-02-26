@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/src/core/domain/model/menu/radialmenu_centralitem.hpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('radialmenu__centralitem_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">radialmenu_centralitem.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="radialmenu__centralitem_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef SRC_CORE_DOMAIN_MENU_RADIALMENU_CENTRALITEM_HPP_</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define SRC_CORE_DOMAIN_MENU_RADIALMENU_CENTRALITEM_HPP_</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="model_2entity_8hpp.html">core/domain/model/entity.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="action__ids_8hpp.html">../action/action_ids.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="menu__ids_8hpp.html">menu_ids.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="radialmenu__label_8hpp.html">radialmenu_label.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;boost/uuid/uuid.hpp&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1domain_1_1menu.html">depicture_menu::domain::menu</a></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1domain_1_1menu_1_1detail__menu.html">detail_menu</a></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1domain_1_1menu_1_1detail__menu_1_1radialmenu__centralitem__data.html">   17</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1menu_1_1detail__menu_1_1radialmenu__centralitem__data.html">radialmenu_centralitem_data</a></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1domain_1_1menu_1_1detail__menu_1_1radialmenu__centralitem__data.html#ab6475b8654eef8c7b07b02cc10a0790a">   19</a></span>    <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__label.html">menu_label</a>        <a class="code hl_variable" href="structdepicture__menu_1_1domain_1_1menu_1_1detail__menu_1_1radialmenu__centralitem__data.html#ab6475b8654eef8c7b07b02cc10a0790a">label_</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1domain_1_1menu_1_1detail__menu_1_1radialmenu__centralitem__data.html#a31425e95daf2a75c9238d96ab05c9ede">   20</a></span>    <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#a99ad42c5e94e5f4f52671f51a346479c">actions::maker_id</a> <a class="code hl_variable" href="structdepicture__menu_1_1domain_1_1menu_1_1detail__menu_1_1radialmenu__centralitem__data.html#a31425e95daf2a75c9238d96ab05c9ede">action_id_</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>};</div>
+</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}    <span class="comment">// namespace detail_menu</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html">   24</a></span><span class="keyword">class </span><a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a54f7c76957882e0ddef031272ff6e32a">radialmenu_centralitem</a> : <span class="keyword">public</span> <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1models.html#ae51d297f0e16bcf6b252a1a497590ab1">models::entity_base</a>&lt;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                                   detail_menu::radialmenu_centralitem_data,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                                   menu_central_item_id &gt;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a3ec06309eb7163bd1d8f3ed41ccc2560">   28</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a3ec06309eb7163bd1d8f3ed41ccc2560">base_t</a> = <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1models.html#ae51d297f0e16bcf6b252a1a497590ab1">models::entity_base</a>&lt;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1menu_1_1detail__menu_1_1radialmenu__centralitem__data.html">detail_menu::radialmenu_centralitem_data</a>,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1menu.html#a167ef78d1ed0a2516661b066fec02129">menu_central_item_id</a> &gt;;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a54f7c76957882e0ddef031272ff6e32a">   33</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a54f7c76957882e0ddef031272ff6e32a">radialmenu_centralitem</a>( ) { }</div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#adf23f454be45af0dac1bc7e00e8f4c31">   34</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#adf23f454be45af0dac1bc7e00e8f4c31">radialmenu_centralitem</a>( <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1menu.html#a167ef78d1ed0a2516661b066fec02129">menu_central_item_id</a> <span class="keywordtype">id</span> )</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        : <a class="code hl_typedef" href="structdepicture__menu_1_1domain_1_1models_1_1base_1_1entity__base.html#a892433cc82b5b193d4f3f1ef3e883b9e">base_entity_t</a>( id )</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html">radialmenu_centralitem</a></div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#aea758129828ad3f12042b8eeefc74896">   40</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#aea758129828ad3f12042b8eeefc74896">reconstruct</a>( <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1menu.html#a167ef78d1ed0a2516661b066fec02129">menu_central_item_id</a> <span class="keywordtype">id</span> )<span class="keyword"> const</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a54f7c76957882e0ddef031272ff6e32a">radialmenu_centralitem</a> new_ent = *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        new_ent.<a class="code hl_variable" href="structdepicture__menu_1_1domain_1_1models_1_1base_1_1entity__base.html#a6382e6822d03c92e703de92ac74fa9b6">id_</a>                    = id;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keywordflow">return</span> new_ent;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
+</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="comment">// label</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">auto</span>&amp;</div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a1eeab3a86f3e1914a8e8a11d60b612db">   49</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a1eeab3a86f3e1914a8e8a11d60b612db">label</a>( <span class="keyword">auto</span>&amp;&amp; v ) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        label_ = std::move( v );</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">return</span> label_;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
+</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">auto</span>&amp;</div>
+<div class="foldopen" id="foldopen00055" data-start="{" data-end="}">
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#aef7611ea832df96753701088de83cddb">   55</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#aef7611ea832df96753701088de83cddb">label</a>( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; v ) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        label_ = v;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">return</span> label_;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
+</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">auto</span> <span class="keyword">const</span>&amp;</div>
+<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a7befa3e88ce372f5f511cc9e86bb9a39">   61</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a7befa3e88ce372f5f511cc9e86bb9a39">label</a>( ) const noexcept</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordflow">return</span> label_;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
+</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="comment">// action_id</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">auto</span>&amp;</div>
+<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a6d077eb2d42d4dc044357f159ee9b9a4">   68</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a6d077eb2d42d4dc044357f159ee9b9a4">action_id</a>( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; v ) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        action_id_ = v;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordflow">return</span> action_id_;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
+</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">auto</span> <span class="keyword">const</span>&amp;</div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a95c693818b1a263458837c02d04f73ac">   74</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a95c693818b1a263458837c02d04f73ac">action_id</a>( ) const noexcept</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordflow">return</span> action_id_;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
+</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="comment">// label</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00081" data-start="{" data-end="}">
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a6181147fd66b67387d001ddbb902031e">   81</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a6181147fd66b67387d001ddbb902031e">set_label</a>( <span class="keyword">auto</span> v ) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        label_ = v;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    }</div>
+</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keyword">auto</span></div>
+<div class="foldopen" id="foldopen00086" data-start="{" data-end="}">
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a2030c3db0a7aabb9dc6768502a88b3d3">   86</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a2030c3db0a7aabb9dc6768502a88b3d3">get_label</a>( ) const noexcept</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    {</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordflow">return</span> label_;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
+</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="comment">// action_id</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00093" data-start="{" data-end="}">
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a85169e612154e0ccd07d7dd87ab492bc">   93</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a85169e612154e0ccd07d7dd87ab492bc">set_action_id</a>( <span class="keyword">auto</span> v ) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        action_id_ = v;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
+</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keyword">auto</span></div>
+<div class="foldopen" id="foldopen00098" data-start="{" data-end="}">
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a7370a1ad2667969e0f4cbb51d2e10f8d">   98</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a7370a1ad2667969e0f4cbb51d2e10f8d">get_action_id</a>( ) const noexcept</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    {</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <span class="keywordflow">return</span> action_id_;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    }</div>
+</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>};</div>
+</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>}    <span class="comment">// namespace depicture_menu::domain::menu</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_CORE_DOMAIN_MENU_RADIALMENU_CENTRALITEM_HPP_</span></div>
+<div class="ttc" id="aaction__ids_8hpp_html"><div class="ttname"><a href="action__ids_8hpp.html">action_ids.hpp</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1menu_1_1menu__label_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1menu_1_1menu__label.html">depicture_menu::domain::menu::menu_label</a></div><div class="ttdef"><b>Definition</b> <a href="radialmenu__label_8hpp_source.html#l00021">radialmenu_label.hpp:23</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html">depicture_menu::domain::menu::radialmenu_centralitem</a></div><div class="ttdef"><b>Definition</b> <a href="#l00024">radialmenu_centralitem.hpp:27</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem_html_a1eeab3a86f3e1914a8e8a11d60b612db"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a1eeab3a86f3e1914a8e8a11d60b612db">depicture_menu::domain::menu::radialmenu_centralitem::label</a></div><div class="ttdeci">auto &amp; label(auto &amp;&amp;v) noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00049">radialmenu_centralitem.hpp:49</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem_html_a2030c3db0a7aabb9dc6768502a88b3d3"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a2030c3db0a7aabb9dc6768502a88b3d3">depicture_menu::domain::menu::radialmenu_centralitem::get_label</a></div><div class="ttdeci">auto get_label() const noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00086">radialmenu_centralitem.hpp:86</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem_html_a3ec06309eb7163bd1d8f3ed41ccc2560"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a3ec06309eb7163bd1d8f3ed41ccc2560">depicture_menu::domain::menu::radialmenu_centralitem::base_t</a></div><div class="ttdeci">models::entity_base&lt; detail_menu::radialmenu_centralitem_data, menu_central_item_id &gt; base_t</div><div class="ttdef"><b>Definition</b> <a href="#l00028">radialmenu_centralitem.hpp:28</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem_html_a54f7c76957882e0ddef031272ff6e32a"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a54f7c76957882e0ddef031272ff6e32a">depicture_menu::domain::menu::radialmenu_centralitem::radialmenu_centralitem</a></div><div class="ttdeci">radialmenu_centralitem()</div><div class="ttdef"><b>Definition</b> <a href="#l00033">radialmenu_centralitem.hpp:33</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem_html_a6181147fd66b67387d001ddbb902031e"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a6181147fd66b67387d001ddbb902031e">depicture_menu::domain::menu::radialmenu_centralitem::set_label</a></div><div class="ttdeci">void set_label(auto v) noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00081">radialmenu_centralitem.hpp:81</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem_html_a6d077eb2d42d4dc044357f159ee9b9a4"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a6d077eb2d42d4dc044357f159ee9b9a4">depicture_menu::domain::menu::radialmenu_centralitem::action_id</a></div><div class="ttdeci">auto &amp; action_id(auto const &amp;v) noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00068">radialmenu_centralitem.hpp:68</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem_html_a7370a1ad2667969e0f4cbb51d2e10f8d"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a7370a1ad2667969e0f4cbb51d2e10f8d">depicture_menu::domain::menu::radialmenu_centralitem::get_action_id</a></div><div class="ttdeci">auto get_action_id() const noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00098">radialmenu_centralitem.hpp:98</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem_html_a7befa3e88ce372f5f511cc9e86bb9a39"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a7befa3e88ce372f5f511cc9e86bb9a39">depicture_menu::domain::menu::radialmenu_centralitem::label</a></div><div class="ttdeci">auto const &amp; label() const noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00061">radialmenu_centralitem.hpp:61</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem_html_a85169e612154e0ccd07d7dd87ab492bc"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a85169e612154e0ccd07d7dd87ab492bc">depicture_menu::domain::menu::radialmenu_centralitem::set_action_id</a></div><div class="ttdeci">void set_action_id(auto v) noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00093">radialmenu_centralitem.hpp:93</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem_html_a95c693818b1a263458837c02d04f73ac"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a95c693818b1a263458837c02d04f73ac">depicture_menu::domain::menu::radialmenu_centralitem::action_id</a></div><div class="ttdeci">auto const &amp; action_id() const noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00074">radialmenu_centralitem.hpp:74</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem_html_adf23f454be45af0dac1bc7e00e8f4c31"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#adf23f454be45af0dac1bc7e00e8f4c31">depicture_menu::domain::menu::radialmenu_centralitem::radialmenu_centralitem</a></div><div class="ttdeci">radialmenu_centralitem(menu_central_item_id id)</div><div class="ttdef"><b>Definition</b> <a href="#l00034">radialmenu_centralitem.hpp:34</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem_html_aea758129828ad3f12042b8eeefc74896"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#aea758129828ad3f12042b8eeefc74896">depicture_menu::domain::menu::radialmenu_centralitem::reconstruct</a></div><div class="ttdeci">radialmenu_centralitem reconstruct(menu_central_item_id id) const</div><div class="ttdef"><b>Definition</b> <a href="#l00040">radialmenu_centralitem.hpp:40</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem_html_aef7611ea832df96753701088de83cddb"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#aef7611ea832df96753701088de83cddb">depicture_menu::domain::menu::radialmenu_centralitem::label</a></div><div class="ttdeci">auto &amp; label(auto const &amp;v) noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00055">radialmenu_centralitem.hpp:55</a></div></div>
+<div class="ttc" id="amenu__ids_8hpp_html"><div class="ttname"><a href="menu__ids_8hpp.html">menu_ids.hpp</a></div></div>
+<div class="ttc" id="amodel_2entity_8hpp_html"><div class="ttname"><a href="model_2entity_8hpp.html">entity.hpp</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1actions_html_a99ad42c5e94e5f4f52671f51a346479c"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1actions.html#a99ad42c5e94e5f4f52671f51a346479c">depicture_menu::domain::actions::maker_id</a></div><div class="ttdeci">publisher_id maker_id</div><div class="ttdef"><b>Definition</b> <a href="action__ids_8hpp_source.html#l00018">action_ids.hpp:18</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1menu_1_1detail__menu_html"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1menu_1_1detail__menu.html">depicture_menu::domain::menu::detail_menu</a></div><div class="ttdef"><b>Definition</b> <a href="app__command__ids_8hpp_source.html#l00011">app_command_ids.hpp:12</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1menu_html"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1menu.html">depicture_menu::domain::menu</a></div><div class="ttdef"><b>Definition</b> <a href="app__command__ids_8hpp_source.html#l00007">app_command_ids.hpp:8</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1menu_html_a167ef78d1ed0a2516661b066fec02129"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1menu.html#a167ef78d1ed0a2516661b066fec02129">depicture_menu::domain::menu::menu_central_item_id</a></div><div class="ttdeci">models::entity_id_base&lt; detail_menu::menu_item_id_tag &gt; menu_central_item_id</div><div class="ttdef"><b>Definition</b> <a href="menu__ids_8hpp_source.html#l00024">menu_ids.hpp:24</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1models_html_ae51d297f0e16bcf6b252a1a497590ab1"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1models.html#ae51d297f0e16bcf6b252a1a497590ab1">depicture_menu::domain::models::entity_base</a></div><div class="ttdeci">base::entity_base&lt; V, ID &gt; entity_base</div><div class="ttdef"><b>Definition</b> <a href="model_2entity_8hpp_source.html#l00137">entity.hpp:137</a></div></div>
+<div class="ttc" id="aradialmenu__label_8hpp_html"><div class="ttname"><a href="radialmenu__label_8hpp.html">radialmenu_label.hpp</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1detail__menu_1_1radialmenu__centralitem__data_html"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1detail__menu_1_1radialmenu__centralitem__data.html">depicture_menu::domain::menu::detail_menu::radialmenu_centralitem_data</a></div><div class="ttdef"><b>Definition</b> <a href="#l00017">radialmenu_centralitem.hpp:18</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1detail__menu_1_1radialmenu__centralitem__data_html_a31425e95daf2a75c9238d96ab05c9ede"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1detail__menu_1_1radialmenu__centralitem__data.html#a31425e95daf2a75c9238d96ab05c9ede">depicture_menu::domain::menu::detail_menu::radialmenu_centralitem_data::action_id_</a></div><div class="ttdeci">actions::maker_id action_id_</div><div class="ttdef"><b>Definition</b> <a href="#l00020">radialmenu_centralitem.hpp:20</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1detail__menu_1_1radialmenu__centralitem__data_html_ab6475b8654eef8c7b07b02cc10a0790a"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1detail__menu_1_1radialmenu__centralitem__data.html#ab6475b8654eef8c7b07b02cc10a0790a">depicture_menu::domain::menu::detail_menu::radialmenu_centralitem_data::label_</a></div><div class="ttdeci">menu_label label_</div><div class="ttdef"><b>Definition</b> <a href="#l00019">radialmenu_centralitem.hpp:19</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1models_1_1base_1_1entity__base_html_a6382e6822d03c92e703de92ac74fa9b6"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1models_1_1base_1_1entity__base.html#a6382e6822d03c92e703de92ac74fa9b6">depicture_menu::domain::models::base::entity_base::id_</a></div><div class="ttdeci">id_t id_</div><div class="ttdef"><b>Definition</b> <a href="model_2entity_8hpp_source.html#l00054">entity.hpp:54</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1models_1_1base_1_1entity__base_html_a892433cc82b5b193d4f3f1ef3e883b9e"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1models_1_1base_1_1entity__base.html#a892433cc82b5b193d4f3f1ef3e883b9e">depicture_menu::domain::models::base::entity_base&lt; V, ID &gt;::base_entity_t</a></div><div class="ttdeci">entity_base&lt; V, IdTag &gt; base_entity_t</div><div class="ttdef"><b>Definition</b> <a href="model_2entity_8hpp_source.html#l00025">entity.hpp:25</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_d26f0ed8b287a778d960ad2241e01057.html">src</a></li><li class="navelem"><a href="dir_eb29242f55d2489f6c4d008365c270b7.html">core</a></li><li class="navelem"><a href="dir_4099da298ded5c89b37f083ec42d8d40.html">domain</a></li><li class="navelem"><a href="dir_0c83dee58a23f235db9b63a843b5b568.html">model</a></li><li class="navelem"><a href="dir_150ce6554b3660d99dae94d27df6b111.html">menu</a></li><li class="navelem"><a href="radialmenu__centralitem_8hpp.html">radialmenu_centralitem.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

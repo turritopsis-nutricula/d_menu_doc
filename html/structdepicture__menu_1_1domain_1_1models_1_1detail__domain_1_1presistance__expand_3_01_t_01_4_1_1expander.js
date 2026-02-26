@@ -1,0 +1,4 @@
+var structdepicture__menu_1_1domain_1_1models_1_1detail__domain_1_1presistance__expand_3_01_t_01_4_1_1expander =
+[
+    [ "tuple_expand", "structdepicture__menu_1_1domain_1_1models_1_1detail__domain_1_1presistance__expand_3_01_t_01_4_1_1expander.html#a80b7e00e7a5448f1bc38fa6a36dd69a0", null ]
+];

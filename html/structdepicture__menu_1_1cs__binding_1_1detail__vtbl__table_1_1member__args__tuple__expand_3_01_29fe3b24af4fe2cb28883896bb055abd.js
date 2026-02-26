@@ -1,0 +1,4 @@
+var structdepicture__menu_1_1cs__binding_1_1detail__vtbl__table_1_1member__args__tuple__expand_3_01_29fe3b24af4fe2cb28883896bb055abd =
+[
+    [ "type", "structdepicture__menu_1_1cs__binding_1_1detail__vtbl__table_1_1member__args__tuple__expand_3_01_29fe3b24af4fe2cb28883896bb055abd.html#a77073cacdea8b4319b8a68d7f8480cda", null ]
+];

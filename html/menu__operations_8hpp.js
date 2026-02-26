@@ -1,0 +1,9 @@
+var menu__operations_8hpp =
+[
+    [ "depicture_menu::presentations::view_models::operations::detail_operation_menu::menu_operator_impl", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__menu_1_1menu__operator__impl.html", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__menu_1_1menu__operator__impl" ],
+    [ "depicture_menu::presentations::view_models::operations::detail_operation_menu::menu_create_operator_impl", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__menu_1_1menu__create__operator__impl.html", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__menu_1_1menu__create__operator__impl" ],
+    [ "depicture_menu::presentations::view_models::operations::detail_operation_menu::menu_erase_operator_impl", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__menu_1_1menu__erase__operator__impl.html", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__menu_1_1menu__erase__operator__impl" ],
+    [ "depicture_menu::presentations::view_models::operations::menu_create_operator_impl", "namespacedepicture__menu_1_1presentations_1_1view__models_1_1operations.html#ab5a464cc822e041a66f65f0f5e1bd714", null ],
+    [ "depicture_menu::presentations::view_models::operations::menu_erase_operator_impl", "namespacedepicture__menu_1_1presentations_1_1view__models_1_1operations.html#ad8a255b47b97c3afffa2d10dc3392269", null ],
+    [ "depicture_menu::presentations::view_models::operations::menu_operator_impl", "namespacedepicture__menu_1_1presentations_1_1view__models_1_1operations.html#aed723f23e95af95a0e61e1c86e9f12a4", null ]
+];

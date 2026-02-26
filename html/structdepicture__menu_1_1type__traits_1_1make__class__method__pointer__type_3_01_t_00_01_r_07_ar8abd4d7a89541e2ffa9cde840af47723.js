@@ -1,0 +1,4 @@
+var structdepicture__menu_1_1type__traits_1_1make__class__method__pointer__type_3_01_t_00_01_r_07_ar8abd4d7a89541e2ffa9cde840af47723 =
+[
+    [ "type", "structdepicture__menu_1_1type__traits_1_1make__class__method__pointer__type_3_01_t_00_01_r_07_ar8abd4d7a89541e2ffa9cde840af47723.html#a3e7e3eefd9472458d599cf810b91a2fd", null ]
+];

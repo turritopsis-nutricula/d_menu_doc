@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/src/core/application/archiver/archiver_build.cpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('archiver__build_8cpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">archiver_build.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="archiver__build_8cpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;./config.hpp&quot;</span>    <span class="comment">// IWYU pragma: keep</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="archiver__build_8hpp.html">archiver_build.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="app__transaction_8hpp.html">core/application/app_transaction.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span> A, <span class="keyword">template</span> &lt; <span class="keyword">typename</span> &gt; <span class="keyword">typename</span> <a class="code hl_enumvalue" href="namespacedepicture__menu_1_1domain_1_1actions_1_1send__keyinput.html#a0f312b243774c4222f7d07d19483f3abab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">auto</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>ptr_cast( std::shared_ptr&lt; T&lt; A &gt; &gt; <a class="code hl_struct" href="structa.html">a</a> ) -&gt; std::shared_ptr&lt;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <a class="code hl_class" href="classdepicture__menu_1_1repositories_1_1serialization__interface.html">depicture_menu::repositories::serialization_interface&lt; A &gt;</a> &gt;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordflow">return</span> std::static_pointer_cast&lt;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <a class="code hl_class" href="classdepicture__menu_1_1repositories_1_1serialization__interface.html">depicture_menu::repositories::serialization_interface&lt; A &gt;</a> &gt;( <a class="code hl_struct" href="structa.html">a</a> );</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>}</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>}    <span class="comment">// namespace</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1applications.html">depicture_menu::applications</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00022" data-start="" data-end="">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="archiver__build_8cpp.html#a678bc1f5f53ace821c3b88b792c516f2">   22</a></span><span class="preprocessor">#define DPM_CREATE_PTR( INJ, ENTITY )                                          \</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">    INJ.create&lt;                                                                \</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">        std::shared_ptr&lt; repositories::serialization_interface&lt; ENTITY &gt; &gt; &gt;(  \</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">    )</span></div>
+</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><a class="code hl_typedef" href="namespacedepicture__menu_1_1applications.html#a385fa8574f93c0fa1702e63d6d55e965">archiver_pack_t</a></div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1applications.html#a1a83cc7219079a22026653e1d71774a6">   28</a></span><a class="code hl_function" href="namespacedepicture__menu_1_1applications.html#a1a83cc7219079a22026653e1d71774a6">build_archive</a>( )</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#if 0</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">auto</span>&amp; core = <a class="code hl_function" href="classdepicture__menu_1_1singleton.html#ab3a8df96e817c8ccb1ab61434f90c416">core_interface::get_instance</a>( );</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacedepicture__menu_1_1applications.html#aea55f9188deab20c69c500e215de01a5">archive_tuple</a>(</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <a class="code hl_function" href="namespacedepicture__menu_1_1applications.html#aba78edff7f85480ed50f1420066c1dd6">data_pack</a>( <span class="stringliteral">&quot;options&quot;</span>, ptr_cast( core.application_option_repository_ ) ),</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_struct" href="structdepicture__menu_1_1applications_1_1data__pack.html">data_pack</a>( <span class="stringliteral">&quot;config&quot;</span>, ptr_cast( core.application_config_repository_ ) ),</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <a class="code hl_struct" href="structdepicture__menu_1_1applications_1_1data__pack.html">data_pack</a>( <span class="stringliteral">&quot;menus&quot;</span>, ptr_cast( core.menu_repository_ ) ),</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <a class="code hl_struct" href="structdepicture__menu_1_1applications_1_1data__pack.html">data_pack</a>( <span class="stringliteral">&quot;actions&quot;</span>, ptr_cast( core.action_repository_ ) ),</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <a class="code hl_struct" href="structdepicture__menu_1_1applications_1_1data__pack.html">data_pack</a>( <span class="stringliteral">&quot;commands&quot;</span>, ptr_cast( core.command_repository_ ) ),</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <a class="code hl_struct" href="structdepicture__menu_1_1applications_1_1data__pack.html">data_pack</a>( <span class="stringliteral">&quot;triggers&quot;</span>, ptr_cast( core.trigger_repository_ ) )</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    );</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="_test_radial_menu_arg_8cpp.html#aeca65b3c5514e9cd9db7d72b5e7ac290">inj</a> = <a class="code hl_function" href="namespacedepicture__menu_1_1applications.html#af2f3f1b3b5999de9758861d236b73323">make_transaction_injector</a>( );</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="comment">// clang-format off</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacedepicture__menu_1_1applications.html#aea55f9188deab20c69c500e215de01a5">archive_tuple</a>(</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <a class="code hl_function" href="namespacedepicture__menu_1_1applications.html#aba78edff7f85480ed50f1420066c1dd6">data_pack</a>( <span class="stringliteral">&quot;options&quot;</span>, (  <a class="code hl_define" href="archiver__build_8cpp.html#a678bc1f5f53ace821c3b88b792c516f2">DPM_CREATE_PTR</a>( <a class="code hl_variable" href="_test_radial_menu_arg_8cpp.html#aeca65b3c5514e9cd9db7d72b5e7ac290">inj</a>, <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1app_1_1option.html">domain::app::option</a> )) ),</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <a class="code hl_function" href="namespacedepicture__menu_1_1applications.html#aba78edff7f85480ed50f1420066c1dd6">data_pack</a>( <span class="stringliteral">&quot;config&quot;</span>, (   <a class="code hl_define" href="archiver__build_8cpp.html#a678bc1f5f53ace821c3b88b792c516f2">DPM_CREATE_PTR</a>( <a class="code hl_variable" href="_test_radial_menu_arg_8cpp.html#aeca65b3c5514e9cd9db7d72b5e7ac290">inj</a>, <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1app_1_1config.html">domain::app::config</a> )) ),</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <a class="code hl_function" href="namespacedepicture__menu_1_1applications.html#aba78edff7f85480ed50f1420066c1dd6">data_pack</a>( <span class="stringliteral">&quot;menus&quot;</span>, (    <a class="code hl_define" href="archiver__build_8cpp.html#a678bc1f5f53ace821c3b88b792c516f2">DPM_CREATE_PTR</a>( <a class="code hl_variable" href="_test_radial_menu_arg_8cpp.html#aeca65b3c5514e9cd9db7d72b5e7ac290">inj</a>, <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html">domain::menu::radialmenu</a> )) ),</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <a class="code hl_function" href="namespacedepicture__menu_1_1applications.html#aba78edff7f85480ed50f1420066c1dd6">data_pack</a>( <span class="stringliteral">&quot;actions&quot;</span>, (  <a class="code hl_define" href="archiver__build_8cpp.html#a678bc1f5f53ace821c3b88b792c516f2">DPM_CREATE_PTR</a>( <a class="code hl_variable" href="_test_radial_menu_arg_8cpp.html#aeca65b3c5514e9cd9db7d72b5e7ac290">inj</a>, <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1actions_1_1v2_1_1publisher.html">domain::actions::publisher</a> )) ),</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <a class="code hl_function" href="namespacedepicture__menu_1_1applications.html#aba78edff7f85480ed50f1420066c1dd6">data_pack</a>( <span class="stringliteral">&quot;commands&quot;</span>, ( <a class="code hl_define" href="archiver__build_8cpp.html#a678bc1f5f53ace821c3b88b792c516f2">DPM_CREATE_PTR</a>( <a class="code hl_variable" href="_test_radial_menu_arg_8cpp.html#aeca65b3c5514e9cd9db7d72b5e7ac290">inj</a>, <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1commands_1_1command.html">domain::commands::command</a> )) ),</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <a class="code hl_function" href="namespacedepicture__menu_1_1applications.html#aba78edff7f85480ed50f1420066c1dd6">data_pack</a>( <span class="stringliteral">&quot;triggers&quot;</span>, ( <a class="code hl_define" href="archiver__build_8cpp.html#a678bc1f5f53ace821c3b88b792c516f2">DPM_CREATE_PTR</a>( <a class="code hl_variable" href="_test_radial_menu_arg_8cpp.html#aeca65b3c5514e9cd9db7d72b5e7ac290">inj</a>, <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1triggers_1_1global__key__input__trigger.html">domain::triggers::global_key_input_trigger</a> )) )</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    );</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="comment">// clang-format on</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
+</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}    <span class="comment">// namespace depicture_menu::applications</span></div>
+<div class="ttc" id="a_test_radial_menu_arg_8cpp_html_aeca65b3c5514e9cd9db7d72b5e7ac290"><div class="ttname"><a href="_test_radial_menu_arg_8cpp.html#aeca65b3c5514e9cd9db7d72b5e7ac290">inj</a></div><div class="ttdeci">auto inj</div><div class="ttdef"><b>Definition</b> <a href="_test_radial_menu_arg_8cpp_source.html#l00069">TestRadialMenuArg.cpp:69</a></div></div>
+<div class="ttc" id="aapp__transaction_8hpp_html"><div class="ttname"><a href="app__transaction_8hpp.html">app_transaction.hpp</a></div></div>
+<div class="ttc" id="aarchiver__build_8cpp_html_a678bc1f5f53ace821c3b88b792c516f2"><div class="ttname"><a href="archiver__build_8cpp.html#a678bc1f5f53ace821c3b88b792c516f2">DPM_CREATE_PTR</a></div><div class="ttdeci">#define DPM_CREATE_PTR(INJ, ENTITY)</div><div class="ttdef"><b>Definition</b> <a href="#l00022">archiver_build.cpp:22</a></div></div>
+<div class="ttc" id="aarchiver__build_8hpp_html"><div class="ttname"><a href="archiver__build_8hpp.html">archiver_build.hpp</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1actions_1_1v2_1_1publisher_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1actions_1_1v2_1_1publisher.html">depicture_menu::domain::actions::v2::publisher</a></div><div class="ttdef"><b>Definition</b> <a href="action_8hpp_source.html#l00205">action.hpp:207</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1app_1_1config_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1app_1_1config.html">depicture_menu::domain::app::config</a></div><div class="ttdef"><b>Definition</b> <a href="domain_2model_2app_2config_8hpp_source.html#l00052">config.hpp:53</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1app_1_1option_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1app_1_1option.html">depicture_menu::domain::app::option</a></div><div class="ttdef"><b>Definition</b> <a href="option_8hpp_source.html#l00026">option.hpp:27</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1commands_1_1command_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1commands_1_1command.html">depicture_menu::domain::commands::command</a></div><div class="ttdef"><b>Definition</b> <a href="command_8hpp_source.html#l00036">command.hpp:38</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1triggers_1_1global__key__input__trigger_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1triggers_1_1global__key__input__trigger.html">depicture_menu::domain::triggers::global_key_input_trigger</a></div><div class="ttdef"><b>Definition</b> <a href="trigger_8hpp_source.html#l00036">trigger.hpp:39</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1repositories_1_1serialization__interface_html"><div class="ttname"><a href="classdepicture__menu_1_1repositories_1_1serialization__interface.html">depicture_menu::repositories::serialization_interface</a></div><div class="ttdef"><b>Definition</b> <a href="serialization__interface_8hpp_source.html#l00009">serialization_interface.hpp:10</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1singleton_html_ab3a8df96e817c8ccb1ab61434f90c416"><div class="ttname"><a href="classdepicture__menu_1_1singleton.html#ab3a8df96e817c8ccb1ab61434f90c416">depicture_menu::singleton&lt; detail_d_menu::core_interface_impl &gt;::get_instance</a></div><div class="ttdeci">static T &amp; get_instance()</div><div class="ttdef"><b>Definition</b> <a href="singleton_8hpp_source.html#l00037">singleton.hpp:37</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1applications_html"><div class="ttname"><a href="namespacedepicture__menu_1_1applications.html">depicture_menu::applications</a></div><div class="ttdef"><b>Definition</b> <a href="app__transaction_8cpp_source.html#l00034">app_transaction.cpp:35</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1applications_html_a1a83cc7219079a22026653e1d71774a6"><div class="ttname"><a href="namespacedepicture__menu_1_1applications.html#a1a83cc7219079a22026653e1d71774a6">depicture_menu::applications::build_archive</a></div><div class="ttdeci">archiver_pack_t build_archive()</div><div class="ttdef"><b>Definition</b> <a href="#l00028">archiver_build.cpp:28</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1applications_html_a385fa8574f93c0fa1702e63d6d55e965"><div class="ttname"><a href="namespacedepicture__menu_1_1applications.html#a385fa8574f93c0fa1702e63d6d55e965">depicture_menu::applications::archiver_pack_t</a></div><div class="ttdeci">archiver_pack&lt; domain::app::option, domain::app::config, domain::menu::radialmenu, domain::actions::publisher, domain::commands::command, domain::triggers::global_key_input_trigger &gt;::type archiver_pack_t</div><div class="ttdef"><b>Definition</b> <a href="archiver__build_8hpp_source.html#l00188">archiver_build.hpp:188</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1applications_html_aba78edff7f85480ed50f1420066c1dd6"><div class="ttname"><a href="namespacedepicture__menu_1_1applications.html#aba78edff7f85480ed50f1420066c1dd6">depicture_menu::applications::data_pack</a></div><div class="ttdeci">data_pack(std::string name, std::shared_ptr&lt; repositories::serialization_interface&lt; V &gt; &gt;) -&gt; data_pack&lt; V &gt;</div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1applications_html_aea55f9188deab20c69c500e215de01a5"><div class="ttname"><a href="namespacedepicture__menu_1_1applications.html#aea55f9188deab20c69c500e215de01a5">depicture_menu::applications::archive_tuple</a></div><div class="ttdeci">archive_tuple(data_pack&lt; C &gt;... c) -&gt; archive_tuple&lt; data_pack&lt; C &gt;... &gt;</div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1applications_html_af2f3f1b3b5999de9758861d236b73323"><div class="ttname"><a href="namespacedepicture__menu_1_1applications.html#af2f3f1b3b5999de9758861d236b73323">depicture_menu::applications::make_transaction_injector</a></div><div class="ttdeci">di_transaction_source_t make_transaction_injector()</div><div class="ttdef"><b>Definition</b> <a href="app__transaction_8cpp_source.html#l00038">app_transaction.cpp:38</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1actions_1_1send__keyinput_html_a0f312b243774c4222f7d07d19483f3abab9ece18c950afbfa6b0fdbfa4ff731d3"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1actions_1_1send__keyinput.html#a0f312b243774c4222f7d07d19483f3abab9ece18c950afbfa6b0fdbfa4ff731d3">depicture_menu::domain::actions::send_keyinput::virtual_key_code::T</a></div><div class="ttdeci">@ T</div><div class="ttdef"><b>Definition</b> <a href="action_2send__keyinput_2virtual__key__code_8hpp_source.html#l00095">virtual_key_code.hpp:95</a></div></div>
+<div class="ttc" id="astructa_html"><div class="ttname"><a href="structa.html">a</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00137">TestReflection.cpp:138</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1applications_1_1data__pack_html"><div class="ttname"><a href="structdepicture__menu_1_1applications_1_1data__pack.html">depicture_menu::applications::data_pack</a></div><div class="ttdef"><b>Definition</b> <a href="archiver__build_8hpp_source.html#l00014">archiver_build.hpp:15</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1radialmenu_html"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html">depicture_menu::domain::menu::radialmenu</a></div><div class="ttdef"><b>Definition</b> <a href="radialmenu_8hpp_source.html#l00027">radialmenu.hpp:28</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_d26f0ed8b287a778d960ad2241e01057.html">src</a></li><li class="navelem"><a href="dir_eb29242f55d2489f6c4d008365c270b7.html">core</a></li><li class="navelem"><a href="dir_62153e020276f17450b004104a906c1d.html">application</a></li><li class="navelem"><a href="dir_7e633cb83dfe69181f5d5e89385753cb.html">archiver</a></li><li class="navelem"><a href="archiver__build_8cpp.html">archiver_build.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

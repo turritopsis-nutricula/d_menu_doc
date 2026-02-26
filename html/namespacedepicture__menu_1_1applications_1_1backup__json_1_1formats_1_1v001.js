@@ -1,0 +1,26 @@
+var namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001 =
+[
+    [ "color_data", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001_1_1color__data.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001_1_1color__data" ],
+    [ "menu_item_data", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001_1_1menu__item__data.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001_1_1menu__item__data" ],
+    [ "menu_data", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001_1_1menu__data.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001_1_1menu__data" ],
+    [ "action_data", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001_1_1action__data.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001_1_1action__data" ],
+    [ "command_parameter_data", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001_1_1command__parameter__data.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001_1_1command__parameter__data" ],
+    [ "command_data", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001_1_1command__data.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001_1_1command__data" ],
+    [ "trigger_data", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001_1_1trigger__data.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001_1_1trigger__data" ],
+    [ "config_data", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001_1_1config__data.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001_1_1config__data" ],
+    [ "option_data", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001_1_1option__data.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001_1_1option__data" ],
+    [ "backup_data_data", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001_1_1backup__data__data.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001_1_1backup__data__data" ],
+    [ "backup_data", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001_1_1backup__data.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001_1_1backup__data" ],
+    [ "backup_json", "namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001.html#a2b597ba36f52e1392dbeba4cc00eb2fe", null ],
+    [ "operator==", "namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001.html#aa92e9db15ad0ddec470d187de8b31aae", null ],
+    [ "operator==", "namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001.html#af550c1f12b6847d54ec9f1b1630bbe43", null ],
+    [ "operator==", "namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001.html#a65071e3b7eccf11a9dcd3387dda93251", null ],
+    [ "operator==", "namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001.html#a64f8514b6bef3106105923a0ba26c9d6", null ],
+    [ "operator==", "namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001.html#a3a2305e535f626975fafd7dfe403efed", null ],
+    [ "operator==", "namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001.html#a1fc6e9c395ef8789ae82b708b20a6e2a", null ],
+    [ "operator==", "namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001.html#ad874561c7672bb0d0382b7c733fd71e8", null ],
+    [ "operator==", "namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001.html#ac0f19185aeae61f6a1b2fa15aab624f9", null ],
+    [ "operator==", "namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001.html#a2da2b7b3f576277aa02262c7a6ce1640", null ],
+    [ "operator==", "namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001.html#a62e22be56000e2db685d8d60c748b539", null ],
+    [ "operator==", "namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001.html#a58e8e271dfc0c7ac87519300b4292f74", null ]
+];

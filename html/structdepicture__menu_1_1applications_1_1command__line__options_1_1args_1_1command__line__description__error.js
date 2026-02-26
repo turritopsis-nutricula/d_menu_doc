@@ -1,0 +1,5 @@
+var structdepicture__menu_1_1applications_1_1command__line__options_1_1args_1_1command__line__description__error =
+[
+    [ "error_name_", "structdepicture__menu_1_1applications_1_1command__line__options_1_1args_1_1command__line__description__error.html#a7ed9b1bf0392c1b78dc257472f0ef102", null ],
+    [ "what_", "structdepicture__menu_1_1applications_1_1command__line__options_1_1args_1_1command__line__description__error.html#aa994b94d982538ee3679677cca0bdbb1", null ]
+];

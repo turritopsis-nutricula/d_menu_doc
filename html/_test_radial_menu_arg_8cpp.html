@@ -1,0 +1,358 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/test/core/cs_binding/TestRadialMenuArg.cpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_test_radial_menu_arg_8cpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">TestRadialMenuArg.cpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;config.hpp&quot;</code><br />
+<code>#include &lt;boost/test/data/test_case.hpp&gt;</code><br />
+<code>#include &lt;boost/test/unit_test.hpp&gt;</code><br />
+<code>#include &quot;<a class="el" href="cs__binding__test__helpers_8hpp_source.html">cs_binding_test_helpers.hpp</a>&quot;</code><br />
+<code>#include &lt;boost/uuid/uuid_io.hpp&gt;</code><br />
+<code>#include &quot;<a class="el" href="_radial_menu_args_8hpp_source.html">core/cs_binding/RadialMenuArgs.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="apply__menus_8hpp_source.html">core/cs_binding/apply_domain/apply_menus.hpp</a>&quot;</code><br />
+<code>#include &lt;boost/di.hpp&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+TestRadialMenuArg.cpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="_test_radial_menu_arg_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+<p><a href="_test_radial_menu_arg_8cpp_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:holder" id="r_holder"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structholder.html">holder</a></td></tr>
+<tr class="memitem:menu_5Fpresenter" id="r_menu_5Fpresenter"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structmenu__presenter.html">menu_presenter</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a139f00d2466d591f60b8d6a73c8273f1" id="r_a139f00d2466d591f60b8d6a73c8273f1"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a139f00d2466d591f60b8d6a73c8273f1">BOOST_TEST_DYN_LINK</a></td></tr>
+<tr class="memitem:ab340a5e76af466a5f20ec5500d30a80b" id="r_ab340a5e76af466a5f20ec5500d30a80b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab340a5e76af466a5f20ec5500d30a80b">BOOST_TEST_MAIN</a></td></tr>
+<tr class="memitem:a9be594f6d75811863174e098c9fa925c" id="r_a9be594f6d75811863174e098c9fa925c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a9be594f6d75811863174e098c9fa925c">TO_TEST_WRAPPER_TYPE</a>(NAME)</td></tr>
+<tr class="memitem:aeeb925b5525a02b2b64f741067c05d50" id="r_aeeb925b5525a02b2b64f741067c05d50"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aeeb925b5525a02b2b64f741067c05d50">DPM_APPLY_TEST_SUITE</a>(ARG,  INPUT_TYPE)</td></tr>
+<tr class="memitem:a3699403ffb598ea0c804aaab1e150520" id="r_a3699403ffb598ea0c804aaab1e150520"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a3699403ffb598ea0c804aaab1e150520">DPM_APPLY_TEST_SUITE_END</a>()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:adb9036b1c4d2c2a10e78374e3646aba1" id="r_adb9036b1c4d2c2a10e78374e3646aba1"><td class="memItemLeft">boost::di::injector&lt; <a class="el" href="structholder.html">holder</a> &amp; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#adb9036b1c4d2c2a10e78374e3646aba1">make_module</a> ()</td></tr>
+<tr class="memitem:a504f79d7623f6b4064d243cc95297497" id="r_a504f79d7623f6b4064d243cc95297497"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a504f79d7623f6b4064d243cc95297497">BOOST_AUTO_TEST_CASE</a> (create)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+変数</h2></td></tr>
+<tr class="memitem:a05b3f0cc55aa8dcf95ea6378d5c14962" id="r_a05b3f0cc55aa8dcf95ea6378d5c14962"><td class="memItemLeft">std::shared_ptr&lt; dc::RadialMenuArg &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a05b3f0cc55aa8dcf95ea6378d5c14962">origin</a></td></tr>
+<tr class="memitem:aeca65b3c5514e9cd9db7d72b5e7ac290" id="r_aeca65b3c5514e9cd9db7d72b5e7ac290"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="#aeca65b3c5514e9cd9db7d72b5e7ac290">inj</a></td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">マクロ定義詳解</h2>
+<a id="a139f00d2466d591f60b8d6a73c8273f1" name="a139f00d2466d591f60b8d6a73c8273f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a139f00d2466d591f60b8d6a73c8273f1">&#9670;&#160;</a></span>BOOST_TEST_DYN_LINK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOOST_TEST_DYN_LINK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_radial_menu_arg_8cpp_source.html">TestRadialMenuArg.cpp</a> の <a class="el" href="_test_radial_menu_arg_8cpp_source.html#l00002">2</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ab340a5e76af466a5f20ec5500d30a80b" name="ab340a5e76af466a5f20ec5500d30a80b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab340a5e76af466a5f20ec5500d30a80b">&#9670;&#160;</a></span>BOOST_TEST_MAIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOOST_TEST_MAIN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_radial_menu_arg_8cpp_source.html">TestRadialMenuArg.cpp</a> の <a class="el" href="_test_radial_menu_arg_8cpp_source.html#l00003">3</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aeeb925b5525a02b2b64f741067c05d50" name="aeeb925b5525a02b2b64f741067c05d50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeeb925b5525a02b2b64f741067c05d50">&#9670;&#160;</a></span>DPM_APPLY_TEST_SUITE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_APPLY_TEST_SUITE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>ARG</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>INPUT_TYPE</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">BOOST_FIXTURE_TEST_SUITE( BOOST_PP_CAT( test_, ARG ), <a class="code hl_struct" href="structtest__helper_1_1domain__converter__fixture.html">test_helper::domain_converter_fixture</a>&lt; <a class="code hl_define" href="#a9be594f6d75811863174e098c9fa925c">TO_TEST_WRAPPER_TYPE</a>( ARG ) &gt; ) \</div>
+<div class="line"><span class="keyword">using </span>domain_t                                                                                                               \</div>
+<div class="line">    = <a class="code hl_struct" href="structtest__helper_1_1domain__converter__fixture.html">test_helper::domain_converter_fixture</a>&lt; <a class="code hl_define" href="#a9be594f6d75811863174e098c9fa925c">TO_TEST_WRAPPER_TYPE</a>( ARG                                                       \</div>
+<div class="line">    ) &gt;::convert_wrapper&lt; INPUT_TYPE &gt;;</div>
+<div class="ttc" id="a_test_radial_menu_arg_8cpp_html_a9be594f6d75811863174e098c9fa925c"><div class="ttname"><a href="#a9be594f6d75811863174e098c9fa925c">TO_TEST_WRAPPER_TYPE</a></div><div class="ttdeci">#define TO_TEST_WRAPPER_TYPE(NAME)</div><div class="ttdef"><b>Definition</b> <a href="_test_radial_menu_arg_8cpp_source.html#l00016">TestRadialMenuArg.cpp:16</a></div></div>
+<div class="ttc" id="astructtest__helper_1_1domain__converter__fixture_html"><div class="ttname"><a href="structtest__helper_1_1domain__converter__fixture.html">test_helper::domain_converter_fixture</a></div><div class="ttdef"><b>Definition</b> <a href="cs__binding__test__helpers_8hpp_source.html#l00174">cs_binding_test_helpers.hpp:175</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="_test_radial_menu_arg_8cpp_source.html">TestRadialMenuArg.cpp</a> の <a class="el" href="_test_radial_menu_arg_8cpp_source.html#l00018">18</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a3699403ffb598ea0c804aaab1e150520" name="a3699403ffb598ea0c804aaab1e150520"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3699403ffb598ea0c804aaab1e150520">&#9670;&#160;</a></span>DPM_APPLY_TEST_SUITE_END</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_APPLY_TEST_SUITE_END</td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">BOOST_AUTO_TEST_SUITE_END( )</div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="_test_radial_menu_arg_8cpp_source.html">TestRadialMenuArg.cpp</a> の <a class="el" href="_test_radial_menu_arg_8cpp_source.html#l00024">24</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a9be594f6d75811863174e098c9fa925c" name="a9be594f6d75811863174e098c9fa925c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9be594f6d75811863174e098c9fa925c">&#9670;&#160;</a></span>TO_TEST_WRAPPER_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TO_TEST_WRAPPER_TYPE</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>NAME</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">depicture_menu::cs_binding::NAME##_test_wrapper</div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="_test_radial_menu_arg_8cpp_source.html">TestRadialMenuArg.cpp</a> の <a class="el" href="_test_radial_menu_arg_8cpp_source.html#l00016">16</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="a504f79d7623f6b4064d243cc95297497" name="a504f79d7623f6b4064d243cc95297497"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a504f79d7623f6b4064d243cc95297497">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">create</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_radial_menu_arg_8cpp_source.html">TestRadialMenuArg.cpp</a> の <a class="el" href="_test_radial_menu_arg_8cpp_source.html#l00087">87</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST()</a>, <a class="el" href="_test_radial_menu_arg_8cpp_source.html#l00069">inj</a>, <a class="el" href="_test_radial_menu_arg_8cpp_source.html#l00037">origin</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="_test_radial_menu_arg_8cpp_a504f79d7623f6b4064d243cc95297497_cgraph.svg" width="364" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="adb9036b1c4d2c2a10e78374e3646aba1" name="adb9036b1c4d2c2a10e78374e3646aba1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb9036b1c4d2c2a10e78374e3646aba1">&#9670;&#160;</a></span>make_module()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::di::injector&lt; <a class="el" href="structholder.html">holder</a> &amp; &gt; make_module </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_radial_menu_arg_8cpp_source.html">TestRadialMenuArg.cpp</a> の <a class="el" href="_test_radial_menu_arg_8cpp_source.html#l00055">55</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="_test_radial_menu_arg_8cpp_source.html#l00055">make_module()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="_test_radial_menu_arg_8cpp_source.html#l00055">make_module()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="_test_radial_menu_arg_8cpp_adb9036b1c4d2c2a10e78374e3646aba1_cgraph.svg" width="114" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="_test_radial_menu_arg_8cpp_adb9036b1c4d2c2a10e78374e3646aba1_icgraph.svg" width="114" height="62"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">変数詳解</h2>
+<a id="aeca65b3c5514e9cd9db7d72b5e7ac290" name="aeca65b3c5514e9cd9db7d72b5e7ac290"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeca65b3c5514e9cd9db7d72b5e7ac290">&#9670;&#160;</a></span>inj</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto inj</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>初期値:</b><div class="fragment"><div class="line">         = boost::di::make_injector(</div>
+<div class="line">    <a class="code hl_function" href="#adb9036b1c4d2c2a10e78374e3646aba1">make_module</a>( ),</div>
+<div class="line">    </div>
+<div class="line">    boost::di::bind&lt; int &gt;.in( boost::di::singleton )</div>
+<div class="line">)</div>
+<div class="ttc" id="a_test_radial_menu_arg_8cpp_html_adb9036b1c4d2c2a10e78374e3646aba1"><div class="ttname"><a href="#adb9036b1c4d2c2a10e78374e3646aba1">make_module</a></div><div class="ttdeci">boost::di::injector&lt; holder &amp; &gt; make_module()</div><div class="ttdef"><b>Definition</b> <a href="_test_radial_menu_arg_8cpp_source.html#l00055">TestRadialMenuArg.cpp:55</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="_test_radial_menu_arg_8cpp_source.html">TestRadialMenuArg.cpp</a> の <a class="el" href="_test_radial_menu_arg_8cpp_source.html#l00069">69</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="_test_radial_menu_arg_8cpp_source.html#l00087">BOOST_AUTO_TEST_CASE()</a>, <a class="el" href="menu__view__arg__builder_8cpp_source.html#l00037">depicture_menu::applications::view_factories::menu_view_arg_builder::build()</a>, <a class="el" href="archiver__build_8cpp_source.html#l00028">depicture_menu::applications::build_archive()</a>, <a class="el" href="initilize__core_8cpp_source.html#l00023">initilize_core()</a>.</p>
+
+</div>
+</div>
+<a id="a05b3f0cc55aa8dcf95ea6378d5c14962" name="a05b3f0cc55aa8dcf95ea6378d5c14962"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05b3f0cc55aa8dcf95ea6378d5c14962">&#9670;&#160;</a></span>origin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; dc::RadialMenuArg &gt; origin</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_radial_menu_arg_8cpp_source.html">TestRadialMenuArg.cpp</a> の <a class="el" href="_test_radial_menu_arg_8cpp_source.html#l00037">37</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="_test_radial_menu_arg_8cpp_source.html#l00087">BOOST_AUTO_TEST_CASE()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_0281b912293b0150165693b325cfab25.html">test</a></li><li class="navelem"><a href="dir_13bb975b5c6918e0cdb932e8baceeae5.html">core</a></li><li class="navelem"><a href="dir_c856ea1ed2b948c35686ba376f01231b.html">cs_binding</a></li><li class="navelem"><a href="_test_radial_menu_arg_8cpp.html">TestRadialMenuArg.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

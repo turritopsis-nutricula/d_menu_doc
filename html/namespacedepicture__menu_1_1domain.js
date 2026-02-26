@@ -1,0 +1,26 @@
+var namespacedepicture__menu_1_1domain =
+[
+    [ "common", "namespacedepicture__menu_1_1domain_1_1common.html", "namespacedepicture__menu_1_1domain_1_1common" ],
+    [ "models", "namespacedepicture__menu_1_1domain_1_1models.html", "namespacedepicture__menu_1_1domain_1_1models" ],
+    [ "events", "namespacedepicture__menu_1_1domain_1_1events.html", "namespacedepicture__menu_1_1domain_1_1events" ],
+    [ "actions", "namespacedepicture__menu_1_1domain_1_1actions.html", "namespacedepicture__menu_1_1domain_1_1actions" ],
+    [ "app", "namespacedepicture__menu_1_1domain_1_1app.html", "namespacedepicture__menu_1_1domain_1_1app" ],
+    [ "commands", "namespacedepicture__menu_1_1domain_1_1commands.html", "namespacedepicture__menu_1_1domain_1_1commands" ],
+    [ "id_tags", "namespacedepicture__menu_1_1domain_1_1id__tags.html", "namespacedepicture__menu_1_1domain_1_1id__tags" ],
+    [ "menu", "namespacedepicture__menu_1_1domain_1_1menu.html", "namespacedepicture__menu_1_1domain_1_1menu" ],
+    [ "triggers", "namespacedepicture__menu_1_1domain_1_1triggers.html", "namespacedepicture__menu_1_1domain_1_1triggers" ],
+    [ "services", "namespacedepicture__menu_1_1domain_1_1services.html", "namespacedepicture__menu_1_1domain_1_1services" ],
+    [ "query_interface", "classdepicture__menu_1_1domain_1_1query__interface.html", "classdepicture__menu_1_1domain_1_1query__interface" ],
+    [ "crud_repository_interface", "classdepicture__menu_1_1domain_1_1crud__repository__interface.html", "classdepicture__menu_1_1domain_1_1crud__repository__interface" ],
+    [ "event_publisher_decorator", "classdepicture__menu_1_1domain_1_1event__publisher__decorator.html", "classdepicture__menu_1_1domain_1_1event__publisher__decorator" ],
+    [ "tuple_outer", "structdepicture__menu_1_1domain_1_1tuple__outer.html", "structdepicture__menu_1_1domain_1_1tuple__outer" ],
+    [ "crud_repository_ptr", "namespacedepicture__menu_1_1domain.html#a2980eebd051ca204d1ad0af249033bdd", null ],
+    [ "query_ptr", "namespacedepicture__menu_1_1domain.html#aa7ad5d3657bbe2711d171153be6d4e65", null ],
+    [ "create_or_update", "namespacedepicture__menu_1_1domain.html#ab6f75e9305326674ea6fa040f38da322", null ],
+    [ "for_each_access", "namespacedepicture__menu_1_1domain.html#ae6e677b060427637acf61ffbdf027135", null ],
+    [ "make_query", "namespacedepicture__menu_1_1domain.html#aedcb86fbc703a4490f8e3940ea7c8aa5", null ],
+    [ "operator<<", "namespacedepicture__menu_1_1domain.html#afa7637275d2253158e6a65619aeb9854", null ],
+    [ "operator==", "namespacedepicture__menu_1_1domain.html#a9e5c84d63c3eb7c62a75b8207df3c85a", null ],
+    [ "read_or_create", "namespacedepicture__menu_1_1domain.html#a8d3af72c4adc66e4a83b5f791e0e31d4", null ],
+    [ "show_view", "namespacedepicture__menu_1_1domain.html#a1f80bb52231be50a32dbb84c61837db0", null ]
+];

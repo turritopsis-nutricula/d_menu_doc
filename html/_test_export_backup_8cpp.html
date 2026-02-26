@@ -1,0 +1,586 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/test/core/usecase/backup/TestExportBackup.cpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_test_export_backup_8cpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">TestExportBackup.cpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;./config.hpp&quot;</code><br />
+<code>#include &lt;boost/test/data/test_case.hpp&gt;</code><br />
+<code>#include &lt;boost/test/unit_test.hpp&gt;</code><br />
+<code>#include &quot;<a class="el" href="dto__converter_8hpp_source.html">core/usecase/backup/convert/dto_converter.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="export__backup_8hpp_source.html">core/usecase/backup/export_backup.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="import__backup_8hpp_source.html">core/usecase/backup/import_backup.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="test__tools_8hpp_source.html">test_tool/test_tools.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="aggregate__repository__mock_8hpp_source.html">test_tool/mock/aggregate_repository_mock.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="make__mock__transaction__injection_8hpp_source.html">test_tool/mock/make_mock_transaction_injection.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mock__entity__buffer_8hpp_source.html">test_tool/mock/mock_entity_buffer.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="setup__mock__repository_8hpp_source.html">test_tool/setup_mock_repository.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="conv__mapping_8hpp_source.html">core/utility/conv_mapping/conv_mapping.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="reflection_8hpp_source.html">utility/reflection.hpp</a>&quot;</code><br />
+<code>#include &lt;boost/lexical_cast.hpp&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+TestExportBackup.cpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="_test_export_backup_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+<p><a href="_test_export_backup_8cpp_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Atype_5Ftraits_3A_3Amethod_5Ftraits_3C_20R_28P_3A_3A_2A_29_28Args_2E_2E_2E_29_20noexcept_28B_29_20_3E" id="r_depicture_5Fmenu_3A_3Atype_5Ftraits_3A_3Amethod_5Ftraits_3C_20R_28P_3A_3A_2A_29_28Args_2E_2E_2E_29_20noexcept_28B_29_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1type__traits_1_1method__traits_3_01_r_07_p_1_1_5_08_07_args_8_8_8_08_01noexcept_07_b_08_01_4.html">depicture_menu::type_traits::method_traits&lt; R(P::*)(Args...) noexcept(B) &gt;</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Atype_5Ftraits_3A_3Amethod_5Ftraits_3C_20R_28P_3A_3A_2A_29_28Args_2E_2E_2E_29_20const_20noexcept_28B_29_20_3E" id="r_depicture_5Fmenu_3A_3Atype_5Ftraits_3A_3Amethod_5Ftraits_3C_20R_28P_3A_3A_2A_29_28Args_2E_2E_2E_29_20const_20noexcept_28B_29_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1type__traits_1_1method__traits_3_01_r_07_p_1_1_5_08_07_args_8_8_8_08_01const_01noexcept_07_b_08_01_4.html">depicture_menu::type_traits::method_traits&lt; R(P::*)(Args...) const noexcept(B) &gt;</a></td></tr>
+<tr class="memitem:option_5Fexport_5Ftest" id="r_option_5Fexport_5Ftest"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structoption__export__test.html">option_export_test</a></td></tr>
+<tr class="memitem:config_5Fdata_5Ftest" id="r_config_5Fdata_5Ftest"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structconfig__data__test.html">config_data_test</a></td></tr>
+<tr class="memitem:parameter_5Fdata_5Ftest_5Fbase_3C_20K_2C_20ValueMaker_2C_20DtoValueMaker_20_3E" id="r_parameter_5Fdata_5Ftest_5Fbase_3C_20K_2C_20ValueMaker_2C_20DtoValueMaker_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structparameter__data__test__base.html">parameter_data_test_base&lt; K, ValueMaker, DtoValueMaker &gt;</a></td></tr>
+<tr class="memitem:tt_3A_3Abase_5Fpair_5Ffactory_3C_20T_2C_20Dto_2C_20DtoIdField_20_3E" id="r_tt_3A_3Abase_5Fpair_5Ffactory_3C_20T_2C_20Dto_2C_20DtoIdField_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structtt_1_1base__pair__factory.html">tt::base_pair_factory&lt; T, Dto, DtoIdField &gt;</a></td></tr>
+<tr class="memitem:tt_3A_3Afield_5Faccesser_3C_20FieldName_2C_20Maker_20_3E" id="r_tt_3A_3Afield_5Faccesser_3C_20FieldName_2C_20Maker_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structtt_1_1field__accesser.html">tt::field_accesser&lt; FieldName, Maker &gt;</a></td></tr>
+<tr class="memitem:tt_3A_3Amp_5Faccesser_3C_20SetMP_2C_20Maker_20_3E" id="r_tt_3A_3Amp_5Faccesser_3C_20SetMP_2C_20Maker_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structtt_1_1mp__accesser.html">tt::mp_accesser&lt; SetMP, Maker &gt;</a></td></tr>
+<tr class="memitem:tt_3A_3Ainvoker_5Faccess_3C_20Invoker_2C_20Maker_20_3E" id="r_tt_3A_3Ainvoker_5Faccess_3C_20Invoker_2C_20Maker_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structtt_1_1invoker__access.html">tt::invoker_access&lt; Invoker, Maker &gt;</a></td></tr>
+<tr class="memitem:tt_3A_3Achecker_3C_20T_2C_20Modifyers_20_3E" id="r_tt_3A_3Achecker_3C_20T_2C_20Modifyers_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structtt_1_1checker.html">tt::checker&lt; T, Modifyers &gt;</a></td></tr>
+<tr class="memitem:tt_3A_3Ainit_5Fchecker_3C_20create_5Fdto_2C_20create_5Fentity_2C_20factory_20_3E" id="r_tt_3A_3Ainit_5Fchecker_3C_20create_5Fdto_2C_20create_5Fentity_2C_20factory_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structtt_1_1init__checker.html">tt::init_checker&lt; create_dto, create_entity, factory &gt;</a></td></tr>
+<tr class="memitem:tt_3A_3Afield_5Fchecker_3C_20create_5Fdto_5Ffunc_2C_20create_5Fentity_5Ffunc_2C_20initializer_2C_20dto_5Ffield_5Fname_2C_20ent_5Fseter_5Fmp_2C_20ent_5Fgetter_5Fmp_2C_20dto_5Fsample_5Fmaker_2C_20entity_5Fsample_5Fmaker_20_3E" id="r_tt_3A_3Afield_5Fchecker_3C_20create_5Fdto_5Ffunc_2C_20create_5Fentity_5Ffunc_2C_20initializer_2C_20dto_5Ffield_5Fname_2C_20ent_5Fseter_5Fmp_2C_20ent_5Fgetter_5Fmp_2C_20dto_5Fsample_5Fmaker_2C_20entity_5Fsample_5Fmaker_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structtt_1_1field__checker.html">tt::field_checker&lt; create_dto_func, create_entity_func, initializer, dto_field_name, ent_seter_mp, ent_getter_mp, dto_sample_maker, entity_sample_maker &gt;</a></td></tr>
+<tr class="memitem:command_5Fdata_5Ffactory" id="r_command_5Fdata_5Ffactory"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structcommand__data__factory.html">command_data_factory</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:depicture_5Fmenu" id="r_depicture_5Fmenu"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu.html">depicture_menu</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Atype_5Ftraits" id="r_depicture_5Fmenu_3A_3Atype_5Ftraits"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1type__traits.html">depicture_menu::type_traits</a></td></tr>
+<tr class="memitem:tt" id="r_tt"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacett.html">tt</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a139f00d2466d591f60b8d6a73c8273f1" id="r_a139f00d2466d591f60b8d6a73c8273f1"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a139f00d2466d591f60b8d6a73c8273f1">BOOST_TEST_DYN_LINK</a></td></tr>
+<tr class="memitem:ab340a5e76af466a5f20ec5500d30a80b" id="r_ab340a5e76af466a5f20ec5500d30a80b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab340a5e76af466a5f20ec5500d30a80b">BOOST_TEST_MAIN</a></td></tr>
+<tr class="memitem:acdeff5183ea174dc3ba1ab5c0ef674c9" id="r_acdeff5183ea174dc3ba1ab5c0ef674c9"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#acdeff5183ea174dc3ba1ab5c0ef674c9">DPM_PARAMTER_DATA_TEST</a>(NAME,  TYPE_ENUM,  VALUE,  DTO_VALUE)</td></tr>
+<tr class="memitem:ac8f6f24b0faac3b50c0b7edfd7f9609d" id="r_ac8f6f24b0faac3b50c0b7edfd7f9609d"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ac8f6f24b0faac3b50c0b7edfd7f9609d">DPM_TEST_COMMAND_NAME_FIELD</a>(S,  T)</td></tr>
+<tr class="memitem:a506a45e4725ed256a8e29688563f5b51" id="r_a506a45e4725ed256a8e29688563f5b51"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a506a45e4725ed256a8e29688563f5b51">DPM_TT_PARAMETER_FILED_CHECK</a>(DTO_TYPE,  DTO_VALUE)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:a2734e08b445c25d5b116278c14a3c5da" id="r_a2734e08b445c25d5b116278c14a3c5da"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:a2734e08b445c25d5b116278c14a3c5da template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1type__traits.html#a2734e08b445c25d5b116278c14a3c5da">depicture_menu::type_traits::method_type_t</a> = <a class="el" href="structdepicture__menu_1_1type__traits_1_1method__traits.html">method_traits</a>&lt; T &gt;<a class="el" href="structdepicture__menu_1_1util_1_1type__traits_1_1member__function__pointer__result.html">::type</a></td></tr>
+<tr class="memitem:af93f4c5c47196f6dc2811bdd88c701f3" id="r_af93f4c5c47196f6dc2811bdd88c701f3"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:af93f4c5c47196f6dc2811bdd88c701f3 template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1type__traits.html#af93f4c5c47196f6dc2811bdd88c701f3">depicture_menu::type_traits::method_result_t</a> = <a class="el" href="structdepicture__menu_1_1type__traits_1_1method__traits.html">method_traits</a>&lt; T &gt;<a class="el" href="structdepicture__menu_1_1type__traits_1_1method__traits.html">::result_t</a></td></tr>
+<tr class="memitem:a57916cbf5ceba700411ab65c4a3e1178" id="r_a57916cbf5ceba700411ab65c4a3e1178"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacedepicture__menu.html#a6c1ee86b4e22d373f58ab39a5349ddc9">d_menu::constexpr_string</a> Dto, typename EntSetter, typename EntGetter, typename D, typename E&gt; </td></tr>
+<tr class="memitem:a57916cbf5ceba700411ab65c4a3e1178 template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a57916cbf5ceba700411ab65c4a3e1178">command_field_checker</a></td></tr>
+<tr class="memitem:a5a96c6c7aeff090b30af7dba8b2004e8" id="r_a5a96c6c7aeff090b30af7dba8b2004e8"><td class="memTemplParams" colspan="2">template&lt;typename D, typename E&gt; </td></tr>
+<tr class="memitem:a5a96c6c7aeff090b30af7dba8b2004e8 template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a5a96c6c7aeff090b30af7dba8b2004e8">name_field_checcer</a></td></tr>
+<tr class="memitem:ae27aae35301060b8b52d8158c4cc0513" id="r_ae27aae35301060b8b52d8158c4cc0513"><td class="memTemplParams" colspan="2">template&lt;typename S, typename T&gt; </td></tr>
+<tr class="memitem:ae27aae35301060b8b52d8158c4cc0513 template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#ae27aae35301060b8b52d8158c4cc0513">parameter_field_checker</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a65535664326e12b925c92fcb601e3eab" id="r_a65535664326e12b925c92fcb601e3eab"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a65535664326e12b925c92fcb601e3eab">BOOST_AUTO_TEST_CASE</a> (option_data)</td></tr>
+<tr class="memitem:a42f0d7a16a3e6c2fcb6a65dfba873bf8" id="r_a42f0d7a16a3e6c2fcb6a65dfba873bf8"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a42f0d7a16a3e6c2fcb6a65dfba873bf8">BOOST_AUTO_TEST_CASE</a> (config_data)</td></tr>
+<tr class="memitem:a9fd834eec8edb804621eaf7b9de450eb" id="r_a9fd834eec8edb804621eaf7b9de450eb"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a9fd834eec8edb804621eaf7b9de450eb">DPM_PARAMTER_DATA_TEST</a> (test_parameter_data__uuid, uuid, boost::uuids::string_generator{}(&quot;44444444-4444-4444-4444-444444444444&quot;), &quot;44444444-4444-4444-4444-444444444444&quot;) template&lt; auto M &gt; struct MPH</td></tr>
+<tr class="memitem:afe7b92e544ceb0957df07f303cb0358d" id="r_afe7b92e544ceb0957df07f303cb0358d"><td class="memTemplParams" colspan="2">template&lt;typename T, <a class="el" href="namespacedepicture__menu.html#a6c1ee86b4e22d373f58ab39a5349ddc9">d_menu::constexpr_string</a> FieldName, typename Maker&gt; </td></tr>
+<tr class="memitem:afe7b92e544ceb0957df07f303cb0358d template"><td class="memItemLeft">auto &amp;&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1test_1_1test__tools.html#afe7b92e544ceb0957df07f303cb0358d">depicture_menu::test::test_tools::operator|</a> (T &amp;v, <a class="el" href="structdepicture__menu_1_1test_1_1test__tools_1_1field__accesser.html">field_accesser</a>&lt; FieldName, Maker &gt; &amp;&amp;m)</td></tr>
+<tr class="memitem:aa97a1dba324d9994dffd3827c99db1bd" id="r_aa97a1dba324d9994dffd3827c99db1bd"><td class="memTemplParams" colspan="2">template&lt;typename T, auto S, typename Maker&gt; </td></tr>
+<tr class="memitem:aa97a1dba324d9994dffd3827c99db1bd template"><td class="memItemLeft">auto &amp;&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1test_1_1test__tools.html#aa97a1dba324d9994dffd3827c99db1bd">depicture_menu::test::test_tools::operator|</a> (T &amp;v, <a class="el" href="structdepicture__menu_1_1test_1_1test__tools_1_1mp__accesser.html">mp_accesser</a>&lt; S, Maker &gt; &amp;&amp;m)</td></tr>
+<tr class="memitem:af6185c4804d36ad7fd6db6c7a47dbdb9" id="r_af6185c4804d36ad7fd6db6c7a47dbdb9"><td class="memTemplParams" colspan="2">template&lt;typename T, typename Invoker, typename Maker&gt; </td></tr>
+<tr class="memitem:af6185c4804d36ad7fd6db6c7a47dbdb9 template"><td class="memItemLeft">auto &amp;&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1test_1_1test__tools.html#af6185c4804d36ad7fd6db6c7a47dbdb9">depicture_menu::test::test_tools::operator|</a> (T &amp;v, <a class="el" href="structdepicture__menu_1_1test_1_1test__tools_1_1invoker__access.html">invoker_access</a>&lt; Invoker, Maker &gt; &amp;&amp;m)</td></tr>
+<tr class="memitem:a9593fb0b3c614953ed8545b960aed921" id="r_a9593fb0b3c614953ed8545b960aed921"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a9593fb0b3c614953ed8545b960aed921">BOOST_AUTO_TEST_CASE</a> (test_command)</td></tr>
+<tr class="memitem:a9a611818b761690a456d957019ce0a7d" id="r_a9a611818b761690a456d957019ce0a7d"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a9a611818b761690a456d957019ce0a7d">BOOST_AUTO_TEST_CASE</a> (test_command_data_name)</td></tr>
+<tr class="memitem:a3edaded526d02a63ebf8bcff48af4087" id="r_a3edaded526d02a63ebf8bcff48af4087"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a3edaded526d02a63ebf8bcff48af4087">BOOST_AUTO_TEST_CASE</a> (test_command_data_parameters)</td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">マクロ定義詳解</h2>
+<a id="a139f00d2466d591f60b8d6a73c8273f1" name="a139f00d2466d591f60b8d6a73c8273f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a139f00d2466d591f60b8d6a73c8273f1">&#9670;&#160;</a></span>BOOST_TEST_DYN_LINK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOOST_TEST_DYN_LINK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_export_backup_8cpp_source.html">TestExportBackup.cpp</a> の <a class="el" href="_test_export_backup_8cpp_source.html#l00002">2</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ab340a5e76af466a5f20ec5500d30a80b" name="ab340a5e76af466a5f20ec5500d30a80b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab340a5e76af466a5f20ec5500d30a80b">&#9670;&#160;</a></span>BOOST_TEST_MAIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOOST_TEST_MAIN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_export_backup_8cpp_source.html">TestExportBackup.cpp</a> の <a class="el" href="_test_export_backup_8cpp_source.html#l00003">3</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="acdeff5183ea174dc3ba1ab5c0ef674c9" name="acdeff5183ea174dc3ba1ab5c0ef674c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdeff5183ea174dc3ba1ab5c0ef674c9">&#9670;&#160;</a></span>DPM_PARAMTER_DATA_TEST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_PARAMTER_DATA_TEST</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>NAME</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>TYPE_ENUM</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>VALUE</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>DTO_VALUE</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line"><a class="code hl_function" href="_test_backup_json_8cpp.html#ac60c25c7e7fe69dfd220f4fb5bc17c5d">BOOST_AUTO_TEST_CASE</a>( NAME )                                               \</div>
+<div class="line">{                                                                          \</div>
+<div class="line">    <a class="code hl_struct" href="structparameter__data__test__base.html">parameter_data_test_base</a>&lt;                                              \</div>
+<div class="line">        dd::commands::parameter_kind::TYPE_ENUM,                           \</div>
+<div class="line">        decltype( []( ) { <span class="keywordflow">return</span> VALUE; } ),                               \</div>
+<div class="line">        <span class="keyword">decltype</span>( []( ) { <span class="keywordflow">return</span> DTO_VALUE; } ) &gt;                          \</div>
+<div class="line">        tt;                                                                \</div>
+<div class="line">                                                                           \</div>
+<div class="line">    <span class="keyword">auto</span> entity = tt.<a class="code hl_function" href="structparameter__data__test__base.html#a92cdf5c6f962881584449745ffbaac51">get_entity</a>( );                                        \</div>
+<div class="line">                                                                           \</div>
+<div class="line">    <span class="keyword">auto</span> accept_dto = <a class="code hl_function" href="namespacedepicture__menu_1_1usecase_1_1backup.html#a8a0e384aeaffc87849dff03c3af44a94">dub::create_command_parameter_dto</a>( entity );         \</div>
+<div class="line">    <span class="keyword">auto</span> expect_dto = tt.get_dto( );                                       \</div>
+<div class="line">                                                                           \</div>
+<div class="line">    BOOST_TEST( accept_dto == expect_dto );                                \</div>
+<div class="line">                                                                           \</div>
+<div class="line">    <span class="keyword">auto</span> accept_entity                                                     \</div>
+<div class="line">        = <a class="code hl_function" href="namespacedepicture__menu_1_1usecase_1_1backup.html#aadf4071173de69e1d1483d7e3ad6dd41">dub::create_command_parameter_entity</a>( expect_dto );              \</div>
+<div class="line">                                                                           \</div>
+<div class="line">                                                                           \</div>
+<div class="line">    <span class="keyword">auto</span> <span class="keyword">const</span>&amp; expect = ( entity );                                       \</div>
+<div class="line">    <span class="keyword">auto</span> <span class="keyword">const</span>&amp; accept = ( accept_entity );                                \</div>
+<div class="line">                                                                           \</div>
+<div class="line">    BOOST_TEST( accept == expect );                                        \</div>
+<div class="line">}</div>
+<div class="ttc" id="a_test_backup_json_8cpp_html_ac60c25c7e7fe69dfd220f4fb5bc17c5d"><div class="ttname"><a href="_test_backup_json_8cpp.html#ac60c25c7e7fe69dfd220f4fb5bc17c5d">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(test_test_write_backup_json)</div><div class="ttdoc">test_write_backup_json : TestCase</div><div class="ttdef"><b>Definition</b> <a href="_test_backup_json_8cpp_source.html#l00203">TestBackupJson.cpp:203</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1backup_html_a8a0e384aeaffc87849dff03c3af44a94"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1backup.html#a8a0e384aeaffc87849dff03c3af44a94">depicture_menu::usecase::backup::create_command_parameter_dto</a></div><div class="ttdeci">auto create_command_parameter_dto(domain::commands::parameter const &amp;src_data) -&gt; dto::command_parameter_data</div><div class="ttdef"><b>Definition</b> <a href="command_8cpp_source.html#l00305">command.cpp:305</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1backup_html_aadf4071173de69e1d1483d7e3ad6dd41"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1backup.html#aadf4071173de69e1d1483d7e3ad6dd41">depicture_menu::usecase::backup::create_command_parameter_entity</a></div><div class="ttdeci">auto create_command_parameter_entity(dto::command_parameter_data const &amp;dto) -&gt; domain::commands::parameter</div><div class="ttdef"><b>Definition</b> <a href="command_8cpp_source.html#l00319">command.cpp:319</a></div></div>
+<div class="ttc" id="astructparameter__data__test__base_html"><div class="ttname"><a href="structparameter__data__test__base.html">parameter_data_test_base</a></div><div class="ttdef"><b>Definition</b> <a href="_test_export_backup_8cpp_source.html#l00317">TestExportBackup.cpp:318</a></div></div>
+<div class="ttc" id="astructparameter__data__test__base_html_a92cdf5c6f962881584449745ffbaac51"><div class="ttname"><a href="structparameter__data__test__base.html#a92cdf5c6f962881584449745ffbaac51">parameter_data_test_base::get_entity</a></div><div class="ttdeci">auto get_entity() const</div><div class="ttdef"><b>Definition</b> <a href="_test_export_backup_8cpp_source.html#l00320">TestExportBackup.cpp:320</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="_test_export_backup_8cpp_source.html">TestExportBackup.cpp</a> の <a class="el" href="_test_export_backup_8cpp_source.html#l00339">339</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="_test_export_backup_8cpp_source.html#l00370">DPM_PARAMTER_DATA_TEST()</a>.</p>
+
+</div>
+</div>
+<a id="ac8f6f24b0faac3b50c0b7edfd7f9609d" name="ac8f6f24b0faac3b50c0b7edfd7f9609d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8f6f24b0faac3b50c0b7edfd7f9609d">&#9670;&#160;</a></span>DPM_TEST_COMMAND_NAME_FIELD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_TEST_COMMAND_NAME_FIELD</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>S</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>T</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line"><a class="code hl_typedef" href="#a5a96c6c7aeff090b30af7dba8b2004e8">name_field_checcer</a>&lt;                                                        \</div>
+<div class="line">    decltype( []( ) { <span class="keywordflow">return</span> S; } ),                                       \</div>
+<div class="line">    <span class="keyword">decltype</span>( []( ) { <span class="keywordflow">return</span> T; } ) &gt;{ }( );</div>
+<div class="ttc" id="a_test_export_backup_8cpp_html_a5a96c6c7aeff090b30af7dba8b2004e8"><div class="ttname"><a href="#a5a96c6c7aeff090b30af7dba8b2004e8">name_field_checcer</a></div><div class="ttdeci">command_field_checker&lt; &quot;name&quot;, decltype([](auto &amp;v, auto const  &amp;d) { v.name(d);}), decltype([](auto const  &amp;v) { return v.name();}), D, E &gt; name_field_checcer</div><div class="ttdef"><b>Definition</b> <a href="_test_export_backup_8cpp_source.html#l00756">TestExportBackup.cpp:756</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="_test_export_backup_8cpp_source.html">TestExportBackup.cpp</a> の <a class="el" href="_test_export_backup_8cpp_source.html#l00762">762</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="_test_export_backup_8cpp_source.html#l00766">BOOST_AUTO_TEST_CASE()</a>.</p>
+
+</div>
+</div>
+<a id="a506a45e4725ed256a8e29688563f5b51" name="a506a45e4725ed256a8e29688563f5b51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a506a45e4725ed256a8e29688563f5b51">&#9670;&#160;</a></span>DPM_TT_PARAMETER_FILED_CHECK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_TT_PARAMETER_FILED_CHECK</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>DTO_TYPE</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>DTO_VALUE</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_export_backup_8cpp_source.html">TestExportBackup.cpp</a> の <a class="el" href="_test_export_backup_8cpp_source.html#l00785">785</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">型定義詳解</h2>
+<a id="a57916cbf5ceba700411ab65c4a3e1178" name="a57916cbf5ceba700411ab65c4a3e1178"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57916cbf5ceba700411ab65c4a3e1178">&#9670;&#160;</a></span>command_field_checker</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="namespacedepicture__menu.html#a6c1ee86b4e22d373f58ab39a5349ddc9">d_menu::constexpr_string</a> Dto, typename EntSetter, typename EntGetter, typename D, typename E&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a57916cbf5ceba700411ab65c4a3e1178">command_field_checker</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>初期値:</b><div class="fragment"><div class="line"><a class="code hl_struct" href="structdepicture__menu_1_1test_1_1test__tools_1_1field__checker.html">tt::field_checker</a>&lt;</div>
+<div class="line">   <a class="code hl_function" href="namespacedepicture__menu_1_1usecase_1_1backup.html#a8990cd23cf70473cb1a6b5c6e1508382">dub::create_command_dto</a>,</div>
+<div class="line">   <a class="code hl_function" href="namespacedepicture__menu_1_1usecase_1_1backup.html#a7960f8b61b0dd3e52366bad7178b9206">dub::create_command_entity</a>,</div>
+<div class="line">   <a class="code hl_struct" href="structcommand__data__factory.html">command_data_factory</a>,</div>
+<div class="line">   Dto,</div>
+<div class="line">   EntSetter,</div>
+<div class="line">   EntGetter,</div>
+<div class="line">   D,</div>
+<div class="line">   E &gt;</div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1backup_html_a7960f8b61b0dd3e52366bad7178b9206"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1backup.html#a7960f8b61b0dd3e52366bad7178b9206">depicture_menu::usecase::backup::create_command_entity</a></div><div class="ttdeci">auto create_command_entity(dto::command_data const &amp;src) -&gt; domain::commands::command</div><div class="ttdef"><b>Definition</b> <a href="command_8cpp_source.html#l00078">command.cpp:78</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1backup_html_a8990cd23cf70473cb1a6b5c6e1508382"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1backup.html#a8990cd23cf70473cb1a6b5c6e1508382">depicture_menu::usecase::backup::create_command_dto</a></div><div class="ttdeci">auto create_command_dto(domain::commands::command const &amp;src) -&gt; dto::command_data</div><div class="ttdef"><b>Definition</b> <a href="command_8cpp_source.html#l00016">command.cpp:16</a></div></div>
+<div class="ttc" id="astructcommand__data__factory_html"><div class="ttname"><a href="structcommand__data__factory.html">command_data_factory</a></div><div class="ttdef"><b>Definition</b> <a href="_test_export_backup_8cpp_source.html#l00673">TestExportBackup.cpp:677</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1test_1_1test__tools_1_1field__checker_html"><div class="ttname"><a href="structdepicture__menu_1_1test_1_1test__tools_1_1field__checker.html">depicture_menu::test::test_tools::field_checker</a></div><div class="ttdef"><b>Definition</b> <a href="dto__entity__mapping__tools_8hpp_source.html#l00272">dto_entity_mapping_tools.hpp:273</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="_test_export_backup_8cpp_source.html">TestExportBackup.cpp</a> の <a class="el" href="_test_export_backup_8cpp_source.html#l00740">740</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a5a96c6c7aeff090b30af7dba8b2004e8" name="a5a96c6c7aeff090b30af7dba8b2004e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a96c6c7aeff090b30af7dba8b2004e8">&#9670;&#160;</a></span>name_field_checcer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename D, typename E&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a5a96c6c7aeff090b30af7dba8b2004e8">name_field_checcer</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>初期値:</b><div class="fragment"><div class="line"><a class="code hl_typedef" href="#a57916cbf5ceba700411ab65c4a3e1178">command_field_checker</a>&lt;</div>
+<div class="line">   <span class="stringliteral">&quot;name&quot;</span>,</div>
+<div class="line">   <span class="keyword">decltype</span>( []( <span class="keyword">auto</span>&amp; v, <span class="keyword">auto</span> <span class="keyword">const</span>&amp; <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> ) { v.name( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> ); } ),</div>
+<div class="line">   <span class="keyword">decltype</span>( []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; v ) { <span class="keywordflow">return</span> v.name( ); } ),</div>
+<div class="line">   D,</div>
+<div class="line">   E &gt;</div>
+<div class="ttc" id="a_test_export_backup_8cpp_html_a57916cbf5ceba700411ab65c4a3e1178"><div class="ttname"><a href="#a57916cbf5ceba700411ab65c4a3e1178">command_field_checker</a></div><div class="ttdeci">tt::field_checker&lt; dub::create_command_dto, dub::create_command_entity, command_data_factory, Dto, EntSetter, EntGetter, D, E &gt; command_field_checker</div><div class="ttdef"><b>Definition</b> <a href="_test_export_backup_8cpp_source.html#l00740">TestExportBackup.cpp:740</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_html"><div class="ttname"><a href="namespacedepicture__menu_1_1domain.html">depicture_menu::domain</a></div><div class="ttdef"><b>Definition</b> <a href="colors_8hpp_source.html#l00006">colors.hpp:7</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="_test_export_backup_8cpp_source.html">TestExportBackup.cpp</a> の <a class="el" href="_test_export_backup_8cpp_source.html#l00756">756</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ae27aae35301060b8b52d8158c4cc0513" name="ae27aae35301060b8b52d8158c4cc0513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae27aae35301060b8b52d8158c4cc0513">&#9670;&#160;</a></span>parameter_field_checker</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename S, typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ae27aae35301060b8b52d8158c4cc0513">parameter_field_checker</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>初期値:</b><div class="fragment"><div class="line"><a class="code hl_typedef" href="#a57916cbf5ceba700411ab65c4a3e1178">command_field_checker</a>&lt;</div>
+<div class="line">   <span class="stringliteral">&quot;parameters&quot;</span>,</div>
+<div class="line">   <span class="keyword">decltype</span>( []( <span class="keyword">auto</span>&amp; v, <span class="keyword">auto</span> <span class="keyword">const</span>&amp; <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> ) { v.parameters( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> ); } ),</div>
+<div class="line">   <span class="keyword">decltype</span>( []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; v ) { <span class="keywordflow">return</span> v.parameters( ); } ),</div>
+<div class="line">   S,</div>
+<div class="line">   T &gt;</div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="_test_export_backup_8cpp_source.html">TestExportBackup.cpp</a> の <a class="el" href="_test_export_backup_8cpp_source.html#l00779">779</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="a42f0d7a16a3e6c2fcb6a65dfba873bf8" name="a42f0d7a16a3e6c2fcb6a65dfba873bf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42f0d7a16a3e6c2fcb6a65dfba873bf8">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">config_data</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_export_backup_8cpp_source.html">TestExportBackup.cpp</a> の <a class="el" href="_test_export_backup_8cpp_source.html#l00272">272</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST()</a>, <a class="el" href="config_8cpp_source.html#l00008">depicture_menu::usecase::backup::create_config_dto()</a>, <a class="el" href="config_8cpp_source.html#l00111">depicture_menu::usecase::backup::create_config_entity()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="_test_export_backup_8cpp_a42f0d7a16a3e6c2fcb6a65dfba873bf8_cgraph.svg" width="654" height="235"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a65535664326e12b925c92fcb601e3eab" name="a65535664326e12b925c92fcb601e3eab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65535664326e12b925c92fcb601e3eab">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">option_data</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_export_backup_8cpp_source.html">TestExportBackup.cpp</a> の <a class="el" href="_test_export_backup_8cpp_source.html#l00113">113</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST()</a>, <a class="el" href="option_8cpp_source.html#l00007">depicture_menu::usecase::backup::create_option_dto()</a>, <a class="el" href="option_8cpp_source.html#l00041">depicture_menu::usecase::backup::create_option_entity()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="_test_export_backup_8cpp_a65535664326e12b925c92fcb601e3eab_cgraph.svg" width="100%" height="449"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a9593fb0b3c614953ed8545b960aed921" name="a9593fb0b3c614953ed8545b960aed921"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9593fb0b3c614953ed8545b960aed921">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">test_command</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_export_backup_8cpp_source.html">TestExportBackup.cpp</a> の <a class="el" href="_test_export_backup_8cpp_source.html#l00711">711</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST()</a>, <a class="el" href="command_8cpp_source.html#l00016">depicture_menu::usecase::backup::create_command_dto()</a>, <a class="el" href="command_8cpp_source.html#l00078">depicture_menu::usecase::backup::create_command_entity()</a>, <a class="el" href="dto__entity__mapping__tools_8hpp_source.html#l00100">depicture_menu::test::test_tools::base_pair_factory&lt; T, Dto, DtoIdField &gt;::get_dto()</a>, <a class="el" href="dto__entity__mapping__tools_8hpp_source.html#l00095">depicture_menu::test::test_tools::base_pair_factory&lt; T, Dto, DtoIdField &gt;::get_entity()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="_test_export_backup_8cpp_a9593fb0b3c614953ed8545b960aed921_cgraph.svg" width="100%" height="564"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a9a611818b761690a456d957019ce0a7d" name="a9a611818b761690a456d957019ce0a7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a611818b761690a456d957019ce0a7d">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">test_command_data_name</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_export_backup_8cpp_source.html">TestExportBackup.cpp</a> の <a class="el" href="_test_export_backup_8cpp_source.html#l00766">766</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="_test_export_backup_8cpp_source.html#l00762">DPM_TEST_COMMAND_NAME_FIELD</a>.</p>
+
+</div>
+</div>
+<a id="a3edaded526d02a63ebf8bcff48af4087" name="a3edaded526d02a63ebf8bcff48af4087"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3edaded526d02a63ebf8bcff48af4087">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">test_command_data_parameters</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_export_backup_8cpp_source.html">TestExportBackup.cpp</a> の <a class="el" href="_test_export_backup_8cpp_source.html#l00787">787</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="parameter_8hpp_source.html#l00203">depicture_menu::domain::commands::build_parameter_value()</a>, <a class="el" href="model_2entity__id_8hpp_source.html#l00088">depicture_menu::domain::models::entity_id_base&lt; detail_commands::command_id_tag &gt;::from()</a>, <a class="el" href="model_2entity__id_8hpp_source.html#l00088">depicture_menu::domain::models::entity_id_base&lt; detail_commands::invoker_id_tag &gt;::from()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="_test_export_backup_8cpp_a3edaded526d02a63ebf8bcff48af4087_cgraph.svg" width="487" height="152"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a9fd834eec8edb804621eaf7b9de450eb" name="a9fd834eec8edb804621eaf7b9de450eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fd834eec8edb804621eaf7b9de450eb">&#9670;&#160;</a></span>DPM_PARAMTER_DATA_TEST()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DPM_PARAMTER_DATA_TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_parameter_data__uuid</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uuid</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boost::uuids::string_generator{}</td>          <td class="paramname"><span class="paramname"><em></em></span>&quot;44444444-4444-4444-4444-444444444444&quot;, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&quot;44444444-4444-4444-4444-444444444444&quot;</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_export_backup_8cpp_source.html">TestExportBackup.cpp</a> の <a class="el" href="_test_export_backup_8cpp_source.html#l00370">370</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="_test_export_backup_8cpp_source.html#l00339">DPM_PARAMTER_DATA_TEST</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_0281b912293b0150165693b325cfab25.html">test</a></li><li class="navelem"><a href="dir_13bb975b5c6918e0cdb932e8baceeae5.html">core</a></li><li class="navelem"><a href="dir_21066f585cae410d48f5ec08b14be068.html">usecase</a></li><li class="navelem"><a href="dir_6abf481fa9349692dc230bbf1332cb18.html">backup</a></li><li class="navelem"><a href="_test_export_backup_8cpp.html">TestExportBackup.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

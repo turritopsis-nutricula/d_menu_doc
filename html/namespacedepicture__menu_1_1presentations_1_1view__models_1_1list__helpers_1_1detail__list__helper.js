@@ -1,0 +1,4 @@
+var namespacedepicture__menu_1_1presentations_1_1view__models_1_1list__helpers_1_1detail__list__helper =
+[
+    [ "concepts", "namespacedepicture__menu_1_1presentations_1_1view__models_1_1list__helpers_1_1detail__list__helper_1_1concepts.html", "namespacedepicture__menu_1_1presentations_1_1view__models_1_1list__helpers_1_1detail__list__helper_1_1concepts" ]
+];

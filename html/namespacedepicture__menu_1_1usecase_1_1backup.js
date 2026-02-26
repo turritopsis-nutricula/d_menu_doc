@@ -1,0 +1,25 @@
+var namespacedepicture__menu_1_1usecase_1_1backup =
+[
+    [ "dd", "namespacedepicture__menu_1_1usecase_1_1backup_1_1dd.html", null ],
+    [ "detail_backup", "namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup.html", "namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup" ],
+    [ "dto", "namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html", "namespacedepicture__menu_1_1usecase_1_1backup_1_1dto" ],
+    [ "export_backup", "classdepicture__menu_1_1usecase_1_1backup_1_1export__backup.html", "classdepicture__menu_1_1usecase_1_1backup_1_1export__backup" ],
+    [ "stab_import_backup_presenter", "structdepicture__menu_1_1usecase_1_1backup_1_1stab__import__backup__presenter.html", "structdepicture__menu_1_1usecase_1_1backup_1_1stab__import__backup__presenter" ],
+    [ "import_backup", "classdepicture__menu_1_1usecase_1_1backup_1_1import__backup.html", "classdepicture__menu_1_1usecase_1_1backup_1_1import__backup" ],
+    [ "create_action_dto", "namespacedepicture__menu_1_1usecase_1_1backup.html#a81daca5c8ff86f5b08dc552e0fe816a8", null ],
+    [ "create_action_entity", "namespacedepicture__menu_1_1usecase_1_1backup.html#a575b285c2f75ced5b639ab2de0f49591", null ],
+    [ "create_command_dto", "namespacedepicture__menu_1_1usecase_1_1backup.html#a8990cd23cf70473cb1a6b5c6e1508382", null ],
+    [ "create_command_entity", "namespacedepicture__menu_1_1usecase_1_1backup.html#a7960f8b61b0dd3e52366bad7178b9206", null ],
+    [ "create_command_parameter_dto", "namespacedepicture__menu_1_1usecase_1_1backup.html#a8a0e384aeaffc87849dff03c3af44a94", null ],
+    [ "create_command_parameter_entity", "namespacedepicture__menu_1_1usecase_1_1backup.html#aadf4071173de69e1d1483d7e3ad6dd41", null ],
+    [ "create_config_dto", "namespacedepicture__menu_1_1usecase_1_1backup.html#aa119e67f0ce64b2f8e57e6b634f686fa", null ],
+    [ "create_config_entity", "namespacedepicture__menu_1_1usecase_1_1backup.html#abdcff53881bb37c6cd4cce8bd8385973", null ],
+    [ "create_menu_dto", "namespacedepicture__menu_1_1usecase_1_1backup.html#a402b3ce37efb91491c24cb0c8e13e005", null ],
+    [ "create_menu_entity", "namespacedepicture__menu_1_1usecase_1_1backup.html#a27e6171f3ba0003adef01de409b0254f", null ],
+    [ "create_menu_item_dto", "namespacedepicture__menu_1_1usecase_1_1backup.html#afde122781a7afe923ee518857a1334c1", null ],
+    [ "create_menu_item_entity", "namespacedepicture__menu_1_1usecase_1_1backup.html#af023ae0fd9cf89bc77c238914436f9f0", null ],
+    [ "create_option_dto", "namespacedepicture__menu_1_1usecase_1_1backup.html#a34f9b01423306e939c9d3fe23ccb8cc8", null ],
+    [ "create_option_entity", "namespacedepicture__menu_1_1usecase_1_1backup.html#a577cce635c92d77f66057ca959745435", null ],
+    [ "create_trigger_dto", "namespacedepicture__menu_1_1usecase_1_1backup.html#a00e9dec0688da5a9c60a8d4aefd6cb30", null ],
+    [ "create_trigger_entity", "namespacedepicture__menu_1_1usecase_1_1backup.html#a5c64f7fcd330a6e17b0b2e29cadb2fc1", null ]
+];

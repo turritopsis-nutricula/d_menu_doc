@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/src/core/application/backup_json/backup_json.cpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('backup__json_8cpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">backup_json.cpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;./config.hpp&quot;</code><br />
+<code>#include &quot;<a class="el" href="backup__json_8hpp_source.html">backup_json.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="minimum_8hpp_source.html">format/minimum.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="v001_8hpp_source.html">format/v001.hpp</a>&quot;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;glaze/glaze.hpp&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+backup_json.cpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="backup__json_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+<p><a href="backup__json_8cpp_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Aapplications_3A_3Abackup_5Fjson_3A_3Adetail_3A_3Aformat_5Fconvert_3A_3Acascade_5Fconverter_3C_20current_5Fformat_2C_20converter_2C_20to_5Fformat_20_3E" id="r_depicture_5Fmenu_3A_3Aapplications_3A_3Abackup_5Fjson_3A_3Adetail_3A_3Aformat_5Fconvert_3A_3Acascade_5Fconverter_3C_20current_5Fformat_2C_20converter_2C_20to_5Fformat_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1applications_1_1backup__json_1_1detail_1_1format__convert_1_1cascade__converter.html">depicture_menu::applications::backup_json::detail::format_convert::cascade_converter&lt; current_format, converter, to_format &gt;</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:depicture_5Fmenu" id="r_depicture_5Fmenu"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu.html">depicture_menu</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Aapplications" id="r_depicture_5Fmenu_3A_3Aapplications"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1applications.html">depicture_menu::applications</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Aapplications_3A_3Abackup_5Fjson" id="r_depicture_5Fmenu_3A_3Aapplications_3A_3Abackup_5Fjson"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1applications_1_1backup__json.html">depicture_menu::applications::backup_json</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Aapplications_3A_3Abackup_5Fjson_3A_3Adetail" id="r_depicture_5Fmenu_3A_3Aapplications_3A_3Abackup_5Fjson_3A_3Adetail"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1applications_1_1backup__json_1_1detail.html">depicture_menu::applications::backup_json::detail</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Aapplications_3A_3Abackup_5Fjson_3A_3Adetail_3A_3Aformat_5Fconvert" id="r_depicture_5Fmenu_3A_3Aapplications_3A_3Abackup_5Fjson_3A_3Adetail_3A_3Aformat_5Fconvert"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1applications_1_1backup__json_1_1detail_1_1format__convert.html">depicture_menu::applications::backup_json::detail::format_convert</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-concepts" class="groupheader"><a id="concepts" name="concepts"></a>
+Concepts</h2></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Aapplications_3A_3Abackup_5Fjson_3A_3Adetail_3A_3Aformat_5Fconvert_3A_3Abackup_5Fjson_5Fformat" id="r_depicture_5Fmenu_3A_3Aapplications_3A_3Abackup_5Fjson_3A_3Adetail_3A_3Aformat_5Fconvert_3A_3Abackup_5Fjson_5Fformat"><td class="memItemLeft">concept &#160;</td><td class="memItemRight"><a class="el" href="conceptdepicture__menu_1_1applications_1_1backup__json_1_1detail_1_1format__convert_1_1backup__json__format.html">depicture_menu::applications::backup_json::detail::format_convert::backup_json_format</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a3e231b62ee483eebf603f3a54cc82ee3" id="r_a3e231b62ee483eebf603f3a54cc82ee3"><td class="memItemLeft"><a class="el" href="structdepicture__menu_1_1applications_1_1backup__json_1_1error__ctx.html">error_ctx</a>&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1applications_1_1backup__json_1_1detail.html#a3e231b62ee483eebf603f3a54cc82ee3">depicture_menu::applications::backup_json::detail::make_error_code</a> (glz::error_ctx const &amp;ge)</td></tr>
+<tr class="memitem:af28aa6379e4bca50b80a3fb068f71b9e" id="r_af28aa6379e4bca50b80a3fb068f71b9e"><td class="memItemLeft"><a class="el" href="structdepicture__menu_1_1applications_1_1backup__json_1_1error__ctx.html">error_ctx</a>&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1applications_1_1backup__json.html#af28aa6379e4bca50b80a3fb068f71b9e">depicture_menu::applications::backup_json::write_backup_json</a> (std::filesystem::path const &amp;path, <a class="el" href="namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v002.html#af583a814e54b9f5a35a5bd5e5e018fa6">formats::latest::backup_json</a> const &amp;data)</td></tr>
+<tr class="memitem:a43f6b4991f42384348b85fbf2cc41fe4" id="r_a43f6b4991f42384348b85fbf2cc41fe4"><td class="memItemLeft"><a class="el" href="structdepicture__menu_1_1applications_1_1backup__json_1_1error__ctx.html">error_ctx</a>&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1applications_1_1backup__json.html#a43f6b4991f42384348b85fbf2cc41fe4">depicture_menu::applications::backup_json::write_backup_json</a> (std::ostream &amp;istr, <a class="el" href="namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v002.html#af583a814e54b9f5a35a5bd5e5e018fa6">formats::latest::backup_json</a> const &amp;data)</td></tr>
+<tr class="memitem:aab48c345ede5cdac01ed0bcbd23ca3e5" id="r_aab48c345ede5cdac01ed0bcbd23ca3e5"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1applications_1_1backup__json.html#aab48c345ede5cdac01ed0bcbd23ca3e5">depicture_menu::applications::backup_json::read_backup_json</a> (std::filesystem::path const &amp;path) -&gt; std::expected&lt; <a class="el" href="namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v002.html#af583a814e54b9f5a35a5bd5e5e018fa6">formats::latest::backup_json</a>, <a class="el" href="structdepicture__menu_1_1applications_1_1backup__json_1_1error__ctx.html">error_ctx</a> &gt;</td></tr>
+<tr class="memitem:a5e39c69107de932dd5584c374763c074" id="r_a5e39c69107de932dd5584c374763c074"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1applications_1_1backup__json.html#a5e39c69107de932dd5584c374763c074">depicture_menu::applications::backup_json::read_backup_json</a> (std::istream &amp;istr) -&gt; std::expected&lt; <a class="el" href="namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v002.html#af583a814e54b9f5a35a5bd5e5e018fa6">formats::latest::backup_json</a>, <a class="el" href="structdepicture__menu_1_1applications_1_1backup__json_1_1error__ctx.html">error_ctx</a> &gt;</td></tr>
+<tr class="memitem:a9481d41ea6ddb72f59cf5533ecb69317" id="r_a9481d41ea6ddb72f59cf5533ecb69317"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1applications_1_1backup__json.html#a9481d41ea6ddb72f59cf5533ecb69317">depicture_menu::applications::backup_json::read_backup_dto</a> (std::filesystem::path const &amp;path) -&gt; std::expected&lt; <a class="el" href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1backup__data.html">usecase::backup::dto::backup_data</a>, <a class="el" href="structdepicture__menu_1_1applications_1_1backup__json_1_1error__ctx.html">error_ctx</a> &gt;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+変数</h2></td></tr>
+<tr class="memitem:ab33f87dbd984874711d3fab0310627a5" id="r_ab33f87dbd984874711d3fab0310627a5"><td class="memItemLeft">static constexpr auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1applications_1_1backup__json_1_1detail.html#ab33f87dbd984874711d3fab0310627a5">depicture_menu::applications::backup_json::detail::minimum_reqd_opt</a></td></tr>
+<tr class="memitem:ad33061fce75141233bb5eb5e2c35955b" id="r_ad33061fce75141233bb5eb5e2c35955b"><td class="memItemLeft">static constexpr auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1applications_1_1backup__json_1_1detail.html#ad33061fce75141233bb5eb5e2c35955b">depicture_menu::applications::backup_json::detail::required_opt</a> = glz::opts{ .error_on_unknown_keys = true, .error_on_missing_keys = true }</td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_d26f0ed8b287a778d960ad2241e01057.html">src</a></li><li class="navelem"><a href="dir_eb29242f55d2489f6c4d008365c270b7.html">core</a></li><li class="navelem"><a href="dir_62153e020276f17450b004104a906c1d.html">application</a></li><li class="navelem"><a href="dir_cb2f984bab5d8415904083f7c2b03401.html">backup_json</a></li><li class="navelem"><a href="backup__json_8cpp.html">backup_json.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

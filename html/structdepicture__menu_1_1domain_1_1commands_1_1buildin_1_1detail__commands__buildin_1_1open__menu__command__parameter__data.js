@@ -1,0 +1,4 @@
+var structdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1detail__commands__buildin_1_1open__menu__command__parameter__data =
+[
+    [ "open_menu_id_", "structdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1detail__commands__buildin_1_1open__menu__command__parameter__data.html#a34db399fa0dd074bf6ae2e3f9b894735", null ]
+];

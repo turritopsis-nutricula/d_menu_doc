@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/src/core/usecase/backup/convert/dto_converter.hpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('dto__converter_8hpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">dto_converter.hpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="backup__data_8hpp_source.html">../dto/backup_data.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="action_8hpp_source.html">core/domain/model/action/action.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="domain_2model_2app_2config_8hpp_source.html">core/domain/model/app/config.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="option_8hpp_source.html">core/domain/model/app/option.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="command_8hpp_source.html">core/domain/model/command/command.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="parameter_8hpp_source.html">core/domain/model/command/parameter.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="radialmenu_8hpp_source.html">core/domain/model/menu/radialmenu.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="trigger_8hpp_source.html">core/domain/model/trigger/trigger.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="conv__mapping_8hpp_source.html">core/utility/conv_mapping/conv_mapping.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="str__conv_8hpp_source.html">utility/str_conv.hpp</a>&quot;</code><br />
+<code>#include &lt;boost/describe/enum_from_string.hpp&gt;</code><br />
+<code>#include &lt;boost/describe/enumerators.hpp&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+dto_converter.hpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="dto__converter_8hpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="dto__converter_8hpp__dep__incl.svg" width="100%" height="524"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+<p><a href="dto__converter_8hpp_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Atype_5Ftraits_3A_3Aextract_5Fclass_5Fmethod_3C_20R_28T_3A_3A_2A_29_28Args_2E_2E_2E_29_20noexcept_28B_29_20_3E" id="r_depicture_5Fmenu_3A_3Atype_5Ftraits_3A_3Aextract_5Fclass_5Fmethod_3C_20R_28T_3A_3A_2A_29_28Args_2E_2E_2E_29_20noexcept_28B_29_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1type__traits_1_1extract__class__method_3_01_r_07_t_1_1_5_08_07_args_8_8_8_08_01noexcept_07_b_08_01_4.html">depicture_menu::type_traits::extract_class_method&lt; R(T::*)(Args...) noexcept(B) &gt;</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Atype_5Ftraits_3A_3Aextract_5Fclass_5Fmethod_3C_20R_28T_3A_3A_2A_29_28Args_2E_2E_2E_29_20const_20noexcept_28B_29_20_3E" id="r_depicture_5Fmenu_3A_3Atype_5Ftraits_3A_3Aextract_5Fclass_5Fmethod_3C_20R_28T_3A_3A_2A_29_28Args_2E_2E_2E_29_20const_20noexcept_28B_29_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1type__traits_1_1extract__class__method_3_01_r_07_t_1_1_5_08_07_args_8_8c601f994fe25fc39e60a819c11eb8032.html">depicture_menu::type_traits::extract_class_method&lt; R(T::*)(Args...) const noexcept(B) &gt;</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Atype_5Ftraits_3A_3Amake_5Fclass_5Fmethod_5Fpointer_5Ftype_3C_20T_2C_20R_28Args_2E_2E_2E_29_20noexcept_28B_29_20_3E" id="r_depicture_5Fmenu_3A_3Atype_5Ftraits_3A_3Amake_5Fclass_5Fmethod_5Fpointer_5Ftype_3C_20T_2C_20R_28Args_2E_2E_2E_29_20noexcept_28B_29_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1type__traits_1_1make__class__method__pointer__type_3_01_t_00_01_r_07_ar8abd4d7a89541e2ffa9cde840af47723.html">depicture_menu::type_traits::make_class_method_pointer_type&lt; T, R(Args...) noexcept(B) &gt;</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Atype_5Ftraits_3A_3Amake_5Fclass_5Fmethod_5Fpointer_5Ftype_3C_20T_2C_20R_28Args_2E_2E_2E_29_20const_20noexcept_28B_29_20_3E" id="r_depicture_5Fmenu_3A_3Atype_5Ftraits_3A_3Amake_5Fclass_5Fmethod_5Fpointer_5Ftype_3C_20T_2C_20R_28Args_2E_2E_2E_29_20const_20noexcept_28B_29_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1type__traits_1_1make__class__method__pointer__type_3_01_t_00_01_r_07_ar1f5bf58d6408ea8e68067358ebeac776.html">depicture_menu::type_traits::make_class_method_pointer_type&lt; T, R(Args...) const noexcept(B) &gt;</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Ausecase_3A_3Abackup_3A_3Adetail_5Fbackup_3A_3Astrings_5Fto_5Fentity_5Fids_5Fconv_3C_20ID_20_3E" id="r_depicture_5Fmenu_3A_3Ausecase_3A_3Abackup_3A_3Adetail_5Fbackup_3A_3Astrings_5Fto_5Fentity_5Fids_5Fconv_3C_20ID_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1usecase_1_1backup_1_1detail__backup_1_1strings__to__entity__ids__conv.html">depicture_menu::usecase::backup::detail_backup::strings_to_entity_ids_conv&lt; ID &gt;</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Ausecase_3A_3Abackup_3A_3Adetail_5Fbackup_3A_3Awstring_5Fto_5Fstring_5Fconv" id="r_depicture_5Fmenu_3A_3Ausecase_3A_3Abackup_3A_3Adetail_5Fbackup_3A_3Awstring_5Fto_5Fstring_5Fconv"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1usecase_1_1backup_1_1detail__backup_1_1wstring__to__string__conv.html">depicture_menu::usecase::backup::detail_backup::wstring_to_string_conv</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Ausecase_3A_3Abackup_3A_3Adetail_5Fbackup_3A_3Astring_5Fto_5Fwstring_5Fconv" id="r_depicture_5Fmenu_3A_3Ausecase_3A_3Abackup_3A_3Adetail_5Fbackup_3A_3Astring_5Fto_5Fwstring_5Fconv"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1usecase_1_1backup_1_1detail__backup_1_1string__to__wstring__conv.html">depicture_menu::usecase::backup::detail_backup::string_to_wstring_conv</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Ausecase_3A_3Abackup_3A_3Adetail_5Fbackup_3A_3Acolor_5Fconv" id="r_depicture_5Fmenu_3A_3Ausecase_3A_3Abackup_3A_3Adetail_5Fbackup_3A_3Acolor_5Fconv"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1usecase_1_1backup_1_1detail__backup_1_1color__conv.html">depicture_menu::usecase::backup::detail_backup::color_conv</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:depicture_5Fmenu" id="r_depicture_5Fmenu"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu.html">depicture_menu</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Atype_5Ftraits" id="r_depicture_5Fmenu_3A_3Atype_5Ftraits"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1type__traits.html">depicture_menu::type_traits</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Ausecase" id="r_depicture_5Fmenu_3A_3Ausecase"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase.html">depicture_menu::usecase</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Ausecase_3A_3Abackup" id="r_depicture_5Fmenu_3A_3Ausecase_3A_3Abackup"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup.html">depicture_menu::usecase::backup</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Ausecase_3A_3Abackup_3A_3Adetail_5Fbackup" id="r_depicture_5Fmenu_3A_3Ausecase_3A_3Abackup_3A_3Adetail_5Fbackup"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup.html">depicture_menu::usecase::backup::detail_backup</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:a8459d38a8903cf0c911aefea7a2dbb61" id="r_a8459d38a8903cf0c911aefea7a2dbb61"><td class="memTemplParams" colspan="2">template&lt;auto T&gt; </td></tr>
+<tr class="memitem:a8459d38a8903cf0c911aefea7a2dbb61 template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1type__traits.html#a8459d38a8903cf0c911aefea7a2dbb61">depicture_menu::type_traits::extract_class_method_t</a></td></tr>
+<tr class="memitem:ae89e688b7d50e31a544a6a608cce8dfa" id="r_ae89e688b7d50e31a544a6a608cce8dfa"><td class="memTemplParams" colspan="2">template&lt;std::size_t I, auto T&gt; </td></tr>
+<tr class="memitem:ae89e688b7d50e31a544a6a608cce8dfa template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1type__traits.html#ae89e688b7d50e31a544a6a608cce8dfa">depicture_menu::type_traits::extract_class_method_arg_t</a></td></tr>
+<tr class="memitem:a02632d14d429da4fd239f2f006680d37" id="r_a02632d14d429da4fd239f2f006680d37"><td class="memTemplParams" colspan="2">template&lt;typename T, typename FS&gt; </td></tr>
+<tr class="memitem:a02632d14d429da4fd239f2f006680d37 template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1type__traits.html#a02632d14d429da4fd239f2f006680d37">depicture_menu::type_traits::class_method_pointer_t</a> = <a class="el" href="structdepicture__menu_1_1type__traits_1_1make__class__method__pointer__type.html">make_class_method_pointer_type</a>&lt; T, FS &gt;<a class="el" href="structdepicture__menu_1_1util_1_1type__traits_1_1member__function__pointer__result.html">::type</a></td></tr>
+<tr class="memitem:a7184c05c188ac922de634bc3f845d41b" id="r_a7184c05c188ac922de634bc3f845d41b"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup.html#a7184c05c188ac922de634bc3f845d41b">depicture_menu::usecase::backup::detail_backup::entity_id_to_string_conv</a></td></tr>
+<tr class="memitem:a0860803ec0ba724085bf9ece0b268ad2" id="r_a0860803ec0ba724085bf9ece0b268ad2"><td class="memTemplParams" colspan="2">template&lt;typename EntityId&gt; </td></tr>
+<tr class="memitem:a0860803ec0ba724085bf9ece0b268ad2 template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup.html#a0860803ec0ba724085bf9ece0b268ad2">depicture_menu::usecase::backup::detail_backup::string_to_entity_id_conv</a> = decltype([](std::string const&amp; id) -&gt; EntityId { return EntityId::from(id); })</td></tr>
+<tr class="memitem:af3c12504c2335ae74ad34333b9c5332d" id="r_af3c12504c2335ae74ad34333b9c5332d"><td class="memTemplParams" colspan="2">template&lt;auto EntID, <a class="el" href="namespacedepicture__menu.html#a6c1ee86b4e22d373f58ab39a5349ddc9">constexpr_string</a> Field&gt; </td></tr>
+<tr class="memitem:af3c12504c2335ae74ad34333b9c5332d template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup.html#af3c12504c2335ae74ad34333b9c5332d">depicture_menu::usecase::backup::detail_backup::entity_id_to_string_mapping</a></td></tr>
+<tr class="memitem:a8df28b8191bb1105a81e4aa8b146984a" id="r_a8df28b8191bb1105a81e4aa8b146984a"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacedepicture__menu.html#a6c1ee86b4e22d373f58ab39a5349ddc9">constexpr_string</a> Field, auto EntIDMP&gt; </td></tr>
+<tr class="memitem:a8df28b8191bb1105a81e4aa8b146984a template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup.html#a8df28b8191bb1105a81e4aa8b146984a">depicture_menu::usecase::backup::detail_backup::string_to_entity_id_mapping</a></td></tr>
+<tr class="memitem:a598a0c9601ae9e90d581f1815cedcd92" id="r_a598a0c9601ae9e90d581f1815cedcd92"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacedepicture__menu.html#a6c1ee86b4e22d373f58ab39a5349ddc9">constexpr_string</a> Field, auto EntIDMP, typename ID = extract_class_method_t&lt; EntIDMP &gt;::id_t&gt; </td></tr>
+<tr class="memitem:a598a0c9601ae9e90d581f1815cedcd92 template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup.html#a598a0c9601ae9e90d581f1815cedcd92">depicture_menu::usecase::backup::detail_backup::string_to_entity_id</a></td></tr>
+<tr class="memitem:abc4b2ed4c0320c3eaf6aa481ec8101d5" id="r_abc4b2ed4c0320c3eaf6aa481ec8101d5"><td class="memTemplParams" colspan="2">template&lt;auto entityMP, <a class="el" href="namespacedepicture__menu.html#a6c1ee86b4e22d373f58ab39a5349ddc9">constexpr_string</a> Field&gt; </td></tr>
+<tr class="memitem:abc4b2ed4c0320c3eaf6aa481ec8101d5 template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup.html#abc4b2ed4c0320c3eaf6aa481ec8101d5">depicture_menu::usecase::backup::detail_backup::enum_to_string_mapping</a></td></tr>
+<tr class="memitem:a14ef8c7451d049a378f630f42dcd8061" id="r_a14ef8c7451d049a378f630f42dcd8061"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacedepicture__menu.html#a6c1ee86b4e22d373f58ab39a5349ddc9">constexpr_string</a> Field, auto entityMP&gt; </td></tr>
+<tr class="memitem:a14ef8c7451d049a378f630f42dcd8061 template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup.html#a14ef8c7451d049a378f630f42dcd8061">depicture_menu::usecase::backup::detail_backup::string_to_enum_mapping</a></td></tr>
+<tr class="memitem:a592b57f10b22d86968bc23d3562dee58" id="r_a592b57f10b22d86968bc23d3562dee58"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="namespacedepicture__menu.html#a6c1ee86b4e22d373f58ab39a5349ddc9">constexpr_string</a> S, typename E, auto M&gt; </td></tr>
+<tr class="memitem:a592b57f10b22d86968bc23d3562dee58 template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup.html#a592b57f10b22d86968bc23d3562dee58">depicture_menu::usecase::backup::detail_backup::strings_to_entity_ids</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a715a17d8086a9602f757e89e1f79dfce" id="r_a715a17d8086a9602f757e89e1f79dfce"><td class="memTemplParams" colspan="2">template&lt;domain::models::concepts::aggregable M&gt; </td></tr>
+<tr class="memitem:a715a17d8086a9602f757e89e1f79dfce template"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup.html#a715a17d8086a9602f757e89e1f79dfce">depicture_menu::usecase::backup::detail_backup::build_entity</a> (std::string const &amp;id_str)</td></tr>
+<tr class="memitem:a34f9b01423306e939c9d3fe23ccb8cc8" id="r_a34f9b01423306e939c9d3fe23ccb8cc8"><td class="memItemLeft"><a class="el" href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1option__data.html">dto::option_data</a>&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup.html#a34f9b01423306e939c9d3fe23ccb8cc8">depicture_menu::usecase::backup::create_option_dto</a> (<a class="el" href="classdepicture__menu_1_1domain_1_1app_1_1option.html">domain::app::option</a> const &amp;o)</td></tr>
+<tr class="memitem:a577cce635c92d77f66057ca959745435" id="r_a577cce635c92d77f66057ca959745435"><td class="memItemLeft"><a class="el" href="classdepicture__menu_1_1domain_1_1app_1_1option.html">domain::app::option</a>&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup.html#a577cce635c92d77f66057ca959745435">depicture_menu::usecase::backup::create_option_entity</a> (<a class="el" href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1option__data.html">dto::option_data</a> const &amp;o)</td></tr>
+<tr class="memitem:aa119e67f0ce64b2f8e57e6b634f686fa" id="r_aa119e67f0ce64b2f8e57e6b634f686fa"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup.html#aa119e67f0ce64b2f8e57e6b634f686fa">depicture_menu::usecase::backup::create_config_dto</a> (<a class="el" href="classdepicture__menu_1_1domain_1_1app_1_1config.html">domain::app::config</a> const &amp;e) -&gt; <a class="el" href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1config__data.html">dto::config_data</a></td></tr>
+<tr class="memitem:abdcff53881bb37c6cd4cce8bd8385973" id="r_abdcff53881bb37c6cd4cce8bd8385973"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup.html#abdcff53881bb37c6cd4cce8bd8385973">depicture_menu::usecase::backup::create_config_entity</a> (<a class="el" href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1config__data.html">dto::config_data</a> const &amp;<a class="el" href="structd.html">d</a>) -&gt; <a class="el" href="classdepicture__menu_1_1domain_1_1app_1_1config.html">domain::app::config</a></td></tr>
+<tr class="memitem:a8990cd23cf70473cb1a6b5c6e1508382" id="r_a8990cd23cf70473cb1a6b5c6e1508382"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup.html#a8990cd23cf70473cb1a6b5c6e1508382">depicture_menu::usecase::backup::create_command_dto</a> (<a class="el" href="classdepicture__menu_1_1domain_1_1commands_1_1command.html">domain::commands::command</a> const &amp;src) -&gt; <a class="el" href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1command__data.html">dto::command_data</a></td></tr>
+<tr class="memitem:a7960f8b61b0dd3e52366bad7178b9206" id="r_a7960f8b61b0dd3e52366bad7178b9206"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup.html#a7960f8b61b0dd3e52366bad7178b9206">depicture_menu::usecase::backup::create_command_entity</a> (<a class="el" href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1command__data.html">dto::command_data</a> const &amp;src) -&gt; <a class="el" href="classdepicture__menu_1_1domain_1_1commands_1_1command.html">domain::commands::command</a></td></tr>
+<tr class="memitem:a8a0e384aeaffc87849dff03c3af44a94" id="r_a8a0e384aeaffc87849dff03c3af44a94"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup.html#a8a0e384aeaffc87849dff03c3af44a94">depicture_menu::usecase::backup::create_command_parameter_dto</a> (<a class="el" href="namespacedepicture__menu_1_1domain_1_1commands.html#a05a6d2cc89765973bb17067d7b18157f">domain::commands::parameter</a> const &amp;src_data) -&gt; <a class="el" href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1command__parameter__data.html">dto::command_parameter_data</a></td></tr>
+<tr class="memitem:aadf4071173de69e1d1483d7e3ad6dd41" id="r_aadf4071173de69e1d1483d7e3ad6dd41"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup.html#aadf4071173de69e1d1483d7e3ad6dd41">depicture_menu::usecase::backup::create_command_parameter_entity</a> (<a class="el" href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1command__parameter__data.html">dto::command_parameter_data</a> const &amp;<a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html">dto</a>) -&gt; <a class="el" href="namespacedepicture__menu_1_1domain_1_1commands.html#a05a6d2cc89765973bb17067d7b18157f">domain::commands::parameter</a></td></tr>
+<tr class="memitem:afde122781a7afe923ee518857a1334c1" id="r_afde122781a7afe923ee518857a1334c1"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup.html#afde122781a7afe923ee518857a1334c1">depicture_menu::usecase::backup::create_menu_item_dto</a> (<a class="el" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html">domain::menu::radialmenu_item</a> const &amp;) -&gt; <a class="el" href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1menu__item__data.html">dto::menu_item_data</a></td></tr>
+<tr class="memitem:af023ae0fd9cf89bc77c238914436f9f0" id="r_af023ae0fd9cf89bc77c238914436f9f0"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup.html#af023ae0fd9cf89bc77c238914436f9f0">depicture_menu::usecase::backup::create_menu_item_entity</a> (<a class="el" href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1menu__item__data.html">dto::menu_item_data</a> const &amp;) -&gt; <a class="el" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html">domain::menu::radialmenu_item</a></td></tr>
+<tr class="memitem:a402b3ce37efb91491c24cb0c8e13e005" id="r_a402b3ce37efb91491c24cb0c8e13e005"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup.html#a402b3ce37efb91491c24cb0c8e13e005">depicture_menu::usecase::backup::create_menu_dto</a> (<a class="el" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html">domain::menu::radialmenu</a> const &amp;<a class="el" href="classentity.html">entity</a>) -&gt; <a class="el" href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1menu__data.html">dto::menu_data</a></td></tr>
+<tr class="memitem:a27e6171f3ba0003adef01de409b0254f" id="r_a27e6171f3ba0003adef01de409b0254f"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup.html#a27e6171f3ba0003adef01de409b0254f">depicture_menu::usecase::backup::create_menu_entity</a> (<a class="el" href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1menu__data.html">dto::menu_data</a> const &amp;<a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html">dto</a>) -&gt; <a class="el" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html">domain::menu::radialmenu</a></td></tr>
+<tr class="memitem:a81daca5c8ff86f5b08dc552e0fe816a8" id="r_a81daca5c8ff86f5b08dc552e0fe816a8"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup.html#a81daca5c8ff86f5b08dc552e0fe816a8">depicture_menu::usecase::backup::create_action_dto</a> (<a class="el" href="classdepicture__menu_1_1domain_1_1actions_1_1v2_1_1publisher.html">domain::actions::publisher</a> const &amp;ent) -&gt; <a class="el" href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1action__data.html">dto::action_data</a></td></tr>
+<tr class="memitem:a575b285c2f75ced5b639ab2de0f49591" id="r_a575b285c2f75ced5b639ab2de0f49591"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup.html#a575b285c2f75ced5b639ab2de0f49591">depicture_menu::usecase::backup::create_action_entity</a> (<a class="el" href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1action__data.html">dto::action_data</a> const &amp;<a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html">dto</a>) -&gt; <a class="el" href="classdepicture__menu_1_1domain_1_1actions_1_1v2_1_1publisher.html">domain::actions::publisher</a></td></tr>
+<tr class="memitem:a00e9dec0688da5a9c60a8d4aefd6cb30" id="r_a00e9dec0688da5a9c60a8d4aefd6cb30"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup.html#a00e9dec0688da5a9c60a8d4aefd6cb30">depicture_menu::usecase::backup::create_trigger_dto</a> (<a class="el" href="classdepicture__menu_1_1domain_1_1triggers_1_1global__key__input__trigger.html">domain::triggers::global_key_input_trigger</a> const &amp;ent) -&gt; <a class="el" href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1trigger__data.html">dto::trigger_data</a></td></tr>
+<tr class="memitem:a5c64f7fcd330a6e17b0b2e29cadb2fc1" id="r_a5c64f7fcd330a6e17b0b2e29cadb2fc1"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup.html#a5c64f7fcd330a6e17b0b2e29cadb2fc1">depicture_menu::usecase::backup::create_trigger_entity</a> (<a class="el" href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1trigger__data.html">dto::trigger_data</a> const &amp;<a class="el" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html">dto</a>) -&gt; <a class="el" href="classdepicture__menu_1_1domain_1_1triggers_1_1global__key__input__trigger.html">domain::triggers::global_key_input_trigger</a></td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_d26f0ed8b287a778d960ad2241e01057.html">src</a></li><li class="navelem"><a href="dir_eb29242f55d2489f6c4d008365c270b7.html">core</a></li><li class="navelem"><a href="dir_43f8aa2529ec47ad37b553a33a2ea717.html">usecase</a></li><li class="navelem"><a href="dir_3df51733557b1db99185f48545fc5193.html">backup</a></li><li class="navelem"><a href="dir_64c5832d0c441ea541f0df7b15cec459.html">convert</a></li><li class="navelem"><a href="dto__converter_8hpp.html">dto_converter.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

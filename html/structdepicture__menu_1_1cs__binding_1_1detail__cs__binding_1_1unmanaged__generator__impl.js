@@ -1,0 +1,27 @@
+var structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1unmanaged__generator__impl =
+[
+    [ "notify_handler_t", "structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1unmanaged__generator__impl.html#aacbce0b3a54f4565c41f1edb82d48d59", null ],
+    [ "ptr_t", "structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1unmanaged__generator__impl.html#a8cdaf513aba3e860c2bb2cb4c02bbafc", null ],
+    [ "read_lock_t", "structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1unmanaged__generator__impl.html#af6bbb365e783641dd3c5d085cb483dee", null ],
+    [ "ref_ptr_t", "structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1unmanaged__generator__impl.html#a65ecc7592cd65f6a1c7a704f7bb16725", null ],
+    [ "write_lock_t", "structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1unmanaged__generator__impl.html#a4a9591d4029e0a974fea61666d00bb06", null ],
+    [ "unmanaged_generator_impl", "structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1unmanaged__generator__impl.html#aaec3aba99d6322c5440e21878244b5a4", null ],
+    [ "unmanaged_generator_impl", "structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1unmanaged__generator__impl.html#ae669a960c59cd12db038d1d39dacd559", null ],
+    [ "unmanaged_generator_impl", "structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1unmanaged__generator__impl.html#affad071940c6956363a3b739043cf728", null ],
+    [ "assign", "structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1unmanaged__generator__impl.html#a65dae44534b83bc92b66fa73ae14fbe9", null ],
+    [ "create", "structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1unmanaged__generator__impl.html#ad12d2502c82fcb6b96f141b87341fd76", null ],
+    [ "current_resource", "structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1unmanaged__generator__impl.html#a2ebe6e4b0db50d16c90902b1c366a524", null ],
+    [ "find_resource", "structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1unmanaged__generator__impl.html#a6afaded09fd2ca8395e58fb24371c136", null ],
+    [ "operator=", "structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1unmanaged__generator__impl.html#ad1cc2afaa773ea98bd79d252ebcd79f7", null ],
+    [ "operator=", "structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1unmanaged__generator__impl.html#a3b4d5abc9333babbbbf8e1e2add6690a", null ],
+    [ "raised_resource", "structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1unmanaged__generator__impl.html#a385233d19ce67ececfc1f6d05c596cdc", null ],
+    [ "release_resource", "structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1unmanaged__generator__impl.html#a039d4f6ecc146803faee76fb645f322e", null ],
+    [ "set_resource_handle", "structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1unmanaged__generator__impl.html#ac3847264a95c00dc7f7102fe3509cb2e", null ],
+    [ "buffer_", "structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1unmanaged__generator__impl.html#aa978082d3f229e5ca6029d3c6ef5afcc", null ],
+    [ "buffer_lock_", "structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1unmanaged__generator__impl.html#ac574873328ef57243313260a1e36c90b", null ],
+    [ "current_ptr_", "structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1unmanaged__generator__impl.html#a10fcca7bb8cc77fd50a0491ff1af4ebb", null ],
+    [ "handle_", "structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1unmanaged__generator__impl.html#ad24252dc5ced7aa62ed66b4d1d587b84", null ],
+    [ "handler_mtx_", "structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1unmanaged__generator__impl.html#aa18123181897e45e6b5713fbdab3fb75", null ],
+    [ "pre_buffer_", "structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1unmanaged__generator__impl.html#a24b497c4fc19413ed0c2078178598ecf", null ],
+    [ "resource_mtx_", "structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1unmanaged__generator__impl.html#af6b5aea7713e790d3481b14a894dfc22", null ]
+];

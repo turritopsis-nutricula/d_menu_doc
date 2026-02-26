@@ -1,0 +1,7 @@
+var namespacedepicture__menu_1_1applications_1_1command__line__options_1_1args =
+[
+    [ "command_line_description_error", "structdepicture__menu_1_1applications_1_1command__line__options_1_1args_1_1command__line__description__error.html", "structdepicture__menu_1_1applications_1_1command__line__options_1_1args_1_1command__line__description__error" ],
+    [ "help_doc_arg", "structdepicture__menu_1_1applications_1_1command__line__options_1_1args_1_1help__doc__arg.html", "structdepicture__menu_1_1applications_1_1command__line__options_1_1args_1_1help__doc__arg" ],
+    [ "menu_open_arg", "structdepicture__menu_1_1applications_1_1command__line__options_1_1args_1_1menu__open__arg.html", "structdepicture__menu_1_1applications_1_1command__line__options_1_1args_1_1menu__open__arg" ],
+    [ "menu_close_arg", "structdepicture__menu_1_1applications_1_1command__line__options_1_1args_1_1menu__close__arg.html", "structdepicture__menu_1_1applications_1_1command__line__options_1_1args_1_1menu__close__arg" ]
+];
