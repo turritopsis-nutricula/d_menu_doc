@@ -1,0 +1,6 @@
+var structdepicture__menu_1_1util_1_1type__traits_1_1detail__type__traits_1_1member__function__point025edbe9f578acd1ebb641e00cb20409 =
+[
+    [ "args_tuple_t", "structdepicture__menu_1_1util_1_1type__traits_1_1detail__type__traits_1_1member__function__point025edbe9f578acd1ebb641e00cb20409.html#a04322897549c86847a15b6badb72397c", null ],
+    [ "return_t", "structdepicture__menu_1_1util_1_1type__traits_1_1detail__type__traits_1_1member__function__point025edbe9f578acd1ebb641e00cb20409.html#a39b305d22b3104404a0c3f1925b0724e", null ],
+    [ "type_t", "structdepicture__menu_1_1util_1_1type__traits_1_1detail__type__traits_1_1member__function__point025edbe9f578acd1ebb641e00cb20409.html#abca4bde3059dc8cd8ffe8f59aa52e991", null ]
+];

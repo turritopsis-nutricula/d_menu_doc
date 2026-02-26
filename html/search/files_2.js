@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['workaround_2ecpp_0',['workaround.cpp',['../workaround_8cpp.html',1,'']]]
+  ['dll_5fmain_2ecpp_0',['dll_main.cpp',['../dll__main_8cpp.html',1,'']]]
 ];

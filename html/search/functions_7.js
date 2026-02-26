@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['make_5fnovisual_5fwindow_0',['make_novisual_window',['../workaround_8cpp.html#ac3810367e5f569391eb69fbaa2db3b74',1,'workaround.cpp']]]
+  ['load_5fapplication_5fdata_0',['load_application_data',['../dll__main_8cpp.html#a8fbf56b05d5e79279908d34e50c6f6e1',1,'dll_main.cpp']]]
 ];

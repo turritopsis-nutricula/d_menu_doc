@@ -25,23 +25,34 @@
 var NAVTREE =
 [
   [ "My Project", "index.html", [
-    [ "Classes", "annotated.html", [
-      [ "Class List", "annotated.html", "annotated_dup" ],
-      [ "Class Index", "classes.html", null ],
-      [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", null ],
-        [ "Typedefs", "functions_type.html", null ]
+    [ "名前空間", "namespaces.html", [
+      [ "名前空間一覧", "namespaces.html", "namespaces_dup" ],
+      [ "名前空間メンバ", "namespacemembers.html", [
+        [ "全て", "namespacemembers.html", null ],
+        [ "関数", "namespacemembers_func.html", null ],
+        [ "変数", "namespacemembers_vars.html", null ],
+        [ "型定義", "namespacemembers_type.html", null ]
       ] ]
     ] ],
-    [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ],
-      [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", null ],
-        [ "Macros", "globals_defs.html", null ]
+    [ "Concepts", "concepts.html", "concepts" ],
+    [ "クラス", "annotated.html", [
+      [ "クラス一覧", "annotated.html", "annotated_dup" ],
+      [ "クラス索引", "classes.html", null ],
+      [ "クラスメンバ", "functions.html", [
+        [ "全て", "functions.html", null ],
+        [ "関数", "functions_func.html", null ],
+        [ "変数", "functions_vars.html", null ],
+        [ "型定義", "functions_type.html", null ]
+      ] ]
+    ] ],
+    [ "ファイル", "files.html", [
+      [ "ファイル一覧", "files.html", "files_dup" ],
+      [ "ファイルメンバ", "globals.html", [
+        [ "全て", "globals.html", null ],
+        [ "関数", "globals_func.html", null ],
+        [ "変数", "globals_vars.html", null ],
+        [ "型定義", "globals_type.html", null ],
+        [ "マクロ定義", "globals_defs.html", null ]
       ] ]
     ] ]
   ] ]
@@ -52,6 +63,6 @@ var NAVTREEINDEX =
 "annotated.html"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronization';
-var SYNCOFFMSG = 'click to enable panel synchronization';
-var LISTOFALLMEMBERS = 'List of all members';
+var SYNCONMSG = 'クリックで同期表示が無効になります';
+var SYNCOFFMSG = 'クリックで同期表示が有効になります';
+var LISTOFALLMEMBERS = '全メンバ一覧';

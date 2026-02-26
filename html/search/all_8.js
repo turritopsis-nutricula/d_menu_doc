@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['make_5fnovisual_5fwindow_0',['make_novisual_window',['../workaround_8cpp.html#ac3810367e5f569391eb69fbaa2db3b74',1,'workaround.cpp']]]
+  ['init_5fflag_5f_0',['init_flag_',['../classdepicture__menu_1_1singleton.html#acff4b1575874a4a6f8ff8b1b61bf53dd',1,'depicture_menu::singleton']]],
+  ['instance_5f_1',['instance_',['../classdepicture__menu_1_1singleton.html#ab211674f81ee1c5c63b2e4dc2a2ca629',1,'depicture_menu::singleton']]]
 ];

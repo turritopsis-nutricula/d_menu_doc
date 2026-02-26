@@ -1,33 +1,39 @@
 var indexSectionsWithContent =
 {
-  0: "abcdfghlmopstvw",
-  1: "cp",
-  2: "cdw",
-  3: "abcdfglmosvw",
-  4: "abchv",
-  5: "ct",
-  6: "d"
+  0: "abcdefghilmoprstuvw",
+  1: "cmprst",
+  2: "d",
+  3: "acderstw",
+  4: "abcdefglmosuvw",
+  5: "abchimsv",
+  6: "acflmrt",
+  7: "ad",
+  8: "s"
 };
 
 var indexSectionNames =
 {
   0: "all",
   1: "classes",
-  2: "files",
-  3: "functions",
-  4: "variables",
-  5: "typedefs",
-  6: "defines"
+  2: "namespaces",
+  3: "files",
+  4: "functions",
+  5: "variables",
+  6: "typedefs",
+  7: "defines",
+  8: "concepts"
 };
 
 var indexSectionLabels =
 {
-  0: "All",
-  1: "Classes",
-  2: "Files",
-  3: "Functions",
-  4: "Variables",
-  5: "Typedefs",
-  6: "Macros"
+  0: "全て",
+  1: "クラス",
+  2: "名前空間",
+  3: "ファイル",
+  4: "関数",
+  5: "変数",
+  6: "型定義",
+  7: "マクロ定義",
+  8: "Concepts"
 };
 
