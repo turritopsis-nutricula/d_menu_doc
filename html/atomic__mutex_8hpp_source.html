@@ -1,0 +1,661 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/src/utility/thread/atomic_mutex.hpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('atomic__mutex_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">atomic_mutex.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="atomic__mutex_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef SRC_UTILITY_THREAD_ATOMIC_MUTEX_HPP_</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define SRC_UTILITY_THREAD_ATOMIC_MUTEX_HPP_</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;atomic&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// upgrade_lock</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// * upgrade_spin_mutex</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// * upgradable_mutex</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// * try_upgrade_spin_mutex</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// * try_upgrade_mutex</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">// original:</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">// https://glhub.blogspot.com/2015/09/upgradereaderswriter-lock.html?m=1</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1util.html">depicture_menu::util</a></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1util_1_1detail__util.html">   19</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1util_1_1detail__util.html">detail_util</a></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// lock policy</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">// spin lock</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1spin__lock__policy.html">   26</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structdepicture__menu_1_1util_1_1detail__util_1_1spin__lock__policy.html">spin_lock_policy</a></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1spin__lock__policy.html#a8fc974eecc8870a79442a74d158421cd">   29</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1spin__lock__policy.html#a8fc974eecc8870a79442a74d158421cd">lock</a>( std::atomic&lt; T &gt;&amp; v, T delta, T test_bit ) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        T expected;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keywordflow">do</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <span class="keywordflow">do</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                expected = v.load( );</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            } <span class="keywordflow">while</span> ( expected &amp; test_bit );</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        } <span class="keywordflow">while</span> ( !v.compare_exchange_weak( expected, expected + delta ) );</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
+</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1spin__lock__policy.html#a3dc9a69af9a65fe687c23a2d54aa0c16">   42</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1spin__lock__policy.html#a3dc9a69af9a65fe687c23a2d54aa0c16">unlock</a>( std::atomic&lt; T &gt;&amp; v, T delta ) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        v.fetch_sub( delta );</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
+</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>};</div>
+</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">// wait lock</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="};">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1wait__lock__policy.html">   50</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structdepicture__menu_1_1util_1_1detail__util_1_1wait__lock__policy.html">wait_lock_policy</a></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>{</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1wait__lock__policy.html#a6e31e6a453945ead840dbbf556a04584">   53</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1wait__lock__policy.html#a6e31e6a453945ead840dbbf556a04584">lock</a>( std::atomic&lt; T &gt;&amp; v, T delta, T test_bit ) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        T expected;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordflow">do</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            expected = v.load( );</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordflow">while</span> ( expected &amp; test_bit )</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                v.wait( expected );</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                expected = v.load( );</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        } <span class="keywordflow">while</span> ( !v.compare_exchange_weak( expected, expected + delta ) );</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
+</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keyword">static</span> <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00067" data-start="{" data-end="}">
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1wait__lock__policy.html#ad1f2a510014c19f844e67a143ba5809f">   67</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1wait__lock__policy.html#ad1f2a510014c19f844e67a143ba5809f">unlock</a>( std::atomic&lt; T &gt;&amp; v, T delta ) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        v.fetch_sub( delta );</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        v.notify_all( );</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
+</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>};</div>
+</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">// upgradable mutex</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">// ReadLockUpgradableでロックを取得した場合、</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">// 他のスレッドからのReadLockを妨げずに共存しますが、</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">// 他のスレッドからReadLockUpgradableを同時に取得することはできません。</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">// １つのスレッドだけがReadLockUpgradableを取れるので、</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">// Upgradeの段階で競合が発生しないことと、</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">// Upgrade中に他のスレッドがライトロックを取得したりしないことが保障されます。</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">//</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">// ステート移動   立てるビット  待機するビット</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">// アイドル→リード リード ライト</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">// アイドル→ライト ライト 全ビット</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">// アイドル→昇格可能リード 昇格可能リード ライト、昇格可能リード</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span> P &gt;</div>
+<div class="foldopen" id="foldopen00089" data-start="{" data-end="};">
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html">   89</a></span><span class="keyword">struct </span><a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html#a75732dfdd203431e29247614591c613d">upgradable_mutex</a></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>{</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html#a09a78bea2575f2b269507d06598953b8">   91</a></span>    P*   <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html#a09a78bea2575f2b269507d06598953b8">m_</a>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html#a8406f7af3038b907eab28beac29e9fd7">   92</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html#a8406f7af3038b907eab28beac29e9fd7">need_unlock</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html#a75732dfdd203431e29247614591c613d">   94</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html#a75732dfdd203431e29247614591c613d">upgradable_mutex</a>( P&amp; m ) noexcept : <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html#a09a78bea2575f2b269507d06598953b8">m_</a>( &amp;m ) { }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html#ac86e540a49aab43334b4f4bc37607813">   95</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html#ac86e540a49aab43334b4f4bc37607813">~upgradable_mutex</a>( ) noexcept { <a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html#a36d1d7d83a4959329286420a2b87e397">unlock</a>( ); }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00097" data-start="{" data-end="}">
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html#a6685f79e5f96e4ca16af5529ae77e638">   97</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html#a6685f79e5f96e4ca16af5529ae77e638">lock</a>( ) noexcept</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html#a09a78bea2575f2b269507d06598953b8">m_</a>-&gt;upgradable_lock( );</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html#a8406f7af3038b907eab28beac29e9fd7">need_unlock</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    }</div>
+</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00103" data-start="{" data-end="}">
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html#a36d1d7d83a4959329286420a2b87e397">  103</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html#a36d1d7d83a4959329286420a2b87e397">unlock</a>( ) noexcept</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <span class="keywordflow">if</span> ( <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html#a8406f7af3038b907eab28beac29e9fd7">need_unlock</a> )</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        {</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html#a09a78bea2575f2b269507d06598953b8">m_</a>-&gt;upgradable_unlock( );</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html#a8406f7af3038b907eab28beac29e9fd7">need_unlock</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    }</div>
+</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>};</div>
+</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span> P &gt;</div>
+<div class="foldopen" id="foldopen00114" data-start="{" data-end="};">
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html">  114</a></span><span class="keyword">struct </span><a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#ab3868a7a58bf2033c9ff8269cb6ea47e">write_lock_mutex</a></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>{</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#ac7cc6ce3982897130a01deab69b048fe">  116</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#ac7cc6ce3982897130a01deab69b048fe">up_mtx_t</a> = <a class="code hl_struct" href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html">upgradable_mutex&lt; P &gt;</a>;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#a10b2dd505e4137c0b96a970b43c8c475">  117</a></span>    <a class="code hl_typedef" href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#ac7cc6ce3982897130a01deab69b048fe">up_mtx_t</a>* <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#a10b2dd505e4137c0b96a970b43c8c475">ul_</a>;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#a13f007e92089dc0f1e38be54871a40e1">  118</a></span>    <span class="keywordtype">bool</span>      <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#a13f007e92089dc0f1e38be54871a40e1">need_unlock</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#ab3868a7a58bf2033c9ff8269cb6ea47e">  120</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#ab3868a7a58bf2033c9ff8269cb6ea47e">write_lock_mutex</a>( <a class="code hl_typedef" href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#ac7cc6ce3982897130a01deab69b048fe">up_mtx_t</a>&amp; ul ) : <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#a10b2dd505e4137c0b96a970b43c8c475">ul_</a>( &amp;ul ) { }</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#a6b783163cbb4a2b622112b9b37e6f778">  121</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#a6b783163cbb4a2b622112b9b37e6f778">~write_lock_mutex</a>( ) { <a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#a5c5230e7701a2ee7b9fced714d3c7c55">unlock</a>( ); }</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00124" data-start="{" data-end="}">
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#a2db376dc40af8721dfd4470074128653">  124</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#a2db376dc40af8721dfd4470074128653">lock</a>( ) noexcept</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    {</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        assert( <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#a10b2dd505e4137c0b96a970b43c8c475">ul_</a>-&gt;m_-&gt;is_upgradable_lock( ) );</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#a10b2dd505e4137c0b96a970b43c8c475">ul_</a>-&gt;m_-&gt;upgrade( );</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#a10b2dd505e4137c0b96a970b43c8c475">ul_</a>-&gt;need_unlock = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#a13f007e92089dc0f1e38be54871a40e1">need_unlock</a>      = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    }</div>
+</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00132" data-start="{" data-end="}">
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#a5c5230e7701a2ee7b9fced714d3c7c55">  132</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#a5c5230e7701a2ee7b9fced714d3c7c55">unlock</a>( ) noexcept</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    {</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        <span class="keywordflow">if</span> ( <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#a13f007e92089dc0f1e38be54871a40e1">need_unlock</a> )</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        {</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#a10b2dd505e4137c0b96a970b43c8c475">ul_</a>-&gt;m_-&gt;write_unlock( );</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#a13f007e92089dc0f1e38be54871a40e1">need_unlock</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        }</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    }</div>
+</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>};</div>
+</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment">// upgrade_mutex_base</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span> LockPolicy &gt;</div>
+<div class="foldopen" id="foldopen00145" data-start="{" data-end="};">
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html">  145</a></span><span class="keyword">class </span><a class="code hl_class" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html">upgrade_mutex_base</a></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>{</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a74ae5ffb7b593130c4c541c511e20b6d">  147</a></span>    std::atomic&lt; int &gt; <a class="code hl_variable" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a74ae5ffb7b593130c4c541c511e20b6d">v_</a> = 0;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#af062b22d00219e784af1e6227502b91f">  149</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#af062b22d00219e784af1e6227502b91f">write_lock_bit</a> = 0x40000000;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#ac62960b58ac98c3c5b859c40f936d990">  150</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#ac62960b58ac98c3c5b859c40f936d990">upgradable_bit</a> = 0x00010000;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#ac1e48d2f03f1dfd451ac92122d30d65f">  151</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#ac1e48d2f03f1dfd451ac92122d30d65f">reader_bits</a>    = 0x0000ffff;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00156" data-start="{" data-end="}">
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a35dea92caae268b5b24efe9b5d6407ba">  156</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a35dea92caae268b5b24efe9b5d6407ba">lock</a>( ) noexcept</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    {</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <a class="code hl_function" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#adc51ab3ff7c27bfa3a016120572c00ec">read_lock</a>( );</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    }</div>
+</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00161" data-start="{" data-end="}">
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a5723eff07426fdbfe8477f3d77cb733c">  161</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a5723eff07426fdbfe8477f3d77cb733c">unlock</a>( ) noexcept</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    {</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        <a class="code hl_function" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a4658eb2bc4c4752e82b751b9e92d24d7">read_unlock</a>( );</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    }</div>
+</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00166" data-start="{" data-end="}">
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#adc51ab3ff7c27bfa3a016120572c00ec">  166</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#adc51ab3ff7c27bfa3a016120572c00ec">read_lock</a>( ) noexcept</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    {</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        LockPolicy::lock( <a class="code hl_variable" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a74ae5ffb7b593130c4c541c511e20b6d">v_</a>, 1, <a class="code hl_variable" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#af062b22d00219e784af1e6227502b91f">write_lock_bit</a> );</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    }</div>
+</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00171" data-start="{" data-end="}">
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a4658eb2bc4c4752e82b751b9e92d24d7">  171</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a4658eb2bc4c4752e82b751b9e92d24d7">read_unlock</a>( ) noexcept</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    {</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        LockPolicy::unlock( <a class="code hl_variable" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a74ae5ffb7b593130c4c541c511e20b6d">v_</a>, 1 );</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    }</div>
+</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00176" data-start="{" data-end="}">
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a796c7fb281b1dbd716f0258c9b6adac3">  176</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a796c7fb281b1dbd716f0258c9b6adac3">upgradable_lock</a>( ) noexcept</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    {</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        LockPolicy::lock( <a class="code hl_variable" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a74ae5ffb7b593130c4c541c511e20b6d">v_</a>, <a class="code hl_variable" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#ac62960b58ac98c3c5b859c40f936d990">upgradable_bit</a>, <a class="code hl_variable" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#af062b22d00219e784af1e6227502b91f">write_lock_bit</a> | <a class="code hl_variable" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#ac62960b58ac98c3c5b859c40f936d990">upgradable_bit</a> );</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    }</div>
+</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00181" data-start="{" data-end="}">
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a56b74f43e6e6b56df55b6b7888093a03">  181</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a56b74f43e6e6b56df55b6b7888093a03">upgradable_unlock</a>( ) noexcept</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    {</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        LockPolicy::unlock( <a class="code hl_variable" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a74ae5ffb7b593130c4c541c511e20b6d">v_</a>, <a class="code hl_variable" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#ac62960b58ac98c3c5b859c40f936d990">upgradable_bit</a> );</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    }</div>
+</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00186" data-start="{" data-end="}">
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a027191010a5581bae3a20dfab322730d">  186</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a027191010a5581bae3a20dfab322730d">upgrade</a>( ) noexcept</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    {</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        LockPolicy::lock(</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>            <a class="code hl_variable" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a74ae5ffb7b593130c4c541c511e20b6d">v_</a>, <a class="code hl_variable" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#af062b22d00219e784af1e6227502b91f">write_lock_bit</a> - <a class="code hl_variable" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#ac62960b58ac98c3c5b859c40f936d990">upgradable_bit</a>, <a class="code hl_variable" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#ac1e48d2f03f1dfd451ac92122d30d65f">reader_bits</a> | <a class="code hl_variable" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#af062b22d00219e784af1e6227502b91f">write_lock_bit</a></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        );</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    }</div>
+</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00193" data-start="{" data-end="}">
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a94eb7d5be36859d5ddf7287722ce7b9e">  193</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a94eb7d5be36859d5ddf7287722ce7b9e">write_lock</a>( ) noexcept</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    {</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        LockPolicy::lock( <a class="code hl_variable" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a74ae5ffb7b593130c4c541c511e20b6d">v_</a>, <a class="code hl_variable" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#af062b22d00219e784af1e6227502b91f">write_lock_bit</a>, <a class="code hl_variable" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#ac1e48d2f03f1dfd451ac92122d30d65f">reader_bits</a> | <a class="code hl_variable" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#af062b22d00219e784af1e6227502b91f">write_lock_bit</a> );</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    }</div>
+</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00198" data-start="{" data-end="}">
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a5c9dc595c167d13f18f23a00888236fd">  198</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a5c9dc595c167d13f18f23a00888236fd">write_unlock</a>( ) noexcept</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    {</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>        LockPolicy::unlock( <a class="code hl_variable" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a74ae5ffb7b593130c4c541c511e20b6d">v_</a>, <a class="code hl_variable" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#af062b22d00219e784af1e6227502b91f">write_lock_bit</a> );</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    }</div>
+</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    <span class="keywordtype">bool</span></div>
+<div class="foldopen" id="foldopen00204" data-start="{" data-end="}">
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a642c123c967f50f431766bc1eca9f8ba">  204</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a642c123c967f50f431766bc1eca9f8ba">is_upgradable_lock</a>( ) const noexcept</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    {</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        <span class="keywordtype">int</span> value = <a class="code hl_variable" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a74ae5ffb7b593130c4c541c511e20b6d">v_</a>.load( );</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        <span class="keywordflow">return</span> value &amp; <a class="code hl_variable" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#ac62960b58ac98c3c5b859c40f936d990">upgradable_bit</a>;</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    }</div>
+</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    <span class="keywordtype">bool</span></div>
+<div class="foldopen" id="foldopen00210" data-start="{" data-end="}">
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a84cc202dc1f4ff1a854a1cacee95baaa">  210</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a84cc202dc1f4ff1a854a1cacee95baaa">is_write_lock</a>( ) const noexcept</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    {</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        <span class="keywordtype">int</span> value = <a class="code hl_variable" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a74ae5ffb7b593130c4c541c511e20b6d">v_</a>.load( );</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        <span class="keywordflow">return</span> value &amp; <a class="code hl_variable" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#af062b22d00219e784af1e6227502b91f">write_lock_bit</a>;</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    }</div>
+</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>};</div>
+</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="comment">// try upgradable mutex</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="comment">// ※</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="comment">// 万が一昇格に失敗した場合、次に出来ることはリードロックを解除することだけです。</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="comment">// もし、どうしてもライトロックが欲しければ一度リードロックも解除して</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="comment">// 他のスレッドにライトロックを譲った後、改めてライトロックの取得を試みるしかありません。</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="comment">// TryUpgrade関数のwhileループで昇格中ステートへの移行を試みます。</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="comment">// 他のスレッドに先に昇格中ビットを立てられた場合は失敗します。</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="comment">//</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="comment">// 自身によって昇格中ビットを立てることに成功すればLockInternalで</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="comment">// ライトステートへ移行します。readerBitsの最下位ビットを待機対象から</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="comment">// 除外するのは、自身がリードロックを持っているため</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="comment">// リードロックのカウンタが1の時は通過させなければいけないためです。</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="comment">//</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="comment">// ステート移動   立てるビット  待機するビット 備考</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="comment">// アイドル→リード リード ライト、昇格中</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="comment">// アイドル→ライト ライト 全ビット</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="comment">// リード→昇格中  昇格中 無し  他のスレッドが昇格中ビットを取得したら失敗</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span><span class="comment">// 昇格中→ライト  ライト ライト、リード</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span><span class="comment">// リードロックの１つは自分が持っているので、最下位ビットを待機対象から除外</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span> P &gt;</div>
+<div class="foldopen" id="foldopen00241" data-start="{" data-end="};">
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html">  241</a></span><span class="keyword">struct </span><a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html#a1a0ddf677ba194e267c15251463c0362">read_lock_mutex</a></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>{</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html#a77df7510eb3022d95203e6426b1b14c1">  243</a></span>    P*   <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html#a77df7510eb3022d95203e6426b1b14c1">m_</a>;</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html#a8e9617bc401d9ab1b4b249801804a974">  244</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html#a8e9617bc401d9ab1b4b249801804a974">is_need_unlock_</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html#a1a0ddf677ba194e267c15251463c0362">  246</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html#a1a0ddf677ba194e267c15251463c0362">read_lock_mutex</a>( P&amp; m ) : <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html#a77df7510eb3022d95203e6426b1b14c1">m_</a>( &amp;m ) { }</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html#afc43e49a4d6bb2f3a8b83a1965e32791">  247</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html#afc43e49a4d6bb2f3a8b83a1965e32791">~read_lock_mutex</a>( ) { <a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html#a009529fa7cce3c26efa4abb1d42a9f64">unlock</a>( ); }</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00250" data-start="{" data-end="}">
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html#a9ae05df40067a4de5b203d21d1496ea6">  250</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html#a9ae05df40067a4de5b203d21d1496ea6">lock</a>( )</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    {</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>        <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html#a77df7510eb3022d95203e6426b1b14c1">m_</a>-&gt;read_lock( );</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>        <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html#a8e9617bc401d9ab1b4b249801804a974">is_need_unlock_</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    }</div>
+</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00256" data-start="{" data-end="}">
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html#a009529fa7cce3c26efa4abb1d42a9f64">  256</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html#a009529fa7cce3c26efa4abb1d42a9f64">unlock</a>( )</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    {</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        <span class="keywordflow">if</span> ( <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html#a8e9617bc401d9ab1b4b249801804a974">is_need_unlock_</a> )</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        {</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>            <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html#a77df7510eb3022d95203e6426b1b14c1">m_</a>-&gt;read_unlock( );</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>            <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html#a8e9617bc401d9ab1b4b249801804a974">is_need_unlock_</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        }</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    }</div>
+</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>};</div>
+</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span> LockPolicy &gt;</div>
+<div class="foldopen" id="foldopen00268" data-start="{" data-end="};">
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html">  268</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html">try_upgradable_mutex_base</a></div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>{</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#acce5ecb0c3cd040b8612e927171aef6b">  270</a></span>    std::atomic&lt; int &gt; <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#acce5ecb0c3cd040b8612e927171aef6b">v_</a>           = 0;</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#a8c11ce478e882a8ed78b65b50dad4a8a">  271</a></span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span>   <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#a8c11ce478e882a8ed78b65b50dad4a8a">writeLockBit</a> = 0x40000000;</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#af2b09e550612ccecf13f292c6955d43f">  272</a></span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span>   <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#af2b09e550612ccecf13f292c6955d43f">upgradingBit</a> = 0x20000000;</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#aa7c90d7afb32abb717639bbcc6505c5d">  273</a></span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span>   <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#aa7c90d7afb32abb717639bbcc6505c5d">readerBits</a>   = 0x0000ffff;</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00277" data-start="{" data-end="}">
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#a48b6174c74dcd3eb6328888a8569581d">  277</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#a48b6174c74dcd3eb6328888a8569581d">lock</a>( ) noexcept</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    {</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>        <a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#a878151a6dbe988bed4bdaff3fa5d3276">read_lock</a>( );</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    }</div>
+</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span> </div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00283" data-start="{" data-end="}">
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#a4461b227d40607110a93e42eacb9d41f">  283</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#a4461b227d40607110a93e42eacb9d41f">unlock</a>( ) noexcept</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    {</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        <a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#ab9ea5dae7882249eb15160e018a92032">read_unlock</a>( );</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    }</div>
+</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00289" data-start="{" data-end="}">
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#a878151a6dbe988bed4bdaff3fa5d3276">  289</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#a878151a6dbe988bed4bdaff3fa5d3276">read_lock</a>( ) noexcept</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    {</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>        LockPolicy::lock( <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#acce5ecb0c3cd040b8612e927171aef6b">v_</a>, 1, <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#a8c11ce478e882a8ed78b65b50dad4a8a">writeLockBit</a> | <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#af2b09e550612ccecf13f292c6955d43f">upgradingBit</a> );</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    }</div>
+</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00295" data-start="{" data-end="}">
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#ab9ea5dae7882249eb15160e018a92032">  295</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#ab9ea5dae7882249eb15160e018a92032">read_unlock</a>( ) noexcept</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    {</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        LockPolicy::unlock( <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#acce5ecb0c3cd040b8612e927171aef6b">v_</a>, 1 );</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    }</div>
+</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00300" data-start="{" data-end="}">
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#a1414f0c335bf241949fa858761a9cb3c">  300</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#a1414f0c335bf241949fa858761a9cb3c">write_lock</a>( ) noexcept</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    {</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>        LockPolicy::lock( <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#acce5ecb0c3cd040b8612e927171aef6b">v_</a>, <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#a8c11ce478e882a8ed78b65b50dad4a8a">writeLockBit</a>, 0xffffffff );</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    }</div>
+</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00305" data-start="{" data-end="}">
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#aa1eb73d882756fad42ca87e5064ee4a4">  305</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#aa1eb73d882756fad42ca87e5064ee4a4">write_unlock</a>( ) noexcept</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    {</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>        LockPolicy::unlock( <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#acce5ecb0c3cd040b8612e927171aef6b">v_</a>, <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#a8c11ce478e882a8ed78b65b50dad4a8a">writeLockBit</a> );</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>    }</div>
+</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    <span class="keywordtype">bool</span></div>
+<div class="foldopen" id="foldopen00311" data-start="{" data-end="}">
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#a49cba3fd278f365fc679243be427b042">  311</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#a49cba3fd278f365fc679243be427b042">try_upgrade</a>( ) noexcept</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>    {</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>        <span class="keywordtype">int</span> expected;</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>        <span class="keywordflow">do</span></div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>        {</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>            expected = <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#acce5ecb0c3cd040b8612e927171aef6b">v_</a>;</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>            <span class="keywordflow">if</span> ( expected &amp; <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#af2b09e550612ccecf13f292c6955d43f">upgradingBit</a> )</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>            {</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>            }</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>        } <span class="keywordflow">while</span> ( !<a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#acce5ecb0c3cd040b8612e927171aef6b">v_</a>.compare_exchange_weak( expected, expected | <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#af2b09e550612ccecf13f292c6955d43f">upgradingBit</a> )</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>        );</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>        LockPolicy::lock(</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>            <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#acce5ecb0c3cd040b8612e927171aef6b">v_</a>,</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>            <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#a8c11ce478e882a8ed78b65b50dad4a8a">writeLockBit</a> - <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#af2b09e550612ccecf13f292c6955d43f">upgradingBit</a> - 1,</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>            <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#a8c11ce478e882a8ed78b65b50dad4a8a">writeLockBit</a> | ( <a class="code hl_variable" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#aa7c90d7afb32abb717639bbcc6505c5d">readerBits</a> &amp; ~1 )</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>        );</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span> </div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    }</div>
+</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>};</div>
+</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>}    <span class="comment">// namespace detail_util</span></div>
+</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span> </div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span><span class="comment">// upgrade_mutex functions</span></div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span> P &gt;</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span><span class="keyword">auto</span></div>
+<div class="foldopen" id="foldopen00339" data-start="{" data-end="}">
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1util.html#ab89a2802720839a33c9885678ae3ce4a">  339</a></span><a class="code hl_function" href="namespacedepicture__menu_1_1util.html#ab89a2802720839a33c9885678ae3ce4a">upgradable_lock_guard</a>( <a class="code hl_class" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html">detail_util::upgrade_mutex_base&lt; P &gt;</a>&amp; m ) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>{</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>    <span class="keyword">using </span>up_mtx_t</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>        = <a class="code hl_struct" href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html">detail_util::upgradable_mutex&lt; detail_util::upgrade_mutex_base&lt; P &gt;</a> &gt;;</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>    up_mtx_t um( m );</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>    um.lock( );</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>    <span class="keywordflow">return</span> um;</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>}</div>
+</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span> P &gt;</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span><span class="keyword">auto</span></div>
+<div class="foldopen" id="foldopen00350" data-start="{" data-end="}">
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1util.html#a72ab72c3a192447e36e3bdb3fca128f8">  350</a></span><a class="code hl_function" href="namespacedepicture__menu_1_1util.html#a72ab72c3a192447e36e3bdb3fca128f8">write_lock_guard</a>(</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>    <a class="code hl_struct" href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html">detail_util::upgradable_mutex</a>&lt; <a class="code hl_class" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html">detail_util::upgrade_mutex_base&lt; P &gt;</a> &gt;&amp; m</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>{</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>    <span class="keyword">using </span>w_mtx_t</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>        = <a class="code hl_struct" href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html">detail_util::write_lock_mutex&lt; detail_util::upgrade_mutex_base&lt; P &gt;</a> &gt;;</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    w_mtx_t wm( m );</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>    wm.lock( );</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>    <span class="keywordflow">return</span> wm;</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>}</div>
+</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span> </div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1util.html#a8f24cb66e72800888beab62eb412ef29">  362</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespacedepicture__menu_1_1util.html#a8f24cb66e72800888beab62eb412ef29">upgrade_spin_mutex</a></div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1util.html#a2f108d873a137dfb61cd080f9cc52a32">  363</a></span>    = <a class="code hl_class" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html">detail_util::upgrade_mutex_base&lt; detail_util::spin_lock_policy&lt; int &gt;</a> &gt;;</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span><span class="keyword">using </span><a class="code hl_typedef" href="namespacedepicture__menu_1_1util.html#a2f108d873a137dfb61cd080f9cc52a32">upgrade_mutex</a></div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>    = <a class="code hl_class" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html">detail_util::upgrade_mutex_base&lt; detail_util::wait_lock_policy&lt; int &gt;</a> &gt;;</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span> </div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span><span class="comment">// try_upgrade_mutex functions</span></div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span> </div>
+<div class="foldopen" id="foldopen00370" data-start="{" data-end="}">
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1util.html#a3cfcec3d4e786cd202535130b31505e3">  370</a></span><span class="keyword">template</span> &lt; <span class="keyword">typename</span> P &gt;</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span><span class="keyword">auto</span></div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span><a class="code hl_function" href="namespacedepicture__menu_1_1util.html#ab89a2802720839a33c9885678ae3ce4a">upgradable_lock_guard</a>( <a class="code hl_struct" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html">detail_util::try_upgradable_mutex_base&lt; P &gt;</a>&amp; m ) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>{</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>    <span class="keyword">auto</span> lk = <a class="code hl_struct" href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html">detail_util::read_lock_mutex</a>( m );</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>    lk.lock( );</div>
+</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>    <span class="keywordflow">return</span> lk;</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>}</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span> </div>
+<div class="foldopen" id="foldopen00379" data-start="{" data-end="}">
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1util.html#aa2cac86291ba700c8320639000b1cecf">  379</a></span><span class="keyword">template</span> &lt; <span class="keyword">typename</span> P, <span class="keyword">typename</span> F &gt;</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span><span class="keywordtype">bool</span></div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span><a class="code hl_function" href="namespacedepicture__menu_1_1util.html#aa2cac86291ba700c8320639000b1cecf">try_write_lock</a>( <a class="code hl_struct" href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html">detail_util::read_lock_mutex&lt; P &gt;</a>&amp; m, F&amp;&amp; f ) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>{</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    assert( m.is_need_unlock_ );</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>    <span class="keywordflow">if</span> ( m.m_-&gt;try_upgrade( ) )</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>    {</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>        m.is_need_unlock_ = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>        f( );</div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>        m.m_-&gt;write_unlock( );</div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>    }</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>    {</div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>        m.unlock( );</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+</div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>    }</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1util.html#a5b5e115f05d8c6fa7387fd64a52655d4">  396</a></span>}</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span> </div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1util.html#a0a99d567417a4c241205bb27bc07a9b2">  398</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespacedepicture__menu_1_1util.html#a5b5e115f05d8c6fa7387fd64a52655d4">try_upgrade_spin_mutex</a> = <a class="code hl_struct" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html">detail_util::try_upgradable_mutex_base</a>&lt;</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>    <a class="code hl_struct" href="structdepicture__menu_1_1util_1_1detail__util_1_1spin__lock__policy.html">detail_util::spin_lock_policy&lt; int &gt;</a> &gt;;</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span><span class="keyword">using </span><a class="code hl_typedef" href="namespacedepicture__menu_1_1util.html#a0a99d567417a4c241205bb27bc07a9b2">try_upgrade_mutex</a> = <a class="code hl_struct" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html">detail_util::try_upgradable_mutex_base</a>&lt;</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>    <a class="code hl_struct" href="structdepicture__menu_1_1util_1_1detail__util_1_1wait__lock__policy.html">detail_util::wait_lock_policy&lt; int &gt;</a> &gt;;</div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1util.html#a757872e60d32984872a9cb14c75dc6ef">  402</a></span> </div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span> P &gt;</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span><span class="keyword">using </span><a class="code hl_typedef" href="namespacedepicture__menu_1_1util.html#a757872e60d32984872a9cb14c75dc6ef">try_write_read_lock_guard</a> = <a class="code hl_struct" href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html">detail_util::read_lock_mutex&lt; P &gt;</a>;</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span> </div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>}    <span class="comment">// namespace depicture_menu::util</span></div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span> </div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_UTILITY_THREAD_ATOMIC_MUTEX_HPP_</span></div>
+<div class="ttc" id="aclassdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base_html"><div class="ttname"><a href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html">depicture_menu::util::detail_util::upgrade_mutex_base</a></div><div class="ttdef"><b>Definition</b> <a href="#l00145">atomic_mutex.hpp:146</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base_html_a027191010a5581bae3a20dfab322730d"><div class="ttname"><a href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a027191010a5581bae3a20dfab322730d">depicture_menu::util::detail_util::upgrade_mutex_base::upgrade</a></div><div class="ttdeci">void upgrade() noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00186">atomic_mutex.hpp:186</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base_html_a35dea92caae268b5b24efe9b5d6407ba"><div class="ttname"><a href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a35dea92caae268b5b24efe9b5d6407ba">depicture_menu::util::detail_util::upgrade_mutex_base::lock</a></div><div class="ttdeci">void lock() noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00156">atomic_mutex.hpp:156</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base_html_a4658eb2bc4c4752e82b751b9e92d24d7"><div class="ttname"><a href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a4658eb2bc4c4752e82b751b9e92d24d7">depicture_menu::util::detail_util::upgrade_mutex_base::read_unlock</a></div><div class="ttdeci">void read_unlock() noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00171">atomic_mutex.hpp:171</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base_html_a56b74f43e6e6b56df55b6b7888093a03"><div class="ttname"><a href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a56b74f43e6e6b56df55b6b7888093a03">depicture_menu::util::detail_util::upgrade_mutex_base::upgradable_unlock</a></div><div class="ttdeci">void upgradable_unlock() noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00181">atomic_mutex.hpp:181</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base_html_a5723eff07426fdbfe8477f3d77cb733c"><div class="ttname"><a href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a5723eff07426fdbfe8477f3d77cb733c">depicture_menu::util::detail_util::upgrade_mutex_base::unlock</a></div><div class="ttdeci">void unlock() noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00161">atomic_mutex.hpp:161</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base_html_a5c9dc595c167d13f18f23a00888236fd"><div class="ttname"><a href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a5c9dc595c167d13f18f23a00888236fd">depicture_menu::util::detail_util::upgrade_mutex_base::write_unlock</a></div><div class="ttdeci">void write_unlock() noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00198">atomic_mutex.hpp:198</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base_html_a642c123c967f50f431766bc1eca9f8ba"><div class="ttname"><a href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a642c123c967f50f431766bc1eca9f8ba">depicture_menu::util::detail_util::upgrade_mutex_base::is_upgradable_lock</a></div><div class="ttdeci">bool is_upgradable_lock() const noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00204">atomic_mutex.hpp:204</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base_html_a74ae5ffb7b593130c4c541c511e20b6d"><div class="ttname"><a href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a74ae5ffb7b593130c4c541c511e20b6d">depicture_menu::util::detail_util::upgrade_mutex_base&lt; detail_util::spin_lock_policy&lt; int &gt; &gt;::v_</a></div><div class="ttdeci">std::atomic&lt; int &gt; v_</div><div class="ttdef"><b>Definition</b> <a href="#l00147">atomic_mutex.hpp:147</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base_html_a796c7fb281b1dbd716f0258c9b6adac3"><div class="ttname"><a href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a796c7fb281b1dbd716f0258c9b6adac3">depicture_menu::util::detail_util::upgrade_mutex_base::upgradable_lock</a></div><div class="ttdeci">void upgradable_lock() noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00176">atomic_mutex.hpp:176</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base_html_a84cc202dc1f4ff1a854a1cacee95baaa"><div class="ttname"><a href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a84cc202dc1f4ff1a854a1cacee95baaa">depicture_menu::util::detail_util::upgrade_mutex_base::is_write_lock</a></div><div class="ttdeci">bool is_write_lock() const noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00210">atomic_mutex.hpp:210</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base_html_a94eb7d5be36859d5ddf7287722ce7b9e"><div class="ttname"><a href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#a94eb7d5be36859d5ddf7287722ce7b9e">depicture_menu::util::detail_util::upgrade_mutex_base::write_lock</a></div><div class="ttdeci">void write_lock() noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00193">atomic_mutex.hpp:193</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base_html_ac1e48d2f03f1dfd451ac92122d30d65f"><div class="ttname"><a href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#ac1e48d2f03f1dfd451ac92122d30d65f">depicture_menu::util::detail_util::upgrade_mutex_base&lt; detail_util::spin_lock_policy&lt; int &gt; &gt;::reader_bits</a></div><div class="ttdeci">static constexpr int reader_bits</div><div class="ttdef"><b>Definition</b> <a href="#l00151">atomic_mutex.hpp:151</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base_html_ac62960b58ac98c3c5b859c40f936d990"><div class="ttname"><a href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#ac62960b58ac98c3c5b859c40f936d990">depicture_menu::util::detail_util::upgrade_mutex_base&lt; detail_util::spin_lock_policy&lt; int &gt; &gt;::upgradable_bit</a></div><div class="ttdeci">static constexpr int upgradable_bit</div><div class="ttdef"><b>Definition</b> <a href="#l00150">atomic_mutex.hpp:150</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base_html_adc51ab3ff7c27bfa3a016120572c00ec"><div class="ttname"><a href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#adc51ab3ff7c27bfa3a016120572c00ec">depicture_menu::util::detail_util::upgrade_mutex_base::read_lock</a></div><div class="ttdeci">void read_lock() noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00166">atomic_mutex.hpp:166</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base_html_af062b22d00219e784af1e6227502b91f"><div class="ttname"><a href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html#af062b22d00219e784af1e6227502b91f">depicture_menu::util::detail_util::upgrade_mutex_base&lt; detail_util::spin_lock_policy&lt; int &gt; &gt;::write_lock_bit</a></div><div class="ttdeci">static constexpr int write_lock_bit</div><div class="ttdef"><b>Definition</b> <a href="#l00149">atomic_mutex.hpp:149</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1util_1_1detail__util_html"><div class="ttname"><a href="namespacedepicture__menu_1_1util_1_1detail__util.html">depicture_menu::util::detail_util</a></div><div class="ttdef"><b>Definition</b> <a href="#l00019">atomic_mutex.hpp:20</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1util_html"><div class="ttname"><a href="namespacedepicture__menu_1_1util.html">depicture_menu::util</a></div><div class="ttdef"><b>Definition</b> <a href="constexpr__string_8hpp_source.html#l00012">constexpr_string.hpp:13</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1util_html_a0a99d567417a4c241205bb27bc07a9b2"><div class="ttname"><a href="namespacedepicture__menu_1_1util.html#a0a99d567417a4c241205bb27bc07a9b2">depicture_menu::util::try_upgrade_mutex</a></div><div class="ttdeci">detail_util::try_upgradable_mutex_base&lt; detail_util::wait_lock_policy&lt; int &gt; &gt; try_upgrade_mutex</div><div class="ttdef"><b>Definition</b> <a href="#l00398">atomic_mutex.hpp:398</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1util_html_a2f108d873a137dfb61cd080f9cc52a32"><div class="ttname"><a href="namespacedepicture__menu_1_1util.html#a2f108d873a137dfb61cd080f9cc52a32">depicture_menu::util::upgrade_mutex</a></div><div class="ttdeci">detail_util::upgrade_mutex_base&lt; detail_util::wait_lock_policy&lt; int &gt; &gt; upgrade_mutex</div><div class="ttdef"><b>Definition</b> <a href="#l00363">atomic_mutex.hpp:363</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1util_html_a5b5e115f05d8c6fa7387fd64a52655d4"><div class="ttname"><a href="namespacedepicture__menu_1_1util.html#a5b5e115f05d8c6fa7387fd64a52655d4">depicture_menu::util::try_upgrade_spin_mutex</a></div><div class="ttdeci">detail_util::try_upgradable_mutex_base&lt; detail_util::spin_lock_policy&lt; int &gt; &gt; try_upgrade_spin_mutex</div><div class="ttdef"><b>Definition</b> <a href="#l00396">atomic_mutex.hpp:396</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1util_html_a72ab72c3a192447e36e3bdb3fca128f8"><div class="ttname"><a href="namespacedepicture__menu_1_1util.html#a72ab72c3a192447e36e3bdb3fca128f8">depicture_menu::util::write_lock_guard</a></div><div class="ttdeci">auto write_lock_guard(detail_util::upgradable_mutex&lt; detail_util::upgrade_mutex_base&lt; P &gt; &gt; &amp;m) noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00350">atomic_mutex.hpp:350</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1util_html_a757872e60d32984872a9cb14c75dc6ef"><div class="ttname"><a href="namespacedepicture__menu_1_1util.html#a757872e60d32984872a9cb14c75dc6ef">depicture_menu::util::try_write_read_lock_guard</a></div><div class="ttdeci">detail_util::read_lock_mutex&lt; P &gt; try_write_read_lock_guard</div><div class="ttdef"><b>Definition</b> <a href="#l00402">atomic_mutex.hpp:402</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1util_html_a8f24cb66e72800888beab62eb412ef29"><div class="ttname"><a href="namespacedepicture__menu_1_1util.html#a8f24cb66e72800888beab62eb412ef29">depicture_menu::util::upgrade_spin_mutex</a></div><div class="ttdeci">detail_util::upgrade_mutex_base&lt; detail_util::spin_lock_policy&lt; int &gt; &gt; upgrade_spin_mutex</div><div class="ttdef"><b>Definition</b> <a href="#l00362">atomic_mutex.hpp:362</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1util_html_aa2cac86291ba700c8320639000b1cecf"><div class="ttname"><a href="namespacedepicture__menu_1_1util.html#aa2cac86291ba700c8320639000b1cecf">depicture_menu::util::try_write_lock</a></div><div class="ttdeci">bool try_write_lock(detail_util::read_lock_mutex&lt; P &gt; &amp;m, F &amp;&amp;f) noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00379">atomic_mutex.hpp:379</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1util_html_ab89a2802720839a33c9885678ae3ce4a"><div class="ttname"><a href="namespacedepicture__menu_1_1util.html#ab89a2802720839a33c9885678ae3ce4a">depicture_menu::util::upgradable_lock_guard</a></div><div class="ttdeci">auto upgradable_lock_guard(detail_util::upgrade_mutex_base&lt; P &gt; &amp;m) noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00339">atomic_mutex.hpp:339</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex_html"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html">depicture_menu::util::detail_util::read_lock_mutex</a></div><div class="ttdef"><b>Definition</b> <a href="#l00241">atomic_mutex.hpp:242</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex_html_a009529fa7cce3c26efa4abb1d42a9f64"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html#a009529fa7cce3c26efa4abb1d42a9f64">depicture_menu::util::detail_util::read_lock_mutex::unlock</a></div><div class="ttdeci">void unlock()</div><div class="ttdef"><b>Definition</b> <a href="#l00256">atomic_mutex.hpp:256</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex_html_a1a0ddf677ba194e267c15251463c0362"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html#a1a0ddf677ba194e267c15251463c0362">depicture_menu::util::detail_util::read_lock_mutex::read_lock_mutex</a></div><div class="ttdeci">read_lock_mutex(P &amp;m)</div><div class="ttdef"><b>Definition</b> <a href="#l00246">atomic_mutex.hpp:246</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex_html_a77df7510eb3022d95203e6426b1b14c1"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html#a77df7510eb3022d95203e6426b1b14c1">depicture_menu::util::detail_util::read_lock_mutex::m_</a></div><div class="ttdeci">P * m_</div><div class="ttdef"><b>Definition</b> <a href="#l00243">atomic_mutex.hpp:243</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex_html_a8e9617bc401d9ab1b4b249801804a974"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html#a8e9617bc401d9ab1b4b249801804a974">depicture_menu::util::detail_util::read_lock_mutex::is_need_unlock_</a></div><div class="ttdeci">bool is_need_unlock_</div><div class="ttdef"><b>Definition</b> <a href="#l00244">atomic_mutex.hpp:244</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex_html_a9ae05df40067a4de5b203d21d1496ea6"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html#a9ae05df40067a4de5b203d21d1496ea6">depicture_menu::util::detail_util::read_lock_mutex::lock</a></div><div class="ttdeci">void lock()</div><div class="ttdef"><b>Definition</b> <a href="#l00250">atomic_mutex.hpp:250</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex_html_afc43e49a4d6bb2f3a8b83a1965e32791"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html#afc43e49a4d6bb2f3a8b83a1965e32791">depicture_menu::util::detail_util::read_lock_mutex::~read_lock_mutex</a></div><div class="ttdeci">~read_lock_mutex()</div><div class="ttdef"><b>Definition</b> <a href="#l00247">atomic_mutex.hpp:247</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1spin__lock__policy_html"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1spin__lock__policy.html">depicture_menu::util::detail_util::spin_lock_policy</a></div><div class="ttdef"><b>Definition</b> <a href="#l00026">atomic_mutex.hpp:27</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1spin__lock__policy_html_a3dc9a69af9a65fe687c23a2d54aa0c16"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1spin__lock__policy.html#a3dc9a69af9a65fe687c23a2d54aa0c16">depicture_menu::util::detail_util::spin_lock_policy::unlock</a></div><div class="ttdeci">static void unlock(std::atomic&lt; T &gt; &amp;v, T delta) noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00042">atomic_mutex.hpp:42</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1spin__lock__policy_html_a8fc974eecc8870a79442a74d158421cd"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1spin__lock__policy.html#a8fc974eecc8870a79442a74d158421cd">depicture_menu::util::detail_util::spin_lock_policy::lock</a></div><div class="ttdeci">static void lock(std::atomic&lt; T &gt; &amp;v, T delta, T test_bit) noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00029">atomic_mutex.hpp:29</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base_html"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html">depicture_menu::util::detail_util::try_upgradable_mutex_base</a></div><div class="ttdef"><b>Definition</b> <a href="#l00268">atomic_mutex.hpp:269</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base_html_a1414f0c335bf241949fa858761a9cb3c"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#a1414f0c335bf241949fa858761a9cb3c">depicture_menu::util::detail_util::try_upgradable_mutex_base::write_lock</a></div><div class="ttdeci">void write_lock() noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00300">atomic_mutex.hpp:300</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base_html_a4461b227d40607110a93e42eacb9d41f"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#a4461b227d40607110a93e42eacb9d41f">depicture_menu::util::detail_util::try_upgradable_mutex_base::unlock</a></div><div class="ttdeci">void unlock() noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00283">atomic_mutex.hpp:283</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base_html_a48b6174c74dcd3eb6328888a8569581d"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#a48b6174c74dcd3eb6328888a8569581d">depicture_menu::util::detail_util::try_upgradable_mutex_base::lock</a></div><div class="ttdeci">void lock() noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00277">atomic_mutex.hpp:277</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base_html_a49cba3fd278f365fc679243be427b042"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#a49cba3fd278f365fc679243be427b042">depicture_menu::util::detail_util::try_upgradable_mutex_base::try_upgrade</a></div><div class="ttdeci">bool try_upgrade() noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00311">atomic_mutex.hpp:311</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base_html_a878151a6dbe988bed4bdaff3fa5d3276"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#a878151a6dbe988bed4bdaff3fa5d3276">depicture_menu::util::detail_util::try_upgradable_mutex_base::read_lock</a></div><div class="ttdeci">void read_lock() noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00289">atomic_mutex.hpp:289</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base_html_a8c11ce478e882a8ed78b65b50dad4a8a"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#a8c11ce478e882a8ed78b65b50dad4a8a">depicture_menu::util::detail_util::try_upgradable_mutex_base&lt; detail_util::spin_lock_policy&lt; int &gt; &gt;::writeLockBit</a></div><div class="ttdeci">static const int writeLockBit</div><div class="ttdef"><b>Definition</b> <a href="#l00271">atomic_mutex.hpp:271</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base_html_aa1eb73d882756fad42ca87e5064ee4a4"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#aa1eb73d882756fad42ca87e5064ee4a4">depicture_menu::util::detail_util::try_upgradable_mutex_base::write_unlock</a></div><div class="ttdeci">void write_unlock() noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00305">atomic_mutex.hpp:305</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base_html_aa7c90d7afb32abb717639bbcc6505c5d"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#aa7c90d7afb32abb717639bbcc6505c5d">depicture_menu::util::detail_util::try_upgradable_mutex_base&lt; detail_util::spin_lock_policy&lt; int &gt; &gt;::readerBits</a></div><div class="ttdeci">static const int readerBits</div><div class="ttdef"><b>Definition</b> <a href="#l00273">atomic_mutex.hpp:273</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base_html_ab9ea5dae7882249eb15160e018a92032"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#ab9ea5dae7882249eb15160e018a92032">depicture_menu::util::detail_util::try_upgradable_mutex_base::read_unlock</a></div><div class="ttdeci">void read_unlock() noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00295">atomic_mutex.hpp:295</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base_html_acce5ecb0c3cd040b8612e927171aef6b"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#acce5ecb0c3cd040b8612e927171aef6b">depicture_menu::util::detail_util::try_upgradable_mutex_base&lt; detail_util::spin_lock_policy&lt; int &gt; &gt;::v_</a></div><div class="ttdeci">std::atomic&lt; int &gt; v_</div><div class="ttdef"><b>Definition</b> <a href="#l00270">atomic_mutex.hpp:270</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base_html_af2b09e550612ccecf13f292c6955d43f"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html#af2b09e550612ccecf13f292c6955d43f">depicture_menu::util::detail_util::try_upgradable_mutex_base&lt; detail_util::spin_lock_policy&lt; int &gt; &gt;::upgradingBit</a></div><div class="ttdeci">static const int upgradingBit</div><div class="ttdef"><b>Definition</b> <a href="#l00272">atomic_mutex.hpp:272</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex_html"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html">depicture_menu::util::detail_util::upgradable_mutex</a></div><div class="ttdef"><b>Definition</b> <a href="#l00089">atomic_mutex.hpp:90</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex_html_a09a78bea2575f2b269507d06598953b8"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html#a09a78bea2575f2b269507d06598953b8">depicture_menu::util::detail_util::upgradable_mutex::m_</a></div><div class="ttdeci">P * m_</div><div class="ttdef"><b>Definition</b> <a href="#l00091">atomic_mutex.hpp:91</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex_html_a36d1d7d83a4959329286420a2b87e397"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html#a36d1d7d83a4959329286420a2b87e397">depicture_menu::util::detail_util::upgradable_mutex::unlock</a></div><div class="ttdeci">void unlock() noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00103">atomic_mutex.hpp:103</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex_html_a6685f79e5f96e4ca16af5529ae77e638"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html#a6685f79e5f96e4ca16af5529ae77e638">depicture_menu::util::detail_util::upgradable_mutex::lock</a></div><div class="ttdeci">void lock() noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00097">atomic_mutex.hpp:97</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex_html_a75732dfdd203431e29247614591c613d"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html#a75732dfdd203431e29247614591c613d">depicture_menu::util::detail_util::upgradable_mutex::upgradable_mutex</a></div><div class="ttdeci">upgradable_mutex(P &amp;m) noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00094">atomic_mutex.hpp:94</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex_html_a8406f7af3038b907eab28beac29e9fd7"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html#a8406f7af3038b907eab28beac29e9fd7">depicture_menu::util::detail_util::upgradable_mutex::need_unlock</a></div><div class="ttdeci">bool need_unlock</div><div class="ttdef"><b>Definition</b> <a href="#l00092">atomic_mutex.hpp:92</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex_html_ac86e540a49aab43334b4f4bc37607813"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html#ac86e540a49aab43334b4f4bc37607813">depicture_menu::util::detail_util::upgradable_mutex::~upgradable_mutex</a></div><div class="ttdeci">~upgradable_mutex() noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00095">atomic_mutex.hpp:95</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1wait__lock__policy_html"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1wait__lock__policy.html">depicture_menu::util::detail_util::wait_lock_policy</a></div><div class="ttdef"><b>Definition</b> <a href="#l00050">atomic_mutex.hpp:51</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1wait__lock__policy_html_a6e31e6a453945ead840dbbf556a04584"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1wait__lock__policy.html#a6e31e6a453945ead840dbbf556a04584">depicture_menu::util::detail_util::wait_lock_policy::lock</a></div><div class="ttdeci">static void lock(std::atomic&lt; T &gt; &amp;v, T delta, T test_bit) noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00053">atomic_mutex.hpp:53</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1wait__lock__policy_html_ad1f2a510014c19f844e67a143ba5809f"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1wait__lock__policy.html#ad1f2a510014c19f844e67a143ba5809f">depicture_menu::util::detail_util::wait_lock_policy::unlock</a></div><div class="ttdeci">static void unlock(std::atomic&lt; T &gt; &amp;v, T delta) noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00067">atomic_mutex.hpp:67</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex_html"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html">depicture_menu::util::detail_util::write_lock_mutex</a></div><div class="ttdef"><b>Definition</b> <a href="#l00114">atomic_mutex.hpp:115</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex_html_a10b2dd505e4137c0b96a970b43c8c475"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#a10b2dd505e4137c0b96a970b43c8c475">depicture_menu::util::detail_util::write_lock_mutex::ul_</a></div><div class="ttdeci">up_mtx_t * ul_</div><div class="ttdef"><b>Definition</b> <a href="#l00117">atomic_mutex.hpp:117</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex_html_a13f007e92089dc0f1e38be54871a40e1"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#a13f007e92089dc0f1e38be54871a40e1">depicture_menu::util::detail_util::write_lock_mutex::need_unlock</a></div><div class="ttdeci">bool need_unlock</div><div class="ttdef"><b>Definition</b> <a href="#l00118">atomic_mutex.hpp:118</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex_html_a2db376dc40af8721dfd4470074128653"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#a2db376dc40af8721dfd4470074128653">depicture_menu::util::detail_util::write_lock_mutex::lock</a></div><div class="ttdeci">void lock() noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00124">atomic_mutex.hpp:124</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex_html_a5c5230e7701a2ee7b9fced714d3c7c55"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#a5c5230e7701a2ee7b9fced714d3c7c55">depicture_menu::util::detail_util::write_lock_mutex::unlock</a></div><div class="ttdeci">void unlock() noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00132">atomic_mutex.hpp:132</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex_html_a6b783163cbb4a2b622112b9b37e6f778"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#a6b783163cbb4a2b622112b9b37e6f778">depicture_menu::util::detail_util::write_lock_mutex::~write_lock_mutex</a></div><div class="ttdeci">~write_lock_mutex()</div><div class="ttdef"><b>Definition</b> <a href="#l00121">atomic_mutex.hpp:121</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex_html_ab3868a7a58bf2033c9ff8269cb6ea47e"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#ab3868a7a58bf2033c9ff8269cb6ea47e">depicture_menu::util::detail_util::write_lock_mutex::write_lock_mutex</a></div><div class="ttdeci">write_lock_mutex(up_mtx_t &amp;ul)</div><div class="ttdef"><b>Definition</b> <a href="#l00120">atomic_mutex.hpp:120</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex_html_ac7cc6ce3982897130a01deab69b048fe"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1write__lock__mutex.html#ac7cc6ce3982897130a01deab69b048fe">depicture_menu::util::detail_util::write_lock_mutex::up_mtx_t</a></div><div class="ttdeci">upgradable_mutex&lt; P &gt; up_mtx_t</div><div class="ttdef"><b>Definition</b> <a href="#l00116">atomic_mutex.hpp:116</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_d26f0ed8b287a778d960ad2241e01057.html">src</a></li><li class="navelem"><a href="dir_57f1aaa3fa8f9297e7b1fd04f654d594.html">utility</a></li><li class="navelem"><a href="dir_09ae6f75c2bd6deea9214bbe44b8d5e7.html">thread</a></li><li class="navelem"><a href="atomic__mutex_8hpp.html">atomic_mutex.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

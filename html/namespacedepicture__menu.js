@@ -1,8 +1,10 @@
 var namespacedepicture__menu =
 [
     [ "util", "namespacedepicture__menu_1_1util.html", "namespacedepicture__menu_1_1util" ],
+    [ "reflection", "namespacedepicture__menu_1_1reflection.html", "namespacedepicture__menu_1_1reflection" ],
     [ "detail", "namespacedepicture__menu_1_1detail.html", "namespacedepicture__menu_1_1detail" ],
     [ "type_traits", "namespacedepicture__menu_1_1type__traits.html", null ],
+    [ "win32", "namespacedepicture__menu_1_1win32.html", "namespacedepicture__menu_1_1win32" ],
     [ "singleton", "classdepicture__menu_1_1singleton.html", "classdepicture__menu_1_1singleton" ],
     [ "constexpr_string", "namespacedepicture__menu.html#a6c1ee86b4e22d373f58ab39a5349ddc9", null ],
     [ "constexpr_wstring", "namespacedepicture__menu.html#a9cee412d19c52d3cd58e52a31e7ec4c2", null ],

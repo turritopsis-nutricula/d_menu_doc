@@ -98,12 +98,23 @@ $(function(){initNavTree('namespacedepicture__menu_1_1util.html','',''); });
 名前空間</h2></td></tr>
 <tr class="memitem:strconv" id="r_strconv"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1util_1_1strconv.html">strconv</a></td></tr>
 <tr class="memitem:ranges" id="r_ranges"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1util_1_1ranges.html">ranges</a></td></tr>
+<tr class="memitem:detail_5Futil" id="r_detail_5Futil"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1util_1_1detail__util.html">detail_util</a></td></tr>
 <tr class="memitem:type_5Ftraits" id="r_type_5Ftraits"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1util_1_1type__traits.html">type_traits</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 クラス</h2></td></tr>
 <tr class="memitem:constexpr_5Fstring" id="r_constexpr_5Fstring"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1util_1_1constexpr__string.html">constexpr_string</a></td></tr>
 <tr class="memitem:constexpr_5Fwstring" id="r_constexpr_5Fwstring"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1util_1_1constexpr__wstring.html">constexpr_wstring</a></td></tr>
+<tr class="memitem:worker_5Fpool" id="r_worker_5Fpool"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classdepicture__menu_1_1util_1_1worker__pool.html">worker_pool</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:a8f24cb66e72800888beab62eb412ef29" id="r_a8f24cb66e72800888beab62eb412ef29"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a8f24cb66e72800888beab62eb412ef29">upgrade_spin_mutex</a> = <a class="el" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html">detail_util::upgrade_mutex_base</a>&lt; <a class="el" href="structdepicture__menu_1_1util_1_1detail__util_1_1spin__lock__policy.html">detail_util::spin_lock_policy</a>&lt; int &gt; &gt;</td></tr>
+<tr class="memitem:a2f108d873a137dfb61cd080f9cc52a32" id="r_a2f108d873a137dfb61cd080f9cc52a32"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a2f108d873a137dfb61cd080f9cc52a32">upgrade_mutex</a> = <a class="el" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html">detail_util::upgrade_mutex_base</a>&lt; <a class="el" href="structdepicture__menu_1_1util_1_1detail__util_1_1wait__lock__policy.html">detail_util::wait_lock_policy</a>&lt; int &gt; &gt;</td></tr>
+<tr class="memitem:a5b5e115f05d8c6fa7387fd64a52655d4" id="r_a5b5e115f05d8c6fa7387fd64a52655d4"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a5b5e115f05d8c6fa7387fd64a52655d4">try_upgrade_spin_mutex</a></td></tr>
+<tr class="memitem:a0a99d567417a4c241205bb27bc07a9b2" id="r_a0a99d567417a4c241205bb27bc07a9b2"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a0a99d567417a4c241205bb27bc07a9b2">try_upgrade_mutex</a></td></tr>
+<tr class="memitem:a757872e60d32984872a9cb14c75dc6ef" id="r_a757872e60d32984872a9cb14c75dc6ef"><td class="memTemplParams" colspan="2">template&lt;typename P&gt; </td></tr>
+<tr class="memitem:a757872e60d32984872a9cb14c75dc6ef template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a757872e60d32984872a9cb14c75dc6ef">try_write_read_lock_guard</a> = <a class="el" href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html">detail_util::read_lock_mutex</a>&lt; P &gt;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 関数</h2></td></tr>
@@ -117,7 +128,105 @@ $(function(){initNavTree('namespacedepicture__menu_1_1util.html','',''); });
 <tr class="memitem:ad6b0437e683382b7b816bcd9c4d7f08b template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1util_1_1ranges.html#ad6b0437e683382b7b816bcd9c4d7f08b">sync_ranges</a> (Source const &amp;sample, Dist &amp;dist, Comp comp_expr, Dele on_erase, Generator gen, Sync sync_expr)</td></tr>
 <tr class="memitem:a885469ee42c92bfa4a916d9e79003093" id="r_a885469ee42c92bfa4a916d9e79003093"><td class="memTemplParams" colspan="2">template&lt;std::ranges::range Source, std::ranges::range Dist, std::invocable&lt; std::ranges::range_const_reference_t&lt; Source &gt;, std::ranges::range_const_reference_t&lt; Dist &gt; &gt; Comp, std::invocable&lt; std::ranges::range_const_reference_t&lt; Source &gt; &gt; Generator, std::invocable&lt; std::ranges::range_const_reference_t&lt; Source &gt;, std::ranges::range_reference_t&lt; Dist &gt; &gt; Sync&gt; </td></tr>
 <tr class="memitem:a885469ee42c92bfa4a916d9e79003093 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1util_1_1ranges.html#a885469ee42c92bfa4a916d9e79003093">sync_ranges</a> (Source const &amp;sample, Dist &amp;dist, Comp comp_expr, Generator gen, Sync sync_expr)</td></tr>
+<tr class="memitem:ab89a2802720839a33c9885678ae3ce4a" id="r_ab89a2802720839a33c9885678ae3ce4a"><td class="memTemplParams" colspan="2">template&lt;typename P&gt; </td></tr>
+<tr class="memitem:ab89a2802720839a33c9885678ae3ce4a template"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="#ab89a2802720839a33c9885678ae3ce4a">upgradable_lock_guard</a> (<a class="el" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html">detail_util::upgrade_mutex_base</a>&lt; P &gt; &amp;m) noexcept</td></tr>
+<tr class="memitem:a72ab72c3a192447e36e3bdb3fca128f8" id="r_a72ab72c3a192447e36e3bdb3fca128f8"><td class="memTemplParams" colspan="2">template&lt;typename P&gt; </td></tr>
+<tr class="memitem:a72ab72c3a192447e36e3bdb3fca128f8 template"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="#a72ab72c3a192447e36e3bdb3fca128f8">write_lock_guard</a> (<a class="el" href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html">detail_util::upgradable_mutex</a>&lt; <a class="el" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html">detail_util::upgrade_mutex_base</a>&lt; P &gt; &gt; &amp;m) noexcept</td></tr>
+<tr class="memitem:a3cfcec3d4e786cd202535130b31505e3" id="r_a3cfcec3d4e786cd202535130b31505e3"><td class="memTemplParams" colspan="2">template&lt;typename P&gt; </td></tr>
+<tr class="memitem:a3cfcec3d4e786cd202535130b31505e3 template"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="#a3cfcec3d4e786cd202535130b31505e3">upgradable_lock_guard</a> (<a class="el" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html">detail_util::try_upgradable_mutex_base</a>&lt; P &gt; &amp;m) noexcept</td></tr>
+<tr class="memitem:aa2cac86291ba700c8320639000b1cecf" id="r_aa2cac86291ba700c8320639000b1cecf"><td class="memTemplParams" colspan="2">template&lt;typename P, typename F&gt; </td></tr>
+<tr class="memitem:aa2cac86291ba700c8320639000b1cecf template"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aa2cac86291ba700c8320639000b1cecf">try_write_lock</a> (<a class="el" href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html">detail_util::read_lock_mutex</a>&lt; P &gt; &amp;m, F &amp;&amp;f) noexcept</td></tr>
 </table>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">型定義詳解</h2>
+<a id="a0a99d567417a4c241205bb27bc07a9b2" name="a0a99d567417a4c241205bb27bc07a9b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a99d567417a4c241205bb27bc07a9b2">&#9670;&#160;</a></span>try_upgrade_mutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a0a99d567417a4c241205bb27bc07a9b2">depicture_menu::util::try_upgrade_mutex</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>初期値:</b><div class="fragment"><div class="line"><a class="code hl_struct" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html">detail_util::try_upgradable_mutex_base</a>&lt;</div>
+<div class="line">   <a class="code hl_struct" href="structdepicture__menu_1_1util_1_1detail__util_1_1wait__lock__policy.html">detail_util::wait_lock_policy&lt; int &gt;</a> &gt;</div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base_html"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html">depicture_menu::util::detail_util::try_upgradable_mutex_base</a></div><div class="ttdef"><b>Definition</b> <a href="atomic__mutex_8hpp_source.html#l00268">atomic_mutex.hpp:269</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1wait__lock__policy_html"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1wait__lock__policy.html">depicture_menu::util::detail_util::wait_lock_policy</a></div><div class="ttdef"><b>Definition</b> <a href="atomic__mutex_8hpp_source.html#l00050">atomic_mutex.hpp:51</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="atomic__mutex_8hpp_source.html">atomic_mutex.hpp</a> の <a class="el" href="atomic__mutex_8hpp_source.html#l00398">398</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a5b5e115f05d8c6fa7387fd64a52655d4" name="a5b5e115f05d8c6fa7387fd64a52655d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b5e115f05d8c6fa7387fd64a52655d4">&#9670;&#160;</a></span>try_upgrade_spin_mutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a5b5e115f05d8c6fa7387fd64a52655d4">depicture_menu::util::try_upgrade_spin_mutex</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>初期値:</b><div class="fragment"><div class="line"><a class="code hl_struct" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html">detail_util::try_upgradable_mutex_base</a>&lt;</div>
+<div class="line">   <a class="code hl_struct" href="structdepicture__menu_1_1util_1_1detail__util_1_1spin__lock__policy.html">detail_util::spin_lock_policy&lt; int &gt;</a> &gt;</div>
+<div class="ttc" id="astructdepicture__menu_1_1util_1_1detail__util_1_1spin__lock__policy_html"><div class="ttname"><a href="structdepicture__menu_1_1util_1_1detail__util_1_1spin__lock__policy.html">depicture_menu::util::detail_util::spin_lock_policy</a></div><div class="ttdef"><b>Definition</b> <a href="atomic__mutex_8hpp_source.html#l00026">atomic_mutex.hpp:27</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="atomic__mutex_8hpp_source.html">atomic_mutex.hpp</a> の <a class="el" href="atomic__mutex_8hpp_source.html#l00396">396</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a757872e60d32984872a9cb14c75dc6ef" name="a757872e60d32984872a9cb14c75dc6ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a757872e60d32984872a9cb14c75dc6ef">&#9670;&#160;</a></span>try_write_read_lock_guard</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename P&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a757872e60d32984872a9cb14c75dc6ef">depicture_menu::util::try_write_read_lock_guard</a> = <a class="el" href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html">detail_util::read_lock_mutex</a>&lt; P &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="atomic__mutex_8hpp_source.html">atomic_mutex.hpp</a> の <a class="el" href="atomic__mutex_8hpp_source.html#l00402">402</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a2f108d873a137dfb61cd080f9cc52a32" name="a2f108d873a137dfb61cd080f9cc52a32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f108d873a137dfb61cd080f9cc52a32">&#9670;&#160;</a></span>upgrade_mutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a2f108d873a137dfb61cd080f9cc52a32">depicture_menu::util::upgrade_mutex</a> = <a class="el" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html">detail_util::upgrade_mutex_base</a>&lt; <a class="el" href="structdepicture__menu_1_1util_1_1detail__util_1_1wait__lock__policy.html">detail_util::wait_lock_policy</a>&lt; int &gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="atomic__mutex_8hpp_source.html">atomic_mutex.hpp</a> の <a class="el" href="atomic__mutex_8hpp_source.html#l00363">363</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a8f24cb66e72800888beab62eb412ef29" name="a8f24cb66e72800888beab62eb412ef29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f24cb66e72800888beab62eb412ef29">&#9670;&#160;</a></span>upgrade_spin_mutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a8f24cb66e72800888beab62eb412ef29">depicture_menu::util::upgrade_spin_mutex</a> = <a class="el" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html">detail_util::upgrade_mutex_base</a>&lt; <a class="el" href="structdepicture__menu_1_1util_1_1detail__util_1_1spin__lock__policy.html">detail_util::spin_lock_policy</a>&lt; int &gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="atomic__mutex_8hpp_source.html">atomic_mutex.hpp</a> の <a class="el" href="atomic__mutex_8hpp_source.html#l00362">362</a> 行目に定義があります。</p>
+
+</div>
+</div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
 <a id="a9baee165797b419228bcb1fb9be69100" name="a9baee165797b419228bcb1fb9be69100"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9baee165797b419228bcb1fb9be69100">&#9670;&#160;</a></span>constexpr_string()</h2>
@@ -183,6 +292,126 @@ template&lt;typename E&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="enum__io_8hpp_source.html">enum_io.hpp</a> の <a class="el" href="enum__io_8hpp_source.html#l00010">10</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aa2cac86291ba700c8320639000b1cecf" name="aa2cac86291ba700c8320639000b1cecf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2cac86291ba700c8320639000b1cecf">&#9670;&#160;</a></span>try_write_lock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename P, typename F&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool depicture_menu::util::try_write_lock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html">detail_util::read_lock_mutex</a>&lt; P &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>m</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">F &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>f</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="atomic__mutex_8hpp_source.html">atomic_mutex.hpp</a> の <a class="el" href="atomic__mutex_8hpp_source.html#l00379">379</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a3cfcec3d4e786cd202535130b31505e3" name="a3cfcec3d4e786cd202535130b31505e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cfcec3d4e786cd202535130b31505e3">&#9670;&#160;</a></span>upgradable_lock_guard() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename P&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto depicture_menu::util::upgradable_lock_guard </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html">detail_util::try_upgradable_mutex_base</a>&lt; P &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>m</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="atomic__mutex_8hpp_source.html">atomic_mutex.hpp</a> の <a class="el" href="atomic__mutex_8hpp_source.html#l00370">370</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ab89a2802720839a33c9885678ae3ce4a" name="ab89a2802720839a33c9885678ae3ce4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab89a2802720839a33c9885678ae3ce4a">&#9670;&#160;</a></span>upgradable_lock_guard() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename P&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto depicture_menu::util::upgradable_lock_guard </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html">detail_util::upgrade_mutex_base</a>&lt; P &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>m</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="atomic__mutex_8hpp_source.html">atomic_mutex.hpp</a> の <a class="el" href="atomic__mutex_8hpp_source.html#l00339">339</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a72ab72c3a192447e36e3bdb3fca128f8" name="a72ab72c3a192447e36e3bdb3fca128f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72ab72c3a192447e36e3bdb3fca128f8">&#9670;&#160;</a></span>write_lock_guard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename P&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto depicture_menu::util::write_lock_guard </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdepicture__menu_1_1util_1_1detail__util_1_1upgradable__mutex.html">detail_util::upgradable_mutex</a>&lt; <a class="el" href="classdepicture__menu_1_1util_1_1detail__util_1_1upgrade__mutex__base.html">detail_util::upgrade_mutex_base</a>&lt; P &gt; &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>m</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="atomic__mutex_8hpp_source.html">atomic_mutex.hpp</a> の <a class="el" href="atomic__mutex_8hpp_source.html#l00350">350</a> 行目に定義があります。</p>
 
 </div>
 </div>

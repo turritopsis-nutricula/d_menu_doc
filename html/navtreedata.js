@@ -31,7 +31,8 @@ var NAVTREE =
         [ "全て", "namespacemembers.html", null ],
         [ "関数", "namespacemembers_func.html", null ],
         [ "変数", "namespacemembers_vars.html", null ],
-        [ "型定義", "namespacemembers_type.html", null ]
+        [ "型定義", "namespacemembers_type.html", null ],
+        [ "列挙型", "namespacemembers_enum.html", null ]
       ] ]
     ] ],
     [ "Concepts", "concepts.html", "concepts" ],
@@ -50,7 +51,6 @@ var NAVTREE =
       [ "ファイルメンバ", "globals.html", [
         [ "全て", "globals.html", null ],
         [ "関数", "globals_func.html", null ],
-        [ "変数", "globals_vars.html", null ],
         [ "型定義", "globals_type.html", null ],
         [ "マクロ定義", "globals_defs.html", null ]
       ] ]
@@ -60,7 +60,9 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+"str__conv_8cpp.html",
+"structsingleton__finalizer.html#a4a26483e7e756070c0931865a78ac329"
 ];
 
 var SYNCONMSG = 'クリックで同期表示が無効になります';

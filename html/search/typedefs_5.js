@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['return_5ft_0',['return_t',['../structdepicture__menu_1_1util_1_1type__traits_1_1detail__type__traits_1_1member__function__point025edbe9f578acd1ebb641e00cb20409.html#a39b305d22b3104404a0c3f1925b0724e',1,'depicture_menu::util::type_traits::detail_type_traits::member_function_pointer_resolve&lt; R(T::*)(Args...) noexcept(B) &gt;::return_t'],['../structdepicture__menu_1_1util_1_1type__traits_1_1detail__type__traits_1_1member__function__pointdc8ab127bdafb94ee979f6c5f0fc795b.html#a448a526cbffacfb5a358e07af5660c38',1,'depicture_menu::util::type_traits::detail_type_traits::member_function_pointer_resolve&lt; R(T::*)(Args...) const noexcept(B) &gt;::return_t']]]
+  ['member_5ffunction_5fpointer_5farg_5ft_0',['member_function_pointer_arg_t',['../namespacedepicture__menu_1_1util_1_1type__traits.html#a4328009669d956f2d8ac3e8a017a366f',1,'depicture_menu::util::type_traits']]],
+  ['member_5ffunction_5fpointer_5fclass_5ft_1',['member_function_pointer_class_t',['../namespacedepicture__menu_1_1util_1_1type__traits.html#adf8ffca0991549351cde4f03b65c1c84',1,'depicture_menu::util::type_traits']]],
+  ['member_5ffunction_5fpointer_5fresult_5ft_2',['member_function_pointer_result_t',['../namespacedepicture__menu_1_1util_1_1type__traits.html#a505f03ef8862283eaebe54a64b77e3e1',1,'depicture_menu::util::type_traits']]]
 ];

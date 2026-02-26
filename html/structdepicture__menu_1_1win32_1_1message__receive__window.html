@@ -1,0 +1,549 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu::win32::message_receive_window 構造体</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('structdepicture__menu_1_1win32_1_1message__receive__window.html','','structdepicture__menu_1_1win32_1_1message__receive__window-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">depicture_menu::win32::message_receive_window 構造体</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="message__receive__window_8hpp_source.html">message_receive_window.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:adc8c224690ef623b5fdd6b918bec9b4d" id="r_adc8c224690ef623b5fdd6b918bec9b4d"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#adc8c224690ef623b5fdd6b918bec9b4d">filter_t</a> = bool( HWND, UINT, WPARAM, LPARAM )</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a2ffdad056e096c768c43474dda26a3eb" id="r_a2ffdad056e096c768c43474dda26a3eb"><td class="memItemLeft">static HWND&#160;</td><td class="memItemRight"><a class="el" href="#a2ffdad056e096c768c43474dda26a3eb">setup</a> (HINSTANCE const)</td></tr>
+<tr class="memitem:a26c25d85b9b23eb5acdc73e2a61a300e" id="r_a26c25d85b9b23eb5acdc73e2a61a300e"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a26c25d85b9b23eb5acdc73e2a61a300e">set_message_filter</a> (std::function&lt; <a class="el" href="#adc8c224690ef623b5fdd6b918bec9b4d">filter_t</a> &gt; f)</td></tr>
+<tr class="memitem:abc0fcaa4ac46ff5db148f275550161e5" id="r_abc0fcaa4ac46ff5db148f275550161e5"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#abc0fcaa4ac46ff5db148f275550161e5">dispose</a> ()</td></tr>
+<tr class="memitem:afa81c66b858dff0b9760c38804d5100c" id="r_afa81c66b858dff0b9760c38804d5100c"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#afa81c66b858dff0b9760c38804d5100c">is_valid</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:a8100888ecbdb4bcb8e7f20428b54d8a0" id="r_a8100888ecbdb4bcb8e7f20428b54d8a0"><td class="memItemLeft">static std::function&lt; <a class="el" href="#adc8c224690ef623b5fdd6b918bec9b4d">filter_t</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a8100888ecbdb4bcb8e7f20428b54d8a0">proc_filter_</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a41627d2733d79e48c375de669c528c6c" id="r_a41627d2733d79e48c375de669c528c6c"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a41627d2733d79e48c375de669c528c6c">message_receive_window</a> ()=delete</td></tr>
+<tr class="memitem:a92e67fcdd647454fa0ec56e67b5452a6" id="r_a92e67fcdd647454fa0ec56e67b5452a6"><td class="memItemLeft">constexpr&#160;</td><td class="memItemRight"><a class="el" href="#a92e67fcdd647454fa0ec56e67b5452a6">message_receive_window</a> (<a class="el" href="structmessage__receive__window.html">message_receive_window</a> const &amp;)=delete</td></tr>
+<tr class="memitem:aebcaefaf1aeb9739a5dd67d9450f6fce" id="r_aebcaefaf1aeb9739a5dd67d9450f6fce"><td class="memItemLeft">constexpr&#160;</td><td class="memItemRight"><a class="el" href="#aebcaefaf1aeb9739a5dd67d9450f6fce">message_receive_window</a> (<a class="el" href="structmessage__receive__window.html">message_receive_window</a> &amp;&amp;)=delete</td></tr>
+<tr class="memitem:ae16dd76b01a8f9c7233bdb45a8ca59c2" id="r_ae16dd76b01a8f9c7233bdb45a8ca59c2"><td class="memItemLeft"><a class="el" href="structmessage__receive__window.html">message_receive_window</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ae16dd76b01a8f9c7233bdb45a8ca59c2">operator=</a> (<a class="el" href="structmessage__receive__window.html">message_receive_window</a> const &amp;)=delete</td></tr>
+<tr class="memitem:a0ef41165cb84cd442353249db3f0e322" id="r_a0ef41165cb84cd442353249db3f0e322"><td class="memItemLeft"><a class="el" href="structmessage__receive__window.html">message_receive_window</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a0ef41165cb84cd442353249db3f0e322">operator=</a> (<a class="el" href="structmessage__receive__window.html">message_receive_window</a> &amp;&amp;)=delete</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+静的非公開変数類</h2></td></tr>
+<tr class="memitem:a7fd8a8eecc7985107a49d6785f5a5dcb" id="r_a7fd8a8eecc7985107a49d6785f5a5dcb"><td class="memItemLeft">static HWND&#160;</td><td class="memItemRight"><a class="el" href="#a7fd8a8eecc7985107a49d6785f5a5dcb">window_handle_</a> = nullptr</td></tr>
+<tr class="memitem:af0e1adccdce715ecbe03f9c275a4b88f" id="r_af0e1adccdce715ecbe03f9c275a4b88f"><td class="memItemLeft">static HINSTANCE&#160;</td><td class="memItemRight"><a class="el" href="#af0e1adccdce715ecbe03f9c275a4b88f">app_handle_</a> = nullptr</td></tr>
+<tr class="memitem:ae9e113f8a2ebccbf2065c5dc3c47273f" id="r_ae9e113f8a2ebccbf2065c5dc3c47273f"><td class="memItemLeft">static constexpr char const  *&#160;</td><td class="memItemRight"><a class="el" href="#ae9e113f8a2ebccbf2065c5dc3c47273f">window_class_name</a> = &quot;GlobalHookMessageReceive&quot;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock">
+<p class="definition"> <a class="el" href="message__receive__window_8hpp_source.html">message_receive_window.hpp</a> の <a class="el" href="message__receive__window_8hpp_source.html#l00012">12</a> 行目に定義があります。</p>
+</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">型定義メンバ詳解</h2>
+<a id="adc8c224690ef623b5fdd6b918bec9b4d" name="adc8c224690ef623b5fdd6b918bec9b4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc8c224690ef623b5fdd6b918bec9b4d">&#9670;&#160;</a></span>filter_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#adc8c224690ef623b5fdd6b918bec9b4d">depicture_menu::win32::message_receive_window::filter_t</a> = bool( HWND, UINT, WPARAM, LPARAM )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="message__receive__window_8hpp_source.html">message_receive_window.hpp</a> の <a class="el" href="message__receive__window_8hpp_source.html#l00014">14</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">構築子と解体子</h2>
+<a id="a41627d2733d79e48c375de669c528c6c" name="a41627d2733d79e48c375de669c528c6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41627d2733d79e48c375de669c528c6c">&#9670;&#160;</a></span>message_receive_window() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">depicture_menu::win32::message_receive_window::message_receive_window </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">参照元 <a class="el" href="#aebcaefaf1aeb9739a5dd67d9450f6fce">message_receive_window()</a>, <a class="el" href="#a92e67fcdd647454fa0ec56e67b5452a6">message_receive_window()</a>, <a class="el" href="#a0ef41165cb84cd442353249db3f0e322">operator=()</a>, <a class="el" href="#ae16dd76b01a8f9c7233bdb45a8ca59c2">operator=()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1win32_1_1message__receive__window_a41627d2733d79e48c375de669c528c6c_icgraph.svg" width="424" height="318"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a92e67fcdd647454fa0ec56e67b5452a6" name="a92e67fcdd647454fa0ec56e67b5452a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92e67fcdd647454fa0ec56e67b5452a6">&#9670;&#160;</a></span>message_receive_window() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">depicture_menu::win32::message_receive_window::message_receive_window </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmessage__receive__window.html">message_receive_window</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span><span class="mlabel private">private</span><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">参照先 <a class="el" href="#a41627d2733d79e48c375de669c528c6c">message_receive_window()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1win32_1_1message__receive__window_a92e67fcdd647454fa0ec56e67b5452a6_cgraph.svg" width="424" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aebcaefaf1aeb9739a5dd67d9450f6fce" name="aebcaefaf1aeb9739a5dd67d9450f6fce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebcaefaf1aeb9739a5dd67d9450f6fce">&#9670;&#160;</a></span>message_receive_window() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">depicture_menu::win32::message_receive_window::message_receive_window </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmessage__receive__window.html">message_receive_window</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel constexpr">constexpr</span><span class="mlabel private">private</span><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">参照先 <a class="el" href="#a41627d2733d79e48c375de669c528c6c">message_receive_window()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1win32_1_1message__receive__window_aebcaefaf1aeb9739a5dd67d9450f6fce_cgraph.svg" width="424" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="abc0fcaa4ac46ff5db148f275550161e5" name="abc0fcaa4ac46ff5db148f275550161e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc0fcaa4ac46ff5db148f275550161e5">&#9670;&#160;</a></span>dispose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void message_receive_window::dispose </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="message__receive__window_8cpp_source.html">message_receive_window.cpp</a> の <a class="el" href="message__receive__window_8cpp_source.html#l00109">109</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="message__receive__window_8hpp_source.html#l00019">app_handle_</a>, <a class="el" href="message__receive__window_8hpp_source.html#l00018">window_handle_</a>.</p>
+
+</div>
+</div>
+<a id="afa81c66b858dff0b9760c38804d5100c" name="afa81c66b858dff0b9760c38804d5100c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa81c66b858dff0b9760c38804d5100c">&#9670;&#160;</a></span>is_valid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool depicture_menu::win32::message_receive_window::is_valid </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="message__receive__window_8hpp_source.html">message_receive_window.hpp</a> の <a class="el" href="message__receive__window_8hpp_source.html#l00037">37</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="message__receive__window_8hpp_source.html#l00018">window_handle_</a>.</p>
+
+</div>
+</div>
+<a id="a0ef41165cb84cd442353249db3f0e322" name="a0ef41165cb84cd442353249db3f0e322"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ef41165cb84cd442353249db3f0e322">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmessage__receive__window.html">message_receive_window</a> &amp; depicture_menu::win32::message_receive_window::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmessage__receive__window.html">message_receive_window</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">参照先 <a class="el" href="#a41627d2733d79e48c375de669c528c6c">message_receive_window()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1win32_1_1message__receive__window_a0ef41165cb84cd442353249db3f0e322_cgraph.svg" width="424" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ae16dd76b01a8f9c7233bdb45a8ca59c2" name="ae16dd76b01a8f9c7233bdb45a8ca59c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae16dd76b01a8f9c7233bdb45a8ca59c2">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structmessage__receive__window.html">message_receive_window</a> &amp; depicture_menu::win32::message_receive_window::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmessage__receive__window.html">message_receive_window</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">参照先 <a class="el" href="#a41627d2733d79e48c375de669c528c6c">message_receive_window()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1win32_1_1message__receive__window_ae16dd76b01a8f9c7233bdb45a8ca59c2_cgraph.svg" width="424" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a26c25d85b9b23eb5acdc73e2a61a300e" name="a26c25d85b9b23eb5acdc73e2a61a300e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26c25d85b9b23eb5acdc73e2a61a300e">&#9670;&#160;</a></span>set_message_filter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void message_receive_window::set_message_filter </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; <a class="el" href="#adc8c224690ef623b5fdd6b918bec9b4d">filter_t</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>f</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="message__receive__window_8cpp_source.html">message_receive_window.cpp</a> の <a class="el" href="message__receive__window_8cpp_source.html#l00091">91</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a2ffdad056e096c768c43474dda26a3eb" name="a2ffdad056e096c768c43474dda26a3eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ffdad056e096c768c43474dda26a3eb">&#9670;&#160;</a></span>setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HWND message_receive_window::setup </td>
+          <td>(</td>
+          <td class="paramtype">HINSTANCE const</td>          <td class="paramname"><span class="paramname"><em>hinst</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="message__receive__window_8cpp_source.html">message_receive_window.cpp</a> の <a class="el" href="message__receive__window_8cpp_source.html#l00043">43</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="message__receive__window_8hpp_source.html#l00019">app_handle_</a>, <a class="el" href="message__receive__window_8hpp_source.html#l00021">window_class_name</a>, <a class="el" href="message__receive__window_8hpp_source.html#l00018">window_handle_</a>.</p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">メンバ詳解</h2>
+<a id="af0e1adccdce715ecbe03f9c275a4b88f" name="af0e1adccdce715ecbe03f9c275a4b88f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0e1adccdce715ecbe03f9c275a4b88f">&#9670;&#160;</a></span>app_handle_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HINSTANCE message_receive_window::app_handle_ = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="message__receive__window_8hpp_source.html">message_receive_window.hpp</a> の <a class="el" href="message__receive__window_8hpp_source.html#l00019">19</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="message__receive__window_8cpp_source.html#l00109">dispose()</a>, <a class="el" href="message__receive__window_8cpp_source.html#l00043">setup()</a>.</p>
+
+</div>
+</div>
+<a id="a8100888ecbdb4bcb8e7f20428b54d8a0" name="a8100888ecbdb4bcb8e7f20428b54d8a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8100888ecbdb4bcb8e7f20428b54d8a0">&#9670;&#160;</a></span>proc_filter_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt; <a class="el" href="#adc8c224690ef623b5fdd6b918bec9b4d">message_receive_window::filter_t</a> &gt; message_receive_window::proc_filter_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="message__receive__window_8hpp_source.html">message_receive_window.hpp</a> の <a class="el" href="message__receive__window_8hpp_source.html#l00015">15</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ae9e113f8a2ebccbf2065c5dc3c47273f" name="ae9e113f8a2ebccbf2065c5dc3c47273f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9e113f8a2ebccbf2065c5dc3c47273f">&#9670;&#160;</a></span>window_class_name</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char const* depicture_menu::win32::message_receive_window::window_class_name = &quot;GlobalHookMessageReceive&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel constexpr">constexpr</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="message__receive__window_8hpp_source.html">message_receive_window.hpp</a> の <a class="el" href="message__receive__window_8hpp_source.html#l00021">21</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="message__receive__window_8cpp_source.html#l00043">setup()</a>.</p>
+
+</div>
+</div>
+<a id="a7fd8a8eecc7985107a49d6785f5a5dcb" name="a7fd8a8eecc7985107a49d6785f5a5dcb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fd8a8eecc7985107a49d6785f5a5dcb">&#9670;&#160;</a></span>window_handle_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HWND message_receive_window::window_handle_ = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="message__receive__window_8hpp_source.html">message_receive_window.hpp</a> の <a class="el" href="message__receive__window_8hpp_source.html#l00018">18</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="message__receive__window_8cpp_source.html#l00109">dispose()</a>, <a class="el" href="message__receive__window_8hpp_source.html#l00037">is_valid()</a>, <a class="el" href="message__receive__window_8cpp_source.html#l00043">setup()</a>.</p>
+
+</div>
+</div>
+<hr/>この構造体詳解は次のファイルから抽出されました:<ul>
+<li>depicture_menu/src/win32/<a class="el" href="message__receive__window_8hpp_source.html">message_receive_window.hpp</a></li>
+<li>depicture_menu/src/win32/<a class="el" href="message__receive__window_8cpp_source.html">message_receive_window.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespacedepicture__menu.html">depicture_menu</a></li><li class="navelem"><a href="namespacedepicture__menu_1_1win32.html">win32</a></li><li class="navelem"><a href="structdepicture__menu_1_1win32_1_1message__receive__window.html">message_receive_window</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

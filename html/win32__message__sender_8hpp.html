@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/src/win32/win32_message_sender.hpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('win32__message__sender_8hpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">win32_message_sender.hpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;windows.h&gt;</code><br />
+<code>#include &lt;psapi.h&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;format&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;string_view&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;boost/leaf.hpp&gt;</code><br />
+<code>#include &lt;boost/test/unit_test.hpp&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+win32_message_sender.hpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="win32__message__sender_8hpp__incl.svg" width="100%" height="408"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="win32__message__sender_8hpp__dep__incl.svg" width="168" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="win32__message__sender_8hpp_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Awin32_3A_3Aprocess_3A_3Aerror_5Fhandle" id="r_depicture_5Fmenu_3A_3Awin32_3A_3Aprocess_3A_3Aerror_5Fhandle"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1win32_1_1process_1_1error__handle.html">depicture_menu::win32::process::error_handle</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Awin32_3A_3Aprocess_3A_3Aerror_5Fpid" id="r_depicture_5Fmenu_3A_3Awin32_3A_3Aprocess_3A_3Aerror_5Fpid"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1win32_1_1process_1_1error__pid.html">depicture_menu::win32::process::error_pid</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Awin32_3A_3Awin32_5Fmessage_5Fsender" id="r_depicture_5Fmenu_3A_3Awin32_3A_3Awin32_5Fmessage_5Fsender"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1win32_1_1win32__message__sender.html">depicture_menu::win32::win32_message_sender</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:depicture_5Fmenu" id="r_depicture_5Fmenu"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu.html">depicture_menu</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Awin32" id="r_depicture_5Fmenu_3A_3Awin32"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1win32.html">depicture_menu::win32</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Awin32_3A_3Aprocess" id="r_depicture_5Fmenu_3A_3Awin32_3A_3Aprocess"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1win32_1_1process.html">depicture_menu::win32::process</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Awin32_3A_3Aprocess_3A_3Adetail_5Fprocess" id="r_depicture_5Fmenu_3A_3Awin32_3A_3Aprocess_3A_3Adetail_5Fprocess"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1win32_1_1process_1_1detail__process.html">depicture_menu::win32::process::detail_process</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a37c27b684717258bb173e51dd74efe98" id="r_a37c27b684717258bb173e51dd74efe98"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a37c27b684717258bb173e51dd74efe98">DPM_USE_SENDER_HEADER_IMPL</a>&#160;&#160;&#160;1</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:a099d328c8cb12713e0b0a082aa28b1cc" id="r_a099d328c8cb12713e0b0a082aa28b1cc"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1win32_1_1process_1_1detail__process.html#a099d328c8cb12713e0b0a082aa28b1cc">depicture_menu::win32::process::detail_process::handle_ptr_t</a> = std::shared_ptr&lt; std::remove_pointer_t&lt; HANDLE &gt; &gt;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr class="memitem:aa8fd81deb4c8ec67265637b08bd680bc" id="r_aa8fd81deb4c8ec67265637b08bd680bc"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1win32_1_1process.html#aa8fd81deb4c8ec67265637b08bd680bc">depicture_menu::win32::process::process_error</a> { <a class="el" href="namespacedepicture__menu_1_1win32_1_1process.html#aa8fd81deb4c8ec67265637b08bd680bca346b574d59ca48f829707becb1e0991d">depicture_menu::win32::process::open_process</a>
+, <a class="el" href="namespacedepicture__menu_1_1win32_1_1process.html#aa8fd81deb4c8ec67265637b08bd680bca01970321341d8c75ae2b497577965068">depicture_menu::win32::process::get_window_thread_process_id</a>
+, <a class="el" href="namespacedepicture__menu_1_1win32_1_1process.html#aa8fd81deb4c8ec67265637b08bd680bcab0d1ee8bda086071f2e5003dd9069d5e">depicture_menu::win32::process::query_full_process_image_name</a>
+ }</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a674c711e72c3486206612549bfa616f9" id="r_a674c711e72c3486206612549bfa616f9"><td class="memItemLeft"><a class="el" href="namespacedepicture__menu_1_1win32_1_1process_1_1detail__process.html#a099d328c8cb12713e0b0a082aa28b1cc">handle_ptr_t</a>&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1win32_1_1process_1_1detail__process.html#a674c711e72c3486206612549bfa616f9">depicture_menu::win32::process::detail_process::get_proc_handle_ptr</a> (DWORD process_id, DWORD desired_access=PROCESS_QUERY_INFORMATION|PROCESS_VM_READ) noexcept</td></tr>
+<tr class="memitem:ad33f504a57397cdcef60a47f1f0e352c" id="r_ad33f504a57397cdcef60a47f1f0e352c"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1win32_1_1process_1_1detail__process.html#ad33f504a57397cdcef60a47f1f0e352c">depicture_menu::win32::process::detail_process::new_win_last_error</a> () noexcept</td></tr>
+<tr class="memitem:ab47932207d422b57d7243041b9a0040f" id="r_ab47932207d422b57d7243041b9a0040f"><td class="memTemplParams" colspan="2">template&lt;int BufferSize&gt; </td></tr>
+<tr class="memitem:ab47932207d422b57d7243041b9a0040f template"><td class="memItemLeft">boost::leaf::result&lt; std::wstring &gt;&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1win32_1_1process.html#ab47932207d422b57d7243041b9a0040f">depicture_menu::win32::process::query_process_image_name</a> (HANDLE <a class="el" href="namespacedepicture__menu_1_1win32_1_1process.html">process</a>) noexcept</td></tr>
+<tr class="memdesc:ab47932207d422b57d7243041b9a0040f"><td class="mdescLeft">&#160;</td><td class="mdescRight">query_process_image_name  <br /></td></tr>
+<tr class="memitem:a88443eb9ecadc80c7efce1b603485cf1" id="r_a88443eb9ecadc80c7efce1b603485cf1"><td class="memTemplParams" colspan="2">template&lt;int BufferSize&gt; </td></tr>
+<tr class="memitem:a88443eb9ecadc80c7efce1b603485cf1 template"><td class="memItemLeft">boost::leaf::result&lt; std::wstring &gt;&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1win32_1_1process.html#a88443eb9ecadc80c7efce1b603485cf1">depicture_menu::win32::process::query_process_image_name_by_process_id</a> (DWORD process_id) noexcept</td></tr>
+<tr class="memitem:ac3c1390e42a1e75b163fa993acade1ec" id="r_ac3c1390e42a1e75b163fa993acade1ec"><td class="memTemplParams" colspan="2">template&lt;typename F&gt; </td></tr>
+<tr class="memitem:ac3c1390e42a1e75b163fa993acade1ec template"><td class="memItemLeft">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1win32_1_1process.html#ac3c1390e42a1e75b163fa993acade1ec">depicture_menu::win32::process::enum_toplevel_window_handle</a> (F const &amp;f) noexcept(noexcept(f(std::declval&lt; HWND &gt;(), std::declval&lt; DWORD &gt;())))</td></tr>
+<tr class="memdesc:ac3c1390e42a1e75b163fa993acade1ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">enum_toplevel_window_handle  <br /></td></tr>
+<tr class="memitem:a5fc55658d7ab5d3884cb36ab222d2cf3" id="r_a5fc55658d7ab5d3884cb36ab222d2cf3"><td class="memTemplParams" colspan="2">template&lt;int N, typename F&gt; </td></tr>
+<tr class="memitem:a5fc55658d7ab5d3884cb36ab222d2cf3 template"><td class="memItemLeft">boost::leaf::result&lt; void &gt;&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1win32_1_1process.html#a5fc55658d7ab5d3884cb36ab222d2cf3">depicture_menu::win32::process::enum_process</a> (F const &amp;f) noexcept(noexcept(f(std::declval&lt; DWORD &gt;())))</td></tr>
+<tr class="memdesc:a5fc55658d7ab5d3884cb36ab222d2cf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">enum_process  <br /></td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">マクロ定義詳解</h2>
+<a id="a37c27b684717258bb173e51dd74efe98" name="a37c27b684717258bb173e51dd74efe98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37c27b684717258bb173e51dd74efe98">&#9670;&#160;</a></span>DPM_USE_SENDER_HEADER_IMPL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_USE_SENDER_HEADER_IMPL&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="win32__message__sender_8hpp_source.html">win32_message_sender.hpp</a> の <a class="el" href="win32__message__sender_8hpp_source.html#l00019">19</a> 行目に定義があります。</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_d26f0ed8b287a778d960ad2241e01057.html">src</a></li><li class="navelem"><a href="dir_003fac6060db6c769c73a65f2f6ae1cc.html">win32</a></li><li class="navelem"><a href="win32__message__sender_8hpp.html">win32_message_sender.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

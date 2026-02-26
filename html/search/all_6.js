@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['get_5finstance_0',['get_instance',['../classdepicture__menu_1_1singleton.html#ab3a8df96e817c8ccb1ab61434f90c416',1,'depicture_menu::singleton']]],
-  ['get_5fshared_5fptr_1',['get_shared_ptr',['../classdepicture__menu_1_1singleton.html#a8a969fa50c554ffddf66cc725a240ed1',1,'depicture_menu::singleton']]],
-  ['get_5fstruct_5fcore_5finfo_2',['get_struct_core_info',['../workaround_8cpp.html#a7e4b8c6d2c667777cb974db5a4a58466',1,'workaround.cpp']]],
-  ['get_5fstruct_5fvtbl_5fcore_5finfo_3',['get_struct_vtbl_core_info',['../workaround_8cpp.html#a77c881d4d2a3da499ae549e88d5e80aa',1,'workaround.cpp']]],
-  ['get_5fuser_5fstruct_4',['get_user_struct',['../workaround_8cpp.html#a2a0446805ddd380d959bbc5167c19a80',1,'workaround.cpp']]],
-  ['get_5fuser_5fstruct_5fvtbl_5',['get_user_struct_vtbl',['../workaround_8cpp.html#a2ab23a98b98cbf5a50730631f7b46f00',1,'workaround.cpp']]],
-  ['get_5fuser_5fstruct_5fvtbl_5fex_6',['get_user_struct_vtbl_ex',['../workaround_8cpp.html#a1503b2dfd832154cfcd32c771825d3b5',1,'workaround.cpp']]]
+  ['get_5fcurrent_5fthread_5findex_0',['get_current_thread_index',['../classdepicture__menu_1_1util_1_1worker__pool.html#a031faa16754300dd062028c0f741a3bf',1,'depicture_menu::util::worker_pool']]],
+  ['get_5ffield_5findex_1',['get_field_index',['../namespacedepicture__menu_1_1reflection_1_1detail__reflection.html#acf183d0f4dd4183a2334fe27a68f9b1e',1,'depicture_menu::reflection::detail_reflection::get_field_index()'],['../namespacedepicture__menu_1_1reflection.html#adb9faa46ece21b7d378d916f04923bbc',1,'depicture_menu::reflection::get_field_index()']]],
+  ['get_5finstance_2',['get_instance',['../classdepicture__menu_1_1singleton.html#ab3a8df96e817c8ccb1ab61434f90c416',1,'depicture_menu::singleton']]],
+  ['get_5fproc_5fhandle_5fptr_3',['get_proc_handle_ptr',['../namespacedepicture__menu_1_1win32_1_1process_1_1detail__process.html#a674c711e72c3486206612549bfa616f9',1,'depicture_menu::win32::process::detail_process']]],
+  ['get_5fshared_5fptr_4',['get_shared_ptr',['../classdepicture__menu_1_1singleton.html#a8a969fa50c554ffddf66cc725a240ed1',1,'depicture_menu::singleton']]],
+  ['get_5fthread_5fid_5',['get_thread_id',['../classdepicture__menu_1_1util_1_1worker__pool_1_1inner__worker.html#a1beb05de3daab667570659954b07825c',1,'depicture_menu::util::worker_pool::inner_worker']]],
+  ['get_5fwindow_5fthread_5fprocess_5fid_6',['get_window_thread_process_id',['../namespacedepicture__menu_1_1win32_1_1process.html#aa8fd81deb4c8ec67265637b08bd680bca01970321341d8c75ae2b497577965068',1,'depicture_menu::win32::process']]],
+  ['global_5fqueue_5f_7',['global_queue_',['../classdepicture__menu_1_1util_1_1worker__pool.html#a1fe403cb9ebce7cfae7cb8cdcd8ff640',1,'depicture_menu::util::worker_pool']]]
 ];
