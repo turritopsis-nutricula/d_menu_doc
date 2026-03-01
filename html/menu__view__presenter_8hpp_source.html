@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/src/core/presentation/change_view_model/menu_view_presenter.hpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('menu__view__presenter_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">menu_view_presenter.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="menu__view__presenter_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef SRC_CORE_PRESENTATION_CHANGE_MENU_VIEW_MENU_VIEW_PRESENTER_HPP_</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define SRC_CORE_PRESENTATION_CHANGE_MENU_VIEW_MENU_VIEW_PRESENTER_HPP_</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="menu__view__arg__holder_8hpp.html">core/application/cs_binding_factory/menu_view_arg_holder.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="config__view__model__interface_8hpp.html">core/usecase/config_view/interface/config_view_model_interface.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="hidden__menu__view_8hpp.html">core/usecase/menu_view/hidden_menu_view.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1presentations.html">depicture_menu::presentations</a></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1presentations_1_1menu__view__presenter.html">   10</a></span><span class="keyword">class </span><a class="code hl_function" href="classdepicture__menu_1_1presentations_1_1menu__view__presenter.html#a8f0fcb6fae23e689438e7f5dd7e45a8d">menu_view_presenter</a> : <span class="keyword">public</span> <a class="code hl_class" href="classdepicture__menu_1_1usecase_1_1config__changed__interface.html">usecase::config_changed_interface</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1presentations_1_1menu__view__presenter.html#aace7e72e2c9f91b9fa3a81be0651bd07">   13</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classdepicture__menu_1_1presentations_1_1menu__view__presenter.html#aace7e72e2c9f91b9fa3a81be0651bd07">click_handler_t</a> = std::function&lt;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        void( <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1menu.html#a2b51ff146c22769b74c23c37851fa801">domain::menu::menu_id</a>, <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">domain::actions::publisher_id</a> ) &gt;;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1presentations_1_1menu__view__presenter.html#a8f0fcb6fae23e689438e7f5dd7e45a8d">   17</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="classdepicture__menu_1_1presentations_1_1menu__view__presenter.html#a8f0fcb6fae23e689438e7f5dd7e45a8d">menu_view_presenter</a>( <a class="code hl_class" href="classdepicture__menu_1_1applications_1_1menu__view__arg__holder.html">applications::menu_view_arg_holder</a>&amp; h )</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        : <a class="code hl_variable" href="classdepicture__menu_1_1presentations_1_1menu__view__presenter.html#a06564b5662bd45fcb9957e9ca364b7fe">view_holder_</a>( h )</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    }</div>
+</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdepicture__menu_1_1presentations_1_1menu__view__presenter.html#a7e4294a6963d9e8c10bce17929ce960f">change_menu</a>(</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1usecase_1_1dto.html#ac2aaed68a427137178bb5a0a838ba75e">usecase::dto::menu_changed_notify</a>                 n,</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html">domain::menu::radialmenu</a>                          m,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <a class="code hl_class" href="structdepicture__menu_1_1usecase_1_1query__base.html">usecase::query_base&lt; domain::actions::publisher &gt;</a> <a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#a2648ae303efc504d6b2eed8fb18647d5">act_q</a> = { },</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <a class="code hl_class" href="structdepicture__menu_1_1usecase_1_1query__base.html">usecase::query_base&lt; domain::commands::command &gt;</a>  <a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#abf2030589b3b577452c80d56fd99e761">com_q</a> = { }</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    ) <span class="keyword">const</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1presentations_1_1menu__view__presenter.html#ad314c75fdf63711ed02043f6ac720fd8">   30</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1presentations_1_1menu__view__presenter.html#ad314c75fdf63711ed02043f6ac720fd8">change_action</a>(</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1usecase_1_1dto.html#a9073a2c3d8d98bd2271898ee876c7fee">usecase::dto::action_changed_notify</a>,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1actions_1_1v2_1_1publisher.html">domain::actions::publisher</a>,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <a class="code hl_class" href="structdepicture__menu_1_1usecase_1_1query__base.html">usecase::query_base&lt; domain::commands::command &gt;</a> q = { }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    ) <span class="keyword">const</span> <span class="keyword">override</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
+</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00039" data-start="{" data-end="}">
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1presentations_1_1menu__view__presenter.html#a7bdf60b84fdb381ae702078504fa51c9">   39</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1presentations_1_1menu__view__presenter.html#a7bdf60b84fdb381ae702078504fa51c9">change_command</a>(</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1usecase_1_1dto.html#a514ab62cb0fe259fdb9810eb40ce18af">usecase::dto::command_changed_notify</a>, <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1commands_1_1command.html">domain::commands::command</a></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    )<span class="keyword"> const override</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
+</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00046" data-start="{" data-end="}">
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1presentations_1_1menu__view__presenter.html#a062ce34c36b303a331776f745cbb1535">   46</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1presentations_1_1menu__view__presenter.html#a062ce34c36b303a331776f745cbb1535">change_trigger</a>(</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1usecase_1_1dto.html#a5d64ad1a61eb3ad2512237a453caea14">usecase::dto::trigger_changed_notify</a>,</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1triggers_1_1global__key__input__trigger.html">domain::triggers::global_key_input_trigger</a></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    )<span class="keyword"> const override</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
+</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1presentations_1_1menu__view__presenter.html#a224314d925b4b4393439a7684b9e90e3">   54</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1presentations_1_1menu__view__presenter.html#a224314d925b4b4393439a7684b9e90e3">reset_view</a>( )<span class="keyword"> const override</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    }</div>
+</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="comment">//----------------------------------------</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="comment">// menu_creatable concept</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdepicture__menu_1_1presentations_1_1menu__view__presenter.html#afe97162d40d1595753ccb38f9ac96ad6">create_menu</a>(</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html">domain::menu::radialmenu</a> <span class="keyword">const</span>,</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="comment">//      click_handler_t,</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordtype">int</span> x_view_codi,</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordtype">int</span> y_view_codi</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    ) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdepicture__menu_1_1presentations_1_1menu__view__presenter.html#ad0daf6c0be624b74a0f63bcbc3de10fe">close_menu</a>( <a class="code hl_struct" href="structdepicture__menu_1_1usecase_1_1menu__view_1_1dto_1_1close__menu__dto.html">usecase::menu_view::dto::close_menu_dto</a> <span class="keyword">const</span>&amp; <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> ) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1presentations_1_1menu__view__presenter.html#a06564b5662bd45fcb9957e9ca364b7fe">   70</a></span>    <a class="code hl_class" href="classdepicture__menu_1_1applications_1_1menu__view__arg__holder.html">applications::menu_view_arg_holder</a>&amp; <a class="code hl_variable" href="classdepicture__menu_1_1presentations_1_1menu__view__presenter.html#a06564b5662bd45fcb9957e9ca364b7fe">view_holder_</a>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="comment">//  std::weak_ptr&lt; cs_binding::RadialMenuArg &gt; view_ref_;</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>};</div>
+</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}    <span class="comment">// namespace depicture_menu::presentations</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_CORE_PRESENTATION_CHANGE_MENU_VIEW_MENU_VIEW_PRESENTER_HPP_</span></div>
+<div class="ttc" id="a_test_config_view_presenter_8cpp_html_a2648ae303efc504d6b2eed8fb18647d5"><div class="ttname"><a href="_test_config_view_presenter_8cpp.html#a2648ae303efc504d6b2eed8fb18647d5">act_q</a></div><div class="ttdeci">auto const act_q</div><div class="ttdef"><b>Definition</b> <a href="_test_config_view_presenter_8cpp_source.html#l00254">TestConfigViewPresenter.cpp:254</a></div></div>
+<div class="ttc" id="a_test_config_view_presenter_8cpp_html_abf2030589b3b577452c80d56fd99e761"><div class="ttname"><a href="_test_config_view_presenter_8cpp.html#abf2030589b3b577452c80d56fd99e761">com_q</a></div><div class="ttdeci">auto const com_q</div><div class="ttdef"><b>Definition</b> <a href="_test_config_view_presenter_8cpp_source.html#l00249">TestConfigViewPresenter.cpp:249</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1applications_1_1menu__view__arg__holder_html"><div class="ttname"><a href="classdepicture__menu_1_1applications_1_1menu__view__arg__holder.html">depicture_menu::applications::menu_view_arg_holder</a></div><div class="ttdef"><b>Definition</b> <a href="menu__view__arg__holder_8hpp_source.html#l00013">menu_view_arg_holder.hpp:14</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1actions_1_1v2_1_1publisher_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1actions_1_1v2_1_1publisher.html">depicture_menu::domain::actions::v2::publisher</a></div><div class="ttdef"><b>Definition</b> <a href="action_8hpp_source.html#l00205">action.hpp:207</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1commands_1_1command_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1commands_1_1command.html">depicture_menu::domain::commands::command</a></div><div class="ttdef"><b>Definition</b> <a href="command_8hpp_source.html#l00036">command.hpp:38</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1triggers_1_1global__key__input__trigger_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1triggers_1_1global__key__input__trigger.html">depicture_menu::domain::triggers::global_key_input_trigger</a></div><div class="ttdef"><b>Definition</b> <a href="trigger_8hpp_source.html#l00036">trigger.hpp:39</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1presentations_1_1menu__view__presenter_html_a062ce34c36b303a331776f745cbb1535"><div class="ttname"><a href="classdepicture__menu_1_1presentations_1_1menu__view__presenter.html#a062ce34c36b303a331776f745cbb1535">depicture_menu::presentations::menu_view_presenter::change_trigger</a></div><div class="ttdeci">void change_trigger(usecase::dto::trigger_changed_notify, domain::triggers::global_key_input_trigger) const override</div><div class="ttdef"><b>Definition</b> <a href="#l00046">menu_view_presenter.hpp:46</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1presentations_1_1menu__view__presenter_html_a06564b5662bd45fcb9957e9ca364b7fe"><div class="ttname"><a href="classdepicture__menu_1_1presentations_1_1menu__view__presenter.html#a06564b5662bd45fcb9957e9ca364b7fe">depicture_menu::presentations::menu_view_presenter::view_holder_</a></div><div class="ttdeci">applications::menu_view_arg_holder &amp; view_holder_</div><div class="ttdef"><b>Definition</b> <a href="#l00070">menu_view_presenter.hpp:70</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1presentations_1_1menu__view__presenter_html_a224314d925b4b4393439a7684b9e90e3"><div class="ttname"><a href="classdepicture__menu_1_1presentations_1_1menu__view__presenter.html#a224314d925b4b4393439a7684b9e90e3">depicture_menu::presentations::menu_view_presenter::reset_view</a></div><div class="ttdeci">void reset_view() const override</div><div class="ttdef"><b>Definition</b> <a href="#l00054">menu_view_presenter.hpp:54</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1presentations_1_1menu__view__presenter_html_a7bdf60b84fdb381ae702078504fa51c9"><div class="ttname"><a href="classdepicture__menu_1_1presentations_1_1menu__view__presenter.html#a7bdf60b84fdb381ae702078504fa51c9">depicture_menu::presentations::menu_view_presenter::change_command</a></div><div class="ttdeci">void change_command(usecase::dto::command_changed_notify, domain::commands::command) const override</div><div class="ttdef"><b>Definition</b> <a href="#l00039">menu_view_presenter.hpp:39</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1presentations_1_1menu__view__presenter_html_a7e4294a6963d9e8c10bce17929ce960f"><div class="ttname"><a href="classdepicture__menu_1_1presentations_1_1menu__view__presenter.html#a7e4294a6963d9e8c10bce17929ce960f">depicture_menu::presentations::menu_view_presenter::change_menu</a></div><div class="ttdeci">void change_menu(usecase::dto::menu_changed_notify n, domain::menu::radialmenu m, usecase::query_base&lt; domain::actions::publisher &gt; act_q={ }, usecase::query_base&lt; domain::commands::command &gt; com_q={ }) const override</div><div class="ttdef"><b>Definition</b> <a href="menu__view__presenter_8cpp_source.html#l00137">menu_view_presenter.cpp:137</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1presentations_1_1menu__view__presenter_html_a8f0fcb6fae23e689438e7f5dd7e45a8d"><div class="ttname"><a href="classdepicture__menu_1_1presentations_1_1menu__view__presenter.html#a8f0fcb6fae23e689438e7f5dd7e45a8d">depicture_menu::presentations::menu_view_presenter::menu_view_presenter</a></div><div class="ttdeci">menu_view_presenter(applications::menu_view_arg_holder &amp;h)</div><div class="ttdef"><b>Definition</b> <a href="#l00017">menu_view_presenter.hpp:17</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1presentations_1_1menu__view__presenter_html_aace7e72e2c9f91b9fa3a81be0651bd07"><div class="ttname"><a href="classdepicture__menu_1_1presentations_1_1menu__view__presenter.html#aace7e72e2c9f91b9fa3a81be0651bd07">depicture_menu::presentations::menu_view_presenter::click_handler_t</a></div><div class="ttdeci">std::function&lt; void(domain::menu::menu_id, domain::actions::publisher_id) &gt; click_handler_t</div><div class="ttdef"><b>Definition</b> <a href="#l00013">menu_view_presenter.hpp:13</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1presentations_1_1menu__view__presenter_html_ad0daf6c0be624b74a0f63bcbc3de10fe"><div class="ttname"><a href="classdepicture__menu_1_1presentations_1_1menu__view__presenter.html#ad0daf6c0be624b74a0f63bcbc3de10fe">depicture_menu::presentations::menu_view_presenter::close_menu</a></div><div class="ttdeci">void close_menu(usecase::menu_view::dto::close_menu_dto const &amp;d) const</div><div class="ttdef"><b>Definition</b> <a href="menu__view__presenter_8cpp_source.html#l00220">menu_view_presenter.cpp:220</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1presentations_1_1menu__view__presenter_html_ad314c75fdf63711ed02043f6ac720fd8"><div class="ttname"><a href="classdepicture__menu_1_1presentations_1_1menu__view__presenter.html#ad314c75fdf63711ed02043f6ac720fd8">depicture_menu::presentations::menu_view_presenter::change_action</a></div><div class="ttdeci">void change_action(usecase::dto::action_changed_notify, domain::actions::publisher, usecase::query_base&lt; domain::commands::command &gt; q={ }) const override</div><div class="ttdef"><b>Definition</b> <a href="#l00030">menu_view_presenter.hpp:30</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1presentations_1_1menu__view__presenter_html_afe97162d40d1595753ccb38f9ac96ad6"><div class="ttname"><a href="classdepicture__menu_1_1presentations_1_1menu__view__presenter.html#afe97162d40d1595753ccb38f9ac96ad6">depicture_menu::presentations::menu_view_presenter::create_menu</a></div><div class="ttdeci">void create_menu(domain::menu::radialmenu const, int x_view_codi, int y_view_codi) const</div><div class="ttdef"><b>Definition</b> <a href="menu__view__presenter_8cpp_source.html#l00173">menu_view_presenter.cpp:173</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1usecase_1_1config__changed__interface_html"><div class="ttname"><a href="classdepicture__menu_1_1usecase_1_1config__changed__interface.html">depicture_menu::usecase::config_changed_interface</a></div><div class="ttdef"><b>Definition</b> <a href="config__view__model__interface_8hpp_source.html#l00174">config_view_model_interface.hpp:178</a></div></div>
+<div class="ttc" id="aconfig__view__model__interface_8hpp_html"><div class="ttname"><a href="config__view__model__interface_8hpp.html">config_view_model_interface.hpp</a></div></div>
+<div class="ttc" id="ahidden__menu__view_8hpp_html"><div class="ttname"><a href="hidden__menu__view_8hpp.html">hidden_menu_view.hpp</a></div></div>
+<div class="ttc" id="amenu__view__arg__holder_8hpp_html"><div class="ttname"><a href="menu__view__arg__holder_8hpp.html">menu_view_arg_holder.hpp</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1actions_html_af913742220f232fcc0d0433f4e0da3f3"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">depicture_menu::domain::actions::publisher_id</a></div><div class="ttdeci">models::entity_id_base&lt; action_publisher_id_tag &gt; publisher_id</div><div class="ttdef"><b>Definition</b> <a href="action__ids_8hpp_source.html#l00017">action_ids.hpp:17</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1menu_html_a2b51ff146c22769b74c23c37851fa801"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1menu.html#a2b51ff146c22769b74c23c37851fa801">depicture_menu::domain::menu::menu_id</a></div><div class="ttdeci">models::entity_id_base&lt; detail_menu::menu_id_tag &gt; menu_id</div><div class="ttdef"><b>Definition</b> <a href="menu__ids_8hpp_source.html#l00022">menu_ids.hpp:22</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_html"><div class="ttname"><a href="namespacedepicture__menu_1_1domain.html">depicture_menu::domain</a></div><div class="ttdef"><b>Definition</b> <a href="colors_8hpp_source.html#l00006">colors.hpp:7</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1presentations_html"><div class="ttname"><a href="namespacedepicture__menu_1_1presentations.html">depicture_menu::presentations</a></div><div class="ttdef"><b>Definition</b> <a href="app__option__window__presenter_8hpp_source.html#l00005">app_option_window_presenter.hpp:6</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1dto_html_a514ab62cb0fe259fdb9810eb40ce18af"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1dto.html#a514ab62cb0fe259fdb9810eb40ce18af">depicture_menu::usecase::dto::command_changed_notify</a></div><div class="ttdeci">view_changed_notify_with_kind&lt; domain_update_kind::commands &gt; command_changed_notify</div><div class="ttdef"><b>Definition</b> <a href="domains__notify_8hpp_source.html#l00123">domains_notify.hpp:123</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1dto_html_a5d64ad1a61eb3ad2512237a453caea14"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1dto.html#a5d64ad1a61eb3ad2512237a453caea14">depicture_menu::usecase::dto::trigger_changed_notify</a></div><div class="ttdeci">view_changed_notify_with_kind&lt; domain_update_kind::trigger &gt; trigger_changed_notify</div><div class="ttdef"><b>Definition</b> <a href="domains__notify_8hpp_source.html#l00124">domains_notify.hpp:124</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1dto_html_a9073a2c3d8d98bd2271898ee876c7fee"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1dto.html#a9073a2c3d8d98bd2271898ee876c7fee">depicture_menu::usecase::dto::action_changed_notify</a></div><div class="ttdeci">view_changed_notify_with_kind&lt; domain_update_kind::actions &gt; action_changed_notify</div><div class="ttdef"><b>Definition</b> <a href="domains__notify_8hpp_source.html#l00122">domains_notify.hpp:122</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1dto_html_ac2aaed68a427137178bb5a0a838ba75e"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1dto.html#ac2aaed68a427137178bb5a0a838ba75e">depicture_menu::usecase::dto::menu_changed_notify</a></div><div class="ttdeci">view_changed_notify_with_kind&lt; domain_update_kind::menus &gt; menu_changed_notify</div><div class="ttdef"><b>Definition</b> <a href="domains__notify_8hpp_source.html#l00121">domains_notify.hpp:121</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1radialmenu_html"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html">depicture_menu::domain::menu::radialmenu</a></div><div class="ttdef"><b>Definition</b> <a href="radialmenu_8hpp_source.html#l00027">radialmenu.hpp:28</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1usecase_1_1menu__view_1_1dto_1_1close__menu__dto_html"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1menu__view_1_1dto_1_1close__menu__dto.html">depicture_menu::usecase::menu_view::dto::close_menu_dto</a></div><div class="ttdef"><b>Definition</b> <a href="menu__view__dto_8hpp_source.html#l00008">menu_view_dto.hpp:9</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1usecase_1_1query__base_html"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1query__base.html">depicture_menu::usecase::query_base&lt; domain::actions::publisher &gt;</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_d26f0ed8b287a778d960ad2241e01057.html">src</a></li><li class="navelem"><a href="dir_eb29242f55d2489f6c4d008365c270b7.html">core</a></li><li class="navelem"><a href="dir_b08448ab66980ac237b9eba210eedb4a.html">presentation</a></li><li class="navelem"><a href="dir_a0b7b12a5c2e1c9a0fe6bad7fb6267eb.html">change_view_model</a></li><li class="navelem"><a href="menu__view__presenter_8hpp.html">menu_view_presenter.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+var structdepicture__menu_1_1domain_1_1actions_1_1buildin_1_1detail__actions__data_1_1shellexecute__action__parameter__data =
+[
+    [ "exe_path_", "structdepicture__menu_1_1domain_1_1actions_1_1buildin_1_1detail__actions__data_1_1shellexecute__action__parameter__data.html#aeb4e19ac8962bad123e2e07a67d63ccc", null ],
+    [ "option_", "structdepicture__menu_1_1domain_1_1actions_1_1buildin_1_1detail__actions__data_1_1shellexecute__action__parameter__data.html#a2531a3dc509bc2bf4dcb32255889630b", null ]
+];

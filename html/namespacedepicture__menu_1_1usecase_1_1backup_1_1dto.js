@@ -1,0 +1,25 @@
+var namespacedepicture__menu_1_1usecase_1_1backup_1_1dto =
+[
+    [ "color_data", "structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1color__data.html", "structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1color__data" ],
+    [ "menu_item_data", "structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1menu__item__data.html", "structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1menu__item__data" ],
+    [ "menu_data", "structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1menu__data.html", "structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1menu__data" ],
+    [ "action_data", "structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1action__data.html", "structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1action__data" ],
+    [ "command_parameter_data", "structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1command__parameter__data.html", "structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1command__parameter__data" ],
+    [ "command_data", "structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1command__data.html", "structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1command__data" ],
+    [ "trigger_data", "structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1trigger__data.html", "structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1trigger__data" ],
+    [ "config_data", "structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1config__data.html", "structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1config__data" ],
+    [ "option_data", "structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1option__data.html", "structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1option__data" ],
+    [ "backup_data_data", "structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1backup__data__data.html", "structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1backup__data__data" ],
+    [ "backup_data", "structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1backup__data.html", "structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1backup__data" ],
+    [ "operator==", "namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html#a876314980c3a034b752e469d92712ab3", null ],
+    [ "operator==", "namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html#a0a99723ff9dfcf20374dc12783dd71b3", null ],
+    [ "operator==", "namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html#aa466f4f3480ae098879e06edc56e6983", null ],
+    [ "operator==", "namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html#a8a09480e4154403484b25297c90a4503", null ],
+    [ "operator==", "namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html#a25a1f2ad70ca14329979d9f5474f47e0", null ],
+    [ "operator==", "namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html#ae98a40f2fbfb07d995fbda6f7c715279", null ],
+    [ "operator==", "namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html#aad5876cb95047f14f516cfa93e669b30", null ],
+    [ "operator==", "namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html#ab2ff50af508b31e687f23f904dc8d176", null ],
+    [ "operator==", "namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html#abd7f6790e249c8cb4ae2cda43aef69d3", null ],
+    [ "operator==", "namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html#a1d6b85544ff96d20d4c5bf18f16fe9a7", null ],
+    [ "operator==", "namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html#afdeba99279d9b0727b499c1f065880a5", null ]
+];

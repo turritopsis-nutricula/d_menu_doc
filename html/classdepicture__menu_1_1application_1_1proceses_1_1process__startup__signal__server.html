@@ -1,0 +1,610 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu::application::proceses::process_startup_signal_server クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('classdepicture__menu_1_1application_1_1proceses_1_1process__startup__signal__server.html','','classdepicture__menu_1_1application_1_1proceses_1_1process__startup__signal__server-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">depicture_menu::application::proceses::process_startup_signal_server クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="process__startup__signal_8hpp_source.html">process_startup_signal.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a4941dcadda5c72df7371d70a5f9294a7" id="r_a4941dcadda5c72df7371d70a5f9294a7"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a4941dcadda5c72df7371d70a5f9294a7">state_t</a> = <a class="el" href="classdepicture__menu_1_1application_1_1proceses_1_1signal__state.html">signal_state</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:aee99d7c81e2fb2d94f8c937959196850" id="r_aee99d7c81e2fb2d94f8c937959196850"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aee99d7c81e2fb2d94f8c937959196850">process_startup_signal_server</a> (std::string ipc_name)</td></tr>
+<tr class="memitem:aaa2eca80426e378867650d335afd7a12" id="r_aaa2eca80426e378867650d335afd7a12"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aaa2eca80426e378867650d335afd7a12">process_startup_signal_server</a> (const process_startup_signal_server &amp;)=delete</td></tr>
+<tr class="memitem:af8ebc36a4924709e4b8b6cfa8c4ae4fd" id="r_af8ebc36a4924709e4b8b6cfa8c4ae4fd"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#af8ebc36a4924709e4b8b6cfa8c4ae4fd">process_startup_signal_server</a> (process_startup_signal_server &amp;&amp;)=delete</td></tr>
+<tr class="memitem:a5b5c1192929fcaec8d84dc496f83c896" id="r_a5b5c1192929fcaec8d84dc496f83c896"><td class="memItemLeft"><a class="el" href="#aee99d7c81e2fb2d94f8c937959196850">process_startup_signal_server</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a5b5c1192929fcaec8d84dc496f83c896">operator=</a> (const <a class="el" href="#aee99d7c81e2fb2d94f8c937959196850">process_startup_signal_server</a> &amp;)=delete</td></tr>
+<tr class="memitem:a071be626ec8be4a1530c326fbbd2516c" id="r_a071be626ec8be4a1530c326fbbd2516c"><td class="memItemLeft"><a class="el" href="#aee99d7c81e2fb2d94f8c937959196850">process_startup_signal_server</a> &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a071be626ec8be4a1530c326fbbd2516c">operator=</a> (<a class="el" href="#aee99d7c81e2fb2d94f8c937959196850">process_startup_signal_server</a> &amp;&amp;)=delete</td></tr>
+<tr class="memitem:ac1b6a49c020a98f54ef9189c04fd4b81" id="r_ac1b6a49c020a98f54ef9189c04fd4b81"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ac1b6a49c020a98f54ef9189c04fd4b81">is_open</a> () const</td></tr>
+<tr class="memitem:a6dd4788c0eb61a5899041a6d243b9968" id="r_a6dd4788c0eb61a5899041a6d243b9968"><td class="memItemLeft">boost::signals2::connection&#160;</td><td class="memItemRight"><a class="el" href="#a6dd4788c0eb61a5899041a6d243b9968">signal_subscribe</a> (std::function&lt; void(<a class="el" href="structdepicture__menu_1_1application_1_1proceses_1_1process__signal.html">process_signal</a> const &amp;) &gt; f)</td></tr>
+<tr class="memitem:a7aaf6e02fc29ec17a896dab1d104dda5" id="r_a7aaf6e02fc29ec17a896dab1d104dda5"><td class="memItemLeft">boost::signals2::connection&#160;</td><td class="memItemRight"><a class="el" href="#a7aaf6e02fc29ec17a896dab1d104dda5">subscribe_signal</a> (std::function&lt; void(<a class="el" href="structdepicture__menu_1_1application_1_1proceses_1_1process__signal.html">process_signal</a> const &amp;) &gt; f)</td></tr>
+<tr class="memitem:a3f9647e82941023d3adc0731030b3fbd" id="r_a3f9647e82941023d3adc0731030b3fbd"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a3f9647e82941023d3adc0731030b3fbd">startable</a> () const noexcept</td></tr>
+<tr class="memitem:a782823bfc7a2f50e8ea1dcc57975d21f" id="r_a782823bfc7a2f50e8ea1dcc57975d21f"><td class="memItemLeft">std::shared_ptr&lt; <a class="el" href="#a4941dcadda5c72df7371d70a5f9294a7">state_t</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a782823bfc7a2f50e8ea1dcc57975d21f">server_start</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:afe04bbde0522bb549621353e5d493496" id="r_afe04bbde0522bb549621353e5d493496"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#afe04bbde0522bb549621353e5d493496">ipc_name_</a></td></tr>
+<tr class="memitem:ae28c7dc46803e69786afd9001a7dc620" id="r_ae28c7dc46803e69786afd9001a7dc620"><td class="memItemLeft">std::shared_ptr&lt; boost::signals2::signal&lt; void(<a class="el" href="structdepicture__menu_1_1application_1_1proceses_1_1process__signal.html">process_signal</a> const  &amp;) &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ae28c7dc46803e69786afd9001a7dc620">receive_signal_</a></td></tr>
+<tr class="memitem:a54bb080acf3da5353b0c3ceafb6f2bb4" id="r_a54bb080acf3da5353b0c3ceafb6f2bb4"><td class="memItemLeft">std::weak_ptr&lt; <a class="el" href="#a4941dcadda5c72df7371d70a5f9294a7">state_t</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a54bb080acf3da5353b0c3ceafb6f2bb4">state_ptr_</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+静的非公開変数類</h2></td></tr>
+<tr class="memitem:adcd728bdb1ff2ab93b2fc48a3566c105" id="r_adcd728bdb1ff2ab93b2fc48a3566c105"><td class="memItemLeft">static constexpr int&#160;</td><td class="memItemRight"><a class="el" href="#adcd728bdb1ff2ab93b2fc48a3566c105">max_msg_count</a> = 256</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock">
+<p class="definition"> <a class="el" href="process__startup__signal_8hpp_source.html">process_startup_signal.hpp</a> の <a class="el" href="process__startup__signal_8hpp_source.html#l00246">246</a> 行目に定義があります。</p>
+</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">型定義メンバ詳解</h2>
+<a id="a4941dcadda5c72df7371d70a5f9294a7" name="a4941dcadda5c72df7371d70a5f9294a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4941dcadda5c72df7371d70a5f9294a7">&#9670;&#160;</a></span>state_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a4941dcadda5c72df7371d70a5f9294a7">depicture_menu::application::proceses::process_startup_signal_server::state_t</a> = <a class="el" href="classdepicture__menu_1_1application_1_1proceses_1_1signal__state.html">signal_state</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="process__startup__signal_8hpp_source.html">process_startup_signal.hpp</a> の <a class="el" href="process__startup__signal_8hpp_source.html#l00250">250</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">構築子と解体子</h2>
+<a id="aee99d7c81e2fb2d94f8c937959196850" name="aee99d7c81e2fb2d94f8c937959196850"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee99d7c81e2fb2d94f8c937959196850">&#9670;&#160;</a></span>process_startup_signal_server() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">depicture_menu::application::proceses::process_startup_signal_server::process_startup_signal_server </td>
+          <td>(</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>ipc_name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="process__startup__signal_8hpp_source.html">process_startup_signal.hpp</a> の <a class="el" href="process__startup__signal_8hpp_source.html#l00263">263</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="process__startup__signal_8hpp_source.html#l00254">ipc_name_</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="#a5b5c1192929fcaec8d84dc496f83c896">operator=()</a>, <a class="el" href="#a071be626ec8be4a1530c326fbbd2516c">operator=()</a>, <a class="el" href="#aaa2eca80426e378867650d335afd7a12">process_startup_signal_server()</a>, <a class="el" href="#af8ebc36a4924709e4b8b6cfa8c4ae4fd">process_startup_signal_server()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1application_1_1proceses_1_1process__startup__signal__server_aee99d7c81e2fb2d94f8c937959196850_icgraph.svg" width="472" height="350"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aaa2eca80426e378867650d335afd7a12" name="aaa2eca80426e378867650d335afd7a12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa2eca80426e378867650d335afd7a12">&#9670;&#160;</a></span>process_startup_signal_server() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">depicture_menu::application::proceses::process_startup_signal_server::process_startup_signal_server </td>
+          <td>(</td>
+          <td class="paramtype">const process_startup_signal_server &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">参照先 <a class="el" href="process__startup__signal_8hpp_source.html#l00263">process_startup_signal_server()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1application_1_1proceses_1_1process__startup__signal__server_aaa2eca80426e378867650d335afd7a12_cgraph.svg" width="472" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="af8ebc36a4924709e4b8b6cfa8c4ae4fd" name="af8ebc36a4924709e4b8b6cfa8c4ae4fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8ebc36a4924709e4b8b6cfa8c4ae4fd">&#9670;&#160;</a></span>process_startup_signal_server() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">depicture_menu::application::proceses::process_startup_signal_server::process_startup_signal_server </td>
+          <td>(</td>
+          <td class="paramtype">process_startup_signal_server &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">参照先 <a class="el" href="process__startup__signal_8hpp_source.html#l00263">process_startup_signal_server()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1application_1_1proceses_1_1process__startup__signal__server_af8ebc36a4924709e4b8b6cfa8c4ae4fd_cgraph.svg" width="472" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="ac1b6a49c020a98f54ef9189c04fd4b81" name="ac1b6a49c020a98f54ef9189c04fd4b81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1b6a49c020a98f54ef9189c04fd4b81">&#9670;&#160;</a></span>is_open()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool depicture_menu::application::proceses::process_startup_signal_server::is_open </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="process__startup__signal_8hpp_source.html">process_startup_signal.hpp</a> の <a class="el" href="process__startup__signal_8hpp_source.html#l00279">279</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="process__startup__signal_8hpp_source.html#l00254">ipc_name_</a>, <a class="el" href="process__startup__signal_8hpp_source.html#l00279">is_open()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="process__startup__signal_8hpp_source.html#l00279">is_open()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1application_1_1proceses_1_1process__startup__signal__server_ac1b6a49c020a98f54ef9189c04fd4b81_cgraph.svg" width="195" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1application_1_1proceses_1_1process__startup__signal__server_ac1b6a49c020a98f54ef9189c04fd4b81_icgraph.svg" width="195" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a5b5c1192929fcaec8d84dc496f83c896" name="a5b5c1192929fcaec8d84dc496f83c896"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b5c1192929fcaec8d84dc496f83c896">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#aee99d7c81e2fb2d94f8c937959196850">process_startup_signal_server</a> &amp; depicture_menu::application::proceses::process_startup_signal_server::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="#aee99d7c81e2fb2d94f8c937959196850">process_startup_signal_server</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">参照先 <a class="el" href="process__startup__signal_8hpp_source.html#l00263">process_startup_signal_server()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1application_1_1proceses_1_1process__startup__signal__server_a5b5c1192929fcaec8d84dc496f83c896_cgraph.svg" width="448" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a071be626ec8be4a1530c326fbbd2516c" name="a071be626ec8be4a1530c326fbbd2516c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a071be626ec8be4a1530c326fbbd2516c">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#aee99d7c81e2fb2d94f8c937959196850">process_startup_signal_server</a> &amp; depicture_menu::application::proceses::process_startup_signal_server::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aee99d7c81e2fb2d94f8c937959196850">process_startup_signal_server</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel delete">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">参照先 <a class="el" href="process__startup__signal_8hpp_source.html#l00263">process_startup_signal_server()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1application_1_1proceses_1_1process__startup__signal__server_a071be626ec8be4a1530c326fbbd2516c_cgraph.svg" width="448" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a782823bfc7a2f50e8ea1dcc57975d21f" name="a782823bfc7a2f50e8ea1dcc57975d21f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a782823bfc7a2f50e8ea1dcc57975d21f">&#9670;&#160;</a></span>server_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="#a4941dcadda5c72df7371d70a5f9294a7">state_t</a> &gt; depicture_menu::application::proceses::process_startup_signal_server::server_start </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="process__startup__signal_8hpp_source.html">process_startup_signal.hpp</a> の <a class="el" href="process__startup__signal_8hpp_source.html#l00316">316</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="test___test_list___unmanaged_access_8cpp_source.html#l00010">buffer</a>, <a class="el" href="process__startup__signal_8hpp_source.html#l00254">ipc_name_</a>, <a class="el" href="process__startup__signal_8hpp_source.html#l00253">max_msg_count</a>, <a class="el" href="process__startup__signal_8hpp_source.html#l00257">receive_signal_</a>, <a class="el" href="process__startup__signal_8hpp_source.html#l00309">startable()</a>, <a class="el" href="process__startup__signal_8hpp_source.html#l00260">state_ptr_</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1application_1_1proceses_1_1process__startup__signal__server_a782823bfc7a2f50e8ea1dcc57975d21f_cgraph.svg" width="426" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a6dd4788c0eb61a5899041a6d243b9968" name="a6dd4788c0eb61a5899041a6d243b9968"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dd4788c0eb61a5899041a6d243b9968">&#9670;&#160;</a></span>signal_subscribe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::signals2::connection depicture_menu::application::proceses::process_startup_signal_server::signal_subscribe </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="structdepicture__menu_1_1application_1_1proceses_1_1process__signal.html">process_signal</a> const &amp;) &gt;</td>          <td class="paramname"><span class="paramname"><em>f</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="process__startup__signal_8hpp_source.html">process_startup_signal.hpp</a> の <a class="el" href="process__startup__signal_8hpp_source.html#l00298">298</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="process__startup__signal_8hpp_source.html#l00257">receive_signal_</a>.</p>
+
+</div>
+</div>
+<a id="a3f9647e82941023d3adc0731030b3fbd" name="a3f9647e82941023d3adc0731030b3fbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f9647e82941023d3adc0731030b3fbd">&#9670;&#160;</a></span>startable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool depicture_menu::application::proceses::process_startup_signal_server::startable </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel noexcept">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="process__startup__signal_8hpp_source.html">process_startup_signal.hpp</a> の <a class="el" href="process__startup__signal_8hpp_source.html#l00309">309</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="process__startup__signal_8hpp_source.html#l00260">state_ptr_</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="process__startup__signal_8hpp_source.html#l00316">server_start()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1application_1_1proceses_1_1process__startup__signal__server_a3f9647e82941023d3adc0731030b3fbd_icgraph.svg" width="426" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a7aaf6e02fc29ec17a896dab1d104dda5" name="a7aaf6e02fc29ec17a896dab1d104dda5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7aaf6e02fc29ec17a896dab1d104dda5">&#9670;&#160;</a></span>subscribe_signal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::signals2::connection depicture_menu::application::proceses::process_startup_signal_server::subscribe_signal </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="structdepicture__menu_1_1application_1_1proceses_1_1process__signal.html">process_signal</a> const &amp;) &gt;</td>          <td class="paramname"><span class="paramname"><em>f</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="process__startup__signal_8hpp_source.html">process_startup_signal.hpp</a> の <a class="el" href="process__startup__signal_8hpp_source.html#l00303">303</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="process__startup__signal_8hpp_source.html#l00257">receive_signal_</a>.</p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">メンバ詳解</h2>
+<a id="afe04bbde0522bb549621353e5d493496" name="afe04bbde0522bb549621353e5d493496"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe04bbde0522bb549621353e5d493496">&#9670;&#160;</a></span>ipc_name_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string depicture_menu::application::proceses::process_startup_signal_server::ipc_name_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="process__startup__signal_8hpp_source.html">process_startup_signal.hpp</a> の <a class="el" href="process__startup__signal_8hpp_source.html#l00254">254</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="process__startup__signal_8hpp_source.html#l00279">is_open()</a>, <a class="el" href="process__startup__signal_8hpp_source.html#l00263">process_startup_signal_server()</a>, <a class="el" href="process__startup__signal_8hpp_source.html#l00316">server_start()</a>.</p>
+
+</div>
+</div>
+<a id="adcd728bdb1ff2ab93b2fc48a3566c105" name="adcd728bdb1ff2ab93b2fc48a3566c105"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcd728bdb1ff2ab93b2fc48a3566c105">&#9670;&#160;</a></span>max_msg_count</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int depicture_menu::application::proceses::process_startup_signal_server::max_msg_count = 256</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel constexpr">constexpr</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="process__startup__signal_8hpp_source.html">process_startup_signal.hpp</a> の <a class="el" href="process__startup__signal_8hpp_source.html#l00253">253</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="process__startup__signal_8hpp_source.html#l00316">server_start()</a>.</p>
+
+</div>
+</div>
+<a id="ae28c7dc46803e69786afd9001a7dc620" name="ae28c7dc46803e69786afd9001a7dc620"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae28c7dc46803e69786afd9001a7dc620">&#9670;&#160;</a></span>receive_signal_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; boost::signals2::signal&lt; void( <a class="el" href="structdepicture__menu_1_1application_1_1proceses_1_1process__signal.html">process_signal</a> const&amp; ) &gt; &gt; depicture_menu::application::proceses::process_startup_signal_server::receive_signal_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>初期値:</b><div class="fragment"><div class="line">    = std::make_shared&lt;</div>
+<div class="line">boost::signals2::signal&lt; void( <a class="code hl_struct" href="structdepicture__menu_1_1application_1_1proceses_1_1process__signal.html">process_signal</a> <span class="keyword">const</span>&amp; ) &gt; &gt;( )</div>
+<div class="ttc" id="astructdepicture__menu_1_1application_1_1proceses_1_1process__signal_html"><div class="ttname"><a href="structdepicture__menu_1_1application_1_1proceses_1_1process__signal.html">depicture_menu::application::proceses::process_signal</a></div><div class="ttdef"><b>Definition</b> <a href="process__startup__signal_8hpp_source.html#l00025">process_startup_signal.hpp:26</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="process__startup__signal_8hpp_source.html">process_startup_signal.hpp</a> の <a class="el" href="process__startup__signal_8hpp_source.html#l00257">257</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="process__startup__signal_8hpp_source.html#l00316">server_start()</a>, <a class="el" href="process__startup__signal_8hpp_source.html#l00298">signal_subscribe()</a>, <a class="el" href="process__startup__signal_8hpp_source.html#l00303">subscribe_signal()</a>.</p>
+
+</div>
+</div>
+<a id="a54bb080acf3da5353b0c3ceafb6f2bb4" name="a54bb080acf3da5353b0c3ceafb6f2bb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54bb080acf3da5353b0c3ceafb6f2bb4">&#9670;&#160;</a></span>state_ptr_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::weak_ptr&lt; <a class="el" href="#a4941dcadda5c72df7371d70a5f9294a7">state_t</a> &gt; depicture_menu::application::proceses::process_startup_signal_server::state_ptr_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="process__startup__signal_8hpp_source.html">process_startup_signal.hpp</a> の <a class="el" href="process__startup__signal_8hpp_source.html#l00260">260</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="process__startup__signal_8hpp_source.html#l00316">server_start()</a>, <a class="el" href="process__startup__signal_8hpp_source.html#l00309">startable()</a>.</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>depicture_menu/src/core/application/<a class="el" href="process__startup__signal_8hpp_source.html">process_startup_signal.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespacedepicture__menu.html">depicture_menu</a></li><li class="navelem"><a href="namespacedepicture__menu_1_1application.html">application</a></li><li class="navelem"><a href="namespacedepicture__menu_1_1application_1_1proceses.html">proceses</a></li><li class="navelem"><a href="classdepicture__menu_1_1application_1_1proceses_1_1process__startup__signal__server.html">process_startup_signal_server</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

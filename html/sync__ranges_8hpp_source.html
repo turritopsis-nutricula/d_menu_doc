@@ -152,12 +152,12 @@ $(function(){initNavTree('sync__ranges_8hpp_source.html','',''); });
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    {</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keyword">auto</span> iter = std::ranges::remove_if(</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            dist,</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            [ &amp;sample, comp_expr ]( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; d )</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            [ &amp;sample, comp_expr ]( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> )</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            {</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                <span class="keywordflow">return</span> std::ranges::none_of(</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                    sample,</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                    [ &amp;d, &amp;comp_expr ]( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; j )</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                    { <span class="keywordflow">return</span> comp_expr( j, d ); }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                    [ &amp;<a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>, &amp;comp_expr ]( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; j )</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                    { <span class="keywordflow">return</span> comp_expr( j, <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> ); }</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                );</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            }</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        );</div>
@@ -169,7 +169,7 @@ $(function(){initNavTree('sync__ranges_8hpp_source.html','',''); });
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    {</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keyword">auto</span> iter = std::ranges::find_if(</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            dist,</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            [ &amp;comp_expr, &amp;s ]( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; d ) { <span class="keywordflow">return</span> comp_expr( s, d ); }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            [ &amp;comp_expr, &amp;s ]( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> ) { <span class="keywordflow">return</span> comp_expr( s, <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> ); }</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        );</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keywordflow">if</span> ( iter == dist.end( ) )</div>
@@ -224,6 +224,7 @@ $(function(){initNavTree('sync__ranges_8hpp_source.html','',''); });
 </div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>}    <span class="comment">// namespace depicture_menu::util</span></div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_UTILITY_SYNC_RANGES_HPP_</span></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_html"><div class="ttname"><a href="namespacedepicture__menu_1_1domain.html">depicture_menu::domain</a></div><div class="ttdef"><b>Definition</b> <a href="colors_8hpp_source.html#l00006">colors.hpp:7</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1util_1_1ranges_html"><div class="ttname"><a href="namespacedepicture__menu_1_1util_1_1ranges.html">depicture_menu::util::ranges</a></div><div class="ttdef"><b>Definition</b> <a href="#l00010">sync_ranges.hpp:11</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1util_1_1ranges_html_ad6b0437e683382b7b816bcd9c4d7f08b"><div class="ttname"><a href="namespacedepicture__menu_1_1util_1_1ranges.html#ad6b0437e683382b7b816bcd9c4d7f08b">depicture_menu::util::ranges::sync_ranges</a></div><div class="ttdeci">void sync_ranges(Source const &amp;sample, Dist &amp;dist, Comp comp_expr, Dele on_erase, Generator gen, Sync sync_expr)</div><div class="ttdef"><b>Definition</b> <a href="#l00045">sync_ranges.hpp:45</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1util_html"><div class="ttname"><a href="namespacedepicture__menu_1_1util.html">depicture_menu::util</a></div><div class="ttdef"><b>Definition</b> <a href="constexpr__string_8hpp_source.html#l00012">constexpr_string.hpp:13</a></div></div>

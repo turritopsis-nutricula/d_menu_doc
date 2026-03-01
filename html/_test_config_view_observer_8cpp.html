@@ -1,0 +1,451 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/test/core/cs_binding/observer/TestConfigViewObserver.cpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('_test_config_view_observer_8cpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">TestConfigViewObserver.cpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;config.hpp&quot;</code><br />
+<code>#include &lt;boost/test/data/test_case.hpp&gt;</code><br />
+<code>#include &lt;boost/test/unit_test.hpp&gt;</code><br />
+<code>#include &quot;<a class="el" href="configview__observer_8hpp_source.html">core/cs_binding/observer/configview_observer.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_config_arg_8hpp_source.html">core/cs_binding/ConfigArg.hpp</a>&quot;</code><br />
+<code>#include &lt;turtle/mock.hpp&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+TestConfigViewObserver.cpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="_test_config_view_observer_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+<p><a href="_test_config_view_observer_8cpp_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a139f00d2466d591f60b8d6a73c8273f1" id="r_a139f00d2466d591f60b8d6a73c8273f1"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a139f00d2466d591f60b8d6a73c8273f1">BOOST_TEST_DYN_LINK</a></td></tr>
+<tr class="memitem:ab340a5e76af466a5f20ec5500d30a80b" id="r_ab340a5e76af466a5f20ec5500d30a80b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab340a5e76af466a5f20ec5500d30a80b">BOOST_TEST_MAIN</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:aa4c47896f56d1d0c4770f32793166b69" id="r_aa4c47896f56d1d0c4770f32793166b69"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#aa4c47896f56d1d0c4770f32793166b69">event_id_t</a> = boost::uuids::uuid</td></tr>
+<tr class="memitem:ab554387a5364d647fc260eb0429fa949" id="r_ab554387a5364d647fc260eb0429fa949"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#ab554387a5364d647fc260eb0429fa949">subject_id_t</a> = boost::uuids::uuid</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a0ba4ff3ec435915cea4dd0214e61051d" id="r_a0ba4ff3ec435915cea4dd0214e61051d"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a0ba4ff3ec435915cea4dd0214e61051d">BOOST_AUTO_TEST_CASE</a> (constract)</td></tr>
+<tr class="memitem:abfb1afbc11a2923fd92411829c546497" id="r_abfb1afbc11a2923fd92411829c546497"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#abfb1afbc11a2923fd92411829c546497">BOOST_AUTO_TEST_CASE</a> (life_time)</td></tr>
+<tr class="memitem:a57e3b743b64a0209f241d86077a5daed" id="r_a57e3b743b64a0209f241d86077a5daed"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a57e3b743b64a0209f241d86077a5daed">BOOST_AUTO_TEST_CASE</a> (change_observe)</td></tr>
+<tr class="memitem:a4c7ebca6672a85273f8295df026e3c96" id="r_a4c7ebca6672a85273f8295df026e3c96"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a4c7ebca6672a85273f8295df026e3c96">BOOST_AUTO_TEST_CASE</a> (collection_changed_notify)</td></tr>
+<tr class="memitem:ac82fb4087697e2616162f19585512b04" id="r_ac82fb4087697e2616162f19585512b04"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ac82fb4087697e2616162f19585512b04">BOOST_AUTO_TEST_CASE</a> (test_connection_count)</td></tr>
+<tr class="memitem:aab1032a3b4ed28c3285d23d98aaa4272" id="r_aab1032a3b4ed28c3285d23d98aaa4272"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aab1032a3b4ed28c3285d23d98aaa4272">BOOST_AUTO_TEST_CASE</a> (subscribe_channel)</td></tr>
+<tr class="memitem:a807634d359f099cd9da3df90ad6798d1" id="r_a807634d359f099cd9da3df90ad6798d1"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a807634d359f099cd9da3df90ad6798d1">BOOST_AUTO_TEST_CASE</a> (list_on_list)</td></tr>
+<tr class="memitem:a3946f8cc20ce8d527570fe08f1edf28b" id="r_a3946f8cc20ce8d527570fe08f1edf28b"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a3946f8cc20ce8d527570fe08f1edf28b">BOOST_AUTO_TEST_CASE</a> (list_add_update)</td></tr>
+<tr class="memitem:a3f36f52f4880dfe455c8b895a1334efb" id="r_a3f36f52f4880dfe455c8b895a1334efb"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a3f36f52f4880dfe455c8b895a1334efb">BOOST_AUTO_TEST_CASE</a> (trigger_update_subscribe)</td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">マクロ定義詳解</h2>
+<a id="a139f00d2466d591f60b8d6a73c8273f1" name="a139f00d2466d591f60b8d6a73c8273f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a139f00d2466d591f60b8d6a73c8273f1">&#9670;&#160;</a></span>BOOST_TEST_DYN_LINK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOOST_TEST_DYN_LINK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_config_view_observer_8cpp_source.html">TestConfigViewObserver.cpp</a> の <a class="el" href="_test_config_view_observer_8cpp_source.html#l00003">3</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ab340a5e76af466a5f20ec5500d30a80b" name="ab340a5e76af466a5f20ec5500d30a80b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab340a5e76af466a5f20ec5500d30a80b">&#9670;&#160;</a></span>BOOST_TEST_MAIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOOST_TEST_MAIN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_config_view_observer_8cpp_source.html">TestConfigViewObserver.cpp</a> の <a class="el" href="_test_config_view_observer_8cpp_source.html#l00004">4</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">型定義詳解</h2>
+<a id="aa4c47896f56d1d0c4770f32793166b69" name="aa4c47896f56d1d0c4770f32793166b69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4c47896f56d1d0c4770f32793166b69">&#9670;&#160;</a></span>event_id_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#aa4c47896f56d1d0c4770f32793166b69">event_id_t</a> = boost::uuids::uuid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_config_view_observer_8cpp_source.html">TestConfigViewObserver.cpp</a> の <a class="el" href="_test_config_view_observer_8cpp_source.html#l00021">21</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ab554387a5364d647fc260eb0429fa949" name="ab554387a5364d647fc260eb0429fa949"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab554387a5364d647fc260eb0429fa949">&#9670;&#160;</a></span>subject_id_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ab554387a5364d647fc260eb0429fa949">subject_id_t</a> = boost::uuids::uuid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_config_view_observer_8cpp_source.html">TestConfigViewObserver.cpp</a> の <a class="el" href="_test_config_view_observer_8cpp_source.html#l00022">22</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="a57e3b743b64a0209f241d86077a5daed" name="a57e3b743b64a0209f241d86077a5daed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57e3b743b64a0209f241d86077a5daed">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">change_observe</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_config_view_observer_8cpp_source.html">TestConfigViewObserver.cpp</a> の <a class="el" href="_test_config_view_observer_8cpp_source.html#l00070">70</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST()</a>, <a class="el" href="configview__observer_8hpp_source.html#l00302">depicture_menu::cs_binding::observer::generate_observe_configview()</a>, <a class="el" href="_test_config_view_presenter_8cpp_source.html#l00278">item0</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="_test_config_view_observer_8cpp_a57e3b743b64a0209f241d86077a5daed_cgraph.svg" width="448" height="144"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a4c7ebca6672a85273f8295df026e3c96" name="a4c7ebca6672a85273f8295df026e3c96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c7ebca6672a85273f8295df026e3c96">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">collection_changed_notify</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_config_view_observer_8cpp_source.html">TestConfigViewObserver.cpp</a> の <a class="el" href="_test_config_view_observer_8cpp_source.html#l00121">121</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="collection__changed__kind_8hpp_source.html#l00010">depicture_menu::cs_binding::observer::add</a>, <a class="el" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST()</a>, <a class="el" href="configview__observer_8hpp_source.html#l00302">depicture_menu::cs_binding::observer::generate_observe_configview()</a>, <a class="el" href="_test_config_view_presenter_8cpp_source.html#l00278">item0</a>, <a class="el" href="collection__changed__kind_8hpp_source.html#l00012">depicture_menu::cs_binding::observer::move</a>, <a class="el" href="collection__changed__kind_8hpp_source.html#l00011">depicture_menu::cs_binding::observer::remove</a>, <a class="el" href="collection__changed__kind_8hpp_source.html#l00013">depicture_menu::cs_binding::observer::replace</a>, <a class="el" href="collection__changed__kind_8hpp_source.html#l00014">depicture_menu::cs_binding::observer::reset</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="_test_config_view_observer_8cpp_a4c7ebca6672a85273f8295df026e3c96_cgraph.svg" width="448" height="144"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a0ba4ff3ec435915cea4dd0214e61051d" name="a0ba4ff3ec435915cea4dd0214e61051d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ba4ff3ec435915cea4dd0214e61051d">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[3/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">constract</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_config_view_observer_8cpp_source.html">TestConfigViewObserver.cpp</a> の <a class="el" href="_test_config_view_observer_8cpp_source.html#l00030">30</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="_test_backup_json_8cpp_source.html#l00203">BOOST_AUTO_TEST_CASE()</a>, <a class="el" href="configview__observer_8hpp_source.html#l00060">depicture_menu::cs_binding::observer::changed_notify_observer::get_publisher()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="_test_config_view_observer_8cpp_a0ba4ff3ec435915cea4dd0214e61051d_cgraph.svg" width="100%" height="496"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="abfb1afbc11a2923fd92411829c546497" name="abfb1afbc11a2923fd92411829c546497"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfb1afbc11a2923fd92411829c546497">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[4/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">life_time</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_config_view_observer_8cpp_source.html">TestConfigViewObserver.cpp</a> の <a class="el" href="_test_config_view_observer_8cpp_source.html#l00049">49</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST()</a>, <a class="el" href="configview__observer_8hpp_source.html#l00302">depicture_menu::cs_binding::observer::generate_observe_configview()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="_test_config_view_observer_8cpp_abfb1afbc11a2923fd92411829c546497_cgraph.svg" width="448" height="144"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a3946f8cc20ce8d527570fe08f1edf28b" name="a3946f8cc20ce8d527570fe08f1edf28b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3946f8cc20ce8d527570fe08f1edf28b">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[5/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">list_add_update</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_config_view_observer_8cpp_source.html">TestConfigViewObserver.cpp</a> の <a class="el" href="_test_config_view_observer_8cpp_source.html#l00370">370</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST()</a>, <a class="el" href="configview__observer_8hpp_source.html#l00302">depicture_menu::cs_binding::observer::generate_observe_configview()</a>, <a class="el" href="_test_config_view_presenter_8cpp.html#a2f99d325a57bd5a9d115762efcc80182">menu</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="_test_config_view_observer_8cpp_a3946f8cc20ce8d527570fe08f1edf28b_cgraph.svg" width="448" height="144"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a807634d359f099cd9da3df90ad6798d1" name="a807634d359f099cd9da3df90ad6798d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a807634d359f099cd9da3df90ad6798d1">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[6/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">list_on_list</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_config_view_observer_8cpp_source.html">TestConfigViewObserver.cpp</a> の <a class="el" href="_test_config_view_observer_8cpp_source.html#l00316">316</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST()</a>, <a class="el" href="configview__observer_8hpp_source.html#l00302">depicture_menu::cs_binding::observer::generate_observe_configview()</a>, <a class="el" href="_test_config_view_presenter_8cpp_source.html#l00278">item0</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="_test_config_view_observer_8cpp_a807634d359f099cd9da3df90ad6798d1_cgraph.svg" width="448" height="144"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aab1032a3b4ed28c3285d23d98aaa4272" name="aab1032a3b4ed28c3285d23d98aaa4272"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab1032a3b4ed28c3285d23d98aaa4272">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[7/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">subscribe_channel</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_config_view_observer_8cpp_source.html">TestConfigViewObserver.cpp</a> の <a class="el" href="_test_config_view_observer_8cpp_source.html#l00283">283</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST()</a>, <a class="el" href="configview__observer_8hpp_source.html#l00302">depicture_menu::cs_binding::observer::generate_observe_configview()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="_test_config_view_observer_8cpp_aab1032a3b4ed28c3285d23d98aaa4272_cgraph.svg" width="448" height="144"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ac82fb4087697e2616162f19585512b04" name="ac82fb4087697e2616162f19585512b04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac82fb4087697e2616162f19585512b04">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[8/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">test_connection_count</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_config_view_observer_8cpp_source.html">TestConfigViewObserver.cpp</a> の <a class="el" href="_test_config_view_observer_8cpp_source.html#l00244">244</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST()</a>, <a class="el" href="configview__observer_8hpp_source.html#l00302">depicture_menu::cs_binding::observer::generate_observe_configview()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="_test_config_view_observer_8cpp_ac82fb4087697e2616162f19585512b04_cgraph.svg" width="448" height="144"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a3f36f52f4880dfe455c8b895a1334efb" name="a3f36f52f4880dfe455c8b895a1334efb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f36f52f4880dfe455c8b895a1334efb">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[9/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">trigger_update_subscribe</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_config_view_observer_8cpp_source.html">TestConfigViewObserver.cpp</a> の <a class="el" href="_test_config_view_observer_8cpp_source.html#l00403">403</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="configview__observer_8hpp_source.html#l00302">depicture_menu::cs_binding::observer::generate_observe_configview()</a>, <a class="el" href="test__command__line__option_8cpp.html#a8804cd4df220b4dbe58067cd7f91dcbd">MOCK_EXPECT()</a>, <a class="el" href="test__command__line__option_8cpp.html#a76b71ed405acc0093eaef283c86f6461">MOCK_FUNCTOR()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="_test_config_view_observer_8cpp_a3f36f52f4880dfe455c8b895a1334efb_cgraph.svg" width="448" height="195"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_0281b912293b0150165693b325cfab25.html">test</a></li><li class="navelem"><a href="dir_13bb975b5c6918e0cdb932e8baceeae5.html">core</a></li><li class="navelem"><a href="dir_c856ea1ed2b948c35686ba376f01231b.html">cs_binding</a></li><li class="navelem"><a href="dir_f4faa0a65aadef0be7ff1a12ad9a195d.html">observer</a></li><li class="navelem"><a href="_test_config_view_observer_8cpp.html">TestConfigViewObserver.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

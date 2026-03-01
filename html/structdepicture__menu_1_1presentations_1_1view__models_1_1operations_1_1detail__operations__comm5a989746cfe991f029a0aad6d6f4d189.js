@@ -1,0 +1,4 @@
+var structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operations__comm5a989746cfe991f029a0aad6d6f4d189 =
+[
+    [ "command_erase_operator_impl", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operations__comm5a989746cfe991f029a0aad6d6f4d189.html#a69839091ec1abcde114fb617fe21c771", null ]
+];

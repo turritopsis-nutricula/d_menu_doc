@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/src/core/presentation/backup_data_presenter/backup_data_presenter.cpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('backup__data__presenter_8cpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">backup_data_presenter.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="backup__data__presenter_8cpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;./config.hpp&quot;</span>    <span class="comment">// IWYU pragma: keep</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="backup__data__presenter_2backup__data__presenter_8hpp.html">backup_data_presenter.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="backup__json_8hpp.html">core/application/backup_json/backup_json.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;glaze/glaze.hpp&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="}">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1presentations_1_1backup__data__presenter.html#a16c97ba76635f9027ebb6b6c93098632">   11</a></span><a class="code hl_function" href="classdepicture__menu_1_1presentations_1_1backup__data__presenter.html#a16c97ba76635f9027ebb6b6c93098632">depicture_menu::presentations::backup_data_presenter::export_data</a>(</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    std::filesystem::path <span class="keyword">const</span>&amp; path, <a class="code hl_struct" href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1backup__data.html">usecase::backup::dto::backup_data</a>&amp;&amp; data</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    std::string convert_buffer;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    {    <span class="comment">// backup dto write to convert_buffer</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keyword">auto</span> error = glz::write_json( data, convert_buffer );</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordflow">if</span> ( error )</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    }</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    {    <span class="comment">// read latest::backup_json read from convert_buffer</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keyword">auto</span> result = glz::read_json&lt;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <a class="code hl_typedef" href="namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v002.html#af583a814e54b9f5a35a5bd5e5e018fa6">applications::backup_json::formats::latest::backup_json</a> &gt;(</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            convert_buffer</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        );</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordflow">if</span> ( !result )</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        result-&gt;format_version</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            = <a class="code hl_function" href="namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats.html#a9e863dd7ba8f6dd1ee83718d9ee2fd30">applications::backup_json::formats::get_latest_format_version</a>( );</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <a class="code hl_function" href="namespacedepicture__menu_1_1applications_1_1backup__json.html#af28aa6379e4bca50b80a3fb068f71b9e">applications::backup_json::write_backup_json</a>( path, *result );</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
+</div>
+<div class="ttc" id="abackup__data__presenter_2backup__data__presenter_8hpp_html"><div class="ttname"><a href="backup__data__presenter_2backup__data__presenter_8hpp.html">backup_data_presenter.hpp</a></div></div>
+<div class="ttc" id="abackup__json_8hpp_html"><div class="ttname"><a href="backup__json_8hpp.html">backup_json.hpp</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1presentations_1_1backup__data__presenter_html_a16c97ba76635f9027ebb6b6c93098632"><div class="ttname"><a href="classdepicture__menu_1_1presentations_1_1backup__data__presenter.html#a16c97ba76635f9027ebb6b6c93098632">depicture_menu::presentations::backup_data_presenter::export_data</a></div><div class="ttdeci">void export_data(std::filesystem::path const &amp;path, usecase::backup::dto::backup_data &amp;&amp;data) const</div><div class="ttdef"><b>Definition</b> <a href="#l00011">backup_data_presenter.cpp:11</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v002_html_af583a814e54b9f5a35a5bd5e5e018fa6"><div class="ttname"><a href="namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v002.html#af583a814e54b9f5a35a5bd5e5e018fa6">depicture_menu::applications::backup_json::formats::v002::backup_json</a></div><div class="ttdeci">backup_data backup_json</div><div class="ttdef"><b>Definition</b> <a href="v002_8hpp_source.html#l00274">v002.hpp:274</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_html_a9e863dd7ba8f6dd1ee83718d9ee2fd30"><div class="ttname"><a href="namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats.html#a9e863dd7ba8f6dd1ee83718d9ee2fd30">depicture_menu::applications::backup_json::formats::get_latest_format_version</a></div><div class="ttdeci">constexpr int get_latest_format_version()</div><div class="ttdef"><b>Definition</b> <a href="latest_8hpp_source.html#l00028">latest.hpp:28</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1applications_1_1backup__json_html_af28aa6379e4bca50b80a3fb068f71b9e"><div class="ttname"><a href="namespacedepicture__menu_1_1applications_1_1backup__json.html#af28aa6379e4bca50b80a3fb068f71b9e">depicture_menu::applications::backup_json::write_backup_json</a></div><div class="ttdeci">error_ctx write_backup_json(std::filesystem::path const &amp;path, formats::latest::backup_json const &amp;data)</div><div class="ttdef"><b>Definition</b> <a href="backup__json_8cpp_source.html#l00147">backup_json.cpp:147</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1backup__data_html"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1backup__data.html">depicture_menu::usecase::backup::dto::backup_data</a></div><div class="ttdef"><b>Definition</b> <a href="backup__data_8hpp_source.html#l00216">backup_data.hpp:217</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_d26f0ed8b287a778d960ad2241e01057.html">src</a></li><li class="navelem"><a href="dir_eb29242f55d2489f6c4d008365c270b7.html">core</a></li><li class="navelem"><a href="dir_b08448ab66980ac237b9eba210eedb4a.html">presentation</a></li><li class="navelem"><a href="dir_a7ae0a48bfb2f1f4060917ea4f3659e1.html">backup_data_presenter</a></li><li class="navelem"><a href="backup__data__presenter_8cpp.html">backup_data_presenter.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

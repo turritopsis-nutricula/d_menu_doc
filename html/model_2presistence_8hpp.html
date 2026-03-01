@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/src/core/domain/model/presistence.hpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('model_2presistence_8hpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">presistence.hpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="model__base__concepts_8hpp_source.html">model_base_concepts.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="str__conv_8hpp_source.html">utility/str_conv.hpp</a>&quot;</code><br />
+<code>#include &lt;boost/archive/basic_binary_iarchive.hpp&gt;</code><br />
+<code>#include &lt;boost/pfr/core.hpp&gt;</code><br />
+<code>#include &lt;boost/serialization/access.hpp&gt;</code><br />
+<code>#include &lt;boost/serialization/optional.hpp&gt;</code><br />
+<code>#include &lt;boost/serialization/unordered_map.hpp&gt;</code><br />
+<code>#include &lt;boost/serialization/unordered_set.hpp&gt;</code><br />
+<code>#include &lt;boost/serialization/vector.hpp&gt;</code><br />
+<code>#include &lt;format&gt;</code><br />
+<code>#include &lt;tuple&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+presistence.hpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="model_2presistence_8hpp__incl.svg" width="100%" height="464"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="model_2presistence_8hpp__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+<p><a href="model_2presistence_8hpp_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Adomain_3A_3Amodels_3A_3Adetail_5Fdomain_3A_3Aconvertable_5Fto_5Ftuple_5Ftype_5Fgetter_3C_20T_20_3E" id="r_depicture_5Fmenu_3A_3Adomain_3A_3Amodels_3A_3Adetail_5Fdomain_3A_3Aconvertable_5Fto_5Ftuple_5Ftype_5Fgetter_3C_20T_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1domain_1_1models_1_1detail__domain_1_1convertable__to__tuple__type__getter_3_01_t_01_4.html">depicture_menu::domain::models::detail_domain::convertable_to_tuple_type_getter&lt; T &gt;</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Adomain_3A_3Amodels_3A_3Adetail_5Fdomain_3A_3Aconvertable_5Fto_5Ftuple_5Ftype_5Fgetter_3C_20T_20_3E_3A_3Aatom_5Fconverter" id="r_depicture_5Fmenu_3A_3Adomain_3A_3Amodels_3A_3Adetail_5Fdomain_3A_3Aconvertable_5Fto_5Ftuple_5Ftype_5Fgetter_3C_20T_20_3E_3A_3Aatom_5Fconverter"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1domain_1_1models_1_1detail__domain_1_1convertable__to__tuple__type__getfc2d5c866702b46245a2e97fa014e9c5.html">depicture_menu::domain::models::detail_domain::convertable_to_tuple_type_getter&lt; T &gt;::atom_converter</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Adomain_3A_3Amodels_3A_3Adetail_5Fdomain_3A_3Atuple_5Fserializer_3C_20Arc_2C_20Count_2C_20NameGen_20_3E" id="r_depicture_5Fmenu_3A_3Adomain_3A_3Amodels_3A_3Adetail_5Fdomain_3A_3Atuple_5Fserializer_3C_20Arc_2C_20Count_2C_20NameGen_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1domain_1_1models_1_1detail__domain_1_1tuple__serializer.html">depicture_menu::domain::models::detail_domain::tuple_serializer&lt; Arc, Count, NameGen &gt;</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Adomain_3A_3Amodels_3A_3Apresistence_5Ftuple_3C_20T_20_3E" id="r_depicture_5Fmenu_3A_3Adomain_3A_3Amodels_3A_3Apresistence_5Ftuple_3C_20T_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1domain_1_1models_1_1presistence__tuple.html">depicture_menu::domain::models::presistence_tuple&lt; T &gt;</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Adomain_3A_3Amodels_3A_3Adetail_5Fdomain_3A_3Apresistance_5Fexpand_3C_20T_20_3E" id="r_depicture_5Fmenu_3A_3Adomain_3A_3Amodels_3A_3Adetail_5Fdomain_3A_3Apresistance_5Fexpand_3C_20T_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1domain_1_1models_1_1detail__domain_1_1presistance__expand_3_01_t_01_4.html">depicture_menu::domain::models::detail_domain::presistance_expand&lt; T &gt;</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Adomain_3A_3Amodels_3A_3Adetail_5Fdomain_3A_3Apresistance_5Fexpand_3C_20T_20_3E_3A_3Aexpander" id="r_depicture_5Fmenu_3A_3Adomain_3A_3Amodels_3A_3Adetail_5Fdomain_3A_3Apresistance_5Fexpand_3C_20T_20_3E_3A_3Aexpander"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1domain_1_1models_1_1detail__domain_1_1presistance__expand_3_01_t_01_4_1_1expander.html">depicture_menu::domain::models::detail_domain::presistance_expand&lt; T &gt;::expander</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:depicture_5Fmenu" id="r_depicture_5Fmenu"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu.html">depicture_menu</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Adomain" id="r_depicture_5Fmenu_3A_3Adomain"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1domain.html">depicture_menu::domain</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Adomain_3A_3Amodels" id="r_depicture_5Fmenu_3A_3Adomain_3A_3Amodels"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1domain_1_1models.html">depicture_menu::domain::models</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Adomain_3A_3Amodels_3A_3Aconcepts" id="r_depicture_5Fmenu_3A_3Adomain_3A_3Amodels_3A_3Aconcepts"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1domain_1_1models_1_1concepts.html">depicture_menu::domain::models::concepts</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Adomain_3A_3Amodels_3A_3Adetail_5Fdomain" id="r_depicture_5Fmenu_3A_3Adomain_3A_3Amodels_3A_3Adetail_5Fdomain"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1domain_1_1models_1_1detail__domain.html">depicture_menu::domain::models::detail_domain</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-concepts" class="groupheader"><a id="concepts" name="concepts"></a>
+Concepts</h2></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Adomain_3A_3Amodels_3A_3Aconcepts_3A_3Aconvertable_5Fto_5Ftuple_5Fby_5Fboost_5Fpfr" id="r_depicture_5Fmenu_3A_3Adomain_3A_3Amodels_3A_3Aconcepts_3A_3Aconvertable_5Fto_5Ftuple_5Fby_5Fboost_5Fpfr"><td class="memItemLeft">concept &#160;</td><td class="memItemRight"><a class="el" href="conceptdepicture__menu_1_1domain_1_1models_1_1concepts_1_1convertable__to__tuple__by__boost__pfr.html">depicture_menu::domain::models::concepts::convertable_to_tuple_by_boost_pfr</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Adomain_3A_3Amodels_3A_3Aconcepts_3A_3Apresistanceable" id="r_depicture_5Fmenu_3A_3Adomain_3A_3Amodels_3A_3Aconcepts_3A_3Apresistanceable"><td class="memItemLeft">concept &#160;</td><td class="memItemRight"><a class="el" href="conceptdepicture__menu_1_1domain_1_1models_1_1concepts_1_1presistanceable.html">depicture_menu::domain::models::concepts::presistanceable</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a363b12165e36408e58b846947ecec766" id="r_a363b12165e36408e58b846947ecec766"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a363b12165e36408e58b846947ecec766">DPM_WIDE_STRING_SERIALIZE_USE_CODE_POINT_UTF8</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+型定義</h2></td></tr>
+<tr class="memitem:ad6d742adb3b338b6e471cd65802b5076" id="r_ad6d742adb3b338b6e471cd65802b5076"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:ad6d742adb3b338b6e471cd65802b5076 template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1domain_1_1models.html#ad6d742adb3b338b6e471cd65802b5076">depicture_menu::domain::models::presistence_value</a> = typename <a class="el" href="structdepicture__menu_1_1domain_1_1models_1_1detail__domain_1_1presistance__expand.html">detail_domain::presistance_expand</a>&lt; T &gt;::type</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a4846ca781e4c2ec86094e9606a44813d" id="r_a4846ca781e4c2ec86094e9606a44813d"><td class="memTemplParams" colspan="2">template&lt;concepts::presistanceable T, typename Archive&gt; </td></tr>
+<tr class="memitem:a4846ca781e4c2ec86094e9606a44813d template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1domain_1_1models.html#a4846ca781e4c2ec86094e9606a44813d">depicture_menu::domain::models::save_value</a> (T const &amp;v, Archive &amp;arc)</td></tr>
+<tr class="memitem:a1bbff0f2d236da83fa87cc9d465faee9" id="r_a1bbff0f2d236da83fa87cc9d465faee9"><td class="memTemplParams" colspan="2">template&lt;concepts::presistanceable T, typename Archive&gt; </td></tr>
+<tr class="memitem:a1bbff0f2d236da83fa87cc9d465faee9 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1domain_1_1models.html#a1bbff0f2d236da83fa87cc9d465faee9">depicture_menu::domain::models::load_value</a> (T &amp;v, Archive &amp;arc)</td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">マクロ定義詳解</h2>
+<a id="a363b12165e36408e58b846947ecec766" name="a363b12165e36408e58b846947ecec766"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a363b12165e36408e58b846947ecec766">&#9670;&#160;</a></span>DPM_WIDE_STRING_SERIALIZE_USE_CODE_POINT_UTF8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_WIDE_STRING_SERIALIZE_USE_CODE_POINT_UTF8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="model_2presistence_8hpp_source.html">presistence.hpp</a> の <a class="el" href="model_2presistence_8hpp_source.html#l00018">18</a> 行目に定義があります。</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_d26f0ed8b287a778d960ad2241e01057.html">src</a></li><li class="navelem"><a href="dir_eb29242f55d2489f6c4d008365c270b7.html">core</a></li><li class="navelem"><a href="dir_4099da298ded5c89b37f083ec42d8d40.html">domain</a></li><li class="navelem"><a href="dir_0c83dee58a23f235db9b63a843b5b568.html">model</a></li><li class="navelem"><a href="model_2presistence_8hpp.html">presistence.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

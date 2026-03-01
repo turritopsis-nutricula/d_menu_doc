@@ -1,0 +1,4 @@
+var structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operations__comm3e7b7a6dca3595a7283108f054271029 =
+[
+    [ "command_create_operator_impl", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operations__comm3e7b7a6dca3595a7283108f054271029.html#a82413b56742c1de7afef701b6f9f89d1", null ]
+];

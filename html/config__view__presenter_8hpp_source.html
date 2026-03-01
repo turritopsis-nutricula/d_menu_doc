@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/src/core/presentation/change_view_model/config_view_presenter.hpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('config__view__presenter_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">config_view_presenter.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="config__view__presenter_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef SRC_CORE_PRESENTATION_CHANGE_VIEW_MODEL_CONFIG_VIEW_PRESENTER_HPP_</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define SRC_CORE_PRESENTATION_CHANGE_VIEW_MODEL_CONFIG_VIEW_PRESENTER_HPP_</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="_config_arg_8hpp.html">core/cs_binding/ConfigArg.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="configview__observer_8hpp.html">core/cs_binding/observer/configview_observer.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="ids__buffer_8hpp.html">core/presentation/change_view_model/view_model_operation/ids_buffer.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="config__view__model__interface_8hpp.html">core/usecase/config_view/interface/config_view_model_interface.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1presentations.html">depicture_menu::presentations</a></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html">   14</a></span><span class="keyword">class </span><a class="code hl_function" href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#a2d1c3b85f7554d449f9b24a21f9d3530">config_view_presenter</a> : <span class="keyword">public</span> <a class="code hl_class" href="classdepicture__menu_1_1usecase_1_1config__view__model__interface.html">usecase::config_view_model_interface</a></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_function" href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#a2d1c3b85f7554d449f9b24a21f9d3530">config_view_presenter</a>(</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        std::shared_ptr&lt; cs_binding::ConfigArg &gt; view_ptr,</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        std::shared_ptr&lt; cs_binding::observer::changed_event_publisher &gt; pub</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    );</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#abca5e005ea6562bc3b87dabee3acc640">change_menu</a>(</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1usecase_1_1dto.html#ac2aaed68a427137178bb5a0a838ba75e">usecase::dto::menu_changed_notify</a>                 n,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html">domain::menu::radialmenu</a>                          m,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <a class="code hl_class" href="structdepicture__menu_1_1usecase_1_1query__base.html">usecase::query_base&lt; domain::actions::publisher &gt;</a> <a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#a2648ae303efc504d6b2eed8fb18647d5">act_q</a> = { },</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <a class="code hl_class" href="structdepicture__menu_1_1usecase_1_1query__base.html">usecase::query_base&lt; domain::commands::command &gt;</a>  <a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#abf2030589b3b577452c80d56fd99e761">com_q</a> = { }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    ) <span class="keyword">const</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#a8af0a43b59e5d4592e1950bee91f93b6">change_action</a>(</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1usecase_1_1dto.html#a9073a2c3d8d98bd2271898ee876c7fee">usecase::dto::action_changed_notify</a>,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1actions_1_1v2_1_1publisher.html">domain::actions::publisher</a>,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <a class="code hl_class" href="structdepicture__menu_1_1usecase_1_1query__base.html">usecase::query_base&lt; domain::commands::command &gt;</a> q = { }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    ) <span class="keyword">const</span> <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#adfd63adfc374caba01b835b1ac7b98ce">change_command</a>(</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1usecase_1_1dto.html#a514ab62cb0fe259fdb9810eb40ce18af">usecase::dto::command_changed_notify</a>, <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1commands_1_1command.html">domain::commands::command</a></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    ) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#a1bfd853da05f00d46ffbc4ec2caf77c3">change_trigger</a>(</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1usecase_1_1dto.html#a5d64ad1a61eb3ad2512237a453caea14">usecase::dto::trigger_changed_notify</a>,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1triggers_1_1global__key__input__trigger.html">domain::triggers::global_key_input_trigger</a></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    ) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#a25c63128115866359fcd5bc29965dcab">reset_view</a>( ) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#aa29736ccd57102a2ff0b4d27bf15eb15">show_config_view</a>( ) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keyword">private</span>:</div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="};">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1presentations_1_1config__view__presenter_1_1view__lock.html">   50</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structdepicture__menu_1_1presentations_1_1config__view__presenter_1_1view__lock.html">view_lock</a></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1presentations_1_1config__view__presenter_1_1view__lock.html#a81f65242cb44eb4c4dd38940cef2df87">   53</a></span>        std::shared_ptr&lt; cs_binding::ConfigArg &gt; <a class="code hl_variable" href="structdepicture__menu_1_1presentations_1_1config__view__presenter_1_1view__lock.html#a81f65242cb44eb4c4dd38940cef2df87">arg_</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1presentations_1_1config__view__presenter_1_1view__lock.html#a81e12b127e2c3108e49b37808b2cf8ba">   54</a></span>        <a class="code hl_struct" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1view__model__lock.html">cs_binding::observer::view_model_lock</a>    <a class="code hl_variable" href="structdepicture__menu_1_1presentations_1_1config__view__presenter_1_1view__lock.html#a81e12b127e2c3108e49b37808b2cf8ba">lock_</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1presentations_1_1config__view__presenter_1_1view__lock.html#a4a7ebc7224be16354b1d4a4e873080e7">   56</a></span>        <span class="keyword">operator</span> bool( ) { <span class="keywordflow">return</span> !!<a class="code hl_variable" href="structdepicture__menu_1_1presentations_1_1config__view__presenter_1_1view__lock.html#a81f65242cb44eb4c4dd38940cef2df87">arg_</a>; }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        cs_binding::ConfigArg&amp;</div>
+<div class="foldopen" id="foldopen00059" data-start="{" data-end="}">
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1presentations_1_1config__view__presenter_1_1view__lock.html#a00fda2edde34041f85b1b43a62d3a428">   59</a></span>        <a class="code hl_function" href="structdepicture__menu_1_1presentations_1_1config__view__presenter_1_1view__lock.html#a00fda2edde34041f85b1b43a62d3a428">operator*</a>( )</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="keywordflow">return</span> *<a class="code hl_variable" href="structdepicture__menu_1_1presentations_1_1config__view__presenter_1_1view__lock.html#a81f65242cb44eb4c4dd38940cef2df87">arg_</a>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        }</div>
+</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        cs_binding::ConfigArg*</div>
+<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1presentations_1_1config__view__presenter_1_1view__lock.html#a05c9d9629373b2469a437e5496591394">   64</a></span>        <a class="code hl_function" href="structdepicture__menu_1_1presentations_1_1config__view__presenter_1_1view__lock.html#a05c9d9629373b2469a437e5496591394">operator-&gt;</a>( )<span class="keyword"> const</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">        </span>{</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keywordflow">return</span> <a class="code hl_variable" href="structdepicture__menu_1_1presentations_1_1config__view__presenter_1_1view__lock.html#a81f65242cb44eb4c4dd38940cef2df87">arg_</a>.get( );</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        }</div>
+</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    };</div>
+</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    view_lock</div>
+<div class="foldopen" id="foldopen00071" data-start="{" data-end="}">
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#a93af2ff47b6979af8aca86be72465cd7">   71</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#a93af2ff47b6979af8aca86be72465cd7">lock_view</a>( )<span class="keyword"> const</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keyword">auto</span> v = <a class="code hl_variable" href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#a3fbcc0e003974d241708ca45e4dbbd05">view_ptr_</a>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordflow">return</span> <a class="code hl_struct" href="structdepicture__menu_1_1presentations_1_1config__view__presenter_1_1view__lock.html">view_lock</a>{</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            v, <a class="code hl_struct" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1view__model__lock.html">cs_binding::observer::view_model_lock</a>( <a class="code hl_variable" href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#afd3c68c9c5a600abc9387bb0c00a5d1c">publisher_ptr_</a> )</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        };</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
+</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#a3d7f8835719d6833ed341473c6a81059">   81</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#a3d7f8835719d6833ed341473c6a81059">id_buffer_t</a> = <a class="code hl_struct" href="structdepicture__menu_1_1presentations_1_1datas_1_1id__buffer__tuple.html">datas::id_buffer_tuple</a>&lt;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1menu.html#a2b51ff146c22769b74c23c37851fa801">domain::menu::menu_id</a>,</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1menu.html#aa7d3347d8daef21d1ee5d9f029632c0a">domain::menu::menu_item_id</a>,</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">domain::actions::publisher_id</a>,</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1commands.html#a255579014c08ea612b006aa3a641ca7a">domain::commands::command_id</a>,</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1triggers.html#ab0086bbfe1ea3c9e8ebf6e362ec544c3">domain::triggers::trigger_id</a> &gt;;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <a class="code hl_typedef" href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#a3d7f8835719d6833ed341473c6a81059">id_buffer_t</a> <span class="keyword">const</span>&amp;</div>
+<div class="foldopen" id="foldopen00089" data-start="{" data-end="}">
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#a8f6af33167361a5f972adc2d0709a66a">   89</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#a8f6af33167361a5f972adc2d0709a66a">id_buffer</a>( )<span class="keyword"> const</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keywordflow">return</span> *<a class="code hl_variable" href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#ab49965e5981e7ab9fe5c171b0b7a118e">id_buffer_</a>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
+</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#a3fbcc0e003974d241708ca45e4dbbd05">   95</a></span>    std::shared_ptr&lt; cs_binding::ConfigArg &gt; <a class="code hl_variable" href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#a3fbcc0e003974d241708ca45e4dbbd05">view_ptr_</a>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    std::shared_ptr&lt; cs_binding::observer::changed_event_publisher &gt;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#afd3c68c9c5a600abc9387bb0c00a5d1c">   97</a></span>        <a class="code hl_variable" href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#afd3c68c9c5a600abc9387bb0c00a5d1c">publisher_ptr_</a>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#ab49965e5981e7ab9fe5c171b0b7a118e">  100</a></span>    std::shared_ptr&lt; id_buffer_t &gt; <a class="code hl_variable" href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#ab49965e5981e7ab9fe5c171b0b7a118e">id_buffer_</a></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        = std::make_shared&lt; id_buffer_t &gt;( );</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>};</div>
+</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>}    <span class="comment">// namespace depicture_menu::presentations</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_CORE_PRESENTATION_CHANGE_VIEW_MODEL_CONFIG_VIEW_PRESENTER_HPP_</span></div>
+<div class="ttc" id="a_config_arg_8hpp_html"><div class="ttname"><a href="_config_arg_8hpp.html">ConfigArg.hpp</a></div></div>
+<div class="ttc" id="a_test_config_view_presenter_8cpp_html_a2648ae303efc504d6b2eed8fb18647d5"><div class="ttname"><a href="_test_config_view_presenter_8cpp.html#a2648ae303efc504d6b2eed8fb18647d5">act_q</a></div><div class="ttdeci">auto const act_q</div><div class="ttdef"><b>Definition</b> <a href="_test_config_view_presenter_8cpp_source.html#l00254">TestConfigViewPresenter.cpp:254</a></div></div>
+<div class="ttc" id="a_test_config_view_presenter_8cpp_html_abf2030589b3b577452c80d56fd99e761"><div class="ttname"><a href="_test_config_view_presenter_8cpp.html#abf2030589b3b577452c80d56fd99e761">com_q</a></div><div class="ttdeci">auto const com_q</div><div class="ttdef"><b>Definition</b> <a href="_test_config_view_presenter_8cpp_source.html#l00249">TestConfigViewPresenter.cpp:249</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1actions_1_1v2_1_1publisher_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1actions_1_1v2_1_1publisher.html">depicture_menu::domain::actions::v2::publisher</a></div><div class="ttdef"><b>Definition</b> <a href="action_8hpp_source.html#l00205">action.hpp:207</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1commands_1_1command_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1commands_1_1command.html">depicture_menu::domain::commands::command</a></div><div class="ttdef"><b>Definition</b> <a href="command_8hpp_source.html#l00036">command.hpp:38</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1triggers_1_1global__key__input__trigger_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1triggers_1_1global__key__input__trigger.html">depicture_menu::domain::triggers::global_key_input_trigger</a></div><div class="ttdef"><b>Definition</b> <a href="trigger_8hpp_source.html#l00036">trigger.hpp:39</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1presentations_1_1config__view__presenter_html_a1bfd853da05f00d46ffbc4ec2caf77c3"><div class="ttname"><a href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#a1bfd853da05f00d46ffbc4ec2caf77c3">depicture_menu::presentations::config_view_presenter::change_trigger</a></div><div class="ttdeci">void change_trigger(usecase::dto::trigger_changed_notify, domain::triggers::global_key_input_trigger) const override</div><div class="ttdef"><b>Definition</b> <a href="config__view__presenter_8cpp_source.html#l00312">config_view_presenter.cpp:312</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1presentations_1_1config__view__presenter_html_a25c63128115866359fcd5bc29965dcab"><div class="ttname"><a href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#a25c63128115866359fcd5bc29965dcab">depicture_menu::presentations::config_view_presenter::reset_view</a></div><div class="ttdeci">void reset_view() const override</div><div class="ttdef"><b>Definition</b> <a href="config__view__presenter_8cpp_source.html#l00523">config_view_presenter.cpp:523</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1presentations_1_1config__view__presenter_html_a2d1c3b85f7554d449f9b24a21f9d3530"><div class="ttname"><a href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#a2d1c3b85f7554d449f9b24a21f9d3530">depicture_menu::presentations::config_view_presenter::config_view_presenter</a></div><div class="ttdeci">config_view_presenter(std::shared_ptr&lt; cs_binding::ConfigArg &gt; view_ptr, std::shared_ptr&lt; cs_binding::observer::changed_event_publisher &gt; pub)</div><div class="ttdef"><b>Definition</b> <a href="config__view__presenter_8cpp_source.html#l00202">config_view_presenter.cpp:202</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1presentations_1_1config__view__presenter_html_a3d7f8835719d6833ed341473c6a81059"><div class="ttname"><a href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#a3d7f8835719d6833ed341473c6a81059">depicture_menu::presentations::config_view_presenter::id_buffer_t</a></div><div class="ttdeci">datas::id_buffer_tuple&lt; domain::menu::menu_id, domain::menu::menu_item_id, domain::actions::publisher_id, domain::commands::command_id, domain::triggers::trigger_id &gt; id_buffer_t</div><div class="ttdef"><b>Definition</b> <a href="#l00081">config_view_presenter.hpp:81</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1presentations_1_1config__view__presenter_html_a3fbcc0e003974d241708ca45e4dbbd05"><div class="ttname"><a href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#a3fbcc0e003974d241708ca45e4dbbd05">depicture_menu::presentations::config_view_presenter::view_ptr_</a></div><div class="ttdeci">std::shared_ptr&lt; cs_binding::ConfigArg &gt; view_ptr_</div><div class="ttdef"><b>Definition</b> <a href="#l00095">config_view_presenter.hpp:95</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1presentations_1_1config__view__presenter_html_a8af0a43b59e5d4592e1950bee91f93b6"><div class="ttname"><a href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#a8af0a43b59e5d4592e1950bee91f93b6">depicture_menu::presentations::config_view_presenter::change_action</a></div><div class="ttdeci">void change_action(usecase::dto::action_changed_notify, domain::actions::publisher, usecase::query_base&lt; domain::commands::command &gt; q={ }) const override</div><div class="ttdef"><b>Definition</b> <a href="config__view__presenter_8cpp_source.html#l00390">config_view_presenter.cpp:390</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1presentations_1_1config__view__presenter_html_a8f6af33167361a5f972adc2d0709a66a"><div class="ttname"><a href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#a8f6af33167361a5f972adc2d0709a66a">depicture_menu::presentations::config_view_presenter::id_buffer</a></div><div class="ttdeci">id_buffer_t const &amp; id_buffer() const</div><div class="ttdef"><b>Definition</b> <a href="#l00089">config_view_presenter.hpp:89</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1presentations_1_1config__view__presenter_html_a93af2ff47b6979af8aca86be72465cd7"><div class="ttname"><a href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#a93af2ff47b6979af8aca86be72465cd7">depicture_menu::presentations::config_view_presenter::lock_view</a></div><div class="ttdeci">view_lock lock_view() const</div><div class="ttdef"><b>Definition</b> <a href="#l00071">config_view_presenter.hpp:71</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1presentations_1_1config__view__presenter_html_aa29736ccd57102a2ff0b4d27bf15eb15"><div class="ttname"><a href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#aa29736ccd57102a2ff0b4d27bf15eb15">depicture_menu::presentations::config_view_presenter::show_config_view</a></div><div class="ttdeci">void show_config_view() const override</div><div class="ttdef"><b>Definition</b> <a href="config__view__presenter_8cpp_source.html#l00537">config_view_presenter.cpp:537</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1presentations_1_1config__view__presenter_html_ab49965e5981e7ab9fe5c171b0b7a118e"><div class="ttname"><a href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#ab49965e5981e7ab9fe5c171b0b7a118e">depicture_menu::presentations::config_view_presenter::id_buffer_</a></div><div class="ttdeci">std::shared_ptr&lt; id_buffer_t &gt; id_buffer_</div><div class="ttdef"><b>Definition</b> <a href="#l00100">config_view_presenter.hpp:101</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1presentations_1_1config__view__presenter_html_abca5e005ea6562bc3b87dabee3acc640"><div class="ttname"><a href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#abca5e005ea6562bc3b87dabee3acc640">depicture_menu::presentations::config_view_presenter::change_menu</a></div><div class="ttdeci">void change_menu(usecase::dto::menu_changed_notify n, domain::menu::radialmenu m, usecase::query_base&lt; domain::actions::publisher &gt; act_q={ }, usecase::query_base&lt; domain::commands::command &gt; com_q={ }) const override</div><div class="ttdef"><b>Definition</b> <a href="config__view__presenter_8cpp_source.html#l00222">config_view_presenter.cpp:222</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1presentations_1_1config__view__presenter_html_adfd63adfc374caba01b835b1ac7b98ce"><div class="ttname"><a href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#adfd63adfc374caba01b835b1ac7b98ce">depicture_menu::presentations::config_view_presenter::change_command</a></div><div class="ttdeci">void change_command(usecase::dto::command_changed_notify, domain::commands::command) const override</div><div class="ttdef"><b>Definition</b> <a href="config__view__presenter_8cpp_source.html#l00468">config_view_presenter.cpp:468</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1presentations_1_1config__view__presenter_html_afd3c68c9c5a600abc9387bb0c00a5d1c"><div class="ttname"><a href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#afd3c68c9c5a600abc9387bb0c00a5d1c">depicture_menu::presentations::config_view_presenter::publisher_ptr_</a></div><div class="ttdeci">std::shared_ptr&lt; cs_binding::observer::changed_event_publisher &gt; publisher_ptr_</div><div class="ttdef"><b>Definition</b> <a href="#l00097">config_view_presenter.hpp:97</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1usecase_1_1config__view__model__interface_html"><div class="ttname"><a href="classdepicture__menu_1_1usecase_1_1config__view__model__interface.html">depicture_menu::usecase::config_view_model_interface</a></div><div class="ttdef"><b>Definition</b> <a href="config__view__model__interface_8hpp_source.html#l00188">config_view_model_interface.hpp:189</a></div></div>
+<div class="ttc" id="aconfig__view__model__interface_8hpp_html"><div class="ttname"><a href="config__view__model__interface_8hpp.html">config_view_model_interface.hpp</a></div></div>
+<div class="ttc" id="aconfigview__observer_8hpp_html"><div class="ttname"><a href="configview__observer_8hpp.html">configview_observer.hpp</a></div></div>
+<div class="ttc" id="aids__buffer_8hpp_html"><div class="ttname"><a href="ids__buffer_8hpp.html">ids_buffer.hpp</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1actions_html_af913742220f232fcc0d0433f4e0da3f3"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">depicture_menu::domain::actions::publisher_id</a></div><div class="ttdeci">models::entity_id_base&lt; action_publisher_id_tag &gt; publisher_id</div><div class="ttdef"><b>Definition</b> <a href="action__ids_8hpp_source.html#l00017">action_ids.hpp:17</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1commands_html_a255579014c08ea612b006aa3a641ca7a"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1commands.html#a255579014c08ea612b006aa3a641ca7a">depicture_menu::domain::commands::command_id</a></div><div class="ttdeci">models::entity_id_base&lt; detail_commands::command_id_tag &gt; command_id</div><div class="ttdef"><b>Definition</b> <a href="command__ids_8hpp_source.html#l00018">command_ids.hpp:18</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1menu_html_a2b51ff146c22769b74c23c37851fa801"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1menu.html#a2b51ff146c22769b74c23c37851fa801">depicture_menu::domain::menu::menu_id</a></div><div class="ttdeci">models::entity_id_base&lt; detail_menu::menu_id_tag &gt; menu_id</div><div class="ttdef"><b>Definition</b> <a href="menu__ids_8hpp_source.html#l00022">menu_ids.hpp:22</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1menu_html_aa7d3347d8daef21d1ee5d9f029632c0a"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1menu.html#aa7d3347d8daef21d1ee5d9f029632c0a">depicture_menu::domain::menu::menu_item_id</a></div><div class="ttdeci">models::entity_id_base&lt; detail_menu::menu_item_id_tag &gt; menu_item_id</div><div class="ttdef"><b>Definition</b> <a href="menu__ids_8hpp_source.html#l00023">menu_ids.hpp:23</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1triggers_html_ab0086bbfe1ea3c9e8ebf6e362ec544c3"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1triggers.html#ab0086bbfe1ea3c9e8ebf6e362ec544c3">depicture_menu::domain::triggers::trigger_id</a></div><div class="ttdeci">models::entity_id_base&lt; detail_triggers::trigger_id_tag &gt; trigger_id</div><div class="ttdef"><b>Definition</b> <a href="trigger__ids_8hpp_source.html#l00016">trigger_ids.hpp:16</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1presentations_html"><div class="ttname"><a href="namespacedepicture__menu_1_1presentations.html">depicture_menu::presentations</a></div><div class="ttdef"><b>Definition</b> <a href="app__option__window__presenter_8hpp_source.html#l00005">app_option_window_presenter.hpp:6</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1dto_html_a514ab62cb0fe259fdb9810eb40ce18af"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1dto.html#a514ab62cb0fe259fdb9810eb40ce18af">depicture_menu::usecase::dto::command_changed_notify</a></div><div class="ttdeci">view_changed_notify_with_kind&lt; domain_update_kind::commands &gt; command_changed_notify</div><div class="ttdef"><b>Definition</b> <a href="domains__notify_8hpp_source.html#l00123">domains_notify.hpp:123</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1dto_html_a5d64ad1a61eb3ad2512237a453caea14"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1dto.html#a5d64ad1a61eb3ad2512237a453caea14">depicture_menu::usecase::dto::trigger_changed_notify</a></div><div class="ttdeci">view_changed_notify_with_kind&lt; domain_update_kind::trigger &gt; trigger_changed_notify</div><div class="ttdef"><b>Definition</b> <a href="domains__notify_8hpp_source.html#l00124">domains_notify.hpp:124</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1dto_html_a9073a2c3d8d98bd2271898ee876c7fee"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1dto.html#a9073a2c3d8d98bd2271898ee876c7fee">depicture_menu::usecase::dto::action_changed_notify</a></div><div class="ttdeci">view_changed_notify_with_kind&lt; domain_update_kind::actions &gt; action_changed_notify</div><div class="ttdef"><b>Definition</b> <a href="domains__notify_8hpp_source.html#l00122">domains_notify.hpp:122</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1dto_html_ac2aaed68a427137178bb5a0a838ba75e"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1dto.html#ac2aaed68a427137178bb5a0a838ba75e">depicture_menu::usecase::dto::menu_changed_notify</a></div><div class="ttdeci">view_changed_notify_with_kind&lt; domain_update_kind::menus &gt; menu_changed_notify</div><div class="ttdef"><b>Definition</b> <a href="domains__notify_8hpp_source.html#l00121">domains_notify.hpp:121</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1observer_1_1view__model__lock_html"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1observer_1_1view__model__lock.html">depicture_menu::cs_binding::observer::view_model_lock</a></div><div class="ttdef"><b>Definition</b> <a href="configview__observer_8hpp_source.html#l00265">configview_observer.hpp:266</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1radialmenu_html"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html">depicture_menu::domain::menu::radialmenu</a></div><div class="ttdef"><b>Definition</b> <a href="radialmenu_8hpp_source.html#l00027">radialmenu.hpp:28</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1presentations_1_1config__view__presenter_1_1view__lock_html"><div class="ttname"><a href="structdepicture__menu_1_1presentations_1_1config__view__presenter_1_1view__lock.html">depicture_menu::presentations::config_view_presenter::view_lock</a></div><div class="ttdef"><b>Definition</b> <a href="#l00050">config_view_presenter.hpp:51</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1presentations_1_1config__view__presenter_1_1view__lock_html_a00fda2edde34041f85b1b43a62d3a428"><div class="ttname"><a href="structdepicture__menu_1_1presentations_1_1config__view__presenter_1_1view__lock.html#a00fda2edde34041f85b1b43a62d3a428">depicture_menu::presentations::config_view_presenter::view_lock::operator*</a></div><div class="ttdeci">cs_binding::ConfigArg &amp; operator*()</div><div class="ttdef"><b>Definition</b> <a href="#l00059">config_view_presenter.hpp:59</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1presentations_1_1config__view__presenter_1_1view__lock_html_a05c9d9629373b2469a437e5496591394"><div class="ttname"><a href="structdepicture__menu_1_1presentations_1_1config__view__presenter_1_1view__lock.html#a05c9d9629373b2469a437e5496591394">depicture_menu::presentations::config_view_presenter::view_lock::operator-&gt;</a></div><div class="ttdeci">cs_binding::ConfigArg * operator-&gt;() const</div><div class="ttdef"><b>Definition</b> <a href="#l00064">config_view_presenter.hpp:64</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1presentations_1_1config__view__presenter_1_1view__lock_html_a81e12b127e2c3108e49b37808b2cf8ba"><div class="ttname"><a href="structdepicture__menu_1_1presentations_1_1config__view__presenter_1_1view__lock.html#a81e12b127e2c3108e49b37808b2cf8ba">depicture_menu::presentations::config_view_presenter::view_lock::lock_</a></div><div class="ttdeci">cs_binding::observer::view_model_lock lock_</div><div class="ttdef"><b>Definition</b> <a href="#l00054">config_view_presenter.hpp:54</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1presentations_1_1config__view__presenter_1_1view__lock_html_a81f65242cb44eb4c4dd38940cef2df87"><div class="ttname"><a href="structdepicture__menu_1_1presentations_1_1config__view__presenter_1_1view__lock.html#a81f65242cb44eb4c4dd38940cef2df87">depicture_menu::presentations::config_view_presenter::view_lock::arg_</a></div><div class="ttdeci">std::shared_ptr&lt; cs_binding::ConfigArg &gt; arg_</div><div class="ttdef"><b>Definition</b> <a href="#l00053">config_view_presenter.hpp:53</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1presentations_1_1datas_1_1id__buffer__tuple_html"><div class="ttname"><a href="structdepicture__menu_1_1presentations_1_1datas_1_1id__buffer__tuple.html">depicture_menu::presentations::datas::id_buffer_tuple</a></div><div class="ttdef"><b>Definition</b> <a href="ids__buffer_8hpp_source.html#l00051">ids_buffer.hpp:52</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1usecase_1_1query__base_html"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1query__base.html">depicture_menu::usecase::query_base&lt; domain::actions::publisher &gt;</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_d26f0ed8b287a778d960ad2241e01057.html">src</a></li><li class="navelem"><a href="dir_eb29242f55d2489f6c4d008365c270b7.html">core</a></li><li class="navelem"><a href="dir_b08448ab66980ac237b9eba210eedb4a.html">presentation</a></li><li class="navelem"><a href="dir_a0b7b12a5c2e1c9a0fe6bad7fb6267eb.html">change_view_model</a></li><li class="navelem"><a href="config__view__presenter_8hpp.html">config_view_presenter.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

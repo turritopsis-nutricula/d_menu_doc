@@ -1,0 +1,4 @@
+var namespacedepicture__menu_1_1domain_1_1commands_1_1buildin_1_1detail__actions__data =
+[
+    [ "shellexecute_command_parameter_data", "structdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1detail__actions__data_1_1shellexecute__command__parameter__data.html", "structdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1detail__actions__data_1_1shellexecute__command__parameter__data" ]
+];

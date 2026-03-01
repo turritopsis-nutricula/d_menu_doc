@@ -1,0 +1,5 @@
+var namespacedepicture__menu_1_1repository_1_1detail__repository =
+[
+    [ "win32_window_observer_impl", "structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer__impl.html", "structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer__impl" ],
+    [ "win32_window_observer", "structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer.html", "structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer" ]
+];

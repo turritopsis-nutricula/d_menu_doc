@@ -1,0 +1,6 @@
+var structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__menu_1_1menu__erase__operator__impl =
+[
+    [ "menu_erase_operator_impl", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__menu_1_1menu__erase__operator__impl.html#a754567b7f9d9a1110a024ac4763522dc", null ],
+    [ "sync", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__menu_1_1menu__erase__operator__impl.html#a86a8aa116458abe8b51b4d136020ffa6", null ],
+    [ "value_", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__menu_1_1menu__erase__operator__impl.html#ac74bbec4ff56b4e8d4efcc166da22064", null ]
+];

@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/src/core/cs_binding/impl/obserable_traits.hpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('impl_2obserable__traits_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">obserable_traits.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="impl_2obserable__traits_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef SRC_CORE_CS_BINDING_IMPL_OBSERABLE_TRAITS_HPP_</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define SRC_CORE_CS_BINDING_IMPL_OBSERABLE_TRAITS_HPP_</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="constexpr__string_8hpp.html">utility/constexpr_string.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="type__traits_8hpp.html">utility/type_traits.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1cs__binding.html">depicture_menu::cs_binding</a></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">//</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// obserable_traits_define</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">//</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__traits__define.html">   16</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structdepicture__menu_1_1cs__binding_1_1obserable__traits__define.html">obserable_traits_define</a></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>};</div>
+</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1cs__binding.html#a841e77118ad93d8252a859d3144cb71d">   21</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespacedepicture__menu_1_1cs__binding.html#a841e77118ad93d8252a859d3144cb71d">obserable_traits_t</a> = <a class="code hl_struct" href="structdepicture__menu_1_1cs__binding_1_1obserable__traits__define.html">obserable_traits_define&lt; T &gt;::type</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">//</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// obserable_traits_kind</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">//</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="};">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1cs__binding.html#a201073c80b5f34eb202460660975c2f3">   28</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="namespacedepicture__menu_1_1cs__binding.html#a201073c80b5f34eb202460660975c2f3">obserable_traits_kind</a></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1cs__binding.html#a201073c80b5f34eb202460660975c2f3a2010f871ece0d74de512eb24667190ff">   30</a></span>    <a class="code hl_enumvalue" href="namespacedepicture__menu_1_1cs__binding.html#a201073c80b5f34eb202460660975c2f3a2010f871ece0d74de512eb24667190ff">value_changed_notify</a>,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1cs__binding.html#a201073c80b5f34eb202460660975c2f3a39adbeb6bc21a3133e5fdcf1ec05d1a0">   31</a></span>    <a class="code hl_enumvalue" href="namespacedepicture__menu_1_1cs__binding.html#a201073c80b5f34eb202460660975c2f3a39adbeb6bc21a3133e5fdcf1ec05d1a0">aggregate</a>,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1cs__binding.html#a201073c80b5f34eb202460660975c2f3adb6d9b451b818ccc9a449383f2f0c450">   32</a></span>    <a class="code hl_enumvalue" href="namespacedepicture__menu_1_1cs__binding.html#a201073c80b5f34eb202460660975c2f3adb6d9b451b818ccc9a449383f2f0c450">collection</a></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>};    <span class="comment">// enum class obserable_traits_kind</span></div>
+</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">//</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">// obserable_pair</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">//</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">template</span> &lt; constexpr_w<span class="keywordtype">string</span> FiledName, auto MP &gt;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">requires</span> std::is_member_function_pointer_v&lt; <span class="keyword">decltype</span>( MP ) &gt;</div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="};">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html">   42</a></span><span class="keyword">struct</span> <a class="code hl_function" href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#a07c95108539d30884608f4ffb77bd31c">obserable_pair</a></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>{</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#a10d83bb38df83f5c009be0958aa4d5ee">   44</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespacedepicture__menu.html#a9cee412d19c52d3cd58e52a31e7ec4c2">constexpr_wstring</a> <a class="code hl_variable" href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#a10d83bb38df83f5c009be0958aa4d5ee">field_name</a>           = FiledName;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#ad423137cbf3f89952d2c107168dc70cc">   45</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">decltype</span>( MP )    <a class="code hl_variable" href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#ad423137cbf3f89952d2c107168dc70cc">geter_member_pointer</a> = MP;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#a80d3af808d02c5eb30c8b146c597af3b">   46</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#a80d3af808d02c5eb30c8b146c597af3b">member_pointer_t</a>                                  = <span class="keyword">decltype</span>( MP );</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#a8a1f4df632aeca020611a13094877ae0">   47</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#a8a1f4df632aeca020611a13094877ae0">class_t</a> = <a class="code hl_typedef" href="namespacedepicture__menu_1_1util_1_1type__traits.html#adf8ffca0991549351cde4f03b65c1c84">util::type_traits::member_function_pointer_class_t</a>&lt;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <a class="code hl_typedef" href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#a80d3af808d02c5eb30c8b146c597af3b">member_pointer_t</a> &gt;;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#a79a1480a1abc5e8bad7bbc612274e991">   49</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#a79a1480a1abc5e8bad7bbc612274e991">return_t</a> = <a class="code hl_typedef" href="namespacedepicture__menu_1_1util_1_1type__traits.html#a505f03ef8862283eaebe54a64b77e3e1">util::type_traits::member_function_pointer_result_t</a>&lt;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <a class="code hl_typedef" href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#a80d3af808d02c5eb30c8b146c597af3b">member_pointer_t</a> &gt;;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#a6a21715f799d7e728e19f477d669acb0">   52</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_enumeration" href="namespacedepicture__menu_1_1cs__binding.html#a201073c80b5f34eb202460660975c2f3">obserable_traits_kind</a> <a class="code hl_variable" href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#a6a21715f799d7e728e19f477d669acb0">kind</a></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        = obserable_traits_kind ::value_changed_notify;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#a07c95108539d30884608f4ffb77bd31c">   55</a></span>    <span class="keyword">consteval</span> <a class="code hl_function" href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#a07c95108539d30884608f4ffb77bd31c">obserable_pair</a>( ) { }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">constexpr</span> <span class="keyword">static</span> <a class="code hl_typedef" href="show__menu__view_8cpp.html#af2f50314e782fe557bc272ceb76e6525">return_t</a></div>
+<div class="foldopen" id="foldopen00058" data-start="{" data-end="}">
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#af62b3216be261909c8db971f4bc7a341">   58</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#af62b3216be261909c8db971f4bc7a341">get</a>( <a class="code hl_typedef" href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#a8a1f4df632aeca020611a13094877ae0">class_t</a> <span class="keyword">const</span>&amp; <a class="code hl_struct" href="structc.html">c</a> )</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordflow">return</span> ( <a class="code hl_struct" href="structc.html">c</a>.*MP )( );</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
+</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">constexpr</span> <span class="keyword">static</span> <a class="code hl_typedef" href="show__menu__view_8cpp.html#af2f50314e782fe557bc272ceb76e6525">return_t</a></div>
+<div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#a1a96a96d5f878fff6311034ed54dfcd9">   63</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#a1a96a96d5f878fff6311034ed54dfcd9">get</a>( <a class="code hl_typedef" href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#a8a1f4df632aeca020611a13094877ae0">class_t</a>&amp; <a class="code hl_struct" href="structc.html">c</a> )</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordflow">return</span> ( <a class="code hl_struct" href="structc.html">c</a>.*MP )( );</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
+</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>};</div>
+</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="foldopen" id="foldopen00070" data-start="{" data-end="}">
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="conceptdepicture__menu_1_1cs__binding_1_1obserable__entry.html">   70</a></span><span class="keyword">concept </span><a class="code hl_concept" href="conceptdepicture__menu_1_1cs__binding_1_1obserable__entry.html">obserable_entry</a> = <span class="keyword">requires</span>( T t ) {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    T::field_name;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">requires</span> std::is_member_function_pointer_v&lt;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keyword">decltype</span>( T::geter_member_pointer ) &gt;;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>};</div>
+</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="foldopen" id="foldopen00077" data-start="{" data-end="}">
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="conceptdepicture__menu_1_1cs__binding_1_1obserable__notify__change__entry.html">   77</a></span><span class="keyword">concept </span><a class="code hl_concept" href="conceptdepicture__menu_1_1cs__binding_1_1obserable__notify__change__entry.html">obserable_notify_change_entry</a> = <span class="keyword">requires</span>( T t ) {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">requires</span> <a class="code hl_concept" href="conceptdepicture__menu_1_1cs__binding_1_1obserable__entry.html">obserable_entry&lt; T &gt;</a>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">requires</span> T::kind == <a class="code hl_enumvalue" href="namespacedepicture__menu_1_1cs__binding.html#a201073c80b5f34eb202460660975c2f3a2010f871ece0d74de512eb24667190ff">obserable_traits_kind::value_changed_notify</a>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>};</div>
+</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">//</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">//  obserable_aggragate_pair</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">//</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="keyword">template</span> &lt; constexpr_w<span class="keywordtype">string</span> FiledName, auto MP &gt;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keyword">requires</span> std::is_member_function_pointer_v&lt; <span class="keyword">decltype</span>( MP ) &gt;</div>
+<div class="foldopen" id="foldopen00090" data-start="{" data-end="};">
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html">   90</a></span><span class="keyword">struct</span> <a class="code hl_function" href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#a3ab9b35295b266dce65f3aa0f3a31cf6">obserable_aggragate_pair</a></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>{</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#afb0ec2f215eb893957498ddeec71bce9">   92</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespacedepicture__menu.html#a9cee412d19c52d3cd58e52a31e7ec4c2">constexpr_wstring</a> <a class="code hl_variable" href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#afb0ec2f215eb893957498ddeec71bce9">field_name</a>           = FiledName;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#a1ee23317308610a943a0233d29ecf2ec">   93</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">decltype</span>( MP )    <a class="code hl_variable" href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#a1ee23317308610a943a0233d29ecf2ec">geter_member_pointer</a> = MP;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#a1d4d0f4a801ab2326432650949cad0e4">   94</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#a1d4d0f4a801ab2326432650949cad0e4">member_pointer_t</a>                                  = <span class="keyword">decltype</span>( MP );</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#aab98c5183ed12908ecacde37fd0293d6">   95</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#aab98c5183ed12908ecacde37fd0293d6">class_t</a> = <a class="code hl_typedef" href="namespacedepicture__menu_1_1util_1_1type__traits.html#adf8ffca0991549351cde4f03b65c1c84">util::type_traits::member_function_pointer_class_t</a>&lt;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <a class="code hl_typedef" href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#a1d4d0f4a801ab2326432650949cad0e4">member_pointer_t</a> &gt;;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#a60b9e2b3d5bb8a1ad923308a1b7adf63">   97</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#a60b9e2b3d5bb8a1ad923308a1b7adf63">return_t</a> = <a class="code hl_typedef" href="namespacedepicture__menu_1_1util_1_1type__traits.html#a505f03ef8862283eaebe54a64b77e3e1">util::type_traits::member_function_pointer_result_t</a>&lt;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <a class="code hl_typedef" href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#a1d4d0f4a801ab2326432650949cad0e4">member_pointer_t</a> &gt;;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#a7091d1a96576a1289267f70a05317dcc">  100</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_enumeration" href="namespacedepicture__menu_1_1cs__binding.html#a201073c80b5f34eb202460660975c2f3">obserable_traits_kind</a> <a class="code hl_variable" href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#a7091d1a96576a1289267f70a05317dcc">kind</a></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        = obserable_traits_kind ::aggregate;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#a3ab9b35295b266dce65f3aa0f3a31cf6">  103</a></span>    <span class="keyword">consteval</span> <a class="code hl_function" href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#a3ab9b35295b266dce65f3aa0f3a31cf6">obserable_aggragate_pair</a>( ) { }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keyword">constexpr</span> <span class="keyword">static</span> <a class="code hl_typedef" href="show__menu__view_8cpp.html#af2f50314e782fe557bc272ceb76e6525">return_t</a></div>
+<div class="foldopen" id="foldopen00106" data-start="{" data-end="}">
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#a8b0056ed2d12c5a321af798fd0d5b63c">  106</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#a8b0056ed2d12c5a321af798fd0d5b63c">get</a>( <a class="code hl_typedef" href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#aab98c5183ed12908ecacde37fd0293d6">class_t</a> <span class="keyword">const</span>&amp; <a class="code hl_struct" href="structc.html">c</a> )</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        <span class="keywordflow">return</span> ( <a class="code hl_struct" href="structc.html">c</a>.*MP )( );</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    }</div>
+</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keyword">constexpr</span> <span class="keyword">static</span> <a class="code hl_typedef" href="show__menu__view_8cpp.html#af2f50314e782fe557bc272ceb76e6525">return_t</a></div>
+<div class="foldopen" id="foldopen00111" data-start="{" data-end="}">
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#a4d4cf2dc3d09b7b9e468b78f76480a85">  111</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#a4d4cf2dc3d09b7b9e468b78f76480a85">get</a>( <a class="code hl_typedef" href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#aab98c5183ed12908ecacde37fd0293d6">class_t</a>&amp; <a class="code hl_struct" href="structc.html">c</a> )</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="keywordflow">return</span> ( <a class="code hl_struct" href="structc.html">c</a>.*MP )( );</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    }</div>
+</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>};</div>
+</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="foldopen" id="foldopen00118" data-start="{" data-end="}">
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="conceptdepicture__menu_1_1cs__binding_1_1obserable__aggregate__entry.html">  118</a></span><span class="keyword">concept </span><a class="code hl_concept" href="conceptdepicture__menu_1_1cs__binding_1_1obserable__aggregate__entry.html">obserable_aggregate_entry</a> = <span class="keyword">requires</span>( T t ) {</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keyword">requires</span> <a class="code hl_concept" href="conceptdepicture__menu_1_1cs__binding_1_1obserable__entry.html">obserable_entry&lt; T &gt;</a>;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keyword">requires</span> T::kind == <a class="code hl_enumvalue" href="namespacedepicture__menu_1_1cs__binding.html#a201073c80b5f34eb202460660975c2f3a39adbeb6bc21a3133e5fdcf1ec05d1a0">obserable_traits_kind::aggregate</a>;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>};</div>
+</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">//</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">// obserable_collection_pair</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">//</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="keyword">template</span> &lt; constexpr_w<span class="keywordtype">string</span> FiledName, auto MP &gt;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keyword">requires</span> std::is_member_function_pointer_v&lt; <span class="keyword">decltype</span>( MP ) &gt;</div>
+<div class="foldopen" id="foldopen00130" data-start="{" data-end="};">
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html">  130</a></span><span class="keyword">struct</span> <a class="code hl_function" href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#a7208419c4cc03073957558a24e511e51">obserable_collection_pair</a></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>{</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#adedf4e16ab1474661ca99b32e52443a8">  132</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="namespacedepicture__menu.html#a9cee412d19c52d3cd58e52a31e7ec4c2">constexpr_wstring</a> <a class="code hl_variable" href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#adedf4e16ab1474661ca99b32e52443a8">field_name</a>           = FiledName;</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#a18ab411b97a7aaa99b405f668e391556">  133</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">decltype</span>( MP )    <a class="code hl_variable" href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#a18ab411b97a7aaa99b405f668e391556">geter_member_pointer</a> = MP;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#a6fc05b1a8d476fb6dda2a94675dc41ea">  134</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#a6fc05b1a8d476fb6dda2a94675dc41ea">member_pointer_t</a>                                  = <span class="keyword">decltype</span>( MP );</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#aca60cd8894e927a707dbbdd19b9a0814">  135</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#aca60cd8894e927a707dbbdd19b9a0814">class_t</a> = <a class="code hl_typedef" href="namespacedepicture__menu_1_1util_1_1type__traits.html#adf8ffca0991549351cde4f03b65c1c84">util::type_traits::member_function_pointer_class_t</a>&lt;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        <a class="code hl_typedef" href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#a6fc05b1a8d476fb6dda2a94675dc41ea">member_pointer_t</a> &gt;;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#a91fddce6390b63a70704464ee3544dd8">  137</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#a91fddce6390b63a70704464ee3544dd8">return_t</a> = <a class="code hl_typedef" href="namespacedepicture__menu_1_1util_1_1type__traits.html#a505f03ef8862283eaebe54a64b77e3e1">util::type_traits::member_function_pointer_result_t</a>&lt;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        <a class="code hl_typedef" href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#a6fc05b1a8d476fb6dda2a94675dc41ea">member_pointer_t</a> &gt;;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#a9c56688138e032745144d87cc6473fc9">  140</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_enumeration" href="namespacedepicture__menu_1_1cs__binding.html#a201073c80b5f34eb202460660975c2f3">obserable_traits_kind</a> <a class="code hl_variable" href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#a9c56688138e032745144d87cc6473fc9">kind</a></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        = obserable_traits_kind ::collection;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#a7208419c4cc03073957558a24e511e51">  143</a></span>    <span class="keyword">consteval</span> <a class="code hl_function" href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#a7208419c4cc03073957558a24e511e51">obserable_collection_pair</a>( ) { }</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="keyword">constexpr</span> <span class="keyword">static</span> <a class="code hl_typedef" href="show__menu__view_8cpp.html#af2f50314e782fe557bc272ceb76e6525">return_t</a></div>
+<div class="foldopen" id="foldopen00146" data-start="{" data-end="}">
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#ab0ab52e3ff3c318e6668314695437b33">  146</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#ab0ab52e3ff3c318e6668314695437b33">get</a>( <a class="code hl_typedef" href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#aca60cd8894e927a707dbbdd19b9a0814">class_t</a> <span class="keyword">const</span>&amp; <a class="code hl_struct" href="structc.html">c</a> )</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    {</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        <span class="keywordflow">return</span> ( <a class="code hl_struct" href="structc.html">c</a>.*MP )( );</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    }</div>
+</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keyword">constexpr</span> <span class="keyword">static</span> <a class="code hl_typedef" href="show__menu__view_8cpp.html#af2f50314e782fe557bc272ceb76e6525">return_t</a></div>
+<div class="foldopen" id="foldopen00151" data-start="{" data-end="}">
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#a390a921dec33012e63b0d23376241ef9">  151</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#a390a921dec33012e63b0d23376241ef9">get</a>( <a class="code hl_typedef" href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#aca60cd8894e927a707dbbdd19b9a0814">class_t</a>&amp; <a class="code hl_struct" href="structc.html">c</a> )</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    {</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        <span class="keywordflow">return</span> ( <a class="code hl_struct" href="structc.html">c</a>.*MP )( );</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    }</div>
+</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>};</div>
+</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="foldopen" id="foldopen00159" data-start="{" data-end="}">
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="conceptdepicture__menu_1_1cs__binding_1_1obserable__collection__entry.html">  159</a></span><span class="keyword">concept </span><a class="code hl_concept" href="conceptdepicture__menu_1_1cs__binding_1_1obserable__collection__entry.html">obserable_collection_entry</a> = <span class="keyword">requires</span>( T t ) {</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <span class="keyword">requires</span> <a class="code hl_concept" href="conceptdepicture__menu_1_1cs__binding_1_1obserable__entry.html">obserable_entry&lt; T &gt;</a>;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keyword">requires</span> T::kind == <a class="code hl_enumvalue" href="namespacedepicture__menu_1_1cs__binding.html#a201073c80b5f34eb202460660975c2f3adb6d9b451b818ccc9a449383f2f0c450">obserable_traits_kind::collection</a>;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>};</div>
+</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment">//</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment">// obserable_traits</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment">//</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span>... Args &gt;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    <span class="keyword">requires</span>( <a class="code hl_concept" href="conceptdepicture__menu_1_1cs__binding_1_1obserable__entry.html">obserable_entry&lt; Args &gt;</a> &amp;&amp; ... )</div>
+<div class="foldopen" id="foldopen00172" data-start="{" data-end="};">
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__traits.html">  172</a></span><span class="keyword">struct</span> <a class="code hl_struct" href="structdepicture__menu_1_1cs__binding_1_1obserable__traits.html">obserable_traits</a></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>{</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__traits.html#af20dd710c00619e87e23ea20aeb44abf">  174</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structdepicture__menu_1_1cs__binding_1_1obserable__traits.html#af20dd710c00619e87e23ea20aeb44abf">tuple_t</a> = std::tuple&lt; Args... &gt;;</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <span class="comment">//  template &lt; template &lt; typename... &gt; typename temp &gt;</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <span class="comment">//  static constexpr auto</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <span class="comment">//  apply(  )</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    <span class="comment">//  {</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <span class="comment">//      return 0;</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <span class="comment">//  }</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>};</div>
+</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment">//</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="comment">// obserable_traits_transform</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="comment">//</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span> obs_traits, <span class="keyword">template</span> &lt; <span class="keyword">typename</span>... &gt; <span class="keyword">typename</span> Temp &gt;</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__traits__transform.html">  189</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structdepicture__menu_1_1cs__binding_1_1obserable__traits__transform.html">obserable_traits_transform</a>;</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span>... Args, <span class="keyword">template</span> &lt; <span class="keyword">typename</span>... &gt; <span class="keyword">typename</span> Temp &gt;</div>
+<div class="foldopen" id="foldopen00191" data-start="{" data-end="};">
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__traits__transform_3_01obserable__traits_3_01_args_8_8_8_01_4_00_01_temp_01_4.html">  191</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structdepicture__menu_1_1cs__binding_1_1obserable__traits__transform.html">obserable_traits_transform</a>&lt; <a class="code hl_struct" href="structdepicture__menu_1_1cs__binding_1_1obserable__traits.html">obserable_traits</a>&lt; Args... &gt;, Temp &gt;</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>{</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1cs__binding_1_1obserable__traits__transform_3_01obserable__traits_3_01_args_8_8_8_01_4_00_01_temp_01_4.html#a275d669d0ef7c27725e78c2affefa993">  193</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structdepicture__menu_1_1cs__binding_1_1obserable__traits__transform_3_01obserable__traits_3_01_args_8_8_8_01_4_00_01_temp_01_4.html#a275d669d0ef7c27725e78c2affefa993">type</a> = Temp&lt; Args... &gt;;</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>};</div>
+</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span> obs_traits, <span class="keyword">template</span> &lt; <span class="keyword">typename</span>... &gt; <span class="keyword">typename</span> Temp &gt;</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1cs__binding.html#a275d66819d28789be089cffc852c0a19">  197</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespacedepicture__menu_1_1cs__binding.html#a275d66819d28789be089cffc852c0a19">obserable_traits_transform_t</a></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    = <a class="code hl_struct" href="structdepicture__menu_1_1cs__binding_1_1obserable__traits__transform.html">obserable_traits_transform&lt; obs_traits, Temp &gt;::type</a>;</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>}    <span class="comment">// namespace depicture_menu::cs_binding</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_CORE_CS_BINDING_IMPL_OBSERABLE_TRAITS_HPP_</span></div>
+<div class="ttc" id="aconceptdepicture__menu_1_1cs__binding_1_1obserable__aggregate__entry_html"><div class="ttname"><a href="conceptdepicture__menu_1_1cs__binding_1_1obserable__aggregate__entry.html">depicture_menu::cs_binding::obserable_aggregate_entry</a></div><div class="ttdef"><b>Definition</b> <a href="#l00118">obserable_traits.hpp:118</a></div></div>
+<div class="ttc" id="aconceptdepicture__menu_1_1cs__binding_1_1obserable__collection__entry_html"><div class="ttname"><a href="conceptdepicture__menu_1_1cs__binding_1_1obserable__collection__entry.html">depicture_menu::cs_binding::obserable_collection_entry</a></div><div class="ttdef"><b>Definition</b> <a href="#l00159">obserable_traits.hpp:159</a></div></div>
+<div class="ttc" id="aconceptdepicture__menu_1_1cs__binding_1_1obserable__entry_html"><div class="ttname"><a href="conceptdepicture__menu_1_1cs__binding_1_1obserable__entry.html">depicture_menu::cs_binding::obserable_entry</a></div><div class="ttdef"><b>Definition</b> <a href="#l00070">obserable_traits.hpp:70</a></div></div>
+<div class="ttc" id="aconceptdepicture__menu_1_1cs__binding_1_1obserable__notify__change__entry_html"><div class="ttname"><a href="conceptdepicture__menu_1_1cs__binding_1_1obserable__notify__change__entry.html">depicture_menu::cs_binding::obserable_notify_change_entry</a></div><div class="ttdef"><b>Definition</b> <a href="#l00077">obserable_traits.hpp:77</a></div></div>
+<div class="ttc" id="aconstexpr__string_8hpp_html"><div class="ttname"><a href="constexpr__string_8hpp.html">constexpr_string.hpp</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1cs__binding_html"><div class="ttname"><a href="namespacedepicture__menu_1_1cs__binding.html">depicture_menu::cs_binding</a></div><div class="ttdef"><b>Definition</b> <a href="core__interface_8hpp_source.html#l00042">core_interface.hpp:43</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1cs__binding_html_a201073c80b5f34eb202460660975c2f3"><div class="ttname"><a href="namespacedepicture__menu_1_1cs__binding.html#a201073c80b5f34eb202460660975c2f3">depicture_menu::cs_binding::obserable_traits_kind</a></div><div class="ttdeci">obserable_traits_kind</div><div class="ttdef"><b>Definition</b> <a href="#l00028">obserable_traits.hpp:29</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1cs__binding_html_a201073c80b5f34eb202460660975c2f3a2010f871ece0d74de512eb24667190ff"><div class="ttname"><a href="namespacedepicture__menu_1_1cs__binding.html#a201073c80b5f34eb202460660975c2f3a2010f871ece0d74de512eb24667190ff">depicture_menu::cs_binding::obserable_traits_kind::value_changed_notify</a></div><div class="ttdeci">@ value_changed_notify</div><div class="ttdef"><b>Definition</b> <a href="#l00030">obserable_traits.hpp:30</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1cs__binding_html_a201073c80b5f34eb202460660975c2f3a39adbeb6bc21a3133e5fdcf1ec05d1a0"><div class="ttname"><a href="namespacedepicture__menu_1_1cs__binding.html#a201073c80b5f34eb202460660975c2f3a39adbeb6bc21a3133e5fdcf1ec05d1a0">depicture_menu::cs_binding::obserable_traits_kind::aggregate</a></div><div class="ttdeci">@ aggregate</div><div class="ttdef"><b>Definition</b> <a href="#l00031">obserable_traits.hpp:31</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1cs__binding_html_a201073c80b5f34eb202460660975c2f3adb6d9b451b818ccc9a449383f2f0c450"><div class="ttname"><a href="namespacedepicture__menu_1_1cs__binding.html#a201073c80b5f34eb202460660975c2f3adb6d9b451b818ccc9a449383f2f0c450">depicture_menu::cs_binding::obserable_traits_kind::collection</a></div><div class="ttdeci">@ collection</div><div class="ttdef"><b>Definition</b> <a href="#l00032">obserable_traits.hpp:32</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1cs__binding_html_a275d66819d28789be089cffc852c0a19"><div class="ttname"><a href="namespacedepicture__menu_1_1cs__binding.html#a275d66819d28789be089cffc852c0a19">depicture_menu::cs_binding::obserable_traits_transform_t</a></div><div class="ttdeci">obserable_traits_transform&lt; obs_traits, Temp &gt;::type obserable_traits_transform_t</div><div class="ttdef"><b>Definition</b> <a href="#l00197">obserable_traits.hpp:197</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1cs__binding_html_a841e77118ad93d8252a859d3144cb71d"><div class="ttname"><a href="namespacedepicture__menu_1_1cs__binding.html#a841e77118ad93d8252a859d3144cb71d">depicture_menu::cs_binding::obserable_traits_t</a></div><div class="ttdeci">obserable_traits_define&lt; T &gt;::type obserable_traits_t</div><div class="ttdef"><b>Definition</b> <a href="#l00021">obserable_traits.hpp:21</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1util_1_1type__traits_html_a505f03ef8862283eaebe54a64b77e3e1"><div class="ttname"><a href="namespacedepicture__menu_1_1util_1_1type__traits.html#a505f03ef8862283eaebe54a64b77e3e1">depicture_menu::util::type_traits::member_function_pointer_result_t</a></div><div class="ttdeci">member_function_pointer_result&lt; M &gt;::type member_function_pointer_result_t</div><div class="ttdef"><b>Definition</b> <a href="type__traits_8hpp_source.html#l00049">type_traits.hpp:49</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1util_1_1type__traits_html_adf8ffca0991549351cde4f03b65c1c84"><div class="ttname"><a href="namespacedepicture__menu_1_1util_1_1type__traits.html#adf8ffca0991549351cde4f03b65c1c84">depicture_menu::util::type_traits::member_function_pointer_class_t</a></div><div class="ttdeci">member_function_pointer_class&lt; M &gt;::type member_function_pointer_class_t</div><div class="ttdef"><b>Definition</b> <a href="type__traits_8hpp_source.html#l00066">type_traits.hpp:66</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_html_a9cee412d19c52d3cd58e52a31e7ec4c2"><div class="ttname"><a href="namespacedepicture__menu.html#a9cee412d19c52d3cd58e52a31e7ec4c2">depicture_menu::constexpr_wstring</a></div><div class="ttdeci">util::constexpr_wstring&lt; N &gt; constexpr_wstring</div><div class="ttdef"><b>Definition</b> <a href="constexpr__string_8hpp_source.html#l00098">constexpr_string.hpp:98</a></div></div>
+<div class="ttc" id="ashow__menu__view_8cpp_html_af2f50314e782fe557bc272ceb76e6525"><div class="ttname"><a href="show__menu__view_8cpp.html#af2f50314e782fe557bc272ceb76e6525">return_t</a></div><div class="ttdeci">std::tuple&lt; d_menu::domain::menu::radialmenu, int, int &gt; return_t</div><div class="ttdef"><b>Definition</b> <a href="show__menu__view_8cpp_source.html#l00014">show_menu_view.cpp:14</a></div></div>
+<div class="ttc" id="astructc_html"><div class="ttname"><a href="structc.html">c</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00154">TestReflection.cpp:155</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair_html_a1d4d0f4a801ab2326432650949cad0e4"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#a1d4d0f4a801ab2326432650949cad0e4">depicture_menu::cs_binding::obserable_aggragate_pair::member_pointer_t</a></div><div class="ttdeci">decltype(MP) member_pointer_t</div><div class="ttdef"><b>Definition</b> <a href="#l00094">obserable_traits.hpp:94</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair_html_a1ee23317308610a943a0233d29ecf2ec"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#a1ee23317308610a943a0233d29ecf2ec">depicture_menu::cs_binding::obserable_aggragate_pair::geter_member_pointer</a></div><div class="ttdeci">static constexpr decltype(MP) geter_member_pointer</div><div class="ttdef"><b>Definition</b> <a href="#l00093">obserable_traits.hpp:93</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair_html_a3ab9b35295b266dce65f3aa0f3a31cf6"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#a3ab9b35295b266dce65f3aa0f3a31cf6">depicture_menu::cs_binding::obserable_aggragate_pair::obserable_aggragate_pair</a></div><div class="ttdeci">consteval obserable_aggragate_pair()</div><div class="ttdef"><b>Definition</b> <a href="#l00103">obserable_traits.hpp:103</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair_html_a4d4cf2dc3d09b7b9e468b78f76480a85"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#a4d4cf2dc3d09b7b9e468b78f76480a85">depicture_menu::cs_binding::obserable_aggragate_pair::get</a></div><div class="ttdeci">static constexpr return_t get(class_t &amp;c)</div><div class="ttdef"><b>Definition</b> <a href="#l00111">obserable_traits.hpp:111</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair_html_a60b9e2b3d5bb8a1ad923308a1b7adf63"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#a60b9e2b3d5bb8a1ad923308a1b7adf63">depicture_menu::cs_binding::obserable_aggragate_pair::return_t</a></div><div class="ttdeci">util::type_traits::member_function_pointer_result_t&lt; member_pointer_t &gt; return_t</div><div class="ttdef"><b>Definition</b> <a href="#l00097">obserable_traits.hpp:97</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair_html_a7091d1a96576a1289267f70a05317dcc"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#a7091d1a96576a1289267f70a05317dcc">depicture_menu::cs_binding::obserable_aggragate_pair::kind</a></div><div class="ttdeci">static constexpr obserable_traits_kind kind</div><div class="ttdef"><b>Definition</b> <a href="#l00100">obserable_traits.hpp:101</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair_html_a8b0056ed2d12c5a321af798fd0d5b63c"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#a8b0056ed2d12c5a321af798fd0d5b63c">depicture_menu::cs_binding::obserable_aggragate_pair::get</a></div><div class="ttdeci">static constexpr return_t get(class_t const &amp;c)</div><div class="ttdef"><b>Definition</b> <a href="#l00106">obserable_traits.hpp:106</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair_html_aab98c5183ed12908ecacde37fd0293d6"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#aab98c5183ed12908ecacde37fd0293d6">depicture_menu::cs_binding::obserable_aggragate_pair::class_t</a></div><div class="ttdeci">util::type_traits::member_function_pointer_class_t&lt; member_pointer_t &gt; class_t</div><div class="ttdef"><b>Definition</b> <a href="#l00095">obserable_traits.hpp:95</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair_html_afb0ec2f215eb893957498ddeec71bce9"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__aggragate__pair.html#afb0ec2f215eb893957498ddeec71bce9">depicture_menu::cs_binding::obserable_aggragate_pair::field_name</a></div><div class="ttdeci">static constexpr constexpr_wstring field_name</div><div class="ttdef"><b>Definition</b> <a href="#l00092">obserable_traits.hpp:92</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__collection__pair_html_a18ab411b97a7aaa99b405f668e391556"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#a18ab411b97a7aaa99b405f668e391556">depicture_menu::cs_binding::obserable_collection_pair::geter_member_pointer</a></div><div class="ttdeci">static constexpr decltype(MP) geter_member_pointer</div><div class="ttdef"><b>Definition</b> <a href="#l00133">obserable_traits.hpp:133</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__collection__pair_html_a390a921dec33012e63b0d23376241ef9"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#a390a921dec33012e63b0d23376241ef9">depicture_menu::cs_binding::obserable_collection_pair::get</a></div><div class="ttdeci">static constexpr return_t get(class_t &amp;c)</div><div class="ttdef"><b>Definition</b> <a href="#l00151">obserable_traits.hpp:151</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__collection__pair_html_a6fc05b1a8d476fb6dda2a94675dc41ea"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#a6fc05b1a8d476fb6dda2a94675dc41ea">depicture_menu::cs_binding::obserable_collection_pair::member_pointer_t</a></div><div class="ttdeci">decltype(MP) member_pointer_t</div><div class="ttdef"><b>Definition</b> <a href="#l00134">obserable_traits.hpp:134</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__collection__pair_html_a7208419c4cc03073957558a24e511e51"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#a7208419c4cc03073957558a24e511e51">depicture_menu::cs_binding::obserable_collection_pair::obserable_collection_pair</a></div><div class="ttdeci">consteval obserable_collection_pair()</div><div class="ttdef"><b>Definition</b> <a href="#l00143">obserable_traits.hpp:143</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__collection__pair_html_a91fddce6390b63a70704464ee3544dd8"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#a91fddce6390b63a70704464ee3544dd8">depicture_menu::cs_binding::obserable_collection_pair::return_t</a></div><div class="ttdeci">util::type_traits::member_function_pointer_result_t&lt; member_pointer_t &gt; return_t</div><div class="ttdef"><b>Definition</b> <a href="#l00137">obserable_traits.hpp:137</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__collection__pair_html_a9c56688138e032745144d87cc6473fc9"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#a9c56688138e032745144d87cc6473fc9">depicture_menu::cs_binding::obserable_collection_pair::kind</a></div><div class="ttdeci">static constexpr obserable_traits_kind kind</div><div class="ttdef"><b>Definition</b> <a href="#l00140">obserable_traits.hpp:141</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__collection__pair_html_ab0ab52e3ff3c318e6668314695437b33"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#ab0ab52e3ff3c318e6668314695437b33">depicture_menu::cs_binding::obserable_collection_pair::get</a></div><div class="ttdeci">static constexpr return_t get(class_t const &amp;c)</div><div class="ttdef"><b>Definition</b> <a href="#l00146">obserable_traits.hpp:146</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__collection__pair_html_aca60cd8894e927a707dbbdd19b9a0814"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#aca60cd8894e927a707dbbdd19b9a0814">depicture_menu::cs_binding::obserable_collection_pair::class_t</a></div><div class="ttdeci">util::type_traits::member_function_pointer_class_t&lt; member_pointer_t &gt; class_t</div><div class="ttdef"><b>Definition</b> <a href="#l00135">obserable_traits.hpp:135</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__collection__pair_html_adedf4e16ab1474661ca99b32e52443a8"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__collection__pair.html#adedf4e16ab1474661ca99b32e52443a8">depicture_menu::cs_binding::obserable_collection_pair::field_name</a></div><div class="ttdeci">static constexpr constexpr_wstring field_name</div><div class="ttdef"><b>Definition</b> <a href="#l00132">obserable_traits.hpp:132</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__pair_html_a07c95108539d30884608f4ffb77bd31c"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#a07c95108539d30884608f4ffb77bd31c">depicture_menu::cs_binding::obserable_pair::obserable_pair</a></div><div class="ttdeci">consteval obserable_pair()</div><div class="ttdef"><b>Definition</b> <a href="#l00055">obserable_traits.hpp:55</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__pair_html_a10d83bb38df83f5c009be0958aa4d5ee"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#a10d83bb38df83f5c009be0958aa4d5ee">depicture_menu::cs_binding::obserable_pair::field_name</a></div><div class="ttdeci">static constexpr constexpr_wstring field_name</div><div class="ttdef"><b>Definition</b> <a href="#l00044">obserable_traits.hpp:44</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__pair_html_a1a96a96d5f878fff6311034ed54dfcd9"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#a1a96a96d5f878fff6311034ed54dfcd9">depicture_menu::cs_binding::obserable_pair::get</a></div><div class="ttdeci">static constexpr return_t get(class_t &amp;c)</div><div class="ttdef"><b>Definition</b> <a href="#l00063">obserable_traits.hpp:63</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__pair_html_a6a21715f799d7e728e19f477d669acb0"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#a6a21715f799d7e728e19f477d669acb0">depicture_menu::cs_binding::obserable_pair::kind</a></div><div class="ttdeci">static constexpr obserable_traits_kind kind</div><div class="ttdef"><b>Definition</b> <a href="#l00052">obserable_traits.hpp:53</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__pair_html_a79a1480a1abc5e8bad7bbc612274e991"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#a79a1480a1abc5e8bad7bbc612274e991">depicture_menu::cs_binding::obserable_pair::return_t</a></div><div class="ttdeci">util::type_traits::member_function_pointer_result_t&lt; member_pointer_t &gt; return_t</div><div class="ttdef"><b>Definition</b> <a href="#l00049">obserable_traits.hpp:49</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__pair_html_a80d3af808d02c5eb30c8b146c597af3b"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#a80d3af808d02c5eb30c8b146c597af3b">depicture_menu::cs_binding::obserable_pair::member_pointer_t</a></div><div class="ttdeci">decltype(MP) member_pointer_t</div><div class="ttdef"><b>Definition</b> <a href="#l00046">obserable_traits.hpp:46</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__pair_html_a8a1f4df632aeca020611a13094877ae0"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#a8a1f4df632aeca020611a13094877ae0">depicture_menu::cs_binding::obserable_pair::class_t</a></div><div class="ttdeci">util::type_traits::member_function_pointer_class_t&lt; member_pointer_t &gt; class_t</div><div class="ttdef"><b>Definition</b> <a href="#l00047">obserable_traits.hpp:47</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__pair_html_ad423137cbf3f89952d2c107168dc70cc"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#ad423137cbf3f89952d2c107168dc70cc">depicture_menu::cs_binding::obserable_pair::geter_member_pointer</a></div><div class="ttdeci">static constexpr decltype(MP) geter_member_pointer</div><div class="ttdef"><b>Definition</b> <a href="#l00045">obserable_traits.hpp:45</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__pair_html_af62b3216be261909c8db971f4bc7a341"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__pair.html#af62b3216be261909c8db971f4bc7a341">depicture_menu::cs_binding::obserable_pair::get</a></div><div class="ttdeci">static constexpr return_t get(class_t const &amp;c)</div><div class="ttdef"><b>Definition</b> <a href="#l00058">obserable_traits.hpp:58</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__traits__define_html"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__traits__define.html">depicture_menu::cs_binding::obserable_traits_define</a></div><div class="ttdef"><b>Definition</b> <a href="#l00016">obserable_traits.hpp:17</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__traits__transform_3_01obserable__traits_3_01_args_8_8_8_01_4_00_01_temp_01_4_html_a275d669d0ef7c27725e78c2affefa993"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__traits__transform_3_01obserable__traits_3_01_args_8_8_8_01_4_00_01_temp_01_4.html#a275d669d0ef7c27725e78c2affefa993">depicture_menu::cs_binding::obserable_traits_transform&lt; obserable_traits&lt; Args... &gt;, Temp &gt;::type</a></div><div class="ttdeci">Temp&lt; Args... &gt; type</div><div class="ttdef"><b>Definition</b> <a href="#l00193">obserable_traits.hpp:193</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__traits__transform_html"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__traits__transform.html">depicture_menu::cs_binding::obserable_traits_transform</a></div><div class="ttdef"><b>Definition</b> <a href="#l00189">obserable_traits.hpp:189</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__traits_html"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__traits.html">depicture_menu::cs_binding::obserable_traits</a></div><div class="ttdef"><b>Definition</b> <a href="#l00172">obserable_traits.hpp:173</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1obserable__traits_html_af20dd710c00619e87e23ea20aeb44abf"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1obserable__traits.html#af20dd710c00619e87e23ea20aeb44abf">depicture_menu::cs_binding::obserable_traits::tuple_t</a></div><div class="ttdeci">std::tuple&lt; Args... &gt; tuple_t</div><div class="ttdef"><b>Definition</b> <a href="#l00174">obserable_traits.hpp:174</a></div></div>
+<div class="ttc" id="atype__traits_8hpp_html"><div class="ttname"><a href="type__traits_8hpp.html">type_traits.hpp</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_d26f0ed8b287a778d960ad2241e01057.html">src</a></li><li class="navelem"><a href="dir_eb29242f55d2489f6c4d008365c270b7.html">core</a></li><li class="navelem"><a href="dir_cea6b123251f3cedcaebc32d093e626d.html">cs_binding</a></li><li class="navelem"><a href="dir_4825ab2602c264371d3c2195e6e556e8.html">impl</a></li><li class="navelem"><a href="impl_2obserable__traits_8hpp.html">obserable_traits.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

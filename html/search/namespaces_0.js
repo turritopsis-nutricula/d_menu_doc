@@ -1,17 +1,5 @@
 var searchData=
 [
-  ['depicture_5fmenu_0',['depicture_menu',['../namespacedepicture__menu.html',1,'']]],
-  ['depicture_5fmenu_3a_3adetail_1',['detail',['../namespacedepicture__menu_1_1detail.html',1,'depicture_menu']]],
-  ['depicture_5fmenu_3a_3areflection_2',['reflection',['../namespacedepicture__menu_1_1reflection.html',1,'depicture_menu']]],
-  ['depicture_5fmenu_3a_3areflection_3a_3adetail_5freflection_3',['detail_reflection',['../namespacedepicture__menu_1_1reflection_1_1detail__reflection.html',1,'depicture_menu::reflection']]],
-  ['depicture_5fmenu_3a_3atype_5ftraits_4',['type_traits',['../namespacedepicture__menu_1_1type__traits.html',1,'depicture_menu']]],
-  ['depicture_5fmenu_3a_3autil_5',['util',['../namespacedepicture__menu_1_1util.html',1,'depicture_menu']]],
-  ['depicture_5fmenu_3a_3autil_3a_3adetail_5futil_6',['detail_util',['../namespacedepicture__menu_1_1util_1_1detail__util.html',1,'depicture_menu::util']]],
-  ['depicture_5fmenu_3a_3autil_3a_3aranges_7',['ranges',['../namespacedepicture__menu_1_1util_1_1ranges.html',1,'depicture_menu::util']]],
-  ['depicture_5fmenu_3a_3autil_3a_3astrconv_8',['strconv',['../namespacedepicture__menu_1_1util_1_1strconv.html',1,'depicture_menu::util']]],
-  ['depicture_5fmenu_3a_3autil_3a_3atype_5ftraits_9',['type_traits',['../namespacedepicture__menu_1_1util_1_1type__traits.html',1,'depicture_menu::util']]],
-  ['depicture_5fmenu_3a_3autil_3a_3atype_5ftraits_3a_3adetail_5ftype_5ftraits_10',['detail_type_traits',['../namespacedepicture__menu_1_1util_1_1type__traits_1_1detail__type__traits.html',1,'depicture_menu::util::type_traits']]],
-  ['depicture_5fmenu_3a_3awin32_11',['win32',['../namespacedepicture__menu_1_1win32.html',1,'depicture_menu']]],
-  ['depicture_5fmenu_3a_3awin32_3a_3aprocess_12',['process',['../namespacedepicture__menu_1_1win32_1_1process.html',1,'depicture_menu::win32']]],
-  ['depicture_5fmenu_3a_3awin32_3a_3aprocess_3a_3adetail_5fprocess_13',['detail_process',['../namespacedepicture__menu_1_1win32_1_1process_1_1detail__process.html',1,'depicture_menu::win32::process']]]
+  ['boost_0',['boost',['../namespaceboost.html',1,'']]],
+  ['boost_3a_3aserialization_1',['serialization',['../namespaceboost_1_1serialization.html',1,'boost']]]
 ];

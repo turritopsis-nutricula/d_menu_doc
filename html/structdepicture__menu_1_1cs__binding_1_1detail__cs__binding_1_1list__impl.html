@@ -1,0 +1,871 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu::cs_binding::detail_cs_binding::list_impl&lt; T &gt; 構造体テンプレート</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html','','structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">depicture_menu::cs_binding::detail_cs_binding::list_impl&lt; T &gt; 構造体テンプレート</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a93c8e04551d315c08b1c2eb7677ed80f" id="r_a93c8e04551d315c08b1c2eb7677ed80f"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a93c8e04551d315c08b1c2eb7677ed80f">element_t</a> = T</td></tr>
+<tr class="memitem:a324abe342ec36b6b3a19968538673fca" id="r_a324abe342ec36b6b3a19968538673fca"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a324abe342ec36b6b3a19968538673fca">value_t</a> = std::shared_ptr&lt; <a class="el" href="#a93c8e04551d315c08b1c2eb7677ed80f">element_t</a> &gt;</td></tr>
+<tr class="memitem:af543d000f81f02c1c991f9d8b3dd4944" id="r_af543d000f81f02c1c991f9d8b3dd4944"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#af543d000f81f02c1c991f9d8b3dd4944">index_t</a> = std::size_t</td></tr>
+<tr class="memitem:a4fab9bdd1f870ae1d1c3a22195f6aff6" id="r_a4fab9bdd1f870ae1d1c3a22195f6aff6"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a4fab9bdd1f870ae1d1c3a22195f6aff6">changed_notify_t</a> = void ( * )( wchar_t const*, unsigned int )</td></tr>
+<tr class="memitem:a8e92735206d349ae087bd5791274b53a" id="r_a8e92735206d349ae087bd5791274b53a"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a8e92735206d349ae087bd5791274b53a">collection_changed_notify_t</a> = void ( * )( int, void*, void*, int, int )</td></tr>
+<tr class="memitem:ac9e59baccf07594c2a5c4b5792283d3c" id="r_ac9e59baccf07594c2a5c4b5792283d3c"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#ac9e59baccf07594c2a5c4b5792283d3c">iterator</a> = std::vector&lt; <a class="el" href="#a324abe342ec36b6b3a19968538673fca">value_t</a> &gt;::iterator</td></tr>
+<tr class="memitem:a10702a9e799f4cea1f26cb41d77de56e" id="r_a10702a9e799f4cea1f26cb41d77de56e"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a10702a9e799f4cea1f26cb41d77de56e">const_iterator</a> = std::vector&lt; <a class="el" href="#a324abe342ec36b6b3a19968538673fca">value_t</a> &gt;::const_iterator</td></tr>
+<tr class="memitem:a3ce84252401e1cc4611c99da70a78338" id="r_a3ce84252401e1cc4611c99da70a78338"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a3ce84252401e1cc4611c99da70a78338">property_changed_notiry_t</a> = void( wchar_t const*, unsigned int )</td></tr>
+<tr class="memitem:a6021b0a0eac5860987cf07e80a1d5f43" id="r_a6021b0a0eac5860987cf07e80a1d5f43"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a6021b0a0eac5860987cf07e80a1d5f43">collection_notify_t</a> = void( int, void*, void*, int, int )</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a585f7cb2afc660da04e3be62ce115b3b" id="r_a585f7cb2afc660da04e3be62ce115b3b"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a585f7cb2afc660da04e3be62ce115b3b">list_count</a> ()</td></tr>
+<tr class="memitem:af4f5fea2d81647191831d20726be8d26" id="r_af4f5fea2d81647191831d20726be8d26"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af4f5fea2d81647191831d20726be8d26">list_notify_regist</a> (void(*callback)(wchar_t const *, unsigned int))</td></tr>
+<tr class="memitem:af972d77d5354f9b4341097af56a481bc" id="r_af972d77d5354f9b4341097af56a481bc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af972d77d5354f9b4341097af56a481bc">collection_notify_regist</a> (void(*callback)(int, void *, void *, int, int))</td></tr>
+<tr class="memitem:a07e7ce4817a4cfc4acb2a3454322f313" id="r_a07e7ce4817a4cfc4acb2a3454322f313"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a07e7ce4817a4cfc4acb2a3454322f313">proxy_update_item</a> (int index, void *proxy_ptr)</td></tr>
+<tr class="memitem:a963b0b2cd4648172b9324b83723bd4b9" id="r_a963b0b2cd4648172b9324b83723bd4b9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a963b0b2cd4648172b9324b83723bd4b9">on_property_changed</a> (std::wstring_view <a class="el" href="_test_config_view_presenter_8cpp.html#a21b35e47ac3d8358063ede6968e59eaa">name</a>)</td></tr>
+<tr class="memitem:a21f5d24f7558568d668537028bc7aeab" id="r_a21f5d24f7558568d668537028bc7aeab"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a21f5d24f7558568d668537028bc7aeab">managed_changed_notify</a> (int action, void *proxy_ptr0, void *proxy_ptr1, int index0, int index1)</td></tr>
+<tr class="memitem:a54d0f944fbb9ff7f658c35214431414f" id="r_a54d0f944fbb9ff7f658c35214431414f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a54d0f944fbb9ff7f658c35214431414f">regist_allocate_callback</a> ()</td></tr>
+<tr class="memitem:addc8f7f1cd29096de7708132d849f9f7" id="r_addc8f7f1cd29096de7708132d849f9f7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#addc8f7f1cd29096de7708132d849f9f7">request_pre_regist</a> (int index)</td></tr>
+<tr class="memitem:a084a97daf8d32f15927cbfdf27158e8a" id="r_a084a97daf8d32f15927cbfdf27158e8a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a084a97daf8d32f15927cbfdf27158e8a">increment_source_version</a> ()</td></tr>
+<tr class="memitem:ac7169112319ea7b5aed2907562426d64" id="r_ac7169112319ea7b5aed2907562426d64"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ac7169112319ea7b5aed2907562426d64">get_source_version</a> ()</td></tr>
+<tr class="memitem:a10ddb8fa736569dc97ec92439b34f024" id="r_a10ddb8fa736569dc97ec92439b34f024"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a10ddb8fa736569dc97ec92439b34f024">swap_regist_resource</a> (<a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">list_impl</a> &amp;o)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:afd5dc578957070da783c8a04f1b526c0" id="r_afd5dc578957070da783c8a04f1b526c0"><td class="memItemLeft">std::vector&lt; <a class="el" href="#a324abe342ec36b6b3a19968538673fca">value_t</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#afd5dc578957070da783c8a04f1b526c0">list_</a></td></tr>
+<tr class="memitem:a11db937b9b4289d323f9473ef48428bf" id="r_a11db937b9b4289d323f9473ef48428bf"><td class="memItemLeft">boost::signals2::signal&lt; <a class="el" href="#a3ce84252401e1cc4611c99da70a78338">property_changed_notiry_t</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a11db937b9b4289d323f9473ef48428bf">notify_</a></td></tr>
+<tr class="memitem:a2c45baf9df55442adfdd1ec892360924" id="r_a2c45baf9df55442adfdd1ec892360924"><td class="memItemLeft">boost::signals2::scoped_connection&#160;</td><td class="memItemRight"><a class="el" href="#a2c45baf9df55442adfdd1ec892360924">property_notify_connection_</a></td></tr>
+<tr class="memitem:aafbb00dd1332a8a986cb8f3a32d8d23a" id="r_aafbb00dd1332a8a986cb8f3a32d8d23a"><td class="memItemLeft">std::function&lt; <a class="el" href="#a3ce84252401e1cc4611c99da70a78338">property_changed_notiry_t</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aafbb00dd1332a8a986cb8f3a32d8d23a">property_changed_callback_</a></td></tr>
+<tr class="memitem:a78d968b4dd41be19e88e6f6ce1c54bbe" id="r_a78d968b4dd41be19e88e6f6ce1c54bbe"><td class="memItemLeft">std::function&lt; <a class="el" href="#a6021b0a0eac5860987cf07e80a1d5f43">collection_notify_t</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a78d968b4dd41be19e88e6f6ce1c54bbe">managed_collection_notify_callback_</a></td></tr>
+<tr class="memitem:a36d988df23e17036ad65924a29b62a02" id="r_a36d988df23e17036ad65924a29b62a02"><td class="memItemLeft">boost::signals2::signal&lt; <a class="el" href="#a6021b0a0eac5860987cf07e80a1d5f43">collection_notify_t</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a36d988df23e17036ad65924a29b62a02">collection_notify_</a></td></tr>
+<tr class="memitem:a4fd6650e80cefc69cd65449993074850" id="r_a4fd6650e80cefc69cd65449993074850"><td class="memItemLeft">boost::signals2::scoped_connection&#160;</td><td class="memItemRight"><a class="el" href="#a4fd6650e80cefc69cd65449993074850">collection_notify_connection_</a></td></tr>
+<tr class="memitem:a0d850929843dcad7c08e61ff0d3b2693" id="r_a0d850929843dcad7c08e61ff0d3b2693"><td class="memItemLeft">std::shared_ptr&lt; <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1version__counter.html">version_counter</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a0d850929843dcad7c08e61ff0d3b2693">version_count_</a> = std::make_shared&lt; <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1version__counter.html">version_counter</a> &gt;( )</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
+struct depicture_menu::cs_binding::detail_cs_binding::list_impl&lt; T &gt;</div>
+<p class="definition"> <a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a> の <a class="el" href="list__wrapper_8hpp_source.html#l00072">72</a> 行目に定義があります。</p>
+</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">型定義メンバ詳解</h2>
+<a id="a4fab9bdd1f870ae1d1c3a22195f6aff6" name="a4fab9bdd1f870ae1d1c3a22195f6aff6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fab9bdd1f870ae1d1c3a22195f6aff6">&#9670;&#160;</a></span>changed_notify_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">depicture_menu::cs_binding::detail_cs_binding::list_impl</a>&lt; T &gt;::changed_notify_t = void ( * )( wchar_t const*, unsigned int )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a> の <a class="el" href="list__wrapper_8hpp_source.html#l00077">77</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a8e92735206d349ae087bd5791274b53a" name="a8e92735206d349ae087bd5791274b53a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e92735206d349ae087bd5791274b53a">&#9670;&#160;</a></span>collection_changed_notify_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">depicture_menu::cs_binding::detail_cs_binding::list_impl</a>&lt; T &gt;::collection_changed_notify_t = void ( * )( int, void*, void*, int, int )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a> の <a class="el" href="list__wrapper_8hpp_source.html#l00078">78</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a6021b0a0eac5860987cf07e80a1d5f43" name="a6021b0a0eac5860987cf07e80a1d5f43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6021b0a0eac5860987cf07e80a1d5f43">&#9670;&#160;</a></span>collection_notify_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">depicture_menu::cs_binding::detail_cs_binding::list_impl</a>&lt; T &gt;::collection_notify_t = void( int, void*, void*, int, int )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a> の <a class="el" href="list__wrapper_8hpp_source.html#l00093">93</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a10702a9e799f4cea1f26cb41d77de56e" name="a10702a9e799f4cea1f26cb41d77de56e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10702a9e799f4cea1f26cb41d77de56e">&#9670;&#160;</a></span>const_iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">depicture_menu::cs_binding::detail_cs_binding::list_impl</a>&lt; T &gt;::const_iterator = std::vector&lt; <a class="el" href="#a324abe342ec36b6b3a19968538673fca">value_t</a> &gt;::const_iterator</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a> の <a class="el" href="list__wrapper_8hpp_source.html#l00084">84</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a93c8e04551d315c08b1c2eb7677ed80f" name="a93c8e04551d315c08b1c2eb7677ed80f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93c8e04551d315c08b1c2eb7677ed80f">&#9670;&#160;</a></span>element_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">depicture_menu::cs_binding::detail_cs_binding::list_impl</a>&lt; T &gt;::element_t = T</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a> の <a class="el" href="list__wrapper_8hpp_source.html#l00074">74</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="af543d000f81f02c1c991f9d8b3dd4944" name="af543d000f81f02c1c991f9d8b3dd4944"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af543d000f81f02c1c991f9d8b3dd4944">&#9670;&#160;</a></span>index_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">depicture_menu::cs_binding::detail_cs_binding::list_impl</a>&lt; T &gt;::index_t = std::size_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a> の <a class="el" href="list__wrapper_8hpp_source.html#l00076">76</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ac9e59baccf07594c2a5c4b5792283d3c" name="ac9e59baccf07594c2a5c4b5792283d3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9e59baccf07594c2a5c4b5792283d3c">&#9670;&#160;</a></span>iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">depicture_menu::cs_binding::detail_cs_binding::list_impl</a>&lt; T &gt;::iterator = std::vector&lt; <a class="el" href="#a324abe342ec36b6b3a19968538673fca">value_t</a> &gt;::iterator</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a> の <a class="el" href="list__wrapper_8hpp_source.html#l00083">83</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a3ce84252401e1cc4611c99da70a78338" name="a3ce84252401e1cc4611c99da70a78338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ce84252401e1cc4611c99da70a78338">&#9670;&#160;</a></span>property_changed_notiry_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">depicture_menu::cs_binding::detail_cs_binding::list_impl</a>&lt; T &gt;::property_changed_notiry_t = void( wchar_t const*, unsigned int )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a> の <a class="el" href="list__wrapper_8hpp_source.html#l00087">87</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a324abe342ec36b6b3a19968538673fca" name="a324abe342ec36b6b3a19968538673fca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a324abe342ec36b6b3a19968538673fca">&#9670;&#160;</a></span>value_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">depicture_menu::cs_binding::detail_cs_binding::list_impl</a>&lt; T &gt;::value_t = std::shared_ptr&lt; <a class="el" href="#a93c8e04551d315c08b1c2eb7677ed80f">element_t</a> &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a> の <a class="el" href="list__wrapper_8hpp_source.html#l00075">75</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="af972d77d5354f9b4341097af56a481bc" name="af972d77d5354f9b4341097af56a481bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af972d77d5354f9b4341097af56a481bc">&#9670;&#160;</a></span>collection_notify_regist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">depicture_menu::cs_binding::detail_cs_binding::list_impl</a>&lt; T &gt;::collection_notify_regist </td>
+          <td>(</td>
+          <td class="paramtype">void(*</td>          <td class="paramname"><span class="paramname"><em>callback&#160;</em></span>)(int, void *, void *, int, int)</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a> の <a class="el" href="list__wrapper_8hpp_source.html#l00114">114</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="list__wrapper_8hpp_source.html#l00095">collection_notify_</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00096">collection_notify_connection_</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00094">managed_collection_notify_callback_</a>.</p>
+
+</div>
+</div>
+<a id="ac7169112319ea7b5aed2907562426d64" name="ac7169112319ea7b5aed2907562426d64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7169112319ea7b5aed2907562426d64">&#9670;&#160;</a></span>get_source_version()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">depicture_menu::cs_binding::detail_cs_binding::list_impl</a>&lt; T &gt;::get_source_version </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a> の <a class="el" href="list__wrapper_8hpp_source.html#l00264">264</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="list__wrapper_8hpp_source.html#l00099">version_count_</a>.</p>
+
+</div>
+</div>
+<a id="a084a97daf8d32f15927cbfdf27158e8a" name="a084a97daf8d32f15927cbfdf27158e8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a084a97daf8d32f15927cbfdf27158e8a">&#9670;&#160;</a></span>increment_source_version()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">depicture_menu::cs_binding::detail_cs_binding::list_impl</a>&lt; T &gt;::increment_source_version </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a> の <a class="el" href="list__wrapper_8hpp_source.html#l00259">259</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="list__wrapper_8hpp_source.html#l00099">version_count_</a>.</p>
+
+</div>
+</div>
+<a id="a585f7cb2afc660da04e3be62ce115b3b" name="a585f7cb2afc660da04e3be62ce115b3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a585f7cb2afc660da04e3be62ce115b3b">&#9670;&#160;</a></span>list_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">depicture_menu::cs_binding::detail_cs_binding::list_impl</a>&lt; T &gt;::list_count </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a> の <a class="el" href="list__wrapper_8hpp_source.html#l00102">102</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="list__wrapper_8hpp_source.html#l00080">list_</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="list__wrapper_8hpp_source.html#l00156">managed_changed_notify()</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00127">proxy_update_item()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl_a585f7cb2afc660da04e3be62ce115b3b_icgraph.svg" width="364" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="af4f5fea2d81647191831d20726be8d26" name="af4f5fea2d81647191831d20726be8d26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4f5fea2d81647191831d20726be8d26">&#9670;&#160;</a></span>list_notify_regist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">depicture_menu::cs_binding::detail_cs_binding::list_impl</a>&lt; T &gt;::list_notify_regist </td>
+          <td>(</td>
+          <td class="paramtype">void(*</td>          <td class="paramname"><span class="paramname"><em>callback&#160;</em></span>)(wchar_t const *, unsigned int)</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a> の <a class="el" href="list__wrapper_8hpp_source.html#l00108">108</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="list__wrapper_8hpp_source.html#l00090">property_changed_callback_</a>.</p>
+
+</div>
+</div>
+<a id="a21f5d24f7558568d668537028bc7aeab" name="a21f5d24f7558568d668537028bc7aeab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21f5d24f7558568d668537028bc7aeab">&#9670;&#160;</a></span>managed_changed_notify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">depicture_menu::cs_binding::detail_cs_binding::list_impl</a>&lt; T &gt;::managed_changed_notify </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>action</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>proxy_ptr0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>proxy_ptr1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index1</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a> の <a class="el" href="list__wrapper_8hpp_source.html#l00156">156</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="list__wrapper_8hpp_source.html#l00095">collection_notify_</a>, <a class="el" href="unmanaged__generator_8hpp_source.html#l00244">depicture_menu::cs_binding::find_unmanaged_resource()</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00080">list_</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00102">list_count()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl_a21f5d24f7558568d668537028bc7aeab_cgraph.svg" width="658" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a963b0b2cd4648172b9324b83723bd4b9" name="a963b0b2cd4648172b9324b83723bd4b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a963b0b2cd4648172b9324b83723bd4b9">&#9670;&#160;</a></span>on_property_changed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">depicture_menu::cs_binding::detail_cs_binding::list_impl</a>&lt; T &gt;::on_property_changed </td>
+          <td>(</td>
+          <td class="paramtype">std::wstring_view</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a> の <a class="el" href="list__wrapper_8hpp_source.html#l00148">148</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="_test_config_view_presenter_8cpp.html#a21b35e47ac3d8358063ede6968e59eaa">name()</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00090">property_changed_callback_</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl_a963b0b2cd4648172b9324b83723bd4b9_cgraph.svg" width="258" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a07e7ce4817a4cfc4acb2a3454322f313" name="a07e7ce4817a4cfc4acb2a3454322f313"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07e7ce4817a4cfc4acb2a3454322f313">&#9670;&#160;</a></span>proxy_update_item()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">depicture_menu::cs_binding::detail_cs_binding::list_impl</a>&lt; T &gt;::proxy_update_item </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>proxy_ptr</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a> の <a class="el" href="list__wrapper_8hpp_source.html#l00127">127</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="unmanaged__generator_8hpp_source.html#l00244">depicture_menu::cs_binding::find_unmanaged_resource()</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00080">list_</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00102">list_count()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl_a07e7ce4817a4cfc4acb2a3454322f313_cgraph.svg" width="623" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a54d0f944fbb9ff7f658c35214431414f" name="a54d0f944fbb9ff7f658c35214431414f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54d0f944fbb9ff7f658c35214431414f">&#9670;&#160;</a></span>regist_allocate_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">depicture_menu::cs_binding::detail_cs_binding::list_impl</a>&lt; T &gt;::regist_allocate_callback </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a> の <a class="el" href="list__wrapper_8hpp_source.html#l00247">247</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="addc8f7f1cd29096de7708132d849f9f7" name="addc8f7f1cd29096de7708132d849f9f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addc8f7f1cd29096de7708132d849f9f7">&#9670;&#160;</a></span>request_pre_regist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">depicture_menu::cs_binding::detail_cs_binding::list_impl</a>&lt; T &gt;::request_pre_regist </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a> の <a class="el" href="list__wrapper_8hpp_source.html#l00252">252</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="list__wrapper_8hpp_source.html#l00080">list_</a>, <a class="el" href="unmanaged__generator_8hpp_source.html#l00403">depicture_menu::cs_binding::pre_regist()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl_addc8f7f1cd29096de7708132d849f9f7_cgraph.svg" width="551" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a10ddb8fa736569dc97ec92439b34f024" name="a10ddb8fa736569dc97ec92439b34f024"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10ddb8fa736569dc97ec92439b34f024">&#9670;&#160;</a></span>swap_regist_resource()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">depicture_menu::cs_binding::detail_cs_binding::list_impl</a>&lt; T &gt;::swap_regist_resource </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">list_impl</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>o</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a> の <a class="el" href="list__wrapper_8hpp_source.html#l00270">270</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="list__wrapper_8hpp_source.html#l00095">collection_notify_</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00096">collection_notify_connection_</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00094">managed_collection_notify_callback_</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00090">property_changed_callback_</a>.</p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">メンバ詳解</h2>
+<a id="a36d988df23e17036ad65924a29b62a02" name="a36d988df23e17036ad65924a29b62a02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36d988df23e17036ad65924a29b62a02">&#9670;&#160;</a></span>collection_notify_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::signals2::signal&lt; <a class="el" href="#a6021b0a0eac5860987cf07e80a1d5f43">collection_notify_t</a> &gt; <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">depicture_menu::cs_binding::detail_cs_binding::list_impl</a>&lt; T &gt;::collection_notify_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a> の <a class="el" href="list__wrapper_8hpp_source.html#l00095">95</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="list__wrapper_8hpp_source.html#l00114">collection_notify_regist()</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00156">managed_changed_notify()</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00270">swap_regist_resource()</a>.</p>
+
+</div>
+</div>
+<a id="a4fd6650e80cefc69cd65449993074850" name="a4fd6650e80cefc69cd65449993074850"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fd6650e80cefc69cd65449993074850">&#9670;&#160;</a></span>collection_notify_connection_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::signals2::scoped_connection <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">depicture_menu::cs_binding::detail_cs_binding::list_impl</a>&lt; T &gt;::collection_notify_connection_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a> の <a class="el" href="list__wrapper_8hpp_source.html#l00096">96</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="list__wrapper_8hpp_source.html#l00114">collection_notify_regist()</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00270">swap_regist_resource()</a>.</p>
+
+</div>
+</div>
+<a id="afd5dc578957070da783c8a04f1b526c0" name="afd5dc578957070da783c8a04f1b526c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd5dc578957070da783c8a04f1b526c0">&#9670;&#160;</a></span>list_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="#a324abe342ec36b6b3a19968538673fca">value_t</a> &gt; <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">depicture_menu::cs_binding::detail_cs_binding::list_impl</a>&lt; T &gt;::list_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a> の <a class="el" href="list__wrapper_8hpp_source.html#l00080">80</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="list__wrapper_8hpp_source.html#l00102">list_count()</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00156">managed_changed_notify()</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00127">proxy_update_item()</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00252">request_pre_regist()</a>.</p>
+
+</div>
+</div>
+<a id="a78d968b4dd41be19e88e6f6ce1c54bbe" name="a78d968b4dd41be19e88e6f6ce1c54bbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78d968b4dd41be19e88e6f6ce1c54bbe">&#9670;&#160;</a></span>managed_collection_notify_callback_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt; <a class="el" href="#a6021b0a0eac5860987cf07e80a1d5f43">collection_notify_t</a> &gt; <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">depicture_menu::cs_binding::detail_cs_binding::list_impl</a>&lt; T &gt;::managed_collection_notify_callback_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a> の <a class="el" href="list__wrapper_8hpp_source.html#l00094">94</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="list__wrapper_8hpp_source.html#l00114">collection_notify_regist()</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00270">swap_regist_resource()</a>.</p>
+
+</div>
+</div>
+<a id="a11db937b9b4289d323f9473ef48428bf" name="a11db937b9b4289d323f9473ef48428bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11db937b9b4289d323f9473ef48428bf">&#9670;&#160;</a></span>notify_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::signals2::signal&lt; <a class="el" href="#a3ce84252401e1cc4611c99da70a78338">property_changed_notiry_t</a> &gt; <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">depicture_menu::cs_binding::detail_cs_binding::list_impl</a>&lt; T &gt;::notify_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a> の <a class="el" href="list__wrapper_8hpp_source.html#l00088">88</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aafbb00dd1332a8a986cb8f3a32d8d23a" name="aafbb00dd1332a8a986cb8f3a32d8d23a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafbb00dd1332a8a986cb8f3a32d8d23a">&#9670;&#160;</a></span>property_changed_callback_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt; <a class="el" href="#a3ce84252401e1cc4611c99da70a78338">property_changed_notiry_t</a> &gt; <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">depicture_menu::cs_binding::detail_cs_binding::list_impl</a>&lt; T &gt;::property_changed_callback_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a> の <a class="el" href="list__wrapper_8hpp_source.html#l00090">90</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="list__wrapper_8hpp_source.html#l00108">list_notify_regist()</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00148">on_property_changed()</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00270">swap_regist_resource()</a>.</p>
+
+</div>
+</div>
+<a id="a2c45baf9df55442adfdd1ec892360924" name="a2c45baf9df55442adfdd1ec892360924"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c45baf9df55442adfdd1ec892360924">&#9670;&#160;</a></span>property_notify_connection_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::signals2::scoped_connection <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">depicture_menu::cs_binding::detail_cs_binding::list_impl</a>&lt; T &gt;::property_notify_connection_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a> の <a class="el" href="list__wrapper_8hpp_source.html#l00089">89</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a0d850929843dcad7c08e61ff0d3b2693" name="a0d850929843dcad7c08e61ff0d3b2693"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d850929843dcad7c08e61ff0d3b2693">&#9670;&#160;</a></span>version_count_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1version__counter.html">version_counter</a> &gt; <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">depicture_menu::cs_binding::detail_cs_binding::list_impl</a>&lt; T &gt;::version_count_ = std::make_shared&lt; <a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1version__counter.html">version_counter</a> &gt;( )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a> の <a class="el" href="list__wrapper_8hpp_source.html#l00098">98</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="list__wrapper_8hpp_source.html#l00264">get_source_version()</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00259">increment_source_version()</a>.</p>
+
+</div>
+</div>
+<hr/>この構造体詳解は次のファイルから抽出されました:<ul>
+<li>depicture_menu/src/core/cs_binding/impl/<a class="el" href="list__wrapper_8hpp_source.html">list_wrapper.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespacedepicture__menu.html">depicture_menu</a></li><li class="navelem"><a href="namespacedepicture__menu_1_1cs__binding.html">cs_binding</a></li><li class="navelem"><a href="namespacedepicture__menu_1_1cs__binding_1_1detail__cs__binding.html">detail_cs_binding</a></li><li class="navelem"><a href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">list_impl</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

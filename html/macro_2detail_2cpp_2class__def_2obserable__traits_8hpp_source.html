@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/src/core/cs_binding/macro/detail/cpp/class_def/obserable_traits.hpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('macro_2detail_2cpp_2class__def_2obserable__traits_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">obserable_traits.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="macro_2detail_2cpp_2class__def_2obserable__traits_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef SRC_CORE_CS_BINDING_MACRO_DETAIL_CPP_CLASS_DEF_OBSERABLE_TRAITS_HPP_</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define SRC_CORE_CS_BINDING_MACRO_DETAIL_CPP_CLASS_DEF_OBSERABLE_TRAITS_HPP_</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="glue__code__sequence__data_8hpp.html">../../glue_code_sequence_data.hpp</a>&quot;</span>    <span class="comment">// IWYU pragma: keep</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="pp_8hpp.html">../../pp.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">//</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// DPM_METHOD_KIND_OBSERVABLE_VALUE_DEFINE Expand Defines</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">//</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// filter define</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="macro_2detail_2cpp_2class__def_2obserable__traits_8hpp.html#aef202c066129f5c44d0c759ed3c1006e">   13</a></span><span class="preprocessor">#define DPM_CPP_OTD_GM_FILTER_PREFIX_DPM_METHOD_KIND_OBSERVABLE_VALUE_DEFINE</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// transform operator define</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="macro_2detail_2cpp_2class__def_2obserable__traits_8hpp.html#aae284bba54a9953e42434aac6eb528f2">   16</a></span><span class="preprocessor">#define DPM_CPP_OTD_MAPPING_EXPAND_OP_DPM_METHOD_KIND_OBSERVABLE_VALUE_DEFINE( \</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">    CLASS, SEQ                                                                 \</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">)                                                                              \</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">    ( obserable_pair&lt;                                                          \</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">        BOOST_PP_WSTRINGIZE( BOOST_PP_SEQ_ELEM( 1, SEQ ) ),                    \</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">        &amp;CLASS::BOOST_PP_SEQ_ELEM( 2, SEQ ) &gt; )</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">//</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// DPM_METHOD_KIND_OBSERVABLE_AGGREGATE_DEFINE</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">//</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="macro_2detail_2cpp_2class__def_2obserable__traits_8hpp.html#a5c9273d5c329d293379547e78ceed564">   29</a></span><span class="preprocessor">#define DPM_CPP_OTD_GM_FILTER_PREFIX_DPM_METHOD_KIND_OBSERVABLE_AGGREGATE_DEFINE</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="macro_2detail_2cpp_2class__def_2obserable__traits_8hpp.html#a6c0f0e428cd11caafc14d97378c1062c">   30</a></span><span class="preprocessor">#define DPM_CPP_OTD_MAPPING_EXPAND_OP_DPM_METHOD_KIND_OBSERVABLE_AGGREGATE_DEFINE( \</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">    CLASS, SEQ                                                                     \</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">)                                                                                  \</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">    ( obserable_aggragate_pair&lt;                                                    \</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">        BOOST_PP_WSTRINGIZE( BOOST_PP_SEQ_ELEM( 1, SEQ ) ),                        \</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">        &amp;CLASS::BOOST_PP_SEQ_ELEM( 2, SEQ ) &gt; )</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">//</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">// DPM_METHOD_KIND_OBSERVABLE_COLLECTION_DEFINE</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">//</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="macro_2detail_2cpp_2class__def_2obserable__traits_8hpp.html#aa92e183cfc4d3c355240e84431ed975a">   43</a></span><span class="preprocessor">#define DPM_CPP_OTD_GM_FILTER_PREFIX_DPM_METHOD_KIND_OBSERVABLE_COLLECTION_DEFINE</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="macro_2detail_2cpp_2class__def_2obserable__traits_8hpp.html#a2de6d19445bd16dbf0494d26a88dffc3">   44</a></span><span class="preprocessor">#define DPM_CPP_OTD_MAPPING_EXPAND_OP_DPM_METHOD_KIND_OBSERVABLE_COLLECTION_DEFINE( \</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">    CLASS, SEQ                                                                      \</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">)                                                                                   \</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">    ( obserable_collection_pair&lt;                                                    \</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">        BOOST_PP_WSTRINGIZE( BOOST_PP_SEQ_ELEM( 1, SEQ ) ),                         \</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">        &amp;CLASS::BOOST_PP_SEQ_ELEM( 2, SEQ ) &gt; )</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">//</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">// DPM_CPP_OTD_MAPPING_EXPAND</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">//</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="foldopen" id="foldopen00056" data-start="" data-end="">
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="macro_2detail_2cpp_2class__def_2obserable__traits_8hpp.html#ab44c3fcf1d4a8fa7122acc058a6421d4">   56</a></span><span class="preprocessor">#define DPM_CPP_OTD_MAPPING_EXPAND( CLASS, GLUE_SEQ )                          \</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">    DPM_PP_SEQ_TO_ENUM( DPM_CS_GLUE_METHOD_KIND_TRANSFORM(                     \</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">        DPM_CPP_OTD_GM_FILTER_PREFIX_,                                         \</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">        DPM_CPP_OTD_MAPPING_EXPAND_OP_,                                        \</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">        CLASS,                                                                 \</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">        GLUE_SEQ                                                               \</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">    ) )</span></div>
+</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">//</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">// * DPM_CPP_OBSERABLE_TRAITS_DEFINE</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">//</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="foldopen" id="foldopen00069" data-start="" data-end="">
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="macro_2detail_2cpp_2class__def_2obserable__traits_8hpp.html#a19ba2fb01a0ccebfd9883a540af2fcb6">   69</a></span><span class="preprocessor">#define DPM_CPP_OBSERABLE_TRAITS_DEFINE( CLASS, GLUE_SEQ )                     \</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">    obserable_traits&lt; DPM_CPP_OTD_MAPPING_EXPAND( CLASS, GLUE_SEQ ) &gt;;</span></div>
+</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_CORE_CS_BINDING_MACRO_DETAIL_CPP_CLASS_DEF_OBSERABLE_TRAITS_HPP_</span></div>
+<div class="ttc" id="aglue__code__sequence__data_8hpp_html"><div class="ttname"><a href="glue__code__sequence__data_8hpp.html">glue_code_sequence_data.hpp</a></div></div>
+<div class="ttc" id="app_8hpp_html"><div class="ttname"><a href="pp_8hpp.html">pp.hpp</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_d26f0ed8b287a778d960ad2241e01057.html">src</a></li><li class="navelem"><a href="dir_eb29242f55d2489f6c4d008365c270b7.html">core</a></li><li class="navelem"><a href="dir_cea6b123251f3cedcaebc32d093e626d.html">cs_binding</a></li><li class="navelem"><a href="dir_6a2ead08366c94e741a9e88f830ac342.html">macro</a></li><li class="navelem"><a href="dir_4ef1cfedfd4be9f42b382dc143404819.html">detail</a></li><li class="navelem"><a href="dir_0109a6022202f28ced425e4c16196603.html">cpp</a></li><li class="navelem"><a href="dir_6a7381c0096260a8517713da8e051c15.html">class_def</a></li><li class="navelem"><a href="macro_2detail_2cpp_2class__def_2obserable__traits_8hpp.html">obserable_traits.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

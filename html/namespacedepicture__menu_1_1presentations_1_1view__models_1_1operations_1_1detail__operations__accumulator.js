@@ -1,0 +1,4 @@
+var namespacedepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operations__accumulator =
+[
+    [ "view_id_accumulator_impl", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operations__accuec3dc4c9495e5d9ccfdb381784e147d3.html", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operations__accuec3dc4c9495e5d9ccfdb381784e147d3" ]
+];

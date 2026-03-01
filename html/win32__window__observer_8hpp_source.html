@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/src/core/repository/win32_window_observer.hpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('win32__window__observer_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">win32_window_observer.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="win32__window__observer_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef SRC_CORE_REPOSITORY_WIN32_WINDOW_OBSERVER_HPP_</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define SRC_CORE_REPOSITORY_WIN32_WINDOW_OBSERVER_HPP_</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="singleton_8hpp.html">utility/singleton.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1repository.html">depicture_menu::repository</a></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1repository_1_1detail__repository.html">detail_repository</a></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">struct </span><a class="code hl_struct" href="structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer__impl.html">win32_window_observer_impl</a>;</div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer.html">   12</a></span><span class="keyword">struct </span><a class="code hl_function" href="structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer.html#add38bf8d90081b6dd88957860d9fc5af">win32_window_observer</a></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_function" href="structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer.html#add38bf8d90081b6dd88957860d9fc5af">win32_window_observer</a>( ) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer.html#ac788a3c6d87f12ace0ee04fb57a9b0f8">   15</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer.html#ac788a3c6d87f12ace0ee04fb57a9b0f8">win32_window_observer</a>( <span class="keyword">const</span> <a class="code hl_function" href="structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer.html#add38bf8d90081b6dd88957860d9fc5af">win32_window_observer</a>&amp; )            = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer.html#aadc361abd5fc8fb4db108347e919ae08">   16</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer.html#aadc361abd5fc8fb4db108347e919ae08">win32_window_observer</a>( <a class="code hl_function" href="structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer.html#add38bf8d90081b6dd88957860d9fc5af">win32_window_observer</a>&amp;&amp; )                 = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer.html#a5ce9e52c1042e1a1f21a807d9eea782d">   17</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer.html#add38bf8d90081b6dd88957860d9fc5af">win32_window_observer</a>&amp; <a class="code hl_function" href="structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer.html#a5ce9e52c1042e1a1f21a807d9eea782d">operator=</a>( <span class="keyword">const</span> <a class="code hl_function" href="structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer.html#add38bf8d90081b6dd88957860d9fc5af">win32_window_observer</a>&amp; ) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer.html#ad9815d6bbb1c71751aae4fb2a6bf1151">   18</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer.html#add38bf8d90081b6dd88957860d9fc5af">win32_window_observer</a>&amp; <a class="code hl_function" href="structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer.html#ad9815d6bbb1c71751aae4fb2a6bf1151">operator=</a>( <a class="code hl_function" href="structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer.html#add38bf8d90081b6dd88957860d9fc5af">win32_window_observer</a>&amp;&amp; )      = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer.html#a8dd3f89c4fa9798a31e80ad78a5da135">update</a>( );</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer.html#a0a2a12a893e22a56cc74097f7f626471">   22</a></span>    std::unique_ptr&lt; win32_window_observer_impl &gt; <a class="code hl_variable" href="structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer.html#a0a2a12a893e22a56cc74097f7f626471">impl_</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
+</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}    <span class="comment">// namespace detail_repository</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1repository.html#a7cec97097bb0509490ca159171d19710">   26</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespacedepicture__menu_1_1repository.html#a7cec97097bb0509490ca159171d19710">win32_window_observer</a></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    = <a class="code hl_class" href="classdepicture__menu_1_1singleton.html">singleton&lt; detail_repository::win32_window_observer &gt;</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}    <span class="comment">// namespace depicture_menu::repository</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_CORE_REPOSITORY_WIN32_WINDOW_OBSERVER_HPP_</span></div>
+<div class="ttc" id="aclassdepicture__menu_1_1singleton_html"><div class="ttname"><a href="classdepicture__menu_1_1singleton.html">depicture_menu::singleton&lt; detail_repository::win32_window_observer &gt;</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1repository_1_1detail__repository_html"><div class="ttname"><a href="namespacedepicture__menu_1_1repository_1_1detail__repository.html">depicture_menu::repository::detail_repository</a></div><div class="ttdef"><b>Definition</b> <a href="win32__window__observer_8cpp_source.html#l00009">win32_window_observer.cpp:10</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1repository_html"><div class="ttname"><a href="namespacedepicture__menu_1_1repository.html">depicture_menu::repository</a></div><div class="ttdef"><b>Definition</b> <a href="enum__top__window_8hpp_source.html#l00007">enum_top_window.hpp:8</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1repository_html_a7cec97097bb0509490ca159171d19710"><div class="ttname"><a href="namespacedepicture__menu_1_1repository.html#a7cec97097bb0509490ca159171d19710">depicture_menu::repository::win32_window_observer</a></div><div class="ttdeci">singleton&lt; detail_repository::win32_window_observer &gt; win32_window_observer</div><div class="ttdef"><b>Definition</b> <a href="#l00026">win32_window_observer.hpp:26</a></div></div>
+<div class="ttc" id="asingleton_8hpp_html"><div class="ttname"><a href="singleton_8hpp.html">singleton.hpp</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer__impl_html"><div class="ttname"><a href="structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer__impl.html">depicture_menu::repository::detail_repository::win32_window_observer_impl</a></div><div class="ttdef"><b>Definition</b> <a href="win32__window__observer_8cpp_source.html#l00014">win32_window_observer.cpp:15</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer_html_a0a2a12a893e22a56cc74097f7f626471"><div class="ttname"><a href="structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer.html#a0a2a12a893e22a56cc74097f7f626471">depicture_menu::repository::detail_repository::win32_window_observer::impl_</a></div><div class="ttdeci">std::unique_ptr&lt; win32_window_observer_impl &gt; impl_</div><div class="ttdef"><b>Definition</b> <a href="#l00022">win32_window_observer.hpp:22</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer_html_a5ce9e52c1042e1a1f21a807d9eea782d"><div class="ttname"><a href="structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer.html#a5ce9e52c1042e1a1f21a807d9eea782d">depicture_menu::repository::detail_repository::win32_window_observer::operator=</a></div><div class="ttdeci">win32_window_observer &amp; operator=(const win32_window_observer &amp;)=delete</div></div>
+<div class="ttc" id="astructdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer_html_a8dd3f89c4fa9798a31e80ad78a5da135"><div class="ttname"><a href="structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer.html#a8dd3f89c4fa9798a31e80ad78a5da135">depicture_menu::repository::detail_repository::win32_window_observer::update</a></div><div class="ttdeci">void update()</div><div class="ttdef"><b>Definition</b> <a href="win32__window__observer_8cpp_source.html#l00032">win32_window_observer.cpp:32</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer_html_aadc361abd5fc8fb4db108347e919ae08"><div class="ttname"><a href="structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer.html#aadc361abd5fc8fb4db108347e919ae08">depicture_menu::repository::detail_repository::win32_window_observer::win32_window_observer</a></div><div class="ttdeci">win32_window_observer(win32_window_observer &amp;&amp;)=delete</div></div>
+<div class="ttc" id="astructdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer_html_ac788a3c6d87f12ace0ee04fb57a9b0f8"><div class="ttname"><a href="structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer.html#ac788a3c6d87f12ace0ee04fb57a9b0f8">depicture_menu::repository::detail_repository::win32_window_observer::win32_window_observer</a></div><div class="ttdeci">win32_window_observer(const win32_window_observer &amp;)=delete</div></div>
+<div class="ttc" id="astructdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer_html_ad9815d6bbb1c71751aae4fb2a6bf1151"><div class="ttname"><a href="structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer.html#ad9815d6bbb1c71751aae4fb2a6bf1151">depicture_menu::repository::detail_repository::win32_window_observer::operator=</a></div><div class="ttdeci">win32_window_observer &amp; operator=(win32_window_observer &amp;&amp;)=delete</div></div>
+<div class="ttc" id="astructdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer_html_add38bf8d90081b6dd88957860d9fc5af"><div class="ttname"><a href="structdepicture__menu_1_1repository_1_1detail__repository_1_1win32__window__observer.html#add38bf8d90081b6dd88957860d9fc5af">depicture_menu::repository::detail_repository::win32_window_observer::win32_window_observer</a></div><div class="ttdeci">win32_window_observer() noexcept</div><div class="ttdef"><b>Definition</b> <a href="win32__window__observer_8cpp_source.html#l00026">win32_window_observer.cpp:26</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_d26f0ed8b287a778d960ad2241e01057.html">src</a></li><li class="navelem"><a href="dir_eb29242f55d2489f6c4d008365c270b7.html">core</a></li><li class="navelem"><a href="dir_6c154d7510949a2b37f111126ba92ccf.html">repository</a></li><li class="navelem"><a href="win32__window__observer_8hpp.html">win32_window_observer.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

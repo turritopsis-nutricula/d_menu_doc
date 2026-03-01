@@ -1,0 +1,6 @@
+var namespacedepicture__menu_1_1domain_1_1actions_1_1v2_1_1detail__actions =
+[
+    [ "action_data", "structdepicture__menu_1_1domain_1_1actions_1_1v2_1_1detail__actions_1_1action__data.html", "structdepicture__menu_1_1domain_1_1actions_1_1v2_1_1detail__actions_1_1action__data" ],
+    [ "action_sequence_data", "structdepicture__menu_1_1domain_1_1actions_1_1v2_1_1detail__actions_1_1action__sequence__data.html", "structdepicture__menu_1_1domain_1_1actions_1_1v2_1_1detail__actions_1_1action__sequence__data" ],
+    [ "publisher_data", "structdepicture__menu_1_1domain_1_1actions_1_1v2_1_1detail__actions_1_1publisher__data.html", "structdepicture__menu_1_1domain_1_1actions_1_1v2_1_1detail__actions_1_1publisher__data" ]
+];

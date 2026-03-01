@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/src/core/cs_binding/impl/list_wrapper.hpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('list__wrapper_8hpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">list_wrapper.hpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="unmanaged__generator_8hpp_source.html">unmanaged_generator.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="vtbl_8hpp_source.html">vtbl.hpp</a>&quot;</code><br />
+<code>#include &lt;atomic&gt;</code><br />
+<code>#include &lt;boost/describe/class.hpp&gt;</code><br />
+<code>#include &lt;boost/signals2.hpp&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+list_wrapper.hpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="list__wrapper_8hpp__incl.svg" width="100%" height="520"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="list__wrapper_8hpp__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+<p><a href="list__wrapper_8hpp_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Acs_5Fbinding_3A_3Adetail_5Fcs_5Fbinding_3A_3Aversion_5Fcounter" id="r_depicture_5Fmenu_3A_3Acs_5Fbinding_3A_3Adetail_5Fcs_5Fbinding_3A_3Aversion_5Fcounter"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1version__counter.html">depicture_menu::cs_binding::detail_cs_binding::version_counter</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Acs_5Fbinding_3A_3Adetail_5Fcs_5Fbinding_3A_3Alist_5Fimpl_3C_20T_20_3E" id="r_depicture_5Fmenu_3A_3Acs_5Fbinding_3A_3Adetail_5Fcs_5Fbinding_3A_3Alist_5Fimpl_3C_20T_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__impl.html">depicture_menu::cs_binding::detail_cs_binding::list_impl&lt; T &gt;</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Acs_5Fbinding_3A_3Alist_5Fwrapper_3C_20T_20_3E" id="r_depicture_5Fmenu_3A_3Acs_5Fbinding_3A_3Alist_5Fwrapper_3C_20T_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1cs__binding_1_1list__wrapper.html">depicture_menu::cs_binding::list_wrapper&lt; T &gt;</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:depicture_5Fmenu" id="r_depicture_5Fmenu"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu.html">depicture_menu</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Acs_5Fbinding" id="r_depicture_5Fmenu_3A_3Acs_5Fbinding"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1cs__binding.html">depicture_menu::cs_binding</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Acs_5Fbinding_3A_3Adetail_5Fcs_5Fbinding" id="r_depicture_5Fmenu_3A_3Acs_5Fbinding_3A_3Adetail_5Fcs_5Fbinding"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1detail__cs__binding.html">depicture_menu::cs_binding::detail_cs_binding</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-concepts" class="groupheader"><a id="concepts" name="concepts"></a>
+Concepts</h2></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Acs_5Fbinding_3A_3Adetail_5Fcs_5Fbinding_3A_3Aconstrucable_5Fshared_5Ffrom_5Fthis" id="r_depicture_5Fmenu_3A_3Acs_5Fbinding_3A_3Adetail_5Fcs_5Fbinding_3A_3Aconstrucable_5Fshared_5Ffrom_5Fthis"><td class="memItemLeft">concept &#160;</td><td class="memItemRight"><a class="el" href="conceptdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1construcable__shared__from__this.html">depicture_menu::cs_binding::detail_cs_binding::construcable_shared_from_this</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Acs_5Fbinding_3A_3Adetail_5Fcs_5Fbinding_3A_3Alist_5Fvalueable" id="r_depicture_5Fmenu_3A_3Acs_5Fbinding_3A_3Adetail_5Fcs_5Fbinding_3A_3Alist_5Fvalueable"><td class="memItemLeft">concept &#160;</td><td class="memItemRight"><a class="el" href="conceptdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1list__valueable.html">depicture_menu::cs_binding::detail_cs_binding::list_valueable</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Acs_5Fbinding_3A_3Adetail_5Fcs_5Fbinding_3A_3Aitem_5Fcompare_5Fpredicatable" id="r_depicture_5Fmenu_3A_3Acs_5Fbinding_3A_3Adetail_5Fcs_5Fbinding_3A_3Aitem_5Fcompare_5Fpredicatable"><td class="memItemLeft">concept &#160;</td><td class="memItemRight"><a class="el" href="conceptdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1item__compare__predicatable.html">depicture_menu::cs_binding::detail_cs_binding::item_compare_predicatable</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Acs_5Fbinding_3A_3Adetail_5Fcs_5Fbinding_3A_3Aconvertable_5Fto_5Felement" id="r_depicture_5Fmenu_3A_3Acs_5Fbinding_3A_3Adetail_5Fcs_5Fbinding_3A_3Aconvertable_5Fto_5Felement"><td class="memItemLeft">concept &#160;</td><td class="memItemRight"><a class="el" href="conceptdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1convertable__to__element.html">depicture_menu::cs_binding::detail_cs_binding::convertable_to_element</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr class="memitem:a88ea3f39108358172e2ca8a065b93695" id="r_a88ea3f39108358172e2ca8a065b93695"><td class="memItemLeft">enum class &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1cs__binding.html#a88ea3f39108358172e2ca8a065b93695">depicture_menu::cs_binding::cs_notify_collection_changed_action</a> { <br />
+&#160;&#160;<a class="el" href="namespacedepicture__menu_1_1cs__binding.html#a88ea3f39108358172e2ca8a065b93695a34ec78fcc91ffb1e54cd85e4a0924332">depicture_menu::cs_binding::add</a> = 0
+, <a class="el" href="namespacedepicture__menu_1_1cs__binding.html#a88ea3f39108358172e2ca8a065b93695a3734a903022249b3010be1897042568e">depicture_menu::cs_binding::move</a> = 3
+, <a class="el" href="namespacedepicture__menu_1_1cs__binding.html#a88ea3f39108358172e2ca8a065b93695a0f6969d7052da9261e31ddb6e88c136e">depicture_menu::cs_binding::remove</a> = 1
+, <a class="el" href="namespacedepicture__menu_1_1cs__binding.html#a88ea3f39108358172e2ca8a065b93695a9dde360102c103867bd2f45872f1129c">depicture_menu::cs_binding::replace</a> = 2
+, <br />
+&#160;&#160;<a class="el" href="namespacedepicture__menu_1_1cs__binding.html#a88ea3f39108358172e2ca8a065b93695a86266ee937d97f812a8e57d22b62ee29">depicture_menu::cs_binding::reset</a> = 4
+<br />
+ }</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:ab2fa8e4926bc0c7167e4b219073b4ad2" id="r_ab2fa8e4926bc0c7167e4b219073b4ad2"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:ab2fa8e4926bc0c7167e4b219073b4ad2 template"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1cs__binding.html#ab2fa8e4926bc0c7167e4b219073b4ad2">depicture_menu::cs_binding::operator==</a> (<a class="el" href="structdepicture__menu_1_1cs__binding_1_1list__wrapper.html">list_wrapper</a>&lt; T &gt; const &amp;r, <a class="el" href="structdepicture__menu_1_1cs__binding_1_1list__wrapper.html">list_wrapper</a>&lt; T &gt; const &amp;l) noexcept</td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_d26f0ed8b287a778d960ad2241e01057.html">src</a></li><li class="navelem"><a href="dir_eb29242f55d2489f6c4d008365c270b7.html">core</a></li><li class="navelem"><a href="dir_cea6b123251f3cedcaebc32d093e626d.html">cs_binding</a></li><li class="navelem"><a href="dir_4825ab2602c264371d3c2195e6e556e8.html">impl</a></li><li class="navelem"><a href="list__wrapper_8hpp.html">list_wrapper.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

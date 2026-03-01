@@ -1,0 +1,4 @@
+var namespacedepicture__menu_1_1cs__binding_1_1impl =
+[
+    [ "resource_glab_notify_copy_move_no_effect", "structdepicture__menu_1_1cs__binding_1_1impl_1_1resource__glab__notify__copy__move__no__effect.html", "structdepicture__menu_1_1cs__binding_1_1impl_1_1resource__glab__notify__copy__move__no__effect" ]
+];

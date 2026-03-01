@@ -1,0 +1,4 @@
+var structdepicture__menu_1_1cs__binding_1_1obserable__traits__transform_3_01obserable__traits_3_01_args_8_8_8_01_4_00_01_temp_01_4 =
+[
+    [ "type", "structdepicture__menu_1_1cs__binding_1_1obserable__traits__transform_3_01obserable__traits_3_01_args_8_8_8_01_4_00_01_temp_01_4.html#a275d669d0ef7c27725e78c2affefa993", null ]
+];

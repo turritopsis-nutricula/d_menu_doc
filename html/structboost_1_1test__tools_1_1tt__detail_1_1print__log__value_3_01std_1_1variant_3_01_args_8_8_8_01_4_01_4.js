@@ -1,0 +1,4 @@
+var structboost_1_1test__tools_1_1tt__detail_1_1print__log__value_3_01std_1_1variant_3_01_args_8_8_8_01_4_01_4 =
+[
+    [ "operator()", "structboost_1_1test__tools_1_1tt__detail_1_1print__log__value_3_01std_1_1variant_3_01_args_8_8_8_01_4_01_4.html#a3ec0e632bac817715dd3f9aea3dd7f4c", null ]
+];

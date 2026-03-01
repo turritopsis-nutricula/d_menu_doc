@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['app_5fhandle_5f_0',['app_handle_',['../structdepicture__menu_1_1win32_1_1message__receive__window.html#af0e1adccdce715ecbe03f9c275a4b88f',1,'depicture_menu::win32::message_receive_window::app_handle_'],['../structmessage__receive__window.html#af0e1adccdce715ecbe03f9c275a4b88f',1,'message_receive_window::app_handle_']]],
-  ['app_5fname_5f_1',['app_name_',['../structdepicture__menu_1_1win32_1_1win32__message__sender.html#afcc01b59fe563c64d158d5fe61084299',1,'depicture_menu::win32::win32_message_sender::app_name_'],['../structwin32__message__sender.html#afcc01b59fe563c64d158d5fe61084299',1,'win32_message_sender::app_name_']]],
-  ['argc_5f_2',['argc_',['../classcommand__line__trans.html#ab2b8cd30a45baf202dcdcacd7e74494c',1,'command_line_trans']]]
+  ['_5fs_0',['_s',['../structmock__o__value.html#ae7f6489d05448184a6008424dde93dde',1,'mock_o_value']]],
+  ['_5fv_1',['_v',['../structmock__o__value.html#ac3736f6d957cddd7409342bf1ccf03e7',1,'mock_o_value']]],
+  ['_5fw_2',['_w',['../structmock__o__value.html#af9b8c7e670c6508b3084822c5cb1ba8a',1,'mock_o_value']]]
 ];

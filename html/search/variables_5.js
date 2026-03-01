@@ -1,9 +1,22 @@
 var searchData=
 [
-  ['index_5f_0',['index_',['../classdepicture__menu_1_1util_1_1worker__pool_1_1inner__worker.html#a5d45fbd5ce19e4994a1e26ca71a7ec3b',1,'depicture_menu::util::worker_pool::inner_worker']]],
-  ['init_5fflag_5f_1',['init_flag_',['../classdepicture__menu_1_1singleton.html#acff4b1575874a4a6f8ff8b1b61bf53dd',1,'depicture_menu::singleton']]],
-  ['inner_5fworkers_5f_2',['inner_workers_',['../classdepicture__menu_1_1util_1_1worker__pool.html#a41da76e653c4337a403f0093e2f86a54',1,'depicture_menu::util::worker_pool']]],
-  ['instance_5f_3',['instance_',['../classdepicture__menu_1_1singleton.html#ab211674f81ee1c5c63b2e4dc2a2ca629',1,'depicture_menu::singleton']]],
-  ['is_5fneed_5funlock_5f_4',['is_need_unlock_',['../structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html#a8e9617bc401d9ab1b4b249801804a974',1,'depicture_menu::util::detail_util::read_lock_mutex']]],
-  ['is_5frequested_5ftermination_5',['is_requested_termination',['../classdepicture__menu_1_1util_1_1worker__pool_1_1inner__worker.html#a07ead3d0214abc6476fac47a66b9dfa7',1,'depicture_menu::util::worker_pool::inner_worker::is_requested_termination'],['../classdepicture__menu_1_1util_1_1worker__pool.html#a6dad92168ff70141244e099cf944627c',1,'depicture_menu::util::worker_pool::is_requested_termination']]]
+  ['ec_0',['ec',['../structdepicture__menu_1_1applications_1_1backup__json_1_1error__ctx.html#a46747f3f29e762a99c20be228501a374',1,'depicture_menu::applications::backup_json::error_ctx']]],
+  ['emitter_5f_1',['emitter_',['../structdepicture__menu_1_1domain_1_1events_1_1event__toppic.html#a4b9408908f16af83e9765a0ef5711f89',1,'depicture_menu::domain::events::event_toppic']]],
+  ['entity_2',['entity',['../structdepicture__menu_1_1usecase_1_1backup_1_1detail__backup_1_1paramter__dto__visiter.html#ad37c28ad5e526a0cf2ced39e20ca8927',1,'depicture_menu::usecase::backup::detail_backup::paramter_dto_visiter::entity'],['../classdepicture__menu_1_1test_1_1test__tools_1_1base__pair__factory.html#a77b86a618b470f0a2feffeadec1b96d9',1,'depicture_menu::test::test_tools::base_pair_factory::entity'],['../structtt_1_1base__pair__factory.html#a13354800883d5dc46dc29e88e345b2a0',1,'tt::base_pair_factory::entity']]],
+  ['entry_3',['entry',['../cs__binding__test_8cpp.html#aabac119252a4ae25b78dbc4c2a279a12',1,'cs_binding_test.cpp']]],
+  ['enum_5fvalue_4',['enum_value',['../structa__struct.html#a682f8f4c4a094d4b5cbb8fd34ecd18af',1,'a_struct']]],
+  ['erase_5fhandler_5f_5',['erase_handler_',['../classdepicture__menu_1_1domain_1_1event__publisher__decorator.html#acafba30c5e851e163ecfd576b50580ec',1,'depicture_menu::domain::event_publisher_decorator']]],
+  ['erase_5fids_5f_6',['erase_ids_',['../structupdate__result.html#a865cb554b0089db553bbf23dc519365e',1,'update_result']]],
+  ['error_5fname_5f_7',['error_name_',['../structdepicture__menu_1_1applications_1_1command__line__options_1_1args_1_1command__line__description__error.html#a7ed9b1bf0392c1b78dc257472f0ef102',1,'depicture_menu::applications::command_line_options::args::command_line_description_error']]],
+  ['event_5f_8',['event_',['../structdepicture__menu_1_1usecase_1_1dto_1_1view__changed__notify.html#a50261efa02edbec1e0291d02bb7b26e9',1,'depicture_menu::usecase::dto::view_changed_notify::event_'],['../structdepicture__menu_1_1usecase_1_1dto_1_1view__changed__notify__with__kind.html#a0abddb056d404327868e8580da2c5f42',1,'depicture_menu::usecase::dto::view_changed_notify_with_kind::event_']]],
+  ['event_5f2_5fsig_5f_9',['event_2_sig_',['../classdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher.html#a82491ac83643ec91a2b5fac65ba9ac85',1,'depicture_menu::cs_binding::observer::changed_event_publisher']]],
+  ['event_5fid_5f_10',['event_id_',['../structdepicture__menu_1_1domain_1_1models_1_1empty__event.html#a16c468140508889a31dcde334c560278',1,'depicture_menu::domain::models::empty_event']]],
+  ['event_5fsig_5f_11',['event_sig_',['../classdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher.html#a73badec07c331aa9ecc9307a3ac64a32',1,'depicture_menu::cs_binding::observer::changed_event_publisher']]],
+  ['event_5fstore_5f_12',['event_store_',['../structdepicture__menu_1_1domain_1_1models_1_1aggregate__base.html#aee1beeacb976917b92977bcd72517064',1,'depicture_menu::domain::models::aggregate_base']]],
+  ['except_5f_13',['except_',['../structval__check.html#adc8a0567770c788c8f0cafd0d5c22004',1,'val_check']]],
+  ['exe_5fname_14',['exe_name',['../structmessage__test__fixture.html#ae9a49b89979cacf0ad1130c77014337c',1,'message_test_fixture']]],
+  ['exe_5fpath_5f_15',['exe_path_',['../structdepicture__menu_1_1domain_1_1actions_1_1buildin_1_1detail__actions__data_1_1shellexecute__action__parameter__data.html#aeb4e19ac8962bad123e2e07a67d63ccc',1,'depicture_menu::domain::actions::buildin::detail_actions_data::shellexecute_action_parameter_data::exe_path_'],['../structdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1detail__actions__data_1_1shellexecute__command__parameter__data.html#a70c512925825733980416cc9ce5bb3c8',1,'depicture_menu::domain::commands::buildin::detail_actions_data::shellexecute_command_parameter_data::exe_path_']]],
+  ['expect_16',['expect',['../structtest__helper_1_1domain__converter__fixture.html#a26eb5554e076b6f02aa7d4268ca938e7',1,'test_helper::domain_converter_fixture']]],
+  ['exporter_5f_17',['exporter_',['../classdepicture__menu_1_1usecase_1_1backup_1_1export__backup.html#ad974964f9da736d385872521bb2fa9ef',1,'depicture_menu::usecase::backup::export_backup']]],
+  ['extract_5fvalue_18',['extract_value',['../namespacedepicture__menu_1_1repositories_1_1ranges_1_1views.html#a2470c016b6fbdd210f652f2de0cb7e37',1,'depicture_menu::repositories::ranges::views']]]
 ];

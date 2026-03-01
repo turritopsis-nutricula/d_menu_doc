@@ -1,0 +1,523 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/test/core/presentation/change_view_model/config_view_presenter/action_change_operation.cpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('action__change__operation_8cpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">action_change_operation.cpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;./config.hpp&quot;</code><br />
+<code>#include &lt;boost/test/data/test_case.hpp&gt;</code><br />
+<code>#include &lt;boost/test/unit_test.hpp&gt;</code><br />
+<code>#include &quot;<a class="el" href="open__menu__command__parameter_8hpp_source.html">core/domain/model/command/buildin/open_menu_command_parameter.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="shellexecute__command__parameter_8hpp_source.html">core/domain/model/command/buildin/shellexecute_command_parameter.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="config__view__presenter_8hpp_source.html">core/presentation/change_view_model/config_view_presenter.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="test__tools_8hpp_source.html">test_tool/test_tools.hpp</a>&quot;</code><br />
+<code>#include &lt;turtle/mock.hpp&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+action_change_operation.cpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="action__change__operation_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+<p><a href="action__change__operation_8cpp_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:config_5Fview_5Ffixture" id="r_config_5Fview_5Ffixture"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structconfig__view__fixture.html">config_view_fixture</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a139f00d2466d591f60b8d6a73c8273f1" id="r_a139f00d2466d591f60b8d6a73c8273f1"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a139f00d2466d591f60b8d6a73c8273f1">BOOST_TEST_DYN_LINK</a></td></tr>
+<tr class="memitem:ab340a5e76af466a5f20ec5500d30a80b" id="r_ab340a5e76af466a5f20ec5500d30a80b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab340a5e76af466a5f20ec5500d30a80b">BOOST_TEST_MAIN</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a7e752ef79075966a92e93c7eff22106a" id="r_a7e752ef79075966a92e93c7eff22106a"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a7e752ef79075966a92e93c7eff22106a">DPM_TT_ENUM_PRINT</a> (depicture_menu::cs_binding::VirtualKeyCode)</td></tr>
+<tr class="memitem:a0d22b8d669cc072506b819902fba2eac" id="r_a0d22b8d669cc072506b819902fba2eac"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a0d22b8d669cc072506b819902fba2eac">DPM_TT_ENUM_PRINT</a> (depicture_menu::cs_binding::BasicItemActionKind)</td></tr>
+<tr class="memitem:a2934c95d04c77f3d34f9b8440d758d6e" id="r_a2934c95d04c77f3d34f9b8440d758d6e"><td class="memItemLeft">std::shared_ptr&lt; dc::ConfMenu &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a2934c95d04c77f3d34f9b8440d758d6e">get_menu</a> (std::shared_ptr&lt; dc::ConfigArg &gt; arg, std::size_t menu_idx)</td></tr>
+<tr class="memitem:a21cd4ad5cb7cf2e145fff9f01cfa56f1" id="r_a21cd4ad5cb7cf2e145fff9f01cfa56f1"><td class="memItemLeft">std::shared_ptr&lt; dc::ConfMenuItem &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a21cd4ad5cb7cf2e145fff9f01cfa56f1">get_menu_item</a> (std::shared_ptr&lt; dc::ConfigArg &gt; arg, std::size_t menu_idx, std::size_t item_idx)</td></tr>
+<tr class="memitem:a3ed913cc3c991a79bda66f42b5b9d032" id="r_a3ed913cc3c991a79bda66f42b5b9d032"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3ed913cc3c991a79bda66f42b5b9d032">set_menu_on_arg</a> (std::shared_ptr&lt; dc::ConfigArg &gt; arg, <a class="el" href="namespacedepicture__menu_1_1domain_1_1menu.html#a2b51ff146c22769b74c23c37851fa801">ddm::menu_id</a> const mid, <a class="el" href="namespacedepicture__menu_1_1domain_1_1menu.html#aa7d3347d8daef21d1ee5d9f029632c0a">ddm::menu_item_id</a> const iid)</td></tr>
+<tr class="memitem:afe6c22a200757c0f8588c441bf4aa5a6" id="r_afe6c22a200757c0f8588c441bf4aa5a6"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#afe6c22a200757c0f8588c441bf4aa5a6">BOOST_AUTO_TEST_CASE</a> (add_action)</td></tr>
+<tr class="memitem:a9994c6d4b951a7a0bfbb2f0c4db29e5f" id="r_a9994c6d4b951a7a0bfbb2f0c4db29e5f"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a9994c6d4b951a7a0bfbb2f0c4db29e5f">BOOST_AUTO_TEST_CASE</a> (add_action_updated_item, *bt::depends_on(&quot;test_config_view_presenter/add_action&quot;))</td></tr>
+<tr class="memitem:a36dcb47a61a9a70e60823f0e7bde5e0a" id="r_a36dcb47a61a9a70e60823f0e7bde5e0a"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a36dcb47a61a9a70e60823f0e7bde5e0a">BOOST_AUTO_TEST_CASE</a> (test_action_domain_operation)</td></tr>
+<tr class="memitem:aec7b0b55b3fc90ef2c57edde7ecc9212" id="r_aec7b0b55b3fc90ef2c57edde7ecc9212"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#aec7b0b55b3fc90ef2c57edde7ecc9212">wide_to_sjis</a> (std::wstring const &amp;s)</td></tr>
+<tr class="memitem:a08ee9762f61abb902eac449b23391fe1" id="r_a08ee9762f61abb902eac449b23391fe1"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="#a08ee9762f61abb902eac449b23391fe1">wide_to_utf8</a> (std::wstring const &amp;s)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+変数</h2></td></tr>
+<tr class="memitem:ada67c9f5adb6865a2b8b3d927af332ee" id="r_ada67c9f5adb6865a2b8b3d927af332ee"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="#ada67c9f5adb6865a2b8b3d927af332ee">void_command_query</a></td></tr>
+<tr class="memitem:a62d4f0cc2a3f172aca886bf4af5036c0" id="r_a62d4f0cc2a3f172aca886bf4af5036c0"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="#a62d4f0cc2a3f172aca886bf4af5036c0">void_action_query</a></td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">マクロ定義詳解</h2>
+<a id="a139f00d2466d591f60b8d6a73c8273f1" name="a139f00d2466d591f60b8d6a73c8273f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a139f00d2466d591f60b8d6a73c8273f1">&#9670;&#160;</a></span>BOOST_TEST_DYN_LINK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOOST_TEST_DYN_LINK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="action__change__operation_8cpp_source.html">action_change_operation.cpp</a> の <a class="el" href="action__change__operation_8cpp_source.html#l00002">2</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ab340a5e76af466a5f20ec5500d30a80b" name="ab340a5e76af466a5f20ec5500d30a80b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab340a5e76af466a5f20ec5500d30a80b">&#9670;&#160;</a></span>BOOST_TEST_MAIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOOST_TEST_MAIN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="action__change__operation_8cpp_source.html">action_change_operation.cpp</a> の <a class="el" href="action__change__operation_8cpp_source.html#l00003">3</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="afe6c22a200757c0f8588c441bf4aa5a6" name="afe6c22a200757c0f8588c441bf4aa5a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe6c22a200757c0f8588c441bf4aa5a6">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">add_action</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="action__change__operation_8cpp_source.html">action_change_operation.cpp</a> の <a class="el" href="action__change__operation_8cpp_source.html#l00144">144</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="_test_config_view_presenter_8cpp.html#af6b86a010532f0ad2428e02fe44cab2f">act0</a>, <a class="el" href="_test_config_view_presenter_8cpp.html#a5dd78a1a27b46829894c08d705b1afe4">act1</a>, <a class="el" href="_test_config_view_presenter_8cpp.html#a0accedc38703ef5a01718367879120ae">cp</a>, <a class="el" href="_test_config_view_presenter_8cpp_source.html#l00210">id0</a>, <a class="el" href="_test_config_view_presenter_8cpp_source.html#l00211">id1</a>, <a class="el" href="test__command__line__option_8cpp.html#a8804cd4df220b4dbe58067cd7f91dcbd">MOCK_EXPECT()</a>, <a class="el" href="action__change__operation_8cpp_source.html#l00127">set_menu_on_arg()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="action__change__operation_8cpp_afe6c22a200757c0f8588c441bf4aa5a6_cgraph.svg" width="623" height="96"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a9994c6d4b951a7a0bfbb2f0c4db29e5f" name="a9994c6d4b951a7a0bfbb2f0c4db29e5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9994c6d4b951a7a0bfbb2f0c4db29e5f">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">add_action_updated_item</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"> *</td>          <td class="paramname"><span class="paramname"><em>bt::depends_on</em></span>&quot;test_config_view_presenter/add_action&quot;&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="action__change__operation_8cpp_source.html">action_change_operation.cpp</a> の <a class="el" href="action__change__operation_8cpp_source.html#l00169">169</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="_test_config_view_presenter_8cpp.html#af6b86a010532f0ad2428e02fe44cab2f">act0</a>, <a class="el" href="_test_config_view_presenter_8cpp.html#a0accedc38703ef5a01718367879120ae">cp</a>, <a class="el" href="action__change__operation_8cpp_source.html#l00102">get_menu_item()</a>, <a class="el" href="test__command__line__option_8cpp.html#a8804cd4df220b4dbe58067cd7f91dcbd">MOCK_EXPECT()</a>, <a class="el" href="action__change__operation_8cpp_source.html#l00127">set_menu_on_arg()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="action__change__operation_8cpp_a9994c6d4b951a7a0bfbb2f0c4db29e5f_cgraph.svg" width="623" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a36dcb47a61a9a70e60823f0e7bde5e0a" name="a36dcb47a61a9a70e60823f0e7bde5e0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36dcb47a61a9a70e60823f0e7bde5e0a">&#9670;&#160;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">test_action_domain_operation</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="action__change__operation_8cpp_source.html">action_change_operation.cpp</a> の <a class="el" href="action__change__operation_8cpp_source.html#l00202">202</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="_test_config_view_presenter_8cpp.html#af6b86a010532f0ad2428e02fe44cab2f">act0</a>, <a class="el" href="_test_config_view_presenter_8cpp.html#a5dd78a1a27b46829894c08d705b1afe4">act1</a>, <a class="el" href="_test_config_view_presenter_8cpp_source.html#l00403">act_tree</a>, <a class="el" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST()</a>, <a class="el" href="_test_config_view_presenter_8cpp.html#a7f6be0f696e3b7a5113c43a07d67e9cd">BOOST_TEST_REQUIRE()</a>, <a class="el" href="_test_config_view_presenter_8cpp_source.html#l00358">c_id0</a>, <a class="el" href="_test_config_view_presenter_8cpp_source.html#l00358">c_id1</a>, <a class="el" href="_test_config_view_presenter_8cpp_source.html#l00358">c_id2</a>, <a class="el" href="_test_config_view_presenter_8cpp_source.html#l00410">children</a>, <a class="el" href="_test_config_view_presenter_8cpp_source.html#l00365">cm</a>, <a class="el" href="_test_config_view_presenter_8cpp.html#a0accedc38703ef5a01718367879120ae">cp</a>, <a class="el" href="_test_config_view_presenter_8cpp_source.html#l00210">id0</a>, <a class="el" href="_test_config_view_presenter_8cpp_source.html#l00211">id1</a>, <a class="el" href="test__command__line__option_8cpp.html#a8804cd4df220b4dbe58067cd7f91dcbd">MOCK_EXPECT()</a>, <a class="el" href="test__command__line__option_8cpp.html#a76b71ed405acc0093eaef283c86f6461">MOCK_FUNCTOR()</a>, <a class="el" href="str__conv_8cpp_source.html#l00051">wide_to_utf8()</a> (計16項目).</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="action__change__operation_8cpp_a36dcb47a61a9a70e60823f0e7bde5e0a_cgraph.svg" width="432" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a0d22b8d669cc072506b819902fba2eac" name="a0d22b8d669cc072506b819902fba2eac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d22b8d669cc072506b819902fba2eac">&#9670;&#160;</a></span>DPM_TT_ENUM_PRINT() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DPM_TT_ENUM_PRINT </td>
+          <td>(</td>
+          <td class="paramtype">depicture_menu::cs_binding::BasicItemActionKind</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">参照先 <a class="el" href="str__conv_8cpp_source.html#l00038">depicture_menu::util::strconv::wide_to_sjis()</a>, <a class="el" href="str__conv_8cpp_source.html#l00051">depicture_menu::util::strconv::wide_to_utf8()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="action__change__operation_8cpp_a0d22b8d669cc072506b819902fba2eac_cgraph.svg" width="383" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a7e752ef79075966a92e93c7eff22106a" name="a7e752ef79075966a92e93c7eff22106a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e752ef79075966a92e93c7eff22106a">&#9670;&#160;</a></span>DPM_TT_ENUM_PRINT() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DPM_TT_ENUM_PRINT </td>
+          <td>(</td>
+          <td class="paramtype">depicture_menu::cs_binding::VirtualKeyCode</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2934c95d04c77f3d34f9b8440d758d6e" name="a2934c95d04c77f3d34f9b8440d758d6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2934c95d04c77f3d34f9b8440d758d6e">&#9670;&#160;</a></span>get_menu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; dc::ConfMenu &gt; get_menu </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; dc::ConfigArg &gt;</td>          <td class="paramname"><span class="paramname"><em>arg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>menu_idx</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="action__change__operation_8cpp_source.html">action_change_operation.cpp</a> の <a class="el" href="action__change__operation_8cpp_source.html#l00093">93</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="action__change__operation_8cpp_source.html#l00102">get_menu_item()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="action__change__operation_8cpp_a2934c95d04c77f3d34f9b8440d758d6e_icgraph.svg" width="492" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a21cd4ad5cb7cf2e145fff9f01cfa56f1" name="a21cd4ad5cb7cf2e145fff9f01cfa56f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21cd4ad5cb7cf2e145fff9f01cfa56f1">&#9670;&#160;</a></span>get_menu_item()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; dc::ConfMenuItem &gt; get_menu_item </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; dc::ConfigArg &gt;</td>          <td class="paramname"><span class="paramname"><em>arg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>menu_idx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>item_idx</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="action__change__operation_8cpp_source.html">action_change_operation.cpp</a> の <a class="el" href="action__change__operation_8cpp_source.html#l00102">102</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="action__change__operation_8cpp_source.html#l00093">get_menu()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="action__change__operation_8cpp_source.html#l00169">BOOST_AUTO_TEST_CASE()</a>, <a class="el" href="menu__change__operation_8cpp_source.html#l00156">BOOST_AUTO_TEST_CASE()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="action__change__operation_8cpp_a21cd4ad5cb7cf2e145fff9f01cfa56f1_cgraph.svg" width="248" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="action__change__operation_8cpp_a21cd4ad5cb7cf2e145fff9f01cfa56f1_icgraph.svg" width="366" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a3ed913cc3c991a79bda66f42b5b9d032" name="a3ed913cc3c991a79bda66f42b5b9d032"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ed913cc3c991a79bda66f42b5b9d032">&#9670;&#160;</a></span>set_menu_on_arg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void set_menu_on_arg </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; dc::ConfigArg &gt;</td>          <td class="paramname"><span class="paramname"><em>arg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedepicture__menu_1_1domain_1_1menu.html#a2b51ff146c22769b74c23c37851fa801">ddm::menu_id</a> const</td>          <td class="paramname"><span class="paramname"><em>mid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedepicture__menu_1_1domain_1_1menu.html#aa7d3347d8daef21d1ee5d9f029632c0a">ddm::menu_item_id</a> const</td>          <td class="paramname"><span class="paramname"><em>iid</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="action__change__operation_8cpp_source.html">action_change_operation.cpp</a> の <a class="el" href="action__change__operation_8cpp_source.html#l00127">127</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="_test_config_view_presenter_8cpp_source.html#l00365">cm</a>, <a class="el" href="model_2entity__id_8hpp_source.html#l00106">depicture_menu::domain::models::entity_id_base&lt; Tag &gt;::uuid()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="action__change__operation_8cpp_source.html#l00144">BOOST_AUTO_TEST_CASE()</a>, <a class="el" href="action__change__operation_8cpp_source.html#l00169">BOOST_AUTO_TEST_CASE()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="action__change__operation_8cpp_a3ed913cc3c991a79bda66f42b5b9d032_cgraph.svg" width="379" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="action__change__operation_8cpp_a3ed913cc3c991a79bda66f42b5b9d032_icgraph.svg" width="380" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aec7b0b55b3fc90ef2c57edde7ecc9212" name="aec7b0b55b3fc90ef2c57edde7ecc9212"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec7b0b55b3fc90ef2c57edde7ecc9212">&#9670;&#160;</a></span>wide_to_sjis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="namespacedepicture__menu_1_1util_1_1strconv.html#aec7b0b55b3fc90ef2c57edde7ecc9212">depicture_menu::util::strconv::wide_to_sjis</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::wstring const &amp;</td>          <td class="paramname"><span class="paramname"><em>s</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="str__conv_8cpp_source.html">str_conv.cpp</a> の <a class="el" href="str__conv_8cpp_source.html#l00038">38</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a08ee9762f61abb902eac449b23391fe1" name="a08ee9762f61abb902eac449b23391fe1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08ee9762f61abb902eac449b23391fe1">&#9670;&#160;</a></span>wide_to_utf8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="namespacedepicture__menu_1_1util_1_1strconv.html#a08ee9762f61abb902eac449b23391fe1">depicture_menu::util::strconv::wide_to_utf8</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::wstring const &amp;</td>          <td class="paramname"><span class="paramname"><em>s</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="str__conv_8cpp_source.html">str_conv.cpp</a> の <a class="el" href="str__conv_8cpp_source.html#l00051">51</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="action__change__operation_8cpp_source.html#l00202">BOOST_AUTO_TEST_CASE()</a>, <a class="el" href="apply__menus_8cpp_source.html#l00016">to_str()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="action__change__operation_8cpp_a08ee9762f61abb902eac449b23391fe1_icgraph.svg" width="351" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">変数詳解</h2>
+<a id="a62d4f0cc2a3f172aca886bf4af5036c0" name="a62d4f0cc2a3f172aca886bf4af5036c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62d4f0cc2a3f172aca886bf4af5036c0">&#9670;&#160;</a></span>void_action_query</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto void_action_query</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>初期値:</b><div class="fragment"><div class="line">                       = <a class="code hl_function" href="namespacedepicture__menu_1_1usecase.html#aa7a2906d4f0d46a4a06b555ca34854d7">du::query_base&lt; dd::actions::publisher &gt;</a>(</div>
+<div class="line">    [](</div>
+<div class="line">        <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">dd::actions::publisher_id</a> <span class="keywordtype">id</span></div>
+<div class="line">    ) -&gt; std::optional&lt; dd::actions::publisher &gt; { <span class="keywordflow">return</span> std::nullopt; }</div>
+<div class="line">)</div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1actions_html_af913742220f232fcc0d0433f4e0da3f3"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">depicture_menu::domain::actions::publisher_id</a></div><div class="ttdeci">models::entity_id_base&lt; action_publisher_id_tag &gt; publisher_id</div><div class="ttdef"><b>Definition</b> <a href="action__ids_8hpp_source.html#l00017">action_ids.hpp:17</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_html_aa7a2906d4f0d46a4a06b555ca34854d7"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase.html#aa7a2906d4f0d46a4a06b555ca34854d7">depicture_menu::usecase::query_base</a></div><div class="ttdeci">query_base(V &amp;&amp;entity_list) -&gt; query_base&lt; std::ranges::range_value_t&lt; V &gt; &gt;</div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="action__change__operation_8cpp_source.html">action_change_operation.cpp</a> の <a class="el" href="action__change__operation_8cpp_source.html#l00081">81</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="menu__change__operation_8cpp_source.html#l00129">BOOST_AUTO_TEST_CASE()</a>, <a class="el" href="menu__change__operation_8cpp_source.html#l00156">BOOST_AUTO_TEST_CASE()</a>, <a class="el" href="menu__change__operation_8cpp_source.html#l00240">BOOST_AUTO_TEST_CASE()</a>, <a class="el" href="menu__change__operation_8cpp_source.html#l00216">BOOST_AUTO_TEST_SUITE()</a>.</p>
+
+</div>
+</div>
+<a id="ada67c9f5adb6865a2b8b3d927af332ee" name="ada67c9f5adb6865a2b8b3d927af332ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada67c9f5adb6865a2b8b3d927af332ee">&#9670;&#160;</a></span>void_command_query</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto void_command_query</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>初期値:</b><div class="fragment"><div class="line">                        = <a class="code hl_class" href="structdepicture__menu_1_1usecase_1_1query__base.html">du::query_base&lt; dd::commands::command &gt;</a>(</div>
+<div class="line">    []( <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1commands.html#a255579014c08ea612b006aa3a641ca7a">dd::commands::command_id</a> <span class="keywordtype">id</span> ) -&gt; std::optional&lt; dd::commands::command &gt;</div>
+<div class="line">    { <span class="keywordflow">return</span> std::nullopt; }</div>
+<div class="line">)</div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1commands_html_a255579014c08ea612b006aa3a641ca7a"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1commands.html#a255579014c08ea612b006aa3a641ca7a">depicture_menu::domain::commands::command_id</a></div><div class="ttdeci">models::entity_id_base&lt; detail_commands::command_id_tag &gt; command_id</div><div class="ttdef"><b>Definition</b> <a href="command__ids_8hpp_source.html#l00018">command_ids.hpp:18</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1usecase_1_1query__base_html"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1query__base.html">depicture_menu::usecase::query_base&lt; dd::commands::command &gt;</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="action__change__operation_8cpp_source.html">action_change_operation.cpp</a> の <a class="el" href="action__change__operation_8cpp_source.html#l00077">77</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="menu__change__operation_8cpp_source.html#l00129">BOOST_AUTO_TEST_CASE()</a>, <a class="el" href="menu__change__operation_8cpp_source.html#l00156">BOOST_AUTO_TEST_CASE()</a>, <a class="el" href="menu__change__operation_8cpp_source.html#l00240">BOOST_AUTO_TEST_CASE()</a>, <a class="el" href="menu__change__operation_8cpp_source.html#l00318">BOOST_AUTO_TEST_CASE()</a>, <a class="el" href="menu__change__operation_8cpp_source.html#l00283">BOOST_AUTO_TEST_CASE()</a>, <a class="el" href="menu__change__operation_8cpp_source.html#l00216">BOOST_AUTO_TEST_SUITE()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_0281b912293b0150165693b325cfab25.html">test</a></li><li class="navelem"><a href="dir_13bb975b5c6918e0cdb932e8baceeae5.html">core</a></li><li class="navelem"><a href="dir_c7622a53865fc3b7ee15108868f92380.html">presentation</a></li><li class="navelem"><a href="dir_0474040171863b0e9f7e6d1cb0f9fe95.html">change_view_model</a></li><li class="navelem"><a href="dir_c959c1eea9a6b46489cb3a24b071fc9f.html">config_view_presenter</a></li><li class="navelem"><a href="action__change__operation_8cpp.html">action_change_operation.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

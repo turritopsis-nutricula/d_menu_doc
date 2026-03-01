@@ -1,0 +1,9 @@
+var structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__trigger_1_1trigger__operator__impl =
+[
+    [ "trigger_operator_impl", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__trigger_1_1trigger__operator__impl.html#af9af7441ef2304fe643ade41f9992c93", null ],
+    [ "item_only", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__trigger_1_1trigger__operator__impl.html#ade9b80152587fd6038b51cfe0804440c", null ],
+    [ "sync", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__trigger_1_1trigger__operator__impl.html#adebfa4e86d3eaf254031ba2fcaf64975", null ],
+    [ "sync", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__trigger_1_1trigger__operator__impl.html#a6d050025f93c5030fbf9819ce55bfa6e", null ],
+    [ "sync", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__trigger_1_1trigger__operator__impl.html#a1ad2d4952fdb9bfff1806ff77b99d676", null ],
+    [ "value_", "structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operation__trigger_1_1trigger__operator__impl.html#aa9f12a588e5843955a4675e8bf9a43f3", null ]
+];

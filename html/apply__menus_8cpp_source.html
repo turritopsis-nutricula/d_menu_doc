@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/src/core/cs_binding/apply_domain/apply_menus.cpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('apply__menus_8cpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">apply_menus.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="apply__menus_8cpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;config.hpp&quot;</span>    <span class="comment">// IWYU pragma: keep</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="apply__menus_8hpp.html">apply_menus.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;boost/pfr.hpp&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;strconv.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">dm</a> = <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">depicture_menu::domain</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1cs__binding.html">dc</a> = <a class="code hl_namespace" href="namespacedepicture__menu_1_1cs__binding.html">depicture_menu::cs_binding</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// convert assign</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">// string</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>std::string</div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="apply__menus_8cpp.html#a532fae1f711209cda12a6f31da33cba2">   16</a></span><a class="code hl_function" href="apply__menus_8cpp.html#a532fae1f711209cda12a6f31da33cba2">to_str</a>( std::wstring <span class="keyword">const</span>&amp; wstr )</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="action__change__operation_8cpp.html#a08ee9762f61abb902eac449b23391fe1">wide_to_utf8</a>( wstr );</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>}</div>
+</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// color</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span>... <a class="code hl_enumvalue" href="namespacedepicture__menu_1_1domain_1_1actions_1_1send__keyinput.html#a0f312b243774c4222f7d07d19483f3abadd7536794b63bf90eccfd37f9b147d7f">I</a> &gt;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="apply__menus_8cpp.html#a1bba9ed2d388c1e3de5a70a0898812a2">   25</a></span><a class="code hl_function" href="apply__menus_8cpp.html#a1bba9ed2d388c1e3de5a70a0898812a2">rgba_to_argb</a>( std::tuple&lt; I... &gt; <span class="keyword">const</span>&amp; <a class="code hl_struct" href="structc.html">c</a>, std::array&lt; uint8_t, 4 &gt;&amp; argb_arr )</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    argb_arr[ 0 ] = <span class="keyword">static_cast&lt;</span> uint8_t <span class="keyword">&gt;</span>( std::get&lt; 3 &gt;( <a class="code hl_struct" href="structc.html">c</a> ) );</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    argb_arr[ 1 ] = <span class="keyword">static_cast&lt;</span> uint8_t <span class="keyword">&gt;</span>( std::get&lt; 0 &gt;( <a class="code hl_struct" href="structc.html">c</a> ) );</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    argb_arr[ 2 ] = <span class="keyword">static_cast&lt;</span> uint8_t <span class="keyword">&gt;</span>( std::get&lt; 1 &gt;( <a class="code hl_struct" href="structc.html">c</a> ) );</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    argb_arr[ 3 ] = <span class="keyword">static_cast&lt;</span> uint8_t <span class="keyword">&gt;</span>( std::get&lt; 2 &gt;( <a class="code hl_struct" href="structc.html">c</a> ) );</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
+</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="apply__menus_8cpp.html#a9e7b2ec62a871ef07bc72ddbd13e2e79">   34</a></span><a class="code hl_function" href="apply__menus_8cpp.html#a9e7b2ec62a871ef07bc72ddbd13e2e79">to_argb</a>( <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1common_1_1rgba__color.html">dm::common::rgba_color</a> <span class="keyword">const</span>&amp; <a class="code hl_struct" href="structc.html">c</a>, std::array&lt; uint8_t, 4 &gt;&amp; argb_arr )</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_function" href="apply__menus_8cpp.html#a1bba9ed2d388c1e3de5a70a0898812a2">rgba_to_argb</a>( boost::pfr::structure_to_tuple( <a class="code hl_struct" href="structc.html">c</a> ), argb_arr );</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>}</div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">// RadialMenuArg</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1cs__binding.html#a17af5c2678e88aa88a411f7d98a360a5">   43</a></span><a class="code hl_function" href="namespacedepicture__menu_1_1cs__binding.html#a17af5c2678e88aa88a411f7d98a360a5">depicture_menu::cs_binding::apply_radialmenu</a>(</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html">domain::menu::radialmenu</a> <span class="keyword">const</span>&amp; <a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#a2f99d325a57bd5a9d115762efcc80182">menu</a>, RadialMenuArg&amp; arg</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>)</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>{</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    arg.set_MenuId( <a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#a2f99d325a57bd5a9d115762efcc80182">menu</a>.entity_id( ) );</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    arg.Items( ).clear( );</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">for</span> ( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; item : <a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#a2f99d325a57bd5a9d115762efcc80182">menu</a>.items( ) )</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        RadialMenuItemArg <a class="code hl_struct" href="structb.html">b</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <a class="code hl_function" href="namespacedepicture__menu_1_1cs__binding.html#ae572bad0d69db1d1c8b9e1934514c6d9">apply_menu_item</a>( item, <a class="code hl_struct" href="structb.html">b</a> );</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        arg.Items( ).add( std::move( <a class="code hl_struct" href="structb.html">b</a> ) );</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    arg.CentralItem( ).set_Label(</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#a2f99d325a57bd5a9d115762efcc80182">menu</a>.get_central_item_label( ).to_ansi_str( )</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    );</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    arg.CentralItem( ).set_ActionId(</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#a2f99d325a57bd5a9d115762efcc80182">menu</a>.get_central_item_action_id( ).uuid( )</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    );</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="comment">//  apply_centralitem( menu.central_item( ), arg.CentralItem_ );</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
+</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">// RadialMenuCentralItem</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00072" data-start="{" data-end="}">
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1cs__binding.html#a442ac9e8a6937dd485c22270137b176d">   72</a></span><a class="code hl_function" href="namespacedepicture__menu_1_1cs__binding.html#ae572bad0d69db1d1c8b9e1934514c6d9">dc::apply_menu_item</a>(</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html">domain::menu::radialmenu_item</a> <span class="keyword">const</span>&amp; item, RadialMenuItemArg&amp; arg</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>)</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>{</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    arg.set_ItemId( item.entity_id( ).uuid( ) );</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="comment">// background</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <a class="code hl_function" href="apply__menus_8cpp.html#a9e7b2ec62a871ef07bc72ddbd13e2e79">to_argb</a>( item.entity_value( ).background_, arg.Background_ );</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="comment">// label</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keyword">auto</span> <span class="keyword">const</span> str = item.<a class="code hl_function" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#a4345d8dc99a845f0a3bc8c9210f01e42">label</a>( ).to_ansi_str( );</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordflow">if</span> ( str.empty( ) )</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            arg.Content( ).ref_Label( ) = <span class="stringliteral">&quot;*unnamed menu&quot;</span>;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            arg.Content( ).set_Label( str );</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    arg.set_ActionId( item.<a class="code hl_function" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#a401fbb41b8231960bb8443168ddb56a5">current_action_id</a>( ) );</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="comment">//  arg.set_can_execute_Click( [ t = item.can_execute_action( ) ]( auto</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="comment">// act_id ) { return t; } );</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>}</div>
+</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">#if 0</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">// RadialMenuItemArg</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="keywordtype">void</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>dc::apply_centralitem(</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html">domain::menu::radialmenu_centralitem</a> <span class="keyword">const</span>&amp; item,</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    RadialMenuCentralItemArg&amp;                   arg</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>)</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>{</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    arg.ref_Label( )   = item.<a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a1eeab3a86f3e1914a8e8a11d60b612db">label</a>( ).to_ansi_str( );</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    arg.set_ActionId( item.<a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a6d077eb2d42d4dc044357f159ee9b9a4">action_id</a>( ) );</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>}</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_test_config_view_presenter_8cpp_html_a2f99d325a57bd5a9d115762efcc80182"><div class="ttname"><a href="_test_config_view_presenter_8cpp.html#a2f99d325a57bd5a9d115762efcc80182">menu</a></div><div class="ttdeci">dd::menu::radialmenu menu(m_id)</div></div>
+<div class="ttc" id="aaction__change__operation_8cpp_html_a08ee9762f61abb902eac449b23391fe1"><div class="ttname"><a href="action__change__operation_8cpp.html#a08ee9762f61abb902eac449b23391fe1">wide_to_utf8</a></div><div class="ttdeci">std::string wide_to_utf8(std::wstring const &amp;s)</div><div class="ttdef"><b>Definition</b> <a href="str__conv_8cpp_source.html#l00051">str_conv.cpp:51</a></div></div>
+<div class="ttc" id="aapply__menus_8cpp_html_a1bba9ed2d388c1e3de5a70a0898812a2"><div class="ttname"><a href="apply__menus_8cpp.html#a1bba9ed2d388c1e3de5a70a0898812a2">rgba_to_argb</a></div><div class="ttdeci">void rgba_to_argb(std::tuple&lt; I... &gt; const &amp;c, std::array&lt; uint8_t, 4 &gt; &amp;argb_arr)</div><div class="ttdef"><b>Definition</b> <a href="#l00025">apply_menus.cpp:25</a></div></div>
+<div class="ttc" id="aapply__menus_8cpp_html_a532fae1f711209cda12a6f31da33cba2"><div class="ttname"><a href="apply__menus_8cpp.html#a532fae1f711209cda12a6f31da33cba2">to_str</a></div><div class="ttdeci">std::string to_str(std::wstring const &amp;wstr)</div><div class="ttdef"><b>Definition</b> <a href="#l00016">apply_menus.cpp:16</a></div></div>
+<div class="ttc" id="aapply__menus_8cpp_html_a9e7b2ec62a871ef07bc72ddbd13e2e79"><div class="ttname"><a href="apply__menus_8cpp.html#a9e7b2ec62a871ef07bc72ddbd13e2e79">to_argb</a></div><div class="ttdeci">void to_argb(dm::common::rgba_color const &amp;c, std::array&lt; uint8_t, 4 &gt; &amp;argb_arr)</div><div class="ttdef"><b>Definition</b> <a href="#l00034">apply_menus.cpp:34</a></div></div>
+<div class="ttc" id="aapply__menus_8hpp_html"><div class="ttname"><a href="apply__menus_8hpp.html">apply_menus.hpp</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html">depicture_menu::domain::menu::radialmenu_centralitem</a></div><div class="ttdef"><b>Definition</b> <a href="radialmenu__centralitem_8hpp_source.html#l00024">radialmenu_centralitem.hpp:27</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem_html_a1eeab3a86f3e1914a8e8a11d60b612db"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a1eeab3a86f3e1914a8e8a11d60b612db">depicture_menu::domain::menu::radialmenu_centralitem::label</a></div><div class="ttdeci">auto &amp; label(auto &amp;&amp;v) noexcept</div><div class="ttdef"><b>Definition</b> <a href="radialmenu__centralitem_8hpp_source.html#l00049">radialmenu_centralitem.hpp:49</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem_html_a6d077eb2d42d4dc044357f159ee9b9a4"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html#a6d077eb2d42d4dc044357f159ee9b9a4">depicture_menu::domain::menu::radialmenu_centralitem::action_id</a></div><div class="ttdeci">auto &amp; action_id(auto const &amp;v) noexcept</div><div class="ttdef"><b>Definition</b> <a href="radialmenu__centralitem_8hpp_source.html#l00068">radialmenu_centralitem.hpp:68</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1cs__binding_html"><div class="ttname"><a href="namespacedepicture__menu_1_1cs__binding.html">depicture_menu::cs_binding</a></div><div class="ttdef"><b>Definition</b> <a href="core__interface_8hpp_source.html#l00042">core_interface.hpp:43</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1cs__binding_html_a17af5c2678e88aa88a411f7d98a360a5"><div class="ttname"><a href="namespacedepicture__menu_1_1cs__binding.html#a17af5c2678e88aa88a411f7d98a360a5">depicture_menu::cs_binding::apply_radialmenu</a></div><div class="ttdeci">void apply_radialmenu(domain::menu::radialmenu const &amp;menu, RadialMenuArg &amp;arg)</div><div class="ttdef"><b>Definition</b> <a href="#l00043">apply_menus.cpp:43</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1cs__binding_html_ae572bad0d69db1d1c8b9e1934514c6d9"><div class="ttname"><a href="namespacedepicture__menu_1_1cs__binding.html#ae572bad0d69db1d1c8b9e1934514c6d9">depicture_menu::cs_binding::apply_menu_item</a></div><div class="ttdeci">void apply_menu_item(domain::menu::radialmenu_item const &amp;item, std::shared_ptr&lt; ConfMenu &gt; menu, build_query::actions_query const &amp;)</div><div class="ttdef"><b>Definition</b> <a href="apply__config__arg_8cpp_source.html#l00602">apply_config_arg.cpp:602</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1actions_1_1send__keyinput_html_a0f312b243774c4222f7d07d19483f3abadd7536794b63bf90eccfd37f9b147d7f"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1actions_1_1send__keyinput.html#a0f312b243774c4222f7d07d19483f3abadd7536794b63bf90eccfd37f9b147d7f">depicture_menu::domain::actions::send_keyinput::virtual_key_code::I</a></div><div class="ttdeci">@ I</div><div class="ttdef"><b>Definition</b> <a href="action_2send__keyinput_2virtual__key__code_8hpp_source.html#l00084">virtual_key_code.hpp:84</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_html"><div class="ttname"><a href="namespacedepicture__menu_1_1domain.html">depicture_menu::domain</a></div><div class="ttdef"><b>Definition</b> <a href="colors_8hpp_source.html#l00006">colors.hpp:7</a></div></div>
+<div class="ttc" id="astructb_html"><div class="ttname"><a href="structb.html">b</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00132">TestReflection.cpp:133</a></div></div>
+<div class="ttc" id="astructc_html"><div class="ttname"><a href="structc.html">c</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00154">TestReflection.cpp:155</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1common_1_1rgba__color_html"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1common_1_1rgba__color.html">depicture_menu::domain::common::rgba_color</a></div><div class="ttdef"><b>Definition</b> <a href="colors_8hpp_source.html#l00061">colors.hpp:62</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item_html"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html">depicture_menu::domain::menu::radialmenu_item</a></div><div class="ttdef"><b>Definition</b> <a href="radialmenu__item_8hpp_source.html#l00040">radialmenu_item.hpp:43</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item_html_a401fbb41b8231960bb8443168ddb56a5"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#a401fbb41b8231960bb8443168ddb56a5">depicture_menu::domain::menu::radialmenu_item::current_action_id</a></div><div class="ttdeci">auto const &amp; current_action_id() const noexcept</div><div class="ttdef"><b>Definition</b> <a href="radialmenu__item_8hpp_source.html#l00145">radialmenu_item.hpp:145</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item_html_a4345d8dc99a845f0a3bc8c9210f01e42"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#a4345d8dc99a845f0a3bc8c9210f01e42">depicture_menu::domain::menu::radialmenu_item::label</a></div><div class="ttdeci">auto &amp; label(auto const &amp;v) noexcept</div><div class="ttdef"><b>Definition</b> <a href="radialmenu__item_8hpp_source.html#l00084">radialmenu_item.hpp:84</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1radialmenu_html"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html">depicture_menu::domain::menu::radialmenu</a></div><div class="ttdef"><b>Definition</b> <a href="radialmenu_8hpp_source.html#l00027">radialmenu.hpp:28</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_d26f0ed8b287a778d960ad2241e01057.html">src</a></li><li class="navelem"><a href="dir_eb29242f55d2489f6c4d008365c270b7.html">core</a></li><li class="navelem"><a href="dir_cea6b123251f3cedcaebc32d093e626d.html">cs_binding</a></li><li class="navelem"><a href="dir_c86a785dcf355fab1d76d7935a03dc53.html">apply_domain</a></li><li class="navelem"><a href="apply__menus_8cpp.html">apply_menus.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

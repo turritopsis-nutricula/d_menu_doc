@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/src/core/dll_entry_point/domain_control/setup_core.cpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('setup__core_8cpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">setup_core.cpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;./config.hpp&quot;</code><br />
+<code>#include &quot;<a class="el" href="core__interface_8hpp_source.html">../../application/core_interface.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_core_model_8hpp_source.html">../../cs_binding/CoreModel.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="app__transaction_8hpp_source.html">core/application/app_transaction.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="command__line__option_8hpp_source.html">core/application/command_line_option/command_line_option.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="config__view__arg__builder_8hpp_source.html">core/application/cs_binding_factory/config_view_arg_builder.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="menu__view__arg__builder_8hpp_source.html">core/application/cs_binding_factory/menu_view_arg_builder.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="basic__action__update__controler_8hpp_source.html">core/control/config_window/basic_action_update_controler.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="menu__config__controler_8hpp_source.html">core/control/config_window/menu_config_controler.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="global__trigger__key__data_8hpp_source.html">core/usecase/config_view/dto/global_trigger_key_data.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="show__config__view_8hpp_source.html">core/usecase/config_view/show_config_view.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="update__trigger__config_8hpp_source.html">core/usecase/config_view/update_trigger_config.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="hidden__menu__view_8hpp_source.html">core/usecase/menu_view/hidden_menu_view.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="show__menu__view_8hpp_source.html">core/usecase/menu_view/show_menu_view.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="menu__view__presenter_8hpp_source.html">core/presentation/change_view_model/menu_view_presenter.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="combine__view__model__presenter_8hpp_source.html">core/presentation/combine_view_model_presenter.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="global__hotkey__presenter_8hpp_source.html">core/presentation/hotkey/global_hotkey_presenter.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="log_8hpp_source.html">core/application/log.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="message__receive__window_8hpp_source.html">win32/message_receive_window.hpp</a>&quot;</code><br />
+<code>#include &lt;boost/di.hpp&gt;</code><br />
+<code>#include &lt;windows.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+setup_core.cpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="setup__core_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+<p><a href="setup__core_8cpp_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a01c16bd2d05c3e099c494d6d2764d019" id="r_a01c16bd2d05c3e099c494d6d2764d019"><td class="memItemLeft">bool DPM_DLL_EXPORT&#160;</td><td class="memItemRight"><a class="el" href="#a01c16bd2d05c3e099c494d6d2764d019">setup_core</a> (HINSTANCE hinst)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+変数</h2></td></tr>
+<tr class="memitem:a529c06d1b592d7727d362fa1cb344d51" id="r_a529c06d1b592d7727d362fa1cb344d51"><td class="memItemLeft">static HWND&#160;</td><td class="memItemRight"><a class="el" href="#a529c06d1b592d7727d362fa1cb344d51">non_visitive_windows</a> = nullptr</td></tr>
+</table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="a01c16bd2d05c3e099c494d6d2764d019" name="a01c16bd2d05c3e099c494d6d2764d019"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01c16bd2d05c3e099c494d6d2764d019">&#9670;&#160;</a></span>setup_core()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DPM_DLL_EXPORT setup_core </td>
+          <td>(</td>
+          <td class="paramtype">HINSTANCE</td>          <td class="paramname"><span class="paramname"><em>hinst</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="setup__core_8cpp_source.html">setup_core.cpp</a> の <a class="el" href="setup__core_8cpp_source.html#l00219">219</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="debug__interface_8hpp_source.html#l00033">DPM_DEBUG</a>, <a class="el" href="log_8hpp_source.html#l00034">DPM_LOG_DEBUG</a>, <a class="el" href="singleton_8hpp_source.html#l00037">depicture_menu::singleton&lt; CoreModel &gt;::get_instance()</a>, <a class="el" href="singleton_8hpp_source.html#l00037">depicture_menu::singleton&lt; debug_interface_impl &gt;::get_instance()</a>, <a class="el" href="singleton_8hpp_source.html#l00037">depicture_menu::singleton&lt; detail_d_menu::core_interface_impl &gt;::get_instance()</a>, <a class="el" href="setup__core_8cpp_source.html#l00041">non_visitive_windows</a>, <a class="el" href="message__receive__window_8cpp_source.html#l00043">depicture_menu::win32::message_receive_window::setup()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="setup__core_8cpp_a01c16bd2d05c3e099c494d6d2764d019_cgraph.svg" width="478" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">変数詳解</h2>
+<a id="a529c06d1b592d7727d362fa1cb344d51" name="a529c06d1b592d7727d362fa1cb344d51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a529c06d1b592d7727d362fa1cb344d51">&#9670;&#160;</a></span>non_visitive_windows</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HWND non_visitive_windows = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="setup__core_8cpp_source.html">setup_core.cpp</a> の <a class="el" href="setup__core_8cpp_source.html#l00041">41</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="setup__core_8cpp_source.html#l00219">setup_core()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_d26f0ed8b287a778d960ad2241e01057.html">src</a></li><li class="navelem"><a href="dir_eb29242f55d2489f6c4d008365c270b7.html">core</a></li><li class="navelem"><a href="dir_aafc08077113e0eda694f7b4dcd55e56.html">dll_entry_point</a></li><li class="navelem"><a href="dir_cf839975ac98619e5296a785cb2aae56.html">domain_control</a></li><li class="navelem"><a href="setup__core_8cpp.html">setup_core.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

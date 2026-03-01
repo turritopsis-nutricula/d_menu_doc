@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/src/core/presentation/change_view_model/view_model_operation/list_helper.hpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('list__helper_8hpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">list_helper.hpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="model_2entity_8hpp_source.html">core/domain/model/entity.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="id__access_8hpp_source.html">id_access.hpp</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+list_helper.hpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="list__helper_8hpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="list__helper_8hpp__dep__incl.svg" width="496" height="470"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="list__helper_8hpp_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+名前空間</h2></td></tr>
+<tr class="memitem:depicture_5Fmenu" id="r_depicture_5Fmenu"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu.html">depicture_menu</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Apresentations" id="r_depicture_5Fmenu_3A_3Apresentations"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1presentations.html">depicture_menu::presentations</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Apresentations_3A_3Aview_5Fmodels" id="r_depicture_5Fmenu_3A_3Apresentations_3A_3Aview_5Fmodels"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1presentations_1_1view__models.html">depicture_menu::presentations::view_models</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Apresentations_3A_3Aview_5Fmodels_3A_3Alist_5Fhelpers" id="r_depicture_5Fmenu_3A_3Apresentations_3A_3Aview_5Fmodels_3A_3Alist_5Fhelpers"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1presentations_1_1view__models_1_1list__helpers.html">depicture_menu::presentations::view_models::list_helpers</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Apresentations_3A_3Aview_5Fmodels_3A_3Alist_5Fhelpers_3A_3Adetail_5Flist_5Fhelper" id="r_depicture_5Fmenu_3A_3Apresentations_3A_3Aview_5Fmodels_3A_3Alist_5Fhelpers_3A_3Adetail_5Flist_5Fhelper"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1presentations_1_1view__models_1_1list__helpers_1_1detail__list__helper.html">depicture_menu::presentations::view_models::list_helpers::detail_list_helper</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Apresentations_3A_3Aview_5Fmodels_3A_3Alist_5Fhelpers_3A_3Adetail_5Flist_5Fhelper_3A_3Aconcepts" id="r_depicture_5Fmenu_3A_3Apresentations_3A_3Aview_5Fmodels_3A_3Alist_5Fhelpers_3A_3Adetail_5Flist_5Fhelper_3A_3Aconcepts"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1presentations_1_1view__models_1_1list__helpers_1_1detail__list__helper_1_1concepts.html">depicture_menu::presentations::view_models::list_helpers::detail_list_helper::concepts</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-concepts" class="groupheader"><a id="concepts" name="concepts"></a>
+Concepts</h2></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Apresentations_3A_3Aview_5Fmodels_3A_3Alist_5Fhelpers_3A_3Adetail_5Flist_5Fhelper_3A_3Aconcepts_3A_3Aentites_5Frange" id="r_depicture_5Fmenu_3A_3Apresentations_3A_3Aview_5Fmodels_3A_3Alist_5Fhelpers_3A_3Adetail_5Flist_5Fhelper_3A_3Aconcepts_3A_3Aentites_5Frange"><td class="memItemLeft">concept &#160;</td><td class="memItemRight"><a class="el" href="conceptdepicture__menu_1_1presentations_1_1view__models_1_1list__helpers_1_1detail__list__helper_1_1concepts_1_1entites__range.html">depicture_menu::presentations::view_models::list_helpers::detail_list_helper::concepts::entites_range</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Apresentations_3A_3Aview_5Fmodels_3A_3Alist_5Fhelpers_3A_3Adetail_5Flist_5Fhelper_3A_3Aconcepts_3A_3Aid_5Faccessable" id="r_depicture_5Fmenu_3A_3Apresentations_3A_3Aview_5Fmodels_3A_3Alist_5Fhelpers_3A_3Adetail_5Flist_5Fhelper_3A_3Aconcepts_3A_3Aid_5Faccessable"><td class="memItemLeft">concept &#160;</td><td class="memItemRight"><a class="el" href="conceptdepicture__menu_1_1presentations_1_1view__models_1_1list__helpers_1_1detail__list__helper_1_1concepts_1_1id__accessable.html">depicture_menu::presentations::view_models::list_helpers::detail_list_helper::concepts::id_accessable</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Apresentations_3A_3Aview_5Fmodels_3A_3Alist_5Fhelpers_3A_3Adetail_5Flist_5Fhelper_3A_3Aconcepts_3A_3Aid_5Faccessable_5Fview_5Frange" id="r_depicture_5Fmenu_3A_3Apresentations_3A_3Aview_5Fmodels_3A_3Alist_5Fhelpers_3A_3Adetail_5Flist_5Fhelper_3A_3Aconcepts_3A_3Aid_5Faccessable_5Fview_5Frange"><td class="memItemLeft">concept &#160;</td><td class="memItemRight"><a class="el" href="conceptdepicture__menu_1_1presentations_1_1view__models_1_1list__helpers_1_1detail__list__helperb062fbdfb215318e2b9659aedca8f124.html">depicture_menu::presentations::view_models::list_helpers::detail_list_helper::concepts::id_accessable_view_range</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:ad92b8c7f15bc6c633c44be97192d978e" id="r_ad92b8c7f15bc6c633c44be97192d978e"><td class="memTemplParams" colspan="2">template&lt;domain::models::concepts::entitable E, detail_list_helper::concepts::id_accessable_view_range A&gt; </td></tr>
+<tr class="memitem:ad92b8c7f15bc6c633c44be97192d978e template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1presentations_1_1view__models_1_1list__helpers.html#ad92b8c7f15bc6c633c44be97192d978e">depicture_menu::presentations::view_models::list_helpers::create_item</a> (E const &amp;e, A &amp;arglist)</td></tr>
+<tr class="memitem:aacaa4a948749682bdd6c537bd05cad00" id="r_aacaa4a948749682bdd6c537bd05cad00"><td class="memTemplParams" colspan="2">template&lt;typename E, detail_list_helper::concepts::entites_range&lt; E &gt; R, detail_list_helper::concepts::id_accessable_view_range A&gt; </td></tr>
+<tr class="memitem:aacaa4a948749682bdd6c537bd05cad00 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1presentations_1_1view__models_1_1list__helpers.html#aacaa4a948749682bdd6c537bd05cad00">depicture_menu::presentations::view_models::list_helpers::create_item</a> (R const &amp;r, A &amp;arglist)</td></tr>
+<tr class="memitem:abf543773a6e187bb1dd622b3c314d1ad" id="r_abf543773a6e187bb1dd622b3c314d1ad"><td class="memTemplParams" colspan="2">template&lt;typename E, detail_list_helper::concepts::entites_range&lt; E &gt; R, detail_list_helper::concepts::id_accessable_view_range A, typename F&gt; </td></tr>
+<tr class="memitem:abf543773a6e187bb1dd622b3c314d1ad template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1presentations_1_1view__models_1_1list__helpers.html#abf543773a6e187bb1dd622b3c314d1ad">depicture_menu::presentations::view_models::list_helpers::sync_item</a> (R const &amp;r, A &amp;arglist, F &amp;&amp;f)</td></tr>
+<tr class="memitem:a103985ff04833630f188e1b82fe6e377" id="r_a103985ff04833630f188e1b82fe6e377"><td class="memTemplParams" colspan="2">template&lt;detail_list_helper::concepts::id_accessable_view_range A, typename ID&gt; </td></tr>
+<tr class="memitem:a103985ff04833630f188e1b82fe6e377 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1presentations_1_1view__models_1_1list__helpers.html#a103985ff04833630f188e1b82fe6e377">depicture_menu::presentations::view_models::list_helpers::erase_item</a> (ID const &amp;id, A &amp;arglist)</td></tr>
+<tr class="memitem:add0b5b0d8d83818e92eb074f8486ea62" id="r_add0b5b0d8d83818e92eb074f8486ea62"><td class="memTemplParams" colspan="2">template&lt;typename E, detail_list_helper::concepts::entites_range&lt; E &gt; R, detail_list_helper::concepts::id_accessable_view_range A&gt; </td></tr>
+<tr class="memitem:add0b5b0d8d83818e92eb074f8486ea62 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1presentations_1_1view__models_1_1list__helpers.html#add0b5b0d8d83818e92eb074f8486ea62">depicture_menu::presentations::view_models::list_helpers::erase_items</a> (R const &amp;r, A &amp;arglist)</td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_d26f0ed8b287a778d960ad2241e01057.html">src</a></li><li class="navelem"><a href="dir_eb29242f55d2489f6c4d008365c270b7.html">core</a></li><li class="navelem"><a href="dir_b08448ab66980ac237b9eba210eedb4a.html">presentation</a></li><li class="navelem"><a href="dir_a0b7b12a5c2e1c9a0fe6bad7fb6267eb.html">change_view_model</a></li><li class="navelem"><a href="dir_d88c5538b6dd7d2a66388e9581cb2ca2.html">view_model_operation</a></li><li class="navelem"><a href="list__helper_8hpp.html">list_helper.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

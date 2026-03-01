@@ -113,7 +113,7 @@ $(function(){initNavTree('message__receive__window_8cpp_source.html','',''); });
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>LRESULT CALLBACK</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>WindowProc( HWND hWnd, UINT msg, WPARAM wp, LPARAM lp )</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><a class="code hl_function" href="workaround_8cpp.html#ab01c69758901cb8401e8b23b52b8c42b">WindowProc</a>( HWND hWnd, UINT msg, WPARAM wp, LPARAM lp )</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">auto</span> <span class="keyword">const</span> res = ( *func_ptr )( hWnd, msg, wp, lp );</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="comment">//  g_func( hWnd, msg, wp, lp );</span></div>
@@ -144,7 +144,7 @@ $(function(){initNavTree('message__receive__window_8cpp_source.html','',''); });
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    {</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        WNDCLASS window_class{</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            .style         = CS_HREDRAW | CS_VREDRAW,</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            .lpfnWndProc   = WindowProc,</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            .lpfnWndProc   = <a class="code hl_function" href="workaround_8cpp.html#ab01c69758901cb8401e8b23b52b8c42b">WindowProc</a>,</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            .cbClsExtra    = 0,</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            .cbWndExtra    = 0,</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            .hInstance     = hinst,</div>
@@ -236,6 +236,7 @@ $(function(){initNavTree('message__receive__window_8cpp_source.html','',''); });
 <div class="ttc" id="astructmessage__receive__window_html_a8100888ecbdb4bcb8e7f20428b54d8a0"><div class="ttname"><a href="structmessage__receive__window.html#a8100888ecbdb4bcb8e7f20428b54d8a0">message_receive_window::proc_filter_</a></div><div class="ttdeci">static std::function&lt; filter_t &gt; proc_filter_</div><div class="ttdef"><b>Definition</b> <a href="message__receive__window_8hpp_source.html#l00015">message_receive_window.hpp:15</a></div></div>
 <div class="ttc" id="astructmessage__receive__window_html_adc8c224690ef623b5fdd6b918bec9b4d"><div class="ttname"><a href="structmessage__receive__window.html#adc8c224690ef623b5fdd6b918bec9b4d">message_receive_window::filter_t</a></div><div class="ttdeci">bool(HWND, UINT, WPARAM, LPARAM) filter_t</div><div class="ttdef"><b>Definition</b> <a href="message__receive__window_8hpp_source.html#l00014">message_receive_window.hpp:14</a></div></div>
 <div class="ttc" id="astructmessage__receive__window_html_af0e1adccdce715ecbe03f9c275a4b88f"><div class="ttname"><a href="structmessage__receive__window.html#af0e1adccdce715ecbe03f9c275a4b88f">message_receive_window::app_handle_</a></div><div class="ttdeci">static HINSTANCE app_handle_</div><div class="ttdef"><b>Definition</b> <a href="message__receive__window_8hpp_source.html#l00019">message_receive_window.hpp:19</a></div></div>
+<div class="ttc" id="aworkaround_8cpp_html_ab01c69758901cb8401e8b23b52b8c42b"><div class="ttname"><a href="workaround_8cpp.html#ab01c69758901cb8401e8b23b52b8c42b">WindowProc</a></div><div class="ttdeci">LRESULT CALLBACK WindowProc(HWND hWnd, UINT msg, WPARAM wp, LPARAM lp)</div><div class="ttdef"><b>Definition</b> <a href="workaround_8cpp_source.html#l00019">workaround.cpp:19</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

@@ -1,0 +1,739 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu::usecase::action_command_invoker_interface クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('classdepicture__menu_1_1usecase_1_1action__command__invoker__interface.html','','classdepicture__menu_1_1usecase_1_1action__command__invoker__interface-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">depicture_menu::usecase::action_command_invoker_interface クラス<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="action__command__invoker__interface_8hpp_source.html">action_command_invoker_interface.hpp</a>&gt;</code></p>
+<div class="dynheader">
+depicture_menu::usecase::action_command_invoker_interface の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1usecase_1_1action__command__invoker__interface__inherit__graph.svg" width="211" height="160"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:parameter_5Fconverter" id="r_parameter_5Fconverter"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1usecase_1_1action__command__invoker__interface_1_1parameter__converter.html">parameter_converter</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a0e21c185429ed80d040a45b463712205" id="r_a0e21c185429ed80d040a45b463712205"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a0e21c185429ed80d040a45b463712205">command_version_t</a> = int</td></tr>
+<tr class="memitem:afce6df88b68ab7d276ea92c44851c464" id="r_afce6df88b68ab7d276ea92c44851c464"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#afce6df88b68ab7d276ea92c44851c464">command_index_t</a> = unsigned int</td></tr>
+<tr class="memitem:a3aa23f44181241a140f8420f8477b275" id="r_a3aa23f44181241a140f8420f8477b275"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a3aa23f44181241a140f8420f8477b275">paramter_kind_t</a> = domain::commands::parameter_kind</td></tr>
+<tr class="memitem:a9df86697d501f85e4b9133e36c0e0679" id="r_a9df86697d501f85e4b9133e36c0e0679"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a9df86697d501f85e4b9133e36c0e0679">command_kind_t</a> = domain::commands::common_command_kind</td></tr>
+<tr class="memitem:af2c9e4a5ec11a55093239199fef934f5" id="r_af2c9e4a5ec11a55093239199fef934f5"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#af2c9e4a5ec11a55093239199fef934f5">command_id_t</a> = boost::uuids::uuid</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a4ce1c0ae805b13457ce634d3cc610e24" id="r_a4ce1c0ae805b13457ce634d3cc610e24"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#a4ce1c0ae805b13457ce634d3cc610e24">~action_command_invoker_interface</a> ()</td></tr>
+<tr class="memitem:aaf634b6ce3fb39086ca58ba485e84da1" id="r_aaf634b6ce3fb39086ca58ba485e84da1"><td class="memItemLeft">virtual <a class="el" href="#afce6df88b68ab7d276ea92c44851c464">command_index_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#aaf634b6ce3fb39086ca58ba485e84da1">command_count</a> (<a class="el" href="#a0e21c185429ed80d040a45b463712205">command_version_t</a>) const =0</td></tr>
+<tr class="memitem:aeca8987a07f11726e699d7a1a6179fe3" id="r_aeca8987a07f11726e699d7a1a6179fe3"><td class="memItemLeft">virtual <a class="el" href="#af2c9e4a5ec11a55093239199fef934f5">command_id_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#aeca8987a07f11726e699d7a1a6179fe3">command_uuid</a> (<a class="el" href="#a0e21c185429ed80d040a45b463712205">command_version_t</a>, <a class="el" href="#afce6df88b68ab7d276ea92c44851c464">command_index_t</a>) const =0</td></tr>
+<tr class="memitem:ae37dedf51a415dc115d255470a7bbbbd" id="r_ae37dedf51a415dc115d255470a7bbbbd"><td class="memItemLeft">virtual char const *&#160;</td><td class="memItemRight"><a class="el" href="#ae37dedf51a415dc115d255470a7bbbbd">command_name</a> (<a class="el" href="#a0e21c185429ed80d040a45b463712205">command_version_t</a>, <a class="el" href="#afce6df88b68ab7d276ea92c44851c464">command_index_t</a>) const =0</td></tr>
+<tr class="memitem:aabf0b6cce30eb75d41e54a6159bf784e" id="r_aabf0b6cce30eb75d41e54a6159bf784e"><td class="memItemLeft">virtual unsigned int&#160;</td><td class="memItemRight"><a class="el" href="#aabf0b6cce30eb75d41e54a6159bf784e">parameter_count</a> (<a class="el" href="#a0e21c185429ed80d040a45b463712205">command_version_t</a>, <a class="el" href="#afce6df88b68ab7d276ea92c44851c464">command_index_t</a>) const =0</td></tr>
+<tr class="memitem:ac0a762114f0c93a4605f3a8c2df64ecd" id="r_ac0a762114f0c93a4605f3a8c2df64ecd"><td class="memItemLeft">virtual <a class="el" href="#a3aa23f44181241a140f8420f8477b275">paramter_kind_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac0a762114f0c93a4605f3a8c2df64ecd">parameter_kind</a> (<a class="el" href="#a0e21c185429ed80d040a45b463712205">command_version_t</a>, <a class="el" href="#afce6df88b68ab7d276ea92c44851c464">command_index_t</a>, unsigned int paramrter_index) const =0</td></tr>
+<tr class="memitem:a93e44b1d0e5517d32c2528806f2b1183" id="r_a93e44b1d0e5517d32c2528806f2b1183"><td class="memItemLeft">virtual <a class="el" href="#a9df86697d501f85e4b9133e36c0e0679">command_kind_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a93e44b1d0e5517d32c2528806f2b1183">command_kind</a> (<a class="el" href="#a0e21c185429ed80d040a45b463712205">command_version_t</a>, <a class="el" href="#afce6df88b68ab7d276ea92c44851c464">command_index_t</a>) const</td></tr>
+<tr class="memitem:a2f9aea68c5ce6c76b4a6d8aa941be4f2" id="r_a2f9aea68c5ce6c76b4a6d8aa941be4f2"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#a2f9aea68c5ce6c76b4a6d8aa941be4f2">invoke</a> (<a class="el" href="#a0e21c185429ed80d040a45b463712205">command_version_t</a>, <a class="el" href="structdepicture__menu_1_1domain_1_1commands_1_1invoke__arg.html">domain::commands::invoke_arg</a> const &amp;) const =0</td></tr>
+<tr class="memitem:a25c8e54f66a6a49faccecfa98a8f001a" id="r_a25c8e54f66a6a49faccecfa98a8f001a"><td class="memItemLeft">std::wstring&#160;</td><td class="memItemRight"><a class="el" href="#a25c8e54f66a6a49faccecfa98a8f001a">generate_command_name</a> (<a class="el" href="#a0e21c185429ed80d040a45b463712205">command_version_t</a> ver, <a class="el" href="#afce6df88b68ab7d276ea92c44851c464">command_index_t</a> index, <a class="el" href="structdepicture__menu_1_1domain_1_1commands_1_1parameter__pack.html">domain::commands::parameter_pack</a> const &amp;pack)</td></tr>
+<tr class="memitem:a8e0281a7e40224f70d0f42088b1ac140" id="r_a8e0281a7e40224f70d0f42088b1ac140"><td class="memTemplParams" colspan="2">template&lt;typename F&gt; </td></tr>
+<tr class="memitem:a8e0281a7e40224f70d0f42088b1ac140 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8e0281a7e40224f70d0f42088b1ac140">command_uuid_for_each</a> (<a class="el" href="#a0e21c185429ed80d040a45b463712205">command_version_t</a> v, F &amp;&amp;f) const</td></tr>
+<tr class="memitem:a3bb8ca7f993d6662f377437c4b29635f" id="r_a3bb8ca7f993d6662f377437c4b29635f"><td class="memItemLeft">std::optional&lt; <a class="el" href="#afce6df88b68ab7d276ea92c44851c464">command_index_t</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a3bb8ca7f993d6662f377437c4b29635f">find_command_index</a> (<a class="el" href="#a0e21c185429ed80d040a45b463712205">command_version_t</a> version, <a class="el" href="#af2c9e4a5ec11a55093239199fef934f5">command_id_t</a> const id) const</td></tr>
+<tr class="memitem:adc8cb65b2f67bc9a8b654061f35afdb5" id="r_adc8cb65b2f67bc9a8b654061f35afdb5"><td class="memItemLeft"><a class="el" href="classdepicture__menu_1_1domain_1_1commands_1_1invoker.html">domain::commands::invoker</a>&#160;</td><td class="memItemRight"><a class="el" href="#adc8cb65b2f67bc9a8b654061f35afdb5">build_invoker</a> (<a class="el" href="#a0e21c185429ed80d040a45b463712205">command_version_t</a> const version, <a class="el" href="#afce6df88b68ab7d276ea92c44851c464">command_index_t</a> const index, unsigned int index_offset) const</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a986b44d961798c9df90cd9d8933c8e5e" id="r_a986b44d961798c9df90cd9d8933c8e5e"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a986b44d961798c9df90cd9d8933c8e5e">get_name_generator</a> (<a class="el" href="#a0e21c185429ed80d040a45b463712205">command_version_t</a> ver, <a class="el" href="#afce6df88b68ab7d276ea92c44851c464">command_index_t</a> index, <a class="el" href="classdepicture__menu_1_1usecase_1_1command__name__generator__interface.html">command_name_generator_interface</a> **out_gen) const =0</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock">
+<p class="definition"> <a class="el" href="action__command__invoker__interface_8hpp_source.html">action_command_invoker_interface.hpp</a> の <a class="el" href="action__command__invoker__interface_8hpp_source.html#l00037">37</a> 行目に定義があります。</p>
+</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">型定義メンバ詳解</h2>
+<a id="af2c9e4a5ec11a55093239199fef934f5" name="af2c9e4a5ec11a55093239199fef934f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2c9e4a5ec11a55093239199fef934f5">&#9670;&#160;</a></span>command_id_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#af2c9e4a5ec11a55093239199fef934f5">depicture_menu::usecase::action_command_invoker_interface::command_id_t</a> = boost::uuids::uuid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="action__command__invoker__interface_8hpp_source.html">action_command_invoker_interface.hpp</a> の <a class="el" href="action__command__invoker__interface_8hpp_source.html#l00044">44</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="afce6df88b68ab7d276ea92c44851c464" name="afce6df88b68ab7d276ea92c44851c464"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afce6df88b68ab7d276ea92c44851c464">&#9670;&#160;</a></span>command_index_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#afce6df88b68ab7d276ea92c44851c464">depicture_menu::usecase::action_command_invoker_interface::command_index_t</a> = unsigned int</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="action__command__invoker__interface_8hpp_source.html">action_command_invoker_interface.hpp</a> の <a class="el" href="action__command__invoker__interface_8hpp_source.html#l00041">41</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a9df86697d501f85e4b9133e36c0e0679" name="a9df86697d501f85e4b9133e36c0e0679"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9df86697d501f85e4b9133e36c0e0679">&#9670;&#160;</a></span>command_kind_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a9df86697d501f85e4b9133e36c0e0679">depicture_menu::usecase::action_command_invoker_interface::command_kind_t</a> = domain::commands::common_command_kind</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="action__command__invoker__interface_8hpp_source.html">action_command_invoker_interface.hpp</a> の <a class="el" href="action__command__invoker__interface_8hpp_source.html#l00043">43</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a0e21c185429ed80d040a45b463712205" name="a0e21c185429ed80d040a45b463712205"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e21c185429ed80d040a45b463712205">&#9670;&#160;</a></span>command_version_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a0e21c185429ed80d040a45b463712205">depicture_menu::usecase::action_command_invoker_interface::command_version_t</a> = int</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="action__command__invoker__interface_8hpp_source.html">action_command_invoker_interface.hpp</a> の <a class="el" href="action__command__invoker__interface_8hpp_source.html#l00040">40</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a3aa23f44181241a140f8420f8477b275" name="a3aa23f44181241a140f8420f8477b275"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aa23f44181241a140f8420f8477b275">&#9670;&#160;</a></span>paramter_kind_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a3aa23f44181241a140f8420f8477b275">depicture_menu::usecase::action_command_invoker_interface::paramter_kind_t</a> = domain::commands::parameter_kind</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="action__command__invoker__interface_8hpp_source.html">action_command_invoker_interface.hpp</a> の <a class="el" href="action__command__invoker__interface_8hpp_source.html#l00042">42</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">構築子と解体子</h2>
+<a id="a4ce1c0ae805b13457ce634d3cc610e24" name="a4ce1c0ae805b13457ce634d3cc610e24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ce1c0ae805b13457ce634d3cc610e24">&#9670;&#160;</a></span>~action_command_invoker_interface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual depicture_menu::usecase::action_command_invoker_interface::~action_command_invoker_interface </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="action__command__invoker__interface_8hpp_source.html">action_command_invoker_interface.hpp</a> の <a class="el" href="action__command__invoker__interface_8hpp_source.html#l00046">46</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="adc8cb65b2f67bc9a8b654061f35afdb5" name="adc8cb65b2f67bc9a8b654061f35afdb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc8cb65b2f67bc9a8b654061f35afdb5">&#9670;&#160;</a></span>build_invoker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdepicture__menu_1_1domain_1_1commands_1_1invoker.html">domain::commands::invoker</a> depicture_menu::usecase::action_command_invoker_interface::build_invoker </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a0e21c185429ed80d040a45b463712205">command_version_t</a> const</td>          <td class="paramname"><span class="paramname"><em>version</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#afce6df88b68ab7d276ea92c44851c464">command_index_t</a> const</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>index_offset</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="action__command__invoker__interface_8hpp_source.html">action_command_invoker_interface.hpp</a> の <a class="el" href="action__command__invoker__interface_8hpp_source.html#l00179">179</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="action__command__invoker__interface_8hpp_source.html#l00078">command_kind()</a>, <a class="el" href="#ae37dedf51a415dc115d255470a7bbbbd">command_name()</a>, <a class="el" href="#aeca8987a07f11726e699d7a1a6179fe3">command_uuid()</a>, <a class="el" href="#aabf0b6cce30eb75d41e54a6159bf784e">parameter_count()</a>, <a class="el" href="#ac0a762114f0c93a4605f3a8c2df64ecd">parameter_kind()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1usecase_1_1action__command__invoker__interface_adc8cb65b2f67bc9a8b654061f35afdb5_cgraph.svg" width="420" height="400"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aaf634b6ce3fb39086ca58ba485e84da1" name="aaf634b6ce3fb39086ca58ba485e84da1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf634b6ce3fb39086ca58ba485e84da1">&#9670;&#160;</a></span>command_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="#afce6df88b68ab7d276ea92c44851c464">command_index_t</a> depicture_menu::usecase::action_command_invoker_interface::command_count </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a0e21c185429ed80d040a45b463712205">command_version_t</a></td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classdepicture__menu_1_1presentations_1_1shellexecute__invoker.html#aa00eadc36d14083d2d735cf57524f256">depicture_menu::presentations::shellexecute_invoker</a>で実装されています。</p>
+
+<p class="reference">参照元 <a class="el" href="action__command__invoker__interface_8hpp_source.html#l00157">command_uuid_for_each()</a>, <a class="el" href="action__command__invoker__interface_8hpp_source.html#l00167">find_command_index()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1usecase_1_1action__command__invoker__interface_aaf634b6ce3fb39086ca58ba485e84da1_icgraph.svg" width="451" height="168"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a93e44b1d0e5517d32c2528806f2b1183" name="a93e44b1d0e5517d32c2528806f2b1183"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93e44b1d0e5517d32c2528806f2b1183">&#9670;&#160;</a></span>command_kind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="#a9df86697d501f85e4b9133e36c0e0679">command_kind_t</a> depicture_menu::usecase::action_command_invoker_interface::command_kind </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a0e21c185429ed80d040a45b463712205">command_version_t</a></td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#afce6df88b68ab7d276ea92c44851c464">command_index_t</a></td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classdepicture__menu_1_1presentations_1_1shellexecute__invoker.html#aa5b06711c24d515ce811458e578aa413">depicture_menu::presentations::shellexecute_invoker</a>で再実装されています。</p>
+
+<p class="definition"> <a class="el" href="action__command__invoker__interface_8hpp_source.html">action_command_invoker_interface.hpp</a> の <a class="el" href="action__command__invoker__interface_8hpp_source.html#l00078">78</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="action__command__invoker__interface_8hpp_source.html#l00179">build_invoker()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1usecase_1_1action__command__invoker__interface_a93e44b1d0e5517d32c2528806f2b1183_icgraph.svg" width="414" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ae37dedf51a415dc115d255470a7bbbbd" name="ae37dedf51a415dc115d255470a7bbbbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae37dedf51a415dc115d255470a7bbbbd">&#9670;&#160;</a></span>command_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual char const  * depicture_menu::usecase::action_command_invoker_interface::command_name </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a0e21c185429ed80d040a45b463712205">command_version_t</a></td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#afce6df88b68ab7d276ea92c44851c464">command_index_t</a></td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classdepicture__menu_1_1presentations_1_1shellexecute__invoker.html#a63aae8722ecf0ec5376d82181322f484">depicture_menu::presentations::shellexecute_invoker</a>で実装されています。</p>
+
+<p class="reference">参照元 <a class="el" href="action__command__invoker__interface_8hpp_source.html#l00179">build_invoker()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1usecase_1_1action__command__invoker__interface_ae37dedf51a415dc115d255470a7bbbbd_icgraph.svg" width="419" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aeca8987a07f11726e699d7a1a6179fe3" name="aeca8987a07f11726e699d7a1a6179fe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeca8987a07f11726e699d7a1a6179fe3">&#9670;&#160;</a></span>command_uuid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="#af2c9e4a5ec11a55093239199fef934f5">command_id_t</a> depicture_menu::usecase::action_command_invoker_interface::command_uuid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a0e21c185429ed80d040a45b463712205">command_version_t</a></td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#afce6df88b68ab7d276ea92c44851c464">command_index_t</a></td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classdepicture__menu_1_1presentations_1_1shellexecute__invoker.html#a15968ad4024543c8100515c209c71940">depicture_menu::presentations::shellexecute_invoker</a>で実装されています。</p>
+
+<p class="reference">参照元 <a class="el" href="action__command__invoker__interface_8hpp_source.html#l00179">build_invoker()</a>, <a class="el" href="action__command__invoker__interface_8hpp_source.html#l00157">command_uuid_for_each()</a>, <a class="el" href="action__command__invoker__interface_8hpp_source.html#l00167">find_command_index()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1usecase_1_1action__command__invoker__interface_aeca8987a07f11726e699d7a1a6179fe3_icgraph.svg" width="446" height="251"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a8e0281a7e40224f70d0f42088b1ac140" name="a8e0281a7e40224f70d0f42088b1ac140"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e0281a7e40224f70d0f42088b1ac140">&#9670;&#160;</a></span>command_uuid_for_each()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::usecase::action_command_invoker_interface::command_uuid_for_each </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a0e21c185429ed80d040a45b463712205">command_version_t</a></td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">F &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>f</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="action__command__invoker__interface_8hpp_source.html">action_command_invoker_interface.hpp</a> の <a class="el" href="action__command__invoker__interface_8hpp_source.html#l00157">157</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="#aaf634b6ce3fb39086ca58ba485e84da1">command_count()</a>, <a class="el" href="#aeca8987a07f11726e699d7a1a6179fe3">command_uuid()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1usecase_1_1action__command__invoker__interface_a8e0281a7e40224f70d0f42088b1ac140_cgraph.svg" width="419" height="152"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a3bb8ca7f993d6662f377437c4b29635f" name="a3bb8ca7f993d6662f377437c4b29635f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bb8ca7f993d6662f377437c4b29635f">&#9670;&#160;</a></span>find_command_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="#afce6df88b68ab7d276ea92c44851c464">command_index_t</a> &gt; depicture_menu::usecase::action_command_invoker_interface::find_command_index </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a0e21c185429ed80d040a45b463712205">command_version_t</a></td>          <td class="paramname"><span class="paramname"><em>version</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#af2c9e4a5ec11a55093239199fef934f5">command_id_t</a> const</td>          <td class="paramname"><span class="paramname"><em>id</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="action__command__invoker__interface_8hpp_source.html">action_command_invoker_interface.hpp</a> の <a class="el" href="action__command__invoker__interface_8hpp_source.html#l00167">167</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="#aaf634b6ce3fb39086ca58ba485e84da1">command_count()</a>, <a class="el" href="#aeca8987a07f11726e699d7a1a6179fe3">command_uuid()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1usecase_1_1action__command__invoker__interface_a3bb8ca7f993d6662f377437c4b29635f_cgraph.svg" width="451" height="152"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a25c8e54f66a6a49faccecfa98a8f001a" name="a25c8e54f66a6a49faccecfa98a8f001a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25c8e54f66a6a49faccecfa98a8f001a">&#9670;&#160;</a></span>generate_command_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::wstring depicture_menu::usecase::action_command_invoker_interface::generate_command_name </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a0e21c185429ed80d040a45b463712205">command_version_t</a></td>          <td class="paramname"><span class="paramname"><em>ver</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#afce6df88b68ab7d276ea92c44851c464">command_index_t</a></td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structdepicture__menu_1_1domain_1_1commands_1_1parameter__pack.html">domain::commands::parameter_pack</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>pack</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="action__command__invoker__interface_8hpp_source.html">action_command_invoker_interface.hpp</a> の <a class="el" href="action__command__invoker__interface_8hpp_source.html#l00116">116</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="#a986b44d961798c9df90cd9d8933c8e5e">get_name_generator()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1usecase_1_1action__command__invoker__interface_a25c8e54f66a6a49faccecfa98a8f001a_cgraph.svg" width="503" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a986b44d961798c9df90cd9d8933c8e5e" name="a986b44d961798c9df90cd9d8933c8e5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a986b44d961798c9df90cd9d8933c8e5e">&#9670;&#160;</a></span>get_name_generator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void depicture_menu::usecase::action_command_invoker_interface::get_name_generator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a0e21c185429ed80d040a45b463712205">command_version_t</a></td>          <td class="paramname"><span class="paramname"><em>ver</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#afce6df88b68ab7d276ea92c44851c464">command_index_t</a></td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdepicture__menu_1_1usecase_1_1command__name__generator__interface.html">command_name_generator_interface</a> **</td>          <td class="paramname"><span class="paramname"><em>out_gen</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classdepicture__menu_1_1presentations_1_1shellexecute__invoker.html#a2c7a623f590dc57c28285452dde53229">depicture_menu::presentations::shellexecute_invoker</a>で実装されています。</p>
+
+<p class="reference">参照元 <a class="el" href="action__command__invoker__interface_8hpp_source.html#l00116">generate_command_name()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1usecase_1_1action__command__invoker__interface_a986b44d961798c9df90cd9d8933c8e5e_icgraph.svg" width="503" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a2f9aea68c5ce6c76b4a6d8aa941be4f2" name="a2f9aea68c5ce6c76b4a6d8aa941be4f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f9aea68c5ce6c76b4a6d8aa941be4f2">&#9670;&#160;</a></span>invoke()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool depicture_menu::usecase::action_command_invoker_interface::invoke </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a0e21c185429ed80d040a45b463712205">command_version_t</a></td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structdepicture__menu_1_1domain_1_1commands_1_1invoke__arg.html">domain::commands::invoke_arg</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classdepicture__menu_1_1presentations_1_1shellexecute__invoker.html#a0403de3827d59e9ea97052ea37b94978">depicture_menu::presentations::shellexecute_invoker</a>で実装されています。</p>
+
+</div>
+</div>
+<a id="aabf0b6cce30eb75d41e54a6159bf784e" name="aabf0b6cce30eb75d41e54a6159bf784e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabf0b6cce30eb75d41e54a6159bf784e">&#9670;&#160;</a></span>parameter_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual unsigned int depicture_menu::usecase::action_command_invoker_interface::parameter_count </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a0e21c185429ed80d040a45b463712205">command_version_t</a></td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#afce6df88b68ab7d276ea92c44851c464">command_index_t</a></td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classdepicture__menu_1_1presentations_1_1shellexecute__invoker.html#a769ad905fd4cdc06bd6c4cec502288af">depicture_menu::presentations::shellexecute_invoker</a>で実装されています。</p>
+
+<p class="reference">参照元 <a class="el" href="action__command__invoker__interface_8hpp_source.html#l00179">build_invoker()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1usecase_1_1action__command__invoker__interface_aabf0b6cce30eb75d41e54a6159bf784e_icgraph.svg" width="420" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ac0a762114f0c93a4605f3a8c2df64ecd" name="ac0a762114f0c93a4605f3a8c2df64ecd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0a762114f0c93a4605f3a8c2df64ecd">&#9670;&#160;</a></span>parameter_kind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="#a3aa23f44181241a140f8420f8477b275">paramter_kind_t</a> depicture_menu::usecase::action_command_invoker_interface::parameter_kind </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a0e21c185429ed80d040a45b463712205">command_version_t</a></td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#afce6df88b68ab7d276ea92c44851c464">command_index_t</a></td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>paramrter_index</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classdepicture__menu_1_1presentations_1_1shellexecute__invoker.html#a3823669bc6497a7b0fcc3a032bfb467d">depicture_menu::presentations::shellexecute_invoker</a>で実装されています。</p>
+
+<p class="reference">参照元 <a class="el" href="action__command__invoker__interface_8hpp_source.html#l00179">build_invoker()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1usecase_1_1action__command__invoker__interface_ac0a762114f0c93a4605f3a8c2df64ecd_icgraph.svg" width="414" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>depicture_menu/src/core/usecase/<a class="el" href="action__command__invoker__interface_8hpp_source.html">action_command_invoker_interface.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespacedepicture__menu.html">depicture_menu</a></li><li class="navelem"><a href="namespacedepicture__menu_1_1usecase.html">usecase</a></li><li class="navelem"><a href="classdepicture__menu_1_1usecase_1_1action__command__invoker__interface.html">action_command_invoker_interface</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

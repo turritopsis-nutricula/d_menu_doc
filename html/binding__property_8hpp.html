@@ -1,0 +1,637 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/src/core/cs_binding/macro/entrys/binding_property.hpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('binding__property_8hpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">binding_property.hpp ファイル</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="binding__property_8hpp__dep__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+<p><a href="binding__property_8hpp_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:ac4ecb2d0637071cc4f6d6f2445d325b1" id="r_ac4ecb2d0637071cc4f6d6f2445d325b1"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ac4ecb2d0637071cc4f6d6f2445d325b1">DPME_GM_SEQ_DPM_BINDING_PROPERTY_ENTRY</a>(NAME,  CPP_TYPE,  CS_TYPE)</td></tr>
+<tr class="memitem:a2069759acf7fed420e78df2b0d5e6438" id="r_a2069759acf7fed420e78df2b0d5e6438"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a2069759acf7fed420e78df2b0d5e6438">DPME_CPP_BODY_DPM_BINDING_PROPERTY_ENTRY</a>(NAME,  CPP_TYPE,  CS_TYPE)</td></tr>
+<tr class="memitem:a3d1b87d2c0c6f11118a800586d8fc374" id="r_a3d1b87d2c0c6f11118a800586d8fc374"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a3d1b87d2c0c6f11118a800586d8fc374">DPME_CPP_CLASS_AFTER_DPM_BINDING_PROPERTY_ENTRY</a>( NAME,  CPP_TYPE,  CS_TYPE)</td></tr>
+<tr class="memitem:aab67de7483eee1e6b5828a9def0cd12e" id="r_aab67de7483eee1e6b5828a9def0cd12e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aab67de7483eee1e6b5828a9def0cd12e">DPME_CS_BODY_DPM_BINDING_PROPERTY_ENTRY</a>(NAME,  CPP_TYPE,  CS_TYPE)</td></tr>
+<tr class="memitem:a8c90be16103c2e81fb446366f2591141" id="r_a8c90be16103c2e81fb446366f2591141"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a8c90be16103c2e81fb446366f2591141">DPME_CS_CONSTRACTOR_DPM_BINDING_PROPERTY_ENTRY</a>( NAME,  CPP_TYPE,  CS_TYPE)</td></tr>
+<tr class="memitem:ac044f76541f066f3d47429b90fa97a81" id="r_ac044f76541f066f3d47429b90fa97a81"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ac044f76541f066f3d47429b90fa97a81">DPME_CS_DUMMY_CLASS_DPM_BINDING_PROPERTY_ENTRY</a>( NAME,  CPP_TYPE,  CS_TYPE)</td></tr>
+<tr class="memitem:af7bb9044cabdb944cde03685798d3383" id="r_af7bb9044cabdb944cde03685798d3383"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#af7bb9044cabdb944cde03685798d3383">DPME_CS_DUMMY_CLASS_CONSTRACTOR_DPM_BINDING_PROPERTY_ENTRY</a>( NAME,  CPP_TYPE,  CS_TYPE)</td></tr>
+<tr class="memitem:a071481034a9333cadf8ffd0be2de394b" id="r_a071481034a9333cadf8ffd0be2de394b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a071481034a9333cadf8ffd0be2de394b">DPM_BINDING_PROPERTY_ENTRY_GENERATE_GM_SEQ</a>(NAME,  CPP_TYPE,  CS_TYPE)</td></tr>
+<tr class="memitem:a7f5de946506c609eb23f18b87fbf0256" id="r_a7f5de946506c609eb23f18b87fbf0256"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a7f5de946506c609eb23f18b87fbf0256">DPM_BINDING_PROPERTY_ENTRY_GENERATE_CPP_CLASS_BODY</a>( GM_SEQS,  <a class="el" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a>,  NAME,  CPP_TYPE,  CS_TYPE)</td></tr>
+<tr class="memitem:a7470025b1b0f9ed4c0391b4f32b91bf7" id="r_a7470025b1b0f9ed4c0391b4f32b91bf7"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a7470025b1b0f9ed4c0391b4f32b91bf7">DPM_BINDING_PROPERTY_ENTRY_GENERATE_CPP_CLASS_AFTER</a>( GM_SEQS,  <a class="el" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a>,  NAME,  CPP_TYPE,  CS_TYPE)</td></tr>
+<tr class="memitem:aee04085d679d0b11b719aa666b2b206f" id="r_aee04085d679d0b11b719aa666b2b206f"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aee04085d679d0b11b719aa666b2b206f">DPM_BINDING_PROPERTY_ENTRY_GENERATE_CSHARP_CLASS_BODY</a>( GM_SEQS,  <a class="el" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a>,  NAME,  CPP_TYPE,  CS_TYPE)</td></tr>
+<tr class="memitem:ac7dd911c94129d1dfc880187d3cd184b" id="r_ac7dd911c94129d1dfc880187d3cd184b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ac7dd911c94129d1dfc880187d3cd184b">DPM_BINDING_PROPERTY_ENTRY_GENERATE_CSHARP_CONSTRACTOR</a>( GM_SEQS,  <a class="el" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a>,  NAME,  CPP_TYPE,  CS_TYPE)</td></tr>
+<tr class="memitem:aaf11685a58a3a8ecbc54c154036e0eb8" id="r_aaf11685a58a3a8ecbc54c154036e0eb8"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aaf11685a58a3a8ecbc54c154036e0eb8">DPM_BINDING_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY</a>( GM_SEQS,  <a class="el" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a>,  NAME,  CPP_TYPE,  CS_TYPE)</td></tr>
+</table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">マクロ定義詳解</h2>
+<a id="a7470025b1b0f9ed4c0391b4f32b91bf7" name="a7470025b1b0f9ed4c0391b4f32b91bf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7470025b1b0f9ed4c0391b4f32b91bf7">&#9670;&#160;</a></span>DPM_BINDING_PROPERTY_ENTRY_GENERATE_CPP_CLASS_AFTER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_BINDING_PROPERTY_ENTRY_GENERATE_CPP_CLASS_AFTER</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>GM_SEQS</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em><a class="el" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>NAME</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CPP_TYPE</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CS_TYPE</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="cs__binding_2macro_2detail_2cpp_2config_8hpp.html#ade1ffb66dc056cd2c6f93b058398c958">DPM_CS_BINDING_INLINE</a> CPP_TYPE CLASS ::BOOST_PP_CAT( get_, NAME )( )       \</div>
+<div class="line">{                                                                          \</div>
+<div class="line">    <span class="keywordflow">return</span> BOOST_PP_CAT( NAME, _ ).const_ref( );                           \</div>
+<div class="line">}                                                                          \</div>
+<div class="line"><a class="code hl_define" href="cs__binding_2macro_2detail_2cpp_2config_8hpp.html#ade1ffb66dc056cd2c6f93b058398c958">DPM_CS_BINDING_INLINE</a> <span class="keywordtype">void</span> CLASS ::BOOST_PP_CAT( set_, NAME )(             \</div>
+<div class="line">    CPP_TYPE v                                                             \</div>
+<div class="line">)                                                                          \</div>
+<div class="line">{                                                                          \</div>
+<div class="line">    raise_property_changed(                                                \</div>
+<div class="line">        BOOST_PP_CAT( NAME, _ ).ref( ), v, BOOST_PP_WSTRINGIZE( NAME )     \</div>
+<div class="line">    );                                                                     \</div>
+<div class="line">}</div>
+<div class="ttc" id="acs__binding_2macro_2detail_2cpp_2config_8hpp_html_ade1ffb66dc056cd2c6f93b058398c958"><div class="ttname"><a href="cs__binding_2macro_2detail_2cpp_2config_8hpp.html#ade1ffb66dc056cd2c6f93b058398c958">DPM_CS_BINDING_INLINE</a></div><div class="ttdeci">#define DPM_CS_BINDING_INLINE</div><div class="ttdef"><b>Definition</b> <a href="cs__binding_2macro_2detail_2cpp_2config_8hpp_source.html#l00015">config.hpp:15</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="binding__property_8hpp_source.html">binding_property.hpp</a> の <a class="el" href="binding__property_8hpp_source.html#l00113">113</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a7f5de946506c609eb23f18b87fbf0256" name="a7f5de946506c609eb23f18b87fbf0256"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f5de946506c609eb23f18b87fbf0256">&#9670;&#160;</a></span>DPM_BINDING_PROPERTY_ENTRY_GENERATE_CPP_CLASS_BODY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_BINDING_PROPERTY_ENTRY_GENERATE_CPP_CLASS_BODY</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>GM_SEQS</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em><a class="el" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>NAME</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CPP_TYPE</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CS_TYPE</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line"><span class="keyword">private</span>:                                                                     \</div>
+<div class="line">  convert::changed_notify_holder&lt; CPP_TYPE &gt; BOOST_PP_CAT( NAME, _ );        \</div>
+<div class="line">                                                                             \</div>
+<div class="line"><span class="keyword">public</span>:                                                                      \</div>
+<div class="line">  CPP_TYPE <span class="keyword">const</span>&amp; BOOST_PP_CAT( get_, NAME )( ) <span class="keyword">const</span>                        \</div>
+<div class="line">  {                                                                          \</div>
+<div class="line">      <span class="keywordflow">return</span> BOOST_PP_CAT( NAME, _ ).const_ref( );                           \</div>
+<div class="line">  }                                                                          \</div>
+<div class="line">  <span class="keyword">auto</span>&amp; BOOST_PP_CAT( ref_, NAME )( )                                        \</div>
+<div class="line">  {                                                                          \</div>
+<div class="line">      <span class="keyword">auto</span>&amp; v = BOOST_PP_CAT( NAME, _ );                                     \</div>
+<div class="line">      v.set_notify(                                                          \</div>
+<div class="line">          [ <span class="keyword">this</span> ]( )                                                        \</div>
+<div class="line">          { property_changed_notify( BOOST_PP_WSTRINGIZE( NAME ) ); }        \</div>
+<div class="line">      );                                                                     \</div>
+<div class="line">      <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacedepicture__menu_1_1usecase_1_1concepts.html#afd6acba4c3bbb2c891cf092da1786565">v</a>;                                                              \</div>
+<div class="line">  }                                                                          \</div>
+<div class="line">  CPP_TYPE <span class="keyword">const</span>&amp; BOOST_PP_CAT( obserable_, NAME )( ) <span class="keyword">const</span>                  \</div>
+<div class="line">  {                                                                          \</div>
+<div class="line">      <span class="keywordflow">return</span> BOOST_PP_CAT( NAME, _ ).const_ref( );                           \</div>
+<div class="line">  }</div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1concepts_html_afd6acba4c3bbb2c891cf092da1786565"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1concepts.html#afd6acba4c3bbb2c891cf092da1786565">depicture_menu::usecase::concepts::v</a></div><div class="ttdeci">v</div><div class="ttdef"><b>Definition</b> <a href="config__view__model__interface_8hpp_source.html#l00384">config_view_model_interface.hpp:384</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="binding__property_8hpp_source.html">binding_property.hpp</a> の <a class="el" href="binding__property_8hpp_source.html#l00086">86</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aee04085d679d0b11b719aa666b2b206f" name="aee04085d679d0b11b719aa666b2b206f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee04085d679d0b11b719aa666b2b206f">&#9670;&#160;</a></span>DPM_BINDING_PROPERTY_ENTRY_GENERATE_CSHARP_CLASS_BODY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_BINDING_PROPERTY_ENTRY_GENERATE_CSHARP_CLASS_BODY</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>GM_SEQS</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em><a class="el" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>NAME</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CPP_TYPE</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CS_TYPE</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">                                                                             \</div>
+<div class="line">public                                                                       \</div>
+<div class="line">  virtual <a class="code hl_define" href="attr_8hpp.html#a0ce209e129c1ce87957905b7930dbd8f">DPM_ATTR_ERASE_ATTR</a>( CS_TYPE ) NAME                                \</div>
+<div class="line">  {                                                                          \</div>
+<div class="line">      get                                                                    \</div>
+<div class="line">      {                                                                      \</div>
+<div class="line">          <span class="keywordflow">return</span> <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#aca79564c45656fdce3e1db68b5b69168">DPM_CS_GLUE_METHOD_NAME</a>( BOOST_PP_CAT( get_, NAME ) )( );   \</div>
+<div class="line">      }                                                                      \</div>
+<div class="line">      <a class="code hl_function" href="test__command__line__option_8cpp.html#a11168c1960ee4b2ffbc15ee691d0b77b">set</a>                                                                    \</div>
+<div class="line">      {                                                                      \</div>
+<div class="line">          DPM_CS_GLUE_METHOD_NAME( BOOST_PP_CAT( set_, NAME ) )( value );    \</div>
+<div class="line">      }                                                                      \</div>
+<div class="line">  }</div>
+<div class="ttc" id="aattr_8hpp_html_a0ce209e129c1ce87957905b7930dbd8f"><div class="ttname"><a href="attr_8hpp.html#a0ce209e129c1ce87957905b7930dbd8f">DPM_ATTR_ERASE_ATTR</a></div><div class="ttdeci">#define DPM_ATTR_ERASE_ATTR(ARG_)</div><div class="ttdef"><b>Definition</b> <a href="attr_8hpp_source.html#l00038">attr.hpp:38</a></div></div>
+<div class="ttc" id="acs__binding_2macro_2detail_2csharp_2config_8hpp_html_aca79564c45656fdce3e1db68b5b69168"><div class="ttname"><a href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#aca79564c45656fdce3e1db68b5b69168">DPM_CS_GLUE_METHOD_NAME</a></div><div class="ttdeci">#define DPM_CS_GLUE_METHOD_NAME(NAME)</div><div class="ttdef"><b>Definition</b> <a href="cs__binding_2macro_2detail_2csharp_2config_8hpp_source.html#l00030">config.hpp:30</a></div></div>
+<div class="ttc" id="atest__command__line__option_8cpp_html_a11168c1960ee4b2ffbc15ee691d0b77b"><div class="ttname"><a href="test__command__line__option_8cpp.html#a11168c1960ee4b2ffbc15ee691d0b77b">set</a></div><div class="ttdeci">dest set(mock_open)</div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="binding__property_8hpp_source.html">binding_property.hpp</a> の <a class="el" href="binding__property_8hpp_source.html#l00131">131</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ac7dd911c94129d1dfc880187d3cd184b" name="ac7dd911c94129d1dfc880187d3cd184b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7dd911c94129d1dfc880187d3cd184b">&#9670;&#160;</a></span>DPM_BINDING_PROPERTY_ENTRY_GENERATE_CSHARP_CONSTRACTOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_BINDING_PROPERTY_ENTRY_GENERATE_CSHARP_CONSTRACTOR</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>GM_SEQS</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em><a class="el" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>NAME</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CPP_TYPE</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CS_TYPE</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="binding__property_8hpp_source.html">binding_property.hpp</a> の <a class="el" href="binding__property_8hpp_source.html#l00151">151</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aaf11685a58a3a8ecbc54c154036e0eb8" name="aaf11685a58a3a8ecbc54c154036e0eb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf11685a58a3a8ecbc54c154036e0eb8">&#9670;&#160;</a></span>DPM_BINDING_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_BINDING_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>GM_SEQS</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em><a class="el" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>NAME</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CPP_TYPE</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CS_TYPE</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">public                                                                       \</div>
+<div class="line">  override <a class="code hl_define" href="attr_8hpp.html#a0ce209e129c1ce87957905b7930dbd8f">DPM_ATTR_ERASE_ATTR</a>( CS_TYPE ) NAME                               \</div>
+<div class="line">  {                                                                          \</div>
+<div class="line">      get;                                                                   \</div>
+<div class="line">      <a class="code hl_function" href="test__command__line__option_8cpp.html#a11168c1960ee4b2ffbc15ee691d0b77b">set</a>;                                                                   \</div>
+<div class="line">  }</div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="binding__property_8hpp_source.html">binding_property.hpp</a> の <a class="el" href="binding__property_8hpp_source.html#l00157">157</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a071481034a9333cadf8ffd0be2de394b" name="a071481034a9333cadf8ffd0be2de394b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a071481034a9333cadf8ffd0be2de394b">&#9670;&#160;</a></span>DPM_BINDING_PROPERTY_ENTRY_GENERATE_GM_SEQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_BINDING_PROPERTY_ENTRY_GENERATE_GM_SEQ</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>NAME</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CPP_TYPE</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CS_TYPE</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">( ( DPM_METHOD_KIND_GLUE_METHOD )            ( get_##NAME )(CPP_TYPE)( ( ) )(CS_TYPE)( ( ) ) )           \</div>
+<div class="line">( ( DPM_METHOD_KIND_GLUE_METHOD )            ( set_##NAME )(<span class="keywordtype">void</span>)( ( CPP_TYPE ) )(<span class="keywordtype">void</span>)( ( CPP_TYPE) ) ) \</div>
+<div class="line">( ( DPM_METHOD_KIND_CPP_TEST_METHOD )        (NAME)( NAME##_ ) )                                         \</div>
+<div class="line">( ( DPM_METHOD_KIND_COMPARE_METHOD )         (NAME)( ( NAME##_ ) ) )                                     \</div>
+<div class="line">( ( DPM_METHOD_KIND_OBSERVABLE_VALUE_DEFINE )( NAME )( obserable_##NAME ))</div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="binding__property_8hpp_source.html">binding_property.hpp</a> の <a class="el" href="binding__property_8hpp_source.html#l00076">76</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a2069759acf7fed420e78df2b0d5e6438" name="a2069759acf7fed420e78df2b0d5e6438"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2069759acf7fed420e78df2b0d5e6438">&#9670;&#160;</a></span>DPME_CPP_BODY_DPM_BINDING_PROPERTY_ENTRY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPME_CPP_BODY_DPM_BINDING_PROPERTY_ENTRY</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>NAME</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CPP_TYPE</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CS_TYPE</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">(                                                                                   \</div>
+<div class="line">    (<a class="code hl_define" href="#a7f5de946506c609eb23f18b87fbf0256">DPM_BINDING_PROPERTY_ENTRY_GENERATE_CPP_CLASS_BODY</a>)(NAME)(CPP_TYPE)( CS_TYPE ) \</div>
+<div class="line">)</div>
+<div class="ttc" id="abinding__property_8hpp_html_a7f5de946506c609eb23f18b87fbf0256"><div class="ttname"><a href="#a7f5de946506c609eb23f18b87fbf0256">DPM_BINDING_PROPERTY_ENTRY_GENERATE_CPP_CLASS_BODY</a></div><div class="ttdeci">#define DPM_BINDING_PROPERTY_ENTRY_GENERATE_CPP_CLASS_BODY( GM_SEQS, CLASS, NAME, CPP_TYPE, CS_TYPE)</div><div class="ttdef"><b>Definition</b> <a href="binding__property_8hpp_source.html#l00086">binding_property.hpp:86</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="binding__property_8hpp_source.html">binding_property.hpp</a> の <a class="el" href="binding__property_8hpp_source.html#l00018">18</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a3d1b87d2c0c6f11118a800586d8fc374" name="a3d1b87d2c0c6f11118a800586d8fc374"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d1b87d2c0c6f11118a800586d8fc374">&#9670;&#160;</a></span>DPME_CPP_CLASS_AFTER_DPM_BINDING_PROPERTY_ENTRY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPME_CPP_CLASS_AFTER_DPM_BINDING_PROPERTY_ENTRY</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>NAME</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CPP_TYPE</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CS_TYPE</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">(                                                                                    \</div>
+<div class="line">    (<a class="code hl_define" href="#a7470025b1b0f9ed4c0391b4f32b91bf7">DPM_BINDING_PROPERTY_ENTRY_GENERATE_CPP_CLASS_AFTER</a>)(NAME)(CPP_TYPE)( CS_TYPE ) \</div>
+<div class="line">)</div>
+<div class="ttc" id="abinding__property_8hpp_html_a7470025b1b0f9ed4c0391b4f32b91bf7"><div class="ttname"><a href="#a7470025b1b0f9ed4c0391b4f32b91bf7">DPM_BINDING_PROPERTY_ENTRY_GENERATE_CPP_CLASS_AFTER</a></div><div class="ttdeci">#define DPM_BINDING_PROPERTY_ENTRY_GENERATE_CPP_CLASS_AFTER( GM_SEQS, CLASS, NAME, CPP_TYPE, CS_TYPE)</div><div class="ttdef"><b>Definition</b> <a href="binding__property_8hpp_source.html#l00113">binding_property.hpp:113</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="binding__property_8hpp_source.html">binding_property.hpp</a> の <a class="el" href="binding__property_8hpp_source.html#l00026">26</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="aab67de7483eee1e6b5828a9def0cd12e" name="aab67de7483eee1e6b5828a9def0cd12e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab67de7483eee1e6b5828a9def0cd12e">&#9670;&#160;</a></span>DPME_CS_BODY_DPM_BINDING_PROPERTY_ENTRY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPME_CS_BODY_DPM_BINDING_PROPERTY_ENTRY</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>NAME</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CPP_TYPE</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CS_TYPE</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">(                                                                                      \</div>
+<div class="line">    (<a class="code hl_define" href="#aee04085d679d0b11b719aa666b2b206f">DPM_BINDING_PROPERTY_ENTRY_GENERATE_CSHARP_CLASS_BODY</a>)(NAME)(CPP_TYPE)( CS_TYPE ) \</div>
+<div class="line">)</div>
+<div class="ttc" id="abinding__property_8hpp_html_aee04085d679d0b11b719aa666b2b206f"><div class="ttname"><a href="#aee04085d679d0b11b719aa666b2b206f">DPM_BINDING_PROPERTY_ENTRY_GENERATE_CSHARP_CLASS_BODY</a></div><div class="ttdeci">#define DPM_BINDING_PROPERTY_ENTRY_GENERATE_CSHARP_CLASS_BODY( GM_SEQS, CLASS, NAME, CPP_TYPE, CS_TYPE)</div><div class="ttdef"><b>Definition</b> <a href="binding__property_8hpp_source.html#l00131">binding_property.hpp:131</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="binding__property_8hpp_source.html">binding_property.hpp</a> の <a class="el" href="binding__property_8hpp_source.html#l00036">36</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a8c90be16103c2e81fb446366f2591141" name="a8c90be16103c2e81fb446366f2591141"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c90be16103c2e81fb446366f2591141">&#9670;&#160;</a></span>DPME_CS_CONSTRACTOR_DPM_BINDING_PROPERTY_ENTRY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPME_CS_CONSTRACTOR_DPM_BINDING_PROPERTY_ENTRY</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>NAME</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CPP_TYPE</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CS_TYPE</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">(                                                                                       \</div>
+<div class="line">    (<a class="code hl_define" href="#ac7dd911c94129d1dfc880187d3cd184b">DPM_BINDING_PROPERTY_ENTRY_GENERATE_CSHARP_CONSTRACTOR</a>)(NAME)(CPP_TYPE)( CS_TYPE ) \</div>
+<div class="line">)</div>
+<div class="ttc" id="abinding__property_8hpp_html_ac7dd911c94129d1dfc880187d3cd184b"><div class="ttname"><a href="#ac7dd911c94129d1dfc880187d3cd184b">DPM_BINDING_PROPERTY_ENTRY_GENERATE_CSHARP_CONSTRACTOR</a></div><div class="ttdeci">#define DPM_BINDING_PROPERTY_ENTRY_GENERATE_CSHARP_CONSTRACTOR( GM_SEQS, CLASS, NAME, CPP_TYPE, CS_TYPE)</div><div class="ttdef"><b>Definition</b> <a href="binding__property_8hpp_source.html#l00151">binding_property.hpp:151</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="binding__property_8hpp_source.html">binding_property.hpp</a> の <a class="el" href="binding__property_8hpp_source.html#l00044">44</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="af7bb9044cabdb944cde03685798d3383" name="af7bb9044cabdb944cde03685798d3383"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7bb9044cabdb944cde03685798d3383">&#9670;&#160;</a></span>DPME_CS_DUMMY_CLASS_CONSTRACTOR_DPM_BINDING_PROPERTY_ENTRY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPME_CS_DUMMY_CLASS_CONSTRACTOR_DPM_BINDING_PROPERTY_ENTRY</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>NAME</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CPP_TYPE</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CS_TYPE</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="binding__property_8hpp_source.html">binding_property.hpp</a> の <a class="el" href="binding__property_8hpp_source.html#l00062">62</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ac044f76541f066f3d47429b90fa97a81" name="ac044f76541f066f3d47429b90fa97a81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac044f76541f066f3d47429b90fa97a81">&#9670;&#160;</a></span>DPME_CS_DUMMY_CLASS_DPM_BINDING_PROPERTY_ENTRY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPME_CS_DUMMY_CLASS_DPM_BINDING_PROPERTY_ENTRY</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>NAME</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CPP_TYPE</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CS_TYPE</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line">(                                                                                            \</div>
+<div class="line">    (<a class="code hl_define" href="#aaf11685a58a3a8ecbc54c154036e0eb8">DPM_BINDING_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY</a>)(NAME)(CPP_TYPE)( CS_TYPE ) \</div>
+<div class="line">)</div>
+<div class="ttc" id="abinding__property_8hpp_html_aaf11685a58a3a8ecbc54c154036e0eb8"><div class="ttname"><a href="#aaf11685a58a3a8ecbc54c154036e0eb8">DPM_BINDING_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY</a></div><div class="ttdeci">#define DPM_BINDING_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY( GM_SEQS, CLASS, NAME, CPP_TYPE, CS_TYPE)</div><div class="ttdef"><b>Definition</b> <a href="binding__property_8hpp_source.html#l00157">binding_property.hpp:157</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="binding__property_8hpp_source.html">binding_property.hpp</a> の <a class="el" href="binding__property_8hpp_source.html#l00053">53</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ac4ecb2d0637071cc4f6d6f2445d325b1" name="ac4ecb2d0637071cc4f6d6f2445d325b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4ecb2d0637071cc4f6d6f2445d325b1">&#9670;&#160;</a></span>DPME_GM_SEQ_DPM_BINDING_PROPERTY_ENTRY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPME_GM_SEQ_DPM_BINDING_PROPERTY_ENTRY</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>NAME</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CPP_TYPE</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>CS_TYPE</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a071481034a9333cadf8ffd0be2de394b">DPM_BINDING_PROPERTY_ENTRY_GENERATE_GM_SEQ</a>( NAME, CPP_TYPE, CS_TYPE )</div>
+<div class="ttc" id="abinding__property_8hpp_html_a071481034a9333cadf8ffd0be2de394b"><div class="ttname"><a href="#a071481034a9333cadf8ffd0be2de394b">DPM_BINDING_PROPERTY_ENTRY_GENERATE_GM_SEQ</a></div><div class="ttdeci">#define DPM_BINDING_PROPERTY_ENTRY_GENERATE_GM_SEQ(NAME, CPP_TYPE, CS_TYPE)</div><div class="ttdef"><b>Definition</b> <a href="binding__property_8hpp_source.html#l00076">binding_property.hpp:76</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="binding__property_8hpp_source.html">binding_property.hpp</a> の <a class="el" href="binding__property_8hpp_source.html#l00013">13</a> 行目に定義があります。</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_d26f0ed8b287a778d960ad2241e01057.html">src</a></li><li class="navelem"><a href="dir_eb29242f55d2489f6c4d008365c270b7.html">core</a></li><li class="navelem"><a href="dir_cea6b123251f3cedcaebc32d093e626d.html">cs_binding</a></li><li class="navelem"><a href="dir_6a2ead08366c94e741a9e88f830ac342.html">macro</a></li><li class="navelem"><a href="dir_d094c7a2805ea243015c9bb2a9528b77.html">entrys</a></li><li class="navelem"><a href="binding__property_8hpp.html">binding_property.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>
