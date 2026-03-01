@@ -19,6 +19,7 @@ var namespacedepicture__menu_1_1util =
     [ "constexpr_string", "structdepicture__menu_1_1util_1_1constexpr__string.html", "structdepicture__menu_1_1util_1_1constexpr__string" ],
     [ "constexpr_wstring", "structdepicture__menu_1_1util_1_1constexpr__wstring.html", "structdepicture__menu_1_1util_1_1constexpr__wstring" ],
     [ "worker_pool", "classdepicture__menu_1_1util_1_1worker__pool.html", "classdepicture__menu_1_1util_1_1worker__pool" ],
+    [ "visiter_base", "structdepicture__menu_1_1util_1_1visiter__base.html", "structdepicture__menu_1_1util_1_1visiter__base" ],
     [ "try_upgrade_mutex", "namespacedepicture__menu_1_1util.html#a0a99d567417a4c241205bb27bc07a9b2", null ],
     [ "try_upgrade_spin_mutex", "namespacedepicture__menu_1_1util.html#a5b5e115f05d8c6fa7387fd64a52655d4", null ],
     [ "try_write_read_lock_guard", "namespacedepicture__menu_1_1util.html#a757872e60d32984872a9cb14c75dc6ef", null ],
@@ -32,5 +33,6 @@ var namespacedepicture__menu_1_1util =
     [ "try_write_lock", "namespacedepicture__menu_1_1util.html#aa2cac86291ba700c8320639000b1cecf", null ],
     [ "upgradable_lock_guard", "namespacedepicture__menu_1_1util.html#a3cfcec3d4e786cd202535130b31505e3", null ],
     [ "upgradable_lock_guard", "namespacedepicture__menu_1_1util.html#ab89a2802720839a33c9885678ae3ce4a", null ],
+    [ "visiter_base", "namespacedepicture__menu_1_1util.html#ad6438b5af9cd8cd18f2041286245960e", null ],
     [ "write_lock_guard", "namespacedepicture__menu_1_1util.html#a72ab72c3a192447e36e3bdb3fca128f8", null ]
 ];

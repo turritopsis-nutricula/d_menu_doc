@@ -23,6 +23,7 @@ var namespacedepicture__menu_1_1applications =
     [ "archive_tuple", "namespacedepicture__menu_1_1applications.html#aea55f9188deab20c69c500e215de01a5", null ],
     [ "build_archive", "namespacedepicture__menu_1_1applications.html#a1a83cc7219079a22026653e1d71774a6", null ],
     [ "data_pack", "namespacedepicture__menu_1_1applications.html#aba78edff7f85480ed50f1420066c1dd6", null ],
+    [ "default_dispatch_handler", "namespacedepicture__menu_1_1applications.html#abf976474f2417a9e81f90f50563a6e29", null ],
     [ "get_mouse_cursor_position", "namespacedepicture__menu_1_1applications.html#a31479f9c9955111c56b19fff54471a60", null ],
     [ "make_transaction_injector", "namespacedepicture__menu_1_1applications.html#af2f3f1b3b5999de9758861d236b73323", null ],
     [ "run_worker", "namespacedepicture__menu_1_1applications.html#a7ea63a2945eb75bfc5fb5e79d1d08778", null ]

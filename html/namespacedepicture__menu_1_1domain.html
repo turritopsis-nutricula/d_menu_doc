@@ -133,6 +133,8 @@ $(function(){initNavTree('namespacedepicture__menu_1_1domain.html','',''); });
 <tr class="memitem:aedcb86fbc703a4490f8e3940ea7c8aa5 template"><td class="memItemLeft"><a class="el" href="structdepicture__menu_1_1usecase_1_1query__base.html">usecase::query_base</a>&lt; T &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aedcb86fbc703a4490f8e3940ea7c8aa5">make_query</a> (std::vector&lt; T &gt; &amp;&amp;vec)</td></tr>
 <tr class="memitem:a1f80bb52231be50a32dbb84c61837db0" id="r_a1f80bb52231be50a32dbb84c61837db0"><td class="memTemplParams" colspan="2">template&lt;typename TransactionResult&gt; </td></tr>
 <tr class="memitem:a1f80bb52231be50a32dbb84c61837db0 template"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="#a1f80bb52231be50a32dbb84c61837db0">show_view</a> (TransactionResult &amp;&amp;ret_value, std::shared_ptr&lt; <a class="el" href="classdepicture__menu_1_1usecase_1_1config__view__model__interface.html">usecase::config_view_model_interface</a> &gt; const &amp;presenter)</td></tr>
+<tr class="memitem:a5023336ba87d37789cdf3c55a9293c26" id="r_a5023336ba87d37789cdf3c55a9293c26"><td class="memTemplParams" colspan="2">template&lt;typename TransactionResult&gt; </td></tr>
+<tr class="memitem:a5023336ba87d37789cdf3c55a9293c26 template"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="#a5023336ba87d37789cdf3c55a9293c26">show_view_</a> (TransactionResult &amp;&amp;ret_value, std::shared_ptr&lt; <a class="el" href="classdepicture__menu_1_1usecase_1_1config__view__model__interface.html">usecase::config_view_model_interface</a> &gt; const &amp;presenter)</td></tr>
 <tr class="memitem:afa7637275d2253158e6a65619aeb9854" id="r_afa7637275d2253158e6a65619aeb9854"><td class="memTemplParams" colspan="2">template&lt;typename T, typename... Ts&gt; </td></tr>
 <tr class="memitem:afa7637275d2253158e6a65619aeb9854 template"><td class="memItemLeft">std::ostream &amp;&#160;</td><td class="memItemRight"><a class="el" href="#afa7637275d2253158e6a65619aeb9854">operator&lt;&lt;</a> (std::ostream &amp;stream, <a class="el" href="structdepicture__menu_1_1domain_1_1models_1_1presistence__tuple.html">models::presistence_tuple</a>&lt; T, Ts... &gt; const &amp;value)</td></tr>
 <tr class="memitem:a9e5c84d63c3eb7c62a75b8207df3c85a" id="r_a9e5c84d63c3eb7c62a75b8207df3c85a"><td class="memTemplParams" colspan="2">template&lt;typename... T&gt; </td></tr>
@@ -224,7 +226,7 @@ template&lt;models::concepts::aggregable T, typename F&gt; </div>
 
 <p class="definition"> <a class="el" href="crud__repository_8hpp_source.html">crud_repository.hpp</a> の <a class="el" href="crud__repository_8hpp_source.html#l00283">283</a> 行目に定義があります。</p>
 
-<p class="reference">参照先 <a class="el" href="_test_config_view_presenter_8cpp_source.html#l00204">com_id</a>.</p>
+<p class="reference">参照先 <a class="el" href="_test_config_view_presenter_8cpp_source.html#l00208">com_id</a>.</p>
 
 </div>
 </div>
@@ -245,11 +247,11 @@ template&lt;models::concepts::aggregable T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="show__config__view_8cpp_source.html">show_config_view.cpp</a> の <a class="el" href="show__config__view_8cpp_source.html#l00011">11</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="show__config__view_8cpp_source.html">show_config_view.cpp</a> の <a class="el" href="show__config__view_8cpp_source.html#l00013">13</a> 行目に定義があります。</p>
 
 <p class="reference">参照先 <a class="el" href="namespacedepicture__menu_1_1usecase.html#aa7a2906d4f0d46a4a06b555ca34854d7">depicture_menu::usecase::query_base()</a>.</p>
 
-<p class="reference">参照元 <a class="el" href="show__config__view_8cpp_source.html#l00030">show_view()</a>.</p>
+<p class="reference">参照元 <a class="el" href="show__config__view_8cpp_source.html#l00032">show_view()</a>, <a class="el" href="show__config__view_8cpp_source.html#l00081">show_view_()</a>.</p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
@@ -392,11 +394,11 @@ template&lt;typename TransactionResult&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="show__config__view_8cpp_source.html">show_config_view.cpp</a> の <a class="el" href="show__config__view_8cpp_source.html#l00030">30</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="show__config__view_8cpp_source.html">show_config_view.cpp</a> の <a class="el" href="show__config__view_8cpp_source.html#l00032">32</a> 行目に定義があります。</p>
 
-<p class="reference">参照先 <a class="el" href="_test_config_view_presenter_8cpp_source.html#l00254">act_q</a>, <a class="el" href="_test_config_view_presenter_8cpp_source.html#l00249">com_q</a>, <a class="el" href="singleton_8hpp_source.html#l00037">depicture_menu::singleton&lt; detail_applications::gui_dispatch_impl &gt;::get_instance()</a>, <a class="el" href="show__config__view_8cpp_source.html#l00011">make_query()</a>.</p>
+<p class="reference">参照先 <a class="el" href="_test_config_view_presenter_8cpp_source.html#l00258">act_q</a>, <a class="el" href="_test_config_view_presenter_8cpp_source.html#l00253">com_q</a>, <a class="el" href="singleton_8hpp_source.html#l00037">depicture_menu::singleton&lt; detail_applications::gui_dispatch_impl &gt;::get_instance()</a>, <a class="el" href="show__config__view_8cpp_source.html#l00013">make_query()</a>.</p>
 
-<p class="reference">参照元 <a class="el" href="show__config__view_8cpp_source.html#l00127">depicture_menu::usecase::show_config_view::operator()()</a>, <a class="el" href="show__config__view_8cpp_source.html#l00086">depicture_menu::usecase::show_config_view::operator()()</a>.</p>
+<p class="reference">参照元 <a class="el" href="show__config__view_8cpp_source.html#l00208">depicture_menu::usecase::show_config_view::operator()()</a>.</p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
@@ -405,7 +407,39 @@ template&lt;typename TransactionResult&gt; </div>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespacedepicture__menu_1_1domain_a1f80bb52231be50a32dbb84c61837db0_icgraph.svg" width="422" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespacedepicture__menu_1_1domain_a1f80bb52231be50a32dbb84c61837db0_icgraph.svg" width="422" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a5023336ba87d37789cdf3c55a9293c26" name="a5023336ba87d37789cdf3c55a9293c26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5023336ba87d37789cdf3c55a9293c26">&#9670;&#160;</a></span>show_view_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TransactionResult&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto depicture_menu::domain::show_view_ </td>
+          <td>(</td>
+          <td class="paramtype">TransactionResult &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>ret_value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classdepicture__menu_1_1usecase_1_1config__view__model__interface.html">usecase::config_view_model_interface</a> &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>presenter</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="show__config__view_8cpp_source.html">show_config_view.cpp</a> の <a class="el" href="show__config__view_8cpp_source.html#l00081">81</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="_test_config_view_presenter_8cpp_source.html#l00258">act_q</a>, <a class="el" href="_test_config_view_presenter_8cpp_source.html#l00253">com_q</a>, <a class="el" href="singleton_8hpp_source.html#l00037">depicture_menu::singleton&lt; detail_applications::gui_dispatch_impl &gt;::get_instance()</a>, <a class="el" href="show__config__view_8cpp_source.html#l00013">make_query()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespacedepicture__menu_1_1domain_a5023336ba87d37789cdf3c55a9293c26_cgraph.svg" width="614" height="152"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>

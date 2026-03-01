@@ -110,7 +110,7 @@ $(function(){initNavTree('setup__mock__repository_8hpp_source.html','',''); });
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">//</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">//----------------------------------------------------------------------//</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">template</span> &lt; domain::models::concepts::aggregable T &gt;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keywordtype">void</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>[[deprecated]] <span class="keywordtype">void</span></div>
 <div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1test_1_1test__tools.html#a9e7b11812f47a7ce1a72bdd6880db59f">   19</a></span><a class="code hl_function" href="namespacedepicture__menu_1_1test_1_1test__tools.html#a9e7b11812f47a7ce1a72bdd6880db59f">setup_mock_repository</a>( std::shared_ptr&lt; <a class="code hl_struct" href="structdepicture__menu_1_1test_1_1test__tools_1_1mock__entity__buffer.html">mock_entity_buffer&lt; T &gt;</a> &gt; <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> )</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
@@ -118,9 +118,9 @@ $(function(){initNavTree('setup__mock__repository_8hpp_source.html','',''); });
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">auto</span> mc = <a class="code hl_function" href="namespacedepicture__menu_1_1test_1_1test__tools.html#ad96efab5e675eafc8487c352ec046425">make_mock_transaction_injection</a>( )</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                  .create&lt; <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain.html#a2980eebd051ca204d1ad0af249033bdd">domain::crud_repository_ptr&lt; entity_t &gt;</a> &gt;( );</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">auto</span> <a class="code hl_struct" href="structc.html">c</a></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        = std::dynamic_pointer_cast&lt; aggregate_repository_mock&lt; entity_t &gt; &gt;( mc</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        );</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">auto</span> <a class="code hl_struct" href="structc.html">c</a> = std::dynamic_pointer_cast&lt; aggregate_repository_mock&lt; entity_t &gt; &gt;(</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        mc</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    );</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="comment">// contains expect</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_function" href="test__command__line__option_8cpp.html#a8804cd4df220b4dbe58067cd7f91dcbd">MOCK_EXPECT</a>( <a class="code hl_struct" href="structc.html">c</a>-&gt;contains )</div>
@@ -157,8 +157,8 @@ $(function(){initNavTree('setup__mock__repository_8hpp_source.html','',''); });
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="comment">// update expect</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_function" href="test__command__line__option_8cpp.html#a8804cd4df220b4dbe58067cd7f91dcbd">MOCK_EXPECT</a>( <a class="code hl_struct" href="structc.html">c</a>-&gt;update )</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        .at_least( 0 )</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        .with( [ <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> ]( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; o ) { <span class="keywordflow">return</span> <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>-&gt;contains( o.entity_id( ) ); }</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        )</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        .with( [ <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> ]( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; o )</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>               { <span class="keywordflow">return</span> <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>-&gt;contains( o.entity_id( ) ); } )</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        .calls(</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            [ <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> ]( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; o ) -&gt; <span class="keywordtype">bool</span></div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            {</div>

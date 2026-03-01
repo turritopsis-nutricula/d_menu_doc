@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/src/core/usecase/config_view/dto/trigger_created.hpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('trigger__created_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">trigger_created.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="trigger__created_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef SRC_CORE_USECASE_CONFIG_VIEW_DTO_TRIGGER_CREATED_HPP_</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define SRC_CORE_USECASE_CONFIG_VIEW_DTO_TRIGGER_CREATED_HPP_</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="app__ids_8hpp.html">core/domain/model/app/app_ids.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="menu__ids_8hpp.html">core/domain/model/menu/menu_ids.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="key__input__modifier_8hpp.html">core/domain/model/trigger/key_input_modifier.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="trigger__ids_8hpp.html">core/domain/model/trigger/trigger_ids.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="trigger_2virtual__key__code_8hpp.html">core/domain/model/trigger/virtual_key_code.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1usecase_1_1dto.html">depicture_menu::usecase::dto</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">//</span><span class="comment"></span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">//! @brief trigger_created</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">//</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1usecase_1_1dto_1_1trigger__created.html">   19</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structdepicture__menu_1_1usecase_1_1dto_1_1trigger__created.html">trigger_created</a></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1usecase_1_1dto_1_1trigger__created.html#a497d47d20c2c3e21b94da2312e40271a">   22</a></span>    <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1app.html#a86ba4957782ffa7d60cfa8b3e4a67914">domain::app::config_id</a>             <a class="code hl_variable" href="structdepicture__menu_1_1usecase_1_1dto_1_1trigger__created.html#a497d47d20c2c3e21b94da2312e40271a">cfg_id</a>{ <a class="code hl_variable" href="namespacedepicture__menu_1_1domain_1_1id__tags.html#af11f0e793ab4cb991715509986b3bf60">domain::id_tags::nil_uuid</a> };</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1usecase_1_1dto_1_1trigger__created.html#aec0aaa4ca5e8d7956f7c061fc540a72d">   23</a></span>    <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1triggers.html#ab0086bbfe1ea3c9e8ebf6e362ec544c3">domain::triggers::trigger_id</a>       <a class="code hl_variable" href="structdepicture__menu_1_1usecase_1_1dto_1_1trigger__created.html#aec0aaa4ca5e8d7956f7c061fc540a72d">trigger_id</a>{ <a class="code hl_variable" href="namespacedepicture__menu_1_1domain_1_1id__tags.html#af11f0e793ab4cb991715509986b3bf60">domain::id_tags::nil_uuid</a> };</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1usecase_1_1dto_1_1trigger__created.html#ac8988e894e745784be43463b9f617f09">   24</a></span>    <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1triggers.html#ac29f54cd203a2de113696c3b1f59beda">domain::triggers::virtual_key_code</a> <a class="code hl_variable" href="structdepicture__menu_1_1usecase_1_1dto_1_1trigger__created.html#ac8988e894e745784be43463b9f617f09">key_code</a></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        = domain::triggers::virtual_key_code::NUP;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1usecase_1_1dto_1_1trigger__created.html#a9e4ee53778d2d90950d1fbc4ffce2f24">   26</a></span>    <a class="code hl_enumeration" href="namespacedepicture__menu_1_1domain_1_1triggers.html#a24984f2cc2b00f579d1b8595195b47f9">domain::triggers::key_input_modifier</a> <a class="code hl_variable" href="structdepicture__menu_1_1usecase_1_1dto_1_1trigger__created.html#a9e4ee53778d2d90950d1fbc4ffce2f24">modifier</a></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        = <a class="code hl_enumvalue" href="namespacedepicture__menu_1_1domain_1_1triggers.html#a24984f2cc2b00f579d1b8595195b47f9a334c4a4c42fdb79d7ebc3e73b517e6f8">domain::triggers::key_input_modifier::none</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1usecase_1_1dto_1_1trigger__created.html#a6e29bb6765a1c83fc8ddaf0d2db49875">   28</a></span>    <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1menu.html#a2b51ff146c22769b74c23c37851fa801">domain::menu::menu_id</a> <a class="code hl_variable" href="structdepicture__menu_1_1usecase_1_1dto_1_1trigger__created.html#a6e29bb6765a1c83fc8ddaf0d2db49875">show_menu_id</a>{ <a class="code hl_variable" href="namespacedepicture__menu_1_1domain_1_1id__tags.html#af11f0e793ab4cb991715509986b3bf60">domain::id_tags::nil_uuid</a> };</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1usecase_1_1dto_1_1trigger__created.html#a49aa03c716baad9db4c0b94c877af909">   29</a></span>    <span class="keywordtype">bool</span>                  <a class="code hl_variable" href="structdepicture__menu_1_1usecase_1_1dto_1_1trigger__created.html#a49aa03c716baad9db4c0b94c877af909">is_active_</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>};</div>
+</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#endif </span><span class="comment">// SRC_CORE_USECASE_CONFIG_VIEW_DTO_TRIGGER_CREATED_HPP_</span></div>
+<div class="ttc" id="aapp__ids_8hpp_html"><div class="ttname"><a href="app__ids_8hpp.html">app_ids.hpp</a></div></div>
+<div class="ttc" id="akey__input__modifier_8hpp_html"><div class="ttname"><a href="key__input__modifier_8hpp.html">key_input_modifier.hpp</a></div></div>
+<div class="ttc" id="amenu__ids_8hpp_html"><div class="ttname"><a href="menu__ids_8hpp.html">menu_ids.hpp</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1app_html_a86ba4957782ffa7d60cfa8b3e4a67914"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1app.html#a86ba4957782ffa7d60cfa8b3e4a67914">depicture_menu::domain::app::config_id</a></div><div class="ttdeci">models::entity_id_base&lt; detail_app::config_id_tag &gt; config_id</div><div class="ttdef"><b>Definition</b> <a href="app__ids_8hpp_source.html#l00071">app_ids.hpp:71</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1id__tags_html_af11f0e793ab4cb991715509986b3bf60"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1id__tags.html#af11f0e793ab4cb991715509986b3bf60">depicture_menu::domain::id_tags::nil_uuid</a></div><div class="ttdeci">constexpr nil_uuid_t nil_uuid</div><div class="ttdef"><b>Definition</b> <a href="model_2entity__id_8hpp_source.html#l00030">entity_id.hpp:30</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1menu_html_a2b51ff146c22769b74c23c37851fa801"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1menu.html#a2b51ff146c22769b74c23c37851fa801">depicture_menu::domain::menu::menu_id</a></div><div class="ttdeci">models::entity_id_base&lt; detail_menu::menu_id_tag &gt; menu_id</div><div class="ttdef"><b>Definition</b> <a href="menu__ids_8hpp_source.html#l00022">menu_ids.hpp:22</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1triggers_html_a24984f2cc2b00f579d1b8595195b47f9"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1triggers.html#a24984f2cc2b00f579d1b8595195b47f9">depicture_menu::domain::triggers::key_input_modifier</a></div><div class="ttdeci">key_input_modifier</div><div class="ttdef"><b>Definition</b> <a href="key__input__modifier_8hpp_source.html#l00009">key_input_modifier.hpp:10</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1triggers_html_a24984f2cc2b00f579d1b8595195b47f9a334c4a4c42fdb79d7ebc3e73b517e6f8"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1triggers.html#a24984f2cc2b00f579d1b8595195b47f9a334c4a4c42fdb79d7ebc3e73b517e6f8">depicture_menu::domain::triggers::key_input_modifier::none</a></div><div class="ttdeci">@ none</div><div class="ttdef"><b>Definition</b> <a href="key__input__modifier_8hpp_source.html#l00011">key_input_modifier.hpp:11</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1triggers_html_ab0086bbfe1ea3c9e8ebf6e362ec544c3"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1triggers.html#ab0086bbfe1ea3c9e8ebf6e362ec544c3">depicture_menu::domain::triggers::trigger_id</a></div><div class="ttdeci">models::entity_id_base&lt; detail_triggers::trigger_id_tag &gt; trigger_id</div><div class="ttdef"><b>Definition</b> <a href="trigger__ids_8hpp_source.html#l00016">trigger_ids.hpp:16</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1triggers_html_ac29f54cd203a2de113696c3b1f59beda"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1triggers.html#ac29f54cd203a2de113696c3b1f59beda">depicture_menu::domain::triggers::virtual_key_code</a></div><div class="ttdeci">actions::send_keyinput::virtual_key_code virtual_key_code</div><div class="ttdef"><b>Definition</b> <a href="trigger_2virtual__key__code_8hpp_source.html#l00008">virtual_key_code.hpp:8</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1dto_html"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1dto.html">depicture_menu::usecase::dto</a></div><div class="ttdef"><b>Definition</b> <a href="action__created_8hpp_source.html#l00007">action_created.hpp:8</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1usecase_1_1dto_1_1trigger__created_html"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1dto_1_1trigger__created.html">depicture_menu::usecase::dto::trigger_created</a></div><div class="ttdoc">trigger_created</div><div class="ttdef"><b>Definition</b> <a href="#l00019">trigger_created.hpp:20</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1usecase_1_1dto_1_1trigger__created_html_a497d47d20c2c3e21b94da2312e40271a"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1dto_1_1trigger__created.html#a497d47d20c2c3e21b94da2312e40271a">depicture_menu::usecase::dto::trigger_created::cfg_id</a></div><div class="ttdeci">domain::app::config_id cfg_id</div><div class="ttdef"><b>Definition</b> <a href="#l00022">trigger_created.hpp:22</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1usecase_1_1dto_1_1trigger__created_html_a49aa03c716baad9db4c0b94c877af909"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1dto_1_1trigger__created.html#a49aa03c716baad9db4c0b94c877af909">depicture_menu::usecase::dto::trigger_created::is_active_</a></div><div class="ttdeci">bool is_active_</div><div class="ttdef"><b>Definition</b> <a href="#l00029">trigger_created.hpp:29</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1usecase_1_1dto_1_1trigger__created_html_a6e29bb6765a1c83fc8ddaf0d2db49875"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1dto_1_1trigger__created.html#a6e29bb6765a1c83fc8ddaf0d2db49875">depicture_menu::usecase::dto::trigger_created::show_menu_id</a></div><div class="ttdeci">domain::menu::menu_id show_menu_id</div><div class="ttdef"><b>Definition</b> <a href="#l00028">trigger_created.hpp:28</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1usecase_1_1dto_1_1trigger__created_html_a9e4ee53778d2d90950d1fbc4ffce2f24"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1dto_1_1trigger__created.html#a9e4ee53778d2d90950d1fbc4ffce2f24">depicture_menu::usecase::dto::trigger_created::modifier</a></div><div class="ttdeci">domain::triggers::key_input_modifier modifier</div><div class="ttdef"><b>Definition</b> <a href="#l00026">trigger_created.hpp:27</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1usecase_1_1dto_1_1trigger__created_html_ac8988e894e745784be43463b9f617f09"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1dto_1_1trigger__created.html#ac8988e894e745784be43463b9f617f09">depicture_menu::usecase::dto::trigger_created::key_code</a></div><div class="ttdeci">domain::triggers::virtual_key_code key_code</div><div class="ttdef"><b>Definition</b> <a href="#l00024">trigger_created.hpp:25</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1usecase_1_1dto_1_1trigger__created_html_aec0aaa4ca5e8d7956f7c061fc540a72d"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1dto_1_1trigger__created.html#aec0aaa4ca5e8d7956f7c061fc540a72d">depicture_menu::usecase::dto::trigger_created::trigger_id</a></div><div class="ttdeci">domain::triggers::trigger_id trigger_id</div><div class="ttdef"><b>Definition</b> <a href="#l00023">trigger_created.hpp:23</a></div></div>
+<div class="ttc" id="atrigger_2virtual__key__code_8hpp_html"><div class="ttname"><a href="trigger_2virtual__key__code_8hpp.html">virtual_key_code.hpp</a></div></div>
+<div class="ttc" id="atrigger__ids_8hpp_html"><div class="ttname"><a href="trigger__ids_8hpp.html">trigger_ids.hpp</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_d26f0ed8b287a778d960ad2241e01057.html">src</a></li><li class="navelem"><a href="dir_eb29242f55d2489f6c4d008365c270b7.html">core</a></li><li class="navelem"><a href="dir_43f8aa2529ec47ad37b553a33a2ea717.html">usecase</a></li><li class="navelem"><a href="dir_63e3b4c20525be311d786392d608ffa7.html">config_view</a></li><li class="navelem"><a href="dir_f62b4b6507d024ed9815753f78723de4.html">dto</a></li><li class="navelem"><a href="trigger__created_8hpp.html">trigger_created.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

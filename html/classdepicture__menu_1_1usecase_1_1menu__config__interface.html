@@ -105,10 +105,14 @@ depicture_menu::usecase::menu_config_interface の継承関係図</div>
 公開メンバ関数</h2></td></tr>
 <tr class="memitem:a2ea2781dcfda73eddd137f058fe41ecf" id="r_a2ea2781dcfda73eddd137f058fe41ecf"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#a2ea2781dcfda73eddd137f058fe41ecf">~menu_config_interface</a> () noexcept=0</td></tr>
 <tr class="memitem:a294239af88af2b514208291b4bd43435" id="r_a294239af88af2b514208291b4bd43435"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a294239af88af2b514208291b4bd43435">change_menu</a> (dto::menu_changed_notify, <a class="el" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html">domain::menu::radialmenu</a>, <a class="el" href="structdepicture__menu_1_1usecase_1_1query__base.html">query_base</a>&lt; <a class="el" href="classdepicture__menu_1_1domain_1_1actions_1_1v2_1_1publisher.html">domain::actions::publisher</a> &gt; <a class="el" href="_test_config_view_presenter_8cpp.html#a2648ae303efc504d6b2eed8fb18647d5">act_q</a>={ }, <a class="el" href="structdepicture__menu_1_1usecase_1_1query__base.html">query_base</a>&lt; <a class="el" href="classdepicture__menu_1_1domain_1_1commands_1_1command.html">domain::commands::command</a> &gt; <a class="el" href="_test_config_view_presenter_8cpp.html#abf2030589b3b577452c80d56fd99e761">com_q</a>={ }) const =0</td></tr>
+<tr class="memitem:a63607783f78bbb997ba2dd036a02e757" id="r_a63607783f78bbb997ba2dd036a02e757"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a63607783f78bbb997ba2dd036a02e757">change_common_action_select</a> (dto::common_action_select_changed const &amp;) const =0</td></tr>
+<tr class="memitem:a4e0c2259def18ade55fa4531e91c96be" id="r_a4e0c2259def18ade55fa4531e91c96be"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a4e0c2259def18ade55fa4531e91c96be">operator()</a> (dto::menu_created const &amp;) const =0</td></tr>
+<tr class="memitem:a78e17cbf1298f9aa43bc8fead6b7a38a" id="r_a78e17cbf1298f9aa43bc8fead6b7a38a"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a78e17cbf1298f9aa43bc8fead6b7a38a">operator()</a> (dto::menu_item_created const &amp;) const =0</td></tr>
+<tr class="memitem:a29a207987326001eebbf04f4bdda57f7" id="r_a29a207987326001eebbf04f4bdda57f7"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="#a29a207987326001eebbf04f4bdda57f7">operator()</a> (dto::menu_updated const &amp;) const =0</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
 <div class="textblock">
-<p class="definition"> <a class="el" href="config__view__model__interface_8hpp_source.html">config_view_model_interface.hpp</a> の <a class="el" href="config__view__model__interface_8hpp_source.html#l00119">119</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="config__view__model__interface_8hpp_source.html">config_view_model_interface.hpp</a> の <a class="el" href="config__view__model__interface_8hpp_source.html#l00126">126</a> 行目に定義があります。</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">構築子と解体子</h2>
 <a id="a2ea2781dcfda73eddd137f058fe41ecf" name="a2ea2781dcfda73eddd137f058fe41ecf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2ea2781dcfda73eddd137f058fe41ecf">&#9670;&#160;</a></span>~menu_config_interface()</h2>
@@ -133,11 +137,38 @@ depicture_menu::usecase::menu_config_interface の継承関係図</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="config__view__model__interface_8hpp_source.html">config_view_model_interface.hpp</a> の <a class="el" href="config__view__model__interface_8hpp_source.html#l00132">132</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="config__view__model__interface_8hpp_source.html">config_view_model_interface.hpp</a> の <a class="el" href="config__view__model__interface_8hpp_source.html#l00146">146</a> 行目に定義があります。</p>
 
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="a63607783f78bbb997ba2dd036a02e757" name="a63607783f78bbb997ba2dd036a02e757"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63607783f78bbb997ba2dd036a02e757">&#9670;&#160;</a></span>change_common_action_select()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void depicture_menu::usecase::menu_config_interface::change_common_action_select </td>
+          <td>(</td>
+          <td class="paramtype">dto::common_action_select_changed const &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classdepicture__menu_1_1usecase_1_1multi__view__model.html#a08ca8d01e07aa241dc4cd5dd9f6597b8">depicture_menu::usecase::multi_view_model&lt; Ts &gt;</a>, <a class="el" href="classdepicture__menu_1_1usecase_1_1multi__view__model.html#a08ca8d01e07aa241dc4cd5dd9f6597b8">depicture_menu::usecase::multi_view_model&lt; config_view_presenter, menu_view_presenter &gt;</a>で実装されています。</p>
+
+</div>
+</div>
 <a id="a294239af88af2b514208291b4bd43435" name="a294239af88af2b514208291b4bd43435"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a294239af88af2b514208291b4bd43435">&#9670;&#160;</a></span>change_menu()</h2>
 
@@ -177,7 +208,82 @@ depicture_menu::usecase::menu_config_interface の継承関係図</div>
 
 <p><a class="el" href="classdepicture__menu_1_1usecase_1_1multi__view__model.html#a739ab13baa62357d0c1755c44fa29c3e">depicture_menu::usecase::multi_view_model&lt; Ts &gt;</a>, <a class="el" href="classdepicture__menu_1_1usecase_1_1multi__view__model.html#a739ab13baa62357d0c1755c44fa29c3e">depicture_menu::usecase::multi_view_model&lt; config_view_presenter, menu_view_presenter &gt;</a>で実装されています。</p>
 
-<p class="reference">参照先 <a class="el" href="_test_config_view_presenter_8cpp_source.html#l00254">act_q</a>.</p>
+<p class="reference">参照先 <a class="el" href="_test_config_view_presenter_8cpp_source.html#l00258">act_q</a>.</p>
+
+</div>
+</div>
+<a id="a4e0c2259def18ade55fa4531e91c96be" name="a4e0c2259def18ade55fa4531e91c96be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e0c2259def18ade55fa4531e91c96be">&#9670;&#160;</a></span>operator()() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void depicture_menu::usecase::menu_config_interface::operator() </td>
+          <td>(</td>
+          <td class="paramtype">dto::menu_created const &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a78e17cbf1298f9aa43bc8fead6b7a38a" name="a78e17cbf1298f9aa43bc8fead6b7a38a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78e17cbf1298f9aa43bc8fead6b7a38a">&#9670;&#160;</a></span>operator()() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void depicture_menu::usecase::menu_config_interface::operator() </td>
+          <td>(</td>
+          <td class="paramtype">dto::menu_item_created const &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a29a207987326001eebbf04f4bdda57f7" name="a29a207987326001eebbf04f4bdda57f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29a207987326001eebbf04f4bdda57f7">&#9670;&#160;</a></span>operator()() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void depicture_menu::usecase::menu_config_interface::operator() </td>
+          <td>(</td>
+          <td class="paramtype">dto::menu_updated const &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

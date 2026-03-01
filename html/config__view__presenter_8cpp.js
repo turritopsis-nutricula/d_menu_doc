@@ -1,6 +1,7 @@
 var config__view__presenter_8cpp =
 [
     [ "detail::operators::operator_base&lt; CRTP &gt;", "structdetail_1_1operators_1_1operator__base.html", "structdetail_1_1operators_1_1operator__base" ],
+    [ "visiter_base&lt; T, Args &gt;", "structvisiter__base.html", "structvisiter__base" ],
     [ "detail::id_access_handler", "conceptdetail_1_1id__access__handler.html", null ],
     [ "detail::entites_range", "conceptdetail_1_1entites__range.html", null ],
     [ "detail::operators::action_create_operator", "namespacedetail_1_1operators.html#a6f5706c5f02e3d490d920d0dc7adf612", null ],
