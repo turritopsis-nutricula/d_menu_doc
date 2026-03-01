@@ -103,6 +103,7 @@ $(function(){initNavTree('classdepicture__menu_1_1usecase_1_1duplicate__menu__it
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
 <tr class="memitem:a7d3dc1689762d9b73f69917c79d1c289" id="r_a7d3dc1689762d9b73f69917c79d1c289"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a7d3dc1689762d9b73f69917c79d1c289">duplicate_menu_item</a> (<a class="el" href="namespacedepicture__menu_1_1applications.html#a1168dfec76130ba465ebed176eb5ba9e">applications::transaction_source_ptr_t</a> trans, std::shared_ptr&lt; <a class="el" href="classdepicture__menu_1_1usecase_1_1config__view__model__interface.html">config_view_model_interface</a> &gt; config_view_presenter)</td></tr>
+<tr class="memitem:a49e2d9545fcfa99a1231f0e482f45cb2" id="r_a49e2d9545fcfa99a1231f0e482f45cb2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a49e2d9545fcfa99a1231f0e482f45cb2">duplicate</a> (<a class="el" href="namespacedepicture__menu_1_1domain_1_1menu.html#a2b51ff146c22769b74c23c37851fa801">domain::menu::menu_id</a> id, <a class="el" href="namespacedepicture__menu_1_1domain_1_1menu.html#aa7d3347d8daef21d1ee5d9f029632c0a">domain::menu::menu_item_id</a> i_id) const</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 非公開変数類</h2></td></tr>
@@ -142,7 +143,38 @@ $(function(){initNavTree('classdepicture__menu_1_1usecase_1_1duplicate__menu__it
 
 <p class="definition"> <a class="el" href="duplicate__menu__item_8hpp_source.html">duplicate_menu_item.hpp</a> の <a class="el" href="duplicate__menu__item_8hpp_source.html#l00028">28</a> 行目に定義があります。</p>
 
-<p class="reference">参照先 <a class="el" href="duplicate__menu__item_8hpp_source.html#l00043">config_view_presenter_</a>, <a class="el" href="duplicate__menu__item_8hpp_source.html#l00042">trans_</a>.</p>
+<p class="reference">参照先 <a class="el" href="duplicate__menu__item_8hpp_source.html#l00041">config_view_presenter_</a>, <a class="el" href="duplicate__menu__item_8hpp_source.html#l00040">trans_</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="a49e2d9545fcfa99a1231f0e482f45cb2" name="a49e2d9545fcfa99a1231f0e482f45cb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49e2d9545fcfa99a1231f0e482f45cb2">&#9670;&#160;</a></span>duplicate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::usecase::duplicate_menu_item::duplicate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedepicture__menu_1_1domain_1_1menu.html#a2b51ff146c22769b74c23c37851fa801">domain::menu::menu_id</a></td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedepicture__menu_1_1domain_1_1menu.html#aa7d3347d8daef21d1ee5d9f029632c0a">domain::menu::menu_item_id</a></td>          <td class="paramname"><span class="paramname"><em>i_id</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="duplicate__menu__item_8cpp_source.html">duplicate_menu_item.cpp</a> の <a class="el" href="duplicate__menu__item_8cpp_source.html#l00020">20</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="duplicate__menu__item_8hpp_source.html#l00023">depicture_menu::usecase::duplicate_menu_item::result::act_</a>, <a class="el" href="duplicate__menu__item_8hpp_source.html#l00024">depicture_menu::usecase::duplicate_menu_item::result::coms_</a>, <a class="el" href="duplicate__menu__item_8hpp_source.html#l00041">config_view_presenter_</a>, <a class="el" href="current__config__access__service_8hpp_source.html#l00025">depicture_menu::domain::services::current_config_access_service::current_config()</a>, <a class="el" href="log_8hpp_source.html#l00034">DPM_LOG_DEBUG</a>, <a class="el" href="model_2entity_8hpp_source.html#l00090">depicture_menu::domain::models::base::entity_base&lt; Value, IdTag &gt;::entity_id()</a>, <a class="el" href="singleton_8hpp_source.html#l00037">depicture_menu::singleton&lt; detail_applications::gui_dispatch_impl &gt;::get_instance()</a>, <a class="el" href="config__view__model__interface_8hpp_source.html#l00111">depicture_menu::usecase::make_query()</a>, <a class="el" href="_test_config_view_presenter_8cpp.html#a2f99d325a57bd5a9d115762efcc80182">menu</a>, <a class="el" href="duplicate__menu__item_8hpp_source.html#l00022">depicture_menu::usecase::duplicate_menu_item::result::menu_</a>, <a class="el" href="model_2entity__id_8hpp_source.html#l00100">depicture_menu::domain::models::entity_id_base&lt; action_publisher_id_tag &gt;::random_id()</a>, <a class="el" href="model_2entity__id_8hpp_source.html#l00100">depicture_menu::domain::models::entity_id_base&lt; detail_commands::command_id_tag &gt;::random_id()</a>, <a class="el" href="duplicate__menu__item_8hpp_source.html#l00040">trans_</a>, <a class="el" href="str__conv_8cpp_source.html#l00051">depicture_menu::util::strconv::wide_to_utf8()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1usecase_1_1duplicate__menu__item_a49e2d9545fcfa99a1231f0e482f45cb2_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
 
 </div>
 </div>
@@ -167,9 +199,9 @@ $(function(){initNavTree('classdepicture__menu_1_1usecase_1_1duplicate__menu__it
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="duplicate__menu__item_8hpp_source.html">duplicate_menu_item.hpp</a> の <a class="el" href="duplicate__menu__item_8hpp_source.html#l00043">43</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="duplicate__menu__item_8hpp_source.html">duplicate_menu_item.hpp</a> の <a class="el" href="duplicate__menu__item_8hpp_source.html#l00041">41</a> 行目に定義があります。</p>
 
-<p class="reference">参照元 <a class="el" href="duplicate__menu__item_8hpp_source.html#l00028">duplicate_menu_item()</a>.</p>
+<p class="reference">参照元 <a class="el" href="duplicate__menu__item_8cpp_source.html#l00020">duplicate()</a>, <a class="el" href="duplicate__menu__item_8hpp_source.html#l00028">duplicate_menu_item()</a>.</p>
 
 </div>
 </div>
@@ -193,14 +225,15 @@ $(function(){initNavTree('classdepicture__menu_1_1usecase_1_1duplicate__menu__it
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="duplicate__menu__item_8hpp_source.html">duplicate_menu_item.hpp</a> の <a class="el" href="duplicate__menu__item_8hpp_source.html#l00042">42</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="duplicate__menu__item_8hpp_source.html">duplicate_menu_item.hpp</a> の <a class="el" href="duplicate__menu__item_8hpp_source.html#l00040">40</a> 行目に定義があります。</p>
 
-<p class="reference">参照元 <a class="el" href="duplicate__menu__item_8hpp_source.html#l00028">duplicate_menu_item()</a>.</p>
+<p class="reference">参照元 <a class="el" href="duplicate__menu__item_8cpp_source.html#l00020">duplicate()</a>, <a class="el" href="duplicate__menu__item_8hpp_source.html#l00028">duplicate_menu_item()</a>.</p>
 
 </div>
 </div>
 <hr/>このクラス詳解は次のファイルから抽出されました:<ul>
 <li>depicture_menu/src/core/usecase/config_view/<a class="el" href="duplicate__menu__item_8hpp_source.html">duplicate_menu_item.hpp</a></li>
+<li>depicture_menu/src/core/usecase/config_view/<a class="el" href="duplicate__menu__item_8cpp_source.html">duplicate_menu_item.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

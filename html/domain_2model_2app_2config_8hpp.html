@@ -156,22 +156,10 @@ config.hpp の依存先関係図:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line"><span class="keyword">auto</span>    get_##NAME##s( )<span class="keyword"> const </span>{ <span class="keywordflow">return</span> LIST_VALUE | std::views::all; }    \</div>
-<div class="line"><span class="keywordtype">void</span>    add_##NAME( ID_TYPE <span class="keywordtype">id</span> ) { LIST_VALUE.insert( <span class="keywordtype">id</span> ); }              \</div>
-<div class="line"><span class="keywordtype">void</span>    erase_##NAME( ID_TYPE <span class="keywordtype">id</span> ) { LIST_VALUE.erase( <span class="keywordtype">id</span> ); }             \</div>
-<div class="line"><span class="keywordtype">void</span>    reset_##NAME( ) { LIST_VALUE.clear( ); }                           \</div>
-<div class="line">config&amp; <a class="code hl_function" href="namespacedepicture__menu_1_1presentations_1_1datas.html#a40c60f3376b1be380acd059cf3818763">add</a>( ID_TYPE <span class="keyword">const</span>&amp; <span class="keywordtype">id</span> )                                           \</div>
-<div class="line">{                                                                          \</div>
-<div class="line">    add_##NAME( <span class="keywordtype">id</span> );                                                      \</div>
-<div class="line">    <span class="keywordflow">return</span> *<span class="keyword">this</span>;                                                          \</div>
-<div class="line">}                                                                          \</div>
-<div class="line">config&amp; <a class="code hl_enumvalue" href="namespacedepicture__menu_1_1cs__binding.html#a88ea3f39108358172e2ca8a065b93695a0f6969d7052da9261e31ddb6e88c136e">remove</a>( ID_TYPE <span class="keyword">const</span>&amp; <span class="keywordtype">id</span> )                                        \</div>
-<div class="line">{                                                                          \</div>
-<div class="line">    erase_##NAME( <span class="keywordtype">id</span> );                                                    \</div>
-<div class="line">    <span class="keywordflow">return</span> *<span class="keyword">this</span>;                                                          \</div>
-<div class="line">}</div>
-<div class="ttc" id="anamespacedepicture__menu_1_1cs__binding_html_a88ea3f39108358172e2ca8a065b93695a0f6969d7052da9261e31ddb6e88c136e"><div class="ttname"><a href="namespacedepicture__menu_1_1cs__binding.html#a88ea3f39108358172e2ca8a065b93695a0f6969d7052da9261e31ddb6e88c136e">depicture_menu::cs_binding::cs_notify_collection_changed_action::remove</a></div><div class="ttdeci">@ remove</div><div class="ttdef"><b>Definition</b> <a href="list__wrapper_8hpp_source.html#l00045">list_wrapper.hpp:45</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1presentations_1_1datas_html_a40c60f3376b1be380acd059cf3818763"><div class="ttname"><a href="namespacedepicture__menu_1_1presentations_1_1datas.html#a40c60f3376b1be380acd059cf3818763">depicture_menu::presentations::datas::add</a></div><div class="ttdeci">void add(id_buffer_tuple&lt; Tags... &gt; &amp;t, boost::uuids::uuid const &amp;id)</div><div class="ttdef"><b>Definition</b> <a href="ids__buffer_8hpp_source.html#l00080">ids_buffer.hpp:80</a></div></div>
+<b>値:</b><div class="fragment"><div class="line"><span class="keyword">auto</span> get_##NAME##s( )<span class="keyword"> const </span>{ <span class="keywordflow">return</span> LIST_VALUE | std::views::all; }       \</div>
+<div class="line"><span class="keywordtype">void</span> add_##NAME( ID_TYPE <span class="keywordtype">id</span> ) { LIST_VALUE.insert( <span class="keywordtype">id</span> ); }                 \</div>
+<div class="line"><span class="keywordtype">void</span> erase_##NAME( ID_TYPE <span class="keywordtype">id</span> ) { LIST_VALUE.erase( <span class="keywordtype">id</span> ); }                \</div>
+<div class="line"><span class="keywordtype">void</span> reset_##NAME( ) { LIST_VALUE.clear( ); }</div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="domain_2model_2app_2config_8hpp_source.html">config.hpp</a> の <a class="el" href="domain_2model_2app_2config_8hpp_source.html#l00017">17</a> 行目に定義があります。</p>
 

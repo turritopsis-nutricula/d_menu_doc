@@ -14,7 +14,7 @@ var searchData=
   ['member_5freturn_11',['member_return',['../namespacedepicture__menu_1_1cs__binding.html#a6b7611ab660ad936bb2e9096a2d8b739',1,'depicture_menu::cs_binding']]],
   ['member_5freturn_5ft_12',['member_return_t',['../namespacedepicture__menu_1_1cs__binding.html#acc0da6769d1d9ea04d384037e94ee91a',1,'depicture_menu::cs_binding']]],
   ['menu_5fcentral_5fitem_5fid_13',['menu_central_item_id',['../namespacedepicture__menu_1_1domain_1_1menu.html#a167ef78d1ed0a2516661b066fec02129',1,'depicture_menu::domain::menu']]],
-  ['menu_5fchanged_5fnotify_14',['menu_changed_notify',['../namespacedepicture__menu_1_1usecase_1_1dto.html#ac2aaed68a427137178bb5a0a838ba75e',1,'depicture_menu::usecase::dto']]],
+  ['menu_5fchanged_5fnotify_14',['menu_changed_notify',['../namespacedepicture__menu_1_1usecase_1_1dto.html#ac2aaed68a427137178bb5a0a838ba75e',1,'depicture_menu::usecase::menu_changed_notify'],['../namespacedepicture__menu_1_1usecase_1_1dto.html#ac2aaed68a427137178bb5a0a838ba75e',1,'depicture_menu::usecase::dto::menu_changed_notify']]],
   ['menu_5fclose_15',['menu_close',['../namespacedepicture__menu_1_1domain_1_1actions_1_1app__commands.html#a9d1331bd44208fcc2a915c7d4abd1a21',1,'depicture_menu::domain::actions::app_commands']]],
   ['menu_5fcreate_5foperator_5fimpl_16',['menu_create_operator_impl',['../namespacedepicture__menu_1_1presentations_1_1view__models_1_1operations.html#ab5a464cc822e041a66f65f0f5e1bd714',1,'depicture_menu::presentations::view_models::operations']]],
   ['menu_5fcreate_5foperator_5ft_17',['menu_create_operator_t',['../namespacedetail_1_1operators.html#ab4cb1dfb95bd5eff2bd7df051a1db71e',1,'detail::operators']]],

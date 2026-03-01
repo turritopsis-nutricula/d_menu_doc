@@ -95,12 +95,10 @@ $(function(){initNavTree('update__menu__config_8cpp.html','',''); });
 <div class="contents">
 <div class="textblock"><code>#include &quot;./config.hpp&quot;</code><br />
 <code>#include &quot;<a class="el" href="update__menu__config_8hpp_source.html">update_menu_config.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="create__action__domain__service_8hpp_source.html">core/domain/service/create_action_domain_service.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="common__action__builder_8hpp_source.html">core/domain/service/common_action_builder.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="current__config__access__service_8hpp_source.html">core/domain/service/current_config_access_service.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="nop__command__parameter_8hpp_source.html">core/domain/model/command/buildin/nop_command_parameter.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="open__menu__command__parameter_8hpp_source.html">core/domain/model/command/buildin/open_menu_command_parameter.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="shellexecute__command__parameter_8hpp_source.html">core/domain/model/command/buildin/shellexecute_command_parameter.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="common__action__select__changed_8hpp_source.html">dto/common_action_select_changed.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="gui__dispatch_8hpp_source.html">core/application/gui_dispatch.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="log_8hpp_source.html">core/application/log.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="transaction_8hpp_source.html">core/repository/transaction.hpp</a>&quot;</code><br />
@@ -134,9 +132,6 @@ update_menu_config.cpp の依存先関係図:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 関数</h2></td></tr>
 <tr class="memitem:ad1756cbfc162285ee309da7c317256a4" id="r_ad1756cbfc162285ee309da7c317256a4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase.html#ad1756cbfc162285ee309da7c317256a4">depicture_menu::usecase::do_change_menu_config_impl</a> (<a class="el" href="namespacedepicture__menu_1_1applications.html#a1168dfec76130ba465ebed176eb5ba9e">applications::transaction_source_ptr_t</a> tran_source, std::function&lt; dto::menu_config_update() &gt; cont, std::shared_ptr&lt; <a class="el" href="classdepicture__menu_1_1usecase_1_1config__view__model__interface.html">usecase::config_view_model_interface</a> &gt; view)</td></tr>
-<tr class="memitem:aa7eff0c3ee46cea65e3171d09ac621a2" id="r_aa7eff0c3ee46cea65e3171d09ac621a2"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
-<tr class="memitem:aa7eff0c3ee46cea65e3171d09ac621a2 template"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase.html#aa7eff0c3ee46cea65e3171d09ac621a2">depicture_menu::usecase::create_new_common_action</a> (domain::commands::common_command_kind kind, <a class="el" href="structdepicture__menu_1_1repositories_1_1transaction.html">repositories::transaction</a>&lt; Ts... &gt; &amp;tran, std::optional&lt; <a class="el" href="classdepicture__menu_1_1domain_1_1app_1_1config.html">domain::app::config</a> &gt; &amp;cfg)</td></tr>
-<tr class="memdesc:aa7eff0c3ee46cea65e3171d09ac621a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">new common_action  <br /></td></tr>
 </table>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">マクロ定義詳解</h2>
 <a id="aa1bc11933ce4506010028d354b3364b4" name="aa1bc11933ce4506010028d354b3364b4"></a>
@@ -154,7 +149,7 @@ update_menu_config.cpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="update__menu__config_8cpp_source.html">update_menu_config.cpp</a> の <a class="el" href="update__menu__config_8cpp_source.html#l00025">25</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="update__menu__config_8cpp_source.html">update_menu_config.cpp</a> の <a class="el" href="update__menu__config_8cpp_source.html#l00021">21</a> 行目に定義があります。</p>
 
 </div>
 </div>

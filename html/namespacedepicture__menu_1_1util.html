@@ -106,8 +106,6 @@ $(function(){initNavTree('namespacedepicture__menu_1_1util.html','',''); });
 <tr class="memitem:constexpr_5Fstring" id="r_constexpr_5Fstring"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1util_1_1constexpr__string.html">constexpr_string</a></td></tr>
 <tr class="memitem:constexpr_5Fwstring" id="r_constexpr_5Fwstring"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1util_1_1constexpr__wstring.html">constexpr_wstring</a></td></tr>
 <tr class="memitem:worker_5Fpool" id="r_worker_5Fpool"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classdepicture__menu_1_1util_1_1worker__pool.html">worker_pool</a></td></tr>
-<tr class="memitem:visiter_5Fbase" id="r_visiter_5Fbase"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1util_1_1visiter__base.html">visiter_base</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visiterオーバーロードのhelper  <a href="structdepicture__menu_1_1util_1_1visiter__base.html#details">[詳解]</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 型定義</h2></td></tr>
@@ -138,8 +136,6 @@ $(function(){initNavTree('namespacedepicture__menu_1_1util.html','',''); });
 <tr class="memitem:a3cfcec3d4e786cd202535130b31505e3 template"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="#a3cfcec3d4e786cd202535130b31505e3">upgradable_lock_guard</a> (<a class="el" href="structdepicture__menu_1_1util_1_1detail__util_1_1try__upgradable__mutex__base.html">detail_util::try_upgradable_mutex_base</a>&lt; P &gt; &amp;m) noexcept</td></tr>
 <tr class="memitem:aa2cac86291ba700c8320639000b1cecf" id="r_aa2cac86291ba700c8320639000b1cecf"><td class="memTemplParams" colspan="2">template&lt;typename P, typename F&gt; </td></tr>
 <tr class="memitem:aa2cac86291ba700c8320639000b1cecf template"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aa2cac86291ba700c8320639000b1cecf">try_write_lock</a> (<a class="el" href="structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html">detail_util::read_lock_mutex</a>&lt; P &gt; &amp;m, F &amp;&amp;f) noexcept</td></tr>
-<tr class="memitem:ad6438b5af9cd8cd18f2041286245960e" id="r_ad6438b5af9cd8cd18f2041286245960e"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:ad6438b5af9cd8cd18f2041286245960e template"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ad6438b5af9cd8cd18f2041286245960e">visiter_base</a> (Args &amp;&amp;...) -&gt; <a class="el" href="structvisiter__base.html">visiter_base</a>&lt; std::remove_cvref_t&lt; Args &gt;... &gt;</td></tr>
 </table>
 <a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">型定義詳解</h2>
 <a id="a0a99d567417a4c241205bb27bc07a9b2" name="a0a99d567417a4c241205bb27bc07a9b2"></a>
@@ -297,7 +293,7 @@ template&lt;typename E&gt; </div>
 
 <p class="definition"> <a class="el" href="enum__io_8hpp_source.html">enum_io.hpp</a> の <a class="el" href="enum__io_8hpp_source.html#l00010">10</a> 行目に定義があります。</p>
 
-<p class="reference">参照元 <a class="el" href="deploy__default__setting_8cpp_source.html#l00272">add_default_settings()</a>, <a class="el" href="update__menu__config_8cpp_source.html#l00173">depicture_menu::usecase::menu_item_sync::create_new_command()</a>, <a class="el" href="deploy__default__setting_8cpp_source.html#l00038">setup_application_command()</a>.</p>
+<p class="reference">参照元 <a class="el" href="deploy__default__setting_8cpp_source.html#l00272">add_default_settings()</a>, <a class="el" href="update__menu__config_8cpp_source.html#l00169">depicture_menu::usecase::menu_item_sync::create_new_command()</a>, <a class="el" href="deploy__default__setting_8cpp_source.html#l00038">setup_application_command()</a>.</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
@@ -401,25 +397,6 @@ template&lt;typename P&gt; </div>
 </div><div class="memdoc">
 
 <p class="definition"> <a class="el" href="atomic__mutex_8hpp_source.html">atomic_mutex.hpp</a> の <a class="el" href="atomic__mutex_8hpp_source.html#l00339">339</a> 行目に定義があります。</p>
-
-</div>
-</div>
-<a id="ad6438b5af9cd8cd18f2041286245960e" name="ad6438b5af9cd8cd18f2041286245960e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6438b5af9cd8cd18f2041286245960e">&#9670;&#160;</a></span>visiter_base()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename... Args&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">depicture_menu::util::visiter_base </td>
-          <td>(</td>
-          <td class="paramtype">Args &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>...</em></span></td><td>)</td>
-          <td> -&gt;  <a class="el" href="structvisiter__base.html">visiter_base</a>&lt; std::remove_cvref_t&lt; Args &gt;... &gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>

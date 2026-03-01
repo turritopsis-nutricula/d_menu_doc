@@ -45,15 +45,11 @@ var annotated_dup =
           [ "member_function_pointer_result", "structdepicture__menu_1_1util_1_1type__traits_1_1member__function__pointer__result.html", "structdepicture__menu_1_1util_1_1type__traits_1_1member__function__pointer__result" ],
           [ "member_function_pointer_class", "structdepicture__menu_1_1util_1_1type__traits_1_1member__function__pointer__class.html", "structdepicture__menu_1_1util_1_1type__traits_1_1member__function__pointer__class" ],
           [ "member_function_pointer_arg_size", "structdepicture__menu_1_1util_1_1type__traits_1_1member__function__pointer__arg__size.html", "structdepicture__menu_1_1util_1_1type__traits_1_1member__function__pointer__arg__size" ],
-          [ "member_function_pointer_arg", "structdepicture__menu_1_1util_1_1type__traits_1_1member__function__pointer__arg.html", "structdepicture__menu_1_1util_1_1type__traits_1_1member__function__pointer__arg" ],
-          [ "make_class_method_pointer_type", "structdepicture__menu_1_1util_1_1type__traits_1_1make__class__method__pointer__type.html", null ],
-          [ "make_class_method_pointer_type&lt; T, R(Args...) noexcept(B) &gt;", "structdepicture__menu_1_1util_1_1type__traits_1_1make__class__method__pointer__type_3_01_t_00_01b25799aac756ca58acefc03c5c7608a3.html", "structdepicture__menu_1_1util_1_1type__traits_1_1make__class__method__pointer__type_3_01_t_00_01b25799aac756ca58acefc03c5c7608a3" ],
-          [ "make_class_method_pointer_type&lt; T, R(Args...) const noexcept(B) &gt;", "structdepicture__menu_1_1util_1_1type__traits_1_1make__class__method__pointer__type_3_01_t_00_014bd5bb2491205b74784078b7eaac848a.html", "structdepicture__menu_1_1util_1_1type__traits_1_1make__class__method__pointer__type_3_01_t_00_014bd5bb2491205b74784078b7eaac848a" ]
+          [ "member_function_pointer_arg", "structdepicture__menu_1_1util_1_1type__traits_1_1member__function__pointer__arg.html", "structdepicture__menu_1_1util_1_1type__traits_1_1member__function__pointer__arg" ]
         ] ],
         [ "constexpr_string", "structdepicture__menu_1_1util_1_1constexpr__string.html", "structdepicture__menu_1_1util_1_1constexpr__string" ],
         [ "constexpr_wstring", "structdepicture__menu_1_1util_1_1constexpr__wstring.html", "structdepicture__menu_1_1util_1_1constexpr__wstring" ],
-        [ "worker_pool", "classdepicture__menu_1_1util_1_1worker__pool.html", "classdepicture__menu_1_1util_1_1worker__pool" ],
-        [ "visiter_base", "structdepicture__menu_1_1util_1_1visiter__base.html", "structdepicture__menu_1_1util_1_1visiter__base" ]
+        [ "worker_pool", "classdepicture__menu_1_1util_1_1worker__pool.html", "classdepicture__menu_1_1util_1_1worker__pool" ]
       ] ],
       [ "reflection", "namespacedepicture__menu_1_1reflection.html", [
         [ "detail_reflection", "namespacedepicture__menu_1_1reflection_1_1detail__reflection.html", [
@@ -161,8 +157,7 @@ var annotated_dup =
       [ "cs_binding", "namespacedepicture__menu_1_1cs__binding.html", [
         [ "observer", "namespacedepicture__menu_1_1cs__binding_1_1observer.html", [
           [ "detail_observer", "namespacedepicture__menu_1_1cs__binding_1_1observer_1_1detail__observer.html", [
-            [ "cfg_observer", "structdepicture__menu_1_1cs__binding_1_1observer_1_1detail__observer_1_1cfg__observer.html", "structdepicture__menu_1_1cs__binding_1_1observer_1_1detail__observer_1_1cfg__observer" ],
-            [ "observer_wrapper", "classdepicture__menu_1_1cs__binding_1_1observer_1_1detail__observer_1_1observer__wrapper.html", "classdepicture__menu_1_1cs__binding_1_1observer_1_1detail__observer_1_1observer__wrapper" ]
+            [ "cfg_observer", "structdepicture__menu_1_1cs__binding_1_1observer_1_1detail__observer_1_1cfg__observer.html", "structdepicture__menu_1_1cs__binding_1_1observer_1_1detail__observer_1_1cfg__observer" ]
           ] ],
           [ "data", "namespacedepicture__menu_1_1cs__binding_1_1observer_1_1data.html", [
             [ "changed_collection", "structdepicture__menu_1_1cs__binding_1_1observer_1_1data_1_1changed__collection.html", "structdepicture__menu_1_1cs__binding_1_1observer_1_1data_1_1changed__collection" ],
@@ -182,8 +177,7 @@ var annotated_dup =
           [ "ConfigArgComponentCreater", "structdepicture__menu_1_1cs__binding_1_1observer_1_1_config_arg_component_creater.html", "structdepicture__menu_1_1cs__binding_1_1observer_1_1_config_arg_component_creater" ],
           [ "changed_notify_observer", "structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__notify__observer.html", "structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__notify__observer" ],
           [ "view_model_lock", "structdepicture__menu_1_1cs__binding_1_1observer_1_1view__model__lock.html", "structdepicture__menu_1_1cs__binding_1_1observer_1_1view__model__lock" ],
-          [ "observers_connection", "classdepicture__menu_1_1cs__binding_1_1observer_1_1observers__connection.html", "classdepicture__menu_1_1cs__binding_1_1observer_1_1observers__connection" ],
-          [ "connection_lock", "structdepicture__menu_1_1cs__binding_1_1observer_1_1connection__lock.html", "structdepicture__menu_1_1cs__binding_1_1observer_1_1connection__lock" ]
+          [ "observers_connection", "classdepicture__menu_1_1cs__binding_1_1observer_1_1observers__connection.html", "classdepicture__menu_1_1cs__binding_1_1observer_1_1observers__connection" ]
         ] ],
         [ "detail_cs_binding", "namespacedepicture__menu_1_1cs__binding_1_1detail__cs__binding.html", [
           [ "add_new_item", "structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1add__new__item.html", "structdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1add__new__item" ],
@@ -379,14 +373,12 @@ var annotated_dup =
               [ "close_menu_command_parameter_data", "structdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1detail__command__data_1_1close__menu__command__parameter__data.html", "structdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1detail__command__data_1_1close__menu__command__parameter__data" ]
             ] ],
             [ "detail_commands_buildin", "namespacedepicture__menu_1_1domain_1_1commands_1_1buildin_1_1detail__commands__buildin.html", [
-              [ "nop_command_parameter_data", "structdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1detail__commands__buildin_1_1nop__command__parameter__data.html", null ],
               [ "open_menu_command_parameter_data", "structdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1detail__commands__buildin_1_1open__menu__command__parameter__data.html", "structdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1detail__commands__buildin_1_1open__menu__command__parameter__data" ]
             ] ],
             [ "detail_actions_data", "namespacedepicture__menu_1_1domain_1_1commands_1_1buildin_1_1detail__actions__data.html", [
               [ "shellexecute_command_parameter_data", "structdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1detail__actions__data_1_1shellexecute__command__parameter__data.html", "structdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1detail__actions__data_1_1shellexecute__command__parameter__data" ]
             ] ],
             [ "close_menu_command_parameter", "classdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1close__menu__command__parameter.html", "classdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1close__menu__command__parameter" ],
-            [ "nop_command_parameter", "classdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1nop__command__parameter.html", "classdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1nop__command__parameter" ],
             [ "open_menu_command_parameter", "classdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1open__menu__command__parameter.html", "classdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1open__menu__command__parameter" ],
             [ "shellexecute_command_parameter", "classdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1shellexecute__command__parameter.html", "classdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1shellexecute__command__parameter" ]
           ] ],
@@ -449,7 +441,6 @@ var annotated_dup =
           [ "application_setup_domain_service", "structdepicture__menu_1_1domain_1_1services_1_1application__setup__domain__service.html", "structdepicture__menu_1_1domain_1_1services_1_1application__setup__domain__service" ],
           [ "command_default_name_update_service", "classdepicture__menu_1_1domain_1_1services_1_1command__default__name__update__service.html", "classdepicture__menu_1_1domain_1_1services_1_1command__default__name__update__service" ],
           [ "common_action_builder", "classdepicture__menu_1_1domain_1_1services_1_1common__action__builder.html", "classdepicture__menu_1_1domain_1_1services_1_1common__action__builder" ],
-          [ "create_action_domain_service", "classdepicture__menu_1_1domain_1_1services_1_1create__action__domain__service.html", "classdepicture__menu_1_1domain_1_1services_1_1create__action__domain__service" ],
           [ "create_command_domain_service", "classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service.html", "classdepicture__menu_1_1domain_1_1services_1_1create__command__domain__service" ],
           [ "current_config_access_service", "classdepicture__menu_1_1domain_1_1services_1_1current__config__access__service.html", "classdepicture__menu_1_1domain_1_1services_1_1current__config__access__service" ],
           [ "menu_item_default_name_update_service", "classdepicture__menu_1_1domain_1_1services_1_1menu__item__default__name__update__service.html", "classdepicture__menu_1_1domain_1_1services_1_1menu__item__default__name__update__service" ]
@@ -590,12 +581,8 @@ var annotated_dup =
           [ "return_value", "structdepicture__menu_1_1usecase_1_1detail__usecase__change_1_1return__value.html", "structdepicture__menu_1_1usecase_1_1detail__usecase__change_1_1return__value" ]
         ] ],
         [ "dto", "namespacedepicture__menu_1_1usecase_1_1dto.html", [
-          [ "action_created", "structdepicture__menu_1_1usecase_1_1dto_1_1action__created.html", "structdepicture__menu_1_1usecase_1_1dto_1_1action__created" ],
           [ "basic_action_config_update", "structdepicture__menu_1_1usecase_1_1dto_1_1basic__action__config__update.html", "structdepicture__menu_1_1usecase_1_1dto_1_1basic__action__config__update" ],
-          [ "command_created", "structdepicture__menu_1_1usecase_1_1dto_1_1command__created.html", "structdepicture__menu_1_1usecase_1_1dto_1_1command__created" ],
           [ "common_action_select", "structdepicture__menu_1_1usecase_1_1dto_1_1common__action__select.html", "structdepicture__menu_1_1usecase_1_1dto_1_1common__action__select" ],
-          [ "common_action_select_changed", "structdepicture__menu_1_1usecase_1_1dto_1_1common__action__select__changed.html", "structdepicture__menu_1_1usecase_1_1dto_1_1common__action__select__changed" ],
-          [ "config_view_created", "structdepicture__menu_1_1usecase_1_1dto_1_1config__view__created.html", "structdepicture__menu_1_1usecase_1_1dto_1_1config__view__created" ],
           [ "view_changed_notify", "structdepicture__menu_1_1usecase_1_1dto_1_1view__changed__notify.html", "structdepicture__menu_1_1usecase_1_1dto_1_1view__changed__notify" ],
           [ "view_changed_notify_with_kind", "structdepicture__menu_1_1usecase_1_1dto_1_1view__changed__notify__with__kind.html", "structdepicture__menu_1_1usecase_1_1dto_1_1view__changed__notify__with__kind" ],
           [ "view_changed_notify_with_kind_event", "structdepicture__menu_1_1usecase_1_1dto_1_1view__changed__notify__with__kind__event.html", "structdepicture__menu_1_1usecase_1_1dto_1_1view__changed__notify__with__kind__event" ],
@@ -604,13 +591,7 @@ var annotated_dup =
           [ "regist_global_hotkey_trigger", "structdepicture__menu_1_1usecase_1_1dto_1_1regist__global__hotkey__trigger.html", "structdepicture__menu_1_1usecase_1_1dto_1_1regist__global__hotkey__trigger" ],
           [ "unregist_global_hotkey_trigger", "structdepicture__menu_1_1usecase_1_1dto_1_1unregist__global__hotkey__trigger.html", "structdepicture__menu_1_1usecase_1_1dto_1_1unregist__global__hotkey__trigger" ],
           [ "menu_config_update", "structdepicture__menu_1_1usecase_1_1dto_1_1menu__config__update.html", "structdepicture__menu_1_1usecase_1_1dto_1_1menu__config__update" ],
-          [ "menu_created", "structdepicture__menu_1_1usecase_1_1dto_1_1menu__created.html", "structdepicture__menu_1_1usecase_1_1dto_1_1menu__created" ],
-          [ "menu_item_created", "structdepicture__menu_1_1usecase_1_1dto_1_1menu__item__created.html", "structdepicture__menu_1_1usecase_1_1dto_1_1menu__item__created" ],
-          [ "menu_item_duplicate", "structdepicture__menu_1_1usecase_1_1dto_1_1menu__item__duplicate.html", "structdepicture__menu_1_1usecase_1_1dto_1_1menu__item__duplicate" ],
-          [ "menu_item_order_change", "structdepicture__menu_1_1usecase_1_1dto_1_1menu__item__order__change.html", "structdepicture__menu_1_1usecase_1_1dto_1_1menu__item__order__change" ],
-          [ "menu_update", "structdepicture__menu_1_1usecase_1_1dto_1_1menu__update.html", "structdepicture__menu_1_1usecase_1_1dto_1_1menu__update" ],
-          [ "menu_updated", "structdepicture__menu_1_1usecase_1_1dto_1_1menu__updated.html", "structdepicture__menu_1_1usecase_1_1dto_1_1menu__updated" ],
-          [ "trigger_created", "structdepicture__menu_1_1usecase_1_1dto_1_1trigger__created.html", "structdepicture__menu_1_1usecase_1_1dto_1_1trigger__created" ]
+          [ "menu_item_duplicate", "structdepicture__menu_1_1usecase_1_1dto_1_1menu__item__duplicate.html", "structdepicture__menu_1_1usecase_1_1dto_1_1menu__item__duplicate" ]
         ] ],
         [ "query", "namespacedepicture__menu_1_1usecase_1_1query.html", [
           [ "default_menu_item_label_query", "structdepicture__menu_1_1usecase_1_1query_1_1default__menu__item__label__query.html", "structdepicture__menu_1_1usecase_1_1query_1_1default__menu__item__label__query" ]
@@ -656,7 +637,18 @@ var annotated_dup =
         [ "deploy_default_setting", "classdepicture__menu_1_1usecase_1_1deploy__default__setting.html", "classdepicture__menu_1_1usecase_1_1deploy__default__setting" ],
         [ "invoke_action", "structdepicture__menu_1_1usecase_1_1invoke__action.html", "structdepicture__menu_1_1usecase_1_1invoke__action" ],
         [ "show_menu_view", "classdepicture__menu_1_1usecase_1_1show__menu__view.html", "classdepicture__menu_1_1usecase_1_1show__menu__view" ],
-        [ "show_app_option_window", "structdepicture__menu_1_1usecase_1_1show__app__option__window.html", "structdepicture__menu_1_1usecase_1_1show__app__option__window" ]
+        [ "show_app_option_window", "structdepicture__menu_1_1usecase_1_1show__app__option__window.html", "structdepicture__menu_1_1usecase_1_1show__app__option__window" ],
+        [ "basic_action_config_update", "structdepicture__menu_1_1usecase_1_1dto_1_1basic__action__config__update.html", "structdepicture__menu_1_1usecase_1_1dto_1_1basic__action__config__update" ],
+        [ "common_action_select", "structdepicture__menu_1_1usecase_1_1dto_1_1common__action__select.html", "structdepicture__menu_1_1usecase_1_1dto_1_1common__action__select" ],
+        [ "view_changed_notify", "structdepicture__menu_1_1usecase_1_1dto_1_1view__changed__notify.html", "structdepicture__menu_1_1usecase_1_1dto_1_1view__changed__notify" ],
+        [ "view_changed_notify_with_kind", "structdepicture__menu_1_1usecase_1_1dto_1_1view__changed__notify__with__kind.html", "structdepicture__menu_1_1usecase_1_1dto_1_1view__changed__notify__with__kind" ],
+        [ "view_changed_notify_with_kind_event", "structdepicture__menu_1_1usecase_1_1dto_1_1view__changed__notify__with__kind__event.html", "structdepicture__menu_1_1usecase_1_1dto_1_1view__changed__notify__with__kind__event" ],
+        [ "trigger_activate", "structdepicture__menu_1_1usecase_1_1dto_1_1trigger__activate.html", "structdepicture__menu_1_1usecase_1_1dto_1_1trigger__activate" ],
+        [ "trigger_inactivate", "structdepicture__menu_1_1usecase_1_1dto_1_1trigger__inactivate.html", "structdepicture__menu_1_1usecase_1_1dto_1_1trigger__inactivate" ],
+        [ "regist_global_hotkey_trigger", "structdepicture__menu_1_1usecase_1_1dto_1_1regist__global__hotkey__trigger.html", "structdepicture__menu_1_1usecase_1_1dto_1_1regist__global__hotkey__trigger" ],
+        [ "unregist_global_hotkey_trigger", "structdepicture__menu_1_1usecase_1_1dto_1_1unregist__global__hotkey__trigger.html", "structdepicture__menu_1_1usecase_1_1dto_1_1unregist__global__hotkey__trigger" ],
+        [ "menu_config_update", "structdepicture__menu_1_1usecase_1_1dto_1_1menu__config__update.html", "structdepicture__menu_1_1usecase_1_1dto_1_1menu__config__update" ],
+        [ "menu_item_duplicate", "structdepicture__menu_1_1usecase_1_1dto_1_1menu__item__duplicate.html", "structdepicture__menu_1_1usecase_1_1dto_1_1menu__item__duplicate" ]
       ] ],
       [ "conv_mapping", "namespacedepicture__menu_1_1conv__mapping.html", [
         [ "buildin", "namespacedepicture__menu_1_1conv__mapping_1_1buildin.html", [
@@ -785,7 +777,6 @@ var annotated_dup =
     [ "config_view_fixture", "structconfig__view__fixture.html", "structconfig__view__fixture" ],
     [ "core_interface_impl", "structcore__interface__impl.html", "structcore__interface__impl" ],
     [ "cpp_user_struct", "structcpp__user__struct.html", "structcpp__user__struct" ],
-    [ "create_action_domain_fixture", "structcreate__action__domain__fixture.html", "structcreate__action__domain__fixture" ],
     [ "create_command_domain_fixture", "structcreate__command__domain__fixture.html", "structcreate__command__domain__fixture" ],
     [ "d", "structd.html", "structd" ],
     [ "d_struct", "structd__struct.html", "structd__struct" ],
@@ -836,7 +827,6 @@ var annotated_dup =
     [ "test_model", "classtest__model.html", "classtest__model" ],
     [ "test_repositores_fixture", "structtest__repositores__fixture.html", "structtest__repositores__fixture" ],
     [ "test_repository", "structtest__repository.html", "structtest__repository" ],
-    [ "transaction_fixture", "structtransaction__fixture.html", "structtransaction__fixture" ],
     [ "trigger_data_initializer", "classtrigger__data__initializer.html", "classtrigger__data__initializer" ],
     [ "update_result", "structupdate__result.html", "structupdate__result" ],
     [ "val_check", "structval__check.html", "structval__check" ],
@@ -846,7 +836,6 @@ var annotated_dup =
     [ "value_compare_convert&lt; dd::models::entity_id_base&lt; IdTag &gt;, boost::uuids::uuid &gt;", "structvalue__compare__convert_3_01dd_1_1models_1_1entity__id__base_3_01_id_tag_01_4_00_01boost_1_1uuids_1_1uuid_01_4.html", "structvalue__compare__convert_3_01dd_1_1models_1_1entity__id__base_3_01_id_tag_01_4_00_01boost_1_1uuids_1_1uuid_01_4" ],
     [ "value_list", "classvalue__list.html", "classvalue__list" ],
     [ "vector_comp", "structvector__comp.html", "structvector__comp" ],
-    [ "visiter_base", "structvisiter__base.html", "structvisiter__base" ],
     [ "win32_message", "structwin32__message.html", "structwin32__message" ],
     [ "win32_message_sender", "structwin32__message__sender.html", "structwin32__message__sender" ]
 ];

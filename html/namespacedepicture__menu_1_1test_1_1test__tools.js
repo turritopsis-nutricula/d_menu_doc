@@ -16,10 +16,7 @@ var namespacedepicture__menu_1_1test_1_1test__tools =
     [ "mock_repository_ptr", "namespacedepicture__menu_1_1test_1_1test__tools.html#a30463848dec2d07d4a029aa1e6a29b9f", null ],
     [ "test_repository_ptr_t", "namespacedepicture__menu_1_1test_1_1test__tools.html#a8ff6d031fc46b4ebb94b3e545b793e9b", null ],
     [ "test_repository_t", "namespacedepicture__menu_1_1test_1_1test__tools.html#a64dcdbe9df3c66c6a279ddb517b7191f", null ],
-    [ "add_object", "namespacedepicture__menu_1_1test_1_1test__tools.html#a2875ecae3596246c9cb30ef6f8125ad9", null ],
     [ "build_test_repository_ptr", "namespacedepicture__menu_1_1test_1_1test__tools.html#abd51c2f88acb43f27fa687cacd7cd6b0", null ],
-    [ "do_test_transaction", "namespacedepicture__menu_1_1test_1_1test__tools.html#a63e1557e94d169533fc4f8ee80bb12a5", null ],
-    [ "get_object", "namespacedepicture__menu_1_1test_1_1test__tools.html#a3bc0722b6d26ba684d929250a24c88c2", null ],
     [ "make_mock_aggregate", "namespacedepicture__menu_1_1test_1_1test__tools.html#a6b94e73f847c96668124269480f33d44", null ],
     [ "make_mock_entity_buffer", "namespacedepicture__menu_1_1test_1_1test__tools.html#a7522293e12fbd16b45b51d35df5c70b8", null ],
     [ "make_mock_transaction_injection", "namespacedepicture__menu_1_1test_1_1test__tools.html#ad96efab5e675eafc8487c352ec046425", null ],
@@ -29,6 +26,5 @@ var namespacedepicture__menu_1_1test_1_1test__tools =
     [ "operator|", "namespacedepicture__menu_1_1test_1_1test__tools.html#af6185c4804d36ad7fd6db6c7a47dbdb9", null ],
     [ "operator|", "namespacedepicture__menu_1_1test_1_1test__tools.html#aa97a1dba324d9994dffd3827c99db1bd", null ],
     [ "setup_mock_repository", "namespacedepicture__menu_1_1test_1_1test__tools.html#a9e7b11812f47a7ce1a72bdd6880db59f", null ],
-    [ "test_repository", "namespacedepicture__menu_1_1test_1_1test__tools.html#acaad6b8a583e46b8a762ba21273ada8b", null ],
-    [ "update_object", "namespacedepicture__menu_1_1test_1_1test__tools.html#af306a1c5bb47444ef2a45fbff195078f", null ]
+    [ "test_repository", "namespacedepicture__menu_1_1test_1_1test__tools.html#acaad6b8a583e46b8a762ba21273ada8b", null ]
 ];

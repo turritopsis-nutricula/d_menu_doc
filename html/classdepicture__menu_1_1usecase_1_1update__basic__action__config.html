@@ -99,6 +99,7 @@ $(function(){initNavTree('classdepicture__menu_1_1usecase_1_1update__basic__acti
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
 <tr class="memitem:a17d2c65654b97db5596649469c63dd56" id="r_a17d2c65654b97db5596649469c63dd56"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a17d2c65654b97db5596649469c63dd56">update_basic_action_config</a> (<a class="el" href="namespacedepicture__menu_1_1applications.html#a1168dfec76130ba465ebed176eb5ba9e">applications::transaction_source_ptr_t</a> tran_source, ActionChangeControl control, std::shared_ptr&lt; <a class="el" href="classdepicture__menu_1_1usecase_1_1config__view__model__interface.html">usecase::config_view_model_interface</a> &gt; view)</td></tr>
+<tr class="memitem:a0534f25d784ea31979e40dad55eb6b73" id="r_a0534f25d784ea31979e40dad55eb6b73"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0534f25d784ea31979e40dad55eb6b73">operator()</a> (<a class="el" href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">domain::actions::publisher_id</a> id) const</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 非公開変数類</h2></td></tr>
@@ -151,6 +152,43 @@ template&lt;concepts::action_config_change_extractor ActionChangeControl = class
 
 </div>
 </div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="a0534f25d784ea31979e40dad55eb6b73" name="a0534f25d784ea31979e40dad55eb6b73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0534f25d784ea31979e40dad55eb6b73">&#9670;&#160;</a></span>operator()()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;concepts::action_config_change_extractor ActionChangeControl = class TActionChangeControl&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classdepicture__menu_1_1usecase_1_1update__basic__action__config.html">depicture_menu::usecase::update_basic_action_config</a>&lt; ActionChangeControl &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">domain::actions::publisher_id</a></td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="change__action__config_8hpp_source.html">change_action_config.hpp</a> の <a class="el" href="change__action__config_8hpp_source.html#l00064">64</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="change__action__config_8hpp_source.html#l00048">control_</a>, <a class="el" href="change__action__config_8cpp_source.html#l00022">depicture_menu::usecase::detail_usecase_change::do_basic_action_config_change()</a>, <a class="el" href="log_8hpp_source.html#l00034">DPM_LOG_DEBUG</a>, <a class="el" href="change__action__config_8hpp_source.html#l00047">tran_source_</a>, <a class="el" href="change__action__config_8hpp_source.html#l00049">view_</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1usecase_1_1update__basic__action__config_a0534f25d784ea31979e40dad55eb6b73_cgraph.svg" width="666" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">メンバ詳解</h2>
 <a id="a17be819e480bf10c1d0cf7b00cd1f4fe" name="a17be819e480bf10c1d0cf7b00cd1f4fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a17be819e480bf10c1d0cf7b00cd1f4fe">&#9670;&#160;</a></span>control_</h2>
@@ -176,7 +214,7 @@ template&lt;concepts::action_config_change_extractor ActionChangeControl = class
 
 <p class="definition"> <a class="el" href="change__action__config_8hpp_source.html">change_action_config.hpp</a> の <a class="el" href="change__action__config_8hpp_source.html#l00048">48</a> 行目に定義があります。</p>
 
-<p class="reference">参照元 <a class="el" href="change__action__config_8hpp_source.html#l00052">update_basic_action_config()</a>.</p>
+<p class="reference">参照元 <a class="el" href="change__action__config_8hpp_source.html#l00064">operator()()</a>, <a class="el" href="change__action__config_8hpp_source.html#l00052">update_basic_action_config()</a>.</p>
 
 </div>
 </div>
@@ -204,7 +242,7 @@ template&lt;concepts::action_config_change_extractor ActionChangeControl = class
 
 <p class="definition"> <a class="el" href="change__action__config_8hpp_source.html">change_action_config.hpp</a> の <a class="el" href="change__action__config_8hpp_source.html#l00047">47</a> 行目に定義があります。</p>
 
-<p class="reference">参照元 <a class="el" href="change__action__config_8hpp_source.html#l00052">update_basic_action_config()</a>.</p>
+<p class="reference">参照元 <a class="el" href="change__action__config_8hpp_source.html#l00064">operator()()</a>, <a class="el" href="change__action__config_8hpp_source.html#l00052">update_basic_action_config()</a>.</p>
 
 </div>
 </div>
@@ -232,7 +270,7 @@ template&lt;concepts::action_config_change_extractor ActionChangeControl = class
 
 <p class="definition"> <a class="el" href="change__action__config_8hpp_source.html">change_action_config.hpp</a> の <a class="el" href="change__action__config_8hpp_source.html#l00049">49</a> 行目に定義があります。</p>
 
-<p class="reference">参照元 <a class="el" href="change__action__config_8hpp_source.html#l00052">update_basic_action_config()</a>.</p>
+<p class="reference">参照元 <a class="el" href="change__action__config_8hpp_source.html#l00064">operator()()</a>, <a class="el" href="change__action__config_8hpp_source.html#l00052">update_basic_action_config()</a>.</p>
 
 </div>
 </div>

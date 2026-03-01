@@ -11,7 +11,7 @@ var searchData=
   ['range_5frepeater_8',['range_repeater',['../structdepicture__menu_1_1conv__mapping_1_1buildin_1_1range__repeater.html',1,'depicture_menu::conv_mapping::buildin']]],
   ['read_5flock_5fmutex_9',['read_lock_mutex',['../structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html',1,'depicture_menu::util::detail_util']]],
   ['read_5flock_5fmutex_3c_20depicture_5fmenu_3a_3autil_3a_3adetail_5futil_3a_3atry_5fupgradable_5fmutex_5fbase_3c_20detail_5futil_3a_3await_5flock_5fpolicy_3c_20int_20_3e_20_3e_20_3e_10',['read_lock_mutex&lt; depicture_menu::util::detail_util::try_upgradable_mutex_base&lt; detail_util::wait_lock_policy&lt; int &gt; &gt; &gt;',['../structdepicture__menu_1_1util_1_1detail__util_1_1read__lock__mutex.html',1,'depicture_menu::util::detail_util']]],
-  ['regist_5fglobal_5fhotkey_5ftrigger_11',['regist_global_hotkey_trigger',['../structdepicture__menu_1_1usecase_1_1dto_1_1regist__global__hotkey__trigger.html',1,'depicture_menu::usecase::dto']]],
+  ['regist_5fglobal_5fhotkey_5ftrigger_11',['regist_global_hotkey_trigger',['../structdepicture__menu_1_1usecase_1_1dto_1_1regist__global__hotkey__trigger.html',1,'depicture_menu::usecase::dto::regist_global_hotkey_trigger'],['../structdepicture__menu_1_1usecase_1_1dto_1_1regist__global__hotkey__trigger.html',1,'depicture_menu::usecase::regist_global_hotkey_trigger']]],
   ['remove_5fmenu_5fitem_12',['remove_menu_item',['../structdepicture__menu_1_1usecase_1_1remove__menu__item.html',1,'depicture_menu::usecase']]],
   ['repos_5ffexture_13',['repos_fexture',['../structrepos__fexture.html',1,'']]],
   ['repositoris_5ffixture_14',['repositoris_fixture',['../structrepositoris__fixture.html',1,'']]],
@@ -19,12 +19,11 @@ var searchData=
   ['repository_5faccesser_3c_20_26detail_5fd_5fmenu_3a_3acore_5finterface_5fimpl_3a_3aapplication_5fconfig_5frepository_5f_20_3e_16',['repository_accesser&lt; &amp;detail_d_menu::core_interface_impl::application_config_repository_ &gt;',['../structdepicture__menu_1_1detail__d__menu_1_1repository__accesser.html',1,'depicture_menu::detail_d_menu']]],
   ['repository_5faccesser_3c_20_26detail_5fd_5fmenu_3a_3acore_5finterface_5fimpl_3a_3aapplication_5foption_5frepository_5f_20_3e_17',['repository_accesser&lt; &amp;detail_d_menu::core_interface_impl::application_option_repository_ &gt;',['../structdepicture__menu_1_1detail__d__menu_1_1repository__accesser.html',1,'depicture_menu::detail_d_menu']]],
   ['repository_5fextractor_18',['repository_extractor',['../structdepicture__menu_1_1repositories_1_1detail__repositories_1_1repository__extractor.html',1,'depicture_menu::repositories::detail_repositories']]],
-  ['rescusive_5flock_19',['rescusive_lock',['../structdepicture__menu_1_1presentations_1_1config__view__presenter_1_1rescusive__lock.html',1,'depicture_menu::presentations::config_view_presenter']]],
-  ['resource_5fglab_5fnotify_5fcopy_5fmove_5fno_5feffect_20',['resource_glab_notify_copy_move_no_effect',['../structdepicture__menu_1_1cs__binding_1_1impl_1_1resource__glab__notify__copy__move__no__effect.html',1,'depicture_menu::cs_binding::impl']]],
-  ['result_21',['result',['../structdepicture__menu_1_1usecase_1_1duplicate__menu__item_1_1result.html',1,'depicture_menu::usecase::duplicate_menu_item']]],
-  ['result_5ft_22',['result_t',['../structdepicture__menu_1_1test_1_1type__traits_1_1method__traits.html',1,'depicture_menu::test::type_traits::result_t&lt; T &gt;'],['../structdepicture__menu_1_1type__traits_1_1method__traits.html',1,'depicture_menu::type_traits::result_t&lt; T &gt;']]],
-  ['return_5ft_23',['return_t',['../structdepicture__menu_1_1util_1_1type__traits_1_1detail__type__traits_1_1member__function__pointer__resolve.html',1,'depicture_menu::util::type_traits::detail_type_traits']]],
-  ['return_5fvalue_24',['return_value',['../structdepicture__menu_1_1usecase_1_1detail__usecase__change_1_1return__value.html',1,'depicture_menu::usecase::detail_usecase_change']]],
-  ['rgba_5fcolor_25',['rgba_color',['../structdepicture__menu_1_1domain_1_1common_1_1rgba__color.html',1,'depicture_menu::domain::common']]],
-  ['root_5ftag_26',['root_tag',['../structids_1_1root__tag.html',1,'ids']]]
+  ['resource_5fglab_5fnotify_5fcopy_5fmove_5fno_5feffect_19',['resource_glab_notify_copy_move_no_effect',['../structdepicture__menu_1_1cs__binding_1_1impl_1_1resource__glab__notify__copy__move__no__effect.html',1,'depicture_menu::cs_binding::impl']]],
+  ['result_20',['result',['../structdepicture__menu_1_1usecase_1_1duplicate__menu__item_1_1result.html',1,'depicture_menu::usecase::duplicate_menu_item']]],
+  ['result_5ft_21',['result_t',['../structdepicture__menu_1_1test_1_1type__traits_1_1method__traits.html',1,'depicture_menu::test::type_traits::result_t&lt; T &gt;'],['../structdepicture__menu_1_1type__traits_1_1method__traits.html',1,'depicture_menu::type_traits::result_t&lt; T &gt;']]],
+  ['return_5ft_22',['return_t',['../structdepicture__menu_1_1util_1_1type__traits_1_1detail__type__traits_1_1member__function__pointer__resolve.html',1,'depicture_menu::util::type_traits::detail_type_traits']]],
+  ['return_5fvalue_23',['return_value',['../structdepicture__menu_1_1usecase_1_1detail__usecase__change_1_1return__value.html',1,'depicture_menu::usecase::detail_usecase_change']]],
+  ['rgba_5fcolor_24',['rgba_color',['../structdepicture__menu_1_1domain_1_1common_1_1rgba__color.html',1,'depicture_menu::domain::common']]],
+  ['root_5ftag_25',['root_tag',['../structids_1_1root__tag.html',1,'ids']]]
 ];

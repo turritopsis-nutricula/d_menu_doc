@@ -1,5 +1,4 @@
 var namespacedepicture__menu_1_1domain_1_1commands_1_1buildin_1_1detail__commands__buildin =
 [
-    [ "nop_command_parameter_data", "structdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1detail__commands__buildin_1_1nop__command__parameter__data.html", null ],
     [ "open_menu_command_parameter_data", "structdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1detail__commands__buildin_1_1open__menu__command__parameter__data.html", "structdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1detail__commands__buildin_1_1open__menu__command__parameter__data" ]
 ];

@@ -99,7 +99,7 @@ $(function(){initNavTree('structdepicture__menu_1_1usecase_1_1move__order__menu_
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
 <tr class="memitem:ad4eab8787d5d6d9bc40a45937994d619" id="r_ad4eab8787d5d6d9bc40a45937994d619"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#ad4eab8787d5d6d9bc40a45937994d619">move_order_menu_item</a> (<a class="el" href="namespacedepicture__menu_1_1applications.html#a1168dfec76130ba465ebed176eb5ba9e">applications::transaction_source_ptr_t</a> t, presenter_t presenter)</td></tr>
-<tr class="memitem:a19675c3961f0029781c43bb647135684" id="r_a19675c3961f0029781c43bb647135684"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a19675c3961f0029781c43bb647135684">operator()</a> (dto::menu_item_order_change const &amp;<a class="el" href="namespacedepicture__menu_1_1usecase_1_1dto.html">dto</a>) const</td></tr>
+<tr class="memitem:a13871a93479f41ee9045613a1587482f" id="r_a13871a93479f41ee9045613a1587482f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a13871a93479f41ee9045613a1587482f">operator()</a> (<a class="el" href="namespacedepicture__menu_1_1domain_1_1menu.html#a2b51ff146c22769b74c23c37851fa801">domain::menu::menu_id</a> id, int from_index, int to_index) const</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 公開変数類</h2></td></tr>
@@ -110,7 +110,7 @@ $(function(){initNavTree('structdepicture__menu_1_1usecase_1_1move__order__menu_
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename presenter_t = class t_move_menu_item_presenter&gt;<br />
 requires ( !boost::di::aux::is_complete&lt; presenter_t &gt;::value || concepts::menu_changed_presentable&lt; presenter_t &gt; )<br />
 struct depicture_menu::usecase::move_order_menu_item&lt; presenter_t &gt;</div>
-<p class="definition"> <a class="el" href="move__order__menu__item_8hpp_source.html">move_order_menu_item.hpp</a> の <a class="el" href="move__order__menu__item_8hpp_source.html#l00023">23</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="move__order__menu__item_8hpp_source.html">move_order_menu_item.hpp</a> の <a class="el" href="move__order__menu__item_8hpp_source.html#l00016">16</a> 行目に定義があります。</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">構築子と解体子</h2>
 <a id="ad4eab8787d5d6d9bc40a45937994d619" name="ad4eab8787d5d6d9bc40a45937994d619"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad4eab8787d5d6d9bc40a45937994d619">&#9670;&#160;</a></span>move_order_menu_item()</h2>
@@ -141,15 +141,15 @@ template&lt;typename presenter_t = class t_move_menu_item_presenter&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="move__order__menu__item_8hpp_source.html">move_order_menu_item.hpp</a> の <a class="el" href="move__order__menu__item_8hpp_source.html#l00026">26</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="move__order__menu__item_8hpp_source.html">move_order_menu_item.hpp</a> の <a class="el" href="move__order__menu__item_8hpp_source.html#l00019">19</a> 行目に定義があります。</p>
 
-<p class="reference">参照先 <a class="el" href="move__order__menu__item_8hpp_source.html#l00074">presenter_</a>, <a class="el" href="move__order__menu__item_8hpp_source.html#l00073">transaction_source_</a>.</p>
+<p class="reference">参照先 <a class="el" href="move__order__menu__item_8hpp_source.html#l00085">presenter_</a>, <a class="el" href="move__order__menu__item_8hpp_source.html#l00084">transaction_source_</a>.</p>
 
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
-<a id="a19675c3961f0029781c43bb647135684" name="a19675c3961f0029781c43bb647135684"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19675c3961f0029781c43bb647135684">&#9670;&#160;</a></span>operator()()</h2>
+<a id="a13871a93479f41ee9045613a1587482f" name="a13871a93479f41ee9045613a1587482f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13871a93479f41ee9045613a1587482f">&#9670;&#160;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -162,8 +162,17 @@ template&lt;typename presenter_t = class t_move_menu_item_presenter&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="structdepicture__menu_1_1usecase_1_1move__order__menu__item.html">depicture_menu::usecase::move_order_menu_item</a>&lt; presenter_t &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype">dto::menu_item_order_change const &amp;</td>          <td class="paramname"><span class="paramname"><em>dto</em></span></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype"><a class="el" href="namespacedepicture__menu_1_1domain_1_1menu.html#a2b51ff146c22769b74c23c37851fa801">domain::menu::menu_id</a></td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>from_index</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>to_index</em></span>&#160;) const</td>
         </tr>
       </table>
   </td>
@@ -173,13 +182,13 @@ template&lt;typename presenter_t = class t_move_menu_item_presenter&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="move__order__menu__item_8hpp_source.html">move_order_menu_item.hpp</a> の <a class="el" href="move__order__menu__item_8hpp_source.html#l00034">34</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="move__order__menu__item_8hpp_source.html">move_order_menu_item.hpp</a> の <a class="el" href="move__order__menu__item_8hpp_source.html#l00027">27</a> 行目に定義があります。</p>
 
-<p class="reference">参照先 <a class="el" href="do__transaction_8hpp_source.html#l00059">depicture_menu::repositories::do_transaction()</a>, <a class="el" href="move__order__menu__item_8hpp_source.html#l00073">transaction_source_</a>.</p>
+<p class="reference">参照先 <a class="el" href="do__transaction_8hpp_source.html#l00059">depicture_menu::repositories::do_transaction()</a>, <a class="el" href="singleton_8hpp_source.html#l00037">depicture_menu::singleton&lt; detail_applications::gui_dispatch_impl &gt;::get_instance()</a>, <a class="el" href="move__order__menu__item_8hpp_source.html#l00085">presenter_</a>, <a class="el" href="move__order__menu__item_8hpp_source.html#l00084">transaction_source_</a>.</p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1usecase_1_1move__order__menu__item_a19675c3961f0029781c43bb647135684_cgraph.svg" width="418" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1usecase_1_1move__order__menu__item_a13871a93479f41ee9045613a1587482f_cgraph.svg" width="418" height="152"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -199,9 +208,9 @@ template&lt;typename presenter_t = class t_move_menu_item_presenter&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="move__order__menu__item_8hpp_source.html">move_order_menu_item.hpp</a> の <a class="el" href="move__order__menu__item_8hpp_source.html#l00074">74</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="move__order__menu__item_8hpp_source.html">move_order_menu_item.hpp</a> の <a class="el" href="move__order__menu__item_8hpp_source.html#l00085">85</a> 行目に定義があります。</p>
 
-<p class="reference">参照元 <a class="el" href="move__order__menu__item_8hpp_source.html#l00026">move_order_menu_item()</a>.</p>
+<p class="reference">参照元 <a class="el" href="move__order__menu__item_8hpp_source.html#l00019">move_order_menu_item()</a>, <a class="el" href="move__order__menu__item_8hpp_source.html#l00027">operator()()</a>.</p>
 
 </div>
 </div>
@@ -219,9 +228,9 @@ template&lt;typename presenter_t = class t_move_menu_item_presenter&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="move__order__menu__item_8hpp_source.html">move_order_menu_item.hpp</a> の <a class="el" href="move__order__menu__item_8hpp_source.html#l00073">73</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="move__order__menu__item_8hpp_source.html">move_order_menu_item.hpp</a> の <a class="el" href="move__order__menu__item_8hpp_source.html#l00084">84</a> 行目に定義があります。</p>
 
-<p class="reference">参照元 <a class="el" href="move__order__menu__item_8hpp_source.html#l00026">move_order_menu_item()</a>, <a class="el" href="move__order__menu__item_8hpp_source.html#l00034">operator()()</a>.</p>
+<p class="reference">参照元 <a class="el" href="move__order__menu__item_8hpp_source.html#l00019">move_order_menu_item()</a>, <a class="el" href="move__order__menu__item_8hpp_source.html#l00027">operator()()</a>.</p>
 
 </div>
 </div>

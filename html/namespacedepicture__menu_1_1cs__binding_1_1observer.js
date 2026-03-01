@@ -13,7 +13,6 @@ var namespacedepicture__menu_1_1cs__binding_1_1observer =
     [ "changed_notify_observer", "structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__notify__observer.html", "structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__notify__observer" ],
     [ "view_model_lock", "structdepicture__menu_1_1cs__binding_1_1observer_1_1view__model__lock.html", "structdepicture__menu_1_1cs__binding_1_1observer_1_1view__model__lock" ],
     [ "observers_connection", "classdepicture__menu_1_1cs__binding_1_1observer_1_1observers__connection.html", "classdepicture__menu_1_1cs__binding_1_1observer_1_1observers__connection" ],
-    [ "connection_lock", "structdepicture__menu_1_1cs__binding_1_1observer_1_1connection__lock.html", "structdepicture__menu_1_1cs__binding_1_1observer_1_1connection__lock" ],
     [ "has_regist_changed_notify", "conceptdepicture__menu_1_1cs__binding_1_1observer_1_1has__regist__changed__notify.html", null ],
     [ "changed_notify_subscribe", "conceptdepicture__menu_1_1cs__binding_1_1observer_1_1changed__notify__subscribe.html", null ],
     [ "subscribe_generator", "conceptdepicture__menu_1_1cs__binding_1_1observer_1_1subscribe__generator.html", null ],
@@ -22,7 +21,6 @@ var namespacedepicture__menu_1_1cs__binding_1_1observer =
     [ "connection_manager", "conceptdepicture__menu_1_1cs__binding_1_1observer_1_1connection__manager.html", null ],
     [ "config_view_subscribe", "conceptdepicture__menu_1_1cs__binding_1_1observer_1_1config__view__subscribe.html", null ],
     [ "cfg_observer", "namespacedepicture__menu_1_1cs__binding_1_1observer.html#aed936affa4867c85859dbe165949a3f2", null ],
-    [ "config_observer_t", "namespacedepicture__menu_1_1cs__binding_1_1observer.html#a30b7e7e18a6f3ae1f135965c45849149", null ],
     [ "config_view_topic_data_type_t", "namespacedepicture__menu_1_1cs__binding_1_1observer.html#aa2e6d3bc29da116433057ba199bb0b49", null ],
     [ "valid_topic", "namespacedepicture__menu_1_1cs__binding_1_1observer.html#a3c60a04853a5a8a5d3a10e24e46a1e4b", null ],
     [ "collection_changed_kind", "namespacedepicture__menu_1_1cs__binding_1_1observer.html#a79cdb028c057b8d92655a898c11ecff1", [
