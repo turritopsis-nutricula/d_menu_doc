@@ -1,7 +1,7 @@
 var structdepicture__menu_1_1cs__binding_1_1list__wrapper =
 [
     [ "changed_notify_t", "structdepicture__menu_1_1cs__binding_1_1list__wrapper.html#a6a1d9921738da71b83391c26e10788fc", null ],
-    [ "collection_changed_notify_t", "structdepicture__menu_1_1cs__binding_1_1list__wrapper.html#a8a0e43cc4b59d6d23e67ba9e30832b88", null ],
+    [ "collection_changed_notify_t", "structdepicture__menu_1_1cs__binding_1_1list__wrapper.html#ae27a155a12e3f9234dbf4b2faf1767b9", null ],
     [ "element_t", "structdepicture__menu_1_1cs__binding_1_1list__wrapper.html#aca0e48bdb02e4ef66b2ca463f9894285", null ],
     [ "impl_ptr_t", "structdepicture__menu_1_1cs__binding_1_1list__wrapper.html#a72fb4e640da147ef8fca1db3e2ba6628", null ],
     [ "impl_t", "structdepicture__menu_1_1cs__binding_1_1list__wrapper.html#a26ad5688c931d0f97a5f27bcca4eb17f", null ],

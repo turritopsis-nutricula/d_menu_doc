@@ -108,32 +108,30 @@ $(function(){initNavTree('cpp_2enum__def_2enum_8hpp_source.html','',''); });
 <div class="foldopen" id="foldopen00011" data-start="" data-end="">
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="cpp_2enum__def_2enum_8hpp.html#affb9d316d10acb9d9eb2003669e30a2e">   11</a></span><span class="preprocessor">#define DPM_DETAIL_ENUM_DEFINE_ENUM_DESCRIBE( NAME, ... )                      \</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">    BOOST_PP_IF(                                                               \</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">        DPM_CPP_DEPLOY_DEFINE_ONLY, BOOST_PP_TUPLE_EAT( ), BOOST_DESCRIBE_ENUM \</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">    )                                                                          \</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">    ( NAME, __VA_ARGS__ )</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">      DPM_CPP_DEPLOY_DEFINE_ONLY, BOOST_PP_TUPLE_EAT( ), BOOST_DESCRIBE_ENUM ) \</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">    ( NAME, __VA_ARGS__ )</span></div>
 </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// *DPM_DETAIL_ENUM_DEFINE_NO_BOOST_DESCRIBE</span></div>
-<div class="foldopen" id="foldopen00019" data-start="" data-end="">
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="cpp_2enum__def_2enum_8hpp.html#a72fc17a5c37b26d68b76809e5b018aeb">   19</a></span><span class="preprocessor">#define DPM_DETAIL_ENUM_DEFINE_NO_BOOST_DESCRIBE( NAME, ... )                  \</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">    BOOST_PP_IF(                                                               \</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">        DPM_CPP_DEPLOY_DEFINE_ONLY,                                            \</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">        BOOST_PP_TUPLE_EAT( ),                                                 \</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">        DPM_DETAIL_ENUM_DEFINE_ENUM_IMPL                                       \</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">    )                                                                          \</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">    ( NAME, __VA_ARGS__ )</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// *DPM_DETAIL_ENUM_DEFINE_NO_BOOST_DESCRIBE</span></div>
+<div class="foldopen" id="foldopen00018" data-start="" data-end="">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="cpp_2enum__def_2enum_8hpp.html#a72fc17a5c37b26d68b76809e5b018aeb">   18</a></span><span class="preprocessor">#define DPM_DETAIL_ENUM_DEFINE_NO_BOOST_DESCRIBE( NAME, ... )                  \</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">    BOOST_PP_IF(                                                               \</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">      DPM_CPP_DEPLOY_DEFINE_ONLY,                                              \</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">      BOOST_PP_TUPLE_EAT( ),                                                   \</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">      DPM_DETAIL_ENUM_DEFINE_ENUM_IMPL )                                       \</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">    ( NAME, __VA_ARGS__ )</span></div>
 </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">// *DPM_DETAIL_ENUM_DEFINE</span></div>
-<div class="foldopen" id="foldopen00029" data-start="" data-end="">
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="cpp_2enum__def_2enum_8hpp.html#a87015774541f690635fb2e3c06ec79b7">   29</a></span><span class="preprocessor">#define DPM_DETAIL_ENUM_DEFINE( NAME, ... )                                    \</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">    DPM_DETAIL_ENUM_DEFINE_NO_BOOST_DESCRIBE( NAME, __VA_ARGS__ )              \</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">    DPM_DETAIL_ENUM_DEFINE_ENUM_DESCRIBE( NAME, __VA_ARGS__ )</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// *DPM_DETAIL_ENUM_DEFINE</span></div>
+<div class="foldopen" id="foldopen00027" data-start="" data-end="">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="cpp_2enum__def_2enum_8hpp.html#a87015774541f690635fb2e3c06ec79b7">   27</a></span><span class="preprocessor">#define DPM_DETAIL_ENUM_DEFINE( NAME, ... )                                    \</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">    DPM_DETAIL_ENUM_DEFINE_NO_BOOST_DESCRIBE( NAME, __VA_ARGS__ )              \</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">    DPM_DETAIL_ENUM_DEFINE_ENUM_DESCRIBE( NAME, __VA_ARGS__ )</span></div>
 </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_CORE_CS_BINDING_MACRO_DETAIL_CPP_ENUM_DEF_ENUM_HPP_</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_CORE_CS_BINDING_MACRO_DETAIL_CPP_ENUM_DEF_ENUM_HPP_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

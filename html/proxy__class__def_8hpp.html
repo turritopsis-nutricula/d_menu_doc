@@ -125,8 +125,8 @@ proxy_class_def.hpp の依存先関係図:</div>
 <tr class="memitem:a0e824bb660ec98ca26089a67cdd6661a" id="r_a0e824bb660ec98ca26089a67cdd6661a"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a0e824bb660ec98ca26089a67cdd6661a">DPM_CPP_GM_PROXY_OP_DPM_METHOD_KIND_COMPARE_METHOD</a>(SEQ, ...)</td></tr>
 <tr class="memitem:a5bd1bfd62d40a9b8bfec49ec20c0e683" id="r_a5bd1bfd62d40a9b8bfec49ec20c0e683"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a5bd1bfd62d40a9b8bfec49ec20c0e683">DPM_CPP_GM_PROXY_OP_DPM_METHOD_KIND_COPY_METHOD</a>(SEQ, ...)</td></tr>
 <tr class="memitem:a928728f11dac285d8b405d874378fb8b" id="r_a928728f11dac285d8b405d874378fb8b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a928728f11dac285d8b405d874378fb8b">DPM_CPP_GM_PROXY_OP_DPM_METHOD_KIND_OBSERVABLE_VALUE_DEFINE</a>(SEQ, ...)</td></tr>
-<tr class="memitem:a4203671a54be325756da1890b7e3fb58" id="r_a4203671a54be325756da1890b7e3fb58"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a4203671a54be325756da1890b7e3fb58">DPM_CPP_GM_PROXY_OP_DPM_METHOD_KIND_OBSERVABLE_AGGREGATE_DEFINE</a>(SEQ, ...)</td></tr>
-<tr class="memitem:a03f9839f2e0f0cee6d7ad9f14ffb2957" id="r_a03f9839f2e0f0cee6d7ad9f14ffb2957"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a03f9839f2e0f0cee6d7ad9f14ffb2957">DPM_CPP_GM_PROXY_OP_DPM_METHOD_KIND_OBSERVABLE_COLLECTION_DEFINE</a>(SEQ, ...)</td></tr>
+<tr class="memitem:aa4a69dc546ceed63e8b2c32472cc9236" id="r_aa4a69dc546ceed63e8b2c32472cc9236"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aa4a69dc546ceed63e8b2c32472cc9236">DPM_CPP_GM_PROXY_OP_DPM_METHOD_KIND_OBSERVABLE_AGGREGATE_DEFINE</a>( SEQ, ...)</td></tr>
+<tr class="memitem:ace2c5192e28a57268f962d8e6a6e6826" id="r_ace2c5192e28a57268f962d8e6a6e6826"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ace2c5192e28a57268f962d8e6a6e6826">DPM_CPP_GM_PROXY_OP_DPM_METHOD_KIND_OBSERVABLE_COLLECTION_DEFINE</a>( SEQ, ...)</td></tr>
 <tr class="memitem:a4dafbe50be8bcbe7b4cc186807bd7d01" id="r_a4dafbe50be8bcbe7b4cc186807bd7d01"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a4dafbe50be8bcbe7b4cc186807bd7d01">DPM_CPP_GLUE_KIND_PROXY_SWAP_INSTANCE</a>(KIND)</td></tr>
 <tr class="memitem:a599670a386a5569f73dfdfe42a651fb0" id="r_a599670a386a5569f73dfdfe42a651fb0"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a599670a386a5569f73dfdfe42a651fb0">DPM_CPP_GM_PROXY_SWAP_INSTANCE_OP_DPM_METHOD_KIND_GLUE_METHOD</a>( SEQ, ...)</td></tr>
 <tr class="memitem:abfd5cbcb6ebe922b6a0dd773e2f32ace" id="r_abfd5cbcb6ebe922b6a0dd773e2f32ace"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#abfd5cbcb6ebe922b6a0dd773e2f32ace">DPM_CPP_GM_PROXY_SWAP_INSTANCE_OP_DPM_METHOD_KIND_CPP_TEST_METHOD</a>( SEQ, ...)</td></tr>
@@ -165,8 +165,7 @@ proxy_class_def.hpp の依存先関係図:</div>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">BOOST_PP_IF( COUNT, BOOST_PP_SEQ_ENUM, <a class="code hl_define" href="glue__methods_8hpp.html#ade4245aca1511cfd0a4a3210ae1d4d01">DPM_EMPTY</a> )                         \</div>
 <div class="line">( BOOST_PP_SEQ_FOR_EACH_I(                                                 \</div>
-<div class="line">    <a class="code hl_define" href="#a914a4a7eea35380d2ba11613648e2adb">DPM_CPP_ARGUMENTS_ENUM_GENERATER_OP</a>, , PARAM_TUP                       \</div>
-<div class="line">) )</div>
+<div class="line">  <a class="code hl_define" href="#a914a4a7eea35380d2ba11613648e2adb">DPM_CPP_ARGUMENTS_ENUM_GENERATER_OP</a>, , PARAM_TUP ) )</div>
 <div class="ttc" id="aglue__methods_8hpp_html_ade4245aca1511cfd0a4a3210ae1d4d01"><div class="ttname"><a href="glue__methods_8hpp.html#ade4245aca1511cfd0a4a3210ae1d4d01">DPM_EMPTY</a></div><div class="ttdeci">#define DPM_EMPTY(...)</div><div class="ttdef"><b>Definition</b> <a href="glue__methods_8hpp_source.html#l00018">glue_methods.hpp:18</a></div></div>
 <div class="ttc" id="aproxy__class__def_8hpp_html_a914a4a7eea35380d2ba11613648e2adb"><div class="ttname"><a href="#a914a4a7eea35380d2ba11613648e2adb">DPM_CPP_ARGUMENTS_ENUM_GENERATER_OP</a></div><div class="ttdeci">#define DPM_CPP_ARGUMENTS_ENUM_GENERATER_OP(_, data_, index_, elem_)</div><div class="ttdef"><b>Definition</b> <a href="proxy__class__def_8hpp_source.html#l00015">proxy_class_def.hpp:15</a></div></div>
 </div><!-- fragment -->
@@ -224,7 +223,7 @@ proxy_class_def.hpp の依存先関係図:</div>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">BOOST_PP_CAT( DPM_CPP_GM_PROXY_SWAP_INSTANCE_OP_, KIND )</div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00095">95</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00093">93</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -244,7 +243,7 @@ proxy_class_def.hpp の依存先関係図:</div>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">BOOST_PP_CAT( DPM_CPP_GM_PROXY_OP_, KIND )</div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00061">61</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00057">57</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -267,7 +266,7 @@ proxy_class_def.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00078">78</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00074">74</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -290,7 +289,7 @@ proxy_class_def.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00081">81</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00077">77</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -313,7 +312,7 @@ proxy_class_def.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00069">69</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00065">65</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -336,14 +335,14 @@ proxy_class_def.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a1033b7b547d1bad94d06fbb05a0e3d2c">DPM_DETAIL_CPP_PROXY_METHOD</a>( _, _, SEQ )</div>
-<div class="ttc" id="aproxy__class__def_8hpp_html_a1033b7b547d1bad94d06fbb05a0e3d2c"><div class="ttname"><a href="#a1033b7b547d1bad94d06fbb05a0e3d2c">DPM_DETAIL_CPP_PROXY_METHOD</a></div><div class="ttdeci">#define DPM_DETAIL_CPP_PROXY_METHOD(R, DATA, ME_SEQ)</div><div class="ttdef"><b>Definition</b> <a href="proxy__class__def_8hpp_source.html#l00040">proxy_class_def.hpp:40</a></div></div>
+<div class="ttc" id="aproxy__class__def_8hpp_html_a1033b7b547d1bad94d06fbb05a0e3d2c"><div class="ttname"><a href="#a1033b7b547d1bad94d06fbb05a0e3d2c">DPM_DETAIL_CPP_PROXY_METHOD</a></div><div class="ttdeci">#define DPM_DETAIL_CPP_PROXY_METHOD(R, DATA, ME_SEQ)</div><div class="ttdef"><b>Definition</b> <a href="proxy__class__def_8hpp_source.html#l00038">proxy_class_def.hpp:38</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00065">65</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00061">61</a> 行目に定義があります。</p>
 
 </div>
 </div>
-<a id="a4203671a54be325756da1890b7e3fb58" name="a4203671a54be325756da1890b7e3fb58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4203671a54be325756da1890b7e3fb58">&#9670;&#160;</a></span>DPM_CPP_GM_PROXY_OP_DPM_METHOD_KIND_OBSERVABLE_AGGREGATE_DEFINE</h2>
+<a id="aa4a69dc546ceed63e8b2c32472cc9236" name="aa4a69dc546ceed63e8b2c32472cc9236"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4a69dc546ceed63e8b2c32472cc9236">&#9670;&#160;</a></span>DPM_CPP_GM_PROXY_OP_DPM_METHOD_KIND_OBSERVABLE_AGGREGATE_DEFINE</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -361,12 +360,12 @@ proxy_class_def.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00087">87</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00083">83</a> 行目に定義があります。</p>
 
 </div>
 </div>
-<a id="a03f9839f2e0f0cee6d7ad9f14ffb2957" name="a03f9839f2e0f0cee6d7ad9f14ffb2957"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03f9839f2e0f0cee6d7ad9f14ffb2957">&#9670;&#160;</a></span>DPM_CPP_GM_PROXY_OP_DPM_METHOD_KIND_OBSERVABLE_COLLECTION_DEFINE</h2>
+<a id="ace2c5192e28a57268f962d8e6a6e6826" name="ace2c5192e28a57268f962d8e6a6e6826"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace2c5192e28a57268f962d8e6a6e6826">&#9670;&#160;</a></span>DPM_CPP_GM_PROXY_OP_DPM_METHOD_KIND_OBSERVABLE_COLLECTION_DEFINE</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -384,7 +383,7 @@ proxy_class_def.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00090">90</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00087">87</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -407,7 +406,7 @@ proxy_class_def.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00084">84</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00080">80</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -430,7 +429,7 @@ proxy_class_def.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00075">75</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00071">71</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -453,7 +452,7 @@ proxy_class_def.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00072">72</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00068">68</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -476,7 +475,7 @@ proxy_class_def.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00118">118</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00111">111</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -499,7 +498,7 @@ proxy_class_def.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00122">122</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00114">114</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -522,7 +521,7 @@ proxy_class_def.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00103">103</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00100">100</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -545,7 +544,7 @@ proxy_class_def.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00099">99</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00097">97</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -568,7 +567,7 @@ proxy_class_def.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00130">130</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00122">122</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -591,7 +590,7 @@ proxy_class_def.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00133">133</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00126">126</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -614,7 +613,7 @@ proxy_class_def.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00127">127</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00118">118</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -637,12 +636,11 @@ proxy_class_def.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#aeb4ef5ef181c3e9df6bc78e6325ac9cb">DPM_DETAIL_CPP_PROXY_CLASS_CALL_SWAP_METHOD</a>(                               \</div>
-<div class="line">    inst_, *old_inst, <a class="code hl_define" href="glue__code__sequence__data_8hpp.html#a15738fdd242b5b3807d4d8713b859824">DPM_GLUE_METHOD_NAME</a>( SEQ )                          \</div>
-<div class="line">)</div>
+<div class="line">  inst_, *old_inst, <a class="code hl_define" href="glue__code__sequence__data_8hpp.html#a15738fdd242b5b3807d4d8713b859824">DPM_GLUE_METHOD_NAME</a>( SEQ ) )</div>
 <div class="ttc" id="aglue__code__sequence__data_8hpp_html_a15738fdd242b5b3807d4d8713b859824"><div class="ttname"><a href="glue__code__sequence__data_8hpp.html#a15738fdd242b5b3807d4d8713b859824">DPM_GLUE_METHOD_NAME</a></div><div class="ttdeci">#define DPM_GLUE_METHOD_NAME(SEQ)</div><div class="ttdef"><b>Definition</b> <a href="glue__code__sequence__data_8hpp_source.html#l00047">glue_code_sequence_data.hpp:47</a></div></div>
-<div class="ttc" id="aproxy__class__def_8hpp_html_aeb4ef5ef181c3e9df6bc78e6325ac9cb"><div class="ttname"><a href="#aeb4ef5ef181c3e9df6bc78e6325ac9cb">DPM_DETAIL_CPP_PROXY_CLASS_CALL_SWAP_METHOD</a></div><div class="ttdeci">#define DPM_DETAIL_CPP_PROXY_CLASS_CALL_SWAP_METHOD( NEW_INSTANCE_PTR_NAME, OLD_INSTANCE_VALUE_NAME, METHOD_NAME)</div><div class="ttdef"><b>Definition</b> <a href="proxy__class__def_8hpp_source.html#l00051">proxy_class_def.hpp:51</a></div></div>
+<div class="ttc" id="aproxy__class__def_8hpp_html_aeb4ef5ef181c3e9df6bc78e6325ac9cb"><div class="ttname"><a href="#aeb4ef5ef181c3e9df6bc78e6325ac9cb">DPM_DETAIL_CPP_PROXY_CLASS_CALL_SWAP_METHOD</a></div><div class="ttdeci">#define DPM_DETAIL_CPP_PROXY_CLASS_CALL_SWAP_METHOD( NEW_INSTANCE_PTR_NAME, OLD_INSTANCE_VALUE_NAME, METHOD_NAME)</div><div class="ttdef"><b>Definition</b> <a href="proxy__class__def_8hpp_source.html#l00048">proxy_class_def.hpp:48</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00111">111</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00106">106</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -665,7 +663,7 @@ proxy_class_def.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00107">107</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00103">103</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -693,9 +691,9 @@ proxy_class_def.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">NEW_INSTANCE_PTR_NAME-&gt;METHOD_NAME BOOST_PP_LPAREN( )                      \</div>
-<div class="line">    OLD_INSTANCE_VALUE_NAME        BOOST_PP_RPAREN( );</div>
+<div class="line">  OLD_INSTANCE_VALUE_NAME          BOOST_PP_RPAREN( );</div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00051">51</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00048">48</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -728,19 +726,18 @@ proxy_class_def.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">BOOST_PP_IF(                                                               \</div>
-<div class="line">    <a class="code hl_define" href="csharp__shared__load_8hpp.html#a65498c767651c1396a0e3d0a913d603c">DPM_CPP_DEPLOY_DEFINE_ONLY</a>,                                            \</div>
-<div class="line">    BOOST_PP_TUPLE_EAT( ),                                                 \</div>
-<div class="line">    <a class="code hl_define" href="#a77716a82a26b7417e6afbecc87df0837">DPM_DETAIL_CPP_PROXY_CLASS_DEF_BASE</a>                                    \</div>
-<div class="line">)                                                                          \</div>
+<div class="line">  <a class="code hl_define" href="csharp__shared__load_8hpp.html#a65498c767651c1396a0e3d0a913d603c">DPM_CPP_DEPLOY_DEFINE_ONLY</a>,                                              \</div>
+<div class="line">  BOOST_PP_TUPLE_EAT( ),                                                   \</div>
+<div class="line">  <a class="code hl_define" href="#a77716a82a26b7417e6afbecc87df0837">DPM_DETAIL_CPP_PROXY_CLASS_DEF_BASE</a> )                                    \</div>
 <div class="line">( ORIG_CLASS,                                                              \</div>
 <div class="line">  EXTEND_SEQ,                                                              \</div>
 <div class="line">  DPM_ENTRY_EXPAND_GLUE_METHOD_SEQ( BYPASS_EN_SEQS ),                      \</div>
 <div class="line">  EN_SEQ,                                                                  \</div>
 <div class="line">  BYPASS_EN_SEQS EN_SEQ )</div>
 <div class="ttc" id="acsharp__shared__load_8hpp_html_a65498c767651c1396a0e3d0a913d603c"><div class="ttname"><a href="csharp__shared__load_8hpp.html#a65498c767651c1396a0e3d0a913d603c">DPM_CPP_DEPLOY_DEFINE_ONLY</a></div><div class="ttdeci">#define DPM_CPP_DEPLOY_DEFINE_ONLY</div><div class="ttdef"><b>Definition</b> <a href="csharp__shared__load_8hpp_source.html#l00044">csharp_shared_load.hpp:44</a></div></div>
-<div class="ttc" id="aproxy__class__def_8hpp_html_a77716a82a26b7417e6afbecc87df0837"><div class="ttname"><a href="#a77716a82a26b7417e6afbecc87df0837">DPM_DETAIL_CPP_PROXY_CLASS_DEF_BASE</a></div><div class="ttdeci">#define DPM_DETAIL_CPP_PROXY_CLASS_DEF_BASE( ORIG_CLASS, EXTEND_SEQ, BYPASS_GM_SEQS, EN_SEQ, ALL_EN_SEQS)</div><div class="ttdef"><b>Definition</b> <a href="proxy__class__def_8hpp_source.html#l00163">proxy_class_def.hpp:163</a></div></div>
+<div class="ttc" id="aproxy__class__def_8hpp_html_a77716a82a26b7417e6afbecc87df0837"><div class="ttname"><a href="#a77716a82a26b7417e6afbecc87df0837">DPM_DETAIL_CPP_PROXY_CLASS_DEF_BASE</a></div><div class="ttdeci">#define DPM_DETAIL_CPP_PROXY_CLASS_DEF_BASE( ORIG_CLASS, EXTEND_SEQ, BYPASS_GM_SEQS, EN_SEQ, ALL_EN_SEQS)</div><div class="ttdef"><b>Definition</b> <a href="proxy__class__def_8hpp_source.html#l00155">proxy_class_def.hpp:155</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00207">207</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00196">196</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -778,7 +775,7 @@ proxy_class_def.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00163">163</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00155">155</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -801,9 +798,9 @@ proxy_class_def.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">BOOST_PP_SEQ_FOR_EACH( <a class="code hl_define" href="#ad7a3a7f38f71ad06ffe3c899269f2b8f">DPM_DETAIL_CPP_PROXY_CLASS_METHOS_OP</a>, _, GM_SEQS )</div>
-<div class="ttc" id="aproxy__class__def_8hpp_html_ad7a3a7f38f71ad06ffe3c899269f2b8f"><div class="ttname"><a href="#ad7a3a7f38f71ad06ffe3c899269f2b8f">DPM_DETAIL_CPP_PROXY_CLASS_METHOS_OP</a></div><div class="ttdeci">#define DPM_DETAIL_CPP_PROXY_CLASS_METHOS_OP(_, DATA, ME_SEQ)</div><div class="ttdef"><b>Definition</b> <a href="proxy__class__def_8hpp_source.html#l00137">proxy_class_def.hpp:137</a></div></div>
+<div class="ttc" id="aproxy__class__def_8hpp_html_ad7a3a7f38f71ad06ffe3c899269f2b8f"><div class="ttname"><a href="#ad7a3a7f38f71ad06ffe3c899269f2b8f">DPM_DETAIL_CPP_PROXY_CLASS_METHOS_OP</a></div><div class="ttdeci">#define DPM_DETAIL_CPP_PROXY_CLASS_METHOS_OP(_, DATA, ME_SEQ)</div><div class="ttdef"><b>Definition</b> <a href="proxy__class__def_8hpp_source.html#l00131">proxy_class_def.hpp:131</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00139">139</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00133">133</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -832,9 +829,9 @@ proxy_class_def.hpp の依存先関係図:</div>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="glue__code__sequence__data_8hpp.html#a3bbf4fb370620d9a64f162d039bef941">DPM_GLUE_METHOD_KIND_EXPAND</a>( <a class="code hl_define" href="#a58aaf724350c9297b56e65497524274b">DPM_CPP_GLUE_KIND_PROXY_TRANSFORM</a>, ME_SEQ )</div>
 <div class="ttc" id="aglue__code__sequence__data_8hpp_html_a3bbf4fb370620d9a64f162d039bef941"><div class="ttname"><a href="glue__code__sequence__data_8hpp.html#a3bbf4fb370620d9a64f162d039bef941">DPM_GLUE_METHOD_KIND_EXPAND</a></div><div class="ttdeci">#define DPM_GLUE_METHOD_KIND_EXPAND(KIND_OP, SEQ)</div><div class="ttdef"><b>Definition</b> <a href="glue__code__sequence__data_8hpp_source.html#l00070">glue_code_sequence_data.hpp:70</a></div></div>
-<div class="ttc" id="aproxy__class__def_8hpp_html_a58aaf724350c9297b56e65497524274b"><div class="ttname"><a href="#a58aaf724350c9297b56e65497524274b">DPM_CPP_GLUE_KIND_PROXY_TRANSFORM</a></div><div class="ttdeci">#define DPM_CPP_GLUE_KIND_PROXY_TRANSFORM(KIND)</div><div class="ttdef"><b>Definition</b> <a href="proxy__class__def_8hpp_source.html#l00061">proxy_class_def.hpp:61</a></div></div>
+<div class="ttc" id="aproxy__class__def_8hpp_html_a58aaf724350c9297b56e65497524274b"><div class="ttname"><a href="#a58aaf724350c9297b56e65497524274b">DPM_CPP_GLUE_KIND_PROXY_TRANSFORM</a></div><div class="ttdeci">#define DPM_CPP_GLUE_KIND_PROXY_TRANSFORM(KIND)</div><div class="ttdef"><b>Definition</b> <a href="proxy__class__def_8hpp_source.html#l00057">proxy_class_def.hpp:57</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00137">137</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00131">131</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -876,13 +873,13 @@ proxy_class_def.hpp の依存先関係図:</div>
 <div class="line">( <a class="code hl_define" href="glue__methods_8hpp.html#a340c5fc4c70d03a7db4773189a3ad563">DPM_PARAMETER_ENUM_GENERATER</a>( COUNT, ARG_TUPPLE ) )                      \</div>
 <div class="line">{                                                                          \</div>
 <div class="line">    <span class="keywordflow">return</span> inst_-&gt;DPM_GLUE_METHOD_NAME( ME_SEQ ) BOOST_PP_LPAREN( )        \</div>
-<div class="line">        DPM_CPP_ARGUMENTS_ENUM_GENERATER( COUNT, ARG_TUPPLE )              \</div>
-<div class="line">            BOOST_PP_RPAREN( );                                            \</div>
+<div class="line">      DPM_CPP_ARGUMENTS_ENUM_GENERATER( COUNT, ARG_TUPPLE )                \</div>
+<div class="line">        BOOST_PP_RPAREN( );                                                \</div>
 <div class="line">}</div>
 <div class="ttc" id="aglue__code__sequence__data_8hpp_html_aa51efc8531d295f68cb00ae8870e4d1f"><div class="ttname"><a href="glue__code__sequence__data_8hpp.html#aa51efc8531d295f68cb00ae8870e4d1f">DPM_GLUE_METHOD_CPP_RETURN</a></div><div class="ttdeci">#define DPM_GLUE_METHOD_CPP_RETURN(SEQ)</div><div class="ttdef"><b>Definition</b> <a href="glue__code__sequence__data_8hpp_source.html#l00049">glue_code_sequence_data.hpp:49</a></div></div>
 <div class="ttc" id="aglue__methods_8hpp_html_a340c5fc4c70d03a7db4773189a3ad563"><div class="ttname"><a href="glue__methods_8hpp.html#a340c5fc4c70d03a7db4773189a3ad563">DPM_PARAMETER_ENUM_GENERATER</a></div><div class="ttdeci">#define DPM_PARAMETER_ENUM_GENERATER(count, param_tup)</div><div class="ttdef"><b>Definition</b> <a href="glue__methods_8hpp_source.html#l00021">glue_methods.hpp:21</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00025">25</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00024">24</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -906,17 +903,15 @@ proxy_class_def.hpp の依存先関係図:</div>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line"><span class="keywordtype">void</span> swap_instance( std::shared_ptr&lt; SUBJECT_CLASS &gt; new_instance )        \</div>
 <div class="line">{                                                                          \</div>
-<div class="line">    <span class="keyword">auto</span> old_inst = <span class="keyword">this</span> -&gt; instance( );                                   \</div>
+<div class="line">    <span class="keyword">auto</span> old_inst = this-&gt;instance( );                                     \</div>
 <div class="line">    inst_         = new_instance;                                          \</div>
-<div class="line">    if ( !old_inst )                                                       \</div>
-<div class="line">        <span class="keywordflow">return</span>;                                                            \</div>
+<div class="line">    if ( !old_inst ) <span class="keywordflow">return</span>;                                               \</div>
 <div class="line">    BOOST_PP_SEQ_FOR_EACH(                                                 \</div>
-<div class="line">        <a class="code hl_define" href="#aa3d51912a72058cc945dc4fac6ac2465">DPM_DETAIL_CPP_PROXY_CLASS_SWAP_INSTANCE_OP</a>, _, GM_SEQS            \</div>
-<div class="line">    )                                                                      \</div>
+<div class="line">      <a class="code hl_define" href="#aa3d51912a72058cc945dc4fac6ac2465">DPM_DETAIL_CPP_PROXY_CLASS_SWAP_INSTANCE_OP</a>, _, GM_SEQS )            \</div>
 <div class="line">}</div>
-<div class="ttc" id="aproxy__class__def_8hpp_html_aa3d51912a72058cc945dc4fac6ac2465"><div class="ttname"><a href="#aa3d51912a72058cc945dc4fac6ac2465">DPM_DETAIL_CPP_PROXY_CLASS_SWAP_INSTANCE_OP</a></div><div class="ttdeci">#define DPM_DETAIL_CPP_PROXY_CLASS_SWAP_INSTANCE_OP(_, DATA, ME_SEQ)</div><div class="ttdef"><b>Definition</b> <a href="proxy__class__def_8hpp_source.html#l00145">proxy_class_def.hpp:145</a></div></div>
+<div class="ttc" id="aproxy__class__def_8hpp_html_aa3d51912a72058cc945dc4fac6ac2465"><div class="ttname"><a href="#aa3d51912a72058cc945dc4fac6ac2465">DPM_DETAIL_CPP_PROXY_CLASS_SWAP_INSTANCE_OP</a></div><div class="ttdeci">#define DPM_DETAIL_CPP_PROXY_CLASS_SWAP_INSTANCE_OP(_, DATA, ME_SEQ)</div><div class="ttdef"><b>Definition</b> <a href="proxy__class__def_8hpp_source.html#l00139">proxy_class_def.hpp:139</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00147">147</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00141">141</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -944,9 +939,9 @@ proxy_class_def.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="glue__code__sequence__data_8hpp.html#a3bbf4fb370620d9a64f162d039bef941">DPM_GLUE_METHOD_KIND_EXPAND</a>( <a class="code hl_define" href="#a4dafbe50be8bcbe7b4cc186807bd7d01">DPM_CPP_GLUE_KIND_PROXY_SWAP_INSTANCE</a>, ME_SEQ )</div>
-<div class="ttc" id="aproxy__class__def_8hpp_html_a4dafbe50be8bcbe7b4cc186807bd7d01"><div class="ttname"><a href="#a4dafbe50be8bcbe7b4cc186807bd7d01">DPM_CPP_GLUE_KIND_PROXY_SWAP_INSTANCE</a></div><div class="ttdeci">#define DPM_CPP_GLUE_KIND_PROXY_SWAP_INSTANCE(KIND)</div><div class="ttdef"><b>Definition</b> <a href="proxy__class__def_8hpp_source.html#l00095">proxy_class_def.hpp:95</a></div></div>
+<div class="ttc" id="aproxy__class__def_8hpp_html_a4dafbe50be8bcbe7b4cc186807bd7d01"><div class="ttname"><a href="#a4dafbe50be8bcbe7b4cc186807bd7d01">DPM_CPP_GLUE_KIND_PROXY_SWAP_INSTANCE</a></div><div class="ttdeci">#define DPM_CPP_GLUE_KIND_PROXY_SWAP_INSTANCE(KIND)</div><div class="ttdef"><b>Definition</b> <a href="proxy__class__def_8hpp_source.html#l00093">proxy_class_def.hpp:93</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00145">145</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00139">139</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -974,17 +969,16 @@ proxy_class_def.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a39d9fde44a6866e79d92db4a578ff062">DPM_DETAIL_CPP_PROXY_CLASS_PROXY_METHOD</a>(                                   \</div>
-<div class="line">    R,                                                                     \</div>
-<div class="line">    DATA,                                                                  \</div>
-<div class="line">    ME_SEQ,                                                                \</div>
-<div class="line">    <a class="code hl_define" href="glue__code__sequence__data_8hpp.html#ac2b54b7b2e41cdea345ce1ceb05cfa60">DPM_GLUE_METHOD_CPP_ARGS_COUNT</a>( ME_SEQ ),                              \</div>
-<div class="line">    BOOST_PP_TUPLE_TO_SEQ( <a class="code hl_define" href="glue__code__sequence__data_8hpp.html#a9fa97919f07f3b7269357d4aa2f9347e">DPM_GLUE_METHOD_CPP_ARGS</a>( ME_SEQ ) )            \</div>
-<div class="line">)</div>
+<div class="line">  R,                                                                       \</div>
+<div class="line">  DATA,                                                                    \</div>
+<div class="line">  ME_SEQ,                                                                  \</div>
+<div class="line">  <a class="code hl_define" href="glue__code__sequence__data_8hpp.html#ac2b54b7b2e41cdea345ce1ceb05cfa60">DPM_GLUE_METHOD_CPP_ARGS_COUNT</a>( ME_SEQ ),                                \</div>
+<div class="line">  BOOST_PP_TUPLE_TO_SEQ( <a class="code hl_define" href="glue__code__sequence__data_8hpp.html#a9fa97919f07f3b7269357d4aa2f9347e">DPM_GLUE_METHOD_CPP_ARGS</a>( ME_SEQ ) ) )</div>
 <div class="ttc" id="aglue__code__sequence__data_8hpp_html_a9fa97919f07f3b7269357d4aa2f9347e"><div class="ttname"><a href="glue__code__sequence__data_8hpp.html#a9fa97919f07f3b7269357d4aa2f9347e">DPM_GLUE_METHOD_CPP_ARGS</a></div><div class="ttdeci">#define DPM_GLUE_METHOD_CPP_ARGS(SEQ)</div><div class="ttdef"><b>Definition</b> <a href="glue__code__sequence__data_8hpp_source.html#l00051">glue_code_sequence_data.hpp:51</a></div></div>
-<div class="ttc" id="aglue__code__sequence__data_8hpp_html_ac2b54b7b2e41cdea345ce1ceb05cfa60"><div class="ttname"><a href="glue__code__sequence__data_8hpp.html#ac2b54b7b2e41cdea345ce1ceb05cfa60">DPM_GLUE_METHOD_CPP_ARGS_COUNT</a></div><div class="ttdeci">#define DPM_GLUE_METHOD_CPP_ARGS_COUNT(SEQ_)</div><div class="ttdef"><b>Definition</b> <a href="glue__code__sequence__data_8hpp_source.html#l00094">glue_code_sequence_data.hpp:94</a></div></div>
-<div class="ttc" id="aproxy__class__def_8hpp_html_a39d9fde44a6866e79d92db4a578ff062"><div class="ttname"><a href="#a39d9fde44a6866e79d92db4a578ff062">DPM_DETAIL_CPP_PROXY_CLASS_PROXY_METHOD</a></div><div class="ttdeci">#define DPM_DETAIL_CPP_PROXY_CLASS_PROXY_METHOD( R, DATA, ME_SEQ, COUNT, ARG_TUPPLE)</div><div class="ttdef"><b>Definition</b> <a href="proxy__class__def_8hpp_source.html#l00025">proxy_class_def.hpp:25</a></div></div>
+<div class="ttc" id="aglue__code__sequence__data_8hpp_html_ac2b54b7b2e41cdea345ce1ceb05cfa60"><div class="ttname"><a href="glue__code__sequence__data_8hpp.html#ac2b54b7b2e41cdea345ce1ceb05cfa60">DPM_GLUE_METHOD_CPP_ARGS_COUNT</a></div><div class="ttdeci">#define DPM_GLUE_METHOD_CPP_ARGS_COUNT(SEQ_)</div><div class="ttdef"><b>Definition</b> <a href="glue__code__sequence__data_8hpp_source.html#l00092">glue_code_sequence_data.hpp:92</a></div></div>
+<div class="ttc" id="aproxy__class__def_8hpp_html_a39d9fde44a6866e79d92db4a578ff062"><div class="ttname"><a href="#a39d9fde44a6866e79d92db4a578ff062">DPM_DETAIL_CPP_PROXY_CLASS_PROXY_METHOD</a></div><div class="ttdeci">#define DPM_DETAIL_CPP_PROXY_CLASS_PROXY_METHOD( R, DATA, ME_SEQ, COUNT, ARG_TUPPLE)</div><div class="ttdef"><b>Definition</b> <a href="proxy__class__def_8hpp_source.html#l00024">proxy_class_def.hpp:24</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00040">40</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="proxy__class__def_8hpp_source.html">proxy_class_def.hpp</a> の <a class="el" href="proxy__class__def_8hpp_source.html#l00038">38</a> 行目に定義があります。</p>
 
 </div>
 </div>

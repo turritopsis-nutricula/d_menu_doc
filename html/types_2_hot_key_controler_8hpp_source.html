@@ -95,10 +95,10 @@ $(function(){initNavTree('types_2_hot_key_controler_8hpp_source.html','',''); })
 <div class="contents">
 <a href="types_2_hot_key_controler_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="csharp__shared__load_8hpp.html">core/cs_binding/macro/csharp_shared_load.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#if 1</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#ifdef DPM_CPP_DEF</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;boost/uuid/random_generator.hpp&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;boost/uuid/uuid.hpp&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#   ifdef DPM_CPP_DEF</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#       include &lt;boost/uuid/random_generator.hpp&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#       include &lt;boost/uuid/uuid.hpp&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#   endif</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#undef DPM_CPP_DEPLOY_DECL_ONLY</span></div>
@@ -113,16 +113,15 @@ $(function(){initNavTree('types_2_hot_key_controler_8hpp_source.html','',''); })
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><a class="code hl_define" href="csharp__shared__load_8hpp.html#aca06a03ece86ca2205318479b86b3ffd">DPM_NOTIFY_CHANGED_BINDING_CLASS</a>(</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    HotKeyControler,</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_function" href="types_2_app_options_arg_8hpp.html#a06f889f108339257bdca65bee8167113">DPM_BINDING_PROPERTY_ENTRY</a>( ModifierArg, <span class="keywordtype">int</span>, <span class="keywordtype">int</span> ),</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_function" href="types_2_app_options_arg_8hpp.html#a06f889f108339257bdca65bee8167113">DPM_BINDING_PROPERTY_ENTRY</a>( KeyCodeArg, <span class="keywordtype">int</span>, <span class="keywordtype">int</span> ),</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    DPM_UUID_PROPERTY_ENTRY( TriggerIdArg ),</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    DPM_UUID_COMMAND_ENTRY( Invoke ),</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    DPM_EVENT_ENTRY( Regist ),</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    DPM_EVENT_ENTRY( Unregist )</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>)</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><a class="code hl_define" href="csharp__shared__load_8hpp.html#a128c026acfae089c2749b839832e7b70">DPM_NAMESPACE_END</a>( )</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><a class="code hl_define" href="csharp__shared__load_8hpp.html#aad317635a541d0a03e46f2157467e14c">DPM_FILE_FOOTER</a>( )</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  HotKeyControler,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <a class="code hl_function" href="types_2_app_options_arg_8hpp.html#a06f889f108339257bdca65bee8167113">DPM_BINDING_PROPERTY_ENTRY</a>( ModifierArg, <span class="keywordtype">int</span>, <span class="keywordtype">int</span> ),</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <a class="code hl_function" href="types_2_app_options_arg_8hpp.html#a06f889f108339257bdca65bee8167113">DPM_BINDING_PROPERTY_ENTRY</a>( KeyCodeArg, <span class="keywordtype">int</span>, <span class="keywordtype">int</span> ),</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  DPM_UUID_PROPERTY_ENTRY( TriggerIdArg ),</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  DPM_UUID_COMMAND_ENTRY( Invoke ),</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  DPM_EVENT_ENTRY( Regist ),</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  DPM_EVENT_ENTRY( Unregist ) )</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><a class="code hl_define" href="csharp__shared__load_8hpp.html#a128c026acfae089c2749b839832e7b70">DPM_NAMESPACE_END</a>( )</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><a class="code hl_define" href="csharp__shared__load_8hpp.html#aad317635a541d0a03e46f2157467e14c">DPM_FILE_FOOTER</a>( )</div>
 <div class="ttc" id="acsharp__shared__load_8hpp_html"><div class="ttname"><a href="csharp__shared__load_8hpp.html">csharp_shared_load.hpp</a></div></div>
 <div class="ttc" id="acsharp__shared__load_8hpp_html_a128c026acfae089c2749b839832e7b70"><div class="ttname"><a href="csharp__shared__load_8hpp.html#a128c026acfae089c2749b839832e7b70">DPM_NAMESPACE_END</a></div><div class="ttdeci">#define DPM_NAMESPACE_END()</div><div class="ttdef"><b>Definition</b> <a href="csharp__shared__load_8hpp_source.html#l00128">csharp_shared_load.hpp:128</a></div></div>
 <div class="ttc" id="acsharp__shared__load_8hpp_html_a42eb16ab612743bdc840f7df4b45f6ec"><div class="ttname"><a href="csharp__shared__load_8hpp.html#a42eb16ab612743bdc840f7df4b45f6ec">DPM_FILE_HEADER</a></div><div class="ttdeci">#define DPM_FILE_HEADER(key_word_)</div><div class="ttdoc">C# file</div><div class="ttdef"><b>Definition</b> <a href="csharp__shared__load_8hpp_source.html#l00123">csharp_shared_load.hpp:123</a></div></div>

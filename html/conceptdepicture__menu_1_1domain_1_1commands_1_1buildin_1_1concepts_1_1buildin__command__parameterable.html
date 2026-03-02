@@ -97,14 +97,15 @@ $(function(){initNavTree('conceptdepicture__menu_1_1domain_1_1commands_1_1buildi
 <p><code>#include &lt;<a class="el" href="shellexecute__command__parameter_8hpp_source.html">shellexecute_command_parameter.hpp</a>&gt;</code></p>
 <h2 id="header-conceptdef" class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
-<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1concepts_1_1buildin__command__parameterable.html">buildin_command_parameterable</a> = <span class="keyword">requires</span>( T t ) {</div>
-<div class="line">    { <a class="code hl_function" href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin.html#afc928fe71373e214fd130cc880076628">get_parameters</a>( t ) } -&gt; std::same_as&lt; commands::parameter_pack &gt;;</div>
-<div class="line">}</div>
-<div class="ttc" id="aconceptdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1concepts_1_1buildin__command__parameterable_html"><div class="ttname"><a href="conceptdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1concepts_1_1buildin__command__parameterable.html">depicture_menu::domain::commands::buildin::concepts::buildin_command_parameterable</a></div><div class="ttdef"><b>Definition</b> <a href="shellexecute__command__parameter_8hpp_source.html#l00021">shellexecute_command_parameter.hpp:21</a></div></div>
+<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1concepts_1_1buildin__command__parameterable.html">buildin_command_parameterable</a> =</div>
+<div class="line">  <span class="keyword">requires</span>( T t ) {</div>
+<div class="line">      { <a class="code hl_function" href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin.html#afc928fe71373e214fd130cc880076628">get_parameters</a>( t ) } -&gt; std::same_as&lt; commands::parameter_pack &gt;;</div>
+<div class="line">  }</div>
+<div class="ttc" id="aconceptdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1concepts_1_1buildin__command__parameterable_html"><div class="ttname"><a href="conceptdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1concepts_1_1buildin__command__parameterable.html">depicture_menu::domain::commands::buildin::concepts::buildin_command_parameterable</a></div><div class="ttdef"><b>Definition</b> <a href="shellexecute__command__parameter_8hpp_source.html#l00026">shellexecute_command_parameter.hpp:26</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1commands_1_1buildin_html_afc928fe71373e214fd130cc880076628"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin.html#afc928fe71373e214fd130cc880076628">depicture_menu::domain::commands::buildin::get_parameters</a></div><div class="ttdeci">void get_parameters(T const &amp;)</div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
 <div class="textblock">
-<p class="definition"> <a class="el" href="shellexecute__command__parameter_8hpp_source.html">shellexecute_command_parameter.hpp</a> の <a class="el" href="shellexecute__command__parameter_8hpp_source.html#l00021">21</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="shellexecute__command__parameter_8hpp_source.html">shellexecute_command_parameter.hpp</a> の <a class="el" href="shellexecute__command__parameter_8hpp_source.html#l00026">26</a> 行目に定義があります。</p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

@@ -184,25 +184,21 @@ TestConfigArg.cpp の依存先関係図:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;&gt;                                                                \</div>
+<b>値:</b><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;&gt;                                                                 \</div>
 <div class="line"><span class="keyword">struct </span>boost::test_tools::tt_detail::print_log_value&lt; E &gt;                  \</div>
 <div class="line">{                                                                          \</div>
-<div class="line">    void                                                                   \</div>
-<div class="line">    operator( )( std::ostream&amp; os, E <span class="keyword">const</span>&amp; value )                        \</div>
+<div class="line">    <span class="keywordtype">void</span> operator( )( std::ostream&amp; os, E <span class="keyword">const</span>&amp; value )                   \</div>
 <div class="line">    {                                                                      \</div>
 <div class="line">        boost::mp11::mp_for_each&lt; boost::describe::describe_enumerators&lt;   \</div>
-<div class="line">            std::remove_cvref_t&lt; <span class="keyword">decltype</span>( value ) &gt; &gt; &gt;(                  \</div>
-<div class="line">            [ &amp; ]( <span class="keyword">auto</span> D )                                                \</div>
-<div class="line">            {                                                              \</div>
-<div class="line">                if ( D.value == value )                                    \</div>
-<div class="line">                    os &lt;&lt; D.name &lt;&lt; <span class="stringliteral">&quot;(&quot;</span> &lt;&lt; <span class="keyword">static_cast&lt;</span> <span class="keywordtype">int</span> <span class="keyword">&gt;</span>( D.value )   \</div>
-<div class="line">                       &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;                                             \</div>
-<div class="line">            }                                                              \</div>
-<div class="line">        );                                                                 \</div>
+<div class="line">          std::remove_cvref_t&lt; <span class="keyword">decltype</span>( value ) &gt; &gt; &gt;( [ &amp; ]( <span class="keyword">auto</span> D ) {  \</div>
+<div class="line">            if ( D.value == value )                                        \</div>
+<div class="line">                os &lt;&lt; D.name &lt;&lt; <span class="stringliteral">&quot;(&quot;</span> &lt;&lt; <span class="keyword">static_cast&lt;</span> <span class="keywordtype">int</span> <span class="keyword">&gt;</span>( D.value )       \</div>
+<div class="line">                   &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;                                                 \</div>
+<div class="line">        } );                                                               \</div>
 <div class="line">    }                                                                      \</div>
 <div class="line">};</div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="_test_config_arg_8cpp_source.html">TestConfigArg.cpp</a> の <a class="el" href="_test_config_arg_8cpp_source.html#l00038">38</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_test_config_arg_8cpp_source.html">TestConfigArg.cpp</a> の <a class="el" href="_test_config_arg_8cpp_source.html#l00037">37</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -224,11 +220,11 @@ template&lt;typename T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_test_config_arg_8cpp_source.html">TestConfigArg.cpp</a> の <a class="el" href="_test_config_arg_8cpp_source.html#l00173">173</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_test_config_arg_8cpp_source.html">TestConfigArg.cpp</a> の <a class="el" href="_test_config_arg_8cpp_source.html#l00161">161</a> 行目に定義があります。</p>
 
-<p class="reference">参照先 <a class="el" href="list__wrapper_8hpp_source.html#l00360">depicture_menu::cs_binding::list_wrapper&lt; T &gt;::add()</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00608">depicture_menu::cs_binding::list_wrapper&lt; T &gt;::at_ptr()</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00619">depicture_menu::cs_binding::list_wrapper&lt; T &gt;::count()</a>.</p>
+<p class="reference">参照先 <a class="el" href="list__wrapper_8hpp_source.html#l00314">depicture_menu::cs_binding::list_wrapper&lt; T &gt;::add()</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00534">depicture_menu::cs_binding::list_wrapper&lt; T &gt;::at_ptr()</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00537">depicture_menu::cs_binding::list_wrapper&lt; T &gt;::count()</a>.</p>
 
-<p class="reference">参照元 <a class="el" href="_test_radial_menu_8cpp_source.html#l00058">BOOST_AUTO_TEST_CASE()</a>, <a class="el" href="_test_config_arg_8cpp_source.html#l00187">BOOST_AUTO_TEST_CASE()</a>.</p>
+<p class="reference">参照元 <a class="el" href="_test_radial_menu_8cpp_source.html#l00057">BOOST_AUTO_TEST_CASE()</a>, <a class="el" href="_test_config_arg_8cpp_source.html#l00181">BOOST_AUTO_TEST_CASE()</a>.</p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
@@ -257,7 +253,7 @@ template&lt;typename T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_test_config_arg_8cpp_source.html">TestConfigArg.cpp</a> の <a class="el" href="_test_config_arg_8cpp_source.html#l00147">147</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_test_config_arg_8cpp_source.html">TestConfigArg.cpp</a> の <a class="el" href="_test_config_arg_8cpp_source.html#l00135">135</a> 行目に定義があります。</p>
 
 <p class="reference">参照先 <a class="el" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST()</a>.</p>
 <div class="dynheader">
@@ -283,9 +279,9 @@ template&lt;typename T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_test_config_arg_8cpp_source.html">TestConfigArg.cpp</a> の <a class="el" href="_test_config_arg_8cpp_source.html#l00141">141</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_test_config_arg_8cpp_source.html">TestConfigArg.cpp</a> の <a class="el" href="_test_config_arg_8cpp_source.html#l00129">129</a> 行目に定義があります。</p>
 
-<p class="reference">参照先 <a class="el" href="_test_backup_json_8cpp_source.html#l00203">BOOST_AUTO_TEST_CASE()</a>.</p>
+<p class="reference">参照先 <a class="el" href="_test_backup_json_8cpp_source.html#l00200">BOOST_AUTO_TEST_CASE()</a>.</p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
@@ -311,9 +307,9 @@ template&lt;typename T&gt; </div>
 
 <p>observer_apply : TestCase </p>
 
-<p class="definition"> <a class="el" href="_test_config_arg_8cpp_source.html">TestConfigArg.cpp</a> の <a class="el" href="_test_config_arg_8cpp_source.html#l00187">187</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_test_config_arg_8cpp_source.html">TestConfigArg.cpp</a> の <a class="el" href="_test_config_arg_8cpp_source.html#l00181">181</a> 行目に定義があります。</p>
 
-<p class="reference">参照先 <a class="el" href="_test_config_arg_8cpp_source.html#l00173">add_item()</a>, <a class="el" href="prop__map_8hpp_source.html#l00198">depicture_menu::cs_binding::observer::prop_map::regist_observer()</a>.</p>
+<p class="reference">参照先 <a class="el" href="_test_config_arg_8cpp_source.html#l00161">add_item()</a>, <a class="el" href="prop__map_8hpp_source.html#l00219">depicture_menu::cs_binding::observer::prop_map::regist_observer()</a>.</p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
@@ -343,7 +339,7 @@ template&lt;typename Actual, typename Except&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_test_config_arg_8cpp_source.html">TestConfigArg.cpp</a> の <a class="el" href="_test_config_arg_8cpp_source.html#l00124">124</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_test_config_arg_8cpp_source.html">TestConfigArg.cpp</a> の <a class="el" href="_test_config_arg_8cpp_source.html#l00112">112</a> 行目に定義があります。</p>
 
 </div>
 </div>

@@ -11,5 +11,6 @@ var dir_57f1aaa3fa8f9297e7b1fd04f654d594 =
     [ "str_conv.cpp", "str__conv_8cpp.html", "str__conv_8cpp" ],
     [ "str_conv.hpp", "str__conv_8hpp.html", "str__conv_8hpp" ],
     [ "sync_ranges.hpp", "sync__ranges_8hpp.html", "sync__ranges_8hpp" ],
-    [ "type_traits.hpp", "type__traits_8hpp.html", "type__traits_8hpp" ]
+    [ "type_traits.hpp", "type__traits_8hpp.html", "type__traits_8hpp" ],
+    [ "visiter_base.hpp", "visiter__base_8hpp.html", "visiter__base_8hpp" ]
 ];

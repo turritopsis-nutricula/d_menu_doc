@@ -120,7 +120,7 @@ $(function(){initNavTree('_test_cs_binding_8cpp_source.html','',''); });
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="_test_cs_binding_8cpp.html#a9fda39ab17ae818398032f90b095097f">   25</a></span><a class="code hl_function" href="_test_cs_binding_8cpp.html#a61eb2a9459b9bb28aabe2573f6bb7f94">BOOST_TEST_DONT_PRINT_LOG_VALUE</a>( dc::TestOnTestList );</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="_test_cs_binding_8cpp.html#ae614e69676438e10ae4508e92907917f">   26</a></span><a class="code hl_function" href="_test_cs_binding_8cpp.html#a61eb2a9459b9bb28aabe2573f6bb7f94">BOOST_TEST_DONT_PRINT_LOG_VALUE</a>( dc::TestComposite );</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">auto</span></div>
 <div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="_test_cs_binding_8cpp.html#a88b90acde045054ccb91d21638e3fb3a">   30</a></span><a class="code hl_function" href="_test_cs_binding_8cpp.html#a88b90acde045054ccb91d21638e3fb3a">make_values</a>( )</div>
@@ -244,8 +244,8 @@ $(function(){initNavTree('_test_cs_binding_8cpp_source.html','',''); });
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keyword">auto</span> [ v0, v1 ] = <a class="code hl_function" href="_test_cs_binding_8cpp.html#a88b90acde045054ccb91d21638e3fb3a">make_values&lt; dc::TestList &gt;</a>( );</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="keyword">auto</span> c0 = v0-&gt;Items( ).add( dc::ChildStruct{ } );</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <span class="keyword">auto</span> c1 = v1-&gt;Items( ).add( dc::ChildStruct{ } );</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="keyword">auto</span> c0 = v0-&gt;Items( ).add( dc::ChildStruct { } );</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <span class="keyword">auto</span> c1 = v1-&gt;Items( ).add( dc::ChildStruct { } );</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    c0-&gt;set_Num( 10 );</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    c1-&gt;set_Num( 10 );</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
@@ -257,7 +257,7 @@ $(function(){initNavTree('_test_cs_binding_8cpp_source.html','',''); });
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    v1-&gt;Items( ).clear( );</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( *v0 == *v1 );</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    v1-&gt;Items( ).add( dc::ChildStruct{ } );</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    v1-&gt;Items( ).add( dc::ChildStruct { } );</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( *v0 != *v1 );</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>}</div>
 </div>
@@ -278,13 +278,13 @@ $(function(){initNavTree('_test_cs_binding_8cpp_source.html','',''); });
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>}</div>
 </div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>BOOST_AUTO_TEST_SUITE_END( )    <span class="comment">// TestCsBinding</span></div>
-<div class="ttc" id="a_test_backup_json_8cpp_html_ac60c25c7e7fe69dfd220f4fb5bc17c5d"><div class="ttname"><a href="_test_backup_json_8cpp.html#ac60c25c7e7fe69dfd220f4fb5bc17c5d">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(test_test_write_backup_json)</div><div class="ttdoc">test_write_backup_json : TestCase</div><div class="ttdef"><b>Definition</b> <a href="_test_backup_json_8cpp_source.html#l00203">TestBackupJson.cpp:203</a></div></div>
+<div class="ttc" id="a_test_backup_json_8cpp_html_ac60c25c7e7fe69dfd220f4fb5bc17c5d"><div class="ttname"><a href="_test_backup_json_8cpp.html#ac60c25c7e7fe69dfd220f4fb5bc17c5d">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(test_test_write_backup_json)</div><div class="ttdoc">test_write_backup_json : TestCase</div><div class="ttdef"><b>Definition</b> <a href="_test_backup_json_8cpp_source.html#l00200">TestBackupJson.cpp:200</a></div></div>
 <div class="ttc" id="a_test_config_view_presenter_8cpp_html_a7845eb0c68b997d6d329618f36f7e794"><div class="ttname"><a href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a></div><div class="ttdeci">BOOST_TEST(get_menu(config_arg, 0u) -&gt;get_MenuId()==m_id)</div></div>
 <div class="ttc" id="a_test_cs_binding_8cpp_html_a0246cb3f7b9bcb2bfed6bfd4959064b7"><div class="ttname"><a href="_test_cs_binding_8cpp.html#a0246cb3f7b9bcb2bfed6bfd4959064b7">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(compare_TestEnum)</div><div class="ttdef"><b>Definition</b> <a href="#l00039">TestCsBinding.cpp:39</a></div></div>
 <div class="ttc" id="a_test_cs_binding_8cpp_html_a61eb2a9459b9bb28aabe2573f6bb7f94"><div class="ttname"><a href="_test_cs_binding_8cpp.html#a61eb2a9459b9bb28aabe2573f6bb7f94">BOOST_TEST_DONT_PRINT_LOG_VALUE</a></div><div class="ttdeci">BOOST_TEST_DONT_PRINT_LOG_VALUE(dc::TestEnum)</div></div>
 <div class="ttc" id="a_test_cs_binding_8cpp_html_a88b90acde045054ccb91d21638e3fb3a"><div class="ttname"><a href="_test_cs_binding_8cpp.html#a88b90acde045054ccb91d21638e3fb3a">make_values</a></div><div class="ttdeci">auto make_values()</div><div class="ttdef"><b>Definition</b> <a href="#l00030">TestCsBinding.cpp:30</a></div></div>
 <div class="ttc" id="a_test_struct_8hpp_html"><div class="ttname"><a href="_test_struct_8hpp.html">TestStruct.hpp</a></div></div>
-<div class="ttc" id="amenu__change__operation_8cpp_html_ae692b9f25c84027b486e3f198b05369c"><div class="ttname"><a href="menu__change__operation_8cpp.html#ae692b9f25c84027b486e3f198b05369c">BOOST_AUTO_TEST_SUITE</a></div><div class="ttdeci">BOOST_AUTO_TEST_SUITE(item_propertes, *bt::depends_on(&quot;test_config_view_presenter/add_menu_item&quot;)) dd</div><div class="ttdef"><b>Definition</b> <a href="menu__change__operation_8cpp_source.html#l00216">menu_change_operation.cpp:216</a></div></div>
+<div class="ttc" id="amenu__change__operation_8cpp_html_ae692b9f25c84027b486e3f198b05369c"><div class="ttname"><a href="menu__change__operation_8cpp.html#ae692b9f25c84027b486e3f198b05369c">BOOST_AUTO_TEST_SUITE</a></div><div class="ttdeci">BOOST_AUTO_TEST_SUITE(item_propertes, *bt::depends_on(&quot;test_config_view_presenter/add_menu_item&quot;)) dd</div><div class="ttdef"><b>Definition</b> <a href="menu__change__operation_8cpp_source.html#l00208">menu_change_operation.cpp:208</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1cs__binding_html"><div class="ttname"><a href="namespacedepicture__menu_1_1cs__binding.html">depicture_menu::cs_binding</a></div><div class="ttdef"><b>Definition</b> <a href="core__interface_8hpp_source.html#l00042">core_interface.hpp:43</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

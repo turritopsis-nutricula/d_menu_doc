@@ -103,14 +103,14 @@ depicture_menu::domain::query_interface&lt; T &gt; の継承関係図</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
 公開型</h2></td></tr>
-<tr class="memitem:a4d6915900b7a434790e985a810848b1b" id="r_a4d6915900b7a434790e985a810848b1b"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a4d6915900b7a434790e985a810848b1b">id_t</a> = std::remove_cvref_t&lt; decltype( std::declval&lt; T &gt;( ).entity_id( ) ) &gt;</td></tr>
+<tr class="memitem:afea4e6c7f3040cb2178d943ff3b77393" id="r_afea4e6c7f3040cb2178d943ff3b77393"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#afea4e6c7f3040cb2178d943ff3b77393">id_t</a></td></tr>
 <tr class="memitem:a5bb5106a7b778f316a729a713a65270b" id="r_a5bb5106a7b778f316a729a713a65270b"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a5bb5106a7b778f316a729a713a65270b">aggregate_t</a> = T</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
 <tr class="memitem:a2f09e8b68760616d351e4cb23c54cd92" id="r_a2f09e8b68760616d351e4cb23c54cd92"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="#a2f09e8b68760616d351e4cb23c54cd92">~query_interface</a> ()=0</td></tr>
-<tr class="memitem:a75b3c8cd267ae114bbd61ae6cad94132" id="r_a75b3c8cd267ae114bbd61ae6cad94132"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#a75b3c8cd267ae114bbd61ae6cad94132">contains</a> (<a class="el" href="#a4d6915900b7a434790e985a810848b1b">id_t</a> id) const =0</td></tr>
-<tr class="memitem:a69cdc1b7e1a7df9b91eae786723b5b69" id="r_a69cdc1b7e1a7df9b91eae786723b5b69"><td class="memItemLeft">virtual <a class="el" href="#a4d6915900b7a434790e985a810848b1b">id_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a69cdc1b7e1a7df9b91eae786723b5b69">create</a> (<a class="el" href="#a5bb5106a7b778f316a729a713a65270b">aggregate_t</a> const &amp;)=0</td></tr>
+<tr class="memitem:a75b3c8cd267ae114bbd61ae6cad94132" id="r_a75b3c8cd267ae114bbd61ae6cad94132"><td class="memItemLeft">virtual bool&#160;</td><td class="memItemRight"><a class="el" href="#a75b3c8cd267ae114bbd61ae6cad94132">contains</a> (<a class="el" href="#afea4e6c7f3040cb2178d943ff3b77393">id_t</a> id) const =0</td></tr>
+<tr class="memitem:a69cdc1b7e1a7df9b91eae786723b5b69" id="r_a69cdc1b7e1a7df9b91eae786723b5b69"><td class="memItemLeft">virtual <a class="el" href="#afea4e6c7f3040cb2178d943ff3b77393">id_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a69cdc1b7e1a7df9b91eae786723b5b69">create</a> (<a class="el" href="#a5bb5106a7b778f316a729a713a65270b">aggregate_t</a> const &amp;)=0</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;models::concepts::aggregable T&gt;<br />
@@ -131,12 +131,12 @@ template&lt;models::concepts::aggregable T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="crud__repository_8hpp_source.html">crud_repository.hpp</a> の <a class="el" href="crud__repository_8hpp_source.html#l00018">18</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="crud__repository_8hpp_source.html">crud_repository.hpp</a> の <a class="el" href="crud__repository_8hpp_source.html#l00019">19</a> 行目に定義があります。</p>
 
 </div>
 </div>
-<a id="a4d6915900b7a434790e985a810848b1b" name="a4d6915900b7a434790e985a810848b1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d6915900b7a434790e985a810848b1b">&#9670;&#160;</a></span>id_t</h2>
+<a id="afea4e6c7f3040cb2178d943ff3b77393" name="afea4e6c7f3040cb2178d943ff3b77393"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afea4e6c7f3040cb2178d943ff3b77393">&#9670;&#160;</a></span>id_t</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -144,11 +144,13 @@ template&lt;models::concepts::aggregable T&gt; </div>
 template&lt;models::concepts::aggregable T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classdepicture__menu_1_1domain_1_1query__interface.html">depicture_menu::domain::query_interface</a>&lt; T &gt;::id_t = std::remove_cvref_t&lt; decltype( std::declval&lt; T &gt;( ).entity_id( ) ) &gt;</td>
+          <td class="memname">using <a class="el" href="classdepicture__menu_1_1domain_1_1query__interface.html">depicture_menu::domain::query_interface</a>&lt; T &gt;::id_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<b>初期値:</b><div class="fragment"><div class="line"> </div>
+<div class="line">std::remove_cvref_t&lt; decltype( std::declval&lt; T &gt;( ).entity_id( ) ) &gt;</div>
+</div><!-- fragment -->
 <p class="definition"> <a class="el" href="crud__repository_8hpp_source.html">crud_repository.hpp</a> の <a class="el" href="crud__repository_8hpp_source.html#l00017">17</a> 行目に定義があります。</p>
 
 </div>
@@ -198,7 +200,7 @@ template&lt;models::concepts::aggregable T&gt; </div>
         <tr>
           <td class="memname">virtual bool <a class="el" href="classdepicture__menu_1_1domain_1_1query__interface.html">depicture_menu::domain::query_interface</a>&lt; T &gt;::contains </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#a4d6915900b7a434790e985a810848b1b">id_t</a></td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="#afea4e6c7f3040cb2178d943ff3b77393">id_t</a></td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -211,7 +213,7 @@ template&lt;models::concepts::aggregable T&gt; </div>
 
 <p><a class="el" href="classdepicture__menu_1_1repositories_1_1diff__snapshots__repository.html#afabecddbca7047d1e3fc9fd9fdb8616f">depicture_menu::repositories::diff_snapshots_repository&lt; T &gt;</a>, <a class="el" href="classdepicture__menu_1_1repositories_1_1diff__snapshots__repository.html#afabecddbca7047d1e3fc9fd9fdb8616f">depicture_menu::repositories::diff_snapshots_repository&lt; value_t &gt;</a>, <a class="el" href="classdepicture__menu_1_1repositories_1_1on__memory__repository.html#a4e3bba85e99060a0af62fd48bd5a0bf8">depicture_menu::repositories::on_memory_repository&lt; T &gt;</a>で実装されています。</p>
 
-<p class="reference">参照元 <a class="el" href="deploy__default__setting_8cpp_source.html#l00272">add_default_settings()</a>.</p>
+<p class="reference">参照元 <a class="el" href="deploy__default__setting_8cpp_source.html#l00259">add_default_settings()</a>.</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
@@ -232,7 +234,7 @@ template&lt;models::concepts::aggregable T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="#a4d6915900b7a434790e985a810848b1b">id_t</a> <a class="el" href="classdepicture__menu_1_1domain_1_1query__interface.html">depicture_menu::domain::query_interface</a>&lt; T &gt;::create </td>
+          <td class="memname">virtual <a class="el" href="#afea4e6c7f3040cb2178d943ff3b77393">id_t</a> <a class="el" href="classdepicture__menu_1_1domain_1_1query__interface.html">depicture_menu::domain::query_interface</a>&lt; T &gt;::create </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="#a5bb5106a7b778f316a729a713a65270b">aggregate_t</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -247,7 +249,7 @@ template&lt;models::concepts::aggregable T&gt; </div>
 
 <p><a class="el" href="classdepicture__menu_1_1domain_1_1event__publisher__decorator.html#af72f27dc5e7ce55d5c8be1c9e4e2bfaa">depicture_menu::domain::event_publisher_decorator&lt; T &gt;</a>, <a class="el" href="classdepicture__menu_1_1repositories_1_1diff__snapshots__repository.html#af283382fea0b6f530268b1a764c6acc7">depicture_menu::repositories::diff_snapshots_repository&lt; T &gt;</a>, <a class="el" href="classdepicture__menu_1_1repositories_1_1diff__snapshots__repository.html#af283382fea0b6f530268b1a764c6acc7">depicture_menu::repositories::diff_snapshots_repository&lt; value_t &gt;</a>, <a class="el" href="structdepicture__menu_1_1repositories_1_1locked__repository.html#a9134d1fa77670fe574d58ccb4eb890b0">depicture_menu::repositories::locked_repository&lt; T &gt;</a>, <a class="el" href="structdepicture__menu_1_1repositories_1_1locked__repository.html#a9134d1fa77670fe574d58ccb4eb890b0">depicture_menu::repositories::locked_repository&lt; C &gt;</a>, <a class="el" href="classdepicture__menu_1_1repositories_1_1on__memory__repository.html#ab7b2abfa2019c2cb78498574f0f2f7e8">depicture_menu::repositories::on_memory_repository&lt; T &gt;</a>, <a class="el" href="structdepicture__menu_1_1test_1_1test__tools_1_1test__repository.html#a7f2cf5cbf1aa382b4e944a5762e478a3">depicture_menu::test::test_tools::test_repository&lt; T &gt;</a>, <a class="el" href="structdepicture__menu_1_1test_1_1test__tools_1_1test__repository.html#a7f2cf5cbf1aa382b4e944a5762e478a3">depicture_menu::test::test_tools::test_repository&lt; depicture_menu::domain::commands::invoker &gt;</a>, <a class="el" href="structstate__test__repository.html#a99b2239f7358fbf07857a5c1bebf2cf0">state_test_repository&lt; T &gt;</a>で実装されています。</p>
 
-<p class="reference">参照元 <a class="el" href="deploy__default__setting_8cpp_source.html#l00128">add_default_menu()</a>, <a class="el" href="deploy__default__setting_8cpp_source.html#l00272">add_default_settings()</a>, <a class="el" href="deploy__default__setting_8cpp_source.html#l00038">setup_application_command()</a>, <a class="el" href="crud__repository_8hpp_source.html#l00107">depicture_menu::domain::crud_repository_interface&lt; depicture_menu::domain::commands::invoker &gt;::~crud_repository_interface()</a>.</p>
+<p class="reference">参照元 <a class="el" href="deploy__default__setting_8cpp_source.html#l00120">add_default_menu()</a>, <a class="el" href="deploy__default__setting_8cpp_source.html#l00259">add_default_settings()</a>, <a class="el" href="deploy__default__setting_8cpp_source.html#l00038">setup_application_command()</a>, <a class="el" href="crud__repository_8hpp_source.html#l00098">depicture_menu::domain::crud_repository_interface&lt; depicture_menu::domain::commands::invoker &gt;::~crud_repository_interface()</a>.</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">

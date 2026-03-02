@@ -1,4 +1,5 @@
 var namespacedepicture__menu_1_1cs__binding_1_1observer_1_1detail__observer =
 [
-    [ "cfg_observer", "structdepicture__menu_1_1cs__binding_1_1observer_1_1detail__observer_1_1cfg__observer.html", "structdepicture__menu_1_1cs__binding_1_1observer_1_1detail__observer_1_1cfg__observer" ]
+    [ "cfg_observer", "structdepicture__menu_1_1cs__binding_1_1observer_1_1detail__observer_1_1cfg__observer.html", "structdepicture__menu_1_1cs__binding_1_1observer_1_1detail__observer_1_1cfg__observer" ],
+    [ "observer_wrapper", "classdepicture__menu_1_1cs__binding_1_1observer_1_1detail__observer_1_1observer__wrapper.html", "classdepicture__menu_1_1cs__binding_1_1observer_1_1detail__observer_1_1observer__wrapper" ]
 ];

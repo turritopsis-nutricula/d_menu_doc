@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.16.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: depicture_menu::cs_binding::observer::prop_map::collection_notify_handler&lt; observer &gt; 構造体テンプレート</title>
+<title>My Project: depicture_menu::cs_binding::observer::prop_map::collection_notify_handler&lt; parent, observer &gt; 構造体テンプレート</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -90,7 +90,7 @@ $(function(){initNavTree('structdepicture__menu_1_1cs__binding_1_1observer_1_1pr
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">depicture_menu::cs_binding::observer::prop_map::collection_notify_handler&lt; observer &gt; 構造体テンプレート</div></div>
+  <div class="headertitle"><div class="title">depicture_menu::cs_binding::observer::prop_map::collection_notify_handler&lt; parent, observer &gt; 構造体テンプレート</div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -98,26 +98,76 @@ $(function(){initNavTree('structdepicture__menu_1_1cs__binding_1_1observer_1_1pr
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:ac7a6bc240f14905393f2c671bb88d13d" id="r_ac7a6bc240f14905393f2c671bb88d13d"><td class="memTemplParams" colspan="2">template&lt;concepts::bindable element_type&gt; </td></tr>
-<tr class="memitem:ac7a6bc240f14905393f2c671bb88d13d template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac7a6bc240f14905393f2c671bb88d13d">operator()</a> (<a class="el" href="namespacedepicture__menu_1_1cs__binding.html#a88ea3f39108358172e2ca8a065b93695">cs_notify_collection_changed_action</a> n, std::shared_ptr&lt; element_type &gt; e0, std::shared_ptr&lt; element_type &gt;, int, int) const</td></tr>
+<tr class="memitem:af52a47a4fa9fe9fbac5ad58e73060a9b" id="r_af52a47a4fa9fe9fbac5ad58e73060a9b"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#af52a47a4fa9fe9fbac5ad58e73060a9b">collection_notify_handler</a> (std::weak_ptr&lt; <a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html">observer</a> &gt; o, std::weak_ptr&lt; <a class="el" href="classdepicture__menu_1_1cs__binding_1_1observer_1_1observers__connection.html">observers_connection</a> &gt; cons, std::weak_ptr&lt; parent &gt; p)</td></tr>
+<tr class="memitem:a5465610f60e12651cec93828f4b293de" id="r_a5465610f60e12651cec93828f4b293de"><td class="memTemplParams" colspan="2">template&lt;concepts::bindable element_type&gt; </td></tr>
+<tr class="memitem:a5465610f60e12651cec93828f4b293de template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5465610f60e12651cec93828f4b293de">operator()</a> (<a class="el" href="namespacedepicture__menu_1_1cs__binding.html#a88ea3f39108358172e2ca8a065b93695">cs_notify_collection_changed_action</a> n, std::shared_ptr&lt; element_type &gt; e0, std::shared_ptr&lt; element_type &gt; e1, int idx0, int idx1) const</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 公開変数類</h2></td></tr>
-<tr class="memitem:a37fa08220f122068cd7f3f0bd3a8e860" id="r_a37fa08220f122068cd7f3f0bd3a8e860"><td class="memItemLeft">std::weak_ptr&lt; <a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html">observer</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a37fa08220f122068cd7f3f0bd3a8e860">obs_ref_</a></td></tr>
-<tr class="memitem:a1caf6d33ddbcd74f7cb5ab057f4ce921" id="r_a1caf6d33ddbcd74f7cb5ab057f4ce921"><td class="memItemLeft">std::weak_ptr&lt; <a class="el" href="classdepicture__menu_1_1cs__binding_1_1observer_1_1observers__connection.html">observers_connection</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a1caf6d33ddbcd74f7cb5ab057f4ce921">cons_ref_</a></td></tr>
+<tr class="memitem:a47dac59f42217a5d65b2e340455e7426" id="r_a47dac59f42217a5d65b2e340455e7426"><td class="memItemLeft">std::weak_ptr&lt; <a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html">observer</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a47dac59f42217a5d65b2e340455e7426">obs_ref_</a></td></tr>
+<tr class="memitem:a7d5aa41c0d63935dcaf2eaa301da43cb" id="r_a7d5aa41c0d63935dcaf2eaa301da43cb"><td class="memItemLeft">std::weak_ptr&lt; <a class="el" href="classdepicture__menu_1_1cs__binding_1_1observer_1_1observers__connection.html">observers_connection</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a7d5aa41c0d63935dcaf2eaa301da43cb">cons_ref_</a></td></tr>
+<tr class="memitem:abd0eaad0406a0ac91ff3fb724dbb2368" id="r_abd0eaad0406a0ac91ff3fb724dbb2368"><td class="memItemLeft">std::weak_ptr&lt; parent &gt;&#160;</td><td class="memItemRight"><a class="el" href="#abd0eaad0406a0ac91ff3fb724dbb2368">parent_</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename <a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html">observer</a>&gt;<br />
-struct depicture_menu::cs_binding::observer::prop_map::collection_notify_handler&lt; observer &gt;</div>
-<p class="definition"> <a class="el" href="prop__map_8hpp_source.html">prop_map.hpp</a> の <a class="el" href="prop__map_8hpp_source.html#l00153">153</a> 行目に定義があります。</p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
-<a id="ac7a6bc240f14905393f2c671bb88d13d" name="ac7a6bc240f14905393f2c671bb88d13d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7a6bc240f14905393f2c671bb88d13d">&#9670;&#160;</a></span>operator()()</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename parent, typename <a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html">observer</a>&gt;<br />
+struct depicture_menu::cs_binding::observer::prop_map::collection_notify_handler&lt; parent, observer &gt;</div>
+<p class="definition"> <a class="el" href="prop__map_8hpp_source.html">prop_map.hpp</a> の <a class="el" href="prop__map_8hpp_source.html#l00135">135</a> 行目に定義があります。</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">構築子と解体子</h2>
+<a id="af52a47a4fa9fe9fbac5ad58e73060a9b" name="af52a47a4fa9fe9fbac5ad58e73060a9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af52a47a4fa9fe9fbac5ad58e73060a9b">&#9670;&#160;</a></span>collection_notify_handler()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html">observer</a>&gt; </div>
+template&lt;typename parent, typename <a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html">observer</a>&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1prop__map_1_1collection__notify__handler.html">depicture_menu::cs_binding::observer::prop_map::collection_notify_handler</a>&lt; parent, <a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html">observer</a> &gt;::collection_notify_handler </td>
+          <td>(</td>
+          <td class="paramtype">std::weak_ptr&lt; <a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html">observer</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>o</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::weak_ptr&lt; <a class="el" href="classdepicture__menu_1_1cs__binding_1_1observer_1_1observers__connection.html">observers_connection</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>cons</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::weak_ptr&lt; parent &gt;</td>          <td class="paramname"><span class="paramname"><em>p</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="prop__map_8hpp_source.html">prop_map.hpp</a> の <a class="el" href="prop__map_8hpp_source.html#l00141">141</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="prop__map_8hpp_source.html#l00138">cons_ref_</a>, <a class="el" href="prop__map_8hpp_source.html#l00137">obs_ref_</a>, <a class="el" href="prop__map_8hpp_source.html#l00139">parent_</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="prop__map_8hpp_source.html#l00149">operator()()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1cs__binding_1_1observer_1_1prop__map_1_1collection__notify__handler_af52a47a4fa9fe9fbac5ad58e73060a9b_icgraph.svg" width="404" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="a5465610f60e12651cec93828f4b293de" name="a5465610f60e12651cec93828f4b293de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5465610f60e12651cec93828f4b293de">&#9670;&#160;</a></span>operator()()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename parent, typename <a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html">observer</a>&gt; </div>
 <div class="memtemplate">
 template&lt;concepts::bindable element_type&gt; </div>
 <table class="mlabels">
@@ -125,7 +175,7 @@ template&lt;concepts::bindable element_type&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1prop__map_1_1collection__notify__handler.html">depicture_menu::cs_binding::observer::prop_map::collection_notify_handler</a>&lt; <a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html">observer</a> &gt;::operator() </td>
+          <td class="memname">void <a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1prop__map_1_1collection__notify__handler.html">depicture_menu::cs_binding::observer::prop_map::collection_notify_handler</a>&lt; parent, <a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html">observer</a> &gt;::operator() </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespacedepicture__menu_1_1cs__binding.html#a88ea3f39108358172e2ca8a065b93695">cs_notify_collection_changed_action</a></td>          <td class="paramname"><span class="paramname"><em>n</em></span>, </td>
         </tr>
@@ -137,17 +187,17 @@ template&lt;concepts::bindable element_type&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::shared_ptr&lt; element_type &gt;</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+          <td class="paramtype">std::shared_ptr&lt; element_type &gt;</td>          <td class="paramname"><span class="paramname"><em>e1</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>idx0</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;) const</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>idx1</em></span>&#160;) const</td>
         </tr>
       </table>
   </td>
@@ -157,55 +207,75 @@ template&lt;concepts::bindable element_type&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="prop__map_8hpp_source.html">prop_map.hpp</a> の <a class="el" href="prop__map_8hpp_source.html#l00160">160</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="prop__map_8hpp_source.html">prop_map.hpp</a> の <a class="el" href="prop__map_8hpp_source.html#l00149">149</a> 行目に定義があります。</p>
 
-<p class="reference">参照先 <a class="el" href="list__wrapper_8hpp_source.html#l00043">depicture_menu::cs_binding::add</a>, <a class="el" href="prop__map_8hpp_source.html#l00156">cons_ref_</a>, <a class="el" href="prop__map_8hpp_source.html#l00155">obs_ref_</a>, <a class="el" href="prop__map_8hpp_source.html#l00126">depicture_menu::cs_binding::observer::prop_map::regist_collection_observer()</a>, <a class="el" href="prop__map_8hpp_source.html#l00081">depicture_menu::cs_binding::observer::prop_map::regist_observer_to_object_tree()</a>.</p>
+<p class="reference">参照先 <a class="el" href="list__wrapper_8hpp_source.html#l00046">depicture_menu::cs_binding::add</a>, <a class="el" href="prop__map_8hpp_source.html#l00141">collection_notify_handler()</a>, <a class="el" href="prop__map_8hpp_source.html#l00138">cons_ref_</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00047">depicture_menu::cs_binding::move</a>, <a class="el" href="prop__map_8hpp_source.html#l00137">obs_ref_</a>, <a class="el" href="prop__map_8hpp_source.html#l00139">parent_</a>, <a class="el" href="prop__map_8hpp_source.html#l00113">depicture_menu::cs_binding::observer::prop_map::regist_collection_observer()</a>, <a class="el" href="prop__map_8hpp_source.html#l00078">depicture_menu::cs_binding::observer::prop_map::regist_observer_to_object_tree()</a>.</p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1cs__binding_1_1observer_1_1prop__map_1_1collection__notify__handler_ac7a6bc240f14905393f2c671bb88d13d_cgraph.svg" width="100%" height="568"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1cs__binding_1_1observer_1_1prop__map_1_1collection__notify__handler_a5465610f60e12651cec93828f4b293de_cgraph.svg" width="100%" height="568"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">メンバ詳解</h2>
-<a id="a1caf6d33ddbcd74f7cb5ab057f4ce921" name="a1caf6d33ddbcd74f7cb5ab057f4ce921"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1caf6d33ddbcd74f7cb5ab057f4ce921">&#9670;&#160;</a></span>cons_ref_</h2>
+<a id="a7d5aa41c0d63935dcaf2eaa301da43cb" name="a7d5aa41c0d63935dcaf2eaa301da43cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d5aa41c0d63935dcaf2eaa301da43cb">&#9670;&#160;</a></span>cons_ref_</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html">observer</a>&gt; </div>
+template&lt;typename parent, typename <a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html">observer</a>&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::weak_ptr&lt; <a class="el" href="classdepicture__menu_1_1cs__binding_1_1observer_1_1observers__connection.html">observers_connection</a> &gt; <a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1prop__map_1_1collection__notify__handler.html">depicture_menu::cs_binding::observer::prop_map::collection_notify_handler</a>&lt; <a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html">observer</a> &gt;::cons_ref_</td>
+          <td class="memname">std::weak_ptr&lt; <a class="el" href="classdepicture__menu_1_1cs__binding_1_1observer_1_1observers__connection.html">observers_connection</a> &gt; <a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1prop__map_1_1collection__notify__handler.html">depicture_menu::cs_binding::observer::prop_map::collection_notify_handler</a>&lt; parent, <a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html">observer</a> &gt;::cons_ref_</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="prop__map_8hpp_source.html">prop_map.hpp</a> の <a class="el" href="prop__map_8hpp_source.html#l00156">156</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="prop__map_8hpp_source.html">prop_map.hpp</a> の <a class="el" href="prop__map_8hpp_source.html#l00138">138</a> 行目に定義があります。</p>
 
-<p class="reference">参照元 <a class="el" href="prop__map_8hpp_source.html#l00160">operator()()</a>.</p>
+<p class="reference">参照元 <a class="el" href="prop__map_8hpp_source.html#l00141">collection_notify_handler()</a>, <a class="el" href="prop__map_8hpp_source.html#l00149">operator()()</a>.</p>
 
 </div>
 </div>
-<a id="a37fa08220f122068cd7f3f0bd3a8e860" name="a37fa08220f122068cd7f3f0bd3a8e860"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37fa08220f122068cd7f3f0bd3a8e860">&#9670;&#160;</a></span>obs_ref_</h2>
+<a id="a47dac59f42217a5d65b2e340455e7426" name="a47dac59f42217a5d65b2e340455e7426"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47dac59f42217a5d65b2e340455e7426">&#9670;&#160;</a></span>obs_ref_</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename <a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html">observer</a>&gt; </div>
+template&lt;typename parent, typename <a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html">observer</a>&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::weak_ptr&lt; <a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html">observer</a> &gt; <a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1prop__map_1_1collection__notify__handler.html">depicture_menu::cs_binding::observer::prop_map::collection_notify_handler</a>&lt; <a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html">observer</a> &gt;::obs_ref_</td>
+          <td class="memname">std::weak_ptr&lt; <a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html">observer</a> &gt; <a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1prop__map_1_1collection__notify__handler.html">depicture_menu::cs_binding::observer::prop_map::collection_notify_handler</a>&lt; parent, <a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html">observer</a> &gt;::obs_ref_</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="prop__map_8hpp_source.html">prop_map.hpp</a> の <a class="el" href="prop__map_8hpp_source.html#l00155">155</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="prop__map_8hpp_source.html">prop_map.hpp</a> の <a class="el" href="prop__map_8hpp_source.html#l00137">137</a> 行目に定義があります。</p>
 
-<p class="reference">参照元 <a class="el" href="prop__map_8hpp_source.html#l00160">operator()()</a>.</p>
+<p class="reference">参照元 <a class="el" href="prop__map_8hpp_source.html#l00141">collection_notify_handler()</a>, <a class="el" href="prop__map_8hpp_source.html#l00149">operator()()</a>.</p>
+
+</div>
+</div>
+<a id="abd0eaad0406a0ac91ff3fb724dbb2368" name="abd0eaad0406a0ac91ff3fb724dbb2368"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd0eaad0406a0ac91ff3fb724dbb2368">&#9670;&#160;</a></span>parent_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename parent, typename <a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html">observer</a>&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::weak_ptr&lt; parent &gt; <a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1prop__map_1_1collection__notify__handler.html">depicture_menu::cs_binding::observer::prop_map::collection_notify_handler</a>&lt; parent, <a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html">observer</a> &gt;::parent_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="prop__map_8hpp_source.html">prop_map.hpp</a> の <a class="el" href="prop__map_8hpp_source.html#l00139">139</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="prop__map_8hpp_source.html#l00141">collection_notify_handler()</a>, <a class="el" href="prop__map_8hpp_source.html#l00149">operator()()</a>.</p>
 
 </div>
 </div>

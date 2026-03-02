@@ -143,14 +143,14 @@ cs_binding_test_dll.hpp の依存先関係図:</div>
 <div class="line">                   access_##LOAD_CLASS_NAME( )                             \</div>
 <div class="line">    {                                                                      \</div>
 <div class="line">        <span class="keywordflow">return</span> &amp;<a class="code hl_class" href="classdepicture__menu_1_1singleton.html">depicture_menu::singleton</a>&lt;                                 \</div>
-<div class="line">            depicture_menu::cs_binding::LOAD_CLASS_NAME##Root &gt;::          \</div>
-<div class="line">            get_instance( );                                               \</div>
+<div class="line">          depicture_menu::cs_binding::LOAD_CLASS_NAME##Root &gt;::            \</div>
+<div class="line">          get_instance( );                                                 \</div>
 <div class="line">    }                                                                      \</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassdepicture__menu_1_1singleton_html"><div class="ttname"><a href="classdepicture__menu_1_1singleton.html">depicture_menu::singleton</a></div><div class="ttdef"><b>Definition</b> <a href="singleton_8hpp_source.html#l00033">singleton.hpp:34</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1singleton_html"><div class="ttname"><a href="classdepicture__menu_1_1singleton.html">depicture_menu::singleton</a></div><div class="ttdef"><b>Definition</b> <a href="singleton_8hpp_source.html#l00034">singleton.hpp:35</a></div></div>
 <div class="ttc" id="acs__binding__test__dll_8hpp_html_a2e4ec824a9c25ce2bb9cb2fd4e2f799e"><div class="ttname"><a href="#a2e4ec824a9c25ce2bb9cb2fd4e2f799e">DPM_DLL_ENTRY</a></div><div class="ttdeci">#define DPM_DLL_ENTRY()</div><div class="ttdef"><b>Definition</b> <a href="cs__binding__test__dll_8hpp_source.html#l00009">cs_binding_test_dll.hpp:9</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="cs__binding__test__dll_8hpp_source.html">cs_binding_test_dll.hpp</a> の <a class="el" href="cs__binding__test__dll_8hpp_source.html#l00048">48</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="cs__binding__test__dll_8hpp_source.html">cs_binding_test_dll.hpp</a> の <a class="el" href="cs__binding__test__dll_8hpp_source.html#l00046">46</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -169,35 +169,33 @@ cs_binding_test_dll.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line"><span class="keywordtype">int</span> WINAPI <a class="code hl_function" href="dll__main_8cpp.html#a73cf05e5043a7241d32a6a508d053394">DllMain</a>(                                                        \</div>
-<div class="line">    HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved                \</div>
-<div class="line">)                                                                          \</div>
+<div class="line">  HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved )                \</div>
 <div class="line">{                                                                          \</div>
 <div class="line">                                                                           \</div>
 <div class="line">    switch ( fdwReason )                                                   \</div>
 <div class="line">    {                                                                      \</div>
 <div class="line">                                                                           \</div>
-<div class="line">    <span class="keywordflow">case</span> DLL_PROCESS_ATTACH:                                               \</div>
-<div class="line">    {                                                                      \</div>
-<div class="line">    }                                                                      \</div>
-<div class="line">    <span class="keywordflow">break</span>;                                                                 \</div>
-<div class="line">    <span class="keywordflow">case</span> DLL_PROCESS_DETACH:                                               \</div>
-<div class="line">    {                                                                      \</div>
-<div class="line">    }                                                                      \</div>
-<div class="line">    <span class="keywordflow">break</span>;                                                                 \</div>
-<div class="line">    <span class="keywordflow">case</span> DLL_THREAD_ATTACH:                                                \</div>
-<div class="line">    {                                                                      \</div>
-<div class="line">    }                                                                      \</div>
-<div class="line">    <span class="keywordflow">break</span>;                                                                 \</div>
-<div class="line">    <span class="keywordflow">case</span> DLL_THREAD_DETACH:                                                \</div>
-<div class="line">    {                                                                      \</div>
-<div class="line">    }                                                                      \</div>
-<div class="line">    <span class="keywordflow">break</span>;                                                                 \</div>
-<div class="line">    <span class="keywordflow">default</span>:                                                               \</div>
+<div class="line">        <span class="keywordflow">case</span> DLL_PROCESS_ATTACH :                                          \</div>
+<div class="line">        {                                                                  \</div>
+<div class="line">        }                                                                  \</div>
 <div class="line">        <span class="keywordflow">break</span>;                                                             \</div>
+<div class="line">        <span class="keywordflow">case</span> DLL_PROCESS_DETACH :                                          \</div>
+<div class="line">        {                                                                  \</div>
+<div class="line">        }                                                                  \</div>
+<div class="line">        <span class="keywordflow">break</span>;                                                             \</div>
+<div class="line">        <span class="keywordflow">case</span> DLL_THREAD_ATTACH :                                           \</div>
+<div class="line">        {                                                                  \</div>
+<div class="line">        }                                                                  \</div>
+<div class="line">        <span class="keywordflow">break</span>;                                                             \</div>
+<div class="line">        <span class="keywordflow">case</span> DLL_THREAD_DETACH :                                           \</div>
+<div class="line">        {                                                                  \</div>
+<div class="line">        }                                                                  \</div>
+<div class="line">        <span class="keywordflow">break</span>;                                                             \</div>
+<div class="line">        default : <span class="keywordflow">break</span>;                                                   \</div>
 <div class="line">    }                                                                      \</div>
 <div class="line">    <span class="keywordflow">return</span> TRUE;                                                           \</div>
 <div class="line">}</div>
-<div class="ttc" id="adll__main_8cpp_html_a73cf05e5043a7241d32a6a508d053394"><div class="ttname"><a href="dll__main_8cpp.html#a73cf05e5043a7241d32a6a508d053394">DllMain</a></div><div class="ttdeci">int WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)</div><div class="ttdef"><b>Definition</b> <a href="dll__main_8cpp_source.html#l00043">dll_main.cpp:43</a></div></div>
+<div class="ttc" id="adll__main_8cpp_html_a73cf05e5043a7241d32a6a508d053394"><div class="ttname"><a href="dll__main_8cpp.html#a73cf05e5043a7241d32a6a508d053394">DllMain</a></div><div class="ttdeci">int WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)</div><div class="ttdef"><b>Definition</b> <a href="dll__main_8cpp_source.html#l00041">dll_main.cpp:41</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="cs__binding__test__dll_8hpp_source.html">cs_binding_test_dll.hpp</a> の <a class="el" href="cs__binding__test__dll_8hpp_source.html#l00009">9</a> 行目に定義があります。</p>
 
@@ -220,7 +218,7 @@ cs_binding_test_dll.hpp の依存先関係図:</div>
 <b>値:</b><div class="fragment"><div class="line">BOOST_PP_CAT( access_, <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> )</div>
 <div class="ttc" id="atrigger_8hpp_html_aeb04f2e0012cb07d68538599161c9693"><div class="ttname"><a href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a></div><div class="ttdeci">#define CLASS</div><div class="ttdef"><b>Definition</b> <a href="trigger_8hpp_source.html#l00016">trigger.hpp:16</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="cs__binding__test__dll_8hpp_source.html">cs_binding_test_dll.hpp</a> の <a class="el" href="cs__binding__test__dll_8hpp_source.html#l00041">41</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="cs__binding__test__dll_8hpp_source.html">cs_binding_test_dll.hpp</a> の <a class="el" href="cs__binding__test__dll_8hpp_source.html#l00039">39</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -239,9 +237,9 @@ cs_binding_test_dll.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">BOOST_PP_STRINGIZE( <a class="code hl_define" href="#adc299b1572c6d0aca27b42c611e7d0fb">DPM_SINGLETON_ACCESS</a>( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> ) )</div>
-<div class="ttc" id="acs__binding__test__dll_8hpp_html_adc299b1572c6d0aca27b42c611e7d0fb"><div class="ttname"><a href="#adc299b1572c6d0aca27b42c611e7d0fb">DPM_SINGLETON_ACCESS</a></div><div class="ttdeci">#define DPM_SINGLETON_ACCESS(CLASS)</div><div class="ttdef"><b>Definition</b> <a href="cs__binding__test__dll_8hpp_source.html#l00041">cs_binding_test_dll.hpp:41</a></div></div>
+<div class="ttc" id="acs__binding__test__dll_8hpp_html_adc299b1572c6d0aca27b42c611e7d0fb"><div class="ttname"><a href="#adc299b1572c6d0aca27b42c611e7d0fb">DPM_SINGLETON_ACCESS</a></div><div class="ttdeci">#define DPM_SINGLETON_ACCESS(CLASS)</div><div class="ttdef"><b>Definition</b> <a href="cs__binding__test__dll_8hpp_source.html#l00039">cs_binding_test_dll.hpp:39</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="cs__binding__test__dll_8hpp_source.html">cs_binding_test_dll.hpp</a> の <a class="el" href="cs__binding__test__dll_8hpp_source.html#l00042">42</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="cs__binding__test__dll_8hpp_source.html">cs_binding_test_dll.hpp</a> の <a class="el" href="cs__binding__test__dll_8hpp_source.html#l00040">40</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -269,7 +267,7 @@ cs_binding_test_dll.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="cs__binding__test__dll_8hpp_source.html">cs_binding_test_dll.hpp</a> の <a class="el" href="cs__binding__test__dll_8hpp_source.html#l00066">66</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="cs__binding__test__dll_8hpp_source.html">cs_binding_test_dll.hpp</a> の <a class="el" href="cs__binding__test__dll_8hpp_source.html#l00064">64</a> 行目に定義があります。</p>
 
 </div>
 </div>

@@ -119,121 +119,107 @@ $(function(){initNavTree('change__action__config_8cpp_source.html','',''); });
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keywordtype">void</span></div>
 <div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1usecase_1_1detail__usecase__change.html#a0e4b172a15c14d4a44936240750f40fa">   22</a></span><a class="code hl_function" href="namespacedepicture__menu_1_1usecase_1_1detail__usecase__change.html#a0e4b172a15c14d4a44936240750f40fa">do_basic_action_config_change</a>(</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">domain::actions::publisher_id</a>          <span class="keywordtype">id</span>,</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_typedef" href="namespacedepicture__menu_1_1applications.html#a1168dfec76130ba465ebed176eb5ba9e">applications::transaction_source_ptr_t</a> tran_source,</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    std::function&lt;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        dto::basic_action_config_update( <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">domain::actions::publisher_id</a> <span class="keyword">const</span> ) &gt;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                                                            control,</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    std::shared_ptr&lt; usecase::config_view_model_interface &gt; view</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>)</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">auto</span> ret = do_transaction&lt;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1app_1_1option.html">domain::app::option</a>,</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1app_1_1config.html">domain::app::config</a>,</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1actions_1_1v2_1_1publisher.html">domain::actions::publisher</a>,</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1commands_1_1command.html">domain::commands::command</a> &gt;(</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        *tran_source,</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        [ id, control ]( <span class="keyword">auto</span> t )</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <a class="code hl_struct" href="structdepicture__menu_1_1usecase_1_1detail__usecase__change_1_1return__value.html">return_value</a> ret;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keyword">auto</span> <span class="keyword">const</span>   input_value = control( <span class="keywordtype">id</span> );</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keyword">auto</span>&amp; act_repo = get&lt; domain::actions::publisher &gt;( t );</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keyword">auto</span>&amp; com_repo = get&lt; domain::commands::command &gt;( t );</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">domain::actions::publisher_id</a>                           <span class="keywordtype">id</span>,</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <a class="code hl_typedef" href="namespacedepicture__menu_1_1applications.html#a1168dfec76130ba465ebed176eb5ba9e">applications::transaction_source_ptr_t</a>                  tran_source,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  std::function&lt; dto::basic_action_config_update(</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">domain::actions::publisher_id</a> <span class="keyword">const</span> ) &gt;               control,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  std::shared_ptr&lt; usecase::config_view_model_interface &gt; view )</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">auto</span> ret = do_transaction&lt;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>      <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1app_1_1option.html">domain::app::option</a>,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1app_1_1config.html">domain::app::config</a>,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1actions_1_1v2_1_1publisher.html">domain::actions::publisher</a>,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1commands_1_1command.html">domain::commands::command</a> &gt;( *tran_source, [ id, control ]( <span class="keyword">auto</span> t ) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_struct" href="structdepicture__menu_1_1usecase_1_1detail__usecase__change_1_1return__value.html">return_value</a> ret;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">auto</span> <span class="keyword">const</span>   input_value = control( <span class="keywordtype">id</span> );</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keyword">auto</span>&amp; act_repo = get&lt; domain::actions::publisher &gt;( t );</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keyword">auto</span>&amp; com_repo = get&lt; domain::commands::command &gt;( t );</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keyword">auto</span> <span class="keyword">const</span> <a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#a7d8882559a0480a657822be208f1be1c">act_id</a> =</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>          <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">domain::actions::publisher_id</a>( input_value.action_id_ );</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keyword">auto</span> <span class="keyword">const</span> <a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#aac14098cc0b419e68a1621cb3df63db6">com_id</a> =</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>          <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1commands.html#a255579014c08ea612b006aa3a641ca7a">domain::commands::command_id</a>( input_value.command_id_ );</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            <span class="keyword">auto</span> <span class="keyword">const</span> <a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#a7d8882559a0480a657822be208f1be1c">act_id</a></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                = <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">domain::actions::publisher_id</a>( input_value.action_id_ );</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <span class="keyword">auto</span> <span class="keyword">const</span> <a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#aac14098cc0b419e68a1621cb3df63db6">com_id</a></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                = <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1commands.html#a255579014c08ea612b006aa3a641ca7a">domain::commands::command_id</a>( input_value.command_id_ );</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <a class="code hl_define" href="log_8hpp.html#a6a81e4b32bb7210d0366ac20d9fe82f7">DPM_LOG_DEBUG</a>( <span class="stringliteral">&quot;change action id:&quot;</span> &lt;&lt; <a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#a7d8882559a0480a657822be208f1be1c">act_id</a> );</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <a class="code hl_define" href="log_8hpp.html#a6a81e4b32bb7210d0366ac20d9fe82f7">DPM_LOG_DEBUG</a>( <span class="stringliteral">&quot;change command id:&quot;</span> &lt;&lt; <a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#aac14098cc0b419e68a1621cb3df63db6">com_id</a> );</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <a class="code hl_define" href="log_8hpp.html#a6a81e4b32bb7210d0366ac20d9fe82f7">DPM_LOG_DEBUG</a>( <span class="stringliteral">&quot;change action id:&quot;</span> &lt;&lt; <a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#a7d8882559a0480a657822be208f1be1c">act_id</a> );</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <a class="code hl_define" href="log_8hpp.html#a6a81e4b32bb7210d0366ac20d9fe82f7">DPM_LOG_DEBUG</a>( <span class="stringliteral">&quot;change command id:&quot;</span> &lt;&lt; <a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#aac14098cc0b419e68a1621cb3df63db6">com_id</a> );</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keyword">auto</span> act = act_repo.read( <a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#a7d8882559a0480a657822be208f1be1c">act_id</a> );</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keyword">auto</span> com = com_repo.read( <a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#aac14098cc0b419e68a1621cb3df63db6">com_id</a> );</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">if</span> ( !( act.has_value( ) || com.has_value( ) ) ) <span class="keywordflow">return</span> ret;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keyword">auto</span> act = act_repo.read( <a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#a7d8882559a0480a657822be208f1be1c">act_id</a> );</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keyword">auto</span> com = com_repo.read( <a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#aac14098cc0b419e68a1621cb3df63db6">com_id</a> );</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keywordflow">if</span> ( !( act.has_value( ) || com.has_value( ) ) )</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="keyword">auto</span> params = com-&gt;parameters( );</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="keywordflow">switch</span> ( input_value.command_kind_ )</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordflow">case</span> domain::commands::common_command_kind::shellexecute:</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>            {</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                params = params.with_value( 0u, input_value.action_param0_ );</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>                params = params.with_value( 1u, input_value.action_param1_ );</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                <span class="keywordflow">if</span> ( input_value.is_auto_menu_close_ )</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                    act-&gt;set_complete_action( );</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                    act-&gt;set_continue_action( );</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            }</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <span class="keywordflow">case</span> domain::commands::common_command_kind::open_sub_menu:</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            {</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>                params = params.with_value(</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                    0u,</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                    boost::uuids::string_generator( )(</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                        input_value.action_param0_</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                    )</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                );</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                act-&gt;set_continue_action( );</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            }</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            {</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            }</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            }</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            com-&gt;parameters( params );</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            com_repo.update( *com );</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <span class="comment">// update actions</span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            act-&gt;set_command_id( <a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#aac14098cc0b419e68a1621cb3df63db6">com_id</a> );</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            act_repo.update( *act );</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            ret.<a class="code hl_variable" href="structdepicture__menu_1_1usecase_1_1detail__usecase__change_1_1return__value.html#a1013d6245081749e9484230a77fcd671">update_action_</a> = *act;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            ret.<a class="code hl_variable" href="structdepicture__menu_1_1usecase_1_1detail__usecase__change_1_1return__value.html#abde6be071aa4b0558d508117d6ce2291">update_commands_</a>.push_back( *com );</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        }</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    );</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keywordflow">if</span> ( ret.has_value( ) &amp;&amp; ret.value( ).update_action_.has_value( ) )</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    {</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <a class="code hl_function" href="classdepicture__menu_1_1singleton.html#ab3a8df96e817c8ccb1ab61434f90c416">applications::gui_dispatch::get_instance</a>( ).dispatch(</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            [ v = ret.value( ), p = view ]</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            {</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                auto        com_query = make_query( v.update_commands_ );</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                auto const&amp; act       = *v.update_action_;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keyword">auto</span> params = com-&gt;parameters( );</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">switch</span> ( input_value.command_kind_ )</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <span class="keywordflow">case</span> domain::commands::common_command_kind::shellexecute :</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                params = params.with_value( 0u, input_value.action_param0_ );</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>                params = params.with_value( 1u, input_value.action_param1_ );</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                <span class="keywordflow">if</span> ( input_value.is_auto_menu_close_ )</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                    act-&gt;set_complete_action( );</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                <span class="keywordflow">else</span> act-&gt;set_continue_action( );</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keywordflow">case</span> domain::commands::common_command_kind::open_sub_menu :</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                params = params.with_value(</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>                  0u,</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                  boost::uuids::string_generator( )(</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                    input_value.action_param0_ ) );</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                act-&gt;set_continue_action( );</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            default :</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        com-&gt;parameters( params );</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        com_repo.update( *com );</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="comment">// update actions</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        act-&gt;set_command_id( <a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#aac14098cc0b419e68a1621cb3df63db6">com_id</a> );</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        act_repo.update( *act );</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        ret.<a class="code hl_variable" href="structdepicture__menu_1_1usecase_1_1detail__usecase__change_1_1return__value.html#a1013d6245081749e9484230a77fcd671">update_action_</a> = *act;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        ret.<a class="code hl_variable" href="structdepicture__menu_1_1usecase_1_1detail__usecase__change_1_1return__value.html#abde6be071aa4b0558d508117d6ce2291">update_commands_</a>.push_back( *com );</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    } );</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordflow">if</span> ( ret.has_value( ) &amp;&amp; ret.value( ).update_action_.has_value( ) )</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <a class="code hl_function" href="classdepicture__menu_1_1singleton.html#ab3a8df96e817c8ccb1ab61434f90c416">applications::gui_dispatch::get_instance</a>( ).dispatch( [ v =</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                                                                  ret.value( ),</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                                                                p = view ] {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            auto        com_query = make_query( v.update_commands_ );</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            auto const&amp; act       = *v.update_action_;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            p-&gt;change_action(</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>              dto::action_update_notify { act.entity_id( ) }, act, com_query );</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            <span class="keywordflow">for</span> ( <span class="keyword">auto</span>&amp;&amp; com : v.update_commands_ )</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            {</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                p-&gt;change_command(</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                  dto::command_update_notify { com.entity_id( ) }, com );</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        }</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                p-&gt;change_action(</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                    dto::action_update_notify{ act.entity_id( ) },</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                    act,</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                    com_query</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                );</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                <span class="keywordflow">for</span> ( <span class="keyword">auto</span>&amp;&amp; com : v.update_commands_ )</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                {</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                    p-&gt;change_command(</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                        dto::command_update_notify{ com.entity_id( ) }, com</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>                    );</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>                }</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            }</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        );</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    }</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>}</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        );</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    }</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>}</div>
 </div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>}    <span class="comment">// namespace detail_usecase_change</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>}    <span class="comment">// namespace detail_usecase_change</span></div>
 </div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>}    <span class="comment">// namespace depicture_menu::usecase</span></div>
-<div class="ttc" id="a_test_config_view_presenter_8cpp_html_a7d8882559a0480a657822be208f1be1c"><div class="ttname"><a href="_test_config_view_presenter_8cpp.html#a7d8882559a0480a657822be208f1be1c">act_id</a></div><div class="ttdeci">dd::actions::publisher_id const act_id</div><div class="ttdef"><b>Definition</b> <a href="_test_config_view_presenter_8cpp_source.html#l00203">TestConfigViewPresenter.cpp:203</a></div></div>
-<div class="ttc" id="a_test_config_view_presenter_8cpp_html_aac14098cc0b419e68a1621cb3df63db6"><div class="ttname"><a href="_test_config_view_presenter_8cpp.html#aac14098cc0b419e68a1621cb3df63db6">com_id</a></div><div class="ttdeci">dd::commands::command_id const com_id</div><div class="ttdef"><b>Definition</b> <a href="_test_config_view_presenter_8cpp_source.html#l00204">TestConfigViewPresenter.cpp:204</a></div></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>}    <span class="comment">// namespace depicture_menu::usecase</span></div>
+<div class="ttc" id="a_test_config_view_presenter_8cpp_html_a7d8882559a0480a657822be208f1be1c"><div class="ttname"><a href="_test_config_view_presenter_8cpp.html#a7d8882559a0480a657822be208f1be1c">act_id</a></div><div class="ttdeci">dd::actions::publisher_id const act_id</div><div class="ttdef"><b>Definition</b> <a href="_test_config_view_presenter_8cpp_source.html#l00198">TestConfigViewPresenter.cpp:198</a></div></div>
+<div class="ttc" id="a_test_config_view_presenter_8cpp_html_aac14098cc0b419e68a1621cb3df63db6"><div class="ttname"><a href="_test_config_view_presenter_8cpp.html#aac14098cc0b419e68a1621cb3df63db6">com_id</a></div><div class="ttdeci">dd::commands::command_id const com_id</div><div class="ttdef"><b>Definition</b> <a href="_test_config_view_presenter_8cpp_source.html#l00199">TestConfigViewPresenter.cpp:199</a></div></div>
 <div class="ttc" id="achange__action__config_8hpp_html"><div class="ttname"><a href="change__action__config_8hpp.html">change_action_config.hpp</a></div></div>
-<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1actions_1_1v2_1_1publisher_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1actions_1_1v2_1_1publisher.html">depicture_menu::domain::actions::v2::publisher</a></div><div class="ttdef"><b>Definition</b> <a href="action_8hpp_source.html#l00205">action.hpp:207</a></div></div>
-<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1app_1_1config_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1app_1_1config.html">depicture_menu::domain::app::config</a></div><div class="ttdef"><b>Definition</b> <a href="domain_2model_2app_2config_8hpp_source.html#l00052">config.hpp:53</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1actions_1_1v2_1_1publisher_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1actions_1_1v2_1_1publisher.html">depicture_menu::domain::actions::v2::publisher</a></div><div class="ttdef"><b>Definition</b> <a href="action_8hpp_source.html#l00176">action.hpp:178</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1app_1_1config_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1app_1_1config.html">depicture_menu::domain::app::config</a></div><div class="ttdef"><b>Definition</b> <a href="domain_2model_2app_2config_8hpp_source.html#l00073">config.hpp:74</a></div></div>
 <div class="ttc" id="aclassdepicture__menu_1_1domain_1_1app_1_1option_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1app_1_1option.html">depicture_menu::domain::app::option</a></div><div class="ttdef"><b>Definition</b> <a href="option_8hpp_source.html#l00026">option.hpp:27</a></div></div>
 <div class="ttc" id="aclassdepicture__menu_1_1domain_1_1commands_1_1command_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1commands_1_1command.html">depicture_menu::domain::commands::command</a></div><div class="ttdef"><b>Definition</b> <a href="command_8hpp_source.html#l00036">command.hpp:38</a></div></div>
 <div class="ttc" id="aclassdepicture__menu_1_1singleton_html_ab3a8df96e817c8ccb1ab61434f90c416"><div class="ttname"><a href="classdepicture__menu_1_1singleton.html#ab3a8df96e817c8ccb1ab61434f90c416">depicture_menu::singleton&lt; detail_applications::gui_dispatch_impl &gt;::get_instance</a></div><div class="ttdeci">static T &amp; get_instance()</div><div class="ttdef"><b>Definition</b> <a href="singleton_8hpp_source.html#l00037">singleton.hpp:37</a></div></div>
@@ -245,7 +231,7 @@ $(function(){initNavTree('change__action__config_8cpp_source.html','',''); });
 <div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1commands_html_a255579014c08ea612b006aa3a641ca7a"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1commands.html#a255579014c08ea612b006aa3a641ca7a">depicture_menu::domain::commands::command_id</a></div><div class="ttdeci">models::entity_id_base&lt; detail_commands::command_id_tag &gt; command_id</div><div class="ttdef"><b>Definition</b> <a href="command__ids_8hpp_source.html#l00018">command_ids.hpp:18</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1detail__usecase__change_html"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1detail__usecase__change.html">depicture_menu::usecase::detail_usecase_change</a></div><div class="ttdef"><b>Definition</b> <a href="#l00011">change_action_config.cpp:12</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1detail__usecase__change_html_a0e4b172a15c14d4a44936240750f40fa"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1detail__usecase__change.html#a0e4b172a15c14d4a44936240750f40fa">depicture_menu::usecase::detail_usecase_change::do_basic_action_config_change</a></div><div class="ttdeci">void do_basic_action_config_change(domain::actions::publisher_id id, applications::transaction_source_ptr_t tran_source, std::function&lt; dto::basic_action_config_update(domain::actions::publisher_id const) &gt; control, std::shared_ptr&lt; usecase::config_view_model_interface &gt; view)</div><div class="ttdef"><b>Definition</b> <a href="#l00022">change_action_config.cpp:22</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1usecase_html"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase.html">depicture_menu::usecase</a></div><div class="ttdef"><b>Definition</b> <a href="action__command__invoker__interface_8hpp_source.html#l00012">action_command_invoker_interface.hpp:13</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_html"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase.html">depicture_menu::usecase</a></div><div class="ttdoc">メニュー更新 usecase</div><div class="ttdef"><b>Definition</b> <a href="action__command__invoker__interface_8hpp_source.html#l00012">action_command_invoker_interface.hpp:13</a></div></div>
 <div class="ttc" id="astructdepicture__menu_1_1usecase_1_1detail__usecase__change_1_1return__value_html"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1detail__usecase__change_1_1return__value.html">depicture_menu::usecase::detail_usecase_change::return_value</a></div><div class="ttdef"><b>Definition</b> <a href="#l00015">change_action_config.cpp:16</a></div></div>
 <div class="ttc" id="astructdepicture__menu_1_1usecase_1_1detail__usecase__change_1_1return__value_html_a1013d6245081749e9484230a77fcd671"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1detail__usecase__change_1_1return__value.html#a1013d6245081749e9484230a77fcd671">depicture_menu::usecase::detail_usecase_change::return_value::update_action_</a></div><div class="ttdeci">std::optional&lt; domain::actions::publisher &gt; update_action_</div><div class="ttdef"><b>Definition</b> <a href="#l00017">change_action_config.cpp:17</a></div></div>
 <div class="ttc" id="astructdepicture__menu_1_1usecase_1_1detail__usecase__change_1_1return__value_html_abde6be071aa4b0558d508117d6ce2291"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1detail__usecase__change_1_1return__value.html#abde6be071aa4b0558d508117d6ce2291">depicture_menu::usecase::detail_usecase_change::return_value::update_commands_</a></div><div class="ttdeci">std::vector&lt; domain::commands::command &gt; update_commands_</div><div class="ttdef"><b>Definition</b> <a href="#l00018">change_action_config.cpp:18</a></div></div>

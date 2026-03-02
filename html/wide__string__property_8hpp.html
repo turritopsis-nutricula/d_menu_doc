@@ -164,34 +164,31 @@ $(function(){initNavTree('wide__string__property_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="cs__binding_2macro_2detail_2cpp_2config_8hpp.html#ade1ffb66dc056cd2c6f93b058398c958">DPM_CS_BINDING_INLINE</a> <span class="keywordtype">int</span> CLASS::BOOST_PP_CAT( get_glue_, NAME )(          \</div>
-<div class="line">    <span class="keywordtype">wchar_t</span> * v0, <span class="keywordtype">int</span> v1                                                   \</div>
-<div class="line">)                                                                          \</div>
+<div class="line">  <span class="keywordtype">wchar_t</span> * v0, <span class="keywordtype">int</span> v1 )                                                   \</div>
 <div class="line">{                                                                          \</div>
-<div class="line">    <span class="keyword">auto</span> <span class="keyword">const</span>&amp; value                                                      \</div>
-<div class="line">        = <a class="code hl_define" href="#ad16d38807cc7604df51d98d8a8b95b8b">DPM_WIDE_STRING_PROPERTY_ENTRY_DETAIL_CPP_VALUE</a>( NAME )          \</div>
-<div class="line">              .const_ref( );                                               \</div>
-<div class="line">    if ( v0 == <span class="keyword">nullptr</span> )                                                   \</div>
-<div class="line">        <span class="keywordflow">return</span> value.length( );                                            \</div>
-<div class="line">    std::wcsncpy( v0, value.c_str( ), v1 + 1 );                            \</div>
-<div class="line">    <span class="keywordflow">return</span> value.length( );                                                \</div>
+<div class="line">    <span class="keyword">auto</span> <span class="keyword">const</span>&amp; value =                                                    \</div>
+<div class="line">      DPM_WIDE_STRING_PROPERTY_ENTRY_DETAIL_CPP_VALUE( NAME )              \</div>
+<div class="line">        .const_ref( );                                                     \</div>
+<div class="line">    if ( v0 == <span class="keyword">nullptr</span> ) return value.length( );                           \</div>
+<div class="line">    <a class="code hl_namespace" href="namespacestd.html">std</a>::wcsncpy( v0, value.c_str( ), v1 + 1 );                            \</div>
+<div class="line">    return value.length( );                                                \</div>
 <div class="line">}                                                                          \</div>
-<div class="line"><a class="code hl_define" href="cs__binding_2macro_2detail_2cpp_2config_8hpp.html#ade1ffb66dc056cd2c6f93b058398c958">DPM_CS_BINDING_INLINE</a> <span class="keywordtype">void</span> CLASS::BOOST_PP_CAT( set_glue_, NAME )(         \</div>
-<div class="line">    <span class="keywordtype">wchar_t</span> * <a class="code hl_struct" href="structc.html">c</a>, <span class="keywordtype">int</span> length                                                \</div>
-<div class="line">)                                                                          \</div>
+<div class="line"><a class="code hl_define" href="cs__binding_2macro_2detail_2cpp_2config_8hpp.html#ade1ffb66dc056cd2c6f93b058398c958">DPM_CS_BINDING_INLINE</a> <span class="keywordtype">void</span> <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a>::BOOST_PP_CAT( set_glue_, NAME )(         \</div>
+<div class="line">  <span class="keywordtype">wchar_t</span> * <a class="code hl_struct" href="structc.html">c</a>, <span class="keywordtype">int</span> length )                                                \</div>
 <div class="line">{                                                                          \</div>
 <div class="line">    std::wstring_view buf( <a class="code hl_struct" href="structc.html">c</a> );                                            \</div>
-<div class="line">    <span class="keyword">auto</span>&amp;             value                                                \</div>
-<div class="line">        = <a class="code hl_define" href="#ad16d38807cc7604df51d98d8a8b95b8b">DPM_WIDE_STRING_PROPERTY_ENTRY_DETAIL_CPP_VALUE</a>( NAME ).ref( );  \</div>
-<div class="line">    if ( buf == value )                                                    \</div>
-<div class="line">        <span class="keywordflow">return</span>;                                                            \</div>
+<div class="line">    <span class="keyword">auto</span>&amp;             value =                                              \</div>
+<div class="line">      DPM_WIDE_STRING_PROPERTY_ENTRY_DETAIL_CPP_VALUE( NAME ).ref( );      \</div>
+<div class="line">    if ( buf == value ) <span class="keywordflow">return</span>;                                            \</div>
 <div class="line">    value = buf;                                                           \</div>
 <div class="line">    property_changed_notify( BOOST_PP_WSTRINGIZE( NAME ) );                \</div>
 <div class="line">}</div>
 <div class="ttc" id="acs__binding_2macro_2detail_2cpp_2config_8hpp_html_ade1ffb66dc056cd2c6f93b058398c958"><div class="ttname"><a href="cs__binding_2macro_2detail_2cpp_2config_8hpp.html#ade1ffb66dc056cd2c6f93b058398c958">DPM_CS_BINDING_INLINE</a></div><div class="ttdeci">#define DPM_CS_BINDING_INLINE</div><div class="ttdef"><b>Definition</b> <a href="cs__binding_2macro_2detail_2cpp_2config_8hpp_source.html#l00015">config.hpp:15</a></div></div>
-<div class="ttc" id="astructc_html"><div class="ttname"><a href="structc.html">c</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00154">TestReflection.cpp:155</a></div></div>
-<div class="ttc" id="awide__string__property_8hpp_html_ad16d38807cc7604df51d98d8a8b95b8b"><div class="ttname"><a href="#ad16d38807cc7604df51d98d8a8b95b8b">DPM_WIDE_STRING_PROPERTY_ENTRY_DETAIL_CPP_VALUE</a></div><div class="ttdeci">#define DPM_WIDE_STRING_PROPERTY_ENTRY_DETAIL_CPP_VALUE(NAME)</div><div class="ttdef"><b>Definition</b> <a href="wide__string__property_8hpp_source.html#l00059">wide_string_property.hpp:59</a></div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition</b> <a href="app__ids_8hpp_source.html#l00061">app_ids.hpp:62</a></div></div>
+<div class="ttc" id="astructc_html"><div class="ttname"><a href="structc.html">c</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00145">TestReflection.cpp:146</a></div></div>
+<div class="ttc" id="atrigger_8hpp_html_aeb04f2e0012cb07d68538599161c9693"><div class="ttname"><a href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a></div><div class="ttdeci">#define CLASS</div><div class="ttdef"><b>Definition</b> <a href="trigger_8hpp_source.html#l00016">trigger.hpp:16</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="wide__string__property_8hpp_source.html">wide_string_property.hpp</a> の <a class="el" href="wide__string__property_8hpp_source.html#l00124">124</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="wide__string__property_8hpp_source.html">wide_string_property.hpp</a> の <a class="el" href="wide__string__property_8hpp_source.html#l00123">123</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -246,29 +243,28 @@ $(function(){initNavTree('wide__string__property_8hpp.html','',''); });
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">public                                                                       \</div>
-<div class="line">  virtual <span class="keywordtype">string</span> NAME                                                        \</div>
-<div class="line">  {                                                                          \</div>
-<div class="line">      get                                                                    \</div>
-<div class="line">      {                                                                      \</div>
-<div class="line">          var len = BOOST_PP_CAT( BOOST_PP_CAT( get_glue_, NAME ), _impl )(  \</div>
-<div class="line">              null, 0                                                        \</div>
-<div class="line">          );                                                                 \</div>
-<div class="line">          var stb = <span class="keyword">new</span> System.Text.StringBuilder( len );                    \</div>
-<div class="line">          BOOST_PP_CAT( BOOST_PP_CAT( get_glue_, NAME ), _impl )             \</div>
-<div class="line">          ( stb, len );                                                      \</div>
-<div class="line">          <span class="keywordflow">return</span> stb.ToString( );                                            \</div>
-<div class="line">      }                                                                      \</div>
-<div class="line">      <a class="code hl_function" href="test__command__line__option_8cpp.html#a11168c1960ee4b2ffbc15ee691d0b77b">set</a>                                                                    \</div>
-<div class="line">      {                                                                      \</div>
-<div class="line">          var sb = <span class="keyword">new</span> System.Text.StringBuilder( value );                   \</div>
-<div class="line">          BOOST_PP_CAT( BOOST_PP_CAT( set_glue_, NAME ), _impl )             \</div>
-<div class="line">          ( sb, sb.Length );                                                 \</div>
-<div class="line">      }                                                                      \</div>
-<div class="line">  }</div>
+<b>値:</b><div class="fragment"><div class="line">public                                                                         \</div>
+<div class="line">    virtual <span class="keywordtype">string</span> NAME                                                        \</div>
+<div class="line">    {                                                                          \</div>
+<div class="line">        get                                                                    \</div>
+<div class="line">        {                                                                      \</div>
+<div class="line">            var len = BOOST_PP_CAT( BOOST_PP_CAT( get_glue_, NAME ), _impl )(  \</div>
+<div class="line">              null, 0 );                                                       \</div>
+<div class="line">            var stb = <span class="keyword">new</span> System.Text.StringBuilder( len );                    \</div>
+<div class="line">            BOOST_PP_CAT( BOOST_PP_CAT( get_glue_, NAME ), _impl )             \</div>
+<div class="line">            ( stb, len );                                                      \</div>
+<div class="line">            <span class="keywordflow">return</span> stb.ToString( );                                            \</div>
+<div class="line">        }                                                                      \</div>
+<div class="line">        <a class="code hl_function" href="test__command__line__option_8cpp.html#a11168c1960ee4b2ffbc15ee691d0b77b">set</a>                                                                    \</div>
+<div class="line">        {                                                                      \</div>
+<div class="line">            var sb = <span class="keyword">new</span> System.Text.StringBuilder( value );                   \</div>
+<div class="line">            BOOST_PP_CAT( BOOST_PP_CAT( set_glue_, NAME ), _impl )             \</div>
+<div class="line">            ( sb, sb.Length );                                                 \</div>
+<div class="line">        }                                                                      \</div>
+<div class="line">    }</div>
 <div class="ttc" id="atest__command__line__option_8cpp_html_a11168c1960ee4b2ffbc15ee691d0b77b"><div class="ttname"><a href="test__command__line__option_8cpp.html#a11168c1960ee4b2ffbc15ee691d0b77b">set</a></div><div class="ttdeci">dest set(mock_open)</div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="wide__string__property_8hpp_source.html">wide_string_property.hpp</a> の <a class="el" href="wide__string__property_8hpp_source.html#l00154">154</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="wide__string__property_8hpp_source.html">wide_string_property.hpp</a> の <a class="el" href="wide__string__property_8hpp_source.html#l00148">148</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -296,7 +292,7 @@ $(function(){initNavTree('wide__string__property_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="wide__string__property_8hpp_source.html">wide_string_property.hpp</a> の <a class="el" href="wide__string__property_8hpp_source.html#l00180">180</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="wide__string__property_8hpp_source.html">wide_string_property.hpp</a> の <a class="el" href="wide__string__property_8hpp_source.html#l00172">172</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -323,14 +319,14 @@ $(function(){initNavTree('wide__string__property_8hpp.html','',''); });
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">public                                                                       \</div>
-<div class="line">  override <span class="keywordtype">string</span> NAME                                                       \</div>
-<div class="line">  {                                                                          \</div>
-<div class="line">      get;                                                                   \</div>
-<div class="line">      <a class="code hl_function" href="test__command__line__option_8cpp.html#a11168c1960ee4b2ffbc15ee691d0b77b">set</a>;                                                                   \</div>
-<div class="line">  }</div>
+<b>値:</b><div class="fragment"><div class="line">public                                                                         \</div>
+<div class="line">    override <span class="keywordtype">string</span> NAME                                                       \</div>
+<div class="line">    {                                                                          \</div>
+<div class="line">        get;                                                                   \</div>
+<div class="line">        <a class="code hl_function" href="test__command__line__option_8cpp.html#a11168c1960ee4b2ffbc15ee691d0b77b">set</a>;                                                                   \</div>
+<div class="line">    }</div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="wide__string__property_8hpp_source.html">wide_string_property.hpp</a> の <a class="el" href="wide__string__property_8hpp_source.html#l00186">186</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="wide__string__property_8hpp_source.html">wide_string_property.hpp</a> の <a class="el" href="wide__string__property_8hpp_source.html#l00177">177</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -358,7 +354,7 @@ $(function(){initNavTree('wide__string__property_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="wide__string__property_8hpp_source.html">wide_string_property.hpp</a> の <a class="el" href="wide__string__property_8hpp_source.html#l00198">198</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="wide__string__property_8hpp_source.html">wide_string_property.hpp</a> の <a class="el" href="wide__string__property_8hpp_source.html#l00188">188</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -433,7 +429,7 @@ $(function(){initNavTree('wide__string__property_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">( (<a class="code hl_define" href="#aca927f598d3fdbe3032204396544248d">DPM_WIDE_STRING_PROPERTY_ENTRY_GENERATE_CPP_CLASS_AFTER</a>)( NAME ) )</div>
-<div class="ttc" id="awide__string__property_8hpp_html_aca927f598d3fdbe3032204396544248d"><div class="ttname"><a href="#aca927f598d3fdbe3032204396544248d">DPM_WIDE_STRING_PROPERTY_ENTRY_GENERATE_CPP_CLASS_AFTER</a></div><div class="ttdeci">#define DPM_WIDE_STRING_PROPERTY_ENTRY_GENERATE_CPP_CLASS_AFTER( GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="wide__string__property_8hpp_source.html#l00124">wide_string_property.hpp:124</a></div></div>
+<div class="ttc" id="awide__string__property_8hpp_html_aca927f598d3fdbe3032204396544248d"><div class="ttname"><a href="#aca927f598d3fdbe3032204396544248d">DPM_WIDE_STRING_PROPERTY_ENTRY_GENERATE_CPP_CLASS_AFTER</a></div><div class="ttdeci">#define DPM_WIDE_STRING_PROPERTY_ENTRY_GENERATE_CPP_CLASS_AFTER( GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="wide__string__property_8hpp_source.html#l00123">wide_string_property.hpp:123</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="wide__string__property_8hpp_source.html">wide_string_property.hpp</a> の <a class="el" href="wide__string__property_8hpp_source.html#l00024">24</a> 行目に定義があります。</p>
 
@@ -454,7 +450,7 @@ $(function(){initNavTree('wide__string__property_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">( (<a class="code hl_define" href="#ae454180279525baaa07cbfcff35bdaab">DPM_WIDE_STRING_PROPERTY_ENTRY_GENERATE_CSHARP_CLASS_BODY</a>)( NAME ) )</div>
-<div class="ttc" id="awide__string__property_8hpp_html_ae454180279525baaa07cbfcff35bdaab"><div class="ttname"><a href="#ae454180279525baaa07cbfcff35bdaab">DPM_WIDE_STRING_PROPERTY_ENTRY_GENERATE_CSHARP_CLASS_BODY</a></div><div class="ttdeci">#define DPM_WIDE_STRING_PROPERTY_ENTRY_GENERATE_CSHARP_CLASS_BODY( GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="wide__string__property_8hpp_source.html#l00154">wide_string_property.hpp:154</a></div></div>
+<div class="ttc" id="awide__string__property_8hpp_html_ae454180279525baaa07cbfcff35bdaab"><div class="ttname"><a href="#ae454180279525baaa07cbfcff35bdaab">DPM_WIDE_STRING_PROPERTY_ENTRY_GENERATE_CSHARP_CLASS_BODY</a></div><div class="ttdeci">#define DPM_WIDE_STRING_PROPERTY_ENTRY_GENERATE_CSHARP_CLASS_BODY( GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="wide__string__property_8hpp_source.html#l00148">wide_string_property.hpp:148</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="wide__string__property_8hpp_source.html">wide_string_property.hpp</a> の <a class="el" href="wide__string__property_8hpp_source.html#l00030">30</a> 行目に定義があります。</p>
 
@@ -475,7 +471,7 @@ $(function(){initNavTree('wide__string__property_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">( (<a class="code hl_define" href="#a593b4ef3d7c13b6a6b89de0ba34f58b3">DPM_WIDE_STRING_PROPERTY_ENTRY_GENERATE_CSHARP_CONSTRACTOR</a>)( NAME ) )</div>
-<div class="ttc" id="awide__string__property_8hpp_html_a593b4ef3d7c13b6a6b89de0ba34f58b3"><div class="ttname"><a href="#a593b4ef3d7c13b6a6b89de0ba34f58b3">DPM_WIDE_STRING_PROPERTY_ENTRY_GENERATE_CSHARP_CONSTRACTOR</a></div><div class="ttdeci">#define DPM_WIDE_STRING_PROPERTY_ENTRY_GENERATE_CSHARP_CONSTRACTOR( GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="wide__string__property_8hpp_source.html#l00180">wide_string_property.hpp:180</a></div></div>
+<div class="ttc" id="awide__string__property_8hpp_html_a593b4ef3d7c13b6a6b89de0ba34f58b3"><div class="ttname"><a href="#a593b4ef3d7c13b6a6b89de0ba34f58b3">DPM_WIDE_STRING_PROPERTY_ENTRY_GENERATE_CSHARP_CONSTRACTOR</a></div><div class="ttdeci">#define DPM_WIDE_STRING_PROPERTY_ENTRY_GENERATE_CSHARP_CONSTRACTOR( GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="wide__string__property_8hpp_source.html#l00172">wide_string_property.hpp:172</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="wide__string__property_8hpp_source.html">wide_string_property.hpp</a> の <a class="el" href="wide__string__property_8hpp_source.html#l00036">36</a> 行目に定義があります。</p>
 
@@ -495,9 +491,9 @@ $(function(){initNavTree('wide__string__property_8hpp.html','',''); });
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">( (<a class="code hl_define" href="#a9344a64f69ca28345d115f0181f7b8f6">DPM_WIDE_STRING_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR</a>)( NAME \</div>
-<div class="line">) )</div>
-<div class="ttc" id="awide__string__property_8hpp_html_a9344a64f69ca28345d115f0181f7b8f6"><div class="ttname"><a href="#a9344a64f69ca28345d115f0181f7b8f6">DPM_WIDE_STRING_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR</a></div><div class="ttdeci">#define DPM_WIDE_STRING_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR(GM_SEQS, CLAS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="wide__string__property_8hpp_source.html#l00198">wide_string_property.hpp:198</a></div></div>
+<b>値:</b><div class="fragment"><div class="line">( (                                                                        \</div>
+<div class="line">  <a class="code hl_define" href="#a9344a64f69ca28345d115f0181f7b8f6">DPM_WIDE_STRING_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR</a>)( NAME ) )</div>
+<div class="ttc" id="awide__string__property_8hpp_html_a9344a64f69ca28345d115f0181f7b8f6"><div class="ttname"><a href="#a9344a64f69ca28345d115f0181f7b8f6">DPM_WIDE_STRING_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR</a></div><div class="ttdeci">#define DPM_WIDE_STRING_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR(GM_SEQS, CLAS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="wide__string__property_8hpp_source.html#l00188">wide_string_property.hpp:188</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="wide__string__property_8hpp_source.html">wide_string_property.hpp</a> の <a class="el" href="wide__string__property_8hpp_source.html#l00048">48</a> 行目に定義があります。</p>
 
@@ -517,9 +513,9 @@ $(function(){initNavTree('wide__string__property_8hpp.html','',''); });
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">( (<a class="code hl_define" href="#a72a57e6eb6e07572e2f5aac93ab2dcab">DPM_WIDE_STRING_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY</a>)( NAME  \</div>
-<div class="line">) )</div>
-<div class="ttc" id="awide__string__property_8hpp_html_a72a57e6eb6e07572e2f5aac93ab2dcab"><div class="ttname"><a href="#a72a57e6eb6e07572e2f5aac93ab2dcab">DPM_WIDE_STRING_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY</a></div><div class="ttdeci">#define DPM_WIDE_STRING_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY( GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="wide__string__property_8hpp_source.html#l00186">wide_string_property.hpp:186</a></div></div>
+<b>値:</b><div class="fragment"><div class="line">( (                                                                        \</div>
+<div class="line">  <a class="code hl_define" href="#a72a57e6eb6e07572e2f5aac93ab2dcab">DPM_WIDE_STRING_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY</a>)( NAME ) )</div>
+<div class="ttc" id="awide__string__property_8hpp_html_a72a57e6eb6e07572e2f5aac93ab2dcab"><div class="ttname"><a href="#a72a57e6eb6e07572e2f5aac93ab2dcab">DPM_WIDE_STRING_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY</a></div><div class="ttdeci">#define DPM_WIDE_STRING_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY( GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="wide__string__property_8hpp_source.html#l00177">wide_string_property.hpp:177</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="wide__string__property_8hpp_source.html">wide_string_property.hpp</a> の <a class="el" href="wide__string__property_8hpp_source.html#l00042">42</a> 行目に定義があります。</p>
 

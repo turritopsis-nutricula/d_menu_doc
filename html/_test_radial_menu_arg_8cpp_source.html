@@ -113,323 +113,318 @@ $(function(){initNavTree('_test_radial_menu_arg_8cpp_source.html','',''); });
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">    depicture_menu::cs_binding::NAME##_test_wrapper</span></div>
 </div>
 <div class="foldopen" id="foldopen00018" data-start="" data-end="">
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="_test_radial_menu_arg_8cpp.html#aeeb925b5525a02b2b64f741067c05d50">   18</a></span><span class="preprocessor">#define DPM_APPLY_TEST_SUITE( ARG, INPUT_TYPE )                                                                                  \</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">    BOOST_FIXTURE_TEST_SUITE( BOOST_PP_CAT( test_, ARG ), test_helper::domain_converter_fixture&lt; TO_TEST_WRAPPER_TYPE( ARG ) &gt; ) \</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">    using domain_t                                                                                                               \</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">        = test_helper::domain_converter_fixture&lt; TO_TEST_WRAPPER_TYPE( ARG                                                       \</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">        ) &gt;::convert_wrapper&lt; INPUT_TYPE &gt;;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="_test_radial_menu_arg_8cpp.html#aeeb925b5525a02b2b64f741067c05d50">   18</a></span><span class="preprocessor">#define DPM_APPLY_TEST_SUITE( ARG, INPUT_TYPE )                                \</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">    BOOST_FIXTURE_TEST_SUITE(                                                  \</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">      BOOST_PP_CAT( test_, ARG ),                                              \</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">      test_helper::domain_converter_fixture&lt; TO_TEST_WRAPPER_TYPE( ARG ) &gt; )   \</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">    using domain_t =                                                           \</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">      test_helper::domain_converter_fixture&lt; TO_TEST_WRAPPER_TYPE(             \</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">        ARG ) &gt;::convert_wrapper&lt; INPUT_TYPE &gt;;</span></div>
 </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="_test_radial_menu_arg_8cpp.html#a3699403ffb598ea0c804aaab1e150520">   24</a></span><span class="preprocessor">#define DPM_APPLY_TEST_SUITE_END( ) BOOST_AUTO_TEST_SUITE_END( )</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>  = <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">depicture_menu::domain</a>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">dm</a> = <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">depicture_menu::domain</a>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1cs__binding.html">dc</a> = <a class="code hl_namespace" href="namespacedepicture__menu_1_1cs__binding.html">depicture_menu::cs_binding</a>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &lt;boost/di.hpp&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="_test_radial_menu_arg_8cpp.html#a3699403ffb598ea0c804aaab1e150520">   26</a></span><span class="preprocessor">#define DPM_APPLY_TEST_SUITE_END( ) BOOST_AUTO_TEST_SUITE_END( )</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>  = <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">depicture_menu::domain</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">dm</a> = <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">depicture_menu::domain</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1cs__binding.html">dc</a> = <a class="code hl_namespace" href="namespacedepicture__menu_1_1cs__binding.html">depicture_menu::cs_binding</a>;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">//----------------------------------------//</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">// test_menu_ptr_injection : TestSuite</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><a class="code hl_function" href="menu__change__operation_8cpp.html#ae692b9f25c84027b486e3f198b05369c">BOOST_AUTO_TEST_SUITE</a>( test_menu_ptr_injection )</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="_test_radial_menu_arg_8cpp.html#a05b3f0cc55aa8dcf95ea6378d5c14962">   37</a></span><a class="code hl_namespace" href="namespacestd.html">std</a>::shared_ptr&lt; <a class="code hl_namespace" href="namespacedepicture__menu_1_1cs__binding.html">dc</a>::RadialMenuArg &gt; <a class="code hl_variable" href="_test_radial_menu_arg_8cpp.html#a05b3f0cc55aa8dcf95ea6378d5c14962">origin</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;boost/di.hpp&gt;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">//----------------------------------------//</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">// test_menu_ptr_injection : TestSuite</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><a class="code hl_function" href="menu__change__operation_8cpp.html#ae692b9f25c84027b486e3f198b05369c">BOOST_AUTO_TEST_SUITE</a>( test_menu_ptr_injection )</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="foldopen" id="foldopen00039" data-start="{" data-end="};">
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="structholder.html">   39</a></span>struct <a class="code hl_function" href="structholder.html#ab7c886ae64218abbaff2e8686b9bf5de">holder</a></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="structholder.html#a070dfc52a3b0d1f6c3f0382661c1c66b">   42</a></span>    std::weak_ptr&lt; dc::RadialMenuArg &gt; <a class="code hl_variable" href="structholder.html#a070dfc52a3b0d1f6c3f0382661c1c66b">origin</a>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="structholder.html#a68d70cfb652a151b6cdc1c35f988d441">   43</a></span>    std::string                        <a class="code hl_variable" href="structholder.html#a68d70cfb652a151b6cdc1c35f988d441">str_</a>;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="structholder.html#ab7c886ae64218abbaff2e8686b9bf5de">   44</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="structholder.html#ab7c886ae64218abbaff2e8686b9bf5de">holder</a>( std::string s ) : <a class="code hl_variable" href="structholder.html#a68d70cfb652a151b6cdc1c35f988d441">str_</a>( s ) { }</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="structholder.html#ac56d17db949d349f37cd8bafed6f51ac">   45</a></span>    <a class="code hl_function" href="structholder.html#ac56d17db949d349f37cd8bafed6f51ac">holder</a>( ) noexcept                                    = delete;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="structholder.html#a91cd406e038ffab138e53c5968df2809">   46</a></span>    constexpr <a class="code hl_function" href="structholder.html#ab7c886ae64218abbaff2e8686b9bf5de">holder</a>( <a class="code hl_function" href="structholder.html#ab7c886ae64218abbaff2e8686b9bf5de">holder</a> const&amp; ) noexcept            = delete;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="structholder.html#a73e912e88c4d9408d2f3be2f250ed5b4">   47</a></span>    constexpr <a class="code hl_function" href="structholder.html#ab7c886ae64218abbaff2e8686b9bf5de">holder</a>( <a class="code hl_function" href="structholder.html#ab7c886ae64218abbaff2e8686b9bf5de">holder</a>&amp;&amp; ) noexcept                 = delete;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="structholder.html#a9691bb758c26935baacc072cb7fdd206">   48</a></span>    constexpr <a class="code hl_function" href="structholder.html#ab7c886ae64218abbaff2e8686b9bf5de">holder</a>&amp; operator=( <a class="code hl_function" href="structholder.html#ab7c886ae64218abbaff2e8686b9bf5de">holder</a> const&amp; ) noexcept = delete;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="structholder.html#ad5bd74c66e3e79a0beb812cf5c3bd1f7">   49</a></span>    constexpr <a class="code hl_function" href="structholder.html#ab7c886ae64218abbaff2e8686b9bf5de">holder</a>&amp; operator=( <a class="code hl_function" href="structholder.html#ab7c886ae64218abbaff2e8686b9bf5de">holder</a>&amp;&amp; ) noexcept      = delete;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>};</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="_test_radial_menu_arg_8cpp.html#a05b3f0cc55aa8dcf95ea6378d5c14962">   39</a></span><a class="code hl_namespace" href="namespacestd.html">std</a>::shared_ptr&lt; <a class="code hl_namespace" href="namespacedepicture__menu_1_1cs__binding.html">dc</a>::RadialMenuArg &gt; <a class="code hl_variable" href="_test_radial_menu_arg_8cpp.html#a05b3f0cc55aa8dcf95ea6378d5c14962">origin</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="};">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="structholder.html">   41</a></span>struct <a class="code hl_function" href="structholder.html#ab7c886ae64218abbaff2e8686b9bf5de">holder</a></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="structholder.html#a070dfc52a3b0d1f6c3f0382661c1c66b">   44</a></span>    std::weak_ptr&lt; dc::RadialMenuArg &gt; <a class="code hl_variable" href="structholder.html#a070dfc52a3b0d1f6c3f0382661c1c66b">origin</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="structholder.html#a68d70cfb652a151b6cdc1c35f988d441">   45</a></span>    std::string                        <a class="code hl_variable" href="structholder.html#a68d70cfb652a151b6cdc1c35f988d441">str_</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="structholder.html#ab7c886ae64218abbaff2e8686b9bf5de">   46</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="structholder.html#ab7c886ae64218abbaff2e8686b9bf5de">holder</a>( std::string s ) : <a class="code hl_variable" href="structholder.html#a68d70cfb652a151b6cdc1c35f988d441">str_</a>( s ) { }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="structholder.html#ac56d17db949d349f37cd8bafed6f51ac">   47</a></span>    <a class="code hl_function" href="structholder.html#ac56d17db949d349f37cd8bafed6f51ac">holder</a>( ) noexcept                                    = delete;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="structholder.html#a91cd406e038ffab138e53c5968df2809">   48</a></span>    constexpr <a class="code hl_function" href="structholder.html#ab7c886ae64218abbaff2e8686b9bf5de">holder</a>( <a class="code hl_function" href="structholder.html#ab7c886ae64218abbaff2e8686b9bf5de">holder</a> const&amp; ) noexcept            = delete;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="structholder.html#a73e912e88c4d9408d2f3be2f250ed5b4">   49</a></span>    constexpr <a class="code hl_function" href="structholder.html#ab7c886ae64218abbaff2e8686b9bf5de">holder</a>( <a class="code hl_function" href="structholder.html#ab7c886ae64218abbaff2e8686b9bf5de">holder</a>&amp;&amp; ) noexcept                 = delete;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="structholder.html#a9691bb758c26935baacc072cb7fdd206">   50</a></span>    constexpr <a class="code hl_function" href="structholder.html#ab7c886ae64218abbaff2e8686b9bf5de">holder</a>&amp; operator=( <a class="code hl_function" href="structholder.html#ab7c886ae64218abbaff2e8686b9bf5de">holder</a> const&amp; ) noexcept = delete;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="structholder.html#ad5bd74c66e3e79a0beb812cf5c3bd1f7">   51</a></span>    constexpr <a class="code hl_function" href="structholder.html#ab7c886ae64218abbaff2e8686b9bf5de">holder</a>&amp; operator=( <a class="code hl_function" href="structholder.html#ab7c886ae64218abbaff2e8686b9bf5de">holder</a>&amp;&amp; ) noexcept      = delete;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>};</div>
 </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">// boost::di::injector&lt; std::weak_ptr&lt; dc::RadialMenuArg &gt; &gt;</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><a class="code hl_namespace" href="namespaceboost.html">boost</a>::di::injector&lt; <a class="code hl_function" href="structholder.html#ab7c886ae64218abbaff2e8686b9bf5de">holder</a>&amp; &gt;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">// boost::di::injector&lt; int&amp; &gt;</span></div>
-<div class="foldopen" id="foldopen00055" data-start="{" data-end="}">
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="_test_radial_menu_arg_8cpp.html#adb9036b1c4d2c2a10e78374e3646aba1">   55</a></span><a class="code hl_function" href="_test_radial_menu_arg_8cpp.html#adb9036b1c4d2c2a10e78374e3646aba1">make_module</a>( )</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>{</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">return</span> boost::di::make_injector(</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="comment">//      boost::di::bind&lt; int &gt;( ).in( boost::di::singleton )</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        boost::di::bind&lt; holder &gt;.in( boost::di::singleton )</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="comment">// ,</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="comment">// boost::di::bind&lt; dc::RadialMenuArg &gt;( ).to(</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="comment">//</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="comment">//  []( auto const&amp; i ) -&gt; std::weak_ptr&lt; dc::RadialMenuArg &gt;</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="comment">//  { return i.template create&lt; holder* &gt;( )-&gt;origin; }</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="comment">// )</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    );</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">// boost::di::injector&lt; std::weak_ptr&lt; dc::RadialMenuArg &gt; &gt;</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><a class="code hl_namespace" href="namespaceboost.html">boost</a>::di::injector&lt; <a class="code hl_function" href="structholder.html#ab7c886ae64218abbaff2e8686b9bf5de">holder</a>&amp; &gt;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">// boost::di::injector&lt; int&amp; &gt;</span></div>
+<div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="_test_radial_menu_arg_8cpp.html#adb9036b1c4d2c2a10e78374e3646aba1">   57</a></span><a class="code hl_function" href="_test_radial_menu_arg_8cpp.html#adb9036b1c4d2c2a10e78374e3646aba1">make_module</a>( )</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>{</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">return</span> boost::di::make_injector(</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>      <span class="comment">//        boost::di::bind&lt; int &gt;( ).in( boost::di::singleton )</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      boost::di::bind&lt; holder &gt;.in( boost::di::singleton )</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>      <span class="comment">// ,</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>      <span class="comment">// boost::di::bind&lt; dc::RadialMenuArg &gt;( ).to(</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      <span class="comment">//</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      <span class="comment">//    []( auto const&amp; i ) -&gt; std::weak_ptr&lt; dc::RadialMenuArg &gt;</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>      <span class="comment">//    { return i.template create&lt; holder* &gt;( )-&gt;origin; }</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      <span class="comment">// )</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    );</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>}</div>
 </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="_test_radial_menu_arg_8cpp.html#aeca65b3c5514e9cd9db7d72b5e7ac290">   69</a></span><span class="keyword">auto</span> <a class="code hl_variable" href="_test_radial_menu_arg_8cpp.html#aeca65b3c5514e9cd9db7d72b5e7ac290">inj</a> = boost::di::make_injector(</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <a class="code hl_function" href="_test_radial_menu_arg_8cpp.html#adb9036b1c4d2c2a10e78374e3646aba1">make_module</a>( ),</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="comment">//  boost::di::bind&lt; holder &gt;.in( boost::di::singleton ),</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    boost::di::bind&lt; int &gt;.in( boost::di::singleton )</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>);</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="foldopen" id="foldopen00075" data-start="{" data-end="};">
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="structmenu__presenter.html">   75</a></span><span class="keyword">struct </span><a class="code hl_function" href="structmenu__presenter.html#aa4cd9aeabec9a35e1dea91d86a3eb69d">menu_presenter</a></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>{</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="structmenu__presenter.html#a7a1f7c09e4ab9c101837b53b3493abcd">   77</a></span>    <a class="code hl_struct" href="structholder.html">holder</a>&amp; <a class="code hl_variable" href="structmenu__presenter.html#a7a1f7c09e4ab9c101837b53b3493abcd">cache_</a>;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="structmenu__presenter.html#aa4cd9aeabec9a35e1dea91d86a3eb69d">   78</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="structmenu__presenter.html#aa4cd9aeabec9a35e1dea91d86a3eb69d">menu_presenter</a>( <a class="code hl_struct" href="structholder.html">holder</a>&amp; h ) : <a class="code hl_variable" href="structmenu__presenter.html#a7a1f7c09e4ab9c101837b53b3493abcd">cache_</a>( h ) { }</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">auto</span></div>
-<div class="foldopen" id="foldopen00080" data-start="{" data-end="}">
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="structmenu__presenter.html#a80706c7fe0fcb522906cea63ad7c57ff">   80</a></span>    <a class="code hl_function" href="structmenu__presenter.html#a80706c7fe0fcb522906cea63ad7c57ff">ptr</a>( )</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    {</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="structmenu__presenter.html#a7a1f7c09e4ab9c101837b53b3493abcd">cache_</a>.origin;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="_test_radial_menu_arg_8cpp.html#aeca65b3c5514e9cd9db7d72b5e7ac290">   71</a></span><span class="keyword">auto</span> <a class="code hl_variable" href="_test_radial_menu_arg_8cpp.html#aeca65b3c5514e9cd9db7d72b5e7ac290">inj</a> = boost::di::make_injector(</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <a class="code hl_function" href="_test_radial_menu_arg_8cpp.html#adb9036b1c4d2c2a10e78374e3646aba1">make_module</a>( ),</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="comment">//    boost::di::bind&lt; holder &gt;.in( boost::di::singleton ),</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  boost::di::bind&lt; int &gt;.in( boost::di::singleton ) );</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="foldopen" id="foldopen00076" data-start="{" data-end="};">
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="structmenu__presenter.html">   76</a></span><span class="keyword">struct </span><a class="code hl_function" href="structmenu__presenter.html#aa4cd9aeabec9a35e1dea91d86a3eb69d">menu_presenter</a></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>{</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="structmenu__presenter.html#a7a1f7c09e4ab9c101837b53b3493abcd">   78</a></span>    <a class="code hl_struct" href="structholder.html">holder</a>&amp; <a class="code hl_variable" href="structmenu__presenter.html#a7a1f7c09e4ab9c101837b53b3493abcd">cache_</a>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="structmenu__presenter.html#aa4cd9aeabec9a35e1dea91d86a3eb69d">   79</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="structmenu__presenter.html#aa4cd9aeabec9a35e1dea91d86a3eb69d">menu_presenter</a>( <a class="code hl_struct" href="structholder.html">holder</a>&amp; h ) : <a class="code hl_variable" href="structmenu__presenter.html#a7a1f7c09e4ab9c101837b53b3493abcd">cache_</a>( h ) { }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="structmenu__presenter.html#a80706c7fe0fcb522906cea63ad7c57ff">   80</a></span>    <span class="keyword">auto</span> <a class="code hl_function" href="structmenu__presenter.html#a80706c7fe0fcb522906cea63ad7c57ff">ptr</a>( ) { <span class="keywordflow">return</span> <a class="code hl_variable" href="structmenu__presenter.html#a7a1f7c09e4ab9c101837b53b3493abcd">cache_</a>.origin; }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>};</div>
 </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>};</div>
-</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">//----------------------------------------//</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">// create</span></div>
-<div class="foldopen" id="foldopen00087" data-start="{" data-end="}">
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="_test_radial_menu_arg_8cpp.html#a504f79d7623f6b4064d243cc95297497">   87</a></span><a class="code hl_function" href="_test_radial_menu_arg_8cpp.html#a504f79d7623f6b4064d243cc95297497">BOOST_AUTO_TEST_CASE</a>( <a class="code hl_enumvalue" href="ipc__queue_8hpp.html#ac2161f7e2bb82a9905ca2a830b6c242fa76ea0bebb3c22822b4f0dd9c9fd021c5">create</a> )</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>{</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keyword">auto</span>  m = std::make_shared&lt; dc::RadialMenuArg &gt;( );</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keyword">auto</span>&amp; h = <a class="code hl_variable" href="_test_radial_menu_arg_8cpp.html#aeca65b3c5514e9cd9db7d72b5e7ac290">inj</a>.create&lt; <a class="code hl_struct" href="structholder.html">holder</a>&amp; &gt;( );</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="comment">//  h.origin.reset( );</span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( h.origin.lock( ).get( ) == <span class="keyword">nullptr</span> );</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    h.origin = std::make_shared&lt; dc::RadialMenuArg &gt;( );</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">//----------------------------------------//</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">// create</span></div>
+<div class="foldopen" id="foldopen00084" data-start="{" data-end="}">
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="_test_radial_menu_arg_8cpp.html#a504f79d7623f6b4064d243cc95297497">   84</a></span><a class="code hl_function" href="_test_radial_menu_arg_8cpp.html#a504f79d7623f6b4064d243cc95297497">BOOST_AUTO_TEST_CASE</a>( <a class="code hl_enumvalue" href="ipc__queue_8hpp.html#ac2161f7e2bb82a9905ca2a830b6c242fa76ea0bebb3c22822b4f0dd9c9fd021c5">create</a> )</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>{</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keyword">auto</span>  m = std::make_shared&lt; dc::RadialMenuArg &gt;( );</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keyword">auto</span>&amp; h = <a class="code hl_variable" href="_test_radial_menu_arg_8cpp.html#aeca65b3c5514e9cd9db7d72b5e7ac290">inj</a>.create&lt; <a class="code hl_struct" href="structholder.html">holder</a>&amp; &gt;( );</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="comment">//  h.origin.reset( );</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( h.origin.lock( ).get( ) == <span class="keyword">nullptr</span> );</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    h.origin = std::make_shared&lt; dc::RadialMenuArg &gt;( );</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keyword">auto</span> pre = <a class="code hl_variable" href="_test_radial_menu_arg_8cpp.html#aeca65b3c5514e9cd9db7d72b5e7ac290">inj</a>.create&lt; <a class="code hl_struct" href="structmenu__presenter.html">menu_presenter</a> &gt;( );</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keyword">static_assert</span>( boost::di::is_creatable&lt; menu_presenter &gt;( <a class="code hl_variable" href="_test_radial_menu_arg_8cpp.html#aeca65b3c5514e9cd9db7d72b5e7ac290">inj</a> ) );</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keyword">auto</span> pre = <a class="code hl_variable" href="_test_radial_menu_arg_8cpp.html#aeca65b3c5514e9cd9db7d72b5e7ac290">inj</a>.create&lt; <a class="code hl_struct" href="structmenu__presenter.html">menu_presenter</a> &gt;( );</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keyword">static_assert</span>( boost::di::is_creatable&lt; menu_presenter &gt;( <a class="code hl_variable" href="_test_radial_menu_arg_8cpp.html#aeca65b3c5514e9cd9db7d72b5e7ac290">inj</a> ) );</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( pre.ptr( ).lock( ).get( ) == <span class="keyword">nullptr</span> );</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    {</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( pre.ptr( ).lock( ).get( ) == <span class="keyword">nullptr</span> );</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    {</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keyword">auto</span>&amp; h = <a class="code hl_variable" href="_test_radial_menu_arg_8cpp.html#aeca65b3c5514e9cd9db7d72b5e7ac290">inj</a>.create&lt; <a class="code hl_struct" href="structholder.html">holder</a>&amp; &gt;( );</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <span class="comment">//  h.origin.reset( );</span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( h.origin.lock( ).get( ) == <span class="keyword">nullptr</span> );</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( h.str_ == <span class="stringliteral">&quot;&quot;</span> );</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        h.origin = std::make_shared&lt; dc::RadialMenuArg &gt;( );</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    }</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keyword">auto</span> pre2 = <a class="code hl_variable" href="_test_radial_menu_arg_8cpp.html#aeca65b3c5514e9cd9db7d72b5e7ac290">inj</a>.create&lt; <a class="code hl_struct" href="structmenu__presenter.html">menu_presenter</a> &gt;( );</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( pre2.ptr( ).lock( ).get( ) == <span class="keyword">nullptr</span> );</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    {</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <a class="code hl_variable" href="_test_radial_menu_arg_8cpp.html#aeca65b3c5514e9cd9db7d72b5e7ac290">inj</a>.create&lt; <a class="code hl_struct" href="structholder.html">holder</a>&amp; &gt;( ).<a class="code hl_variable" href="_test_radial_menu_arg_8cpp.html#a05b3f0cc55aa8dcf95ea6378d5c14962">origin</a> = m;</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    }</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( pre2.ptr( ).lock( ).get( ) != <span class="keyword">nullptr</span> );</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>}</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <span class="keyword">auto</span>&amp; h = <a class="code hl_variable" href="_test_radial_menu_arg_8cpp.html#aeca65b3c5514e9cd9db7d72b5e7ac290">inj</a>.create&lt; <a class="code hl_struct" href="structholder.html">holder</a>&amp; &gt;( );</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="comment">//  h.origin.reset( );</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( h.origin.lock( ).get( ) == <span class="keyword">nullptr</span> );</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( h.str_ == <span class="stringliteral">&quot;&quot;</span> );</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        h.origin = std::make_shared&lt; dc::RadialMenuArg &gt;( );</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    }</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keyword">auto</span> pre2 = <a class="code hl_variable" href="_test_radial_menu_arg_8cpp.html#aeca65b3c5514e9cd9db7d72b5e7ac290">inj</a>.create&lt; <a class="code hl_struct" href="structmenu__presenter.html">menu_presenter</a> &gt;( );</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( pre2.ptr( ).lock( ).get( ) == <span class="keyword">nullptr</span> );</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    {</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <a class="code hl_variable" href="_test_radial_menu_arg_8cpp.html#aeca65b3c5514e9cd9db7d72b5e7ac290">inj</a>.create&lt; <a class="code hl_struct" href="structholder.html">holder</a>&amp; &gt;( ).<a class="code hl_variable" href="_test_radial_menu_arg_8cpp.html#a05b3f0cc55aa8dcf95ea6378d5c14962">origin</a> = m;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    }</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( pre2.ptr( ).lock( ).get( ) != <span class="keyword">nullptr</span> );</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>}</div>
 </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>BOOST_AUTO_TEST_SUITE_END( )    <span class="comment">// test_menu_ptr_injection</span></div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">/*************************************************************/</span></div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">// test_RadialMenuCentralItem</span></div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">/*************************************************************/</span></div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><a class="code hl_define" href="_test_radial_menu_arg_8cpp.html#aeeb925b5525a02b2b64f741067c05d50">DPM_APPLY_TEST_SUITE</a>(</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    RadialMenuCentralItemArg, <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>::<a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#a2f99d325a57bd5a9d115762efcc80182">menu</a>::radialmenu_centralitem</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>)</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="preprocessor">#if 0</span></div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">//----------------------------------------------------------------------//</span><span class="comment"></span></div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">/// test_Label : TestCase</span></div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><a class="code hl_function" href="_test_radial_menu_arg_8cpp.html#a504f79d7623f6b4064d243cc95297497">BOOST_AUTO_TEST_CASE</a>( test_Label )</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>{</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    domain_t i( depicture_menu::cs_binding::apply_centralitem );</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    i.label( <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__label.html">dm::menu::menu_label</a>( L<span class="stringliteral">&quot;Wrapper&quot;</span> ) );</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    test_setup( i );</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>BOOST_AUTO_TEST_SUITE_END( )    <span class="comment">// test_menu_ptr_injection</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">/*************************************************************/</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">// test_RadialMenuCentralItem</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">/*************************************************************/</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><a class="code hl_define" href="_test_radial_menu_arg_8cpp.html#aeeb925b5525a02b2b64f741067c05d50">DPM_APPLY_TEST_SUITE</a>(</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  RadialMenuCentralItemArg,</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>::<a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#a2f99d325a57bd5a9d115762efcc80182">menu</a>::radialmenu_centralitem )</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="preprocessor">#if 0</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">//----------------------------------------------------------------------//</span><span class="comment"></span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">/// test_Label : TestCase</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><a class="code hl_function" href="_test_radial_menu_arg_8cpp.html#a504f79d7623f6b4064d243cc95297497">BOOST_AUTO_TEST_CASE</a>( test_Label )</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>{</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    domain_t i( depicture_menu::cs_binding::apply_centralitem );</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    i.label( <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__label.html">dm::menu::menu_label</a>( L<span class="stringliteral">&quot;Wrapper&quot;</span> ) );</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    test_setup( i );</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    i.label( <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__label.html">dm::menu::menu_label</a>( L<span class="stringliteral">&quot;xyzzy&quot;</span> ) );</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    expect_value( ).set_Label( <span class="stringliteral">&quot;xyzzy&quot;</span> );</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    i.label( <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__label.html">dm::menu::menu_label</a>( L<span class="stringliteral">&quot;xyzzy&quot;</span> ) );</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    expect_value( ).set_Label( <span class="stringliteral">&quot;xyzzy&quot;</span> );</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    apply_actual_and_check( i );</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>}</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    apply_actual_and_check( i );</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>}</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment">/*************************************************************/</span></div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment">// test_ActionId : TestCase</span></div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment">/*************************************************************/</span></div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><a class="code hl_function" href="_test_radial_menu_arg_8cpp.html#a504f79d7623f6b4064d243cc95297497">BOOST_AUTO_TEST_CASE</a>( test_ActionId )</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>{</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keyword">auto</span> uuid_gen = boost::uuids::random_generator( );</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    domain_t i( dc::apply_centralitem );</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    i.action_id( <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#a99ad42c5e94e5f4f52671f51a346479c">dm::actions::maker_id</a>{ } );</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    test_setup( i );</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keyword">auto</span> new_id = <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#a99ad42c5e94e5f4f52671f51a346479c">dm::actions::maker_id</a>{ };</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    expect_value( ).set_ActionId( new_id );</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    i.action_id( new_id );</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    apply_actual_and_check( i );</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>}</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><a class="code hl_define" href="_test_radial_menu_arg_8cpp.html#a3699403ffb598ea0c804aaab1e150520">DPM_APPLY_TEST_SUITE_END</a>( )    <span class="comment">// test_RadialMenuCentralItem</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment">/*************************************************************/</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment">// test_ActionId : TestCase</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment">/*************************************************************/</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><a class="code hl_function" href="_test_radial_menu_arg_8cpp.html#a504f79d7623f6b4064d243cc95297497">BOOST_AUTO_TEST_CASE</a>( test_ActionId )</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>{</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keyword">auto</span> uuid_gen = boost::uuids::random_generator( );</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    domain_t i( dc::apply_centralitem );</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    i.action_id( <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#a99ad42c5e94e5f4f52671f51a346479c">dm::actions::maker_id</a>{ } );</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    test_setup( i );</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    <span class="keyword">auto</span> new_id = <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#a99ad42c5e94e5f4f52671f51a346479c">dm::actions::maker_id</a>{ };</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    expect_value( ).set_ActionId( new_id );</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    i.action_id( new_id );</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    apply_actual_and_check( i );</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>}</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><a class="code hl_define" href="_test_radial_menu_arg_8cpp.html#a3699403ffb598ea0c804aaab1e150520">DPM_APPLY_TEST_SUITE_END</a>( )    <span class="comment">// test_RadialMenuCentralItem</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment">// TODO: apply_menu_** not use</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="preprocessor">#if 0</span></div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment">// TODO: apply_menu_** not use</span></div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="preprocessor">#if 0</span></div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">// RadialMenuItemArg</span></div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><a class="code hl_define" href="_test_radial_menu_arg_8cpp.html#aeeb925b5525a02b2b64f741067c05d50">DPM_APPLY_TEST_SUITE</a>( RadialMenuItemArg, <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html">d::menu::radialmenu_item</a> )</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment">//----------------------------------------------------------------------//</span><span class="comment"></span></div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment">/// test_Background : TestCase</span></div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><a class="code hl_function" href="_test_radial_menu_arg_8cpp.html#a504f79d7623f6b4064d243cc95297497">BOOST_AUTO_TEST_CASE</a>( test_Background )</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>{</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    domain_t <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>( <a class="code hl_function" href="namespacedepicture__menu_1_1cs__binding.html#ae572bad0d69db1d1c8b9e1934514c6d9">dc::apply_menu_item</a> );</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.set_background( { 240, 250, 0, 180 } );</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    test_setup( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> );</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.set_background( { 2, 3, 5, 10 } );</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    expect_value( ).Background_RGB( 2, 3, 5 );</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    expect_value( ).Background_A( 10 );</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    apply_actual_and_check( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> );</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>}</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="comment">/*************************************************************/</span></div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="comment">// test_Label : TestCase</span></div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment">/*************************************************************/</span></div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><a class="code hl_function" href="_test_radial_menu_arg_8cpp.html#a504f79d7623f6b4064d243cc95297497">BOOST_AUTO_TEST_CASE</a>( test_Label )</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>{</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    domain_t <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>( <a class="code hl_function" href="namespacedepicture__menu_1_1cs__binding.html#ae572bad0d69db1d1c8b9e1934514c6d9">dc::apply_menu_item</a> );</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.set_label( L<span class="stringliteral">&quot;Var&quot;</span> );</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    test_setup( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> );</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.set_label( L<span class="stringliteral">&quot;Bar&quot;</span> );</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    expect_value( ).Content( ).ref_Label( ) = <span class="stringliteral">&quot;Bar&quot;</span>;</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    apply_actual_and_check( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> );</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>}</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment"></span> </div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment">/// test_ActionId : TestCase</span></div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><a class="code hl_function" href="_test_radial_menu_arg_8cpp.html#a504f79d7623f6b4064d243cc95297497">BOOST_AUTO_TEST_CASE</a>( test_ActionId )</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>{</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <span class="keyword">auto</span> uuid_gen = boost::uuids::random_generator( );</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    domain_t <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>( <a class="code hl_function" href="namespacedepicture__menu_1_1cs__binding.html#ae572bad0d69db1d1c8b9e1934514c6d9">dc::apply_menu_item</a> );</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.set_action_id(</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        d::commands::common_command_kind::shellexecute,</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">d::actions::publisher_id</a>( uuid_gen( ) )</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    );</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.current_action_kind( d::commands::common_command_kind::shellexecute );</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    test_setup( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> );</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    <span class="keyword">auto</span> new_id = uuid_gen( );</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.set_action_id(</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        d::commands::common_command_kind::shellexecute,</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">d::actions::publisher_id</a>( new_id )</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    );</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    expect_value( ).set_ActionId( new_id );</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span> </div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    apply_actual_and_check( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> );</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>}</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><a class="code hl_define" href="_test_radial_menu_arg_8cpp.html#a3699403ffb598ea0c804aaab1e150520">DPM_APPLY_TEST_SUITE_END</a>( )</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="comment">// RadialMenuArg</span></div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><a class="code hl_define" href="_test_radial_menu_arg_8cpp.html#aeeb925b5525a02b2b64f741067c05d50">DPM_APPLY_TEST_SUITE</a>( RadialMenuArg, <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>::<a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#a2f99d325a57bd5a9d115762efcc80182">menu</a>::radialmenu )<span class="comment"></span></div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="comment">/// test_Items : TestCase</span></div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><a class="code hl_function" href="_test_backup_json_8cpp.html#ac60c25c7e7fe69dfd220f4fb5bc17c5d">BOOST_AUTO_TEST_CASE</a>( test_Items_add )</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>{</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    domain_t <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>( <a class="code hl_function" href="namespacedepicture__menu_1_1cs__binding.html#a17af5c2678e88aa88a411f7d98a360a5">dc::apply_radialmenu</a> );</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.add_item( <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html">d::menu::radialmenu_item</a>{ } );</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.add_item( <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html">d::menu::radialmenu_item</a>{ } );</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    test_setup( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> );</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    <span class="keywordflow">for</span> ( <span class="keyword">auto</span> i = 0u; i &lt; 10; ++i )</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    {</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html">d::menu::radialmenu_item</a> new_item{ };</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        <span class="keyword">auto</span> e = expect_value( ).Items( ).add( dc::RadialMenuItemArg{ } );</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span> </div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        <a class="code hl_function" href="namespacedepicture__menu_1_1cs__binding.html#ae572bad0d69db1d1c8b9e1934514c6d9">dc::apply_menu_item</a>( new_item, *e );</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.add_item( std::move( new_item ) );</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    }</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    apply_actual_and_check( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> );</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>}<span class="comment"></span></div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span><span class="comment">/// test_Items_item</span></div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><a class="code hl_function" href="_test_radial_menu_arg_8cpp.html#a504f79d7623f6b4064d243cc95297497">BOOST_AUTO_TEST_CASE</a>( test_Items_item )</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>{</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <span class="keyword">auto</span>     uuid_gen = boost::uuids::random_generator( );</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    domain_t <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>( <a class="code hl_function" href="namespacedepicture__menu_1_1cs__binding.html#a17af5c2678e88aa88a411f7d98a360a5">dc::apply_radialmenu</a> );</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    {</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.set_item_current_action(</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>            0, d::commands::common_command_kind::custom_command</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>        );</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>        <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.set_item_action_id(</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>            0,</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>            d::commands::common_command_kind::custom_command,</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>            <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#a99ad42c5e94e5f4f52671f51a346479c">d::actions::maker_id</a>( uuid_gen( ) )</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        );</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    }</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    test_setup( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> );</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    <span class="keyword">auto</span> <span class="keyword">const</span> new_id = uuid_gen( );</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    expect_value( ).Items( ).at_ptr( 0 )-&gt;set_ActionId( new_id );</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.set_item_action_id(</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        0,</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        d::commands::common_command_kind::custom_command,</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#a99ad42c5e94e5f4f52671f51a346479c">d::actions::maker_id</a>( new_id )</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    ) );</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    apply_actual_and_check( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> );</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>}</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="comment"></span> </div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="comment">/// test_CentralItem : TestCase</span></div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span><a class="code hl_function" href="_test_radial_menu_arg_8cpp.html#a504f79d7623f6b4064d243cc95297497">BOOST_AUTO_TEST_CASE</a>( test_CentralItem )</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>{</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <span class="keyword">auto</span>     uuid_gen = boost::uuids::random_generator( );</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    domain_t <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>( <a class="code hl_function" href="namespacedepicture__menu_1_1cs__binding.html#a17af5c2678e88aa88a411f7d98a360a5">dc::apply_radialmenu</a> );</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.set_central_item_action_id( <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#a99ad42c5e94e5f4f52671f51a346479c">d::actions::maker_id</a>( uuid_gen( ) ) );</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span> </div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    test_setup( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> );</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    <span class="keyword">auto</span> <span class="keyword">const</span> new_id = <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#a99ad42c5e94e5f4f52671f51a346479c">dm::actions::maker_id</a>( uuid_gen( ) );</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    expect_value( ).CentralItem( ).set_ActionId( new_id );</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.set_central_item_action_id( new_id );</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span> </div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    apply_actual_and_check( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> );</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>}</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span><a class="code hl_define" href="_test_radial_menu_arg_8cpp.html#a3699403ffb598ea0c804aaab1e150520">DPM_APPLY_TEST_SUITE_END</a>( )</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment">// RadialMenuItemArg</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><a class="code hl_define" href="_test_radial_menu_arg_8cpp.html#aeeb925b5525a02b2b64f741067c05d50">DPM_APPLY_TEST_SUITE</a>( RadialMenuItemArg, <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html">d::menu::radialmenu_item</a> )</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment">//----------------------------------------------------------------------//</span><span class="comment"></span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">/// test_Background : TestCase</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><a class="code hl_function" href="_test_radial_menu_arg_8cpp.html#a504f79d7623f6b4064d243cc95297497">BOOST_AUTO_TEST_CASE</a>( test_Background )</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>{</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    domain_t <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>( <a class="code hl_function" href="namespacedepicture__menu_1_1cs__binding.html#ae572bad0d69db1d1c8b9e1934514c6d9">dc::apply_menu_item</a> );</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.set_background( { 240, 250, 0, 180 } );</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    test_setup( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> );</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.set_background( { 2, 3, 5, 10 } );</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    expect_value( ).Background_RGB( 2, 3, 5 );</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    expect_value( ).Background_A( 10 );</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    apply_actual_and_check( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> );</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>}</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="comment">/*************************************************************/</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment">// test_Label : TestCase</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment">/*************************************************************/</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><a class="code hl_function" href="_test_radial_menu_arg_8cpp.html#a504f79d7623f6b4064d243cc95297497">BOOST_AUTO_TEST_CASE</a>( test_Label )</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>{</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    domain_t <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>( <a class="code hl_function" href="namespacedepicture__menu_1_1cs__binding.html#ae572bad0d69db1d1c8b9e1934514c6d9">dc::apply_menu_item</a> );</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.set_label( L<span class="stringliteral">&quot;Var&quot;</span> );</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    test_setup( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> );</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.set_label( L<span class="stringliteral">&quot;Bar&quot;</span> );</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    expect_value( ).Content( ).ref_Label( ) = <span class="stringliteral">&quot;Bar&quot;</span>;</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    apply_actual_and_check( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> );</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>}</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="comment"></span> </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="comment">/// test_ActionId : TestCase</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><a class="code hl_function" href="_test_radial_menu_arg_8cpp.html#a504f79d7623f6b4064d243cc95297497">BOOST_AUTO_TEST_CASE</a>( test_ActionId )</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>{</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <span class="keyword">auto</span> uuid_gen = boost::uuids::random_generator( );</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    domain_t <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>( <a class="code hl_function" href="namespacedepicture__menu_1_1cs__binding.html#ae572bad0d69db1d1c8b9e1934514c6d9">dc::apply_menu_item</a> );</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.set_action_id(</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        d::commands::common_command_kind::shellexecute,</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">d::actions::publisher_id</a>( uuid_gen( ) )</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    );</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.current_action_kind( d::commands::common_command_kind::shellexecute );</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    test_setup( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> );</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    <span class="keyword">auto</span> new_id = uuid_gen( );</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.set_action_id(</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        d::commands::common_command_kind::shellexecute,</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">d::actions::publisher_id</a>( new_id )</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    );</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    expect_value( ).set_ActionId( new_id );</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>    apply_actual_and_check( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> );</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>}</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><a class="code hl_define" href="_test_radial_menu_arg_8cpp.html#a3699403ffb598ea0c804aaab1e150520">DPM_APPLY_TEST_SUITE_END</a>( )</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="comment">// RadialMenuArg</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><a class="code hl_define" href="_test_radial_menu_arg_8cpp.html#aeeb925b5525a02b2b64f741067c05d50">DPM_APPLY_TEST_SUITE</a>( RadialMenuArg, <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>::<a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#a2f99d325a57bd5a9d115762efcc80182">menu</a>::radialmenu )<span class="comment"></span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="comment">/// test_Items : TestCase</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><a class="code hl_function" href="_test_backup_json_8cpp.html#ac60c25c7e7fe69dfd220f4fb5bc17c5d">BOOST_AUTO_TEST_CASE</a>( test_Items_add )</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>{</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    domain_t <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>( <a class="code hl_function" href="namespacedepicture__menu_1_1cs__binding.html#a17af5c2678e88aa88a411f7d98a360a5">dc::apply_radialmenu</a> );</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.add_item( <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html">d::menu::radialmenu_item</a>{ } );</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.add_item( <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html">d::menu::radialmenu_item</a>{ } );</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    test_setup( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> );</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    <span class="keywordflow">for</span> ( <span class="keyword">auto</span> i = 0u; i &lt; 10; ++i )</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    {</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html">d::menu::radialmenu_item</a> new_item{ };</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        <span class="keyword">auto</span> e = expect_value( ).Items( ).add( dc::RadialMenuItemArg{ } );</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        <a class="code hl_function" href="namespacedepicture__menu_1_1cs__binding.html#ae572bad0d69db1d1c8b9e1934514c6d9">dc::apply_menu_item</a>( new_item, *e );</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.add_item( std::move( new_item ) );</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    }</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    apply_actual_and_check( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> );</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>}<span class="comment"></span></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="comment">/// test_Items_item</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><a class="code hl_function" href="_test_radial_menu_arg_8cpp.html#a504f79d7623f6b4064d243cc95297497">BOOST_AUTO_TEST_CASE</a>( test_Items_item )</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>{</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    <span class="keyword">auto</span>     uuid_gen = boost::uuids::random_generator( );</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    domain_t <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>( <a class="code hl_function" href="namespacedepicture__menu_1_1cs__binding.html#a17af5c2678e88aa88a411f7d98a360a5">dc::apply_radialmenu</a> );</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    {</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.set_item_current_action(</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>            0, d::commands::common_command_kind::custom_command</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        );</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.set_item_action_id(</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>            0,</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>            d::commands::common_command_kind::custom_command,</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>            <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#a99ad42c5e94e5f4f52671f51a346479c">d::actions::maker_id</a>( uuid_gen( ) )</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>        );</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    }</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    test_setup( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> );</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    <span class="keyword">auto</span> <span class="keyword">const</span> new_id = uuid_gen( );</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    expect_value( ).Items( ).at_ptr( 0 )-&gt;set_ActionId( new_id );</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.set_item_action_id(</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        0,</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        d::commands::common_command_kind::custom_command,</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#a99ad42c5e94e5f4f52671f51a346479c">d::actions::maker_id</a>( new_id )</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    ) );</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    apply_actual_and_check( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> );</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>}</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><span class="comment"></span> </div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="comment">/// test_CentralItem : TestCase</span></div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span><a class="code hl_function" href="_test_radial_menu_arg_8cpp.html#a504f79d7623f6b4064d243cc95297497">BOOST_AUTO_TEST_CASE</a>( test_CentralItem )</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>{</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    <span class="keyword">auto</span>     uuid_gen = boost::uuids::random_generator( );</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    domain_t <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>( <a class="code hl_function" href="namespacedepicture__menu_1_1cs__binding.html#a17af5c2678e88aa88a411f7d98a360a5">dc::apply_radialmenu</a> );</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.set_central_item_action_id( <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#a99ad42c5e94e5f4f52671f51a346479c">d::actions::maker_id</a>( uuid_gen( ) ) );</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    test_setup( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> );</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    <span class="keyword">auto</span> <span class="keyword">const</span> new_id = <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#a99ad42c5e94e5f4f52671f51a346479c">dm::actions::maker_id</a>( uuid_gen( ) );</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    expect_value( ).CentralItem( ).set_ActionId( new_id );</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>    <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.set_central_item_action_id( new_id );</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    apply_actual_and_check( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> );</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>}</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span><a class="code hl_define" href="_test_radial_menu_arg_8cpp.html#a3699403ffb598ea0c804aaab1e150520">DPM_APPLY_TEST_SUITE_END</a>( )</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_radial_menu_args_8hpp_html"><div class="ttname"><a href="_radial_menu_args_8hpp.html">RadialMenuArgs.hpp</a></div></div>
-<div class="ttc" id="a_test_backup_json_8cpp_html_ac60c25c7e7fe69dfd220f4fb5bc17c5d"><div class="ttname"><a href="_test_backup_json_8cpp.html#ac60c25c7e7fe69dfd220f4fb5bc17c5d">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(test_test_write_backup_json)</div><div class="ttdoc">test_write_backup_json : TestCase</div><div class="ttdef"><b>Definition</b> <a href="_test_backup_json_8cpp_source.html#l00203">TestBackupJson.cpp:203</a></div></div>
+<div class="ttc" id="a_test_backup_json_8cpp_html_ac60c25c7e7fe69dfd220f4fb5bc17c5d"><div class="ttname"><a href="_test_backup_json_8cpp.html#ac60c25c7e7fe69dfd220f4fb5bc17c5d">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(test_test_write_backup_json)</div><div class="ttdoc">test_write_backup_json : TestCase</div><div class="ttdef"><b>Definition</b> <a href="_test_backup_json_8cpp_source.html#l00200">TestBackupJson.cpp:200</a></div></div>
 <div class="ttc" id="a_test_config_view_presenter_8cpp_html_a2f99d325a57bd5a9d115762efcc80182"><div class="ttname"><a href="_test_config_view_presenter_8cpp.html#a2f99d325a57bd5a9d115762efcc80182">menu</a></div><div class="ttdeci">dd::menu::radialmenu menu(m_id)</div></div>
 <div class="ttc" id="a_test_config_view_presenter_8cpp_html_a7845eb0c68b997d6d329618f36f7e794"><div class="ttname"><a href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a></div><div class="ttdeci">BOOST_TEST(get_menu(config_arg, 0u) -&gt;get_MenuId()==m_id)</div></div>
-<div class="ttc" id="a_test_radial_menu_arg_8cpp_html_a05b3f0cc55aa8dcf95ea6378d5c14962"><div class="ttname"><a href="_test_radial_menu_arg_8cpp.html#a05b3f0cc55aa8dcf95ea6378d5c14962">origin</a></div><div class="ttdeci">std::shared_ptr&lt; dc::RadialMenuArg &gt; origin</div><div class="ttdef"><b>Definition</b> <a href="#l00037">TestRadialMenuArg.cpp:37</a></div></div>
-<div class="ttc" id="a_test_radial_menu_arg_8cpp_html_a3699403ffb598ea0c804aaab1e150520"><div class="ttname"><a href="_test_radial_menu_arg_8cpp.html#a3699403ffb598ea0c804aaab1e150520">DPM_APPLY_TEST_SUITE_END</a></div><div class="ttdeci">#define DPM_APPLY_TEST_SUITE_END()</div><div class="ttdef"><b>Definition</b> <a href="#l00024">TestRadialMenuArg.cpp:24</a></div></div>
-<div class="ttc" id="a_test_radial_menu_arg_8cpp_html_a504f79d7623f6b4064d243cc95297497"><div class="ttname"><a href="_test_radial_menu_arg_8cpp.html#a504f79d7623f6b4064d243cc95297497">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(create)</div><div class="ttdef"><b>Definition</b> <a href="#l00087">TestRadialMenuArg.cpp:87</a></div></div>
-<div class="ttc" id="a_test_radial_menu_arg_8cpp_html_adb9036b1c4d2c2a10e78374e3646aba1"><div class="ttname"><a href="_test_radial_menu_arg_8cpp.html#adb9036b1c4d2c2a10e78374e3646aba1">make_module</a></div><div class="ttdeci">boost::di::injector&lt; holder &amp; &gt; make_module()</div><div class="ttdef"><b>Definition</b> <a href="#l00055">TestRadialMenuArg.cpp:55</a></div></div>
-<div class="ttc" id="a_test_radial_menu_arg_8cpp_html_aeca65b3c5514e9cd9db7d72b5e7ac290"><div class="ttname"><a href="_test_radial_menu_arg_8cpp.html#aeca65b3c5514e9cd9db7d72b5e7ac290">inj</a></div><div class="ttdeci">auto inj</div><div class="ttdef"><b>Definition</b> <a href="#l00069">TestRadialMenuArg.cpp:69</a></div></div>
+<div class="ttc" id="a_test_radial_menu_arg_8cpp_html_a05b3f0cc55aa8dcf95ea6378d5c14962"><div class="ttname"><a href="_test_radial_menu_arg_8cpp.html#a05b3f0cc55aa8dcf95ea6378d5c14962">origin</a></div><div class="ttdeci">std::shared_ptr&lt; dc::RadialMenuArg &gt; origin</div><div class="ttdef"><b>Definition</b> <a href="#l00039">TestRadialMenuArg.cpp:39</a></div></div>
+<div class="ttc" id="a_test_radial_menu_arg_8cpp_html_a3699403ffb598ea0c804aaab1e150520"><div class="ttname"><a href="_test_radial_menu_arg_8cpp.html#a3699403ffb598ea0c804aaab1e150520">DPM_APPLY_TEST_SUITE_END</a></div><div class="ttdeci">#define DPM_APPLY_TEST_SUITE_END()</div><div class="ttdef"><b>Definition</b> <a href="#l00026">TestRadialMenuArg.cpp:26</a></div></div>
+<div class="ttc" id="a_test_radial_menu_arg_8cpp_html_a504f79d7623f6b4064d243cc95297497"><div class="ttname"><a href="_test_radial_menu_arg_8cpp.html#a504f79d7623f6b4064d243cc95297497">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(create)</div><div class="ttdef"><b>Definition</b> <a href="#l00084">TestRadialMenuArg.cpp:84</a></div></div>
+<div class="ttc" id="a_test_radial_menu_arg_8cpp_html_adb9036b1c4d2c2a10e78374e3646aba1"><div class="ttname"><a href="_test_radial_menu_arg_8cpp.html#adb9036b1c4d2c2a10e78374e3646aba1">make_module</a></div><div class="ttdeci">boost::di::injector&lt; holder &amp; &gt; make_module()</div><div class="ttdef"><b>Definition</b> <a href="#l00057">TestRadialMenuArg.cpp:57</a></div></div>
+<div class="ttc" id="a_test_radial_menu_arg_8cpp_html_aeca65b3c5514e9cd9db7d72b5e7ac290"><div class="ttname"><a href="_test_radial_menu_arg_8cpp.html#aeca65b3c5514e9cd9db7d72b5e7ac290">inj</a></div><div class="ttdeci">auto inj</div><div class="ttdef"><b>Definition</b> <a href="#l00071">TestRadialMenuArg.cpp:71</a></div></div>
 <div class="ttc" id="a_test_radial_menu_arg_8cpp_html_aeeb925b5525a02b2b64f741067c05d50"><div class="ttname"><a href="_test_radial_menu_arg_8cpp.html#aeeb925b5525a02b2b64f741067c05d50">DPM_APPLY_TEST_SUITE</a></div><div class="ttdeci">#define DPM_APPLY_TEST_SUITE(ARG, INPUT_TYPE)</div><div class="ttdef"><b>Definition</b> <a href="#l00018">TestRadialMenuArg.cpp:18</a></div></div>
 <div class="ttc" id="aapply__menus_8hpp_html"><div class="ttname"><a href="apply__menus_8hpp.html">apply_menus.hpp</a></div></div>
 <div class="ttc" id="aclassdepicture__menu_1_1domain_1_1menu_1_1menu__label_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1menu_1_1menu__label.html">depicture_menu::domain::menu::menu_label</a></div><div class="ttdef"><b>Definition</b> <a href="radialmenu__label_8hpp_source.html#l00021">radialmenu_label.hpp:23</a></div></div>
 <div class="ttc" id="acs__binding__test__helpers_8hpp_html"><div class="ttname"><a href="cs__binding__test__helpers_8hpp.html">cs_binding_test_helpers.hpp</a></div></div>
 <div class="ttc" id="aipc__queue_8hpp_html_ac2161f7e2bb82a9905ca2a830b6c242fa76ea0bebb3c22822b4f0dd9c9fd021c5"><div class="ttname"><a href="ipc__queue_8hpp.html#ac2161f7e2bb82a9905ca2a830b6c242fa76ea0bebb3c22822b4f0dd9c9fd021c5">ipc_constract::create</a></div><div class="ttdeci">@ create</div><div class="ttdef"><b>Definition</b> <a href="ipc__queue_8hpp_source.html#l00009">ipc_queue.hpp:9</a></div></div>
-<div class="ttc" id="amenu__change__operation_8cpp_html_ae692b9f25c84027b486e3f198b05369c"><div class="ttname"><a href="menu__change__operation_8cpp.html#ae692b9f25c84027b486e3f198b05369c">BOOST_AUTO_TEST_SUITE</a></div><div class="ttdeci">BOOST_AUTO_TEST_SUITE(item_propertes, *bt::depends_on(&quot;test_config_view_presenter/add_menu_item&quot;)) dd</div><div class="ttdef"><b>Definition</b> <a href="menu__change__operation_8cpp_source.html#l00216">menu_change_operation.cpp:216</a></div></div>
-<div class="ttc" id="anamespaceboost_html"><div class="ttname"><a href="namespaceboost.html">boost</a></div><div class="ttdef"><b>Definition</b> <a href="model_2entity_8hpp_source.html#l00156">entity.hpp:157</a></div></div>
+<div class="ttc" id="amenu__change__operation_8cpp_html_ae692b9f25c84027b486e3f198b05369c"><div class="ttname"><a href="menu__change__operation_8cpp.html#ae692b9f25c84027b486e3f198b05369c">BOOST_AUTO_TEST_SUITE</a></div><div class="ttdeci">BOOST_AUTO_TEST_SUITE(item_propertes, *bt::depends_on(&quot;test_config_view_presenter/add_menu_item&quot;)) dd</div><div class="ttdef"><b>Definition</b> <a href="menu__change__operation_8cpp_source.html#l00208">menu_change_operation.cpp:208</a></div></div>
+<div class="ttc" id="anamespaceboost_html"><div class="ttname"><a href="namespaceboost.html">boost</a></div><div class="ttdef"><b>Definition</b> <a href="model_2entity_8hpp_source.html#l00135">entity.hpp:136</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1cs__binding_html"><div class="ttname"><a href="namespacedepicture__menu_1_1cs__binding.html">depicture_menu::cs_binding</a></div><div class="ttdef"><b>Definition</b> <a href="core__interface_8hpp_source.html#l00042">core_interface.hpp:43</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1cs__binding_html_a17af5c2678e88aa88a411f7d98a360a5"><div class="ttname"><a href="namespacedepicture__menu_1_1cs__binding.html#a17af5c2678e88aa88a411f7d98a360a5">depicture_menu::cs_binding::apply_radialmenu</a></div><div class="ttdeci">void apply_radialmenu(domain::menu::radialmenu const &amp;menu, RadialMenuArg &amp;arg)</div><div class="ttdef"><b>Definition</b> <a href="apply__menus_8cpp_source.html#l00043">apply_menus.cpp:43</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1cs__binding_html_ae572bad0d69db1d1c8b9e1934514c6d9"><div class="ttname"><a href="namespacedepicture__menu_1_1cs__binding.html#ae572bad0d69db1d1c8b9e1934514c6d9">depicture_menu::cs_binding::apply_menu_item</a></div><div class="ttdeci">void apply_menu_item(domain::menu::radialmenu_item const &amp;item, std::shared_ptr&lt; ConfMenu &gt; menu, build_query::actions_query const &amp;)</div><div class="ttdef"><b>Definition</b> <a href="apply__config__arg_8cpp_source.html#l00602">apply_config_arg.cpp:602</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1cs__binding_html_ae572bad0d69db1d1c8b9e1934514c6d9"><div class="ttname"><a href="namespacedepicture__menu_1_1cs__binding.html#ae572bad0d69db1d1c8b9e1934514c6d9">depicture_menu::cs_binding::apply_menu_item</a></div><div class="ttdeci">void apply_menu_item(domain::menu::radialmenu_item const &amp;item, std::shared_ptr&lt; ConfMenu &gt; menu, build_query::actions_query const &amp;)</div><div class="ttdef"><b>Definition</b> <a href="apply__config__arg_8cpp_source.html#l00540">apply_config_arg.cpp:540</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1actions_html_a99ad42c5e94e5f4f52671f51a346479c"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1actions.html#a99ad42c5e94e5f4f52671f51a346479c">depicture_menu::domain::actions::maker_id</a></div><div class="ttdeci">publisher_id maker_id</div><div class="ttdef"><b>Definition</b> <a href="action__ids_8hpp_source.html#l00018">action_ids.hpp:18</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1actions_html_af913742220f232fcc0d0433f4e0da3f3"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">depicture_menu::domain::actions::publisher_id</a></div><div class="ttdeci">models::entity_id_base&lt; action_publisher_id_tag &gt; publisher_id</div><div class="ttdef"><b>Definition</b> <a href="action__ids_8hpp_source.html#l00017">action_ids.hpp:17</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1domain_html"><div class="ttname"><a href="namespacedepicture__menu_1_1domain.html">depicture_menu::domain</a></div><div class="ttdef"><b>Definition</b> <a href="colors_8hpp_source.html#l00006">colors.hpp:7</a></div></div>
-<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition</b> <a href="app__ids_8hpp_source.html#l00075">app_ids.hpp:76</a></div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition</b> <a href="app__ids_8hpp_source.html#l00061">app_ids.hpp:62</a></div></div>
 <div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item_html"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html">depicture_menu::domain::menu::radialmenu_item</a></div><div class="ttdef"><b>Definition</b> <a href="radialmenu__item_8hpp_source.html#l00040">radialmenu_item.hpp:43</a></div></div>
-<div class="ttc" id="astructholder_html"><div class="ttname"><a href="structholder.html">holder</a></div><div class="ttdef"><b>Definition</b> <a href="#l00039">TestRadialMenuArg.cpp:40</a></div></div>
-<div class="ttc" id="astructholder_html_a070dfc52a3b0d1f6c3f0382661c1c66b"><div class="ttname"><a href="structholder.html#a070dfc52a3b0d1f6c3f0382661c1c66b">holder::origin</a></div><div class="ttdeci">std::weak_ptr&lt; dc::RadialMenuArg &gt; origin</div><div class="ttdef"><b>Definition</b> <a href="#l00042">TestRadialMenuArg.cpp:42</a></div></div>
-<div class="ttc" id="astructholder_html_a68d70cfb652a151b6cdc1c35f988d441"><div class="ttname"><a href="structholder.html#a68d70cfb652a151b6cdc1c35f988d441">holder::str_</a></div><div class="ttdeci">std::string str_</div><div class="ttdef"><b>Definition</b> <a href="#l00043">TestRadialMenuArg.cpp:43</a></div></div>
-<div class="ttc" id="astructholder_html_ab7c886ae64218abbaff2e8686b9bf5de"><div class="ttname"><a href="structholder.html#ab7c886ae64218abbaff2e8686b9bf5de">holder::holder</a></div><div class="ttdeci">holder(std::string s)</div><div class="ttdef"><b>Definition</b> <a href="#l00044">TestRadialMenuArg.cpp:44</a></div></div>
+<div class="ttc" id="astructholder_html"><div class="ttname"><a href="structholder.html">holder</a></div><div class="ttdef"><b>Definition</b> <a href="#l00041">TestRadialMenuArg.cpp:42</a></div></div>
+<div class="ttc" id="astructholder_html_a070dfc52a3b0d1f6c3f0382661c1c66b"><div class="ttname"><a href="structholder.html#a070dfc52a3b0d1f6c3f0382661c1c66b">holder::origin</a></div><div class="ttdeci">std::weak_ptr&lt; dc::RadialMenuArg &gt; origin</div><div class="ttdef"><b>Definition</b> <a href="#l00044">TestRadialMenuArg.cpp:44</a></div></div>
+<div class="ttc" id="astructholder_html_a68d70cfb652a151b6cdc1c35f988d441"><div class="ttname"><a href="structholder.html#a68d70cfb652a151b6cdc1c35f988d441">holder::str_</a></div><div class="ttdeci">std::string str_</div><div class="ttdef"><b>Definition</b> <a href="#l00045">TestRadialMenuArg.cpp:45</a></div></div>
+<div class="ttc" id="astructholder_html_ab7c886ae64218abbaff2e8686b9bf5de"><div class="ttname"><a href="structholder.html#ab7c886ae64218abbaff2e8686b9bf5de">holder::holder</a></div><div class="ttdeci">holder(std::string s)</div><div class="ttdef"><b>Definition</b> <a href="#l00046">TestRadialMenuArg.cpp:46</a></div></div>
 <div class="ttc" id="astructholder_html_ac56d17db949d349f37cd8bafed6f51ac"><div class="ttname"><a href="structholder.html#ac56d17db949d349f37cd8bafed6f51ac">holder::holder</a></div><div class="ttdeci">holder() noexcept=delete</div></div>
-<div class="ttc" id="astructmenu__presenter_html"><div class="ttname"><a href="structmenu__presenter.html">menu_presenter</a></div><div class="ttdef"><b>Definition</b> <a href="#l00075">TestRadialMenuArg.cpp:76</a></div></div>
-<div class="ttc" id="astructmenu__presenter_html_a7a1f7c09e4ab9c101837b53b3493abcd"><div class="ttname"><a href="structmenu__presenter.html#a7a1f7c09e4ab9c101837b53b3493abcd">menu_presenter::cache_</a></div><div class="ttdeci">holder &amp; cache_</div><div class="ttdef"><b>Definition</b> <a href="#l00077">TestRadialMenuArg.cpp:77</a></div></div>
+<div class="ttc" id="astructmenu__presenter_html"><div class="ttname"><a href="structmenu__presenter.html">menu_presenter</a></div><div class="ttdef"><b>Definition</b> <a href="#l00076">TestRadialMenuArg.cpp:77</a></div></div>
+<div class="ttc" id="astructmenu__presenter_html_a7a1f7c09e4ab9c101837b53b3493abcd"><div class="ttname"><a href="structmenu__presenter.html#a7a1f7c09e4ab9c101837b53b3493abcd">menu_presenter::cache_</a></div><div class="ttdeci">holder &amp; cache_</div><div class="ttdef"><b>Definition</b> <a href="#l00078">TestRadialMenuArg.cpp:78</a></div></div>
 <div class="ttc" id="astructmenu__presenter_html_a80706c7fe0fcb522906cea63ad7c57ff"><div class="ttname"><a href="structmenu__presenter.html#a80706c7fe0fcb522906cea63ad7c57ff">menu_presenter::ptr</a></div><div class="ttdeci">auto ptr()</div><div class="ttdef"><b>Definition</b> <a href="#l00080">TestRadialMenuArg.cpp:80</a></div></div>
-<div class="ttc" id="astructmenu__presenter_html_aa4cd9aeabec9a35e1dea91d86a3eb69d"><div class="ttname"><a href="structmenu__presenter.html#aa4cd9aeabec9a35e1dea91d86a3eb69d">menu_presenter::menu_presenter</a></div><div class="ttdeci">menu_presenter(holder &amp;h)</div><div class="ttdef"><b>Definition</b> <a href="#l00078">TestRadialMenuArg.cpp:78</a></div></div>
+<div class="ttc" id="astructmenu__presenter_html_aa4cd9aeabec9a35e1dea91d86a3eb69d"><div class="ttname"><a href="structmenu__presenter.html#aa4cd9aeabec9a35e1dea91d86a3eb69d">menu_presenter::menu_presenter</a></div><div class="ttdeci">menu_presenter(holder &amp;h)</div><div class="ttdef"><b>Definition</b> <a href="#l00079">TestRadialMenuArg.cpp:79</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

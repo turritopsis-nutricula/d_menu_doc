@@ -10,7 +10,7 @@ var namespacedepicture__menu_1_1type__traits =
     [ "method_traits&lt; R(P::*)(Args...) noexcept(B) &gt;", "structdepicture__menu_1_1type__traits_1_1method__traits_3_01_r_07_p_1_1_5_08_07_args_8_8_8_08_01noexcept_07_b_08_01_4.html", "structdepicture__menu_1_1type__traits_1_1method__traits_3_01_r_07_p_1_1_5_08_07_args_8_8_8_08_01noexcept_07_b_08_01_4" ],
     [ "method_traits&lt; R(P::*)(Args...) const noexcept(B) &gt;", "structdepicture__menu_1_1type__traits_1_1method__traits_3_01_r_07_p_1_1_5_08_07_args_8_8_8_08_01const_01noexcept_07_b_08_01_4.html", "structdepicture__menu_1_1type__traits_1_1method__traits_3_01_r_07_p_1_1_5_08_07_args_8_8_8_08_01const_01noexcept_07_b_08_01_4" ],
     [ "class_method_pointer_t", "namespacedepicture__menu_1_1type__traits.html#a02632d14d429da4fd239f2f006680d37", null ],
-    [ "extract_class_method_arg_t", "namespacedepicture__menu_1_1type__traits.html#ae89e688b7d50e31a544a6a608cce8dfa", null ],
+    [ "extract_class_method_arg_t", "namespacedepicture__menu_1_1type__traits.html#aef38352c869da6e29380af44f8874024", null ],
     [ "extract_class_method_t", "namespacedepicture__menu_1_1type__traits.html#a8459d38a8903cf0c911aefea7a2dbb61", null ],
     [ "method_result_t", "namespacedepicture__menu_1_1type__traits.html#af93f4c5c47196f6dc2811bdd88c701f3", null ],
     [ "method_type_t", "namespacedepicture__menu_1_1type__traits.html#a2734e08b445c25d5b116278c14a3c5da", null ]

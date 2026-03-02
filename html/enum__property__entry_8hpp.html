@@ -136,7 +136,7 @@ $(function(){initNavTree('enum__property__entry_8hpp.html','',''); });
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">BOOST_PP_CAT( NAME, _ )</div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="enum__property__entry_8hpp_source.html">enum_property_entry.hpp</a> の <a class="el" href="enum__property__entry_8hpp_source.html#l00063">63</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="enum__property__entry_8hpp_source.html">enum_property_entry.hpp</a> の <a class="el" href="enum__property__entry_8hpp_source.html#l00060">60</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -170,25 +170,23 @@ $(function(){initNavTree('enum__property__entry_8hpp.html','',''); });
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="cs__binding_2macro_2detail_2cpp_2config_8hpp.html#ade1ffb66dc056cd2c6f93b058398c958">DPM_CS_BINDING_INLINE</a> <span class="keywordtype">int</span> CLASS ::BOOST_PP_CAT( get_glue_, NAME )( )       \</div>
 <div class="line">{                                                                          \</div>
-<div class="line">    <span class="keyword">auto</span> en = <a class="code hl_define" href="#ac9cb14da702983944da31c8d7ed6fd38">DPM_ENUM_PROPERTY_ENTRY_DETAIL_CPP_VAUE_NAME</a>( NAME )         \</div>
-<div class="line">                  .const_ref( );                                           \</div>
+<div class="line">    <span class="keyword">auto</span> en =                                                              \</div>
+<div class="line">      DPM_ENUM_PROPERTY_ENTRY_DETAIL_CPP_VAUE_NAME( NAME ).const_ref( );   \</div>
 <div class="line">    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span> <span class="keywordtype">int</span> <span class="keyword">&gt;</span>( en );                                       \</div>
 <div class="line">}                                                                          \</div>
 <div class="line"><a class="code hl_define" href="cs__binding_2macro_2detail_2cpp_2config_8hpp.html#ade1ffb66dc056cd2c6f93b058398c958">DPM_CS_BINDING_INLINE</a> <span class="keywordtype">void</span> CLASS ::BOOST_PP_CAT( set_glue_, NAME )(        \</div>
-<div class="line">    <span class="keywordtype">int</span> v                                                                  \</div>
-<div class="line">)                                                                          \</div>
+<div class="line">  <span class="keywordtype">int</span> v )                                                                  \</div>
 <div class="line">{                                                                          \</div>
 <div class="line">    <span class="keyword">auto</span> ev = <span class="keyword">static_cast&lt;</span> ENUM_TYPE <span class="keyword">&gt;</span>( v );                               \</div>
 <div class="line">    raise_property_changed(                                                \</div>
-<div class="line">        <a class="code hl_define" href="#ac9cb14da702983944da31c8d7ed6fd38">DPM_ENUM_PROPERTY_ENTRY_DETAIL_CPP_VAUE_NAME</a>( NAME ).ref( ),       \</div>
-<div class="line">        ev,                                                                \</div>
-<div class="line">        BOOST_PP_WSTRINGIZE( NAME )                                        \</div>
-<div class="line">    );                                                                     \</div>
+<div class="line">      <a class="code hl_define" href="#ac9cb14da702983944da31c8d7ed6fd38">DPM_ENUM_PROPERTY_ENTRY_DETAIL_CPP_VAUE_NAME</a>( NAME ).ref( ),         \</div>
+<div class="line">      ev,                                                                  \</div>
+<div class="line">      BOOST_PP_WSTRINGIZE( NAME ) );                                       \</div>
 <div class="line">}</div>
 <div class="ttc" id="acs__binding_2macro_2detail_2cpp_2config_8hpp_html_ade1ffb66dc056cd2c6f93b058398c958"><div class="ttname"><a href="cs__binding_2macro_2detail_2cpp_2config_8hpp.html#ade1ffb66dc056cd2c6f93b058398c958">DPM_CS_BINDING_INLINE</a></div><div class="ttdeci">#define DPM_CS_BINDING_INLINE</div><div class="ttdef"><b>Definition</b> <a href="cs__binding_2macro_2detail_2cpp_2config_8hpp_source.html#l00015">config.hpp:15</a></div></div>
-<div class="ttc" id="aenum__property__entry_8hpp_html_ac9cb14da702983944da31c8d7ed6fd38"><div class="ttname"><a href="#ac9cb14da702983944da31c8d7ed6fd38">DPM_ENUM_PROPERTY_ENTRY_DETAIL_CPP_VAUE_NAME</a></div><div class="ttdeci">#define DPM_ENUM_PROPERTY_ENTRY_DETAIL_CPP_VAUE_NAME(NAME)</div><div class="ttdef"><b>Definition</b> <a href="enum__property__entry_8hpp_source.html#l00063">enum_property_entry.hpp:63</a></div></div>
+<div class="ttc" id="aenum__property__entry_8hpp_html_ac9cb14da702983944da31c8d7ed6fd38"><div class="ttname"><a href="#ac9cb14da702983944da31c8d7ed6fd38">DPM_ENUM_PROPERTY_ENTRY_DETAIL_CPP_VAUE_NAME</a></div><div class="ttdeci">#define DPM_ENUM_PROPERTY_ENTRY_DETAIL_CPP_VAUE_NAME(NAME)</div><div class="ttdef"><b>Definition</b> <a href="enum__property__entry_8hpp_source.html#l00060">enum_property_entry.hpp:60</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="enum__property__entry_8hpp_source.html">enum_property_entry.hpp</a> の <a class="el" href="enum__property__entry_8hpp_source.html#l00117">117</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="enum__property__entry_8hpp_source.html">enum_property_entry.hpp</a> の <a class="el" href="enum__property__entry_8hpp_source.html#l00112">112</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -220,8 +218,39 @@ $(function(){initNavTree('enum__property__entry_8hpp.html','',''); });
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition"> <a class="el" href="enum__property__entry_8hpp_source.html">enum_property_entry.hpp</a> の <a class="el" href="enum__property__entry_8hpp_source.html#l00080">80</a> 行目に定義があります。</p>
+<b>値:</b><div class="fragment"><div class="line"><span class="keyword">private</span>:                                                                       \</div>
+<div class="line">    convert::changed_notify_holder&lt; ENUM_TYPE &gt;                                \</div>
+<div class="line">      DPM_ENUM_PROPERTY_ENTRY_DETAIL_CPP_VAUE_NAME( NAME );                    \</div>
+<div class="line">                                                                               \</div>
+<div class="line"><span class="keyword">public</span>:                                                                        \</div>
+<div class="line">    ENUM_TYPE BOOST_PP_CAT( get_, NAME )( ) <span class="keyword">const</span>                              \</div>
+<div class="line">    {                                                                          \</div>
+<div class="line">        <span class="keywordflow">return</span> <a class="code hl_define" href="#ac9cb14da702983944da31c8d7ed6fd38">DPM_ENUM_PROPERTY_ENTRY_DETAIL_CPP_VAUE_NAME</a>( NAME )            \</div>
+<div class="line">          .const_ref( );                                                       \</div>
+<div class="line">    }                                                                          \</div>
+<div class="line">    <span class="keywordtype">void</span> BOOST_PP_CAT( set_, NAME )( ENUM_TYPE <a class="code hl_struct" href="structa.html">a</a> )                             \</div>
+<div class="line">    {                                                                          \</div>
+<div class="line">        <span class="keyword">auto</span>&amp; value =                                                          \</div>
+<div class="line">          DPM_ENUM_PROPERTY_ENTRY_DETAIL_CPP_VAUE_NAME( NAME ).ref( );         \</div>
+<div class="line">        raise_property_changed( value, <a class="code hl_struct" href="structa.html">a</a>, BOOST_PP_WSTRINGIZE( NAME ) );       \</div>
+<div class="line">    }                                                                          \</div>
+<div class="line">    <span class="keyword">auto</span>&amp; BOOST_PP_CAT( ref_, NAME )( )                                        \</div>
+<div class="line">    {                                                                          \</div>
+<div class="line">        <span class="keyword">auto</span>&amp; value = <a class="code hl_define" href="#ac9cb14da702983944da31c8d7ed6fd38">DPM_ENUM_PROPERTY_ENTRY_DETAIL_CPP_VAUE_NAME</a>( NAME );    \</div>
+<div class="line">        value.set_notify( [ <span class="keyword">this</span> ]( ) {                                        \</div>
+<div class="line">            property_changed_notify( BOOST_PP_WSTRINGIZE( NAME ) );            \</div>
+<div class="line">        } );                                                                   \</div>
+<div class="line">        <span class="keywordflow">return</span> value;                                                          \</div>
+<div class="line">    }                                                                          \</div>
+<div class="line">    <span class="keyword">auto</span> <span class="keyword">const</span>&amp; BOOST_PP_CAT( ref_, NAME )( ) <span class="keyword">const</span>                            \</div>
+<div class="line">    {                                                                          \</div>
+<div class="line">        <span class="keyword">auto</span> <span class="keyword">const</span>&amp; value =                                                    \</div>
+<div class="line">          DPM_ENUM_PROPERTY_ENTRY_DETAIL_CPP_VAUE_NAME( NAME );                \</div>
+<div class="line">        <span class="keywordflow">return</span> value;                                                          \</div>
+<div class="line">    }</div>
+<div class="ttc" id="astructa_html"><div class="ttname"><a href="structa.html">a</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00128">TestReflection.cpp:129</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="enum__property__entry_8hpp_source.html">enum_property_entry.hpp</a> の <a class="el" href="enum__property__entry_8hpp_source.html#l00077">77</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -253,25 +282,24 @@ $(function(){initNavTree('enum__property__entry_8hpp.html','',''); });
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">public                                                                       \</div>
-<div class="line">  ENUM_TYPE NAME                                                             \</div>
-<div class="line">  {                                                                          \</div>
-<div class="line">      get                                                                    \</div>
-<div class="line">      {                                                                      \</div>
-<div class="line">          return (                                                           \</div>
-<div class="line">              ENUM_TYPE                                                      \</div>
-<div class="line">          )<a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#aca79564c45656fdce3e1db68b5b69168">DPM_CS_GLUE_METHOD_NAME</a>( BOOST_PP_CAT( get_glue_, NAME ) )( );    \</div>
-<div class="line">      }                                                                      \</div>
-<div class="line">      <a class="code hl_function" href="test__command__line__option_8cpp.html#a11168c1960ee4b2ffbc15ee691d0b77b">set</a>                                                                    \</div>
-<div class="line">      {                                                                      \</div>
-<div class="line">          DPM_CS_GLUE_METHOD_NAME( BOOST_PP_CAT( set_glue_, NAME ) )         \</div>
-<div class="line">          ( (int)value );                                                    \</div>
-<div class="line">      }                                                                      \</div>
-<div class="line">  }</div>
+<b>値:</b><div class="fragment"><div class="line">public                                                                         \</div>
+<div class="line">    ENUM_TYPE NAME                                                             \</div>
+<div class="line">    {                                                                          \</div>
+<div class="line">        get                                                                    \</div>
+<div class="line">        {                                                                      \</div>
+<div class="line">            return (ENUM_TYPE)<a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#aca79564c45656fdce3e1db68b5b69168">DPM_CS_GLUE_METHOD_NAME</a>(                         \</div>
+<div class="line">              BOOST_PP_CAT( get_glue_, NAME ) )( );                            \</div>
+<div class="line">        }                                                                      \</div>
+<div class="line">        <a class="code hl_function" href="test__command__line__option_8cpp.html#a11168c1960ee4b2ffbc15ee691d0b77b">set</a>                                                                    \</div>
+<div class="line">        {                                                                      \</div>
+<div class="line">            DPM_CS_GLUE_METHOD_NAME( BOOST_PP_CAT( set_glue_, NAME ) )         \</div>
+<div class="line">            ( (int)value );                                                    \</div>
+<div class="line">        }                                                                      \</div>
+<div class="line">    }</div>
 <div class="ttc" id="acs__binding_2macro_2detail_2csharp_2config_8hpp_html_aca79564c45656fdce3e1db68b5b69168"><div class="ttname"><a href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#aca79564c45656fdce3e1db68b5b69168">DPM_CS_GLUE_METHOD_NAME</a></div><div class="ttdeci">#define DPM_CS_GLUE_METHOD_NAME(NAME)</div><div class="ttdef"><b>Definition</b> <a href="cs__binding_2macro_2detail_2csharp_2config_8hpp_source.html#l00030">config.hpp:30</a></div></div>
 <div class="ttc" id="atest__command__line__option_8cpp_html_a11168c1960ee4b2ffbc15ee691d0b77b"><div class="ttname"><a href="test__command__line__option_8cpp.html#a11168c1960ee4b2ffbc15ee691d0b77b">set</a></div><div class="ttdeci">dest set(mock_open)</div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="enum__property__entry_8hpp_source.html">enum_property_entry.hpp</a> の <a class="el" href="enum__property__entry_8hpp_source.html#l00140">140</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="enum__property__entry_8hpp_source.html">enum_property_entry.hpp</a> の <a class="el" href="enum__property__entry_8hpp_source.html#l00132">132</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -304,7 +332,7 @@ $(function(){initNavTree('enum__property__entry_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="enum__property__entry_8hpp_source.html">enum_property_entry.hpp</a> の <a class="el" href="enum__property__entry_8hpp_source.html#l00161">161</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="enum__property__entry_8hpp_source.html">enum_property_entry.hpp</a> の <a class="el" href="enum__property__entry_8hpp_source.html#l00151">151</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -338,7 +366,7 @@ $(function(){initNavTree('enum__property__entry_8hpp.html','',''); });
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">\</div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="enum__property__entry_8hpp_source.html">enum_property_entry.hpp</a> の <a class="el" href="enum__property__entry_8hpp_source.html#l00167">167</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="enum__property__entry_8hpp_source.html">enum_property_entry.hpp</a> の <a class="el" href="enum__property__entry_8hpp_source.html#l00156">156</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -371,7 +399,7 @@ $(function(){initNavTree('enum__property__entry_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="enum__property__entry_8hpp_source.html">enum_property_entry.hpp</a> の <a class="el" href="enum__property__entry_8hpp_source.html#l00174">174</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="enum__property__entry_8hpp_source.html">enum_property_entry.hpp</a> の <a class="el" href="enum__property__entry_8hpp_source.html#l00162">162</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -399,7 +427,7 @@ $(function(){initNavTree('enum__property__entry_8hpp.html','',''); });
 <div class="line">( (DPM_METHOD_KIND_COMPARE_METHOD)(NAME)( ( ref_##NAME( ) ) ))                       \</div>
 <div class="line">( (DPM_METHOD_KIND_OBSERVABLE_VALUE_DEFINE)( NAME )( get_##NAME ) )</div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="enum__property__entry_8hpp_source.html">enum_property_entry.hpp</a> の <a class="el" href="enum__property__entry_8hpp_source.html#l00070">70</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="enum__property__entry_8hpp_source.html">enum_property_entry.hpp</a> の <a class="el" href="enum__property__entry_8hpp_source.html#l00067">67</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -422,7 +450,7 @@ $(function(){initNavTree('enum__property__entry_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">( (<a class="code hl_define" href="#a023ccdac114e87c8128021b1cbcd4c5f">DPM_ENUM_PROPERTY_ENTRY_GENERATE_CPP_CLASS_BODY</a>)(NAME)( ENUM_TYPE ) )</div>
-<div class="ttc" id="aenum__property__entry_8hpp_html_a023ccdac114e87c8128021b1cbcd4c5f"><div class="ttname"><a href="#a023ccdac114e87c8128021b1cbcd4c5f">DPM_ENUM_PROPERTY_ENTRY_GENERATE_CPP_CLASS_BODY</a></div><div class="ttdeci">#define DPM_ENUM_PROPERTY_ENTRY_GENERATE_CPP_CLASS_BODY( GM_SEQS, CLASS, NAME, ENUM_TYPE)</div><div class="ttdef"><b>Definition</b> <a href="enum__property__entry_8hpp_source.html#l00080">enum_property_entry.hpp:80</a></div></div>
+<div class="ttc" id="aenum__property__entry_8hpp_html_a023ccdac114e87c8128021b1cbcd4c5f"><div class="ttname"><a href="#a023ccdac114e87c8128021b1cbcd4c5f">DPM_ENUM_PROPERTY_ENTRY_GENERATE_CPP_CLASS_BODY</a></div><div class="ttdeci">#define DPM_ENUM_PROPERTY_ENTRY_GENERATE_CPP_CLASS_BODY( GM_SEQS, CLASS, NAME, ENUM_TYPE)</div><div class="ttdef"><b>Definition</b> <a href="enum__property__entry_8hpp_source.html#l00077">enum_property_entry.hpp:77</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="enum__property__entry_8hpp_source.html">enum_property_entry.hpp</a> の <a class="el" href="enum__property__entry_8hpp_source.html#l00018">18</a> 行目に定義があります。</p>
 
@@ -447,7 +475,7 @@ $(function(){initNavTree('enum__property__entry_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">( (<a class="code hl_define" href="#a0352c5e1e3a7c2db737414a706e0f7fd">DPM_ENUM_PROPERTY_ENTRY_GENERATE_CPP_CLASS_AFTER</a>)(NAME)( ENUM_TYPE ) )</div>
-<div class="ttc" id="aenum__property__entry_8hpp_html_a0352c5e1e3a7c2db737414a706e0f7fd"><div class="ttname"><a href="#a0352c5e1e3a7c2db737414a706e0f7fd">DPM_ENUM_PROPERTY_ENTRY_GENERATE_CPP_CLASS_AFTER</a></div><div class="ttdeci">#define DPM_ENUM_PROPERTY_ENTRY_GENERATE_CPP_CLASS_AFTER( GM_SEQS, CLASS, NAME, ENUM_TYPE)</div><div class="ttdef"><b>Definition</b> <a href="enum__property__entry_8hpp_source.html#l00117">enum_property_entry.hpp:117</a></div></div>
+<div class="ttc" id="aenum__property__entry_8hpp_html_a0352c5e1e3a7c2db737414a706e0f7fd"><div class="ttname"><a href="#a0352c5e1e3a7c2db737414a706e0f7fd">DPM_ENUM_PROPERTY_ENTRY_GENERATE_CPP_CLASS_AFTER</a></div><div class="ttdeci">#define DPM_ENUM_PROPERTY_ENTRY_GENERATE_CPP_CLASS_AFTER( GM_SEQS, CLASS, NAME, ENUM_TYPE)</div><div class="ttdef"><b>Definition</b> <a href="enum__property__entry_8hpp_source.html#l00112">enum_property_entry.hpp:112</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="enum__property__entry_8hpp_source.html">enum_property_entry.hpp</a> の <a class="el" href="enum__property__entry_8hpp_source.html#l00024">24</a> 行目に定義があります。</p>
 
@@ -472,7 +500,7 @@ $(function(){initNavTree('enum__property__entry_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">( (<a class="code hl_define" href="#a161b3305da51c744cb53aefbf668effc">DPM_ENUM_PROPERTY_ENTRY_GENERATE_CSHARP_CLASS_BODY</a>)(NAME)( ENUM_TYPE ) )</div>
-<div class="ttc" id="aenum__property__entry_8hpp_html_a161b3305da51c744cb53aefbf668effc"><div class="ttname"><a href="#a161b3305da51c744cb53aefbf668effc">DPM_ENUM_PROPERTY_ENTRY_GENERATE_CSHARP_CLASS_BODY</a></div><div class="ttdeci">#define DPM_ENUM_PROPERTY_ENTRY_GENERATE_CSHARP_CLASS_BODY( GM_SEQS, CLASS, NAME, ENUM_TYPE)</div><div class="ttdef"><b>Definition</b> <a href="enum__property__entry_8hpp_source.html#l00140">enum_property_entry.hpp:140</a></div></div>
+<div class="ttc" id="aenum__property__entry_8hpp_html_a161b3305da51c744cb53aefbf668effc"><div class="ttname"><a href="#a161b3305da51c744cb53aefbf668effc">DPM_ENUM_PROPERTY_ENTRY_GENERATE_CSHARP_CLASS_BODY</a></div><div class="ttdeci">#define DPM_ENUM_PROPERTY_ENTRY_GENERATE_CSHARP_CLASS_BODY( GM_SEQS, CLASS, NAME, ENUM_TYPE)</div><div class="ttdef"><b>Definition</b> <a href="enum__property__entry_8hpp_source.html#l00132">enum_property_entry.hpp:132</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="enum__property__entry_8hpp_source.html">enum_property_entry.hpp</a> の <a class="el" href="enum__property__entry_8hpp_source.html#l00030">30</a> 行目に定義があります。</p>
 
@@ -497,7 +525,7 @@ $(function(){initNavTree('enum__property__entry_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">( (<a class="code hl_define" href="#aea7cad40d3e1abe4c568ca294f187aa4">DPM_ENUM_PROPERTY_ENTRY_GENERATE_CSHARP_CONSTRACTOR</a>)(NAME)( ENUM_TYPE ) )</div>
-<div class="ttc" id="aenum__property__entry_8hpp_html_aea7cad40d3e1abe4c568ca294f187aa4"><div class="ttname"><a href="#aea7cad40d3e1abe4c568ca294f187aa4">DPM_ENUM_PROPERTY_ENTRY_GENERATE_CSHARP_CONSTRACTOR</a></div><div class="ttdeci">#define DPM_ENUM_PROPERTY_ENTRY_GENERATE_CSHARP_CONSTRACTOR( GM_SEQS, CLASS, NAME, ENUM_TYPE)</div><div class="ttdef"><b>Definition</b> <a href="enum__property__entry_8hpp_source.html#l00161">enum_property_entry.hpp:161</a></div></div>
+<div class="ttc" id="aenum__property__entry_8hpp_html_aea7cad40d3e1abe4c568ca294f187aa4"><div class="ttname"><a href="#aea7cad40d3e1abe4c568ca294f187aa4">DPM_ENUM_PROPERTY_ENTRY_GENERATE_CSHARP_CONSTRACTOR</a></div><div class="ttdeci">#define DPM_ENUM_PROPERTY_ENTRY_GENERATE_CSHARP_CONSTRACTOR( GM_SEQS, CLASS, NAME, ENUM_TYPE)</div><div class="ttdef"><b>Definition</b> <a href="enum__property__entry_8hpp_source.html#l00151">enum_property_entry.hpp:151</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="enum__property__entry_8hpp_source.html">enum_property_entry.hpp</a> の <a class="el" href="enum__property__entry_8hpp_source.html#l00036">36</a> 行目に定義があります。</p>
 
@@ -521,12 +549,11 @@ $(function(){initNavTree('enum__property__entry_8hpp.html','',''); });
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">(                                                                                        \</div>
-<div class="line">    (<a class="code hl_define" href="#a9c0d0d5da2624b1c11e883184c236091">DPM_ENUM_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR</a>)(NAME)( ENUM_TYPE ) \</div>
-<div class="line">)</div>
-<div class="ttc" id="aenum__property__entry_8hpp_html_a9c0d0d5da2624b1c11e883184c236091"><div class="ttname"><a href="#a9c0d0d5da2624b1c11e883184c236091">DPM_ENUM_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR</a></div><div class="ttdeci">#define DPM_ENUM_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR( GM_SEQS, CLAS, NAME, ENUM_TYPE)</div><div class="ttdef"><b>Definition</b> <a href="enum__property__entry_8hpp_source.html#l00174">enum_property_entry.hpp:174</a></div></div>
+<b>値:</b><div class="fragment"><div class="line">( (                                                                        \</div>
+<div class="line">  <a class="code hl_define" href="#a9c0d0d5da2624b1c11e883184c236091">DPM_ENUM_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR</a>)(NAME)( ENUM_TYPE ) )</div>
+<div class="ttc" id="aenum__property__entry_8hpp_html_a9c0d0d5da2624b1c11e883184c236091"><div class="ttname"><a href="#a9c0d0d5da2624b1c11e883184c236091">DPM_ENUM_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR</a></div><div class="ttdeci">#define DPM_ENUM_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR( GM_SEQS, CLAS, NAME, ENUM_TYPE)</div><div class="ttdef"><b>Definition</b> <a href="enum__property__entry_8hpp_source.html#l00162">enum_property_entry.hpp:162</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="enum__property__entry_8hpp_source.html">enum_property_entry.hpp</a> の <a class="el" href="enum__property__entry_8hpp_source.html#l00049">49</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="enum__property__entry_8hpp_source.html">enum_property_entry.hpp</a> の <a class="el" href="enum__property__entry_8hpp_source.html#l00048">48</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -548,10 +575,9 @@ $(function(){initNavTree('enum__property__entry_8hpp.html','',''); });
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">(                                                                                 \</div>
-<div class="line">    (<a class="code hl_define" href="#a190c6d427f988a899eb26c0cc41a6a67">DPM_ENUM_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY</a>)(NAME)( ENUM_TYPE ) \</div>
-<div class="line">)</div>
-<div class="ttc" id="aenum__property__entry_8hpp_html_a190c6d427f988a899eb26c0cc41a6a67"><div class="ttname"><a href="#a190c6d427f988a899eb26c0cc41a6a67">DPM_ENUM_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY</a></div><div class="ttdeci">#define DPM_ENUM_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY( GM_SEQS, CLASS, NAME, ENUM_TYPE)</div><div class="ttdef"><b>Definition</b> <a href="enum__property__entry_8hpp_source.html#l00167">enum_property_entry.hpp:167</a></div></div>
+<b>値:</b><div class="fragment"><div class="line">( (                                                                        \</div>
+<div class="line">  <a class="code hl_define" href="#a190c6d427f988a899eb26c0cc41a6a67">DPM_ENUM_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY</a>)(NAME)( ENUM_TYPE ) )</div>
+<div class="ttc" id="aenum__property__entry_8hpp_html_a190c6d427f988a899eb26c0cc41a6a67"><div class="ttname"><a href="#a190c6d427f988a899eb26c0cc41a6a67">DPM_ENUM_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY</a></div><div class="ttdeci">#define DPM_ENUM_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY( GM_SEQS, CLASS, NAME, ENUM_TYPE)</div><div class="ttdef"><b>Definition</b> <a href="enum__property__entry_8hpp_source.html#l00156">enum_property_entry.hpp:156</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="enum__property__entry_8hpp_source.html">enum_property_entry.hpp</a> の <a class="el" href="enum__property__entry_8hpp_source.html#l00042">42</a> 行目に定義があります。</p>
 
@@ -576,7 +602,7 @@ $(function(){initNavTree('enum__property__entry_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a1bd7cc17766fa295f84f4bbb7a502b6f">DPM_ENUM_PROPERTY_ENTRY_GENERATE_GM_SEQ</a>( NAME, ENUM_TYPE )</div>
-<div class="ttc" id="aenum__property__entry_8hpp_html_a1bd7cc17766fa295f84f4bbb7a502b6f"><div class="ttname"><a href="#a1bd7cc17766fa295f84f4bbb7a502b6f">DPM_ENUM_PROPERTY_ENTRY_GENERATE_GM_SEQ</a></div><div class="ttdeci">#define DPM_ENUM_PROPERTY_ENTRY_GENERATE_GM_SEQ(NAME, ENUM_TYPE)</div><div class="ttdef"><b>Definition</b> <a href="enum__property__entry_8hpp_source.html#l00070">enum_property_entry.hpp:70</a></div></div>
+<div class="ttc" id="aenum__property__entry_8hpp_html_a1bd7cc17766fa295f84f4bbb7a502b6f"><div class="ttname"><a href="#a1bd7cc17766fa295f84f4bbb7a502b6f">DPM_ENUM_PROPERTY_ENTRY_GENERATE_GM_SEQ</a></div><div class="ttdeci">#define DPM_ENUM_PROPERTY_ENTRY_GENERATE_GM_SEQ(NAME, ENUM_TYPE)</div><div class="ttdef"><b>Definition</b> <a href="enum__property__entry_8hpp_source.html#l00067">enum_property_entry.hpp:67</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="enum__property__entry_8hpp_source.html">enum_property_entry.hpp</a> の <a class="el" href="enum__property__entry_8hpp_source.html#l00013">13</a> 行目に定義があります。</p>
 

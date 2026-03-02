@@ -99,7 +99,7 @@ $(function(){initNavTree('structdepicture__menu_1_1cs__binding_1_1observer_1_1co
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
 公開型</h2></td></tr>
 <tr class="memitem:acf83db1551bbd46b695e782af2babcc6" id="r_acf83db1551bbd46b695e782af2babcc6"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#acf83db1551bbd46b695e782af2babcc6">arg_t</a> = std::shared_ptr&lt; T &gt;</td></tr>
-<tr class="memitem:a9bf54aabffdcdece492e330cfdf6bc5b" id="r_a9bf54aabffdcdece492e330cfdf6bc5b"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a9bf54aabffdcdece492e330cfdf6bc5b">change_notify_handle_t</a> = std::function&lt; void( <a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html#a79cdb028c057b8d92655a898c11ecff1">collection_changed_kind</a>, int, int ) &gt;</td></tr>
+<tr class="memitem:ad37c92450a6cdcea9b46ef402fd58d68" id="r_ad37c92450a6cdcea9b46ef402fd58d68"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#ad37c92450a6cdcea9b46ef402fd58d68">change_notify_handle_t</a></td></tr>
 <tr class="memitem:a7de42554402fc29324e1b25c75d4010c" id="r_a7de42554402fc29324e1b25c75d4010c"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a7de42554402fc29324e1b25c75d4010c">collection_change_handle_t</a> = std::function&lt; void( <a class="el" href="#acf83db1551bbd46b695e782af2babcc6">arg_t</a> ) &gt;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -108,14 +108,14 @@ $(function(){initNavTree('structdepicture__menu_1_1cs__binding_1_1observer_1_1co
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 公開変数類</h2></td></tr>
-<tr class="memitem:aeb58d6f2566d6080f0cffae593573a75" id="r_aeb58d6f2566d6080f0cffae593573a75"><td class="memItemLeft">std::shared_ptr&lt; <a class="el" href="#a9bf54aabffdcdece492e330cfdf6bc5b">change_notify_handle_t</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aeb58d6f2566d6080f0cffae593573a75">change_handler_</a></td></tr>
+<tr class="memitem:aeb58d6f2566d6080f0cffae593573a75" id="r_aeb58d6f2566d6080f0cffae593573a75"><td class="memItemLeft">std::shared_ptr&lt; <a class="el" href="#ad37c92450a6cdcea9b46ef402fd58d68">change_notify_handle_t</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aeb58d6f2566d6080f0cffae593573a75">change_handler_</a></td></tr>
 <tr class="memitem:afc6a66c847c680893a584d59edb95c04" id="r_afc6a66c847c680893a584d59edb95c04"><td class="memItemLeft">std::shared_ptr&lt; <a class="el" href="#a7de42554402fc29324e1b25c75d4010c">collection_change_handle_t</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#afc6a66c847c680893a584d59edb95c04">add_handler_</a></td></tr>
 <tr class="memitem:ad06b8fc6667c7ebe1b64d040051f2336" id="r_ad06b8fc6667c7ebe1b64d040051f2336"><td class="memItemLeft">std::shared_ptr&lt; <a class="el" href="#a7de42554402fc29324e1b25c75d4010c">collection_change_handle_t</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ad06b8fc6667c7ebe1b64d040051f2336">remove_handler_</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;has_regist_changed_notify T&gt;<br />
 struct depicture_menu::cs_binding::observer::collection_change_observer&lt; T &gt;</div>
-<p class="definition"> <a class="el" href="changed__notify__frameworks_8hpp_source.html">changed_notify_frameworks.hpp</a> の <a class="el" href="changed__notify__frameworks_8hpp_source.html#l00088">88</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="changed__notify__frameworks_8hpp_source.html">changed_notify_frameworks.hpp</a> の <a class="el" href="changed__notify__frameworks_8hpp_source.html#l00087">87</a> 行目に定義があります。</p>
 </div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">型定義メンバ詳解</h2>
 <a id="acf83db1551bbd46b695e782af2babcc6" name="acf83db1551bbd46b695e782af2babcc6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acf83db1551bbd46b695e782af2babcc6">&#9670;&#160;</a></span>arg_t</h2>
@@ -131,12 +131,12 @@ template&lt;has_regist_changed_notify T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="changed__notify__frameworks_8hpp_source.html">changed_notify_frameworks.hpp</a> の <a class="el" href="changed__notify__frameworks_8hpp_source.html#l00090">90</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="changed__notify__frameworks_8hpp_source.html">changed_notify_frameworks.hpp</a> の <a class="el" href="changed__notify__frameworks_8hpp_source.html#l00089">89</a> 行目に定義があります。</p>
 
 </div>
 </div>
-<a id="a9bf54aabffdcdece492e330cfdf6bc5b" name="a9bf54aabffdcdece492e330cfdf6bc5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bf54aabffdcdece492e330cfdf6bc5b">&#9670;&#160;</a></span>change_notify_handle_t</h2>
+<a id="ad37c92450a6cdcea9b46ef402fd58d68" name="ad37c92450a6cdcea9b46ef402fd58d68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad37c92450a6cdcea9b46ef402fd58d68">&#9670;&#160;</a></span>change_notify_handle_t</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -144,12 +144,15 @@ template&lt;has_regist_changed_notify T&gt; </div>
 template&lt;has_regist_changed_notify T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1collection__change__observer.html">depicture_menu::cs_binding::observer::collection_change_observer</a>&lt; T &gt;::change_notify_handle_t = std::function&lt; void( <a class="el" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html#a79cdb028c057b8d92655a898c11ecff1">collection_changed_kind</a>, int, int ) &gt;</td>
+          <td class="memname">using <a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1collection__change__observer.html">depicture_menu::cs_binding::observer::collection_change_observer</a>&lt; T &gt;::change_notify_handle_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition"> <a class="el" href="changed__notify__frameworks_8hpp_source.html">changed_notify_frameworks.hpp</a> の <a class="el" href="changed__notify__frameworks_8hpp_source.html#l00091">91</a> 行目に定義があります。</p>
+<b>初期値:</b><div class="fragment"><div class="line"> </div>
+<div class="line">std::function&lt; void( <a class="code hl_enumeration" href="namespacedepicture__menu_1_1cs__binding_1_1observer.html#a79cdb028c057b8d92655a898c11ecff1">collection_changed_kind</a>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span> ) &gt;</div>
+<div class="ttc" id="anamespacedepicture__menu_1_1cs__binding_1_1observer_html_a79cdb028c057b8d92655a898c11ecff1"><div class="ttname"><a href="namespacedepicture__menu_1_1cs__binding_1_1observer.html#a79cdb028c057b8d92655a898c11ecff1">depicture_menu::cs_binding::observer::collection_changed_kind</a></div><div class="ttdeci">collection_changed_kind</div><div class="ttdef"><b>Definition</b> <a href="collection__changed__kind_8hpp_source.html#l00008">collection_changed_kind.hpp:9</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="changed__notify__frameworks_8hpp_source.html">changed_notify_frameworks.hpp</a> の <a class="el" href="changed__notify__frameworks_8hpp_source.html#l00090">90</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -216,9 +219,9 @@ template&lt;has_regist_changed_notify T&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="changed__notify__frameworks_8hpp_source.html">changed_notify_frameworks.hpp</a> の <a class="el" href="changed__notify__frameworks_8hpp_source.html#l00100">100</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="changed__notify__frameworks_8hpp_source.html">changed_notify_frameworks.hpp</a> の <a class="el" href="changed__notify__frameworks_8hpp_source.html#l00099">99</a> 行目に定義があります。</p>
 
-<p class="reference">参照先 <a class="el" href="list__wrapper_8hpp_source.html#l00043">depicture_menu::cs_binding::add</a>, <a class="el" href="collection__changed__kind_8hpp_source.html#l00010">depicture_menu::cs_binding::observer::add</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00044">depicture_menu::cs_binding::move</a>, <a class="el" href="collection__changed__kind_8hpp_source.html#l00012">depicture_menu::cs_binding::observer::move</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00045">depicture_menu::cs_binding::remove</a>, <a class="el" href="collection__changed__kind_8hpp_source.html#l00011">depicture_menu::cs_binding::observer::remove</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00046">depicture_menu::cs_binding::replace</a>, <a class="el" href="collection__changed__kind_8hpp_source.html#l00013">depicture_menu::cs_binding::observer::replace</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00047">depicture_menu::cs_binding::reset</a>, <a class="el" href="collection__changed__kind_8hpp_source.html#l00014">depicture_menu::cs_binding::observer::reset</a>.</p>
+<p class="reference">参照先 <a class="el" href="list__wrapper_8hpp_source.html#l00046">depicture_menu::cs_binding::add</a>, <a class="el" href="collection__changed__kind_8hpp_source.html#l00010">depicture_menu::cs_binding::observer::add</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00047">depicture_menu::cs_binding::move</a>, <a class="el" href="collection__changed__kind_8hpp_source.html#l00012">depicture_menu::cs_binding::observer::move</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00048">depicture_menu::cs_binding::remove</a>, <a class="el" href="collection__changed__kind_8hpp_source.html#l00011">depicture_menu::cs_binding::observer::remove</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00049">depicture_menu::cs_binding::replace</a>, <a class="el" href="collection__changed__kind_8hpp_source.html#l00013">depicture_menu::cs_binding::observer::replace</a>, <a class="el" href="list__wrapper_8hpp_source.html#l00050">depicture_menu::cs_binding::reset</a>, <a class="el" href="collection__changed__kind_8hpp_source.html#l00014">depicture_menu::cs_binding::observer::reset</a>.</p>
 
 </div>
 </div>
@@ -250,7 +253,7 @@ template&lt;has_regist_changed_notify T&gt; </div>
 template&lt;has_regist_changed_notify T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt; <a class="el" href="#a9bf54aabffdcdece492e330cfdf6bc5b">change_notify_handle_t</a> &gt; <a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1collection__change__observer.html">depicture_menu::cs_binding::observer::collection_change_observer</a>&lt; T &gt;::change_handler_</td>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="#ad37c92450a6cdcea9b46ef402fd58d68">change_notify_handle_t</a> &gt; <a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1collection__change__observer.html">depicture_menu::cs_binding::observer::collection_change_observer</a>&lt; T &gt;::change_handler_</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -16,7 +16,7 @@ var _test_menu_view_presenter_8cpp =
     [ "DPM_CHECK", "_test_menu_view_presenter_8cpp.html#a9a75b7d5756a6a4de3f800b53d59c682", null ],
     [ "DPM_SETUP", "_test_menu_view_presenter_8cpp.html#a930109a5e3a9b30547088c8f83508183", null ],
     [ "arg_ptr_t", "_test_menu_view_presenter_8cpp.html#aad7012794fd2b601e7c519da175c6a39", null ],
-    [ "change_menu_tests", "_test_menu_view_presenter_8cpp.html#a5e96257b6d2bdaf25c7283169a989143", null ],
+    [ "change_menu_tests", "_test_menu_view_presenter_8cpp.html#a68e1fe382662f2bb93e45c4ad834b02a", null ],
     [ "BOOST_AUTO_TEST_CASE", "_test_menu_view_presenter_8cpp.html#a0ba4ff3ec435915cea4dd0214e61051d", null ],
     [ "BOOST_AUTO_TEST_CASE", "_test_menu_view_presenter_8cpp.html#ae923463343707b4e44092d1eac37d2d9", null ],
     [ "BOOST_AUTO_TEST_CASE_TEMPLATE", "_test_menu_view_presenter_8cpp.html#a9eead603abf63a8882a408141b378426", null ],

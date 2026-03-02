@@ -16,7 +16,7 @@ var parameter_8hpp =
     [ "depicture_menu::domain::commands::parameter", "namespacedepicture__menu_1_1domain_1_1commands.html#a05a6d2cc89765973bb17067d7b18157f", null ],
     [ "depicture_menu::domain::commands::detail_commands::parameter_value_map_t", "namespacedepicture__menu_1_1domain_1_1commands_1_1detail__commands.html#aa7f3b6823931f916a44fae13e6f2ba4e", null ],
     [ "depicture_menu::domain::commands::detail_commands::transform_pram_kind_t", "namespacedepicture__menu_1_1domain_1_1commands_1_1detail__commands.html#a1db61616752d132ff8e43f0992767f40", null ],
-    [ "depicture_menu::domain::commands::detail_commands::vari_t", "namespacedepicture__menu_1_1domain_1_1commands_1_1detail__commands.html#ad7883dfe398d1d59e78411697a0f1e24", null ],
+    [ "depicture_menu::domain::commands::detail_commands::vari_t", "namespacedepicture__menu_1_1domain_1_1commands_1_1detail__commands.html#a87f9ca78fbaada658b1886e5d4b6f25e", null ],
     [ "BOOST_CLASS_TRACKING", "parameter_8hpp.html#a87020316ebf2e5dbeb53ceae75447be8", null ],
     [ "depicture_menu::domain::commands::build_parameter_value", "namespacedepicture__menu_1_1domain_1_1commands.html#abb899eaa7acacaea27a40774fcbc35e3", null ],
     [ "depicture_menu::domain::commands::build_parameter_value", "namespacedepicture__menu_1_1domain_1_1commands.html#ada3233a4e737ff1782b9e6c0901b6caa", null ],

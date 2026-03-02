@@ -96,10 +96,15 @@ $(function(){initNavTree('str__conv_8cpp.html','',''); });
 <div class="textblock"><code>#include &quot;config.hpp&quot;</code><br />
 <code>#include &quot;<a class="el" href="str__conv_8hpp_source.html">str_conv.hpp</a>&quot;</code><br />
 <code>#include &lt;strconv.h&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
+<code>#include &lt;cuchar&gt;</code><br />
+<code>#include &lt;cwchar&gt;</code><br />
+<code>#include &lt;stdexcept&gt;</code><br />
+<code>#include &lt;uchar.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 str_conv.cpp の依存先関係図:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="str__conv_8cpp__incl.svg" width="310" height="203"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="str__conv_8cpp__incl.svg" width="100%" height="452"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="str__conv_8cpp_source.html">[ソースコード]</a></p>
@@ -120,6 +125,14 @@ str_conv.cpp の依存先関係図:</div>
 <tr class="memitem:ab0cbe5e8f872f3b3f0f8308a09531870" id="r_ab0cbe5e8f872f3b3f0f8308a09531870"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1util_1_1strconv.html#ab0cbe5e8f872f3b3f0f8308a09531870">depicture_menu::util::strconv::wide_to_sjis</a> (std::wstring_view const &amp;s)</td></tr>
 <tr class="memitem:a08ee9762f61abb902eac449b23391fe1" id="r_a08ee9762f61abb902eac449b23391fe1"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1util_1_1strconv.html#a08ee9762f61abb902eac449b23391fe1">depicture_menu::util::strconv::wide_to_utf8</a> (std::wstring const &amp;s)</td></tr>
 <tr class="memitem:a23ebec035ac6b1c16bd68d1f94567005" id="r_a23ebec035ac6b1c16bd68d1f94567005"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1util_1_1strconv.html#a23ebec035ac6b1c16bd68d1f94567005">depicture_menu::util::strconv::wide_to_utf8</a> (std::wstring_view const &amp;s)</td></tr>
+<tr class="memitem:ab189f2a60073c272571c49115a296be6" id="r_ab189f2a60073c272571c49115a296be6"><td class="memItemLeft">std::string&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1util_1_1strconv.html#ab189f2a60073c272571c49115a296be6">depicture_menu::util::strconv::u8string_to_string</a> (const std::u8string &amp;u8str)</td></tr>
+<tr class="memdesc:ab189f2a60073c272571c49115a296be6"><td class="mdescLeft">&#160;</td><td class="mdescRight">std::u8string to std::string  <br /></td></tr>
+<tr class="memitem:a42df44b7c5cb0f4eca74ca7a73ebd799" id="r_a42df44b7c5cb0f4eca74ca7a73ebd799"><td class="memItemLeft">std::u8string&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1util_1_1strconv.html#a42df44b7c5cb0f4eca74ca7a73ebd799">depicture_menu::util::strconv::string_to_u8string</a> (const std::string &amp;str)</td></tr>
+<tr class="memdesc:a42df44b7c5cb0f4eca74ca7a73ebd799"><td class="mdescLeft">&#160;</td><td class="mdescRight">std::string to std::u8string  <br /></td></tr>
+<tr class="memitem:af0bcd6eaee24d896c1eb89890570bead" id="r_af0bcd6eaee24d896c1eb89890570bead"><td class="memItemLeft">std::wstring&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1util_1_1strconv.html#af0bcd6eaee24d896c1eb89890570bead">depicture_menu::util::strconv::u8string_to_wstring</a> (const std::u8string &amp;u8str)</td></tr>
+<tr class="memdesc:af0bcd6eaee24d896c1eb89890570bead"><td class="mdescLeft">&#160;</td><td class="mdescRight">utf8 -&gt; wide(utf16)  <br /></td></tr>
+<tr class="memitem:a402d870bde62a13449c5eb2be8542a5a" id="r_a402d870bde62a13449c5eb2be8542a5a"><td class="memItemLeft">std::u8string&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1util_1_1strconv.html#a402d870bde62a13449c5eb2be8542a5a">depicture_menu::util::strconv::wstring_to_u8string</a> (const std::wstring &amp;str)</td></tr>
+<tr class="memdesc:a402d870bde62a13449c5eb2be8542a5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">wide(utf16) -&gt; utf8  <br /></td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

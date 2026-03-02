@@ -11,5 +11,5 @@ var namespacedepicture__menu_1_1presentations =
     [ "send_keyinput", "structdepicture__menu_1_1presentations_1_1send__keyinput.html", "structdepicture__menu_1_1presentations_1_1send__keyinput" ],
     [ "shellexecute_command_name_generator", "classdepicture__menu_1_1presentations_1_1shellexecute__command__name__generator.html", "classdepicture__menu_1_1presentations_1_1shellexecute__command__name__generator" ],
     [ "shellexecute_invoker", "classdepicture__menu_1_1presentations_1_1shellexecute__invoker.html", "classdepicture__menu_1_1presentations_1_1shellexecute__invoker" ],
-    [ "combine_view_model_presenter", "namespacedepicture__menu_1_1presentations.html#a85b31db9d5f8ff5928afe12db5544c55", null ]
+    [ "combine_view_model_presenter", "namespacedepicture__menu_1_1presentations.html#ac5ca7fd023997d738379382ec3c53870", null ]
 ];

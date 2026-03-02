@@ -108,10 +108,10 @@ depicture_menu::cs_binding::entry_map::sub_class_access&lt; std::tuple&lt; Args.
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
 公開型</h2></td></tr>
-<tr class="memitem:aaed75e76017a5a851c2b574cfd92ce9a" id="r_aaed75e76017a5a851c2b574cfd92ce9a"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#aaed75e76017a5a851c2b574cfd92ce9a">head_entyr_map_t</a></td></tr>
+<tr class="memitem:ac45915555dfcc926e0017beafdeff0e3" id="r_ac45915555dfcc926e0017beafdeff0e3"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#ac45915555dfcc926e0017beafdeff0e3">head_entyr_map_t</a></td></tr>
 <tr class="memitem:acb98f04eb2e8a0c5f4f369f0eee165ac" id="r_acb98f04eb2e8a0c5f4f369f0eee165ac"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#acb98f04eb2e8a0c5f4f369f0eee165ac">head_t</a> = head_entyr_map_t::class_t</td></tr>
-<tr class="memitem:a95e6ff5d705393d2995b9f13e58c1d26" id="r_a95e6ff5d705393d2995b9f13e58c1d26"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a95e6ff5d705393d2995b9f13e58c1d26">destination_entry_map_t</a></td></tr>
-<tr class="memitem:a9552b65ea80f10a42dd4e4ac1b7801d5" id="r_a9552b65ea80f10a42dd4e4ac1b7801d5"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a9552b65ea80f10a42dd4e4ac1b7801d5">type</a></td></tr>
+<tr class="memitem:a22665ad07dedc74569b574bbfe9529c4" id="r_a22665ad07dedc74569b574bbfe9529c4"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a22665ad07dedc74569b574bbfe9529c4">destination_entry_map_t</a></td></tr>
+<tr class="memitem:a6167001b2a44c9021a7cb5a79038e182" id="r_a6167001b2a44c9021a7cb5a79038e182"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a6167001b2a44c9021a7cb5a79038e182">type</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
@@ -128,10 +128,10 @@ depicture_menu::cs_binding::entry_map::sub_class_access&lt; std::tuple&lt; Args.
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename... Args&gt;<br />
 requires ( obserable_aggregate_entry&lt; Args &gt; &amp;&amp; ... )<br />
 struct depicture_menu::cs_binding::entry_map::sub_class_access&lt; std::tuple&lt; Args... &gt; &gt;</div>
-<p class="definition"> <a class="el" href="entry__map_8hpp_source.html">entry_map.hpp</a> の <a class="el" href="entry__map_8hpp_source.html#l00665">665</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="entry__map_8hpp_source.html">entry_map.hpp</a> の <a class="el" href="entry__map_8hpp_source.html#l00595">595</a> 行目に定義があります。</p>
 </div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">型定義メンバ詳解</h2>
-<a id="a95e6ff5d705393d2995b9f13e58c1d26" name="a95e6ff5d705393d2995b9f13e58c1d26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a95e6ff5d705393d2995b9f13e58c1d26">&#9670;&#160;</a></span>destination_entry_map_t</h2>
+<a id="a22665ad07dedc74569b574bbfe9529c4" name="a22665ad07dedc74569b574bbfe9529c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22665ad07dedc74569b574bbfe9529c4">&#9670;&#160;</a></span>destination_entry_map_t</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,16 +143,16 @@ template&lt;typename... Args&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>初期値:</b><div class="fragment"><div class="line">std::remove_cvref_t&lt; <span class="keyword">decltype</span>( std::get&lt; <span class="keyword">sizeof</span>...( Args ) - 1u &gt;(</div>
-<div class="line">           std::tuple&lt; Args... &gt;{ }</div>
-<div class="line">       ) ) &gt;</div>
+<b>初期値:</b><div class="fragment"><div class="line"> </div>
+<div class="line">std::remove_cvref_t&lt; <span class="keyword">decltype</span>( std::get&lt; <span class="keyword">sizeof</span>...( Args ) - 1u &gt;(</div>
+<div class="line">  std::tuple&lt; Args... &gt; { } ) ) &gt;</div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="entry__map_8hpp_source.html">entry_map.hpp</a> の <a class="el" href="entry__map_8hpp_source.html#l00671">671</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="entry__map_8hpp_source.html">entry_map.hpp</a> の <a class="el" href="entry__map_8hpp_source.html#l00601">601</a> 行目に定義があります。</p>
 
 </div>
 </div>
-<a id="aaed75e76017a5a851c2b574cfd92ce9a" name="aaed75e76017a5a851c2b574cfd92ce9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaed75e76017a5a851c2b574cfd92ce9a">&#9670;&#160;</a></span>head_entyr_map_t</h2>
+<a id="ac45915555dfcc926e0017beafdeff0e3" name="ac45915555dfcc926e0017beafdeff0e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac45915555dfcc926e0017beafdeff0e3">&#9670;&#160;</a></span>head_entyr_map_t</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -164,10 +164,10 @@ template&lt;typename... Args&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>初期値:</b><div class="fragment"><div class="line">std::remove_cvref_t&lt;</div>
-<div class="line">       <span class="keyword">decltype</span>( std::get&lt; 0 &gt;( std::tuple&lt; Args... &gt;{ } ) ) &gt;</div>
+<b>初期値:</b><div class="fragment"><div class="line">std::remove_cvref_t&lt; decltype( std::get&lt; 0 &gt;(</div>
+<div class="line">     std::tuple&lt; Args... &gt; { } ) ) &gt;</div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="entry__map_8hpp_source.html">entry_map.hpp</a> の <a class="el" href="entry__map_8hpp_source.html#l00667">667</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="entry__map_8hpp_source.html">entry_map.hpp</a> の <a class="el" href="entry__map_8hpp_source.html#l00597">597</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -185,12 +185,12 @@ template&lt;typename... Args&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="entry__map_8hpp_source.html">entry_map.hpp</a> の <a class="el" href="entry__map_8hpp_source.html#l00669">669</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="entry__map_8hpp_source.html">entry_map.hpp</a> の <a class="el" href="entry__map_8hpp_source.html#l00599">599</a> 行目に定義があります。</p>
 
 </div>
 </div>
-<a id="a9552b65ea80f10a42dd4e4ac1b7801d5" name="a9552b65ea80f10a42dd4e4ac1b7801d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9552b65ea80f10a42dd4e4ac1b7801d5">&#9670;&#160;</a></span>type</h2>
+<a id="a6167001b2a44c9021a7cb5a79038e182" name="a6167001b2a44c9021a7cb5a79038e182"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6167001b2a44c9021a7cb5a79038e182">&#9670;&#160;</a></span>type</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -203,9 +203,9 @@ template&lt;typename... Args&gt; </div>
       </table>
 </div><div class="memdoc">
 <b>初期値:</b><div class="fragment"><div class="line">std::remove_cvref_t&lt;</div>
-<div class="line">       <span class="keyword">typename</span> destination_entry_map_t::return_t &gt;::element_type</div>
+<div class="line">     <span class="keyword">typename</span> destination_entry_map_t::return_t &gt;::element_type</div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="entry__map_8hpp_source.html">entry_map.hpp</a> の <a class="el" href="entry__map_8hpp_source.html#l00674">674</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="entry__map_8hpp_source.html">entry_map.hpp</a> の <a class="el" href="entry__map_8hpp_source.html#l00604">604</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -246,7 +246,14 @@ template&lt;typename H, typename HN, typename... Ts&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="entry__map_8hpp_source.html">entry_map.hpp</a> の <a class="el" href="entry__map_8hpp_source.html#l00688">688</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="entry__map_8hpp_source.html">entry_map.hpp</a> の <a class="el" href="entry__map_8hpp_source.html#l00617">617</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="entry__map_8hpp_source.html#l00608">chain()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1cs__binding_1_1entry__map_1_1sub__class__access_3_01std_1_1tuple_3_01_args_8_8_8_01_4_01_4_a0140c3ab7ce6713614ad16919f90cc3a_cgraph.svg" width="400" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -277,20 +284,13 @@ template&lt;typename H&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="entry__map_8hpp_source.html">entry_map.hpp</a> の <a class="el" href="entry__map_8hpp_source.html#l00679">679</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="entry__map_8hpp_source.html">entry_map.hpp</a> の <a class="el" href="entry__map_8hpp_source.html#l00608">608</a> 行目に定義があります。</p>
 
-<p class="reference">参照先 <a class="el" href="entry__map_8hpp_source.html#l00679">chain()</a>.</p>
-
-<p class="reference">参照元 <a class="el" href="entry__map_8hpp_source.html#l00679">chain()</a>.</p>
-<div class="dynheader">
-呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1cs__binding_1_1entry__map_1_1sub__class__access_3_01std_1_1tuple_3_01_args_8_8_8_01_4_01_4_afdf1fdf6698d3f06e8fd23efaa9bb137_cgraph.svg" width="182" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="reference">参照元 <a class="el" href="entry__map_8hpp_source.html#l00617">chain()</a>, <a class="el" href="entry__map_8hpp_source.html#l00627">get()</a>.</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1cs__binding_1_1entry__map_1_1sub__class__access_3_01std_1_1tuple_3_01_args_8_8_8_01_4_01_4_afdf1fdf6698d3f06e8fd23efaa9bb137_icgraph.svg" width="182" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1cs__binding_1_1entry__map_1_1sub__class__access_3_01std_1_1tuple_3_01_args_8_8_8_01_4_01_4_afdf1fdf6698d3f06e8fd23efaa9bb137_icgraph.svg" width="400" height="184"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -320,7 +320,14 @@ template&lt;typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="entry__map_8hpp_source.html">entry_map.hpp</a> の <a class="el" href="entry__map_8hpp_source.html#l00700">700</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="entry__map_8hpp_source.html">entry_map.hpp</a> の <a class="el" href="entry__map_8hpp_source.html#l00627">627</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="entry__map_8hpp_source.html#l00608">chain()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1cs__binding_1_1entry__map_1_1sub__class__access_3_01std_1_1tuple_3_01_args_8_8_8_01_4_01_4_a487777bb17789f169dbebcdf885e6781_cgraph.svg" width="396" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>

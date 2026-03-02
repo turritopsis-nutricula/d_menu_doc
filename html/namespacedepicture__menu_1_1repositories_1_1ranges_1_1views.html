@@ -101,7 +101,7 @@ $(function(){initNavTree('namespacedepicture__menu_1_1repositories_1_1ranges_1_1
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 変数</h2></td></tr>
 <tr class="memitem:ab241293c3d6aa5cf82e1641dd3747bda" id="r_ab241293c3d6aa5cf82e1641dd3747bda"><td class="memTemplParams" colspan="2">template&lt;typename V&gt; </td></tr>
-<tr class="memitem:ab241293c3d6aa5cf82e1641dd3747bda template"><td class="memItemLeft">constexpr <a class="el" href="classdepicture__menu_1_1ranges_1_1adaptor__t.html">::depicture_menu::ranges::adaptor_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab241293c3d6aa5cf82e1641dd3747bda">read</a> = <a class="el" href="classdepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views_1_1typed__read__impl.html">detail_views::typed_read_impl</a>&lt; V &gt;{ }</td></tr>
+<tr class="memitem:ab241293c3d6aa5cf82e1641dd3747bda template"><td class="memItemLeft">constexpr <a class="el" href="classdepicture__menu_1_1ranges_1_1adaptor__t.html">::depicture_menu::ranges::adaptor_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab241293c3d6aa5cf82e1641dd3747bda">read</a> = <a class="el" href="classdepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views_1_1typed__read__impl.html">detail_views::typed_read_impl</a>&lt; V &gt; { }</td></tr>
 <tr class="memitem:a2470c016b6fbdd210f652f2de0cb7e37" id="r_a2470c016b6fbdd210f652f2de0cb7e37"><td class="memItemLeft">constexpr <a class="el" href="classdepicture__menu_1_1ranges_1_1closure__t.html">::depicture_menu::ranges::closure_t</a>&#160;</td><td class="memItemRight"><a class="el" href="#a2470c016b6fbdd210f652f2de0cb7e37">extract_value</a></td></tr>
 </table>
 <a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">変数詳解</h2>
@@ -124,19 +124,18 @@ $(function(){initNavTree('namespacedepicture__menu_1_1repositories_1_1ranges_1_1
   </tr>
 </table>
 </div><div class="memdoc">
-<b>初期値:</b><div class="fragment"><div class="line"> = []&lt; std::ranges::viewable_range R &gt;( R&amp;&amp; r )</div>
-<div class="line">{</div>
+<b>初期値:</b><div class="fragment"><div class="line">                                                                 =</div>
+<div class="line">[]&lt; std::ranges::viewable_range R &gt;( R&amp;&amp; r ) {</div>
 <div class="line">    <span class="keywordflow">return</span> std::views::filter(</div>
-<div class="line">               std::forward&lt; R &gt;( r ),</div>
-<div class="line">               []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; exp ) { <span class="keywordflow">return</span> exp.has_value( ); }</div>
-<div class="line">           )</div>
-<div class="line">           | std::views::transform( []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; v )</div>
-<div class="line">                                    { <span class="keywordflow">return</span> v.value( ); } );</div>
+<div class="line">             std::forward&lt; R &gt;( r ),</div>
+<div class="line">             []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; exp ) { <span class="keywordflow">return</span> exp.has_value( ); } ) |</div>
+<div class="line">           std::views::transform(</div>
+<div class="line">             []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; v ) { <span class="keywordflow">return</span> v.value( ); } );</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="transaction__range_8hpp_source.html">transaction_range.hpp</a> の <a class="el" href="transaction__range_8hpp_source.html#l00232">232</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="transaction__range_8hpp_source.html">transaction_range.hpp</a> の <a class="el" href="transaction__range_8hpp_source.html#l00219">219</a> 行目に定義があります。</p>
 
-<p class="reference">参照元 <a class="el" href="_test_transaction_8cpp_source.html#l00399">BOOST_AUTO_TEST_CASE()</a>.</p>
+<p class="reference">参照元 <a class="el" href="_test_transaction_8cpp_source.html#l00363">BOOST_AUTO_TEST_CASE()</a>, <a class="el" href="change__menu__item_8cpp_source.html#l00076">depicture_menu::usecase::detail_usecase_change_menu_item::do_common_action_select()</a>, <a class="el" href="show__config__view_8cpp_source.html#l00222">depicture_menu::usecase::show_config_view::operator()()</a>.</p>
 
 </div>
 </div>
@@ -152,7 +151,7 @@ template&lt;typename V&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classdepicture__menu_1_1ranges_1_1adaptor__t.html">::depicture_menu::ranges::adaptor_t</a> depicture_menu::repositories::ranges::views::read = <a class="el" href="classdepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views_1_1typed__read__impl.html">detail_views::typed_read_impl</a>&lt; V &gt;{ }</td>
+          <td class="memname"><a class="el" href="classdepicture__menu_1_1ranges_1_1adaptor__t.html">::depicture_menu::ranges::adaptor_t</a> depicture_menu::repositories::ranges::views::read = <a class="el" href="classdepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views_1_1typed__read__impl.html">detail_views::typed_read_impl</a>&lt; V &gt; { }</td>
         </tr>
       </table>
   </td>
@@ -162,9 +161,9 @@ template&lt;typename V&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="transaction__range_8hpp_source.html">transaction_range.hpp</a> の <a class="el" href="transaction__range_8hpp_source.html#l00190">190</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="transaction__range_8hpp_source.html">transaction_range.hpp</a> の <a class="el" href="transaction__range_8hpp_source.html#l00183">183</a> 行目に定義があります。</p>
 
-<p class="reference">参照元 <a class="el" href="_test_transaction_8cpp_source.html#l00399">BOOST_AUTO_TEST_CASE()</a>.</p>
+<p class="reference">参照元 <a class="el" href="_test_transaction_8cpp_source.html#l00363">BOOST_AUTO_TEST_CASE()</a>, <a class="el" href="change__menu__item_8cpp_source.html#l00076">depicture_menu::usecase::detail_usecase_change_menu_item::do_common_action_select()</a>, <a class="el" href="show__config__view_8cpp_source.html#l00222">depicture_menu::usecase::show_config_view::operator()()</a>.</p>
 
 </div>
 </div>

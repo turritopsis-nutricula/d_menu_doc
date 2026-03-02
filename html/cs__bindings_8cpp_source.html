@@ -97,16 +97,16 @@ $(function(){initNavTree('cs__bindings_8cpp_source.html','',''); });
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// binding type</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#if 1</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;config.hpp&quot;</span>    <span class="comment">// IWYU pragma: export</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#   include &quot;config.hpp&quot;</span>    <span class="comment">// IWYU pragma: export</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="_app_options_arg_8hpp.html">core/cs_binding/AppOptionsArg.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="_core_model_8hpp.html">core/cs_binding/CoreModel.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_hot_key_controler_8hpp.html">core/cs_binding/HotKeyControler.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="_radial_menu_args_8hpp.html">core/cs_binding/RadialMenuArgs.hpp</a>&quot;</span>    <span class="comment">// IWYU pragma: keep</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_view_event_notify_8hpp.html">core/cs_binding/ViewEventNotify.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="define__cs__bind__type_8hpp.html">core/cs_binding/macro/define_cs_bind_type.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#   include &quot;<a class="code" href="_app_options_arg_8hpp.html">core/cs_binding/AppOptionsArg.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#   include &quot;<a class="code" href="_core_model_8hpp.html">core/cs_binding/CoreModel.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#   include &quot;<a class="code" href="_hot_key_controler_8hpp.html">core/cs_binding/HotKeyControler.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#   include &quot;<a class="code" href="_radial_menu_args_8hpp.html">core/cs_binding/RadialMenuArgs.hpp</a>&quot;</span>    <span class="comment">// IWYU pragma: keep</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#   include &quot;<a class="code" href="_view_event_notify_8hpp.html">core/cs_binding/ViewEventNotify.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#   include &quot;<a class="code" href="define__cs__bind__type_8hpp.html">core/cs_binding/macro/define_cs_bind_type.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="core__interface_8hpp.html">core/application/core_interface.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#   include &quot;<a class="code" href="core__interface_8hpp.html">core/application/core_interface.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu.html">d_menu</a> = <a class="code hl_namespace" href="namespacedepicture__menu.html">depicture_menu</a>;</div>
@@ -115,65 +115,58 @@ $(function(){initNavTree('cs__bindings_8cpp_source.html','',''); });
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="comment">//----------------------------------------------------------------------//</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="comment">// core inteface</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">void</span></div>
-<div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="cs__bindings_8cpp.html#a1695181e377793227b520a831cb43bf9">   24</a></span>    <a class="code hl_function" href="cs__bindings_8cpp.html#a1695181e377793227b520a831cb43bf9">update_core_view_event_notify</a>(</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        std::shared_ptr&lt; d_menu::cs_binding::ViewEventNotify_Proxy &gt; proxy</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    )</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    {</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="comment">// TODO : to swap_instance</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        proxy-&gt;instance( )</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            = <a class="code hl_function" href="classdepicture__menu_1_1singleton.html#ab3a8df96e817c8ccb1ab61434f90c416">d_menu::core_interface::get_instance</a>( ).view_notify;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    }</div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="cs__bindings_8cpp.html#a1695181e377793227b520a831cb43bf9">   23</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="cs__bindings_8cpp.html#a1695181e377793227b520a831cb43bf9">update_core_view_event_notify</a>(</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>      std::shared_ptr&lt; d_menu::cs_binding::ViewEventNotify_Proxy &gt; proxy )</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="comment">// TODO : to swap_instance</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        proxy-&gt;instance( ) =</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>          <a class="code hl_function" href="classdepicture__menu_1_1singleton.html#ab3a8df96e817c8ccb1ab61434f90c416">d_menu::core_interface::get_instance</a>( ).view_notify;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
 </div>
-<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="cs__bindings_8cpp.html#a2fac5f8040c0c01d0890c51b81861129">   32</a></span>    <a class="code hl_define" href="define__cs__bind__type_8hpp.html#a04c53a1ec0673166103fec7bd1cd1b50">DPM_DEFINE_CURRENT_UPDATE_TYPE</a>(</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        ViewEventNotify, &amp;<a class="code hl_function" href="cs__bindings_8cpp.html#a1695181e377793227b520a831cb43bf9">update_core_view_event_notify</a></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    )</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="comment">//  AppOptionsArg Bind</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_define" href="define__cs__bind__type_8hpp.html#aacc63d380306bb0d6addde94eb4368e2">DPM_DEFINE_PRE_REGISTRATION_TYPE</a>( AppOptionsArg )</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordtype">void</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    act_seq(</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        std::shared_ptr&lt; depicture_menu::cs_binding::ActionsSeqence_Proxy &gt; next</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    )</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    {</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        std::cout &lt;&lt; <span class="stringliteral">&quot; sequence proxy: &quot;</span> &lt;&lt; next.get( ) &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="cs__bindings_8cpp.html#a2fac5f8040c0c01d0890c51b81861129">   30</a></span>    <a class="code hl_define" href="define__cs__bind__type_8hpp.html#a04c53a1ec0673166103fec7bd1cd1b50">DPM_DEFINE_CURRENT_UPDATE_TYPE</a>(</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      ViewEventNotify,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      &amp;<a class="code hl_function" href="cs__bindings_8cpp.html#a1695181e377793227b520a831cb43bf9">update_core_view_event_notify</a> )</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="comment">//  AppOptionsArg Bind</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_define" href="define__cs__bind__type_8hpp.html#aacc63d380306bb0d6addde94eb4368e2">DPM_DEFINE_PRE_REGISTRATION_TYPE</a>( AppOptionsArg )</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">void</span> act_seq(</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      std::shared_ptr&lt; depicture_menu::cs_binding::ActionsSeqence_Proxy &gt; next )</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        std::cout &lt;&lt; <span class="stringliteral">&quot; sequence proxy: &quot;</span> &lt;&lt; next.get( ) &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
 </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_define" href="define__cs__bind__type_8hpp.html#a04c53a1ec0673166103fec7bd1cd1b50">DPM_DEFINE_CURRENT_UPDATE_TYPE</a>( ActionsSeqence, &amp;act_seq )</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// HotKeyControler TODO: move to other file</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">void</span></div>
-<div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="cs__bindings_8cpp.html#aea2c156dc463a261a91b342057913083">   53</a></span>    <a class="code hl_function" href="cs__bindings_8cpp.html#aea2c156dc463a261a91b342057913083">hotkey_controler_binding</a>(</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        std::shared_ptr&lt; depicture_menu::cs_binding::HotKeyControler_Proxy &gt;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            proxy</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    )</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    {</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        std::cout &lt;&lt; <span class="stringliteral">&quot; call HotKeyControler binding&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        proxy-&gt;swap_instance(</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            <span class="comment">//          d_menu::core_interface::get_instance(</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="comment">// ).get_hotkey_controler( )</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            <a class="code hl_function" href="classdepicture__menu_1_1singleton.html#ab3a8df96e817c8ccb1ab61434f90c416">d_menu::cs_binding::model_interface_t::get_instance</a>( ).HotKey_</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        );</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_define" href="define__cs__bind__type_8hpp.html#a04c53a1ec0673166103fec7bd1cd1b50">DPM_DEFINE_CURRENT_UPDATE_TYPE</a>( ActionsSeqence, &amp;act_seq )</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="comment">// HotKeyControler TODO: move to other file</span></div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="cs__bindings_8cpp.html#aea2c156dc463a261a91b342057913083">   48</a></span>    void <a class="code hl_function" href="cs__bindings_8cpp.html#aea2c156dc463a261a91b342057913083">hotkey_controler_binding</a>(</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      <a class="code hl_namespace" href="namespacestd.html">std</a>::shared_ptr&lt; <a class="code hl_namespace" href="namespacedepicture__menu.html">depicture_menu</a>::cs_binding::HotKeyControler_Proxy &gt;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        proxy )</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        std::cout &lt;&lt; <span class="stringliteral">&quot; call HotKeyControler binding&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        proxy-&gt;swap_instance(</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>          <span class="comment">//            d_menu::core_interface::get_instance(</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>          <span class="comment">// ).get_hotkey_controler( )</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>          <a class="code hl_function" href="classdepicture__menu_1_1singleton.html#ab3a8df96e817c8ccb1ab61434f90c416">d_menu::cs_binding::model_interface_t::get_instance</a>( ).HotKey_ );</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
 </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <a class="code hl_define" href="define__cs__bind__type_8hpp.html#a04c53a1ec0673166103fec7bd1cd1b50">DPM_DEFINE_CURRENT_UPDATE_TYPE</a>( HotKeyControler, &amp;<a class="code hl_function" href="cs__bindings_8cpp.html#aea2c156dc463a261a91b342057913083">hotkey_controler_binding</a> )</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">// RadialMenuArgs</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <a class="code hl_define" href="define__cs__bind__type_8hpp.html#aacc63d380306bb0d6addde94eb4368e2">DPM_DEFINE_PRE_REGISTRATION_TYPE</a>( RadialMenuItemContent )</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <a class="code hl_define" href="define__cs__bind__type_8hpp.html#aacc63d380306bb0d6addde94eb4368e2">DPM_DEFINE_PRE_REGISTRATION_TYPE</a>( RadialMenuItemArg )</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <a class="code hl_define" href="define__cs__bind__type_8hpp.html#aacc63d380306bb0d6addde94eb4368e2">DPM_DEFINE_PRE_REGISTRATION_TYPE</a>( RadialMenuCentralItemArg )</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_define" href="define__cs__bind__type_8hpp.html#aacc63d380306bb0d6addde94eb4368e2">DPM_DEFINE_PRE_REGISTRATION_TYPE</a>( RadialMenuArg )</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <a class="code hl_define" href="define__cs__bind__type_8hpp.html#a04c53a1ec0673166103fec7bd1cd1b50">DPM_DEFINE_CURRENT_UPDATE_TYPE</a>( HotKeyControler, &amp;<a class="code hl_function" href="cs__bindings_8cpp.html#aea2c156dc463a261a91b342057913083">hotkey_controler_binding</a> )</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="comment">// RadialMenuArgs</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_define" href="define__cs__bind__type_8hpp.html#aacc63d380306bb0d6addde94eb4368e2">DPM_DEFINE_PRE_REGISTRATION_TYPE</a>( RadialMenuItemContent )</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <a class="code hl_define" href="define__cs__bind__type_8hpp.html#aacc63d380306bb0d6addde94eb4368e2">DPM_DEFINE_PRE_REGISTRATION_TYPE</a>( RadialMenuItemArg )</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <a class="code hl_define" href="define__cs__bind__type_8hpp.html#aacc63d380306bb0d6addde94eb4368e2">DPM_DEFINE_PRE_REGISTRATION_TYPE</a>( RadialMenuCentralItemArg )</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <a class="code hl_define" href="define__cs__bind__type_8hpp.html#aacc63d380306bb0d6addde94eb4368e2">DPM_DEFINE_PRE_REGISTRATION_TYPE</a>( RadialMenuArg )</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_app_options_arg_8hpp_html"><div class="ttname"><a href="_app_options_arg_8hpp.html">AppOptionsArg.hpp</a></div></div>
 <div class="ttc" id="a_core_model_8hpp_html"><div class="ttname"><a href="_core_model_8hpp.html">CoreModel.hpp</a></div></div>
 <div class="ttc" id="a_hot_key_controler_8hpp_html"><div class="ttname"><a href="_hot_key_controler_8hpp.html">HotKeyControler.hpp</a></div></div>
@@ -181,12 +174,13 @@ $(function(){initNavTree('cs__bindings_8cpp_source.html','',''); });
 <div class="ttc" id="a_view_event_notify_8hpp_html"><div class="ttname"><a href="_view_event_notify_8hpp.html">ViewEventNotify.hpp</a></div></div>
 <div class="ttc" id="aclassdepicture__menu_1_1singleton_html_ab3a8df96e817c8ccb1ab61434f90c416"><div class="ttname"><a href="classdepicture__menu_1_1singleton.html#ab3a8df96e817c8ccb1ab61434f90c416">depicture_menu::singleton&lt; detail_d_menu::core_interface_impl &gt;::get_instance</a></div><div class="ttdeci">static T &amp; get_instance()</div><div class="ttdef"><b>Definition</b> <a href="singleton_8hpp_source.html#l00037">singleton.hpp:37</a></div></div>
 <div class="ttc" id="acore__interface_8hpp_html"><div class="ttname"><a href="core__interface_8hpp.html">core_interface.hpp</a></div></div>
-<div class="ttc" id="acs__bindings_8cpp_html_a1695181e377793227b520a831cb43bf9"><div class="ttname"><a href="cs__bindings_8cpp.html#a1695181e377793227b520a831cb43bf9">update_core_view_event_notify</a></div><div class="ttdeci">void update_core_view_event_notify(std::shared_ptr&lt; d_menu::cs_binding::ViewEventNotify_Proxy &gt; proxy)</div><div class="ttdef"><b>Definition</b> <a href="#l00024">cs_bindings.cpp:24</a></div></div>
-<div class="ttc" id="acs__bindings_8cpp_html_aea2c156dc463a261a91b342057913083"><div class="ttname"><a href="cs__bindings_8cpp.html#aea2c156dc463a261a91b342057913083">hotkey_controler_binding</a></div><div class="ttdeci">void hotkey_controler_binding(std::shared_ptr&lt; depicture_menu::cs_binding::HotKeyControler_Proxy &gt; proxy)</div><div class="ttdef"><b>Definition</b> <a href="#l00053">cs_bindings.cpp:53</a></div></div>
+<div class="ttc" id="acs__bindings_8cpp_html_a1695181e377793227b520a831cb43bf9"><div class="ttname"><a href="cs__bindings_8cpp.html#a1695181e377793227b520a831cb43bf9">update_core_view_event_notify</a></div><div class="ttdeci">void update_core_view_event_notify(std::shared_ptr&lt; d_menu::cs_binding::ViewEventNotify_Proxy &gt; proxy)</div><div class="ttdef"><b>Definition</b> <a href="#l00023">cs_bindings.cpp:23</a></div></div>
+<div class="ttc" id="acs__bindings_8cpp_html_aea2c156dc463a261a91b342057913083"><div class="ttname"><a href="cs__bindings_8cpp.html#aea2c156dc463a261a91b342057913083">hotkey_controler_binding</a></div><div class="ttdeci">void hotkey_controler_binding(std::shared_ptr&lt; depicture_menu::cs_binding::HotKeyControler_Proxy &gt; proxy)</div><div class="ttdef"><b>Definition</b> <a href="#l00048">cs_bindings.cpp:48</a></div></div>
 <div class="ttc" id="adefine__cs__bind__type_8hpp_html"><div class="ttname"><a href="define__cs__bind__type_8hpp.html">define_cs_bind_type.hpp</a></div></div>
-<div class="ttc" id="adefine__cs__bind__type_8hpp_html_a04c53a1ec0673166103fec7bd1cd1b50"><div class="ttname"><a href="define__cs__bind__type_8hpp.html#a04c53a1ec0673166103fec7bd1cd1b50">DPM_DEFINE_CURRENT_UPDATE_TYPE</a></div><div class="ttdeci">#define DPM_DEFINE_CURRENT_UPDATE_TYPE(TYPE, HANDLE)</div><div class="ttdef"><b>Definition</b> <a href="define__cs__bind__type_8hpp_source.html#l00051">define_cs_bind_type.hpp:51</a></div></div>
-<div class="ttc" id="adefine__cs__bind__type_8hpp_html_aacc63d380306bb0d6addde94eb4368e2"><div class="ttname"><a href="define__cs__bind__type_8hpp.html#aacc63d380306bb0d6addde94eb4368e2">DPM_DEFINE_PRE_REGISTRATION_TYPE</a></div><div class="ttdeci">#define DPM_DEFINE_PRE_REGISTRATION_TYPE(TYPE)</div><div class="ttdef"><b>Definition</b> <a href="define__cs__bind__type_8hpp_source.html#l00075">define_cs_bind_type.hpp:75</a></div></div>
+<div class="ttc" id="adefine__cs__bind__type_8hpp_html_a04c53a1ec0673166103fec7bd1cd1b50"><div class="ttname"><a href="define__cs__bind__type_8hpp.html#a04c53a1ec0673166103fec7bd1cd1b50">DPM_DEFINE_CURRENT_UPDATE_TYPE</a></div><div class="ttdeci">#define DPM_DEFINE_CURRENT_UPDATE_TYPE(TYPE, HANDLE)</div><div class="ttdef"><b>Definition</b> <a href="define__cs__bind__type_8hpp_source.html#l00049">define_cs_bind_type.hpp:49</a></div></div>
+<div class="ttc" id="adefine__cs__bind__type_8hpp_html_aacc63d380306bb0d6addde94eb4368e2"><div class="ttname"><a href="define__cs__bind__type_8hpp.html#aacc63d380306bb0d6addde94eb4368e2">DPM_DEFINE_PRE_REGISTRATION_TYPE</a></div><div class="ttdeci">#define DPM_DEFINE_PRE_REGISTRATION_TYPE(TYPE)</div><div class="ttdef"><b>Definition</b> <a href="define__cs__bind__type_8hpp_source.html#l00071">define_cs_bind_type.hpp:71</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_html"><div class="ttname"><a href="namespacedepicture__menu.html">depicture_menu</a></div><div class="ttdef"><b>Definition</b> <a href="constexpr__string_8hpp_source.html#l00012">constexpr_string.hpp:13</a></div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition</b> <a href="app__ids_8hpp_source.html#l00061">app_ids.hpp:62</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

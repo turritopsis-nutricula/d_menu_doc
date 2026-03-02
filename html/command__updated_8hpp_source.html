@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/src/core/usecase/config_view/dto/command_updated.hpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('command__updated_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">command_updated.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="command__updated_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/** @file command_updated.hpp</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * @brief コマンド更新 output DTO</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#ifndef SRC_CORE_USECASE_CONFIG_VIEW_DTO_COMMAND_UPDATED_HPP_</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#define SRC_CORE_USECASE_CONFIG_VIEW_DTO_COMMAND_UPDATED_HPP_</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="common__command__parameters_8hpp.html">common_command_parameters.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="action__ids_8hpp.html">core/domain/model/action/action_ids.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="command__ids_8hpp.html">core/domain/model/command/command_ids.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1usecase_1_1dto.html">depicture_menu::usecase::dto</a></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">//----------------------------------------------------------------------//</span><span class="comment"></span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * @brief コマンド更新 output DTO</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1usecase_1_1dto_1_1command__updated.html">   18</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structdepicture__menu_1_1usecase_1_1dto_1_1command__updated.html">command_updated</a></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1usecase_1_1dto_1_1command__updated.html#a8dda1d168ec978831af46eb01fc323e8">   20</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="structdepicture__menu_1_1usecase_1_1dto_1_1command__updated.html#a8dda1d168ec978831af46eb01fc323e8">parameter_t</a> = <a class="code hl_typedef" href="namespacedepicture__menu_1_1usecase_1_1dto.html#a2e634448b235859431a2a8a8c595f49d">common_command_parameter</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1usecase_1_1dto_1_1command__updated.html#ac78baaab7ec9bea38c90da6f199b96d1">   22</a></span>    <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1commands.html#a255579014c08ea612b006aa3a641ca7a">domain::commands::command_id</a>  <a class="code hl_variable" href="structdepicture__menu_1_1usecase_1_1dto_1_1command__updated.html#ac78baaab7ec9bea38c90da6f199b96d1">command_id</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1usecase_1_1dto_1_1command__updated.html#af82a05925f767858964fb120fc841586">   23</a></span>    <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">domain::actions::publisher_id</a> <a class="code hl_variable" href="structdepicture__menu_1_1usecase_1_1dto_1_1command__updated.html#af82a05925f767858964fb120fc841586">action_id</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1usecase_1_1dto_1_1command__updated.html#a2d4a5fce98623a3c595e09939daf6d37">   24</a></span>    <a class="code hl_typedef" href="structdepicture__menu_1_1usecase_1_1dto_1_1command__updated.html#a8dda1d168ec978831af46eb01fc323e8">parameter_t</a>                   <a class="code hl_variable" href="structdepicture__menu_1_1usecase_1_1dto_1_1command__updated.html#a2d4a5fce98623a3c595e09939daf6d37">value</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>};</div>
+</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}    <span class="comment">// namespace depicture_menu::usecase::dto</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_CORE_USECASE_CONFIG_VIEW_DTO_COMMAND_UPDATED_HPP_</span></div>
+<div class="ttc" id="aaction__ids_8hpp_html"><div class="ttname"><a href="action__ids_8hpp.html">action_ids.hpp</a></div></div>
+<div class="ttc" id="acommand__ids_8hpp_html"><div class="ttname"><a href="command__ids_8hpp.html">command_ids.hpp</a></div></div>
+<div class="ttc" id="acommon__command__parameters_8hpp_html"><div class="ttname"><a href="common__command__parameters_8hpp.html">common_command_parameters.hpp</a></div><div class="ttdoc">コモンコマンド引数定義</div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1actions_html_af913742220f232fcc0d0433f4e0da3f3"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">depicture_menu::domain::actions::publisher_id</a></div><div class="ttdeci">models::entity_id_base&lt; action_publisher_id_tag &gt; publisher_id</div><div class="ttdef"><b>Definition</b> <a href="action__ids_8hpp_source.html#l00017">action_ids.hpp:17</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1commands_html_a255579014c08ea612b006aa3a641ca7a"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1commands.html#a255579014c08ea612b006aa3a641ca7a">depicture_menu::domain::commands::command_id</a></div><div class="ttdeci">models::entity_id_base&lt; detail_commands::command_id_tag &gt; command_id</div><div class="ttdef"><b>Definition</b> <a href="command__ids_8hpp_source.html#l00018">command_ids.hpp:18</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1dto_html"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1dto.html">depicture_menu::usecase::dto</a></div><div class="ttdef"><b>Definition</b> <a href="action__created_8hpp_source.html#l00007">action_created.hpp:8</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1dto_html_a2e634448b235859431a2a8a8c595f49d"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1dto.html#a2e634448b235859431a2a8a8c595f49d">depicture_menu::usecase::dto::common_command_parameter</a></div><div class="ttdeci">std::variant&lt; nop_command_parameter, shellexecute_command_parameter, open_sub_menu_command_parameter &gt; common_command_parameter</div><div class="ttdoc">パラメータvariant</div><div class="ttdef"><b>Definition</b> <a href="common__command__parameters_8hpp_source.html#l00052">common_command_parameters.hpp:52</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1usecase_1_1dto_1_1command__updated_html"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1dto_1_1command__updated.html">depicture_menu::usecase::dto::command_updated</a></div><div class="ttdoc">コマンド更新 output DTO</div><div class="ttdef"><b>Definition</b> <a href="#l00018">command_updated.hpp:19</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1usecase_1_1dto_1_1command__updated_html_a2d4a5fce98623a3c595e09939daf6d37"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1dto_1_1command__updated.html#a2d4a5fce98623a3c595e09939daf6d37">depicture_menu::usecase::dto::command_updated::value</a></div><div class="ttdeci">parameter_t value</div><div class="ttdef"><b>Definition</b> <a href="#l00024">command_updated.hpp:24</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1usecase_1_1dto_1_1command__updated_html_a8dda1d168ec978831af46eb01fc323e8"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1dto_1_1command__updated.html#a8dda1d168ec978831af46eb01fc323e8">depicture_menu::usecase::dto::command_updated::parameter_t</a></div><div class="ttdeci">common_command_parameter parameter_t</div><div class="ttdef"><b>Definition</b> <a href="#l00020">command_updated.hpp:20</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1usecase_1_1dto_1_1command__updated_html_ac78baaab7ec9bea38c90da6f199b96d1"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1dto_1_1command__updated.html#ac78baaab7ec9bea38c90da6f199b96d1">depicture_menu::usecase::dto::command_updated::command_id</a></div><div class="ttdeci">domain::commands::command_id command_id</div><div class="ttdef"><b>Definition</b> <a href="#l00022">command_updated.hpp:22</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1usecase_1_1dto_1_1command__updated_html_af82a05925f767858964fb120fc841586"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1dto_1_1command__updated.html#af82a05925f767858964fb120fc841586">depicture_menu::usecase::dto::command_updated::action_id</a></div><div class="ttdeci">domain::actions::publisher_id action_id</div><div class="ttdef"><b>Definition</b> <a href="#l00023">command_updated.hpp:23</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_d26f0ed8b287a778d960ad2241e01057.html">src</a></li><li class="navelem"><a href="dir_eb29242f55d2489f6c4d008365c270b7.html">core</a></li><li class="navelem"><a href="dir_43f8aa2529ec47ad37b553a33a2ea717.html">usecase</a></li><li class="navelem"><a href="dir_63e3b4c20525be311d786392d608ffa7.html">config_view</a></li><li class="navelem"><a href="dir_f62b4b6507d024ed9815753f78723de4.html">dto</a></li><li class="navelem"><a href="command__updated_8hpp.html">command_updated.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

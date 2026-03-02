@@ -132,8 +132,8 @@ id_access.hpp の依存先関係図:</div>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 変数</h2></td></tr>
-<tr class="memitem:aa796248ccf136dae8141b39b2355c039" id="r_aa796248ccf136dae8141b39b2355c039"><td class="memItemLeft">constexpr auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1presentations_1_1view__models_1_1id__access.html#aa796248ccf136dae8141b39b2355c039">depicture_menu::presentations::view_models::id_access::getter</a> = <a class="el" href="structdepicture__menu_1_1presentations_1_1view__models_1_1id__access_1_1id__getter.html">id_getter</a>{ }</td></tr>
-<tr class="memitem:ab1e537ed870372b7ac5005de7725ee09" id="r_ab1e537ed870372b7ac5005de7725ee09"><td class="memItemLeft">constexpr auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1presentations_1_1view__models_1_1id__access.html#ab1e537ed870372b7ac5005de7725ee09">depicture_menu::presentations::view_models::id_access::setter</a> = <a class="el" href="structdepicture__menu_1_1presentations_1_1view__models_1_1id__access_1_1id__setter.html">id_setter</a>{ }</td></tr>
+<tr class="memitem:aa796248ccf136dae8141b39b2355c039" id="r_aa796248ccf136dae8141b39b2355c039"><td class="memItemLeft">constexpr auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1presentations_1_1view__models_1_1id__access.html#aa796248ccf136dae8141b39b2355c039">depicture_menu::presentations::view_models::id_access::getter</a> = <a class="el" href="structdepicture__menu_1_1presentations_1_1view__models_1_1id__access_1_1id__getter.html">id_getter</a> { }</td></tr>
+<tr class="memitem:ab1e537ed870372b7ac5005de7725ee09" id="r_ab1e537ed870372b7ac5005de7725ee09"><td class="memItemLeft">constexpr auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1presentations_1_1view__models_1_1id__access.html#ab1e537ed870372b7ac5005de7725ee09">depicture_menu::presentations::view_models::id_access::setter</a> = <a class="el" href="structdepicture__menu_1_1presentations_1_1view__models_1_1id__access_1_1id__setter.html">id_setter</a> { }</td></tr>
 </table>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">マクロ定義詳解</h2>
 <a id="ad8475bae54d8b3bf47501fc9bbfc2d48" name="ad8475bae54d8b3bf47501fc9bbfc2d48"></a>
@@ -154,23 +154,22 @@ id_access.hpp の依存先関係図:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line"><span class="keyword">template</span> &lt;&gt;                                                                \</div>
+<b>値:</b><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;&gt;                                                                 \</div>
 <div class="line"><span class="keyword">struct </span>uuid_access&lt; TYPE &gt;                                                 \</div>
 <div class="line">{                                                                          \</div>
 <div class="line">    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> valid = <span class="keyword">true</span>;                                    \</div>
-<div class="line">    boost::uuids::uuid                                                     \</div>
-<div class="line">    get( TYPE <span class="keyword">const</span>&amp; <a class="code hl_struct" href="structc.html">c</a> ) <span class="keyword">const</span>                                             \</div>
+<div class="line">    boost::uuids::uuid    get( TYPE <span class="keyword">const</span>&amp; <a class="code hl_struct" href="structc.html">c</a> ) <span class="keyword">const</span>                       \</div>
 <div class="line">    {                                                                      \</div>
 <div class="line">        <span class="keywordflow">return</span> <a class="code hl_struct" href="structc.html">c</a>.get_##ENTRY_NAME( );                                      \</div>
 <div class="line">    }                                                                      \</div>
 <div class="line">                                                                           \</div>
-<div class="line">    void                                                                   \</div>
-<div class="line">    set( TYPE&amp; <a class="code hl_struct" href="structc.html">c</a>, boost::uuids::uuid <span class="keyword">const</span>&amp; <span class="keywordtype">id</span> ) <span class="keyword">const</span>                     \</div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="test__command__line__option_8cpp.html#a11168c1960ee4b2ffbc15ee691d0b77b">set</a>( TYPE&amp; <a class="code hl_struct" href="structc.html">c</a>, boost::uuids::uuid <span class="keyword">const</span>&amp; <span class="keywordtype">id</span> ) <span class="keyword">const</span>                \</div>
 <div class="line">    {                                                                      \</div>
 <div class="line">        <a class="code hl_struct" href="structc.html">c</a>.set_##ENTRY_NAME( <span class="keywordtype">id</span> );                                          \</div>
 <div class="line">    }                                                                      \</div>
 <div class="line">};</div>
-<div class="ttc" id="astructc_html"><div class="ttname"><a href="structc.html">c</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00154">TestReflection.cpp:155</a></div></div>
+<div class="ttc" id="astructc_html"><div class="ttname"><a href="structc.html">c</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00145">TestReflection.cpp:146</a></div></div>
+<div class="ttc" id="atest__command__line__option_8cpp_html_a11168c1960ee4b2ffbc15ee691d0b77b"><div class="ttname"><a href="test__command__line__option_8cpp.html#a11168c1960ee4b2ffbc15ee691d0b77b">set</a></div><div class="ttdeci">dest set(mock_open)</div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="id__access_8hpp_source.html">id_access.hpp</a> の <a class="el" href="id__access_8hpp_source.html#l00039">39</a> 行目に定義があります。</p>
 

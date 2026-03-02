@@ -133,9 +133,9 @@ action_operations.hpp の依存先関係図:</div>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 型定義</h2></td></tr>
-<tr class="memitem:a529a37a647eac6abcf2fc98344c6fbd9" id="r_a529a37a647eac6abcf2fc98344c6fbd9"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1presentations_1_1view__models_1_1operations.html#a529a37a647eac6abcf2fc98344c6fbd9">depicture_menu::presentations::view_models::operations::action_sync_operator_impl</a> = <a class="el" href="structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operations__action_1_1action__operator__impl.html">detail_operations_action::action_operator_impl</a></td></tr>
-<tr class="memitem:a64780369bcf0864e485a8f11fa124f75" id="r_a64780369bcf0864e485a8f11fa124f75"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1presentations_1_1view__models_1_1operations.html#a64780369bcf0864e485a8f11fa124f75">depicture_menu::presentations::view_models::operations::action_create_operator_impl</a> = <a class="el" href="structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operations__acti343e6f96188f55e3cc7ad21fad829f4e.html">detail_operations_action::action_create_operator_impl</a></td></tr>
-<tr class="memitem:afd7a97301b381a465e60494fe4921c0f" id="r_afd7a97301b381a465e60494fe4921c0f"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1presentations_1_1view__models_1_1operations.html#afd7a97301b381a465e60494fe4921c0f">depicture_menu::presentations::view_models::operations::action_erase_operator_impl</a> = <a class="el" href="structdepicture__menu_1_1presentations_1_1view__models_1_1operations_1_1detail__operations__acti099d57120deb885943f3a84a58292366.html">detail_operations_action::action_erase_operator_impl</a></td></tr>
+<tr class="memitem:adb15f2f209f66b153ebb80415751f60b" id="r_adb15f2f209f66b153ebb80415751f60b"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1presentations_1_1view__models_1_1operations.html#adb15f2f209f66b153ebb80415751f60b">depicture_menu::presentations::view_models::operations::action_sync_operator_impl</a></td></tr>
+<tr class="memitem:a28275d9ae94847b1c04aec3698861070" id="r_a28275d9ae94847b1c04aec3698861070"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1presentations_1_1view__models_1_1operations.html#a28275d9ae94847b1c04aec3698861070">depicture_menu::presentations::view_models::operations::action_create_operator_impl</a></td></tr>
+<tr class="memitem:a72f811bb3df3736f2a2abc510e32af7d" id="r_a72f811bb3df3736f2a2abc510e32af7d"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1presentations_1_1view__models_1_1operations.html#a72f811bb3df3736f2a2abc510e32af7d">depicture_menu::presentations::view_models::operations::action_erase_operator_impl</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 関数</h2></td></tr>
@@ -173,15 +173,14 @@ action_operations.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">compare_and_assign(                                                        \</div>
-<div class="line">    LH_EXPR,                                                               \</div>
-<div class="line">    RH,                                                                    \</div>
-<div class="line">    []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; r ) { <span class="keywordflow">return</span> r.BOOST_PP_CAT( get_, RH_NAME )( ); },    \</div>
-<div class="line">    []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; l, <span class="keyword">auto</span>&amp; r ) { r.BOOST_PP_CAT( set_, RH_NAME )( l ); } \</div>
-<div class="line">)</div>
+<div class="line">  LH_EXPR,                                                                 \</div>
+<div class="line">  RH,                                                                      \</div>
+<div class="line">  []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; r ) { <span class="keywordflow">return</span> r.BOOST_PP_CAT( get_, RH_NAME )( ); },      \</div>
+<div class="line">  []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; l, <span class="keyword">auto</span>&amp; r ) { r.BOOST_PP_CAT( set_, RH_NAME )( l ); } )</div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="action__operations_8hpp_source.html">action_operations.hpp</a> の <a class="el" href="action__operations_8hpp_source.html#l00085">85</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="action__operations_8hpp_source.html">action_operations.hpp</a> の <a class="el" href="action__operations_8hpp_source.html#l00076">76</a> 行目に定義があります。</p>
 
-<p class="reference">参照元 <a class="el" href="action__operations_8hpp_source.html#l00094">depicture_menu::presentations::view_models::operations::detail_operations_action::update()</a>.</p>
+<p class="reference">参照元 <a class="el" href="action__operations_8hpp_source.html#l00084">depicture_menu::presentations::view_models::operations::detail_operations_action::update()</a>.</p>
 
 </div>
 </div>

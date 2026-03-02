@@ -119,25 +119,25 @@ $(function(){initNavTree('log_8hpp_source.html','',''); });
 </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#ifdef _DEBUG</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#define DPM_LOG_TRACE( X ) DPM_DETAIL_LOG_IMPL( &quot;[trac]&quot;, X )</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#define DPM_LOG_DEBUG( X ) DPM_DETAIL_LOG_IMPL( &quot;[debg]&quot;, X )</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#define DPM_LOG_WRAN( X ) DPM_DETAIL_LOG_IMPL( &quot;[warn]&quot;, X )</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#define DPM_LOG_ERROR( X ) DPM_DETAIL_LOG_IMPL( &quot;[erro]&quot;, X )</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#   define DPM_LOG_TRACE( X ) DPM_DETAIL_LOG_IMPL( &quot;[trac]&quot;, X )</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#   define DPM_LOG_DEBUG( X ) DPM_DETAIL_LOG_IMPL( &quot;[debg]&quot;, X )</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#   define DPM_LOG_WRAN( X ) DPM_DETAIL_LOG_IMPL( &quot;[warn]&quot;, X )</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#   define DPM_LOG_ERROR( X ) DPM_DETAIL_LOG_IMPL( &quot;[erro]&quot;, X )</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#define DPM_LOG_TRACE_W( X ) DPM_DETAIL_LOG_IMPL_W( L&quot;[trac]&quot;, X )</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#define DPM_LOG_DEBUG_W( X ) DPM_DETAIL_LOG_IMPL_W( L&quot;[debg]&quot;, X )</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#define DPM_LOG_WRAN_W( X ) DPM_DETAIL_LOG_IMPL_W( L&quot;[warn]&quot;, X )</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#define DPM_LOG_ERROR_W( X ) DPM_DETAIL_LOG_IMPL_W( L&quot;[erro]&quot;, X )</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#   define DPM_LOG_TRACE_W( X ) DPM_DETAIL_LOG_IMPL_W( L&quot;[trac]&quot;, X )</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#   define DPM_LOG_DEBUG_W( X ) DPM_DETAIL_LOG_IMPL_W( L&quot;[debg]&quot;, X )</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#   define DPM_LOG_WRAN_W( X ) DPM_DETAIL_LOG_IMPL_W( L&quot;[warn]&quot;, X )</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#   define DPM_LOG_ERROR_W( X ) DPM_DETAIL_LOG_IMPL_W( L&quot;[erro]&quot;, X )</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="log_8hpp.html#a3b6caf5bb776302aacc06de15b389b66">   33</a></span><span class="preprocessor">#define DPM_LOG_TRACE( X )</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="log_8hpp.html#a6a81e4b32bb7210d0366ac20d9fe82f7">   34</a></span><span class="preprocessor">#define DPM_LOG_DEBUG( X )</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="log_8hpp.html#aab404ff912acd168e0342f9b7f641131">   35</a></span><span class="preprocessor">#define DPM_LOG_WRAN( X )</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="log_8hpp.html#a4750aa57a19cfdc1b2fb037ceab18ae1">   36</a></span><span class="preprocessor">#define DPM_LOG_ERROR( X )</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="log_8hpp.html#a3b6caf5bb776302aacc06de15b389b66">   33</a></span><span class="preprocessor">#   define DPM_LOG_TRACE( X )</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="log_8hpp.html#a6a81e4b32bb7210d0366ac20d9fe82f7">   34</a></span><span class="preprocessor">#   define DPM_LOG_DEBUG( X )</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="log_8hpp.html#aab404ff912acd168e0342f9b7f641131">   35</a></span><span class="preprocessor">#   define DPM_LOG_WRAN( X )</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="log_8hpp.html#a4750aa57a19cfdc1b2fb037ceab18ae1">   36</a></span><span class="preprocessor">#   define DPM_LOG_ERROR( X )</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="log_8hpp.html#a2663b4351c541ec36cdbd0a49ae10d8f">   38</a></span><span class="preprocessor">#define DPM_LOG_TRACE_W( X )</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="log_8hpp.html#a0c47ffca1ee7d31686b4b8b42af3311b">   39</a></span><span class="preprocessor">#define DPM_LOG_DEBUG_W( X )</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="log_8hpp.html#a90da7a9b17a0accfedddd43db57306b9">   40</a></span><span class="preprocessor">#define DPM_LOG_WRAN_W( X )</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="log_8hpp.html#a62196923190b6b69a253e8734c0226fc">   41</a></span><span class="preprocessor">#define DPM_LOG_ERROR_W( X )</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="log_8hpp.html#a2663b4351c541ec36cdbd0a49ae10d8f">   38</a></span><span class="preprocessor">#   define DPM_LOG_TRACE_W( X )</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="log_8hpp.html#a0c47ffca1ee7d31686b4b8b42af3311b">   39</a></span><span class="preprocessor">#   define DPM_LOG_DEBUG_W( X )</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="log_8hpp.html#a90da7a9b17a0accfedddd43db57306b9">   40</a></span><span class="preprocessor">#   define DPM_LOG_WRAN_W( X )</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="log_8hpp.html#a62196923190b6b69a253e8734c0226fc">   41</a></span><span class="preprocessor">#   define DPM_LOG_ERROR_W( X )</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_CORE_APPLICATION_LOG_HPP_</span></div>

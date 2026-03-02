@@ -97,11 +97,12 @@ $(function(){initNavTree('conceptdepicture__menu_1_1cs__binding_1_1concepts_1_1v
 <p><code>#include &lt;<a class="el" href="vtbl_8hpp_source.html">vtbl.hpp</a>&gt;</code></p>
 <h2 id="header-conceptdef" class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
-<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptdepicture__menu_1_1cs__binding_1_1concepts_1_1vtbl__makeable.html">vtbl_makeable</a> = <span class="keyword">requires</span>( T ) {</div>
-<div class="line">    <span class="keyword">requires</span> std::is_class_v&lt; T &gt;;</div>
-<div class="line">    <span class="keyword">typename</span> boost::describe::</div>
+<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptdepicture__menu_1_1cs__binding_1_1concepts_1_1vtbl__makeable.html">vtbl_makeable</a> =</div>
+<div class="line">  <span class="keyword">requires</span>( T ) {</div>
+<div class="line">      <span class="keyword">requires</span> std::is_class_v&lt; T &gt;;</div>
+<div class="line">      <span class="keyword">typename</span> boost::describe::</div>
 <div class="line">        describe_members&lt; T, boost::describe::mod_any_access &gt;;</div>
-<div class="line">}</div>
+<div class="line">  }</div>
 <div class="ttc" id="aconceptdepicture__menu_1_1cs__binding_1_1concepts_1_1vtbl__makeable_html"><div class="ttname"><a href="conceptdepicture__menu_1_1cs__binding_1_1concepts_1_1vtbl__makeable.html">depicture_menu::cs_binding::concepts::vtbl_makeable</a></div><div class="ttdef"><b>Definition</b> <a href="vtbl_8hpp_source.html#l00025">vtbl.hpp:25</a></div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
 <div class="textblock">

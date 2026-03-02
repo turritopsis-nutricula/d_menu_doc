@@ -97,10 +97,11 @@ $(function(){initNavTree('concepttest__helper_1_1describable.html','',''); });
 <p><code>#include &lt;<a class="el" href="cs__binding__test__helpers_8hpp_source.html">cs_binding_test_helpers.hpp</a>&gt;</code></p>
 <h2 id="header-conceptdef" class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
-<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="concepttest__helper_1_1describable.html">describable</a> = <span class="keyword">requires</span>( T t ) {</div>
-<div class="line">    <span class="keyword">requires</span> std::negation&lt;</div>
+<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="concepttest__helper_1_1describable.html">describable</a> =</div>
+<div class="line">  <span class="keyword">requires</span>( T t ) {</div>
+<div class="line">      <span class="keyword">requires</span> std::negation&lt;</div>
 <div class="line">        boost::mp11::mp_empty&lt; access_member_list&lt; T &gt; &gt; &gt;::value;</div>
-<div class="line">}</div>
+<div class="line">  }</div>
 <div class="ttc" id="aconcepttest__helper_1_1describable_html"><div class="ttname"><a href="concepttest__helper_1_1describable.html">test_helper::describable</a></div><div class="ttdef"><b>Definition</b> <a href="cs__binding__test__helpers_8hpp_source.html#l00022">cs_binding_test_helpers.hpp:22</a></div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
 <div class="textblock">

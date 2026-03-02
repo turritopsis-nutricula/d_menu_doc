@@ -116,9 +116,9 @@ constractor.hpp の依存先関係図:</div>
 <tr class="memitem:a2736c6d40c70767def25e5e049978396" id="r_a2736c6d40c70767def25e5e049978396"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a2736c6d40c70767def25e5e049978396">DPM_CS_CONSTRACTOR_OP_DPM_METHOD_KIND_SUBJECT_SWAP_METHOD</a>(SEQ, ...)</td></tr>
 <tr class="memitem:aaea291c65198c0525cdb41e060f5554f" id="r_aaea291c65198c0525cdb41e060f5554f"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aaea291c65198c0525cdb41e060f5554f">DPM_CS_CONSTRACTOR_OP_DPM_METHOD_KIND_COMPARE_METHOD</a>(SEQ, ...)</td></tr>
 <tr class="memitem:af37e554446d74b1a18664b99bd0976cb" id="r_af37e554446d74b1a18664b99bd0976cb"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#af37e554446d74b1a18664b99bd0976cb">DPM_CS_CONSTRACTOR_OP_DPM_METHOD_KIND_COPY_METHOD</a>(SEQ, ...)</td></tr>
-<tr class="memitem:aa6c8341e236bdd8ee8852cd9655ed1f5" id="r_aa6c8341e236bdd8ee8852cd9655ed1f5"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aa6c8341e236bdd8ee8852cd9655ed1f5">DPM_CS_CONSTRACTOR_OP_DPM_METHOD_KIND_OBSERVABLE_VALUE_DEFINE</a>(SEQ, ...)</td></tr>
-<tr class="memitem:a45cb7d7aabebd262ddcda03464db57a8" id="r_a45cb7d7aabebd262ddcda03464db57a8"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a45cb7d7aabebd262ddcda03464db57a8">DPM_CS_CONSTRACTOR_OP_DPM_METHOD_KIND_OBSERVABLE_AGGREGATE_DEFINE</a>(SEQ, ...)</td></tr>
-<tr class="memitem:adde8224b35387daca6882e958ff53606" id="r_adde8224b35387daca6882e958ff53606"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#adde8224b35387daca6882e958ff53606">DPM_CS_CONSTRACTOR_OP_DPM_METHOD_KIND_OBSERVABLE_COLLECTION_DEFINE</a>(SEQ, ...)</td></tr>
+<tr class="memitem:a213d0e1332353159f72ca96fe7503597" id="r_a213d0e1332353159f72ca96fe7503597"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a213d0e1332353159f72ca96fe7503597">DPM_CS_CONSTRACTOR_OP_DPM_METHOD_KIND_OBSERVABLE_VALUE_DEFINE</a>( SEQ, ...)</td></tr>
+<tr class="memitem:a9795b208d5da60b313d82564e4610ada" id="r_a9795b208d5da60b313d82564e4610ada"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a9795b208d5da60b313d82564e4610ada">DPM_CS_CONSTRACTOR_OP_DPM_METHOD_KIND_OBSERVABLE_AGGREGATE_DEFINE</a>( SEQ, ...)</td></tr>
+<tr class="memitem:a4a41d2b92bc8b340afd6efbf7c3b411b" id="r_a4a41d2b92bc8b340afd6efbf7c3b411b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a4a41d2b92bc8b340afd6efbf7c3b411b">DPM_CS_CONSTRACTOR_OP_DPM_METHOD_KIND_OBSERVABLE_COLLECTION_DEFINE</a>( SEQ, ...)</td></tr>
 <tr class="memitem:a2d07ca13279f5ab3016fcb0773f3c739" id="r_a2d07ca13279f5ab3016fcb0773f3c739"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a2d07ca13279f5ab3016fcb0773f3c739">DPM_CS_CONSTRACTOR_SEQ_FILTER_OP</a>(_,  DATA,  SEQ)</td></tr>
 <tr class="memitem:a06ee42225231feb7737863d7858abc5c" id="r_a06ee42225231feb7737863d7858abc5c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a06ee42225231feb7737863d7858abc5c">DPM_CS_CONSTRACTOR_SEQ_FILTER</a>(GM_SEQS)</td></tr>
 <tr class="memitem:a829275d4a962948f38f950db4360744c" id="r_a829275d4a962948f38f950db4360744c"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a829275d4a962948f38f950db4360744c">CS_FUNCTION_INIT_EXPR</a>(n_,  f_)</td></tr>
@@ -149,14 +149,13 @@ constractor.hpp の依存先関係図:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a2a2174854230132f98a4603cee65eb79">CS_FUNCTION_VALUE</a>( f_ )                                                    \</div>
-<div class="line">    = Marshal.GetDelegateForFunctionPointer&lt; <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a9b72cb7d9f6421162f309aff5d651b39">CS_DELEGATE_TYPE</a>( f_ ) &gt;(     \</div>
-<div class="line">        CS_VTBL_VALUE_NAME( )[ n_ ]                                        \</div>
-<div class="line">    );</div>
+<b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a2a2174854230132f98a4603cee65eb79">CS_FUNCTION_VALUE</a>( f_ ) =                                                  \</div>
+<div class="line">  Marshal.GetDelegateForFunctionPointer&lt; <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a9b72cb7d9f6421162f309aff5d651b39">CS_DELEGATE_TYPE</a>( f_ ) &gt;(         \</div>
+<div class="line">    CS_VTBL_VALUE_NAME( )[ n_ ] );</div>
 <div class="ttc" id="acs__binding_2macro_2detail_2csharp_2config_8hpp_html_a2a2174854230132f98a4603cee65eb79"><div class="ttname"><a href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a2a2174854230132f98a4603cee65eb79">CS_FUNCTION_VALUE</a></div><div class="ttdeci">#define CS_FUNCTION_VALUE(t_)</div><div class="ttdef"><b>Definition</b> <a href="cs__binding_2macro_2detail_2csharp_2config_8hpp_source.html#l00028">config.hpp:28</a></div></div>
 <div class="ttc" id="acs__binding_2macro_2detail_2csharp_2config_8hpp_html_a9b72cb7d9f6421162f309aff5d651b39"><div class="ttname"><a href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a9b72cb7d9f6421162f309aff5d651b39">CS_DELEGATE_TYPE</a></div><div class="ttdeci">#define CS_DELEGATE_TYPE(t_)</div><div class="ttdef"><b>Definition</b> <a href="cs__binding_2macro_2detail_2csharp_2config_8hpp_source.html#l00027">config.hpp:27</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="constractor_8hpp_source.html">constractor.hpp</a> の <a class="el" href="constractor_8hpp_source.html#l00041">41</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="constractor_8hpp_source.html">constractor.hpp</a> の <a class="el" href="constractor_8hpp_source.html#l00044">44</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -184,10 +183,10 @@ constractor.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a829275d4a962948f38f950db4360744c">CS_FUNCTION_INIT_EXPR</a>( BOOST_PP_DEC( r_ ), <a class="code hl_define" href="glue__code__sequence__data_8hpp.html#a15738fdd242b5b3807d4d8713b859824">DPM_GLUE_METHOD_NAME</a>( elem_ ) )</div>
-<div class="ttc" id="aconstractor_8hpp_html_a829275d4a962948f38f950db4360744c"><div class="ttname"><a href="#a829275d4a962948f38f950db4360744c">CS_FUNCTION_INIT_EXPR</a></div><div class="ttdeci">#define CS_FUNCTION_INIT_EXPR(n_, f_)</div><div class="ttdef"><b>Definition</b> <a href="constractor_8hpp_source.html#l00041">constractor.hpp:41</a></div></div>
+<div class="ttc" id="aconstractor_8hpp_html_a829275d4a962948f38f950db4360744c"><div class="ttname"><a href="#a829275d4a962948f38f950db4360744c">CS_FUNCTION_INIT_EXPR</a></div><div class="ttdeci">#define CS_FUNCTION_INIT_EXPR(n_, f_)</div><div class="ttdef"><b>Definition</b> <a href="constractor_8hpp_source.html#l00044">constractor.hpp:44</a></div></div>
 <div class="ttc" id="aglue__code__sequence__data_8hpp_html_a15738fdd242b5b3807d4d8713b859824"><div class="ttname"><a href="glue__code__sequence__data_8hpp.html#a15738fdd242b5b3807d4d8713b859824">DPM_GLUE_METHOD_NAME</a></div><div class="ttdeci">#define DPM_GLUE_METHOD_NAME(SEQ)</div><div class="ttdef"><b>Definition</b> <a href="glue__code__sequence__data_8hpp_source.html#l00047">glue_code_sequence_data.hpp:47</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="constractor_8hpp_source.html">constractor.hpp</a> の <a class="el" href="constractor_8hpp_source.html#l00046">46</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="constractor_8hpp_source.html">constractor.hpp</a> の <a class="el" href="constractor_8hpp_source.html#l00048">48</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -218,10 +217,10 @@ constractor.hpp の依存先関係図:</div>
 <div class="line">VTBL_VALUE_NAME = <span class="keyword">new</span> IntPtr[ <a class="code hl_struct" href="structc.html">c</a> ];                                         \</div>
 <div class="line">LOAD_FUNC_NAME( VTBL_VALUE_NAME, <a class="code hl_struct" href="structc.html">c</a> );                                      \</div>
 <div class="line">BOOST_PP_SEQ_FOR_EACH( <a class="code hl_define" href="#a3b974879b247200c5ab4b3cc0e7b0a96">CS_FUNCTION_INIT_OP</a>, _, GM_SEQS )</div>
-<div class="ttc" id="aconstractor_8hpp_html_a3b974879b247200c5ab4b3cc0e7b0a96"><div class="ttname"><a href="#a3b974879b247200c5ab4b3cc0e7b0a96">CS_FUNCTION_INIT_OP</a></div><div class="ttdeci">#define CS_FUNCTION_INIT_OP(r_, n_, elem_)</div><div class="ttdef"><b>Definition</b> <a href="constractor_8hpp_source.html#l00046">constractor.hpp:46</a></div></div>
-<div class="ttc" id="astructc_html"><div class="ttname"><a href="structc.html">c</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00154">TestReflection.cpp:155</a></div></div>
+<div class="ttc" id="aconstractor_8hpp_html_a3b974879b247200c5ab4b3cc0e7b0a96"><div class="ttname"><a href="#a3b974879b247200c5ab4b3cc0e7b0a96">CS_FUNCTION_INIT_OP</a></div><div class="ttdeci">#define CS_FUNCTION_INIT_OP(r_, n_, elem_)</div><div class="ttdef"><b>Definition</b> <a href="constractor_8hpp_source.html#l00048">constractor.hpp:48</a></div></div>
+<div class="ttc" id="astructc_html"><div class="ttname"><a href="structc.html">c</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00145">TestReflection.cpp:146</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="constractor_8hpp_source.html">constractor.hpp</a> の <a class="el" href="constractor_8hpp_source.html#l00052">52</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="constractor_8hpp_source.html">constractor.hpp</a> の <a class="el" href="constractor_8hpp_source.html#l00054">54</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -249,10 +248,10 @@ constractor.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="entry_8hpp.html#a6d82f6729f1fa92890e508d503ad3a33">DPM_ENTRY_OPTIONS_EXPAND</a>( DPME_CS_CONSTRACTOR_, <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a>, GM_SEQS, ENT_SEQ )</div>
-<div class="ttc" id="aentry_8hpp_html_a6d82f6729f1fa92890e508d503ad3a33"><div class="ttname"><a href="entry_8hpp.html#a6d82f6729f1fa92890e508d503ad3a33">DPM_ENTRY_OPTIONS_EXPAND</a></div><div class="ttdeci">#define DPM_ENTRY_OPTIONS_EXPAND(PREFIX, CLASS, GM_SEQS, EN_SEQ)</div><div class="ttdef"><b>Definition</b> <a href="entry_8hpp_source.html#l00060">entry.hpp:60</a></div></div>
+<div class="ttc" id="aentry_8hpp_html_a6d82f6729f1fa92890e508d503ad3a33"><div class="ttname"><a href="entry_8hpp.html#a6d82f6729f1fa92890e508d503ad3a33">DPM_ENTRY_OPTIONS_EXPAND</a></div><div class="ttdeci">#define DPM_ENTRY_OPTIONS_EXPAND(PREFIX, CLASS, GM_SEQS, EN_SEQ)</div><div class="ttdef"><b>Definition</b> <a href="entry_8hpp_source.html#l00059">entry.hpp:59</a></div></div>
 <div class="ttc" id="atrigger_8hpp_html_aeb04f2e0012cb07d68538599161c9693"><div class="ttname"><a href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a></div><div class="ttdeci">#define CLASS</div><div class="ttdef"><b>Definition</b> <a href="trigger_8hpp_source.html#l00016">trigger.hpp:16</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="constractor_8hpp_source.html">constractor.hpp</a> の <a class="el" href="constractor_8hpp_source.html#l00060">60</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="constractor_8hpp_source.html">constractor.hpp</a> の <a class="el" href="constractor_8hpp_source.html#l00061">61</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -280,12 +279,11 @@ constractor.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a97f59367b0818f792abccfae979839aa">DPM_CS_CONSTRACTOR_</a>(                                                       \</div>
-<div class="line">    <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a>, <a class="code hl_define" href="#a06ee42225231feb7737863d7858abc5c">DPM_CS_CONSTRACTOR_SEQ_FILTER</a>( GM_SEQS ), ENT_SEQ               \</div>
-<div class="line">)</div>
-<div class="ttc" id="aconstractor_8hpp_html_a06ee42225231feb7737863d7858abc5c"><div class="ttname"><a href="#a06ee42225231feb7737863d7858abc5c">DPM_CS_CONSTRACTOR_SEQ_FILTER</a></div><div class="ttdeci">#define DPM_CS_CONSTRACTOR_SEQ_FILTER(GM_SEQS)</div><div class="ttdef"><b>Definition</b> <a href="constractor_8hpp_source.html#l00036">constractor.hpp:36</a></div></div>
-<div class="ttc" id="aconstractor_8hpp_html_a97f59367b0818f792abccfae979839aa"><div class="ttname"><a href="#a97f59367b0818f792abccfae979839aa">DPM_CS_CONSTRACTOR_</a></div><div class="ttdeci">#define DPM_CS_CONSTRACTOR_(CLASS, GM_SEQS, ENT_SEQ)</div><div class="ttdef"><b>Definition</b> <a href="constractor_8hpp_source.html#l00063">constractor.hpp:63</a></div></div>
+<div class="line">  <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a>, <a class="code hl_define" href="#a06ee42225231feb7737863d7858abc5c">DPM_CS_CONSTRACTOR_SEQ_FILTER</a>( GM_SEQS ), ENT_SEQ )</div>
+<div class="ttc" id="aconstractor_8hpp_html_a06ee42225231feb7737863d7858abc5c"><div class="ttname"><a href="#a06ee42225231feb7737863d7858abc5c">DPM_CS_CONSTRACTOR_SEQ_FILTER</a></div><div class="ttdeci">#define DPM_CS_CONSTRACTOR_SEQ_FILTER(GM_SEQS)</div><div class="ttdef"><b>Definition</b> <a href="constractor_8hpp_source.html#l00039">constractor.hpp:39</a></div></div>
+<div class="ttc" id="aconstractor_8hpp_html_a97f59367b0818f792abccfae979839aa"><div class="ttname"><a href="#a97f59367b0818f792abccfae979839aa">DPM_CS_CONSTRACTOR_</a></div><div class="ttdeci">#define DPM_CS_CONSTRACTOR_(CLASS, GM_SEQS, ENT_SEQ)</div><div class="ttdef"><b>Definition</b> <a href="constractor_8hpp_source.html#l00064">constractor.hpp:64</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="constractor_8hpp_source.html">constractor.hpp</a> の <a class="el" href="constractor_8hpp_source.html#l00092">92</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="constractor_8hpp_source.html">constractor.hpp</a> の <a class="el" href="constractor_8hpp_source.html#l00091">91</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -312,40 +310,38 @@ constractor.hpp の依存先関係図:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">public                                                                       \</div>
-<div class="line">  CLASS( )                                                                   \</div>
-<div class="line">  {                                                                          \</div>
-<div class="line">      CS_INSTANCE_VALUE_NAME( ) = <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a891ebdd26667b456b28ec23e3b198f59">CS_INSTANCE_LOAD_FUNC_NAME</a>( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> )( );    \</div>
-<div class="line">      DPM_CS_CLASS_DEF_CONSTRACTOR_INIT_VTBL_TABLE(                          \</div>
-<div class="line">          <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a000d8ad6803e14bc1a21fae4a29c3599">DPM_CS_VTBL_VALUE_NAME</a>( ),                                         \</div>
-<div class="line">          <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#adc273e25d28e1d7e9331bdde2d95b4b9">DPM_CS_VTBL_LOAD_FUNC_NAME</a>( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> ),                               \</div>
-<div class="line">          GM_SEQS                                                            \</div>
-<div class="line">      )                                                                      \</div>
-<div class="line">      <span class="keywordtype">bool</span> <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a552865f69d1e58400d75c575c22eb655">DPM_CS_GLUE_METHOD_CONSTRACTOR_FLAG</a>( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> ) = <span class="keyword">true</span>;              \</div>
-<div class="line">      DPM_CS_GLUE_METHOD_CONSTRACTOR_FLAG( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> )                           \</div>
-<div class="line">          = <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a552865f69d1e58400d75c575c22eb655">DPM_CS_GLUE_METHOD_CONSTRACTOR_FLAG</a>( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> ) || <span class="keyword">true</span>;            \</div>
-<div class="line">      DPM_CS_CLASS_DEF_CONSTRACTOR_VALUES_INIT( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a>, GM_SEQS, ENT_SEQ )    \</div>
-<div class="line">  }                                                                          \</div>
-<div class="line">public                                                                       \</div>
-<div class="line">  CLASS( IntPtr instance )                                                   \</div>
-<div class="line">  {                                                                          \</div>
-<div class="line">      CS_INSTANCE_VALUE_NAME( ) = instance;                                  \</div>
-<div class="line">      DPM_CS_CLASS_DEF_CONSTRACTOR_INIT_VTBL_TABLE(                          \</div>
-<div class="line">          <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a000d8ad6803e14bc1a21fae4a29c3599">DPM_CS_VTBL_VALUE_NAME</a>( ),                                         \</div>
-<div class="line">          <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#adc273e25d28e1d7e9331bdde2d95b4b9">DPM_CS_VTBL_LOAD_FUNC_NAME</a>( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> ),                               \</div>
-<div class="line">          GM_SEQS                                                            \</div>
-<div class="line">      )                                                                      \</div>
-<div class="line">      <span class="keywordtype">bool</span> <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a552865f69d1e58400d75c575c22eb655">DPM_CS_GLUE_METHOD_CONSTRACTOR_FLAG</a>( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> ) = <span class="keyword">false</span>;             \</div>
-<div class="line">      DPM_CS_GLUE_METHOD_CONSTRACTOR_FLAG( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> )                           \</div>
-<div class="line">          = <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a552865f69d1e58400d75c575c22eb655">DPM_CS_GLUE_METHOD_CONSTRACTOR_FLAG</a>( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> ) || <span class="keyword">true</span>;            \</div>
-<div class="line">      DPM_CS_CLASS_DEF_CONSTRACTOR_VALUES_INIT( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a>, GM_SEQS, ENT_SEQ )    \</div>
-<div class="line">  }</div>
+<b>値:</b><div class="fragment"><div class="line">public                                                                         \</div>
+<div class="line">    CLASS( )                                                                   \</div>
+<div class="line">    {                                                                          \</div>
+<div class="line">        CS_INSTANCE_VALUE_NAME( ) = <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a891ebdd26667b456b28ec23e3b198f59">CS_INSTANCE_LOAD_FUNC_NAME</a>( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> )( );    \</div>
+<div class="line">        DPM_CS_CLASS_DEF_CONSTRACTOR_INIT_VTBL_TABLE(                          \</div>
+<div class="line">          <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a000d8ad6803e14bc1a21fae4a29c3599">DPM_CS_VTBL_VALUE_NAME</a>( ),                                           \</div>
+<div class="line">          <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#adc273e25d28e1d7e9331bdde2d95b4b9">DPM_CS_VTBL_LOAD_FUNC_NAME</a>( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> ),                                 \</div>
+<div class="line">          GM_SEQS )                                                            \</div>
+<div class="line">        <span class="keywordtype">bool</span> <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a552865f69d1e58400d75c575c22eb655">DPM_CS_GLUE_METHOD_CONSTRACTOR_FLAG</a>( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> ) = <span class="keyword">true</span>;              \</div>
+<div class="line">        DPM_CS_GLUE_METHOD_CONSTRACTOR_FLAG( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> ) =                         \</div>
+<div class="line">          DPM_CS_GLUE_METHOD_CONSTRACTOR_FLAG( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> ) || <span class="keyword">true</span>;                \</div>
+<div class="line">        DPM_CS_CLASS_DEF_CONSTRACTOR_VALUES_INIT( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a>, GM_SEQS, ENT_SEQ )    \</div>
+<div class="line">    }                                                                          \</div>
+<div class="line">public                                                                         \</div>
+<div class="line">    CLASS( IntPtr instance )                                                   \</div>
+<div class="line">    {                                                                          \</div>
+<div class="line">        CS_INSTANCE_VALUE_NAME( ) = instance;                                  \</div>
+<div class="line">        DPM_CS_CLASS_DEF_CONSTRACTOR_INIT_VTBL_TABLE(                          \</div>
+<div class="line">          <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a000d8ad6803e14bc1a21fae4a29c3599">DPM_CS_VTBL_VALUE_NAME</a>( ),                                           \</div>
+<div class="line">          <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#adc273e25d28e1d7e9331bdde2d95b4b9">DPM_CS_VTBL_LOAD_FUNC_NAME</a>( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> ),                                 \</div>
+<div class="line">          GM_SEQS )                                                            \</div>
+<div class="line">        <span class="keywordtype">bool</span> <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a552865f69d1e58400d75c575c22eb655">DPM_CS_GLUE_METHOD_CONSTRACTOR_FLAG</a>( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> ) = <span class="keyword">false</span>;             \</div>
+<div class="line">        DPM_CS_GLUE_METHOD_CONSTRACTOR_FLAG( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> ) =                         \</div>
+<div class="line">          DPM_CS_GLUE_METHOD_CONSTRACTOR_FLAG( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> ) || <span class="keyword">true</span>;                \</div>
+<div class="line">        DPM_CS_CLASS_DEF_CONSTRACTOR_VALUES_INIT( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a>, GM_SEQS, ENT_SEQ )    \</div>
+<div class="line">    }</div>
 <div class="ttc" id="acs__binding_2macro_2detail_2csharp_2config_8hpp_html_a000d8ad6803e14bc1a21fae4a29c3599"><div class="ttname"><a href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a000d8ad6803e14bc1a21fae4a29c3599">DPM_CS_VTBL_VALUE_NAME</a></div><div class="ttdeci">#define DPM_CS_VTBL_VALUE_NAME()</div><div class="ttdef"><b>Definition</b> <a href="cs__binding_2macro_2detail_2csharp_2config_8hpp_source.html#l00019">config.hpp:19</a></div></div>
 <div class="ttc" id="acs__binding_2macro_2detail_2csharp_2config_8hpp_html_a552865f69d1e58400d75c575c22eb655"><div class="ttname"><a href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a552865f69d1e58400d75c575c22eb655">DPM_CS_GLUE_METHOD_CONSTRACTOR_FLAG</a></div><div class="ttdeci">#define DPM_CS_GLUE_METHOD_CONSTRACTOR_FLAG(CLASS)</div><div class="ttdef"><b>Definition</b> <a href="cs__binding_2macro_2detail_2csharp_2config_8hpp_source.html#l00036">config.hpp:36</a></div></div>
 <div class="ttc" id="acs__binding_2macro_2detail_2csharp_2config_8hpp_html_a891ebdd26667b456b28ec23e3b198f59"><div class="ttname"><a href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a891ebdd26667b456b28ec23e3b198f59">CS_INSTANCE_LOAD_FUNC_NAME</a></div><div class="ttdeci">#define CS_INSTANCE_LOAD_FUNC_NAME(CLASS_)</div><div class="ttdef"><b>Definition</b> <a href="cs__binding_2macro_2detail_2csharp_2config_8hpp_source.html#l00042">config.hpp:42</a></div></div>
 <div class="ttc" id="acs__binding_2macro_2detail_2csharp_2config_8hpp_html_adc273e25d28e1d7e9331bdde2d95b4b9"><div class="ttname"><a href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#adc273e25d28e1d7e9331bdde2d95b4b9">DPM_CS_VTBL_LOAD_FUNC_NAME</a></div><div class="ttdeci">#define DPM_CS_VTBL_LOAD_FUNC_NAME(CLASS_)</div><div class="ttdef"><b>Definition</b> <a href="cs__binding_2macro_2detail_2csharp_2config_8hpp_source.html#l00024">config.hpp:24</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="constractor_8hpp_source.html">constractor.hpp</a> の <a class="el" href="constractor_8hpp_source.html#l00063">63</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="constractor_8hpp_source.html">constractor.hpp</a> の <a class="el" href="constractor_8hpp_source.html#l00064">64</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -462,8 +458,8 @@ constractor.hpp の依存先関係図:</div>
 
 </div>
 </div>
-<a id="a45cb7d7aabebd262ddcda03464db57a8" name="a45cb7d7aabebd262ddcda03464db57a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45cb7d7aabebd262ddcda03464db57a8">&#9670;&#160;</a></span>DPM_CS_CONSTRACTOR_OP_DPM_METHOD_KIND_OBSERVABLE_AGGREGATE_DEFINE</h2>
+<a id="a9795b208d5da60b313d82564e4610ada" name="a9795b208d5da60b313d82564e4610ada"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9795b208d5da60b313d82564e4610ada">&#9670;&#160;</a></span>DPM_CS_CONSTRACTOR_OP_DPM_METHOD_KIND_OBSERVABLE_AGGREGATE_DEFINE</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -481,12 +477,12 @@ constractor.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="constractor_8hpp_source.html">constractor.hpp</a> の <a class="el" href="constractor_8hpp_source.html#l00029">29</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="constractor_8hpp_source.html">constractor.hpp</a> の <a class="el" href="constractor_8hpp_source.html#l00030">30</a> 行目に定義があります。</p>
 
 </div>
 </div>
-<a id="adde8224b35387daca6882e958ff53606" name="adde8224b35387daca6882e958ff53606"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adde8224b35387daca6882e958ff53606">&#9670;&#160;</a></span>DPM_CS_CONSTRACTOR_OP_DPM_METHOD_KIND_OBSERVABLE_COLLECTION_DEFINE</h2>
+<a id="a4a41d2b92bc8b340afd6efbf7c3b411b" name="a4a41d2b92bc8b340afd6efbf7c3b411b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a41d2b92bc8b340afd6efbf7c3b411b">&#9670;&#160;</a></span>DPM_CS_CONSTRACTOR_OP_DPM_METHOD_KIND_OBSERVABLE_COLLECTION_DEFINE</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -504,12 +500,12 @@ constractor.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="constractor_8hpp_source.html">constractor.hpp</a> の <a class="el" href="constractor_8hpp_source.html#l00032">32</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="constractor_8hpp_source.html">constractor.hpp</a> の <a class="el" href="constractor_8hpp_source.html#l00034">34</a> 行目に定義があります。</p>
 
 </div>
 </div>
-<a id="aa6c8341e236bdd8ee8852cd9655ed1f5" name="aa6c8341e236bdd8ee8852cd9655ed1f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6c8341e236bdd8ee8852cd9655ed1f5">&#9670;&#160;</a></span>DPM_CS_CONSTRACTOR_OP_DPM_METHOD_KIND_OBSERVABLE_VALUE_DEFINE</h2>
+<a id="a213d0e1332353159f72ca96fe7503597" name="a213d0e1332353159f72ca96fe7503597"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a213d0e1332353159f72ca96fe7503597">&#9670;&#160;</a></span>DPM_CS_CONSTRACTOR_OP_DPM_METHOD_KIND_OBSERVABLE_VALUE_DEFINE</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -592,9 +588,9 @@ constractor.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">BOOST_PP_SEQ_FOR_EACH( <a class="code hl_define" href="#a2d07ca13279f5ab3016fcb0773f3c739">DPM_CS_CONSTRACTOR_SEQ_FILTER_OP</a>, _, GM_SEQS )</div>
-<div class="ttc" id="aconstractor_8hpp_html_a2d07ca13279f5ab3016fcb0773f3c739"><div class="ttname"><a href="#a2d07ca13279f5ab3016fcb0773f3c739">DPM_CS_CONSTRACTOR_SEQ_FILTER_OP</a></div><div class="ttdeci">#define DPM_CS_CONSTRACTOR_SEQ_FILTER_OP(_, DATA, SEQ)</div><div class="ttdef"><b>Definition</b> <a href="constractor_8hpp_source.html#l00034">constractor.hpp:34</a></div></div>
+<div class="ttc" id="aconstractor_8hpp_html_a2d07ca13279f5ab3016fcb0773f3c739"><div class="ttname"><a href="#a2d07ca13279f5ab3016fcb0773f3c739">DPM_CS_CONSTRACTOR_SEQ_FILTER_OP</a></div><div class="ttdeci">#define DPM_CS_CONSTRACTOR_SEQ_FILTER_OP(_, DATA, SEQ)</div><div class="ttdef"><b>Definition</b> <a href="constractor_8hpp_source.html#l00037">constractor.hpp:37</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="constractor_8hpp_source.html">constractor.hpp</a> の <a class="el" href="constractor_8hpp_source.html#l00036">36</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="constractor_8hpp_source.html">constractor.hpp</a> の <a class="el" href="constractor_8hpp_source.html#l00039">39</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -625,7 +621,7 @@ constractor.hpp の依存先関係図:</div>
 <div class="ttc" id="aconstractor_8hpp_html_af587cc23f8474691048af619d3be73be"><div class="ttname"><a href="#af587cc23f8474691048af619d3be73be">DPM_CS_CONSTRACTOR_KIND_TRANSFORM</a></div><div class="ttdeci">#define DPM_CS_CONSTRACTOR_KIND_TRANSFORM(KIND)</div><div class="ttdef"><b>Definition</b> <a href="constractor_8hpp_source.html#l00009">constractor.hpp:9</a></div></div>
 <div class="ttc" id="aglue__code__sequence__data_8hpp_html_a3bbf4fb370620d9a64f162d039bef941"><div class="ttname"><a href="glue__code__sequence__data_8hpp.html#a3bbf4fb370620d9a64f162d039bef941">DPM_GLUE_METHOD_KIND_EXPAND</a></div><div class="ttdeci">#define DPM_GLUE_METHOD_KIND_EXPAND(KIND_OP, SEQ)</div><div class="ttdef"><b>Definition</b> <a href="glue__code__sequence__data_8hpp_source.html#l00070">glue_code_sequence_data.hpp:70</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="constractor_8hpp_source.html">constractor.hpp</a> の <a class="el" href="constractor_8hpp_source.html#l00034">34</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="constractor_8hpp_source.html">constractor.hpp</a> の <a class="el" href="constractor_8hpp_source.html#l00037">37</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -653,9 +649,8 @@ constractor.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a9786bc66ef6a7c092d143d85c07b1084">DPM_DETAIL_CS_SINGLETON_CONSTROCTOR_DETAIL</a>(                                \</div>
-<div class="line">    <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a>, <a class="code hl_define" href="#a06ee42225231feb7737863d7858abc5c">DPM_CS_CONSTRACTOR_SEQ_FILTER</a>( GM_SEQS ), ENT_SEQ               \</div>
-<div class="line">)</div>
-<div class="ttc" id="aconstractor_8hpp_html_a9786bc66ef6a7c092d143d85c07b1084"><div class="ttname"><a href="#a9786bc66ef6a7c092d143d85c07b1084">DPM_DETAIL_CS_SINGLETON_CONSTROCTOR_DETAIL</a></div><div class="ttdeci">#define DPM_DETAIL_CS_SINGLETON_CONSTROCTOR_DETAIL(CLASS, GM_SEQS, ENT_SEQ)</div><div class="ttdef"><b>Definition</b> <a href="constractor_8hpp_source.html#l00099">constractor.hpp:99</a></div></div>
+<div class="line">  <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a>, <a class="code hl_define" href="#a06ee42225231feb7737863d7858abc5c">DPM_CS_CONSTRACTOR_SEQ_FILTER</a>( GM_SEQS ), ENT_SEQ )</div>
+<div class="ttc" id="aconstractor_8hpp_html_a9786bc66ef6a7c092d143d85c07b1084"><div class="ttname"><a href="#a9786bc66ef6a7c092d143d85c07b1084">DPM_DETAIL_CS_SINGLETON_CONSTROCTOR_DETAIL</a></div><div class="ttdeci">#define DPM_DETAIL_CS_SINGLETON_CONSTROCTOR_DETAIL(CLASS, GM_SEQS, ENT_SEQ)</div><div class="ttdef"><b>Definition</b> <a href="constractor_8hpp_source.html#l00097">constractor.hpp:97</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="constractor_8hpp_source.html">constractor.hpp</a> の <a class="el" href="constractor_8hpp_source.html#l00118">118</a> 行目に定義があります。</p>
 
@@ -684,26 +679,28 @@ constractor.hpp の依存先関係図:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">private                                                                      \</div>
-<div class="line">  static <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> _cs_instance = <span class="keyword">new</span> <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a>( );                                  \</div>
-<div class="line">public                                                                       \</div>
-<div class="line">  static <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> GetInstance( ) { <span class="keywordflow">return</span> _cs_instance; }                       \</div>
-<div class="line">private                                                                      \</div>
-<div class="line">  CLASS( )                                                                   \</div>
-<div class="line">  {                                                                          \</div>
-<div class="line">      CS_INSTANCE_VALUE_NAME( ) = <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a891ebdd26667b456b28ec23e3b198f59">CS_INSTANCE_LOAD_FUNC_NAME</a>( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> )( );    \</div>
-<div class="line">      DPM_CS_CLASS_DEF_CONSTRACTOR_INIT_VTBL_TABLE(                          \</div>
-<div class="line">          <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a000d8ad6803e14bc1a21fae4a29c3599">DPM_CS_VTBL_VALUE_NAME</a>( ),                                         \</div>
-<div class="line">          <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#adc273e25d28e1d7e9331bdde2d95b4b9">DPM_CS_VTBL_LOAD_FUNC_NAME</a>( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> ),                               \</div>
-<div class="line">          GM_SEQS                                                            \</div>
-<div class="line">      )                                                                      \</div>
-<div class="line">      <span class="keywordtype">bool</span> <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a552865f69d1e58400d75c575c22eb655">DPM_CS_GLUE_METHOD_CONSTRACTOR_FLAG</a>( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> ) = <span class="keyword">true</span>;              \</div>
-<div class="line">      DPM_CS_GLUE_METHOD_CONSTRACTOR_FLAG( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> )                           \</div>
-<div class="line">          = <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a552865f69d1e58400d75c575c22eb655">DPM_CS_GLUE_METHOD_CONSTRACTOR_FLAG</a>( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> ) || <span class="keyword">true</span>;            \</div>
-<div class="line">      DPM_CS_CLASS_DEF_CONSTRACTOR_VALUES_INIT( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a>, GM_SEQS, ENT_SEQ )    \</div>
-<div class="line">  }</div>
+<b>値:</b><div class="fragment"><div class="line">private                                                                        \</div>
+<div class="line">    static <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> _cs_instance = <span class="keyword">new</span> <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a>( );                                  \</div>
+<div class="line">public                                                                         \</div>
+<div class="line">    static <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> GetInstance( )                                                \</div>
+<div class="line">    {                                                                          \</div>
+<div class="line">        <span class="keywordflow">return</span> _cs_instance;                                                   \</div>
+<div class="line">    }                                                                          \</div>
+<div class="line">private                                                                        \</div>
+<div class="line">    CLASS( )                                                                   \</div>
+<div class="line">    {                                                                          \</div>
+<div class="line">        CS_INSTANCE_VALUE_NAME( ) = <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a891ebdd26667b456b28ec23e3b198f59">CS_INSTANCE_LOAD_FUNC_NAME</a>( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> )( );    \</div>
+<div class="line">        DPM_CS_CLASS_DEF_CONSTRACTOR_INIT_VTBL_TABLE(                          \</div>
+<div class="line">          <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a000d8ad6803e14bc1a21fae4a29c3599">DPM_CS_VTBL_VALUE_NAME</a>( ),                                           \</div>
+<div class="line">          <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#adc273e25d28e1d7e9331bdde2d95b4b9">DPM_CS_VTBL_LOAD_FUNC_NAME</a>( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> ),                                 \</div>
+<div class="line">          GM_SEQS )                                                            \</div>
+<div class="line">        <span class="keywordtype">bool</span> <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a552865f69d1e58400d75c575c22eb655">DPM_CS_GLUE_METHOD_CONSTRACTOR_FLAG</a>( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> ) = <span class="keyword">true</span>;              \</div>
+<div class="line">        DPM_CS_GLUE_METHOD_CONSTRACTOR_FLAG( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> ) =                         \</div>
+<div class="line">          DPM_CS_GLUE_METHOD_CONSTRACTOR_FLAG( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> ) || <span class="keyword">true</span>;                \</div>
+<div class="line">        DPM_CS_CLASS_DEF_CONSTRACTOR_VALUES_INIT( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a>, GM_SEQS, ENT_SEQ )    \</div>
+<div class="line">    }</div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="constractor_8hpp_source.html">constractor.hpp</a> の <a class="el" href="constractor_8hpp_source.html#l00099">99</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="constractor_8hpp_source.html">constractor.hpp</a> の <a class="el" href="constractor_8hpp_source.html#l00097">97</a> 行目に定義があります。</p>
 
 </div>
 </div>

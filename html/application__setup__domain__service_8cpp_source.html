@@ -105,7 +105,7 @@ $(function(){initNavTree('application__setup__domain__service_8cpp_source.html',
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">//----------------------------------------------------------------------//</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">// setup_application_command_actions</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span> AppCom, <span class="keyword">typename</span> F &gt;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">template</span>&lt; <span class="keyword">typename</span> AppCom, <span class="keyword">typename</span> F &gt;</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>boost::uuids::uuid</div>
 <div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="application__setup__domain__service_8cpp.html#af021a3e842060bfb89ebe5e7f40cb6d6">   15</a></span><a class="code hl_function" href="application__setup__domain__service_8cpp.html#af021a3e842060bfb89ebe5e7f40cb6d6">setup_app_command</a>( F&amp; regist_app_com )</div>
@@ -144,7 +144,7 @@ $(function(){initNavTree('application__setup__domain__service_8cpp_source.html',
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>}</div>
 </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span> F &gt;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">template</span>&lt; <span class="keyword">typename</span> F &gt;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keywordtype">void</span></div>
 <div class="foldopen" id="foldopen00052" data-start="{" data-end="}">
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="application__setup__domain__service_8cpp.html#a37141e267e9ef6c282037c5372462f53">   52</a></span><a class="code hl_function" href="application__setup__domain__service_8cpp.html#a37141e267e9ef6c282037c5372462f53">setup_application_command_actions</a>( F&amp; ctx )</div>
@@ -161,46 +161,45 @@ $(function(){initNavTree('application__setup__domain__service_8cpp_source.html',
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keywordtype">void</span></div>
 <div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1domain_1_1services_1_1application__setup__domain__service.html#abe7e8b9b75abdf2691e40c246c834525">   63</a></span><a class="code hl_function" href="structdepicture__menu_1_1domain_1_1services_1_1application__setup__domain__service.html#abe7e8b9b75abdf2691e40c246c834525">dd::services::application_setup_domain_service::setup</a>(</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    std::function&lt;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordtype">void</span>( actions::app_commands::app_com_kind, boost::uuids::uuid ) &gt;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        application_command_registre</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">#if 0</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <a class="code hl_function" href="application__setup__domain__service_8cpp.html#a37141e267e9ef6c282037c5372462f53">setup_application_command_actions</a>( application_command_registre );</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="comment">// menu setup</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html">menu::radialmenu_item</a> item;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    item.<a class="code hl_function" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#ad5c082241d16472e7c095c639957d587">set_label</a>( L<span class="stringliteral">&quot;Notepad A&quot;</span> );</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html">menu::radialmenu</a> <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain_1_1menu.html">menu</a>{ .items_ = { item } };</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="comment">// centrol item</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    {</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keyword">auto</span>&amp; repos = entity_repository&lt;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            actions::app_commands::application_command &gt;::get_instance( );</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keyword">auto</span>&amp; range = repos.range( );</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordflow">if</span> ( <span class="keyword">auto</span> iter = std::ranges::find_if(</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                 range,</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                 []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; r )</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                 {</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                     <span class="keywordflow">return</span> get_app_com_kind( r )</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                            == actions::app_commands::app_com_kind::menu_close;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                 }</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>             );</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>             iter != range.end( ) )</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        {</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            boost::uuids::uuid close_menu_action_id = iter-&gt;id( );</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain_1_1menu.html">menu</a>.central_item_.action_id_           = close_menu_action_id;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        }</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    }</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="comment">// menu bind</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    menu::radialmenu_repository::get_instance( ).add( std::move( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain_1_1menu.html">menu</a> ) );</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    menu::radialmenu_item_repository::get_instance( ).add( std::move( item ) );</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>}</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  std::function&lt;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">void</span>( actions::app_commands::app_com_kind, boost::uuids::uuid ) &gt;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    application_command_registre )<span class="keyword"> const</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#if 0</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <a class="code hl_function" href="application__setup__domain__service_8cpp.html#a37141e267e9ef6c282037c5372462f53">setup_application_command_actions</a>( application_command_registre );</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="comment">// menu setup</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html">menu::radialmenu_item</a> item;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    item.<a class="code hl_function" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#ad5c082241d16472e7c095c639957d587">set_label</a>( L<span class="stringliteral">&quot;Notepad A&quot;</span> );</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html">menu::radialmenu</a> <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain_1_1menu.html">menu</a>{ .items_ = { item } };</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="comment">// centrol item</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keyword">auto</span>&amp; repos = entity_repository&lt;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            actions::app_commands::application_command &gt;::get_instance( );</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keyword">auto</span>&amp; range = repos.range( );</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordflow">if</span> ( <span class="keyword">auto</span> iter = std::ranges::find_if(</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                 range,</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                 []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; r )</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                 {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>                     <span class="keywordflow">return</span> get_app_com_kind( r )</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                            == actions::app_commands::app_com_kind::menu_close;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                 }</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>             );</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>             iter != range.end( ) )</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            boost::uuids::uuid close_menu_action_id = iter-&gt;id( );</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain_1_1menu.html">menu</a>.central_item_.action_id_           = close_menu_action_id;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="comment">// menu bind</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    menu::radialmenu_repository::get_instance( ).add( std::move( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain_1_1menu.html">menu</a> ) );</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    menu::radialmenu_item_repository::get_instance( ).add( std::move( item ) );</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}</div>
 </div>
 <div class="ttc" id="aapplication__commands_8hpp_html"><div class="ttname"><a href="application__commands_8hpp.html">application_commands.hpp</a></div></div>
 <div class="ttc" id="aapplication__setup__domain__service_8cpp_html_a37141e267e9ef6c282037c5372462f53"><div class="ttname"><a href="application__setup__domain__service_8cpp.html#a37141e267e9ef6c282037c5372462f53">setup_application_command_actions</a></div><div class="ttdeci">void setup_application_command_actions(F &amp;ctx)</div><div class="ttdef"><b>Definition</b> <a href="#l00052">application_setup_domain_service.cpp:52</a></div></div>
@@ -209,7 +208,7 @@ $(function(){initNavTree('application__setup__domain__service_8cpp_source.html',
 <div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1menu_html"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1menu.html">depicture_menu::domain::menu</a></div><div class="ttdef"><b>Definition</b> <a href="app__command__ids_8hpp_source.html#l00007">app_command_ids.hpp:8</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1domain_html"><div class="ttname"><a href="namespacedepicture__menu_1_1domain.html">depicture_menu::domain</a></div><div class="ttdef"><b>Definition</b> <a href="colors_8hpp_source.html#l00006">colors.hpp:7</a></div></div>
 <div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item_html"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html">depicture_menu::domain::menu::radialmenu_item</a></div><div class="ttdef"><b>Definition</b> <a href="radialmenu__item_8hpp_source.html#l00040">radialmenu_item.hpp:43</a></div></div>
-<div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item_html_ad5c082241d16472e7c095c639957d587"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#ad5c082241d16472e7c095c639957d587">depicture_menu::domain::menu::radialmenu_item::set_label</a></div><div class="ttdeci">void set_label(std::wstring const &amp;l)</div><div class="ttdef"><b>Definition</b> <a href="radialmenu__item_8hpp_source.html#l00095">radialmenu_item.hpp:95</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item_html_ad5c082241d16472e7c095c639957d587"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#ad5c082241d16472e7c095c639957d587">depicture_menu::domain::menu::radialmenu_item::set_label</a></div><div class="ttdeci">void set_label(std::wstring const &amp;l)</div><div class="ttdef"><b>Definition</b> <a href="radialmenu__item_8hpp_source.html#l00081">radialmenu_item.hpp:81</a></div></div>
 <div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1radialmenu_html"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html">depicture_menu::domain::menu::radialmenu</a></div><div class="ttdef"><b>Definition</b> <a href="radialmenu_8hpp_source.html#l00027">radialmenu.hpp:28</a></div></div>
 <div class="ttc" id="astructdepicture__menu_1_1domain_1_1services_1_1application__setup__domain__service_html_abe7e8b9b75abdf2691e40c246c834525"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1services_1_1application__setup__domain__service.html#abe7e8b9b75abdf2691e40c246c834525">depicture_menu::domain::services::application_setup_domain_service::setup</a></div><div class="ttdeci">void setup(std::function&lt; void(actions::app_commands::app_com_kind, boost::uuids::uuid) &gt; application_command_registre) const</div><div class="ttdef"><b>Definition</b> <a href="#l00063">application_setup_domain_service.cpp:63</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

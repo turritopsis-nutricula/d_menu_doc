@@ -112,26 +112,25 @@ $(function(){initNavTree('visiter__base_8hpp_source.html','',''); });
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">//  using b = decltype([](std::string&amp;){});</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">//  std::visit( visiter_base&lt;a,b&gt;{}, variant_value );</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span>... Args &gt;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">template</span>&lt; <span class="keyword">typename</span>... Args &gt;</div>
 <div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1visiter__base.html">   21</a></span><span class="keyword">struct </span><a class="code hl_function" href="structdepicture__menu_1_1util_1_1visiter__base.html#a67aa0e55ab5f9fd8f160be433107412d">visiter_base</a> : Args...</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">template</span> &lt; <span class="keyword">typename</span>... Ts &gt;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">template</span>&lt; <span class="keyword">typename</span>... Ts &gt;</div>
 <div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1util_1_1visiter__base.html#a67aa0e55ab5f9fd8f160be433107412d">   24</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1util_1_1visiter__base.html#a67aa0e55ab5f9fd8f160be433107412d">visiter_base</a>( Ts&amp;&amp;... args ) : Args( args )...</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    }</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    { }</div>
 </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">using </span>Args::operator( )...;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">using </span>Args::operator( )...;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>};</div>
 </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span>... Args &gt;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1util.html#ad6438b5af9cd8cd18f2041286245960e">   31</a></span><a class="code hl_function" href="namespacedepicture__menu_1_1util.html#ad6438b5af9cd8cd18f2041286245960e">visiter_base</a>( Args&amp;&amp;... ) -&gt; <a class="code hl_struct" href="structdepicture__menu_1_1util_1_1visiter__base.html">visiter_base&lt; std::remove_cvref_t&lt; Args &gt;</a>... &gt;;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>}    <span class="comment">// namespace util</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}    <span class="comment">// namespace depicture_menu</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_UTILITY_VISITER_BASE_HPP_</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">template</span>&lt; <span class="keyword">typename</span>... Args &gt;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1util.html#ad6438b5af9cd8cd18f2041286245960e">   30</a></span><a class="code hl_function" href="namespacedepicture__menu_1_1util.html#ad6438b5af9cd8cd18f2041286245960e">visiter_base</a>( Args&amp;&amp;... ) -&gt; <a class="code hl_struct" href="structdepicture__menu_1_1util_1_1visiter__base.html">visiter_base&lt; std::remove_cvref_t&lt; Args &gt;</a>... &gt;;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}    <span class="comment">// namespace util</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>}    <span class="comment">// namespace depicture_menu</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_UTILITY_VISITER_BASE_HPP_</span></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1util_html"><div class="ttname"><a href="namespacedepicture__menu_1_1util.html">depicture_menu::util</a></div><div class="ttdef"><b>Definition</b> <a href="constexpr__string_8hpp_source.html#l00012">constexpr_string.hpp:13</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1util_html_ad6438b5af9cd8cd18f2041286245960e"><div class="ttname"><a href="namespacedepicture__menu_1_1util.html#ad6438b5af9cd8cd18f2041286245960e">depicture_menu::util::visiter_base</a></div><div class="ttdeci">visiter_base(Args &amp;&amp;...) -&gt; visiter_base&lt; std::remove_cvref_t&lt; Args &gt;... &gt;</div></div>
 <div class="ttc" id="anamespacedepicture__menu_html"><div class="ttname"><a href="namespacedepicture__menu.html">depicture_menu</a></div><div class="ttdef"><b>Definition</b> <a href="constexpr__string_8hpp_source.html#l00012">constexpr_string.hpp:13</a></div></div>

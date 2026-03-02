@@ -5,8 +5,8 @@ var core__interface_8hpp =
     [ "DPM_ON_MEMORY_REPOSITORY_DEFINE", "core__interface_8hpp.html#a5e393e0185884175ca90ca7ac74840e6", null ],
     [ "DPM_REPOSITORY_ACCESSER", "core__interface_8hpp.html#a60a4eb648705c1117c81346c509af81e", null ],
     [ "DPM_VOLATILE_REPOSITORY_DEFINE", "core__interface_8hpp.html#a9e33a4e4fafb0f2f05f316581cf21ef6", null ],
-    [ "depicture_menu::app_transacion_t", "namespacedepicture__menu.html#a029d2b7f22a904bc6078fe547536526e", null ],
-    [ "depicture_menu::application_config_repository_accesser", "namespacedepicture__menu.html#afb7f821d22e7b07279f86ef204759715", null ],
-    [ "depicture_menu::application_option_repository_accesser", "namespacedepicture__menu.html#a72a2b2aed3105c78f9548181ae5842dc", null ],
+    [ "depicture_menu::app_transacion_t", "namespacedepicture__menu.html#a3f5fb0c9223d976f61f05d356ca2908b", null ],
+    [ "depicture_menu::application_config_repository_accesser", "namespacedepicture__menu.html#a907635a0c21b9ddbdeebeacc559a60c6", null ],
+    [ "depicture_menu::application_option_repository_accesser", "namespacedepicture__menu.html#a2e7947483668318c86e19a21940ea7f9", null ],
     [ "depicture_menu::core_interface", "namespacedepicture__menu.html#a92e463b70c341aa89e513e9a70727361", null ]
 ];

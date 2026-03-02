@@ -163,35 +163,34 @@ $(function(){initNavTree('uuid__property_8hpp.html','',''); });
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="cs__binding_2macro_2detail_2cpp_2config_8hpp.html#ade1ffb66dc056cd2c6f93b058398c958">DPM_CS_BINDING_INLINE</a> <span class="keywordtype">void</span> CLASS ::BOOST_PP_CAT( access_glue_, NAME )(     \</div>
-<div class="line">    uint8_t * p, <span class="keywordtype">bool</span> is_write                                             \</div>
-<div class="line">)                                                                          \</div>
-<div class="line">{                                                                          \</div>
-<div class="line">    if ( is_write )                                                        \</div>
-<div class="line">    {                                                                      \</div>
-<div class="line">        boost::uuids::uuid buf;                                            \</div>
-<div class="line">        std::copy( p, p + 16, buf.begin( ) );                              \</div>
-<div class="line">        if ( buf != BOOST_PP_CAT( get_, NAME )( ) )                        \</div>
-<div class="line">        {                                                                  \</div>
-<div class="line">            BOOST_PP_CAT( set_, NAME )( buf );                             \</div>
-<div class="line">            property_changed_notify( BOOST_PP_STRINGIZE(NAME) );           \</div>
-<div class="line">        }                                                                  \</div>
-<div class="line">        <span class="keyword">auto</span>&amp; u                                                            \</div>
-<div class="line">            = <a class="code hl_define" href="#a6afa45abec7f2d61fd711714c9febb76">DPM_UUID_PROPERTY_ENTRY_DETAIL_CPP_VALUE_NAME</a>( NAME ).ref(   \</div>
-<div class="line">            );                                                             \</div>
-<div class="line">        u = buf;                                                           \</div>
-<div class="line">    }                                                                      \</div>
-<div class="line">    <span class="keywordflow">else</span>                                                                   \</div>
-<div class="line">    {                                                                      \</div>
-<div class="line">        <span class="keyword">auto</span>&amp; u = <a class="code hl_define" href="#a6afa45abec7f2d61fd711714c9febb76">DPM_UUID_PROPERTY_ENTRY_DETAIL_CPP_VALUE_NAME</a>( NAME )    \</div>
-<div class="line">                      .const_ref( );                                       \</div>
-<div class="line">        std::copy( u.begin( ), u.end( ), p );                              \</div>
-<div class="line">    }                                                                      \</div>
+<b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="cs__binding_2macro_2detail_2cpp_2config_8hpp.html#ade1ffb66dc056cd2c6f93b058398c958">DPM_CS_BINDING_INLINE</a> <span class="keywordtype">void</span> CLASS ::BOOST_PP_CAT( access_glue_, NAME )( \</div>
+<div class="line">  uint8_t* p, <span class="keywordtype">bool</span> is_write )                                          \</div>
+<div class="line">{                                                                      \</div>
+<div class="line">    if ( is_write )                                                    \</div>
+<div class="line">    {                                                                  \</div>
+<div class="line">        boost::uuids::uuid buf;                                        \</div>
+<div class="line">        std::copy( p, p + 16, buf.begin( ) );                          \</div>
+<div class="line">        if ( buf != BOOST_PP_CAT( get_, NAME )( ) )                    \</div>
+<div class="line">        {                                                              \</div>
+<div class="line">            BOOST_PP_CAT( set_, NAME )( buf );                         \</div>
+<div class="line">            property_changed_notify( BOOST_PP_STRINGIZE(NAME) );       \</div>
+<div class="line">        }                                                              \</div>
+<div class="line">        <span class="keyword">auto</span>&amp; u =                                                      \</div>
+<div class="line">          DPM_UUID_PROPERTY_ENTRY_DETAIL_CPP_VALUE_NAME( NAME )        \</div>
+<div class="line">            .ref( );                                                   \</div>
+<div class="line">        u = buf;                                                       \</div>
+<div class="line">    }                                                                  \</div>
+<div class="line">    <span class="keywordflow">else</span>                                                               \</div>
+<div class="line">    {                                                                  \</div>
+<div class="line">        <span class="keyword">auto</span>&amp; u =                                                      \</div>
+<div class="line">          DPM_UUID_PROPERTY_ENTRY_DETAIL_CPP_VALUE_NAME( NAME )        \</div>
+<div class="line">            .const_ref( );                                             \</div>
+<div class="line">        std::copy( u.begin( ), u.end( ), p );                          \</div>
+<div class="line">    }                                                                  \</div>
 <div class="line">}</div>
 <div class="ttc" id="acs__binding_2macro_2detail_2cpp_2config_8hpp_html_ade1ffb66dc056cd2c6f93b058398c958"><div class="ttname"><a href="cs__binding_2macro_2detail_2cpp_2config_8hpp.html#ade1ffb66dc056cd2c6f93b058398c958">DPM_CS_BINDING_INLINE</a></div><div class="ttdeci">#define DPM_CS_BINDING_INLINE</div><div class="ttdef"><b>Definition</b> <a href="cs__binding_2macro_2detail_2cpp_2config_8hpp_source.html#l00015">config.hpp:15</a></div></div>
-<div class="ttc" id="auuid__property_8hpp_html_a6afa45abec7f2d61fd711714c9febb76"><div class="ttname"><a href="#a6afa45abec7f2d61fd711714c9febb76">DPM_UUID_PROPERTY_ENTRY_DETAIL_CPP_VALUE_NAME</a></div><div class="ttdeci">#define DPM_UUID_PROPERTY_ENTRY_DETAIL_CPP_VALUE_NAME(NAME)</div><div class="ttdef"><b>Definition</b> <a href="uuid__property_8hpp_source.html#l00055">uuid_property.hpp:55</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="uuid__property_8hpp_source.html">uuid_property.hpp</a> の <a class="el" href="uuid__property_8hpp_source.html#l00113">113</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="uuid__property_8hpp_source.html">uuid_property.hpp</a> の <a class="el" href="uuid__property_8hpp_source.html#l00109">109</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -218,7 +217,37 @@ $(function(){initNavTree('uuid__property_8hpp.html','',''); });
         </tr>
       </table>
 </div><div class="memdoc">
-
+<b>値:</b><div class="fragment"><div class="line">convert::changed_notify_holder&lt; boost::uuids::uuid &gt;                       \</div>
+<div class="line">  DPM_UUID_PROPERTY_ENTRY_DETAIL_CPP_VALUE_NAME( NAME );                   \</div>
+<div class="line">boost::uuids::uuid <span class="keyword">const</span>&amp; BOOST_PP_CAT( get_, NAME )( ) <span class="keyword">const</span>              \</div>
+<div class="line">{                                                                          \</div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code hl_define" href="#a6afa45abec7f2d61fd711714c9febb76">DPM_UUID_PROPERTY_ENTRY_DETAIL_CPP_VALUE_NAME</a>( NAME )           \</div>
+<div class="line">      .const_ref( );                                                       \</div>
+<div class="line">}                                                                          \</div>
+<div class="line"><span class="keywordtype">void</span> BOOST_PP_CAT( set_, NAME )( boost::uuids::uuid <span class="keyword">const</span>&amp; id )            \</div>
+<div class="line">{                                                                          \</div>
+<div class="line">    raise_property_changed(                                                \</div>
+<div class="line">      <a class="code hl_define" href="#a6afa45abec7f2d61fd711714c9febb76">DPM_UUID_PROPERTY_ENTRY_DETAIL_CPP_VALUE_NAME</a>( NAME ).ref( ),        \</div>
+<div class="line">      <span class="keywordtype">id</span>,                                                                  \</div>
+<div class="line">      BOOST_PP_WSTRINGIZE( NAME ) );                                       \</div>
+<div class="line">}                                                                          \</div>
+<div class="line"><span class="keyword">auto</span>&amp; BOOST_PP_CAT( ref_, NAME )( )                                        \</div>
+<div class="line">{                                                                          \</div>
+<div class="line">    <span class="keyword">auto</span>&amp; <a class="code hl_variable" href="namespacedepicture__menu_1_1usecase_1_1concepts.html#afd6acba4c3bbb2c891cf092da1786565">v</a> = <a class="code hl_define" href="#a6afa45abec7f2d61fd711714c9febb76">DPM_UUID_PROPERTY_ENTRY_DETAIL_CPP_VALUE_NAME</a>( NAME );       \</div>
+<div class="line">    <a class="code hl_variable" href="namespacedepicture__menu_1_1usecase_1_1concepts.html#afd6acba4c3bbb2c891cf092da1786565">v</a>.set_notify( [ <span class="keyword">this</span> ]( ) {                                            \</div>
+<div class="line">        property_changed_notify( BOOST_PP_WSTRINGIZE( NAME ) );            \</div>
+<div class="line">    } );                                                                   \</div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacedepicture__menu_1_1usecase_1_1concepts.html#afd6acba4c3bbb2c891cf092da1786565">v</a>;                                                              \</div>
+<div class="line">}                                                                          \</div>
+<div class="line"><span class="keyword">auto</span> <span class="keyword">const</span>&amp; BOOST_PP_CAT( ref_, NAME )( ) <span class="keyword">const</span>                            \</div>
+<div class="line">{                                                                          \</div>
+<div class="line">    <span class="keyword">auto</span> <span class="keyword">const</span>&amp; <a class="code hl_variable" href="namespacedepicture__menu_1_1usecase_1_1concepts.html#afd6acba4c3bbb2c891cf092da1786565">v</a> =                                                        \</div>
+<div class="line">      DPM_UUID_PROPERTY_ENTRY_DETAIL_CPP_VALUE_NAME( NAME ).const_ref( );  \</div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacedepicture__menu_1_1usecase_1_1concepts.html#afd6acba4c3bbb2c891cf092da1786565">v</a>;                                                              \</div>
+<div class="line">}</div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1concepts_html_afd6acba4c3bbb2c891cf092da1786565"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1concepts.html#afd6acba4c3bbb2c891cf092da1786565">depicture_menu::usecase::concepts::v</a></div><div class="ttdeci">v</div><div class="ttdef"><b>Definition</b> <a href="config__view__model__interface_8hpp_source.html#l00410">config_view_model_interface.hpp:410</a></div></div>
+<div class="ttc" id="auuid__property_8hpp_html_a6afa45abec7f2d61fd711714c9febb76"><div class="ttname"><a href="#a6afa45abec7f2d61fd711714c9febb76">DPM_UUID_PROPERTY_ENTRY_DETAIL_CPP_VALUE_NAME</a></div><div class="ttdeci">#define DPM_UUID_PROPERTY_ENTRY_DETAIL_CPP_VALUE_NAME(NAME)</div><div class="ttdef"><b>Definition</b> <a href="uuid__property_8hpp_source.html#l00055">uuid_property.hpp:55</a></div></div>
+</div><!-- fragment -->
 <p class="definition"> <a class="el" href="uuid__property_8hpp_source.html">uuid_property.hpp</a> の <a class="el" href="uuid__property_8hpp_source.html#l00075">75</a> 行目に定義があります。</p>
 
 </div>
@@ -246,26 +275,26 @@ $(function(){initNavTree('uuid__property_8hpp.html','',''); });
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">public                                                                       \</div>
-<div class="line">  Guid NAME                                                                  \</div>
-<div class="line">  {                                                                          \</div>
-<div class="line">      get                                                                    \</div>
-<div class="line">      {                                                                      \</div>
-<div class="line">          var buf = <span class="keyword">new</span> <span class="keywordtype">byte</span>[ 16 ];                                          \</div>
-<div class="line">          DPM_CS_GLUE_METHOD_NAME_AND_PREFIX( access_glue_, NAME )           \</div>
-<div class="line">          ( buf, false );                                                    \</div>
-<div class="line">          <span class="keywordflow">return</span> <span class="keyword">new</span> Guid( buf );                                            \</div>
-<div class="line">      }                                                                      \</div>
-<div class="line">      <a class="code hl_function" href="test__command__line__option_8cpp.html#a11168c1960ee4b2ffbc15ee691d0b77b">set</a>                                                                    \</div>
-<div class="line">      {                                                                      \</div>
-<div class="line">          var buf = value.ToByteArray( );                                    \</div>
-<div class="line">          DPM_CS_GLUE_METHOD_NAME_AND_PREFIX( access_glue_, NAME )           \</div>
-<div class="line">          ( buf, true );                                                     \</div>
-<div class="line">      }                                                                      \</div>
-<div class="line">  }</div>
+<b>値:</b><div class="fragment"><div class="line">public                                                                     \</div>
+<div class="line">    Guid NAME                                                              \</div>
+<div class="line">    {                                                                      \</div>
+<div class="line">        get                                                                \</div>
+<div class="line">        {                                                                  \</div>
+<div class="line">            var buf = <span class="keyword">new</span> <span class="keywordtype">byte</span>[ 16 ];                                      \</div>
+<div class="line">            DPM_CS_GLUE_METHOD_NAME_AND_PREFIX( access_glue_, NAME )       \</div>
+<div class="line">            ( buf, false );                                                \</div>
+<div class="line">            <span class="keywordflow">return</span> <span class="keyword">new</span> Guid( buf );                                        \</div>
+<div class="line">        }                                                                  \</div>
+<div class="line">        <a class="code hl_function" href="test__command__line__option_8cpp.html#a11168c1960ee4b2ffbc15ee691d0b77b">set</a>                                                                \</div>
+<div class="line">        {                                                                  \</div>
+<div class="line">            var buf = value.ToByteArray( );                                \</div>
+<div class="line">            DPM_CS_GLUE_METHOD_NAME_AND_PREFIX( access_glue_, NAME )       \</div>
+<div class="line">            ( buf, true );                                                 \</div>
+<div class="line">        }                                                                  \</div>
+<div class="line">    }</div>
 <div class="ttc" id="atest__command__line__option_8cpp_html_a11168c1960ee4b2ffbc15ee691d0b77b"><div class="ttname"><a href="test__command__line__option_8cpp.html#a11168c1960ee4b2ffbc15ee691d0b77b">set</a></div><div class="ttdeci">dest set(mock_open)</div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="uuid__property_8hpp_source.html">uuid_property.hpp</a> の <a class="el" href="uuid__property_8hpp_source.html#l00175">175</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="uuid__property_8hpp_source.html">uuid_property.hpp</a> の <a class="el" href="uuid__property_8hpp_source.html#l00166">166</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -293,7 +322,7 @@ $(function(){initNavTree('uuid__property_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="uuid__property_8hpp_source.html">uuid_property.hpp</a> の <a class="el" href="uuid__property_8hpp_source.html#l00218">218</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="uuid__property_8hpp_source.html">uuid_property.hpp</a> の <a class="el" href="uuid__property_8hpp_source.html#l00207">207</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -322,7 +351,7 @@ $(function(){initNavTree('uuid__property_8hpp.html','',''); });
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">\</div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="uuid__property_8hpp_source.html">uuid_property.hpp</a> の <a class="el" href="uuid__property_8hpp_source.html#l00224">224</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="uuid__property_8hpp_source.html">uuid_property.hpp</a> の <a class="el" href="uuid__property_8hpp_source.html#l00212">212</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -350,7 +379,7 @@ $(function(){initNavTree('uuid__property_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="uuid__property_8hpp_source.html">uuid_property.hpp</a> の <a class="el" href="uuid__property_8hpp_source.html#l00231">231</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="uuid__property_8hpp_source.html">uuid_property.hpp</a> の <a class="el" href="uuid__property_8hpp_source.html#l00218">218</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -417,7 +446,7 @@ $(function(){initNavTree('uuid__property_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">( (<a class="code hl_define" href="#af5c705deba7eaf0e4cc35cdb5bf1b660">DPM_UUID_PROPERTY_ENTRY_GENERATE_CPP_CLASS_AFTER</a>)( NAME ) )</div>
-<div class="ttc" id="auuid__property_8hpp_html_af5c705deba7eaf0e4cc35cdb5bf1b660"><div class="ttname"><a href="#af5c705deba7eaf0e4cc35cdb5bf1b660">DPM_UUID_PROPERTY_ENTRY_GENERATE_CPP_CLASS_AFTER</a></div><div class="ttdeci">#define DPM_UUID_PROPERTY_ENTRY_GENERATE_CPP_CLASS_AFTER( GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="uuid__property_8hpp_source.html#l00113">uuid_property.hpp:113</a></div></div>
+<div class="ttc" id="auuid__property_8hpp_html_af5c705deba7eaf0e4cc35cdb5bf1b660"><div class="ttname"><a href="#af5c705deba7eaf0e4cc35cdb5bf1b660">DPM_UUID_PROPERTY_ENTRY_GENERATE_CPP_CLASS_AFTER</a></div><div class="ttdeci">#define DPM_UUID_PROPERTY_ENTRY_GENERATE_CPP_CLASS_AFTER( GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="uuid__property_8hpp_source.html#l00109">uuid_property.hpp:109</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="uuid__property_8hpp_source.html">uuid_property.hpp</a> の <a class="el" href="uuid__property_8hpp_source.html#l00023">23</a> 行目に定義があります。</p>
 
@@ -438,7 +467,7 @@ $(function(){initNavTree('uuid__property_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">( (<a class="code hl_define" href="#affe9294193d5fed892b1672b76bbeaf2">DPM_UUID_PROPERTY_ENTRY_GENERATE_CSHARP_CLASS_BODY</a>)( NAME ) )</div>
-<div class="ttc" id="auuid__property_8hpp_html_affe9294193d5fed892b1672b76bbeaf2"><div class="ttname"><a href="#affe9294193d5fed892b1672b76bbeaf2">DPM_UUID_PROPERTY_ENTRY_GENERATE_CSHARP_CLASS_BODY</a></div><div class="ttdeci">#define DPM_UUID_PROPERTY_ENTRY_GENERATE_CSHARP_CLASS_BODY( GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="uuid__property_8hpp_source.html#l00175">uuid_property.hpp:175</a></div></div>
+<div class="ttc" id="auuid__property_8hpp_html_affe9294193d5fed892b1672b76bbeaf2"><div class="ttname"><a href="#affe9294193d5fed892b1672b76bbeaf2">DPM_UUID_PROPERTY_ENTRY_GENERATE_CSHARP_CLASS_BODY</a></div><div class="ttdeci">#define DPM_UUID_PROPERTY_ENTRY_GENERATE_CSHARP_CLASS_BODY( GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="uuid__property_8hpp_source.html#l00166">uuid_property.hpp:166</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="uuid__property_8hpp_source.html">uuid_property.hpp</a> の <a class="el" href="uuid__property_8hpp_source.html#l00029">29</a> 行目に定義があります。</p>
 
@@ -459,7 +488,7 @@ $(function(){initNavTree('uuid__property_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">( (<a class="code hl_define" href="#a02c8c2210fb3a8b0122db8d7478b3195">DPM_UUID_PROPERTY_ENTRY_GENERATE_CSHARP_CONSTRACTOR</a>)( NAME ) )</div>
-<div class="ttc" id="auuid__property_8hpp_html_a02c8c2210fb3a8b0122db8d7478b3195"><div class="ttname"><a href="#a02c8c2210fb3a8b0122db8d7478b3195">DPM_UUID_PROPERTY_ENTRY_GENERATE_CSHARP_CONSTRACTOR</a></div><div class="ttdeci">#define DPM_UUID_PROPERTY_ENTRY_GENERATE_CSHARP_CONSTRACTOR( GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="uuid__property_8hpp_source.html#l00218">uuid_property.hpp:218</a></div></div>
+<div class="ttc" id="auuid__property_8hpp_html_a02c8c2210fb3a8b0122db8d7478b3195"><div class="ttname"><a href="#a02c8c2210fb3a8b0122db8d7478b3195">DPM_UUID_PROPERTY_ENTRY_GENERATE_CSHARP_CONSTRACTOR</a></div><div class="ttdeci">#define DPM_UUID_PROPERTY_ENTRY_GENERATE_CSHARP_CONSTRACTOR( GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="uuid__property_8hpp_source.html#l00207">uuid_property.hpp:207</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="uuid__property_8hpp_source.html">uuid_property.hpp</a> の <a class="el" href="uuid__property_8hpp_source.html#l00035">35</a> 行目に定義があります。</p>
 
@@ -479,9 +508,9 @@ $(function(){initNavTree('uuid__property_8hpp.html','',''); });
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">( (<a class="code hl_define" href="#adaefa6325589d869325178a6842a7cb1">DPM_UUID_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR</a>)( NAME  \</div>
-<div class="line">) )</div>
-<div class="ttc" id="auuid__property_8hpp_html_adaefa6325589d869325178a6842a7cb1"><div class="ttname"><a href="#adaefa6325589d869325178a6842a7cb1">DPM_UUID_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR</a></div><div class="ttdeci">#define DPM_UUID_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR( GM_SEQS, CLAS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="uuid__property_8hpp_source.html#l00231">uuid_property.hpp:231</a></div></div>
+<b>値:</b><div class="fragment"><div class="line">( (                                                                        \</div>
+<div class="line">  <a class="code hl_define" href="#adaefa6325589d869325178a6842a7cb1">DPM_UUID_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR</a>)( NAME ) )</div>
+<div class="ttc" id="auuid__property_8hpp_html_adaefa6325589d869325178a6842a7cb1"><div class="ttname"><a href="#adaefa6325589d869325178a6842a7cb1">DPM_UUID_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR</a></div><div class="ttdeci">#define DPM_UUID_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR( GM_SEQS, CLAS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="uuid__property_8hpp_source.html#l00218">uuid_property.hpp:218</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="uuid__property_8hpp_source.html">uuid_property.hpp</a> の <a class="el" href="uuid__property_8hpp_source.html#l00045">45</a> 行目に定義があります。</p>
 
@@ -502,7 +531,7 @@ $(function(){initNavTree('uuid__property_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">( (<a class="code hl_define" href="#a76bc42148609fe2981a4e4aef4d40857">DPM_UUID_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY</a>)( NAME ) )</div>
-<div class="ttc" id="auuid__property_8hpp_html_a76bc42148609fe2981a4e4aef4d40857"><div class="ttname"><a href="#a76bc42148609fe2981a4e4aef4d40857">DPM_UUID_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY</a></div><div class="ttdeci">#define DPM_UUID_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY( GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="uuid__property_8hpp_source.html#l00224">uuid_property.hpp:224</a></div></div>
+<div class="ttc" id="auuid__property_8hpp_html_a76bc42148609fe2981a4e4aef4d40857"><div class="ttname"><a href="#a76bc42148609fe2981a4e4aef4d40857">DPM_UUID_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY</a></div><div class="ttdeci">#define DPM_UUID_PROPERTY_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY( GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="uuid__property_8hpp_source.html#l00212">uuid_property.hpp:212</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="uuid__property_8hpp_source.html">uuid_property.hpp</a> の <a class="el" href="uuid__property_8hpp_source.html#l00040">40</a> 行目に定義があります。</p>
 

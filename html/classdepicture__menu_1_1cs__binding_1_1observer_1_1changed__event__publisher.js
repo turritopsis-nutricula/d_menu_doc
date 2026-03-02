@@ -1,10 +1,10 @@
 var classdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher =
 [
     [ "signals_holder", "structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher_1_1signals__holder.html", "structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher_1_1signals__holder" ],
-    [ "collection_notify_t", "classdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher.html#a5fd4083b8d029d9dc8029526518801bb", null ],
+    [ "collection_notify_t", "classdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher.html#acebf3e452498e718040ef0a348e740f9", null ],
     [ "event_id_t", "classdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher.html#a37c23cf8fe4a742058a50a3db7dccd77", null ],
     [ "notify_t", "classdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher.html#a76bccdcd0feecaac81a914b925aef2eb", null ],
-    [ "two_subject_notify_t", "classdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher.html#a18b05467770598de1ff4f5d4db87f073", null ],
+    [ "two_subject_notify_t", "classdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher.html#a1badc51bb63efb4275ff93647154d471", null ],
     [ "uuid_t", "classdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher.html#aa0388c5fc03160f415acd31ab524fce6", null ],
     [ "count_subscriber", "classdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher.html#a8c71b7ea2745ff9484b8af1ec64aa8bc", null ],
     [ "is_lock", "classdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher.html#add784c2bcc062b8b857ae4cbad8415ec", null ],

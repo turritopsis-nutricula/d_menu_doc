@@ -97,7 +97,7 @@ $(function(){initNavTree('structdepicture__menu_1_1applications_1_1backup__json_
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
 公開型</h2></td></tr>
 <tr class="memitem:a817ed48a85bd23f7a3c7307ebd7b308e" id="r_a817ed48a85bd23f7a3c7307ebd7b308e"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a817ed48a85bd23f7a3c7307ebd7b308e">converter_t</a> = converter</td></tr>
-<tr class="memitem:a7a7e1dc38eb1297814de7fc02f44a1c6" id="r_a7a7e1dc38eb1297814de7fc02f44a1c6"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a7a7e1dc38eb1297814de7fc02f44a1c6">converter_resulet_t</a> = decltype( <a class="el" href="#a817ed48a85bd23f7a3c7307ebd7b308e">converter_t</a>{ }( std::declval&lt; current_format &gt;( ) ) )</td></tr>
+<tr class="memitem:a75a80c0b68667bad3ea229d4a40be75f" id="r_a75a80c0b68667bad3ea229d4a40be75f"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a75a80c0b68667bad3ea229d4a40be75f">converter_resulet_t</a></td></tr>
 <tr class="memitem:a0b2decc203a80c67b11a277d7d945551" id="r_a0b2decc203a80c67b11a277d7d945551"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a0b2decc203a80c67b11a277d7d945551">convert_to_t</a> = to_format</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -111,7 +111,7 @@ $(function(){initNavTree('structdepicture__menu_1_1applications_1_1backup__json_
 <tr class="memitem:aae147975bca46abd8bb87b5cf5354de1 template"><td class="memItemLeft">std::expected&lt; current_format, <a class="el" href="structdepicture__menu_1_1applications_1_1backup__json_1_1error__ctx.html">error_ctx</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aae147975bca46abd8bb87b5cf5354de1">current_format_read</a> (glz::basic_istream_buffer&lt; B &gt; &amp;<a class="el" href="test___test_list___unmanaged_access_8cpp.html#adaefa7ee051890e4944bd6cb79805231">buffer</a>) const</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;backup_json_format current_format, typename converter = formats::format_version&lt; current_format &gt;::converter_t, typename to_format = std::remove_cvref_t&lt;		decltype( converter{ }( std::declval&lt; current_format &gt;( ) ) ) &gt;&gt;<br />
+<div class="textblock"><div class="compoundTemplParams">template&lt;backup_json_format current_format, typename converter = formats::format_version&lt; current_format &gt;::converter_t, typename to_format = std::remove_cvref_t&lt; decltype( converter { }(	std::declval&lt; current_format &gt;( ) ) ) &gt;&gt;<br />
 struct depicture_menu::applications::backup_json::detail::format_convert::cascade_converter&lt; current_format, converter, to_format &gt;</div>
 <p class="definition"> <a class="el" href="backup__json_8cpp_source.html">backup_json.cpp</a> の <a class="el" href="backup__json_8cpp_source.html#l00058">58</a> 行目に定義があります。</p>
 </div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">型定義メンバ詳解</h2>
@@ -121,7 +121,7 @@ struct depicture_menu::applications::backup_json::detail::format_convert::cascad
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;backup_json_format current_format, typename converter = formats::format_version&lt; current_format &gt;::converter_t, typename to_format = std::remove_cvref_t&lt;		decltype( converter{ }( std::declval&lt; current_format &gt;( ) ) ) &gt;&gt; </div>
+template&lt;backup_json_format current_format, typename converter = formats::format_version&lt; current_format &gt;::converter_t, typename to_format = std::remove_cvref_t&lt; decltype( converter { }(	std::declval&lt; current_format &gt;( ) ) ) &gt;&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="structdepicture__menu_1_1applications_1_1backup__json_1_1detail_1_1format__convert_1_1cascade__converter.html">depicture_menu::applications::backup_json::detail::format_convert::cascade_converter</a>&lt; current_format, converter, to_format &gt;::convert_to_t = to_format</td>
@@ -129,24 +129,27 @@ template&lt;backup_json_format current_format, typename converter = formats::for
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="backup__json_8cpp_source.html">backup_json.cpp</a> の <a class="el" href="backup__json_8cpp_source.html#l00066">66</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="backup__json_8cpp_source.html">backup_json.cpp</a> の <a class="el" href="backup__json_8cpp_source.html#l00067">67</a> 行目に定義があります。</p>
 
 </div>
 </div>
-<a id="a7a7e1dc38eb1297814de7fc02f44a1c6" name="a7a7e1dc38eb1297814de7fc02f44a1c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a7e1dc38eb1297814de7fc02f44a1c6">&#9670;&#160;</a></span>converter_resulet_t</h2>
+<a id="a75a80c0b68667bad3ea229d4a40be75f" name="a75a80c0b68667bad3ea229d4a40be75f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75a80c0b68667bad3ea229d4a40be75f">&#9670;&#160;</a></span>converter_resulet_t</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;backup_json_format current_format, typename converter = formats::format_version&lt; current_format &gt;::converter_t, typename to_format = std::remove_cvref_t&lt;		decltype( converter{ }( std::declval&lt; current_format &gt;( ) ) ) &gt;&gt; </div>
+template&lt;backup_json_format current_format, typename converter = formats::format_version&lt; current_format &gt;::converter_t, typename to_format = std::remove_cvref_t&lt; decltype( converter { }(	std::declval&lt; current_format &gt;( ) ) ) &gt;&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="structdepicture__menu_1_1applications_1_1backup__json_1_1detail_1_1format__convert_1_1cascade__converter.html">depicture_menu::applications::backup_json::detail::format_convert::cascade_converter</a>&lt; current_format, converter, to_format &gt;::converter_resulet_t = decltype( <a class="el" href="#a817ed48a85bd23f7a3c7307ebd7b308e">converter_t</a>{ }( std::declval&lt; current_format &gt;( ) ) )</td>
+          <td class="memname">using <a class="el" href="structdepicture__menu_1_1applications_1_1backup__json_1_1detail_1_1format__convert_1_1cascade__converter.html">depicture_menu::applications::backup_json::detail::format_convert::cascade_converter</a>&lt; current_format, converter, to_format &gt;::converter_resulet_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<b>初期値:</b><div class="fragment"><div class="line"> </div>
+<div class="line"><span class="keyword">decltype</span>( <a class="code hl_typedef" href="#a817ed48a85bd23f7a3c7307ebd7b308e">converter_t</a> { }( std::declval&lt; current_format &gt;( ) ) )</div>
+<div class="ttc" id="astructdepicture__menu_1_1applications_1_1backup__json_1_1detail_1_1format__convert_1_1cascade__converter_html_a817ed48a85bd23f7a3c7307ebd7b308e"><div class="ttname"><a href="#a817ed48a85bd23f7a3c7307ebd7b308e">depicture_menu::applications::backup_json::detail::format_convert::cascade_converter::converter_t</a></div><div class="ttdeci">converter converter_t</div><div class="ttdef"><b>Definition</b> <a href="backup__json_8cpp_source.html#l00063">backup_json.cpp:63</a></div></div>
+</div><!-- fragment -->
 <p class="definition"> <a class="el" href="backup__json_8cpp_source.html">backup_json.cpp</a> の <a class="el" href="backup__json_8cpp_source.html#l00064">64</a> 行目に定義があります。</p>
 
 </div>
@@ -157,7 +160,7 @@ template&lt;backup_json_format current_format, typename converter = formats::for
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;backup_json_format current_format, typename converter = formats::format_version&lt; current_format &gt;::converter_t, typename to_format = std::remove_cvref_t&lt;		decltype( converter{ }( std::declval&lt; current_format &gt;( ) ) ) &gt;&gt; </div>
+template&lt;backup_json_format current_format, typename converter = formats::format_version&lt; current_format &gt;::converter_t, typename to_format = std::remove_cvref_t&lt; decltype( converter { }(	std::declval&lt; current_format &gt;( ) ) ) &gt;&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="structdepicture__menu_1_1applications_1_1backup__json_1_1detail_1_1format__convert_1_1cascade__converter.html">depicture_menu::applications::backup_json::detail::format_convert::cascade_converter</a>&lt; current_format, converter, to_format &gt;::converter_t = converter</td>
@@ -176,7 +179,7 @@ template&lt;backup_json_format current_format, typename converter = formats::for
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;backup_json_format current_format, typename converter = formats::format_version&lt; current_format &gt;::converter_t, typename to_format = std::remove_cvref_t&lt;		decltype( converter{ }( std::declval&lt; current_format &gt;( ) ) ) &gt;&gt; </div>
+template&lt;backup_json_format current_format, typename converter = formats::format_version&lt; current_format &gt;::converter_t, typename to_format = std::remove_cvref_t&lt; decltype( converter { }(	std::declval&lt; current_format &gt;( ) ) ) &gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -195,16 +198,11 @@ template&lt;backup_json_format current_format, typename converter = formats::for
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="backup__json_8cpp_source.html">backup_json.cpp</a> の <a class="el" href="backup__json_8cpp_source.html#l00112">112</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="backup__json_8cpp_source.html">backup_json.cpp</a> の <a class="el" href="backup__json_8cpp_source.html#l00106">106</a> 行目に定義があります。</p>
 
-<p class="reference">参照先 <a class="el" href="backup__json_8cpp_source.html#l00112">convert()</a>, <a class="el" href="format__version_8hpp_source.html#l00011">depicture_menu::applications::backup_json::formats::format_version&lt; Format &gt;::version</a>.</p>
+<p class="reference">参照先 <a class="el" href="format__version_8hpp_source.html#l00011">depicture_menu::applications::backup_json::formats::format_version&lt; Format &gt;::version</a>.</p>
 
-<p class="reference">参照元 <a class="el" href="backup__json_8cpp_source.html#l00112">convert()</a>, <a class="el" href="backup__json_8cpp_source.html#l00090">convert_to_latest()</a>.</p>
-<div class="dynheader">
-呼び出し関係図:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1applications_1_1backup__json_1_1detail_1_1format__convert_1_1cascade__converter_aa34f9866b98a9e225ab544bdf8504a79_cgraph.svg" width="202" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<p class="reference">参照元 <a class="el" href="backup__json_8cpp_source.html#l00088">convert_to_latest()</a>.</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
@@ -219,7 +217,7 @@ template&lt;backup_json_format current_format, typename converter = formats::for
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;backup_json_format current_format, typename converter = formats::format_version&lt; current_format &gt;::converter_t, typename to_format = std::remove_cvref_t&lt;		decltype( converter{ }( std::declval&lt; current_format &gt;( ) ) ) &gt;&gt; </div>
+template&lt;backup_json_format current_format, typename converter = formats::format_version&lt; current_format &gt;::converter_t, typename to_format = std::remove_cvref_t&lt; decltype( converter { }(	std::declval&lt; current_format &gt;( ) ) ) &gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -238,13 +236,13 @@ template&lt;backup_json_format current_format, typename converter = formats::for
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="backup__json_8cpp_source.html">backup_json.cpp</a> の <a class="el" href="backup__json_8cpp_source.html#l00103">103</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="backup__json_8cpp_source.html">backup_json.cpp</a> の <a class="el" href="backup__json_8cpp_source.html#l00099">99</a> 行目に定義があります。</p>
 
-<p class="reference">参照先 <a class="el" href="backup__json_8cpp_source.html#l00112">convert()</a>, <a class="el" href="backup__json_8cpp_source.html#l00090">convert_to_latest()</a>.</p>
+<p class="reference">参照先 <a class="el" href="backup__json_8cpp_source.html#l00106">convert()</a>.</p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1applications_1_1backup__json_1_1detail_1_1format__convert_1_1cascade__converter_a6e31d287c8b5c05b973b54c6d950c13f_cgraph.svg" width="100%" height="419"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1applications_1_1backup__json_1_1detail_1_1format__convert_1_1cascade__converter_a6e31d287c8b5c05b973b54c6d950c13f_cgraph.svg" width="440" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -255,7 +253,7 @@ template&lt;backup_json_format current_format, typename converter = formats::for
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;backup_json_format current_format, typename converter = formats::format_version&lt; current_format &gt;::converter_t, typename to_format = std::remove_cvref_t&lt;		decltype( converter{ }( std::declval&lt; current_format &gt;( ) ) ) &gt;&gt; </div>
+template&lt;backup_json_format current_format, typename converter = formats::format_version&lt; current_format &gt;::converter_t, typename to_format = std::remove_cvref_t&lt; decltype( converter { }(	std::declval&lt; current_format &gt;( ) ) ) &gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -274,11 +272,11 @@ template&lt;backup_json_format current_format, typename converter = formats::for
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="backup__json_8cpp_source.html">backup_json.cpp</a> の <a class="el" href="backup__json_8cpp_source.html#l00090">90</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="backup__json_8cpp_source.html">backup_json.cpp</a> の <a class="el" href="backup__json_8cpp_source.html#l00088">88</a> 行目に定義があります。</p>
 
-<p class="reference">参照先 <a class="el" href="backup__json_8cpp_source.html#l00112">convert()</a>, <a class="el" href="backup__json_8cpp_source.html#l00090">convert_to_latest()</a>.</p>
+<p class="reference">参照先 <a class="el" href="backup__json_8cpp_source.html#l00106">convert()</a>, <a class="el" href="backup__json_8cpp_source.html#l00088">convert_to_latest()</a>.</p>
 
-<p class="reference">参照元 <a class="el" href="backup__json_8cpp_source.html#l00090">convert_to_latest()</a>, <a class="el" href="backup__json_8cpp_source.html#l00070">operator()()</a>.</p>
+<p class="reference">参照元 <a class="el" href="backup__json_8cpp_source.html#l00088">convert_to_latest()</a>, <a class="el" href="backup__json_8cpp_source.html#l00070">operator()()</a>.</p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
@@ -298,7 +296,7 @@ template&lt;backup_json_format current_format, typename converter = formats::for
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;backup_json_format current_format, typename converter = formats::format_version&lt; current_format &gt;::converter_t, typename to_format = std::remove_cvref_t&lt;		decltype( converter{ }( std::declval&lt; current_format &gt;( ) ) ) &gt;&gt; </div>
+template&lt;backup_json_format current_format, typename converter = formats::format_version&lt; current_format &gt;::converter_t, typename to_format = std::remove_cvref_t&lt; decltype( converter { }(	std::declval&lt; current_format &gt;( ) ) ) &gt;&gt; </div>
 <div class="memtemplate">
 template&lt;typename B&gt; </div>
 <table class="mlabels">
@@ -319,20 +317,20 @@ template&lt;typename B&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="backup__json_8cpp_source.html">backup_json.cpp</a> の <a class="el" href="backup__json_8cpp_source.html#l00124">124</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="backup__json_8cpp_source.html">backup_json.cpp</a> の <a class="el" href="backup__json_8cpp_source.html#l00118">118</a> 行目に定義があります。</p>
 
-<p class="reference">参照先 <a class="el" href="test___test_list___unmanaged_access_8cpp_source.html#l00010">buffer</a>, <a class="el" href="backup__json_8cpp_source.html#l00124">current_format_read()</a>, <a class="el" href="backup__json_8cpp_source.html#l00035">depicture_menu::applications::backup_json::detail::make_error_code()</a>.</p>
+<p class="reference">参照先 <a class="el" href="test___test_list___unmanaged_access_8cpp_source.html#l00010">buffer</a>, <a class="el" href="backup__json_8cpp_source.html#l00034">depicture_menu::applications::backup_json::detail::make_error_code()</a>.</p>
 
-<p class="reference">参照元 <a class="el" href="backup__json_8cpp_source.html#l00124">current_format_read()</a>, <a class="el" href="backup__json_8cpp_source.html#l00070">operator()()</a>.</p>
+<p class="reference">参照元 <a class="el" href="backup__json_8cpp_source.html#l00070">operator()()</a>.</p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1applications_1_1backup__json_1_1detail_1_1format__convert_1_1cascade__converter_aae147975bca46abd8bb87b5cf5354de1_cgraph.svg" width="440" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1applications_1_1backup__json_1_1detail_1_1format__convert_1_1cascade__converter_aae147975bca46abd8bb87b5cf5354de1_cgraph.svg" width="440" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1applications_1_1backup__json_1_1detail_1_1format__convert_1_1cascade__converter_aae147975bca46abd8bb87b5cf5354de1_icgraph.svg" width="440" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1applications_1_1backup__json_1_1detail_1_1format__convert_1_1cascade__converter_aae147975bca46abd8bb87b5cf5354de1_icgraph.svg" width="440" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -343,7 +341,7 @@ template&lt;typename B&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;backup_json_format current_format, typename converter = formats::format_version&lt; current_format &gt;::converter_t, typename to_format = std::remove_cvref_t&lt;		decltype( converter{ }( std::declval&lt; current_format &gt;( ) ) ) &gt;&gt; </div>
+template&lt;backup_json_format current_format, typename converter = formats::format_version&lt; current_format &gt;::converter_t, typename to_format = std::remove_cvref_t&lt; decltype( converter { }(	std::declval&lt; current_format &gt;( ) ) ) &gt;&gt; </div>
 <div class="memtemplate">
 template&lt;typename B&gt; </div>
 <table class="mlabels">
@@ -370,11 +368,11 @@ template&lt;typename B&gt; </div>
 
 <p class="definition"> <a class="el" href="backup__json_8cpp_source.html">backup_json.cpp</a> の <a class="el" href="backup__json_8cpp_source.html#l00070">70</a> 行目に定義があります。</p>
 
-<p class="reference">参照先 <a class="el" href="test___test_list___unmanaged_access_8cpp_source.html#l00010">buffer</a>, <a class="el" href="backup__json_8cpp_source.html#l00090">convert_to_latest()</a>, <a class="el" href="backup__json_8cpp_source.html#l00124">current_format_read()</a>.</p>
+<p class="reference">参照先 <a class="el" href="test___test_list___unmanaged_access_8cpp_source.html#l00010">buffer</a>, <a class="el" href="backup__json_8cpp_source.html#l00088">convert_to_latest()</a>, <a class="el" href="backup__json_8cpp_source.html#l00118">current_format_read()</a>.</p>
 <div class="dynheader">
 呼び出し関係図:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1applications_1_1backup__json_1_1detail_1_1format__convert_1_1cascade__converter_a6858c42b2f053dd41dd3952822739e8d_cgraph.svg" width="100%" height="474"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1applications_1_1backup__json_1_1detail_1_1format__convert_1_1cascade__converter_a6858c42b2f053dd41dd3952822739e8d_cgraph.svg" width="100%" height="456"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>

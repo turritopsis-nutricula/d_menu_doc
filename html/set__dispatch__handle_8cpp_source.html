@@ -100,20 +100,18 @@ $(function(){initNavTree('set__dispatch__handle_8cpp_source.html','',''); });
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="set__dispatch__handle_8cpp.html#a051a92b72aa6b6d802c1357de649248c">    7</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="set__dispatch__handle_8cpp.html#a051a92b72aa6b6d802c1357de649248c">managed_dispatch_handler_t</a> = void ( * )( <span class="keywordtype">void</span>*, <span class="keywordtype">void</span>* );</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keywordtype">void</span> DPM_DLL_EXPORT</div>
-<div class="foldopen" id="foldopen00009" data-start="{" data-end="}">
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="set__dispatch__handle_8cpp.html#ad71ebecea5d0bdfa9c6951953e032303">    9</a></span>    <a class="code hl_function" href="set__dispatch__handle_8cpp.html#ad71ebecea5d0bdfa9c6951953e032303">set_dispatch_handle</a>( <a class="code hl_typedef" href="set__dispatch__handle_8cpp.html#a051a92b72aa6b6d802c1357de649248c">managed_dispatch_handler_t</a> h )</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <a class="code hl_function" href="classdepicture__menu_1_1singleton.html#ab3a8df96e817c8ccb1ab61434f90c416">depicture_menu::applications::gui_dispatch::get_instance</a>( ).set_reciver(</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>            h</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        );</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    }</div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="}">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="set__dispatch__handle_8cpp.html#ad71ebecea5d0bdfa9c6951953e032303">    8</a></span>    <span class="keywordtype">void</span> DPM_DLL_EXPORT <a class="code hl_function" href="set__dispatch__handle_8cpp.html#ad71ebecea5d0bdfa9c6951953e032303">set_dispatch_handle</a>( <a class="code hl_typedef" href="set__dispatch__handle_8cpp.html#a051a92b72aa6b6d802c1357de649248c">managed_dispatch_handler_t</a> h )</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <a class="code hl_function" href="classdepicture__menu_1_1singleton.html#ab3a8df96e817c8ccb1ab61434f90c416">depicture_menu::applications::gui_dispatch::get_instance</a>( ).set_reciver(</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>          h );</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    }</div>
 </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>}</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>}</div>
 <div class="ttc" id="aclassdepicture__menu_1_1singleton_html_ab3a8df96e817c8ccb1ab61434f90c416"><div class="ttname"><a href="classdepicture__menu_1_1singleton.html#ab3a8df96e817c8ccb1ab61434f90c416">depicture_menu::singleton&lt; detail_applications::gui_dispatch_impl &gt;::get_instance</a></div><div class="ttdeci">static T &amp; get_instance()</div><div class="ttdef"><b>Definition</b> <a href="singleton_8hpp_source.html#l00037">singleton.hpp:37</a></div></div>
 <div class="ttc" id="agui__dispatch_8hpp_html"><div class="ttname"><a href="gui__dispatch_8hpp.html">gui_dispatch.hpp</a></div></div>
 <div class="ttc" id="aset__dispatch__handle_8cpp_html_a051a92b72aa6b6d802c1357de649248c"><div class="ttname"><a href="set__dispatch__handle_8cpp.html#a051a92b72aa6b6d802c1357de649248c">managed_dispatch_handler_t</a></div><div class="ttdeci">void(*)(void *, void *) managed_dispatch_handler_t</div><div class="ttdef"><b>Definition</b> <a href="#l00007">set_dispatch_handle.cpp:7</a></div></div>
-<div class="ttc" id="aset__dispatch__handle_8cpp_html_ad71ebecea5d0bdfa9c6951953e032303"><div class="ttname"><a href="set__dispatch__handle_8cpp.html#ad71ebecea5d0bdfa9c6951953e032303">set_dispatch_handle</a></div><div class="ttdeci">void DPM_DLL_EXPORT set_dispatch_handle(managed_dispatch_handler_t h)</div><div class="ttdef"><b>Definition</b> <a href="#l00009">set_dispatch_handle.cpp:9</a></div></div>
+<div class="ttc" id="aset__dispatch__handle_8cpp_html_ad71ebecea5d0bdfa9c6951953e032303"><div class="ttname"><a href="set__dispatch__handle_8cpp.html#ad71ebecea5d0bdfa9c6951953e032303">set_dispatch_handle</a></div><div class="ttdeci">void DPM_DLL_EXPORT set_dispatch_handle(managed_dispatch_handler_t h)</div><div class="ttdef"><b>Definition</b> <a href="#l00008">set_dispatch_handle.cpp:8</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

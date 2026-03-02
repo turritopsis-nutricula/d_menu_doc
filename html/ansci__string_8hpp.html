@@ -165,22 +165,21 @@ $(function(){initNavTree('ansci__string_8hpp.html','',''); });
 <b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="cs__binding_2macro_2detail_2cpp_2config_8hpp.html#ade1ffb66dc056cd2c6f93b058398c958">DPM_CS_BINDING_INLINE</a> <span class="keywordtype">int</span> CLASS ::NAME( <span class="keywordtype">char</span>* v0, <span class="keywordtype">int</span> v1 )                 \</div>
 <div class="line">{                                                                          \</div>
 <div class="line">    <span class="keyword">auto</span>&amp; value = <a class="code hl_define" href="#a170f85c087aca411fba70862c4d4c50e">DPM_ANSI_STRING_ENTRY_DETAIL_VALUE</a>( NAME );              \</div>
-<div class="line">    if ( v0 == <span class="keyword">nullptr</span> )                                                   \</div>
-<div class="line">        <span class="keywordflow">return</span> value.length( );                                            \</div>
+<div class="line">    if ( v0 == <span class="keyword">nullptr</span> ) return value.length( );                           \</div>
 <div class="line">                                                                           \</div>
-<div class="line">    <span class="keyword">auto</span> <span class="keyword">const</span> length = std::min(                                          \</div>
-<div class="line">        <span class="keyword">static_cast&lt;</span> decltype( value.length( ) ) <span class="keyword">&gt;</span>( v1 ), value.length( )  \</div>
-<div class="line">    );                                                                     \</div>
-<div class="line">    <span class="keyword">auto</span> buf = value;                                                      \</div>
+<div class="line">    auto const length = <a class="code hl_namespace" href="namespacestd.html">std</a>::min(                                          \</div>
+<div class="line">      static_cast&lt; decltype( value.length( ) ) &gt;( v1 ), value.length( ) ); \</div>
+<div class="line">    auto buf = value;                                                      \</div>
 <div class="line">    buf.resize( length );                                                  \</div>
 <div class="line">                                                                           \</div>
 <div class="line">    ::strcpy( v0, buf.c_str( ) );                                          \</div>
-<div class="line">    <span class="keywordflow">return</span> length;                                                         \</div>
+<div class="line">    return length;                                                         \</div>
 <div class="line">}</div>
 <div class="ttc" id="aansci__string_8hpp_html_a170f85c087aca411fba70862c4d4c50e"><div class="ttname"><a href="#a170f85c087aca411fba70862c4d4c50e">DPM_ANSI_STRING_ENTRY_DETAIL_VALUE</a></div><div class="ttdeci">#define DPM_ANSI_STRING_ENTRY_DETAIL_VALUE(NAME)</div><div class="ttdef"><b>Definition</b> <a href="ansci__string_8hpp_source.html#l00054">ansci_string.hpp:54</a></div></div>
 <div class="ttc" id="acs__binding_2macro_2detail_2cpp_2config_8hpp_html_ade1ffb66dc056cd2c6f93b058398c958"><div class="ttname"><a href="cs__binding_2macro_2detail_2cpp_2config_8hpp.html#ade1ffb66dc056cd2c6f93b058398c958">DPM_CS_BINDING_INLINE</a></div><div class="ttdeci">#define DPM_CS_BINDING_INLINE</div><div class="ttdef"><b>Definition</b> <a href="cs__binding_2macro_2detail_2cpp_2config_8hpp_source.html#l00015">config.hpp:15</a></div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition</b> <a href="app__ids_8hpp_source.html#l00061">app_ids.hpp:62</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="ansci__string_8hpp_source.html">ansci_string.hpp</a> の <a class="el" href="ansci__string_8hpp_source.html#l00077">77</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="ansci__string_8hpp_source.html">ansci_string.hpp</a> の <a class="el" href="ansci__string_8hpp_source.html#l00074">74</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -213,7 +212,7 @@ $(function(){initNavTree('ansci__string_8hpp.html','',''); });
 <div class="line">    <span class="keywordflow">return</span> <a class="code hl_define" href="#a170f85c087aca411fba70862c4d4c50e">DPM_ANSI_STRING_ENTRY_DETAIL_VALUE</a>( NAME );                     \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="ansci__string_8hpp_source.html">ansci_string.hpp</a> の <a class="el" href="ansci__string_8hpp_source.html#l00068">68</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="ansci__string_8hpp_source.html">ansci_string.hpp</a> の <a class="el" href="ansci__string_8hpp_source.html#l00065">65</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -240,19 +239,19 @@ $(function(){initNavTree('ansci__string_8hpp.html','',''); });
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">public                                                                       \</div>
-<div class="line">  string NAME                                                                \</div>
-<div class="line">  {                                                                          \</div>
-<div class="line">      get                                                                    \</div>
-<div class="line">      {                                                                      \</div>
-<div class="line">          var len = BOOST_PP_CAT( NAME, _impl )( null, 0 );                  \</div>
-<div class="line">          var stb = <span class="keyword">new</span> System.Text.StringBuilder( len );                    \</div>
-<div class="line">          var str = BOOST_PP_CAT( NAME, _impl )( stb, len );                 \</div>
-<div class="line">          <span class="keywordflow">return</span> stb.ToString( );                                            \</div>
-<div class="line">      }                                                                      \</div>
-<div class="line">  }</div>
+<b>値:</b><div class="fragment"><div class="line">public                                                                         \</div>
+<div class="line">    string NAME                                                                \</div>
+<div class="line">    {                                                                          \</div>
+<div class="line">        get                                                                    \</div>
+<div class="line">        {                                                                      \</div>
+<div class="line">            var len = BOOST_PP_CAT( NAME, _impl )( null, 0 );                  \</div>
+<div class="line">            var stb = <span class="keyword">new</span> System.Text.StringBuilder( len );                    \</div>
+<div class="line">            var str = BOOST_PP_CAT( NAME, _impl )( stb, len );                 \</div>
+<div class="line">            <span class="keywordflow">return</span> stb.ToString( );                                            \</div>
+<div class="line">        }                                                                      \</div>
+<div class="line">    }</div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="ansci__string_8hpp_source.html">ansci_string.hpp</a> の <a class="el" href="ansci__string_8hpp_source.html#l00096">96</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="ansci__string_8hpp_source.html">ansci_string.hpp</a> の <a class="el" href="ansci__string_8hpp_source.html#l00091">91</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -281,7 +280,7 @@ $(function(){initNavTree('ansci__string_8hpp.html','',''); });
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">\</div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="ansci__string_8hpp_source.html">ansci_string.hpp</a> の <a class="el" href="ansci__string_8hpp_source.html#l00114">114</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="ansci__string_8hpp_source.html">ansci_string.hpp</a> の <a class="el" href="ansci__string_8hpp_source.html#l00108">108</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -309,7 +308,7 @@ $(function(){initNavTree('ansci__string_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="ansci__string_8hpp_source.html">ansci_string.hpp</a> の <a class="el" href="ansci__string_8hpp_source.html#l00121">121</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="ansci__string_8hpp_source.html">ansci_string.hpp</a> の <a class="el" href="ansci__string_8hpp_source.html#l00114">114</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -328,11 +327,8 @@ $(function(){initNavTree('ansci__string_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">( (DPM_METHOD_KIND_GLUE_METHOD)(NAME)(int)( (<span class="keywordtype">char</span>*, int))(int)( (          \</div>
-<div class="line">    DPM_ATTR(                                                              \</div>
-<div class="line">        System.Text.StringBuilder, MarshalAs( UnmanagedType.LPStr )        \</div>
-<div class="line">    ),                                                                     \</div>
-<div class="line">    <span class="keywordtype">int</span>                                                                    \</div>
-<div class="line">)) )</div>
+<div class="line">  DPM_ATTR( System.Text.StringBuilder, MarshalAs( UnmanagedType.LPStr ) ), \</div>
+<div class="line">  int)) )</div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="ansci__string_8hpp_source.html">ansci_string.hpp</a> の <a class="el" href="ansci__string_8hpp_source.html#l00058">58</a> 行目に定義があります。</p>
 
@@ -353,7 +349,7 @@ $(function(){initNavTree('ansci__string_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">( (<a class="code hl_define" href="#a42c99a7946bdc661943df8b074a6e600">DPM_ANSI_STRING_ENTRY_GENERATE_CPP_CLASS_BODY</a>)( NAME ) )</div>
-<div class="ttc" id="aansci__string_8hpp_html_a42c99a7946bdc661943df8b074a6e600"><div class="ttname"><a href="#a42c99a7946bdc661943df8b074a6e600">DPM_ANSI_STRING_ENTRY_GENERATE_CPP_CLASS_BODY</a></div><div class="ttdeci">#define DPM_ANSI_STRING_ENTRY_GENERATE_CPP_CLASS_BODY(GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="ansci__string_8hpp_source.html#l00068">ansci_string.hpp:68</a></div></div>
+<div class="ttc" id="aansci__string_8hpp_html_a42c99a7946bdc661943df8b074a6e600"><div class="ttname"><a href="#a42c99a7946bdc661943df8b074a6e600">DPM_ANSI_STRING_ENTRY_GENERATE_CPP_CLASS_BODY</a></div><div class="ttdeci">#define DPM_ANSI_STRING_ENTRY_GENERATE_CPP_CLASS_BODY(GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="ansci__string_8hpp_source.html#l00065">ansci_string.hpp:65</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="ansci__string_8hpp_source.html">ansci_string.hpp</a> の <a class="el" href="ansci__string_8hpp_source.html#l00017">17</a> 行目に定義があります。</p>
 
@@ -374,7 +370,7 @@ $(function(){initNavTree('ansci__string_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">( (<a class="code hl_define" href="#ade284895c8558a79872b931084295e0b">DPM_ANSI_STRING_ENTRY_GENERATE_CPP_CLASS_AFTER</a>)( NAME ) )</div>
-<div class="ttc" id="aansci__string_8hpp_html_ade284895c8558a79872b931084295e0b"><div class="ttname"><a href="#ade284895c8558a79872b931084295e0b">DPM_ANSI_STRING_ENTRY_GENERATE_CPP_CLASS_AFTER</a></div><div class="ttdeci">#define DPM_ANSI_STRING_ENTRY_GENERATE_CPP_CLASS_AFTER(GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="ansci__string_8hpp_source.html#l00077">ansci_string.hpp:77</a></div></div>
+<div class="ttc" id="aansci__string_8hpp_html_ade284895c8558a79872b931084295e0b"><div class="ttname"><a href="#ade284895c8558a79872b931084295e0b">DPM_ANSI_STRING_ENTRY_GENERATE_CPP_CLASS_AFTER</a></div><div class="ttdeci">#define DPM_ANSI_STRING_ENTRY_GENERATE_CPP_CLASS_AFTER(GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="ansci__string_8hpp_source.html#l00074">ansci_string.hpp:74</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="ansci__string_8hpp_source.html">ansci_string.hpp</a> の <a class="el" href="ansci__string_8hpp_source.html#l00023">23</a> 行目に定義があります。</p>
 
@@ -395,7 +391,7 @@ $(function(){initNavTree('ansci__string_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">( (<a class="code hl_define" href="#a364d7e6c44cc4ac7d5b10f295e1fb5f0">DPM_ANSI_STRING_ENTRY_GENERATE_CSHARP_CLASS_BODY</a>)( NAME ) )</div>
-<div class="ttc" id="aansci__string_8hpp_html_a364d7e6c44cc4ac7d5b10f295e1fb5f0"><div class="ttname"><a href="#a364d7e6c44cc4ac7d5b10f295e1fb5f0">DPM_ANSI_STRING_ENTRY_GENERATE_CSHARP_CLASS_BODY</a></div><div class="ttdeci">#define DPM_ANSI_STRING_ENTRY_GENERATE_CSHARP_CLASS_BODY( GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="ansci__string_8hpp_source.html#l00096">ansci_string.hpp:96</a></div></div>
+<div class="ttc" id="aansci__string_8hpp_html_a364d7e6c44cc4ac7d5b10f295e1fb5f0"><div class="ttname"><a href="#a364d7e6c44cc4ac7d5b10f295e1fb5f0">DPM_ANSI_STRING_ENTRY_GENERATE_CSHARP_CLASS_BODY</a></div><div class="ttdeci">#define DPM_ANSI_STRING_ENTRY_GENERATE_CSHARP_CLASS_BODY( GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="ansci__string_8hpp_source.html#l00091">ansci_string.hpp:91</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="ansci__string_8hpp_source.html">ansci_string.hpp</a> の <a class="el" href="ansci__string_8hpp_source.html#l00029">29</a> 行目に定義があります。</p>
 
@@ -435,7 +431,7 @@ $(function(){initNavTree('ansci__string_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">( (<a class="code hl_define" href="#a0460cfd2b62cff491fa010f603b7d3ad">DPM_ANSI_STRING_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR</a>)( NAME ) )</div>
-<div class="ttc" id="aansci__string_8hpp_html_a0460cfd2b62cff491fa010f603b7d3ad"><div class="ttname"><a href="#a0460cfd2b62cff491fa010f603b7d3ad">DPM_ANSI_STRING_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR</a></div><div class="ttdeci">#define DPM_ANSI_STRING_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR( GM_SEQS, CLAS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="ansci__string_8hpp_source.html#l00121">ansci_string.hpp:121</a></div></div>
+<div class="ttc" id="aansci__string_8hpp_html_a0460cfd2b62cff491fa010f603b7d3ad"><div class="ttname"><a href="#a0460cfd2b62cff491fa010f603b7d3ad">DPM_ANSI_STRING_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR</a></div><div class="ttdeci">#define DPM_ANSI_STRING_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR( GM_SEQS, CLAS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="ansci__string_8hpp_source.html#l00114">ansci_string.hpp:114</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="ansci__string_8hpp_source.html">ansci_string.hpp</a> の <a class="el" href="ansci__string_8hpp_source.html#l00044">44</a> 行目に定義があります。</p>
 
@@ -456,7 +452,7 @@ $(function(){initNavTree('ansci__string_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">( (<a class="code hl_define" href="#ace962cf6cf92d9279456cb0ddae9ae52">DPM_ANSI_STRING_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY</a>)( NAME ) )</div>
-<div class="ttc" id="aansci__string_8hpp_html_ace962cf6cf92d9279456cb0ddae9ae52"><div class="ttname"><a href="#ace962cf6cf92d9279456cb0ddae9ae52">DPM_ANSI_STRING_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY</a></div><div class="ttdeci">#define DPM_ANSI_STRING_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY( GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="ansci__string_8hpp_source.html#l00114">ansci_string.hpp:114</a></div></div>
+<div class="ttc" id="aansci__string_8hpp_html_ace962cf6cf92d9279456cb0ddae9ae52"><div class="ttname"><a href="#ace962cf6cf92d9279456cb0ddae9ae52">DPM_ANSI_STRING_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY</a></div><div class="ttdeci">#define DPM_ANSI_STRING_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY( GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="ansci__string_8hpp_source.html#l00108">ansci_string.hpp:108</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="ansci__string_8hpp_source.html">ansci_string.hpp</a> の <a class="el" href="ansci__string_8hpp_source.html#l00039">39</a> 行目に定義があります。</p>
 

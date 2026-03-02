@@ -105,37 +105,35 @@ $(function(){initNavTree('load___test_time_duration_entry_8cpp_source.html','','
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="comment">//  DPM_DEFINE_PRE_REGISTRATION_TYPE( AdditionalTestClass )</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    DPM_DLL_EXPORT <span class="keywordtype">void</span></div>
-<div class="foldopen" id="foldopen00014" data-start="{" data-end="}">
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="load___test_time_duration_entry_8cpp.html#a509e8849d94f662057f28ddb7f2b3b54">   14</a></span>    <a class="code hl_function" href="load___test_time_duration_entry_8cpp.html#a509e8849d94f662057f28ddb7f2b3b54">set_millisec_singleton_time_duration_entry</a>( <span class="keywordtype">int</span> m )</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keyword">auto</span>&amp; td = <a class="code hl_class" href="classdepicture__menu_1_1singleton.html">depicture_menu::singleton</a>&lt;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            depicture_menu::cs_binding::TestTimeDurationEntryRoot &gt;::</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>            get_instance( );</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        td.set_Time( std::chrono::milliseconds( m ) );</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    }</div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="load___test_time_duration_entry_8cpp.html#a509e8849d94f662057f28ddb7f2b3b54">   13</a></span>    DPM_DLL_EXPORT <span class="keywordtype">void</span> <a class="code hl_function" href="load___test_time_duration_entry_8cpp.html#a509e8849d94f662057f28ddb7f2b3b54">set_millisec_singleton_time_duration_entry</a>( <span class="keywordtype">int</span> m )</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keyword">auto</span>&amp; td = <a class="code hl_class" href="classdepicture__menu_1_1singleton.html">depicture_menu::singleton</a>&lt;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>          depicture_menu::cs_binding::TestTimeDurationEntryRoot &gt;::</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>          get_instance( );</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        td.set_Time( std::chrono::milliseconds( m ) );</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    }</div>
 </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    DPM_DLL_EXPORT <span class="keywordtype">void</span></div>
-<div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="load___test_time_duration_entry_8cpp.html#a4b94a973f66ffa7709e97e4acfeb57cf">   24</a></span>    <a class="code hl_function" href="load___test_time_duration_entry_8cpp.html#a4b94a973f66ffa7709e97e4acfeb57cf">set_millisec_time_duration_entry</a>( <span class="keywordtype">int</span> m )</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keyword">auto</span>&amp; td = <a class="code hl_class" href="classdepicture__menu_1_1singleton.html">depicture_menu::singleton</a>&lt;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            depicture_menu::cs_binding::TestTimeDurationEntryRoot &gt;::</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            get_instance( );</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        td.Child( ).set_Time( std::chrono::milliseconds( m ) );</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="load___test_time_duration_entry_8cpp.html#a4b94a973f66ffa7709e97e4acfeb57cf">   22</a></span>    DPM_DLL_EXPORT <span class="keywordtype">void</span> <a class="code hl_function" href="load___test_time_duration_entry_8cpp.html#a4b94a973f66ffa7709e97e4acfeb57cf">set_millisec_time_duration_entry</a>( <span class="keywordtype">int</span> m )</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keyword">auto</span>&amp; td = <a class="code hl_class" href="classdepicture__menu_1_1singleton.html">depicture_menu::singleton</a>&lt;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>          depicture_menu::cs_binding::TestTimeDurationEntryRoot &gt;::</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>          get_instance( );</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        td.Child( ).set_Time( std::chrono::milliseconds( m ) );</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
 </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}</div>
 <div class="ttc" id="a_test_time_duration_entry_8hpp_html"><div class="ttname"><a href="_test_time_duration_entry_8hpp.html">TestTimeDurationEntry.hpp</a></div></div>
-<div class="ttc" id="aclassdepicture__menu_1_1singleton_html"><div class="ttname"><a href="classdepicture__menu_1_1singleton.html">depicture_menu::singleton</a></div><div class="ttdef"><b>Definition</b> <a href="singleton_8hpp_source.html#l00033">singleton.hpp:34</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1singleton_html"><div class="ttname"><a href="classdepicture__menu_1_1singleton.html">depicture_menu::singleton</a></div><div class="ttdef"><b>Definition</b> <a href="singleton_8hpp_source.html#l00034">singleton.hpp:35</a></div></div>
 <div class="ttc" id="acs__binding__test__dll_8hpp_html"><div class="ttname"><a href="cs__binding__test__dll_8hpp.html">cs_binding_test_dll.hpp</a></div></div>
-<div class="ttc" id="acs__binding__test__dll_8hpp_html_a1e354b9323de186c90fe28a47e134d0a"><div class="ttname"><a href="cs__binding__test__dll_8hpp.html#a1e354b9323de186c90fe28a47e134d0a">DPM_CLASS_LOADER_DLL</a></div><div class="ttdeci">#define DPM_CLASS_LOADER_DLL(LOAD_CLASS_NAME)</div><div class="ttdef"><b>Definition</b> <a href="cs__binding__test__dll_8hpp_source.html#l00048">cs_binding_test_dll.hpp:48</a></div></div>
+<div class="ttc" id="acs__binding__test__dll_8hpp_html_a1e354b9323de186c90fe28a47e134d0a"><div class="ttname"><a href="cs__binding__test__dll_8hpp.html#a1e354b9323de186c90fe28a47e134d0a">DPM_CLASS_LOADER_DLL</a></div><div class="ttdeci">#define DPM_CLASS_LOADER_DLL(LOAD_CLASS_NAME)</div><div class="ttdef"><b>Definition</b> <a href="cs__binding__test__dll_8hpp_source.html#l00046">cs_binding_test_dll.hpp:46</a></div></div>
 <div class="ttc" id="adefine__cs__bind__type_8hpp_html"><div class="ttname"><a href="define__cs__bind__type_8hpp.html">define_cs_bind_type.hpp</a></div></div>
-<div class="ttc" id="aload___test_time_duration_entry_8cpp_html_a4b94a973f66ffa7709e97e4acfeb57cf"><div class="ttname"><a href="load___test_time_duration_entry_8cpp.html#a4b94a973f66ffa7709e97e4acfeb57cf">set_millisec_time_duration_entry</a></div><div class="ttdeci">DPM_DLL_EXPORT void set_millisec_time_duration_entry(int m)</div><div class="ttdef"><b>Definition</b> <a href="#l00024">load_TestTimeDurationEntry.cpp:24</a></div></div>
-<div class="ttc" id="aload___test_time_duration_entry_8cpp_html_a509e8849d94f662057f28ddb7f2b3b54"><div class="ttname"><a href="load___test_time_duration_entry_8cpp.html#a509e8849d94f662057f28ddb7f2b3b54">set_millisec_singleton_time_duration_entry</a></div><div class="ttdeci">DPM_DLL_EXPORT void set_millisec_singleton_time_duration_entry(int m)</div><div class="ttdef"><b>Definition</b> <a href="#l00014">load_TestTimeDurationEntry.cpp:14</a></div></div>
+<div class="ttc" id="aload___test_time_duration_entry_8cpp_html_a4b94a973f66ffa7709e97e4acfeb57cf"><div class="ttname"><a href="load___test_time_duration_entry_8cpp.html#a4b94a973f66ffa7709e97e4acfeb57cf">set_millisec_time_duration_entry</a></div><div class="ttdeci">DPM_DLL_EXPORT void set_millisec_time_duration_entry(int m)</div><div class="ttdef"><b>Definition</b> <a href="#l00022">load_TestTimeDurationEntry.cpp:22</a></div></div>
+<div class="ttc" id="aload___test_time_duration_entry_8cpp_html_a509e8849d94f662057f28ddb7f2b3b54"><div class="ttname"><a href="load___test_time_duration_entry_8cpp.html#a509e8849d94f662057f28ddb7f2b3b54">set_millisec_singleton_time_duration_entry</a></div><div class="ttdeci">DPM_DLL_EXPORT void set_millisec_singleton_time_duration_entry(int m)</div><div class="ttdef"><b>Definition</b> <a href="#l00013">load_TestTimeDurationEntry.cpp:13</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

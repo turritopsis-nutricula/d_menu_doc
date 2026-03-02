@@ -93,63 +93,78 @@ $(function(){initNavTree('buildin__command__parameter_8hpp_source.html','',''); 
   <div class="headertitle"><div class="title">buildin_command_parameter.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="buildin__command__parameter_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef SRC_CORE_DOMAIN_MODEL_COMMAND_BUILDIN_BUILDIN_COMMAND_PARAMETER_HPP_</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define SRC_CORE_DOMAIN_MODEL_COMMAND_BUILDIN_BUILDIN_COMMAND_PARAMETER_HPP_</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="command__kind_8hpp.html">core/domain/model/command/command_kind.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="common__command__kind_8hpp.html">core/domain/model/command/common_command_kind.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="parameter_8hpp.html">core/domain/model/command/parameter.hpp</a>&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1domain_1_1commands.html">depicture_menu::domain::commands</a></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
+<a href="buildin__command__parameter_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/** @file buildin_command_parameter.hpp</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * @date 2026-03-02 21:47:25 +0900</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#ifndef SRC_CORE_DOMAIN_MODEL_COMMAND_BUILDIN_BUILDIN_COMMAND_PARAMETER_HPP_</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#define SRC_CORE_DOMAIN_MODEL_COMMAND_BUILDIN_BUILDIN_COMMAND_PARAMETER_HPP_</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="command__kind_8hpp.html">core/domain/model/command/command_kind.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="common__command__kind_8hpp.html">core/domain/model/command/common_command_kind.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="parameter_8hpp.html">core/domain/model/command/parameter.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="foldopen" id="foldopen00011" data-start="{" data-end="}">
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin.html">   11</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin.html">buildin</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1domain_1_1commands.html">depicture_menu::domain::commands</a></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span> T &gt;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">// commands::parameter_pack</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin.html#afc928fe71373e214fd130cc880076628">   15</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin.html#afc928fe71373e214fd130cc880076628">get_parameters</a>( T <span class="keyword">const</span>&amp; );</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span> T &gt;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// std::wstring</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin.html#a7bc2905bf6459e6368e3e0ac21805104">   19</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin.html#a7bc2905bf6459e6368e3e0ac21805104">get_buildin_action_name</a>( T <span class="keyword">const</span>&amp; s );</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="}">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin.html">   14</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin.html">buildin</a></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// commands::parameter_pack</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keywordtype">void</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin.html#afc928fe71373e214fd130cc880076628">   19</a></span><a class="code hl_function" href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin.html#afc928fe71373e214fd130cc880076628">get_parameters</a>( T <span class="keyword">const</span>&amp; );</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// std::wstring</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin.html#ae083f7b24bcbc4d898efb022078ad419">   23</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin.html#ae083f7b24bcbc4d898efb022078ad419">get_buildin_command_name</a>( T <span class="keyword">const</span>&amp; s );</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span> T &gt;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// commands::common_command_kind</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin.html#a8b9b16196ea735fe3ca6cb836b31fe7b">   27</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin.html#a8b9b16196ea735fe3ca6cb836b31fe7b">get_command_kind</a>( T <span class="keyword">const</span>&amp; );</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin_1_1concepts.html">   30</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin_1_1concepts.html">concepts</a></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">template</span> &lt; <span class="keyword">typename</span> T &gt;</div>
-<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="conceptdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1concepts_1_1buildin__command__parametarize.html">   34</a></span><span class="keyword">concept </span><a class="code hl_concept" href="conceptdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1concepts_1_1buildin__command__parametarize.html">buildin_command_parametarize</a> = <span class="keyword">requires</span>( T t ) {</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    { t.get_parameters( ) } -&gt; std::same_as&lt; commands::parameter_pack &gt;;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    { t.get_buildin_action_name( ) } -&gt; std::same_as&lt; std::wstring &gt;;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    { t.get_buildin_command_name( ) } -&gt; std::same_as&lt; std::wstring &gt;;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        t.get_application_command_kind( )</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    } -&gt; std::same_as&lt; commands::command_kind &gt;;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    { t.get_command_kind( ) } -&gt; std::same_as&lt; commands::common_command_kind &gt;;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>};</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keywordtype">void</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin.html#a7bc2905bf6459e6368e3e0ac21805104">   24</a></span><a class="code hl_function" href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin.html#a7bc2905bf6459e6368e3e0ac21805104">get_buildin_action_name</a>( T <span class="keyword">const</span>&amp; s );</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">// std::wstring</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keywordtype">void</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin.html#ae083f7b24bcbc4d898efb022078ad419">   29</a></span><a class="code hl_function" href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin.html#ae083f7b24bcbc4d898efb022078ad419">get_buildin_command_name</a>( T <span class="keyword">const</span>&amp; s );</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">// commands::common_command_kind</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keywordtype">void</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin.html#a8b9b16196ea735fe3ca6cb836b31fe7b">   34</a></span><a class="code hl_function" href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin.html#a8b9b16196ea735fe3ca6cb836b31fe7b">get_command_kind</a>( T <span class="keyword">const</span>&amp; );</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="}">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin_1_1concepts.html">   37</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin_1_1concepts.html">concepts</a></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">//----------------------------------------------------------------------//</span><span class="comment"></span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"> * @brief ビルドインユーザーコマンド生成パラメータConcept</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="foldopen" id="foldopen00046" data-start="{" data-end="}">
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="conceptdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1concepts_1_1buildin__command__parametarize.html">   46</a></span><span class="keyword">concept </span><a class="code hl_concept" href="conceptdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1concepts_1_1buildin__command__parametarize.html">buildin_command_parametarize</a> =</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keyword">requires</span>( T t ) {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      { t.get_parameters( ) } -&gt; std::same_as&lt; commands::parameter_pack &gt;;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      { t.get_buildin_action_name( ) } -&gt; std::same_as&lt; std::wstring &gt;;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      { t.get_buildin_command_name( ) } -&gt; std::same_as&lt; std::wstring &gt;;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>      {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>          t.get_application_command_kind( )</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      } -&gt; std::same_as&lt; commands::command_kind &gt;;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>          t.get_command_kind( )</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      } -&gt; std::same_as&lt; commands::common_command_kind &gt;;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  };</div>
 </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}    <span class="comment">// namespace concepts</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}    <span class="comment">// namespace concepts</span></div>
 </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}    <span class="comment">// namespace buildin</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}    <span class="comment">// namespace buildin</span></div>
 </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}    <span class="comment">// namespace depicture_menu::domain::commands</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_CORE_DOMAIN_MODEL_COMMAND_BUILDIN_BUILDIN_COMMAND_PARAMETER_HPP_</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}    <span class="comment">// namespace depicture_menu::domain::commands</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_CORE_DOMAIN_MODEL_COMMAND_BUILDIN_BUILDIN_COMMAND_PARAMETER_HPP_</span></div>
 <div class="ttc" id="acommand__kind_8hpp_html"><div class="ttname"><a href="command__kind_8hpp.html">command_kind.hpp</a></div></div>
 <div class="ttc" id="acommon__command__kind_8hpp_html"><div class="ttname"><a href="common__command__kind_8hpp.html">common_command_kind.hpp</a></div></div>
-<div class="ttc" id="aconceptdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1concepts_1_1buildin__command__parametarize_html"><div class="ttname"><a href="conceptdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1concepts_1_1buildin__command__parametarize.html">depicture_menu::domain::commands::buildin::concepts::buildin_command_parametarize</a></div><div class="ttdef"><b>Definition</b> <a href="#l00034">buildin_command_parameter.hpp:34</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1commands_1_1buildin_1_1concepts_html"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin_1_1concepts.html">depicture_menu::domain::commands::buildin::concepts</a></div><div class="ttdef"><b>Definition</b> <a href="#l00030">buildin_command_parameter.hpp:31</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1commands_1_1buildin_html"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin.html">depicture_menu::domain::commands::buildin</a></div><div class="ttdef"><b>Definition</b> <a href="#l00011">buildin_command_parameter.hpp:12</a></div></div>
+<div class="ttc" id="aconceptdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1concepts_1_1buildin__command__parametarize_html"><div class="ttname"><a href="conceptdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1concepts_1_1buildin__command__parametarize.html">depicture_menu::domain::commands::buildin::concepts::buildin_command_parametarize</a></div><div class="ttdoc">ビルドインユーザーコマンド生成パラメータConcept</div><div class="ttdef"><b>Definition</b> <a href="#l00046">buildin_command_parameter.hpp:46</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1commands_1_1buildin_1_1concepts_html"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin_1_1concepts.html">depicture_menu::domain::commands::buildin::concepts</a></div><div class="ttdef"><b>Definition</b> <a href="#l00037">buildin_command_parameter.hpp:38</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1commands_1_1buildin_html"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin.html">depicture_menu::domain::commands::buildin</a></div><div class="ttdef"><b>Definition</b> <a href="#l00014">buildin_command_parameter.hpp:15</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1commands_1_1buildin_html_a7bc2905bf6459e6368e3e0ac21805104"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin.html#a7bc2905bf6459e6368e3e0ac21805104">depicture_menu::domain::commands::buildin::get_buildin_action_name</a></div><div class="ttdeci">void get_buildin_action_name(T const &amp;s)</div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1commands_1_1buildin_html_a8b9b16196ea735fe3ca6cb836b31fe7b"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin.html#a8b9b16196ea735fe3ca6cb836b31fe7b">depicture_menu::domain::commands::buildin::get_command_kind</a></div><div class="ttdeci">void get_command_kind(T const &amp;)</div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1commands_1_1buildin_html_ae083f7b24bcbc4d898efb022078ad419"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1commands_1_1buildin.html#ae083f7b24bcbc4d898efb022078ad419">depicture_menu::domain::commands::buildin::get_buildin_command_name</a></div><div class="ttdeci">void get_buildin_command_name(T const &amp;s)</div></div>

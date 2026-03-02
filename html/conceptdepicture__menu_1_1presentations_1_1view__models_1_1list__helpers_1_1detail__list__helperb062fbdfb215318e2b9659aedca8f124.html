@@ -97,15 +97,16 @@ $(function(){initNavTree('conceptdepicture__menu_1_1presentations_1_1view__model
 <p><code>#include &lt;<a class="el" href="list__helper_8hpp_source.html">list_helper.hpp</a>&gt;</code></p>
 <h2 id="header-conceptdef" class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt; <span class="keyword">typename</span> A &gt;</div>
-<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptdepicture__menu_1_1presentations_1_1view__models_1_1list__helpers_1_1detail__list__helperb062fbdfb215318e2b9659aedca8f124.html">id_accessable_view_range</a> = <span class="keyword">requires</span>( std::ranges::range_value_t&lt; A &gt;::element_type v ) {</div>
-<div class="line">          <span class="keyword">requires</span> std::ranges::range&lt; A &gt;;</div>
-<div class="line">          <span class="keyword">requires</span> <a class="code hl_concept" href="conceptdepicture__menu_1_1presentations_1_1view__models_1_1list__helpers_1_1detail__list__helper_1_1concepts_1_1id__accessable.html">id_accessable</a>&lt; <span class="keyword">decltype</span>( v ) &gt;;</div>
-<div class="line">      }</div>
+<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptdepicture__menu_1_1presentations_1_1view__models_1_1list__helpers_1_1detail__list__helperb062fbdfb215318e2b9659aedca8f124.html">id_accessable_view_range</a> =</div>
+<div class="line">  <span class="keyword">requires</span>( std::ranges::range_value_t&lt; A &gt;::element_type v ) {</div>
+<div class="line">      <span class="keyword">requires</span> std::ranges::range&lt; A &gt;;</div>
+<div class="line">      <span class="keyword">requires</span> <a class="code hl_concept" href="conceptdepicture__menu_1_1presentations_1_1view__models_1_1list__helpers_1_1detail__list__helper_1_1concepts_1_1id__accessable.html">id_accessable</a>&lt; <span class="keyword">decltype</span>( v ) &gt;;</div>
+<div class="line">  }</div>
 <div class="ttc" id="aconceptdepicture__menu_1_1presentations_1_1view__models_1_1list__helpers_1_1detail__list__helper_1_1concepts_1_1id__accessable_html"><div class="ttname"><a href="conceptdepicture__menu_1_1presentations_1_1view__models_1_1list__helpers_1_1detail__list__helper_1_1concepts_1_1id__accessable.html">depicture_menu::presentations::view_models::list_helpers::detail_list_helper::concepts::id_accessable</a></div><div class="ttdef"><b>Definition</b> <a href="list__helper_8hpp_source.html#l00024">list_helper.hpp:24</a></div></div>
-<div class="ttc" id="aconceptdepicture__menu_1_1presentations_1_1view__models_1_1list__helpers_1_1detail__list__helperb062fbdfb215318e2b9659aedca8f124_html"><div class="ttname"><a href="conceptdepicture__menu_1_1presentations_1_1view__models_1_1list__helpers_1_1detail__list__helperb062fbdfb215318e2b9659aedca8f124.html">depicture_menu::presentations::view_models::list_helpers::detail_list_helper::concepts::id_accessable_view_range</a></div><div class="ttdef"><b>Definition</b> <a href="list__helper_8hpp_source.html#l00035">list_helper.hpp:36</a></div></div>
+<div class="ttc" id="aconceptdepicture__menu_1_1presentations_1_1view__models_1_1list__helpers_1_1detail__list__helperb062fbdfb215318e2b9659aedca8f124_html"><div class="ttname"><a href="conceptdepicture__menu_1_1presentations_1_1view__models_1_1list__helpers_1_1detail__list__helperb062fbdfb215318e2b9659aedca8f124.html">depicture_menu::presentations::view_models::list_helpers::detail_list_helper::concepts::id_accessable_view_range</a></div><div class="ttdef"><b>Definition</b> <a href="list__helper_8hpp_source.html#l00033">list_helper.hpp:33</a></div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
 <div class="textblock">
-<p class="definition"> <a class="el" href="list__helper_8hpp_source.html">list_helper.hpp</a> の <a class="el" href="list__helper_8hpp_source.html#l00035">35</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="list__helper_8hpp_source.html">list_helper.hpp</a> の <a class="el" href="list__helper_8hpp_source.html#l00033">33</a> 行目に定義があります。</p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

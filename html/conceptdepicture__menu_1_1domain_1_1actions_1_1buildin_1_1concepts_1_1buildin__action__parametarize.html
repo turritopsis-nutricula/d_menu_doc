@@ -97,24 +97,19 @@ $(function(){initNavTree('conceptdepicture__menu_1_1domain_1_1actions_1_1buildin
 <p><code>#include &lt;<a class="el" href="buildin__action__parameter_8hpp_source.html">buildin_action_parameter.hpp</a>&gt;</code></p>
 <h2 id="header-conceptdef" class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
-<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptdepicture__menu_1_1domain_1_1actions_1_1buildin_1_1concepts_1_1buildin__action__parametarize.html">buildin_action_parametarize</a> = <span class="keyword">requires</span>( T t ) {</div>
-<div class="line">    {</div>
-<div class="line">        t.get_parameters( )</div>
-<div class="line">    } -&gt; std::same_as&lt; commands::parameter_pack &gt;;</div>
-<div class="line">    {</div>
-<div class="line">        t.get_buildin_action_name( )</div>
-<div class="line">    } -&gt; std::same_as&lt; std::wstring &gt;;</div>
-<div class="line">    {</div>
-<div class="line">        t.get_buildin_command_name( )</div>
-<div class="line">    } -&gt; std::same_as&lt; std::wstring &gt;;</div>
-<div class="line">    {</div>
-<div class="line">        t.get_command_kind( )</div>
-<div class="line">    } -&gt; std::same_as&lt; commands::common_command_kind &gt;;</div>
-<div class="line">}</div>
-<div class="ttc" id="aconceptdepicture__menu_1_1domain_1_1actions_1_1buildin_1_1concepts_1_1buildin__action__parametarize_html"><div class="ttname"><a href="conceptdepicture__menu_1_1domain_1_1actions_1_1buildin_1_1concepts_1_1buildin__action__parametarize.html">depicture_menu::domain::actions::buildin::concepts::buildin_action_parametarize</a></div><div class="ttdef"><b>Definition</b> <a href="buildin__action__parameter_8hpp_source.html#l00034">buildin_action_parameter.hpp:34</a></div></div>
+<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptdepicture__menu_1_1domain_1_1actions_1_1buildin_1_1concepts_1_1buildin__action__parametarize.html">buildin_action_parametarize</a> =</div>
+<div class="line">  <span class="keyword">requires</span>( T t ) {</div>
+<div class="line">      { t.get_parameters( ) } -&gt; std::same_as&lt; commands::parameter_pack &gt;;</div>
+<div class="line">      { t.get_buildin_action_name( ) } -&gt; std::same_as&lt; std::wstring &gt;;</div>
+<div class="line">      { t.get_buildin_command_name( ) } -&gt; std::same_as&lt; std::wstring &gt;;</div>
+<div class="line">      {</div>
+<div class="line">          t.get_command_kind( )</div>
+<div class="line">      } -&gt; std::same_as&lt; commands::common_command_kind &gt;;</div>
+<div class="line">  }</div>
+<div class="ttc" id="aconceptdepicture__menu_1_1domain_1_1actions_1_1buildin_1_1concepts_1_1buildin__action__parametarize_html"><div class="ttname"><a href="conceptdepicture__menu_1_1domain_1_1actions_1_1buildin_1_1concepts_1_1buildin__action__parametarize.html">depicture_menu::domain::actions::buildin::concepts::buildin_action_parametarize</a></div><div class="ttdef"><b>Definition</b> <a href="buildin__action__parameter_8hpp_source.html#l00038">buildin_action_parameter.hpp:38</a></div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
 <div class="textblock">
-<p class="definition"> <a class="el" href="buildin__action__parameter_8hpp_source.html">buildin_action_parameter.hpp</a> の <a class="el" href="buildin__action__parameter_8hpp_source.html#l00034">34</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="buildin__action__parameter_8hpp_source.html">buildin_action_parameter.hpp</a> の <a class="el" href="buildin__action__parameter_8hpp_source.html#l00038">38</a> 行目に定義があります。</p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

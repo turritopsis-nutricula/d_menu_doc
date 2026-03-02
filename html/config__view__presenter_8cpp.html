@@ -99,6 +99,10 @@ $(function(){initNavTree('config__view__presenter_8cpp.html','',''); });
 <code>#include &quot;<a class="el" href="_core_model_8hpp_source.html">core/cs_binding/CoreModel.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="config__view__operations_8hpp_source.html">view_model_operation/config_view_operations.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="config__view__structure__define_8hpp_source.html">view_model_operation/config_view_structure_define.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gui__dispatch_8hpp_source.html">core/application/gui_dispatch.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="visiter__base_8hpp_source.html">utility/visiter_base.hpp</a>&quot;</code><br />
+<code>#include &lt;ranges&gt;</code><br />
+<code>#include &lt;variant&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 config_view_presenter.cpp の依存先関係図:</div>
 <div class="dyncontent">
@@ -110,6 +114,7 @@ config_view_presenter.cpp の依存先関係図:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 クラス</h2></td></tr>
 <tr class="memitem:detail_3A_3Aoperators_3A_3Aoperator_5Fbase_3C_20CRTP_20_3E" id="r_detail_3A_3Aoperators_3A_3Aoperator_5Fbase_3C_20CRTP_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdetail_1_1operators_1_1operator__base.html">detail::operators::operator_base&lt; CRTP &gt;</a></td></tr>
+<tr class="memitem:visiter_5Fbase_3C_20T_2C_20Args_20_3E" id="r_visiter_5Fbase_3C_20T_2C_20Args_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structvisiter__base.html">visiter_base&lt; T, Args &gt;</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 名前空間</h2></td></tr>
@@ -130,24 +135,26 @@ Concepts</h2></td></tr>
 型定義</h2></td></tr>
 <tr class="memitem:a6e8f197205427704875f19d471273b34" id="r_a6e8f197205427704875f19d471273b34"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedetail.html#a6e8f197205427704875f19d471273b34">detail::action_query</a> = <a class="el" href="structdepicture__menu_1_1usecase_1_1query__base.html">usecase::query_base</a>&lt; <a class="el" href="classdepicture__menu_1_1domain_1_1actions_1_1v2_1_1publisher.html">domain::actions::publisher</a> &gt;</td></tr>
 <tr class="memitem:af59d6a58d5e4f3d7bc0b2b308d218dc1" id="r_af59d6a58d5e4f3d7bc0b2b308d218dc1"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedetail.html#af59d6a58d5e4f3d7bc0b2b308d218dc1">detail::command_query</a> = <a class="el" href="structdepicture__menu_1_1usecase_1_1query__base.html">usecase::query_base</a>&lt; <a class="el" href="classdepicture__menu_1_1domain_1_1commands_1_1command.html">domain::commands::command</a> &gt;</td></tr>
-<tr class="memitem:a8b6b4293f507da0f54bda343acbacbe3" id="r_a8b6b4293f507da0f54bda343acbacbe3"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedetail_1_1operators.html#a8b6b4293f507da0f54bda343acbacbe3">detail::operators::view_id_accumulator_operator</a> = <a class="el" href="structdetail_1_1operators_1_1operator__base.html">operator_base</a>&lt; impls::view_id_accumulator_impl &gt;</td></tr>
-<tr class="memitem:ab4cb1dfb95bd5eff2bd7df051a1db71e" id="r_ab4cb1dfb95bd5eff2bd7df051a1db71e"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedetail_1_1operators.html#ab4cb1dfb95bd5eff2bd7df051a1db71e">detail::operators::menu_create_operator_t</a> = <a class="el" href="structdetail_1_1operators_1_1operator__base.html">operator_base</a>&lt; impls::menu_create_operator_impl &gt;</td></tr>
+<tr class="memitem:a1d0ae4bdff070bb9127c39248e08f8b2" id="r_a1d0ae4bdff070bb9127c39248e08f8b2"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedetail_1_1operators.html#a1d0ae4bdff070bb9127c39248e08f8b2">detail::operators::view_id_accumulator_operator</a></td></tr>
+<tr class="memitem:a027859647aff78d6b69b5f40499ff8c5" id="r_a027859647aff78d6b69b5f40499ff8c5"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedetail_1_1operators.html#a027859647aff78d6b69b5f40499ff8c5">detail::operators::menu_create_operator_t</a></td></tr>
 <tr class="memitem:af844a5db644c80bad0761c8e8227de54" id="r_af844a5db644c80bad0761c8e8227de54"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedetail_1_1operators.html#af844a5db644c80bad0761c8e8227de54">detail::operators::menu_operator_t</a> = <a class="el" href="structdetail_1_1operators_1_1operator__base.html">operator_base</a>&lt; impls::menu_operator_impl &gt;</td></tr>
 <tr class="memitem:af2e5f8971f205378afaf79c141c25691" id="r_af2e5f8971f205378afaf79c141c25691"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedetail_1_1operators.html#af2e5f8971f205378afaf79c141c25691">detail::operators::menu_erase_operator_t</a> = <a class="el" href="structdetail_1_1operators_1_1operator__base.html">operator_base</a>&lt; impls::menu_erase_operator_impl &gt;</td></tr>
-<tr class="memitem:a6f5706c5f02e3d490d920d0dc7adf612" id="r_a6f5706c5f02e3d490d920d0dc7adf612"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedetail_1_1operators.html#a6f5706c5f02e3d490d920d0dc7adf612">detail::operators::action_create_operator</a> = <a class="el" href="structdetail_1_1operators_1_1operator__base.html">operator_base</a>&lt; impls::action_create_operator_impl &gt;</td></tr>
-<tr class="memitem:a7183498031041efb013fd84c3e269fa1" id="r_a7183498031041efb013fd84c3e269fa1"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedetail_1_1operators.html#a7183498031041efb013fd84c3e269fa1">detail::operators::action_update_operator</a> = <a class="el" href="structdetail_1_1operators_1_1operator__base.html">operator_base</a>&lt; impls::action_sync_operator_impl &gt;</td></tr>
-<tr class="memitem:a983c26c516b1e7ccb1a1ebe97dfef22f" id="r_a983c26c516b1e7ccb1a1ebe97dfef22f"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedetail_1_1operators.html#a983c26c516b1e7ccb1a1ebe97dfef22f">detail::operators::action_erase_operator</a> = <a class="el" href="structdetail_1_1operators_1_1operator__base.html">operator_base</a>&lt; impls::action_erase_operator_impl &gt;</td></tr>
-<tr class="memitem:a19bf55dd53e70b7875c64bfbbba5b7db" id="r_a19bf55dd53e70b7875c64bfbbba5b7db"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedetail_1_1operators.html#a19bf55dd53e70b7875c64bfbbba5b7db">detail::operators::command_create_operator</a> = <a class="el" href="structdetail_1_1operators_1_1operator__base.html">operator_base</a>&lt; impls::command_create_operator_impl &gt;</td></tr>
-<tr class="memitem:aeb36a4895f1502036d0eb18be0696721" id="r_aeb36a4895f1502036d0eb18be0696721"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedetail_1_1operators.html#aeb36a4895f1502036d0eb18be0696721">detail::operators::command_update_operator</a> = <a class="el" href="structdetail_1_1operators_1_1operator__base.html">operator_base</a>&lt; impls::command_update_operator_impl &gt;</td></tr>
-<tr class="memitem:a61bba873ba7f709153308ae5bfa8c895" id="r_a61bba873ba7f709153308ae5bfa8c895"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedetail_1_1operators.html#a61bba873ba7f709153308ae5bfa8c895">detail::operators::command_erase_operator</a> = <a class="el" href="structdetail_1_1operators_1_1operator__base.html">operator_base</a>&lt; impls::command_erase_operator_impl &gt;</td></tr>
-<tr class="memitem:a0b5e864b5a6332708196bced0db083ce" id="r_a0b5e864b5a6332708196bced0db083ce"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedetail_1_1operators.html#a0b5e864b5a6332708196bced0db083ce">detail::operators::trigger_create_operator</a> = <a class="el" href="structdetail_1_1operators_1_1operator__base.html">operator_base</a>&lt; impls::trigger_create_operator_impl &gt;</td></tr>
+<tr class="memitem:abe1b20aee81fbe14999855e1826523b0" id="r_abe1b20aee81fbe14999855e1826523b0"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedetail_1_1operators.html#abe1b20aee81fbe14999855e1826523b0">detail::operators::action_create_operator</a></td></tr>
+<tr class="memitem:a87f9246953cd2731c802b1f54889c1e3" id="r_a87f9246953cd2731c802b1f54889c1e3"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedetail_1_1operators.html#a87f9246953cd2731c802b1f54889c1e3">detail::operators::action_update_operator</a></td></tr>
+<tr class="memitem:a57b5d1fb1b054389568c622d6b38a020" id="r_a57b5d1fb1b054389568c622d6b38a020"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedetail_1_1operators.html#a57b5d1fb1b054389568c622d6b38a020">detail::operators::action_erase_operator</a></td></tr>
+<tr class="memitem:ae710300de019e1d63bae6de0b80bb7f9" id="r_ae710300de019e1d63bae6de0b80bb7f9"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedetail_1_1operators.html#ae710300de019e1d63bae6de0b80bb7f9">detail::operators::command_create_operator</a></td></tr>
+<tr class="memitem:a69a5d519fd4d7c4cba36934cb9e1e269" id="r_a69a5d519fd4d7c4cba36934cb9e1e269"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedetail_1_1operators.html#a69a5d519fd4d7c4cba36934cb9e1e269">detail::operators::command_update_operator</a></td></tr>
+<tr class="memitem:abc7613f5099836272e5d2f855609e30a" id="r_abc7613f5099836272e5d2f855609e30a"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedetail_1_1operators.html#abc7613f5099836272e5d2f855609e30a">detail::operators::command_erase_operator</a></td></tr>
+<tr class="memitem:aaf470445b8b97b7e517fb4d2b8b99b8a" id="r_aaf470445b8b97b7e517fb4d2b8b99b8a"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedetail_1_1operators.html#aaf470445b8b97b7e517fb4d2b8b99b8a">detail::operators::trigger_create_operator</a></td></tr>
 <tr class="memitem:a287eff4db743758a97ded27bae2e1365" id="r_a287eff4db743758a97ded27bae2e1365"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedetail_1_1operators.html#a287eff4db743758a97ded27bae2e1365">detail::operators::trigger_operator</a> = <a class="el" href="structdetail_1_1operators_1_1operator__base.html">operator_base</a>&lt; impls::trigger_operator_impl &gt;</td></tr>
-<tr class="memitem:a417917b9ae2f6ae851f6623de655910f" id="r_a417917b9ae2f6ae851f6623de655910f"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedetail_1_1operators.html#a417917b9ae2f6ae851f6623de655910f">detail::operators::trigger_erase_operator</a> = <a class="el" href="structdetail_1_1operators_1_1operator__base.html">operator_base</a>&lt; impls::trigger_erase_operator_impl &gt;</td></tr>
+<tr class="memitem:a1784618ccec75906fff5b194d7281f2d" id="r_a1784618ccec75906fff5b194d7281f2d"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedetail_1_1operators.html#a1784618ccec75906fff5b194d7281f2d">detail::operators::trigger_erase_operator</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 関数</h2></td></tr>
 <tr class="memitem:a75c64765d139e3063258f666d3fca251" id="r_a75c64765d139e3063258f666d3fca251"><td class="memTemplParams" colspan="2">template&lt;typename... CSS&gt; </td></tr>
-<tr class="memitem:a75c64765d139e3063258f666d3fca251 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespacedetail_1_1id__buffer.html#a75c64765d139e3063258f666d3fca251">detail::id_buffer::buffer_transform</a> (<a class="el" href="structdepicture__menu_1_1presentations_1_1datas_1_1id__buffer__tuple.html">presentations::datas::id_buffer_tuple</a>&lt; CSS... &gt; const &amp;css, <a class="el" href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#a3d7f8835719d6833ed341473c6a81059">presentations::config_view_presenter::id_buffer_t</a> &amp;buf)</td></tr>
+<tr class="memitem:a75c64765d139e3063258f666d3fca251 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespacedetail_1_1id__buffer.html#a75c64765d139e3063258f666d3fca251">detail::id_buffer::buffer_transform</a> (<a class="el" href="structdepicture__menu_1_1presentations_1_1datas_1_1id__buffer__tuple.html">presentations::datas::id_buffer_tuple</a>&lt; CSS... &gt; const &amp;css, <a class="el" href="classdepicture__menu_1_1presentations_1_1config__view__presenter.html#a9b921bf202156c502129fa17aba77077">presentations::config_view_presenter::id_buffer_t</a> &amp;buf)</td></tr>
+<tr class="memitem:a7d91b3379b8077f6349cdd78f8ad2c56" id="r_a7d91b3379b8077f6349cdd78f8ad2c56"><td class="memTemplParams" colspan="2">template&lt;typename F&gt; </td></tr>
+<tr class="memitem:a7d91b3379b8077f6349cdd78f8ad2c56 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7d91b3379b8077f6349cdd78f8ad2c56">dispatch_gui</a> (F &amp;&amp;f)</td></tr>
 <tr class="memitem:a40c60f3376b1be380acd059cf3818763" id="r_a40c60f3376b1be380acd059cf3818763"><td class="memTemplParams" colspan="2">template&lt;typename Tag, typename... Tags&gt; </td></tr>
 <tr class="memitem:a40c60f3376b1be380acd059cf3818763 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespacedetail_1_1id__buffer.html#a40c60f3376b1be380acd059cf3818763">detail::id_buffer::add</a> (id_buffer_tuple&lt; Tags... &gt; &amp;t, boost::uuids::uuid const &amp;id)</td></tr>
 <tr class="memitem:ad551e32a3c0b04b6f45a1d71313b82bd" id="r_ad551e32a3c0b04b6f45a1d71313b82bd"><td class="memTemplParams" colspan="2">template&lt;typename Tag, typename... Tags&gt; </td></tr>
@@ -155,6 +162,42 @@ Concepts</h2></td></tr>
 <tr class="memitem:ad98701077096461aaae59c5a0d33b556" id="r_ad98701077096461aaae59c5a0d33b556"><td class="memTemplParams" colspan="2">template&lt;typename Tag, typename... Tags&gt; </td></tr>
 <tr class="memitem:ad98701077096461aaae59c5a0d33b556 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespacedetail_1_1id__buffer.html#ad98701077096461aaae59c5a0d33b556">detail::id_buffer::erase</a> (id_buffer_tuple&lt; Tags... &gt; &amp;t, boost::uuids::uuid const &amp;id)</td></tr>
 </table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="a7d91b3379b8077f6349cdd78f8ad2c56" name="a7d91b3379b8077f6349cdd78f8ad2c56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d91b3379b8077f6349cdd78f8ad2c56">&#9670;&#160;</a></span>dispatch_gui()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void dispatch_gui </td>
+          <td>(</td>
+          <td class="paramtype">F &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>f</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="config__view__presenter_8cpp_source.html">config_view_presenter.cpp</a> の <a class="el" href="config__view__presenter_8cpp_source.html#l00198">198</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="singleton_8hpp_source.html#l00037">depicture_menu::singleton&lt; detail_applications::gui_dispatch_impl &gt;::get_instance()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="config__view__presenter_8cpp_source.html#l00835">depicture_menu::presentations::config_view_presenter::operator()()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="config__view__presenter_8cpp_a7d91b3379b8077f6349cdd78f8ad2c56_cgraph.svg" width="327" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="config__view__presenter_8cpp_a7d91b3379b8077f6349cdd78f8ad2c56_icgraph.svg" width="352" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

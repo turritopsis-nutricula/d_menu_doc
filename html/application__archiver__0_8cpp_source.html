@@ -109,22 +109,21 @@ $(function(){initNavTree('application__archiver__0_8cpp_source.html','',''); });
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keywordtype">void</span></div>
 <div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1applications_1_1application__archiver.html#a1a3986f047fa5ae0df15ee9a9efd1cd2">   15</a></span><a class="code hl_function" href="classdepicture__menu_1_1applications_1_1application__archiver.html#a1a3986f047fa5ae0df15ee9a9efd1cd2">depicture_menu::applications::application_archiver::save_file</a>(</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    std::filesystem::path <span class="keyword">const</span>&amp; file</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword"></span>{</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    std::ofstream                of( file.c_str( ) );</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    boost::archive::xml_oarchive arc( of );</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">auto</span> v = <a class="code hl_function" href="namespacedepicture__menu_1_1applications.html#a1a83cc7219079a22026653e1d71774a6">applications::build_archive</a>( );</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    v.repository_to_buffer( );</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    arc &lt;&lt; boost::serialization::make_nvp( <span class="stringliteral">&quot;depicture_menu&quot;</span>, v );</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  std::filesystem::path <span class="keyword">const</span>&amp; file )<span class="keyword"> const</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    std::ofstream                of( file.c_str( ) );</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    boost::archive::xml_oarchive arc( of );</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">auto</span> v = <a class="code hl_function" href="namespacedepicture__menu_1_1applications.html#a1a83cc7219079a22026653e1d71774a6">applications::build_archive</a>( );</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    v.repository_to_buffer( );</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    arc &lt;&lt; boost::serialization::make_nvp( <span class="stringliteral">&quot;depicture_menu&quot;</span>, v );</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
 </div>
 <div class="ttc" id="aapplication__archiver_8hpp_html"><div class="ttname"><a href="application__archiver_8hpp.html">application_archiver.hpp</a></div></div>
 <div class="ttc" id="aarchiver__build_8hpp_html"><div class="ttname"><a href="archiver__build_8hpp.html">archiver_build.hpp</a></div></div>
 <div class="ttc" id="aclassdepicture__menu_1_1applications_1_1application__archiver_html_a1a3986f047fa5ae0df15ee9a9efd1cd2"><div class="ttname"><a href="classdepicture__menu_1_1applications_1_1application__archiver.html#a1a3986f047fa5ae0df15ee9a9efd1cd2">depicture_menu::applications::application_archiver::save_file</a></div><div class="ttdeci">void save_file(std::filesystem::path const &amp;file) const</div><div class="ttdef"><b>Definition</b> <a href="#l00015">application_archiver_0.cpp:15</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1applications_html_a1a83cc7219079a22026653e1d71774a6"><div class="ttname"><a href="namespacedepicture__menu_1_1applications.html#a1a83cc7219079a22026653e1d71774a6">depicture_menu::applications::build_archive</a></div><div class="ttdeci">archiver_pack_t build_archive()</div><div class="ttdef"><b>Definition</b> <a href="archiver__build_8cpp_source.html#l00028">archiver_build.cpp:28</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1applications_html_a1a83cc7219079a22026653e1d71774a6"><div class="ttname"><a href="namespacedepicture__menu_1_1applications.html#a1a83cc7219079a22026653e1d71774a6">depicture_menu::applications::build_archive</a></div><div class="ttdeci">archiver_pack_t build_archive()</div><div class="ttdef"><b>Definition</b> <a href="archiver__build_8cpp_source.html#l00027">archiver_build.cpp:27</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

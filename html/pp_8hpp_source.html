@@ -109,16 +109,15 @@ $(function(){initNavTree('pp_8hpp_source.html','',''); });
 <div class="foldopen" id="foldopen00014" data-start="" data-end="">
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="pp_8hpp.html#abebdf9abf6a76a171b3bb08b779e5c09">   14</a></span><span class="preprocessor">#define DPM_PP_SEQ_TO_ENUM_AUX( SEQ )                                          \</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">    BOOST_PP_SEQ_ENUM( BOOST_PP_SEQ_FOR_EACH(                                  \</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">        DPM_PP_SEQ_TO_ENUM_OP,                                                 \</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">        _,                                                                     \</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">        BOOST_PP_SEQ_TRANSFORM( DPM_PP_SEQ_TO_ENUM_OP2, _, SEQ )               \</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">    ) )</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">      DPM_PP_SEQ_TO_ENUM_OP,                                                   \</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">      _,                                                                       \</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">      BOOST_PP_SEQ_TRANSFORM( DPM_PP_SEQ_TO_ENUM_OP2, _, SEQ ) ) )</span></div>
 </div>
-<div class="foldopen" id="foldopen00020" data-start="" data-end="">
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="pp_8hpp.html#ae7ed011fab107c8d9076542ce22473bf">   20</a></span><span class="preprocessor">#define DPM_PP_SEQ_TO_ENUM( SEQ )                                              \</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">    BOOST_PP_VA_OPT( ( DPM_PP_SEQ_TO_ENUM_AUX ), , SEQ )( SEQ )</span></div>
+<div class="foldopen" id="foldopen00019" data-start="" data-end="">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="pp_8hpp.html#ae7ed011fab107c8d9076542ce22473bf">   19</a></span><span class="preprocessor">#define DPM_PP_SEQ_TO_ENUM( SEQ )                                              \</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">    BOOST_PP_VA_OPT( ( DPM_PP_SEQ_TO_ENUM_AUX ), , SEQ )( SEQ )</span></div>
 </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_CORE_CS_BINDING_MACRO_DETAIL_PP_HPP_</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_CORE_CS_BINDING_MACRO_DETAIL_PP_HPP_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

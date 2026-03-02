@@ -5,6 +5,7 @@ var namespacedepicture__menu_1_1domain_1_1commands_1_1buildin =
     [ "detail_commands_buildin", "namespacedepicture__menu_1_1domain_1_1commands_1_1buildin_1_1detail__commands__buildin.html", "namespacedepicture__menu_1_1domain_1_1commands_1_1buildin_1_1detail__commands__buildin" ],
     [ "detail_actions_data", "namespacedepicture__menu_1_1domain_1_1commands_1_1buildin_1_1detail__actions__data.html", "namespacedepicture__menu_1_1domain_1_1commands_1_1buildin_1_1detail__actions__data" ],
     [ "close_menu_command_parameter", "classdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1close__menu__command__parameter.html", "classdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1close__menu__command__parameter" ],
+    [ "nop_command_parameter", "classdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1nop__command__parameter.html", "classdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1nop__command__parameter" ],
     [ "open_menu_command_parameter", "classdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1open__menu__command__parameter.html", "classdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1open__menu__command__parameter" ],
     [ "shellexecute_command_parameter", "classdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1shellexecute__command__parameter.html", "classdepicture__menu_1_1domain_1_1commands_1_1buildin_1_1shellexecute__command__parameter" ],
     [ "get_buildin_action_name", "namespacedepicture__menu_1_1domain_1_1commands_1_1buildin.html#a7bc2905bf6459e6368e3e0ac21805104", null ],

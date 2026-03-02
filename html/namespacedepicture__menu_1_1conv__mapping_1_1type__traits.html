@@ -100,12 +100,12 @@ $(function(){initNavTree('namespacedepicture__menu_1_1conv__mapping_1_1type__tra
 <tr class="memitem:afa61bcfe9fd32e8a6922a4533b2a33e6 template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#afa61bcfe9fd32e8a6922a4533b2a33e6">reader_result_t</a> = std::invoke_result_t&lt; Reader const, D const&amp; &gt;</td></tr>
 <tr class="memitem:a6057c0b115274f09d3487f7f285248be" id="r_a6057c0b115274f09d3487f7f285248be"><td class="memTemplParams" colspan="2">template&lt;typename Converter, typename SourceData&gt; </td></tr>
 <tr class="memitem:a6057c0b115274f09d3487f7f285248be template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a6057c0b115274f09d3487f7f285248be">converter_result_t</a> = std::invoke_result_t&lt; Converter const, SourceData &gt;</td></tr>
-<tr class="memitem:a02cea563f497e4528eb3fba06069cbb9" id="r_a02cea563f497e4528eb3fba06069cbb9"><td class="memTemplParams" colspan="2">template&lt;typename Reader, typename Converter, typename SourceData&gt; </td></tr>
-<tr class="memitem:a02cea563f497e4528eb3fba06069cbb9 template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a02cea563f497e4528eb3fba06069cbb9">converted_reader_result_t</a> = <a class="el" href="#a6057c0b115274f09d3487f7f285248be">converter_result_t</a>&lt; Converter, <a class="el" href="#afa61bcfe9fd32e8a6922a4533b2a33e6">reader_result_t</a>&lt; Reader, SourceData &gt; &gt;</td></tr>
+<tr class="memitem:a141af91682c01180c867f6d1d61530b6" id="r_a141af91682c01180c867f6d1d61530b6"><td class="memTemplParams" colspan="2">template&lt;typename Reader, typename Converter, typename SourceData&gt; </td></tr>
+<tr class="memitem:a141af91682c01180c867f6d1d61530b6 template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a141af91682c01180c867f6d1d61530b6">converted_reader_result_t</a></td></tr>
 </table>
 <a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">型定義詳解</h2>
-<a id="a02cea563f497e4528eb3fba06069cbb9" name="a02cea563f497e4528eb3fba06069cbb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02cea563f497e4528eb3fba06069cbb9">&#9670;&#160;</a></span>converted_reader_result_t</h2>
+<a id="a141af91682c01180c867f6d1d61530b6" name="a141af91682c01180c867f6d1d61530b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a141af91682c01180c867f6d1d61530b6">&#9670;&#160;</a></span>converted_reader_result_t</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -113,12 +113,15 @@ $(function(){initNavTree('namespacedepicture__menu_1_1conv__mapping_1_1type__tra
 template&lt;typename Reader, typename Converter, typename SourceData&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a02cea563f497e4528eb3fba06069cbb9">depicture_menu::conv_mapping::type_traits::converted_reader_result_t</a> = <a class="el" href="#a6057c0b115274f09d3487f7f285248be">converter_result_t</a>&lt; Converter, <a class="el" href="#afa61bcfe9fd32e8a6922a4533b2a33e6">reader_result_t</a>&lt; Reader, SourceData &gt; &gt;</td>
+          <td class="memname">using <a class="el" href="#a141af91682c01180c867f6d1d61530b6">depicture_menu::conv_mapping::type_traits::converted_reader_result_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition"> <a class="el" href="conv__mapping_8hpp_source.html">conv_mapping.hpp</a> の <a class="el" href="conv__mapping_8hpp_source.html#l00090">90</a> 行目に定義があります。</p>
+<b>初期値:</b><div class="fragment"><div class="line"> </div>
+<div class="line"><a class="code hl_typedef" href="#a6057c0b115274f09d3487f7f285248be">converter_result_t&lt; Converter, reader_result_t&lt; Reader, SourceData &gt;</a> &gt;</div>
+<div class="ttc" id="anamespacedepicture__menu_1_1conv__mapping_1_1type__traits_html_a6057c0b115274f09d3487f7f285248be"><div class="ttname"><a href="#a6057c0b115274f09d3487f7f285248be">depicture_menu::conv_mapping::type_traits::converter_result_t</a></div><div class="ttdeci">std::invoke_result_t&lt; Converter const, SourceData &gt; converter_result_t</div><div class="ttdef"><b>Definition</b> <a href="conv__mapping_8hpp_source.html#l00083">conv_mapping.hpp:83</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="conv__mapping_8hpp_source.html">conv_mapping.hpp</a> の <a class="el" href="conv__mapping_8hpp_source.html#l00091">91</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -136,7 +139,7 @@ template&lt;typename Converter, typename SourceData&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="conv__mapping_8hpp_source.html">conv_mapping.hpp</a> の <a class="el" href="conv__mapping_8hpp_source.html#l00082">82</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="conv__mapping_8hpp_source.html">conv_mapping.hpp</a> の <a class="el" href="conv__mapping_8hpp_source.html#l00083">83</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -154,7 +157,7 @@ template&lt;typename Reader, typename D&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="conv__mapping_8hpp_source.html">conv_mapping.hpp</a> の <a class="el" href="conv__mapping_8hpp_source.html#l00073">73</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="conv__mapping_8hpp_source.html">conv_mapping.hpp</a> の <a class="el" href="conv__mapping_8hpp_source.html#l00074">74</a> 行目に定義があります。</p>
 
 </div>
 </div>

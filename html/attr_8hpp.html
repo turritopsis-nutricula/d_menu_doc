@@ -201,17 +201,14 @@ attr.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">BOOST_PP_CAT(                                                              \</div>
-<div class="line">    BOOST_PP_IF(                                                           \</div>
-<div class="line">        BOOST_PP_IS_EMPTY( BOOST_PP_CAT( _DUMMY_FLAG_, ARG_ ) ),           \</div>
-<div class="line">        _EXPAND_FLAG_,                                                     \</div>
-<div class="line">        ( 0, ( ) )                                                         \</div>
-<div class="line">    ),                                                                     \</div>
-<div class="line">    BOOST_PP_EXPR_IF(                                                      \</div>
-<div class="line">        BOOST_PP_IS_EMPTY( BOOST_PP_CAT( _DUMMY_FLAG_, ARG_ ) ), ARG_      \</div>
-<div class="line">    )                                                                      \</div>
-<div class="line">)</div>
+<div class="line">  BOOST_PP_IF(                                                             \</div>
+<div class="line">    BOOST_PP_IS_EMPTY( BOOST_PP_CAT( _DUMMY_FLAG_, ARG_ ) ),               \</div>
+<div class="line">    _EXPAND_FLAG_,                                                         \</div>
+<div class="line">    ( 0, ( ) ) ),                                                          \</div>
+<div class="line">  BOOST_PP_EXPR_IF(                                                        \</div>
+<div class="line">    BOOST_PP_IS_EMPTY( BOOST_PP_CAT( _DUMMY_FLAG_, ARG_ ) ), ARG_ ) )</div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="attr_8hpp_source.html">attr.hpp</a> の <a class="el" href="attr_8hpp_source.html#l00055">55</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="attr_8hpp_source.html">attr.hpp</a> の <a class="el" href="attr_8hpp_source.html#l00052">52</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -230,15 +227,12 @@ attr.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">BOOST_PP_CAT(                                                              \</div>
-<div class="line">    BOOST_PP_IF(                                                           \</div>
-<div class="line">        BOOST_PP_IS_EMPTY( BOOST_PP_CAT( _DUMMY_FLAG_, ARG_ ) ),           \</div>
-<div class="line">        _BYPASS_,                                                          \</div>
-<div class="line">        ARG_                                                               \</div>
-<div class="line">    ),                                                                     \</div>
-<div class="line">    BOOST_PP_EXPR_IF(                                                      \</div>
-<div class="line">        BOOST_PP_IS_EMPTY( BOOST_PP_CAT( _DUMMY_FLAG_, ARG_ ) ), ARG_      \</div>
-<div class="line">    )                                                                      \</div>
-<div class="line">)</div>
+<div class="line">  BOOST_PP_IF(                                                             \</div>
+<div class="line">    BOOST_PP_IS_EMPTY( BOOST_PP_CAT( _DUMMY_FLAG_, ARG_ ) ),               \</div>
+<div class="line">    _BYPASS_,                                                              \</div>
+<div class="line">    ARG_ ),                                                                \</div>
+<div class="line">  BOOST_PP_EXPR_IF(                                                        \</div>
+<div class="line">    BOOST_PP_IS_EMPTY( BOOST_PP_CAT( _DUMMY_FLAG_, ARG_ ) ), ARG_ ) )</div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="attr_8hpp_source.html">attr.hpp</a> の <a class="el" href="attr_8hpp_source.html#l00038">38</a> 行目に定義があります。</p>
 

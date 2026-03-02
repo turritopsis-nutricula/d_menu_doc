@@ -97,14 +97,11 @@ $(function(){initNavTree('conceptdepicture__menu_1_1cs__binding_1_1instance__pro
 <p><code>#include &lt;<a class="el" href="unmanaged__generator_8hpp_source.html">unmanaged_generator.hpp</a>&gt;</code></p>
 <h2 id="header-conceptdef" class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt; <span class="keyword">typename</span> T, <span class="keyword">typename</span> Subject &gt;</div>
-<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptdepicture__menu_1_1cs__binding_1_1instance__proxiable.html">instance_proxiable</a> = <span class="keyword">requires</span>( T t, std::shared_ptr&lt; Subject &gt; ptr ) {</div>
-<div class="line">    {</div>
-<div class="line">        t.swap_instance( ptr )</div>
-<div class="line">    };</div>
-<div class="line">    {</div>
-<div class="line">        t.instance( )</div>
-<div class="line">    } -&gt; std::same_as&lt; std::shared_ptr&lt; Subject &gt;&amp; &gt;;</div>
-<div class="line">}</div>
+<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptdepicture__menu_1_1cs__binding_1_1instance__proxiable.html">instance_proxiable</a> =</div>
+<div class="line">  <span class="keyword">requires</span>( T t, std::shared_ptr&lt; Subject &gt; ptr ) {</div>
+<div class="line">      { t.swap_instance( ptr ) };</div>
+<div class="line">      { t.instance( ) } -&gt; std::same_as&lt; std::shared_ptr&lt; Subject &gt;&amp; &gt;;</div>
+<div class="line">  }</div>
 <div class="ttc" id="aconceptdepicture__menu_1_1cs__binding_1_1instance__proxiable_html"><div class="ttname"><a href="conceptdepicture__menu_1_1cs__binding_1_1instance__proxiable.html">depicture_menu::cs_binding::instance_proxiable</a></div><div class="ttdef"><b>Definition</b> <a href="unmanaged__generator_8hpp_source.html#l00035">unmanaged_generator.hpp:35</a></div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
 <div class="textblock">

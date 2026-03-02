@@ -101,57 +101,51 @@ $(function(){initNavTree('test__dll__singleton__access_8cpp_source.html','','');
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>extern <span class="stringliteral">&quot;C&quot;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keywordtype">int</span> DPM_DLL_EXPORT</div>
-<div class="foldopen" id="foldopen00010" data-start="{" data-end="}">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="test__dll__singleton__access_8cpp.html#aec621302731ce80659f9cb040d810604">   10</a></span>    <a class="code hl_function" href="test__dll__singleton__access_8cpp.html#aec621302731ce80659f9cb040d810604">access</a>( )</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keyword">auto</span>&amp; <a class="code hl_struct" href="structa.html">a</a> = access_sing( );</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keywordflow">return</span> <a class="code hl_struct" href="structa.html">a</a>.get_Value( );</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    }</div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="}">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="test__dll__singleton__access_8cpp.html#aec621302731ce80659f9cb040d810604">    9</a></span>    <span class="keywordtype">int</span> DPM_DLL_EXPORT <a class="code hl_function" href="test__dll__singleton__access_8cpp.html#aec621302731ce80659f9cb040d810604">access</a>( )</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <span class="keyword">auto</span>&amp; <a class="code hl_struct" href="structa.html">a</a> = access_sing( );</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keywordflow">return</span> <a class="code hl_struct" href="structa.html">a</a>.get_Value( );</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    }</div>
 </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">void</span> DPM_DLL_EXPORT</div>
-<div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="test__dll__singleton__access_8cpp.html#aece6f8e8b08b9814992f256c842da77b">   17</a></span>    <a class="code hl_function" href="test__dll__singleton__access_8cpp.html#aece6f8e8b08b9814992f256c842da77b">allocate_unmanaged_instance</a>( <span class="keywordtype">int</span> value )</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keyword">auto</span>&amp; <a class="code hl_struct" href="structa.html">a</a> = access_sing( );</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keyword">auto</span> m</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            = std::make_shared&lt; depicture_menu::cs_binding::TestBindingEntry &gt;(</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            );</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        m-&gt;set_Value( value );</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="test__dll__singleton__access_8cpp.html#aece6f8e8b08b9814992f256c842da77b">   15</a></span>    <span class="keywordtype">void</span> DPM_DLL_EXPORT <a class="code hl_function" href="test__dll__singleton__access_8cpp.html#aece6f8e8b08b9814992f256c842da77b">allocate_unmanaged_instance</a>( <span class="keywordtype">int</span> value )</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keyword">auto</span>&amp; <a class="code hl_struct" href="structa.html">a</a> = access_sing( );</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keyword">auto</span> m =</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>          std::make_shared&lt; depicture_menu::cs_binding::TestBindingEntry &gt;( );</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        m-&gt;set_Value( value );</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <a class="code hl_struct" href="structa.html">a</a>.AllocateInstance( m );</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    }</div>
+</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <a class="code hl_struct" href="structa.html">a</a>.AllocateInstance( m );</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">void</span> DPM_DLL_EXPORT</div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="test__dll__singleton__access_8cpp.html#a1e0648b59fc7dde4dea06f86e0caca18">   27</a></span>    <a class="code hl_function" href="test__dll__singleton__access_8cpp.html#a1e0648b59fc7dde4dea06f86e0caca18">preregist_test_binding_entry_dispose</a>( <span class="keywordtype">void</span> ( *callback )( <span class="keywordtype">bool</span> ) )</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keyword">using </span>test_t  = depicture_menu::cs_binding::TestBindingEntry;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keyword">using </span>proxy_t = depicture_menu::cs_binding::TestBindingEntry_Proxy;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keyword">auto</span> inst =</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>          std::shared_ptr&lt; test_t &gt;( <span class="keyword">new</span> test_t, [ callback ]( test_t* i ) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>              callback( <span class="keyword">true</span> );</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>              <span class="keyword">delete</span> i;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>          } );</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <a class="code hl_function" href="namespacedepicture__menu_1_1cs__binding.html#a7f7a884d9b09526e6bcf000ad17cf8ba">depicture_menu::cs_binding::pre_regist&lt; proxy_t &gt;</a>( inst );</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
 </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">void</span> DPM_DLL_EXPORT</div>
-<div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="test__dll__singleton__access_8cpp.html#a1e0648b59fc7dde4dea06f86e0caca18">   30</a></span>    <a class="code hl_function" href="test__dll__singleton__access_8cpp.html#a1e0648b59fc7dde4dea06f86e0caca18">preregist_test_binding_entry_dispose</a>( <span class="keywordtype">void</span> ( *callback )( <span class="keywordtype">bool</span> ) )</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <span class="keyword">using </span>test_t  = depicture_menu::cs_binding::TestBindingEntry;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keyword">using </span>proxy_t = depicture_menu::cs_binding::TestBindingEntry_Proxy;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">auto</span> inst = std::shared_ptr&lt; test_t &gt;(</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <span class="keyword">new</span> test_t,</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            [ callback ]( test_t* i )</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                callback( <span class="keyword">true</span> );</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                <span class="keyword">delete</span> i;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            }</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        );</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <a class="code hl_function" href="namespacedepicture__menu_1_1cs__binding.html#a7f7a884d9b09526e6bcf000ad17cf8ba">depicture_menu::cs_binding::pre_regist&lt; proxy_t &gt;</a>( inst );</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
-</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
 <div class="ttc" id="a_test_binding_entry_8hpp_html"><div class="ttname"><a href="_test_binding_entry_8hpp.html">TestBindingEntry.hpp</a></div></div>
 <div class="ttc" id="acs__binding__test__dll_8hpp_html"><div class="ttname"><a href="cs__binding__test__dll_8hpp.html">cs_binding_test_dll.hpp</a></div></div>
-<div class="ttc" id="acs__binding__test__dll_8hpp_html_a7f3caec06909d255521bf91ce5cfa8e8"><div class="ttname"><a href="cs__binding__test__dll_8hpp.html#a7f3caec06909d255521bf91ce5cfa8e8">DPM_TEST_CASE_DLL</a></div><div class="ttdeci">#define DPM_TEST_CASE_DLL(ACCESS, CLASS, DLL_NAME)</div><div class="ttdef"><b>Definition</b> <a href="cs__binding__test__dll_8hpp_source.html#l00066">cs_binding_test_dll.hpp:66</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1cs__binding_html_a7f7a884d9b09526e6bcf000ad17cf8ba"><div class="ttname"><a href="namespacedepicture__menu_1_1cs__binding.html#a7f7a884d9b09526e6bcf000ad17cf8ba">depicture_menu::cs_binding::pre_regist</a></div><div class="ttdeci">void pre_regist(std::weak_ptr&lt; typename T::subject_t &gt; v)</div><div class="ttdef"><b>Definition</b> <a href="unmanaged__generator_8hpp_source.html#l00403">unmanaged_generator.hpp:403</a></div></div>
-<div class="ttc" id="astructa_html"><div class="ttname"><a href="structa.html">a</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00137">TestReflection.cpp:138</a></div></div>
-<div class="ttc" id="atest__dll__singleton__access_8cpp_html_a1e0648b59fc7dde4dea06f86e0caca18"><div class="ttname"><a href="test__dll__singleton__access_8cpp.html#a1e0648b59fc7dde4dea06f86e0caca18">preregist_test_binding_entry_dispose</a></div><div class="ttdeci">void DPM_DLL_EXPORT preregist_test_binding_entry_dispose(void(*callback)(bool))</div><div class="ttdef"><b>Definition</b> <a href="#l00030">test_dll_singleton_access.cpp:30</a></div></div>
-<div class="ttc" id="atest__dll__singleton__access_8cpp_html_aec621302731ce80659f9cb040d810604"><div class="ttname"><a href="test__dll__singleton__access_8cpp.html#aec621302731ce80659f9cb040d810604">access</a></div><div class="ttdeci">int DPM_DLL_EXPORT access()</div><div class="ttdef"><b>Definition</b> <a href="#l00010">test_dll_singleton_access.cpp:10</a></div></div>
-<div class="ttc" id="atest__dll__singleton__access_8cpp_html_aece6f8e8b08b9814992f256c842da77b"><div class="ttname"><a href="test__dll__singleton__access_8cpp.html#aece6f8e8b08b9814992f256c842da77b">allocate_unmanaged_instance</a></div><div class="ttdeci">void DPM_DLL_EXPORT allocate_unmanaged_instance(int value)</div><div class="ttdef"><b>Definition</b> <a href="#l00017">test_dll_singleton_access.cpp:17</a></div></div>
+<div class="ttc" id="acs__binding__test__dll_8hpp_html_a7f3caec06909d255521bf91ce5cfa8e8"><div class="ttname"><a href="cs__binding__test__dll_8hpp.html#a7f3caec06909d255521bf91ce5cfa8e8">DPM_TEST_CASE_DLL</a></div><div class="ttdeci">#define DPM_TEST_CASE_DLL(ACCESS, CLASS, DLL_NAME)</div><div class="ttdef"><b>Definition</b> <a href="cs__binding__test__dll_8hpp_source.html#l00064">cs_binding_test_dll.hpp:64</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1cs__binding_html_a7f7a884d9b09526e6bcf000ad17cf8ba"><div class="ttname"><a href="namespacedepicture__menu_1_1cs__binding.html#a7f7a884d9b09526e6bcf000ad17cf8ba">depicture_menu::cs_binding::pre_regist</a></div><div class="ttdeci">void pre_regist(std::weak_ptr&lt; typename T::subject_t &gt; v)</div><div class="ttdef"><b>Definition</b> <a href="unmanaged__generator_8hpp_source.html#l00370">unmanaged_generator.hpp:370</a></div></div>
+<div class="ttc" id="astructa_html"><div class="ttname"><a href="structa.html">a</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00128">TestReflection.cpp:129</a></div></div>
+<div class="ttc" id="atest__dll__singleton__access_8cpp_html_a1e0648b59fc7dde4dea06f86e0caca18"><div class="ttname"><a href="test__dll__singleton__access_8cpp.html#a1e0648b59fc7dde4dea06f86e0caca18">preregist_test_binding_entry_dispose</a></div><div class="ttdeci">void DPM_DLL_EXPORT preregist_test_binding_entry_dispose(void(*callback)(bool))</div><div class="ttdef"><b>Definition</b> <a href="#l00027">test_dll_singleton_access.cpp:27</a></div></div>
+<div class="ttc" id="atest__dll__singleton__access_8cpp_html_aec621302731ce80659f9cb040d810604"><div class="ttname"><a href="test__dll__singleton__access_8cpp.html#aec621302731ce80659f9cb040d810604">access</a></div><div class="ttdeci">int DPM_DLL_EXPORT access()</div><div class="ttdef"><b>Definition</b> <a href="#l00009">test_dll_singleton_access.cpp:9</a></div></div>
+<div class="ttc" id="atest__dll__singleton__access_8cpp_html_aece6f8e8b08b9814992f256c842da77b"><div class="ttname"><a href="test__dll__singleton__access_8cpp.html#aece6f8e8b08b9814992f256c842da77b">allocate_unmanaged_instance</a></div><div class="ttdeci">void DPM_DLL_EXPORT allocate_unmanaged_instance(int value)</div><div class="ttdef"><b>Definition</b> <a href="#l00015">test_dll_singleton_access.cpp:15</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
