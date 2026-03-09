@@ -96,8 +96,9 @@ $(function(){initNavTree('remove__menu__item_8hpp.html','',''); });
 <div class="textblock"><code>#include &quot;<a class="el" href="radialmenu_8hpp_source.html">core/domain/model/menu/radialmenu.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="config__view__model__interface_8hpp_source.html">core/usecase/config_view/interface/config_view_model_interface.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="app__transaction_8hpp_source.html">core/application/app_transaction.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="gui__dispatch_8hpp_source.html">core/application/gui_dispatch.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="log_8hpp_source.html">core/application/log.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="menu__item__remove_8hpp_source.html">dto/menu_item_remove.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="menu__item__removed_8hpp_source.html">dto/menu_item_removed.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 remove_menu_item.hpp の依存先関係図:</div>
 <div class="dyncontent">
@@ -106,14 +107,14 @@ remove_menu_item.hpp の依存先関係図:</div>
 </div><div class="textblock"><div class="dynheader">
 被依存関係図:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="remove__menu__item_8hpp__dep__incl.svg" width="210" height="192"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="remove__menu__item_8hpp__dep__incl.svg" width="422" height="192"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="remove__menu__item_8hpp_source.html">[ソースコード]</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 クラス</h2></td></tr>
-<tr class="memitem:depicture_5Fmenu_3A_3Ausecase_3A_3Aremove_5Fmenu_5Fitem_3C_20menu_5Fquery_5Ft_2C_20presenter_5Ft_20_3E" id="r_depicture_5Fmenu_3A_3Ausecase_3A_3Aremove_5Fmenu_5Fitem_3C_20menu_5Fquery_5Ft_2C_20presenter_5Ft_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1usecase_1_1remove__menu__item.html">depicture_menu::usecase::remove_menu_item&lt; menu_query_t, presenter_t &gt;</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Ausecase_3A_3Aremove_5Fmenu_5Fitem_3C_20presenter_5Ft_20_3E" id="r_depicture_5Fmenu_3A_3Ausecase_3A_3Aremove_5Fmenu_5Fitem_3C_20presenter_5Ft_20_3E"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1usecase_1_1remove__menu__item.html">depicture_menu::usecase::remove_menu_item&lt; presenter_t &gt;</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 名前空間</h2></td></tr>
@@ -121,11 +122,7 @@ remove_menu_item.hpp の依存先関係図:</div>
 <tr class="memitem:depicture_5Fmenu_3A_3Ausecase" id="r_depicture_5Fmenu_3A_3Ausecase"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase.html">depicture_menu::usecase</a></td></tr>
 <tr class="memdesc:namespacedepicture__menu_1_1usecase"><td class="mdescLeft">&#160;</td><td class="mdescRight">メニュー更新 usecase <br /></td></tr>
 <tr class="memitem:depicture_5Fmenu_3A_3Ausecase_3A_3Aconcepts" id="r_depicture_5Fmenu_3A_3Ausecase_3A_3Aconcepts"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1concepts.html">depicture_menu::usecase::concepts</a></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-concepts" class="groupheader"><a id="concepts" name="concepts"></a>
-Concepts</h2></td></tr>
-<tr class="memitem:depicture_5Fmenu_3A_3Ausecase_3A_3Aconcepts_3A_3Amenu_5Fquery" id="r_depicture_5Fmenu_3A_3Ausecase_3A_3Aconcepts_3A_3Amenu_5Fquery"><td class="memItemLeft">concept &#160;</td><td class="memItemRight"><a class="el" href="conceptdepicture__menu_1_1usecase_1_1concepts_1_1menu__query.html">depicture_menu::usecase::concepts::menu_query</a></td></tr>
-<tr class="memitem:depicture_5Fmenu_3A_3Ausecase_3A_3Aconcepts_3A_3Aremove_5Fmenu_5Fitem_5Fpresetable" id="r_depicture_5Fmenu_3A_3Ausecase_3A_3Aconcepts_3A_3Aremove_5Fmenu_5Fitem_5Fpresetable"><td class="memItemLeft">concept &#160;</td><td class="memItemRight"><a class="el" href="conceptdepicture__menu_1_1usecase_1_1concepts_1_1remove__menu__item__presetable.html">depicture_menu::usecase::concepts::remove_menu_item_presetable</a></td></tr>
+<tr class="memdesc:namespacedepicture__menu_1_1usecase_1_1concepts"><td class="mdescLeft">&#160;</td><td class="mdescRight">コンフィグプレゼンターコンセプト <br /></td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

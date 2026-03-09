@@ -112,7 +112,7 @@ $(function(){initNavTree('_test_atomic_mutex_8cpp_source.html','',''); });
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">//----------------------------------------//</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// test_atomic_mutexs : TestSuite</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><a class="code hl_function" href="menu__change__operation_8cpp.html#ae692b9f25c84027b486e3f198b05369c">BOOST_AUTO_TEST_SUITE</a>( test_atomic_mutexs )</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>BOOST_AUTO_TEST_SUITE( test_atomic_mutexs )</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">/*************************************************************/</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// upgradable_mutex : TestCase</span></div>
@@ -125,7 +125,7 @@ $(function(){initNavTree('_test_atomic_mutex_8cpp_source.html','',''); });
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    std::atomic&lt; bool &gt;    flg = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">using </span>up_mtx_t =</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      du::detail_util::upgradable_mutex&lt; du::upgrade_spin_mutex &gt;;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        du::detail_util::upgradable_mutex&lt; du::upgrade_spin_mutex &gt;;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">auto</span> prod = [ &amp; ]( ) {</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="comment">//      for ( ;; )</span></div>
@@ -203,7 +203,7 @@ $(function(){initNavTree('_test_atomic_mutex_8cpp_source.html','',''); });
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    wp.wait_until_idle( );</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( shared_buffer == results );</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    BOOST_TEST( shared_buffer == results );</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>}</div>
 </div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="preprocessor">#endif</span></div>
@@ -254,9 +254,9 @@ $(function(){initNavTree('_test_atomic_mutex_8cpp_source.html','',''); });
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                <span class="keyword">auto</span> lk = du::upgradable_lock_guard( mtx );</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>                <span class="keyword">auto</span> i = std::ranges::find(</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>                  checked | std::views::enumerate, <span class="keyword">false</span>, []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; i ) {</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>                      <span class="keywordflow">return</span> std::get&lt; 1 &gt;( i );</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>                  } );</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>                    checked | std::views::enumerate,</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>                    <span class="keyword">false</span>,</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>                    []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; i ) { <span class="keywordflow">return</span> std::get&lt; 1 &gt;( i ); } );</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>                current = std::get&lt; 0 &gt;( *i );</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            }</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>            <span class="keywordflow">if</span> ( current &gt;= count ) <span class="keywordflow">return</span>;</div>
@@ -270,15 +270,13 @@ $(function(){initNavTree('_test_atomic_mutex_8cpp_source.html','',''); });
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    wp.wait_until_idle( );</div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( working_buffer == expects );</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    BOOST_TEST( working_buffer == expects );</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>}</div>
 </div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>BOOST_AUTO_TEST_SUITE_END( )    <span class="comment">// test_atomic_mutexs</span></div>
 <div class="ttc" id="a_test_atomic_mutex_8cpp_html_a8b1033a7afbd2e3b6c37b523520acadc"><div class="ttname"><a href="_test_atomic_mutex_8cpp.html#a8b1033a7afbd2e3b6c37b523520acadc">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(upgradable_mutex)</div><div class="ttdef"><b>Definition</b> <a href="#l00025">TestAtomicMutex.cpp:25</a></div></div>
-<div class="ttc" id="a_test_backup_json_8cpp_html_ac60c25c7e7fe69dfd220f4fb5bc17c5d"><div class="ttname"><a href="_test_backup_json_8cpp.html#ac60c25c7e7fe69dfd220f4fb5bc17c5d">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(test_test_write_backup_json)</div><div class="ttdoc">test_write_backup_json : TestCase</div><div class="ttdef"><b>Definition</b> <a href="_test_backup_json_8cpp_source.html#l00200">TestBackupJson.cpp:200</a></div></div>
-<div class="ttc" id="a_test_config_view_presenter_8cpp_html_a7845eb0c68b997d6d329618f36f7e794"><div class="ttname"><a href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a></div><div class="ttdeci">BOOST_TEST(get_menu(config_arg, 0u) -&gt;get_MenuId()==m_id)</div></div>
+<div class="ttc" id="a_test_backup_json_8cpp_html_ac60c25c7e7fe69dfd220f4fb5bc17c5d"><div class="ttname"><a href="_test_backup_json_8cpp.html#ac60c25c7e7fe69dfd220f4fb5bc17c5d">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(test_test_write_backup_json)</div><div class="ttdoc">test_write_backup_json : TestCase</div><div class="ttdef"><b>Definition</b> <a href="_test_backup_json_8cpp_source.html#l00202">TestBackupJson.cpp:202</a></div></div>
 <div class="ttc" id="aatomic__mutex_8hpp_html"><div class="ttname"><a href="atomic__mutex_8hpp.html">atomic_mutex.hpp</a></div></div>
-<div class="ttc" id="amenu__change__operation_8cpp_html_ae692b9f25c84027b486e3f198b05369c"><div class="ttname"><a href="menu__change__operation_8cpp.html#ae692b9f25c84027b486e3f198b05369c">BOOST_AUTO_TEST_SUITE</a></div><div class="ttdeci">BOOST_AUTO_TEST_SUITE(item_propertes, *bt::depends_on(&quot;test_config_view_presenter/add_menu_item&quot;)) dd</div><div class="ttdef"><b>Definition</b> <a href="menu__change__operation_8cpp_source.html#l00208">menu_change_operation.cpp:208</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1usecase_html"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase.html">depicture_menu::usecase</a></div><div class="ttdoc">メニュー更新 usecase</div><div class="ttdef"><b>Definition</b> <a href="action__command__invoker__interface_8hpp_source.html#l00012">action_command_invoker_interface.hpp:13</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1util_html"><div class="ttname"><a href="namespacedepicture__menu_1_1util.html">depicture_menu::util</a></div><div class="ttdef"><b>Definition</b> <a href="constexpr__string_8hpp_source.html#l00012">constexpr_string.hpp:13</a></div></div>
 <div class="ttc" id="aworker__pool_8hpp_html"><div class="ttname"><a href="worker__pool_8hpp.html">worker_pool.hpp</a></div></div>

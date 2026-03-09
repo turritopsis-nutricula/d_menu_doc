@@ -98,14 +98,14 @@ $(function(){initNavTree('conceptdepicture__menu_1_1usecase_1_1concepts_1_1comma
 <h2 id="header-conceptdef" class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
 <div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptdepicture__menu_1_1usecase_1_1concepts_1_1command__invocable.html">command_invocable</a> =</div>
-<div class="line">  !boost::di::aux::is_complete&lt; T &gt;::value ||</div>
-<div class="line">  <span class="keyword">requires</span>(</div>
-<div class="line">    T                                         t,</div>
-<div class="line">    <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1commands_1_1application__command__arg.html">domain::commands::application_command_arg</a> app_param,</div>
-<div class="line">    <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1commands_1_1invoke__arg.html">domain::commands::invoke_arg</a>              inv_param ) {</div>
-<div class="line">      { t.invoke( app_param ) };</div>
-<div class="line">      { t.invoke( inv_param ) };</div>
-<div class="line">  }</div>
+<div class="line">        !boost::di::aux::is_complete&lt; T &gt;::value ||</div>
+<div class="line">        <span class="keyword">requires</span>(</div>
+<div class="line">            T                                         t,</div>
+<div class="line">            <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1commands_1_1application__command__arg.html">domain::commands::application_command_arg</a> app_param,</div>
+<div class="line">            <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1commands_1_1invoke__arg.html">domain::commands::invoke_arg</a>              inv_param ) {</div>
+<div class="line">            { t.invoke( app_param ) };</div>
+<div class="line">            { t.invoke( inv_param ) };</div>
+<div class="line">        }</div>
 <div class="ttc" id="aconceptdepicture__menu_1_1usecase_1_1concepts_1_1command__invocable_html"><div class="ttname"><a href="conceptdepicture__menu_1_1usecase_1_1concepts_1_1command__invocable.html">depicture_menu::usecase::concepts::command_invocable</a></div><div class="ttdef"><b>Definition</b> <a href="action__invoke_8hpp_source.html#l00013">action_invoke.hpp:13</a></div></div>
 <div class="ttc" id="astructdepicture__menu_1_1domain_1_1commands_1_1application__command__arg_html"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1commands_1_1application__command__arg.html">depicture_menu::domain::commands::application_command_arg</a></div><div class="ttdef"><b>Definition</b> <a href="application__command__arg_8hpp_source.html#l00009">application_command_arg.hpp:10</a></div></div>
 <div class="ttc" id="astructdepicture__menu_1_1domain_1_1commands_1_1invoke__arg_html"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1commands_1_1invoke__arg.html">depicture_menu::domain::commands::invoke_arg</a></div><div class="ttdef"><b>Definition</b> <a href="invoke__arg_8hpp_source.html#l00012">invoke_arg.hpp:13</a></div></div>

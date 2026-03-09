@@ -1,8 +1,10 @@
 var namespacedepicture__menu_1_1cs__binding_1_1observer =
 [
-    [ "detail_observer", "namespacedepicture__menu_1_1cs__binding_1_1observer_1_1detail__observer.html", "namespacedepicture__menu_1_1cs__binding_1_1observer_1_1detail__observer" ],
+    [ "detail_observer", "namespacedepicture__menu_1_1cs__binding_1_1observer_1_1detail__observer.html", null ],
     [ "data", "namespacedepicture__menu_1_1cs__binding_1_1observer_1_1data.html", "namespacedepicture__menu_1_1cs__binding_1_1observer_1_1data" ],
     [ "prop_map", "namespacedepicture__menu_1_1cs__binding_1_1observer_1_1prop__map.html", "namespacedepicture__menu_1_1cs__binding_1_1observer_1_1prop__map" ],
+    [ "bindable_lock", "classdepicture__menu_1_1cs__binding_1_1observer_1_1bindable__lock.html", "classdepicture__menu_1_1cs__binding_1_1observer_1_1bindable__lock" ],
+    [ "lock_generator", "classdepicture__menu_1_1cs__binding_1_1observer_1_1lock__generator.html", "classdepicture__menu_1_1cs__binding_1_1observer_1_1lock__generator" ],
     [ "changed_event_publisher", "classdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher.html", "classdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher" ],
     [ "collection_change_observer", "structdepicture__menu_1_1cs__binding_1_1observer_1_1collection__change__observer.html", "structdepicture__menu_1_1cs__binding_1_1observer_1_1collection__change__observer" ],
     [ "observer_wrapper", "structdepicture__menu_1_1cs__binding_1_1observer_1_1observer__wrapper.html", "structdepicture__menu_1_1cs__binding_1_1observer_1_1observer__wrapper" ],
@@ -21,8 +23,7 @@ var namespacedepicture__menu_1_1cs__binding_1_1observer =
     [ "disconnection", "conceptdepicture__menu_1_1cs__binding_1_1observer_1_1disconnection.html", null ],
     [ "connection_manager", "conceptdepicture__menu_1_1cs__binding_1_1observer_1_1connection__manager.html", null ],
     [ "config_view_subscribe", "conceptdepicture__menu_1_1cs__binding_1_1observer_1_1config__view__subscribe.html", null ],
-    [ "cfg_observer", "namespacedepicture__menu_1_1cs__binding_1_1observer.html#aed936affa4867c85859dbe165949a3f2", null ],
-    [ "config_observer_t", "namespacedepicture__menu_1_1cs__binding_1_1observer.html#a30b7e7e18a6f3ae1f135965c45849149", null ],
+    [ "config_observer_t", "namespacedepicture__menu_1_1cs__binding_1_1observer.html#ac644c14aff7e449a5fb25e13304ffced", null ],
     [ "config_view_topic_data_type_t", "namespacedepicture__menu_1_1cs__binding_1_1observer.html#aa2e6d3bc29da116433057ba199bb0b49", null ],
     [ "valid_topic", "namespacedepicture__menu_1_1cs__binding_1_1observer.html#a3c60a04853a5a8a5d3a10e24e46a1e4b", null ],
     [ "collection_changed_kind", "namespacedepicture__menu_1_1cs__binding_1_1observer.html#a79cdb028c057b8d92655a898c11ecff1", [

@@ -97,10 +97,8 @@ $(function(){initNavTree('conceptdepicture__menu_1_1cs__binding_1_1unmanaged__re
 <p><code>#include &lt;<a class="el" href="unmanaged__generator_8hpp_source.html">unmanaged_generator.hpp</a>&gt;</code></p>
 <h2 id="header-conceptdef" class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt; <span class="keyword">typename</span> F, <span class="keyword">typename</span> T &gt;</div>
-<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptdepicture__menu_1_1cs__binding_1_1unmanaged__resource__update__handle.html">unmanaged_resource_update_handle</a> =</div>
-<div class="line">  <span class="keyword">requires</span>( F h, std::function&lt; void( std::shared_ptr&lt; T &gt; ) &gt; handle ) {</div>
-<div class="line">      handle = h;</div>
-<div class="line">  }</div>
+<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptdepicture__menu_1_1cs__binding_1_1unmanaged__resource__update__handle.html">unmanaged_resource_update_handle</a> = <span class="keyword">requires</span>(</div>
+<div class="line">    F h, std::function&lt; void( std::shared_ptr&lt; T &gt; ) &gt; handle ) { handle = h; }</div>
 <div class="ttc" id="aconceptdepicture__menu_1_1cs__binding_1_1unmanaged__resource__update__handle_html"><div class="ttname"><a href="conceptdepicture__menu_1_1cs__binding_1_1unmanaged__resource__update__handle.html">depicture_menu::cs_binding::unmanaged_resource_update_handle</a></div><div class="ttdef"><b>Definition</b> <a href="unmanaged__generator_8hpp_source.html#l00023">unmanaged_generator.hpp:23</a></div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
 <div class="textblock">

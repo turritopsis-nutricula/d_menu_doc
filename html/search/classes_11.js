@@ -19,12 +19,10 @@ var searchData=
   ['repository_5faccesser_3c_20_26detail_5fd_5fmenu_3a_3acore_5finterface_5fimpl_3a_3aapplication_5fconfig_5frepository_5f_20_3e_16',['repository_accesser&lt; &amp;detail_d_menu::core_interface_impl::application_config_repository_ &gt;',['../structdepicture__menu_1_1detail__d__menu_1_1repository__accesser.html',1,'depicture_menu::detail_d_menu']]],
   ['repository_5faccesser_3c_20_26detail_5fd_5fmenu_3a_3acore_5finterface_5fimpl_3a_3aapplication_5foption_5frepository_5f_20_3e_17',['repository_accesser&lt; &amp;detail_d_menu::core_interface_impl::application_option_repository_ &gt;',['../structdepicture__menu_1_1detail__d__menu_1_1repository__accesser.html',1,'depicture_menu::detail_d_menu']]],
   ['repository_5fextractor_18',['repository_extractor',['../structdepicture__menu_1_1repositories_1_1detail__repositories_1_1repository__extractor.html',1,'depicture_menu::repositories::detail_repositories']]],
-  ['rescusive_5flock_19',['rescusive_lock',['../structdepicture__menu_1_1presentations_1_1config__view__presenter_1_1rescusive__lock.html',1,'depicture_menu::presentations::config_view_presenter']]],
-  ['resource_5fglab_5fnotify_5fcopy_5fmove_5fno_5feffect_20',['resource_glab_notify_copy_move_no_effect',['../structdepicture__menu_1_1cs__binding_1_1impl_1_1resource__glab__notify__copy__move__no__effect.html',1,'depicture_menu::cs_binding::impl']]],
-  ['result_21',['result',['../structdepicture__menu_1_1usecase_1_1duplicate__menu__item_1_1result.html',1,'depicture_menu::usecase::duplicate_menu_item']]],
-  ['result_5ft_22',['result_t',['../structdepicture__menu_1_1test_1_1type__traits_1_1method__traits.html',1,'depicture_menu::test::type_traits::result_t&lt; T &gt;'],['../structdepicture__menu_1_1type__traits_1_1method__traits.html',1,'depicture_menu::type_traits::result_t&lt; T &gt;']]],
-  ['return_5ft_23',['return_t',['../structdepicture__menu_1_1util_1_1type__traits_1_1detail__type__traits_1_1member__function__pointer__resolve.html',1,'depicture_menu::util::type_traits::detail_type_traits']]],
-  ['return_5fvalue_24',['return_value',['../structdepicture__menu_1_1usecase_1_1detail__usecase__change_1_1return__value.html',1,'depicture_menu::usecase::detail_usecase_change']]],
-  ['rgba_5fcolor_25',['rgba_color',['../structdepicture__menu_1_1domain_1_1common_1_1rgba__color.html',1,'depicture_menu::domain::common']]],
-  ['root_5ftag_26',['root_tag',['../structids_1_1root__tag.html',1,'ids']]]
+  ['resource_5fglab_5fnotify_5fcopy_5fmove_5fno_5feffect_19',['resource_glab_notify_copy_move_no_effect',['../structdepicture__menu_1_1cs__binding_1_1impl_1_1resource__glab__notify__copy__move__no__effect.html',1,'depicture_menu::cs_binding::impl']]],
+  ['result_20',['result',['../structdepicture__menu_1_1usecase_1_1duplicate__menu__item_1_1result.html',1,'depicture_menu::usecase::duplicate_menu_item']]],
+  ['result_5ft_21',['result_t',['../structdepicture__menu_1_1test_1_1type__traits_1_1method__traits.html',1,'depicture_menu::test::type_traits::result_t&lt; T &gt;'],['../structdepicture__menu_1_1type__traits_1_1method__traits.html',1,'depicture_menu::type_traits::result_t&lt; T &gt;']]],
+  ['return_5ft_22',['return_t',['../structdepicture__menu_1_1util_1_1type__traits_1_1detail__type__traits_1_1member__function__pointer__resolve.html',1,'depicture_menu::util::type_traits::detail_type_traits']]],
+  ['rgba_5fcolor_23',['rgba_color',['../structdepicture__menu_1_1domain_1_1common_1_1rgba__color.html',1,'depicture_menu::domain::common']]],
+  ['root_5ftag_24',['root_tag',['../structids_1_1root__tag.html',1,'ids']]]
 ];

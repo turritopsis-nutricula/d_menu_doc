@@ -10,7 +10,7 @@ var classdepicture__menu_1_1hotkey__manager =
     [ "key_code_t", "classdepicture__menu_1_1hotkey__manager.html#a86e70ab4c85a041c300f0dc71a939e3f", null ],
     [ "map_key_t", "classdepicture__menu_1_1hotkey__manager.html#ab47d627e55ba781616e277a9a9092be6", null ],
     [ "map_t", "classdepicture__menu_1_1hotkey__manager.html#a5d52fc066ab25ca048d836f6dce39e25", null ],
-    [ "map_value_t", "classdepicture__menu_1_1hotkey__manager.html#a1eb68278beb79f4dfb60c47cfc997ecf", null ],
+    [ "map_value_t", "classdepicture__menu_1_1hotkey__manager.html#ae2d510264589309e008f8bcee0dc4973", null ],
     [ "modifier_t", "classdepicture__menu_1_1hotkey__manager.html#a5c097e99693923a2b16ecf15ed0c7fdf", null ],
     [ "subscription_t", "classdepicture__menu_1_1hotkey__manager.html#a81c8a46e9bb770185e783dc16b23e9f9", null ],
     [ "find_hotkey", "classdepicture__menu_1_1hotkey__manager.html#a1bfee9d6539220dcec2da4b1b947d841", null ],

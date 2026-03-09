@@ -117,25 +117,25 @@ $(function(){initNavTree('cs__bindings_8cpp_source.html','',''); });
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="comment">// core inteface</span></div>
 <div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="cs__bindings_8cpp.html#a1695181e377793227b520a831cb43bf9">   23</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="cs__bindings_8cpp.html#a1695181e377793227b520a831cb43bf9">update_core_view_event_notify</a>(</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>      std::shared_ptr&lt; d_menu::cs_binding::ViewEventNotify_Proxy &gt; proxy )</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        std::shared_ptr&lt; d_menu::cs_binding::ViewEventNotify_Proxy &gt; proxy )</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    {</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="comment">// TODO : to swap_instance</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        proxy-&gt;instance( ) =</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>          <a class="code hl_function" href="classdepicture__menu_1_1singleton.html#ab3a8df96e817c8ccb1ab61434f90c416">d_menu::core_interface::get_instance</a>( ).view_notify;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <a class="code hl_function" href="classdepicture__menu_1_1singleton.html#ab3a8df96e817c8ccb1ab61434f90c416">d_menu::core_interface::get_instance</a>( ).view_notify;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
 </div>
 <div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="cs__bindings_8cpp.html#a2fac5f8040c0c01d0890c51b81861129">   30</a></span>    <a class="code hl_define" href="define__cs__bind__type_8hpp.html#a04c53a1ec0673166103fec7bd1cd1b50">DPM_DEFINE_CURRENT_UPDATE_TYPE</a>(</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      ViewEventNotify,</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      &amp;<a class="code hl_function" href="cs__bindings_8cpp.html#a1695181e377793227b520a831cb43bf9">update_core_view_event_notify</a> )</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="comment">//  AppOptionsArg Bind</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_define" href="define__cs__bind__type_8hpp.html#aacc63d380306bb0d6addde94eb4368e2">DPM_DEFINE_PRE_REGISTRATION_TYPE</a>( AppOptionsArg )</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        ViewEventNotify, &amp;<a class="code hl_function" href="cs__bindings_8cpp.html#a1695181e377793227b520a831cb43bf9">update_core_view_event_notify</a> )</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="comment">//  AppOptionsArg Bind</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_define" href="define__cs__bind__type_8hpp.html#aacc63d380306bb0d6addde94eb4368e2">DPM_DEFINE_PRE_REGISTRATION_TYPE</a>( AppOptionsArg )</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">void</span> act_seq(</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      std::shared_ptr&lt; depicture_menu::cs_binding::ActionsSeqence_Proxy &gt; next )</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordtype">void</span> act_seq(</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        std::shared_ptr&lt; depicture_menu::cs_binding::ActionsSeqence_Proxy &gt;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            next )</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    {</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        std::cout &lt;&lt; <span class="stringliteral">&quot; sequence proxy: &quot;</span> &lt;&lt; next.get( ) &lt;&lt; std::endl;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
@@ -146,14 +146,14 @@ $(function(){initNavTree('cs__bindings_8cpp_source.html','',''); });
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="comment">// HotKeyControler TODO: move to other file</span></div>
 <div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="cs__bindings_8cpp.html#aea2c156dc463a261a91b342057913083">   48</a></span>    void <a class="code hl_function" href="cs__bindings_8cpp.html#aea2c156dc463a261a91b342057913083">hotkey_controler_binding</a>(</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      <a class="code hl_namespace" href="namespacestd.html">std</a>::shared_ptr&lt; <a class="code hl_namespace" href="namespacedepicture__menu.html">depicture_menu</a>::cs_binding::HotKeyControler_Proxy &gt;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        proxy )</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <a class="code hl_namespace" href="namespacestd.html">std</a>::shared_ptr&lt; <a class="code hl_namespace" href="namespacedepicture__menu.html">depicture_menu</a>::cs_binding::HotKeyControler_Proxy &gt;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            proxy )</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    {</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        std::cout &lt;&lt; <span class="stringliteral">&quot; call HotKeyControler binding&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        proxy-&gt;swap_instance(</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>          <span class="comment">//            d_menu::core_interface::get_instance(</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>          <span class="comment">// ).get_hotkey_controler( )</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>          <a class="code hl_function" href="classdepicture__menu_1_1singleton.html#ab3a8df96e817c8ccb1ab61434f90c416">d_menu::cs_binding::model_interface_t::get_instance</a>( ).HotKey_ );</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="comment">//          d_menu::core_interface::get_instance(</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            <span class="comment">// ).get_hotkey_controler( )</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <a class="code hl_function" href="classdepicture__menu_1_1singleton.html#ab3a8df96e817c8ccb1ab61434f90c416">d_menu::cs_binding::model_interface_t::get_instance</a>( ).HotKey_ );</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
 </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <a class="code hl_define" href="define__cs__bind__type_8hpp.html#a04c53a1ec0673166103fec7bd1cd1b50">DPM_DEFINE_CURRENT_UPDATE_TYPE</a>( HotKeyControler, &amp;<a class="code hl_function" href="cs__bindings_8cpp.html#aea2c156dc463a261a91b342057913083">hotkey_controler_binding</a> )</div>
@@ -177,10 +177,10 @@ $(function(){initNavTree('cs__bindings_8cpp_source.html','',''); });
 <div class="ttc" id="acs__bindings_8cpp_html_a1695181e377793227b520a831cb43bf9"><div class="ttname"><a href="cs__bindings_8cpp.html#a1695181e377793227b520a831cb43bf9">update_core_view_event_notify</a></div><div class="ttdeci">void update_core_view_event_notify(std::shared_ptr&lt; d_menu::cs_binding::ViewEventNotify_Proxy &gt; proxy)</div><div class="ttdef"><b>Definition</b> <a href="#l00023">cs_bindings.cpp:23</a></div></div>
 <div class="ttc" id="acs__bindings_8cpp_html_aea2c156dc463a261a91b342057913083"><div class="ttname"><a href="cs__bindings_8cpp.html#aea2c156dc463a261a91b342057913083">hotkey_controler_binding</a></div><div class="ttdeci">void hotkey_controler_binding(std::shared_ptr&lt; depicture_menu::cs_binding::HotKeyControler_Proxy &gt; proxy)</div><div class="ttdef"><b>Definition</b> <a href="#l00048">cs_bindings.cpp:48</a></div></div>
 <div class="ttc" id="adefine__cs__bind__type_8hpp_html"><div class="ttname"><a href="define__cs__bind__type_8hpp.html">define_cs_bind_type.hpp</a></div></div>
-<div class="ttc" id="adefine__cs__bind__type_8hpp_html_a04c53a1ec0673166103fec7bd1cd1b50"><div class="ttname"><a href="define__cs__bind__type_8hpp.html#a04c53a1ec0673166103fec7bd1cd1b50">DPM_DEFINE_CURRENT_UPDATE_TYPE</a></div><div class="ttdeci">#define DPM_DEFINE_CURRENT_UPDATE_TYPE(TYPE, HANDLE)</div><div class="ttdef"><b>Definition</b> <a href="define__cs__bind__type_8hpp_source.html#l00049">define_cs_bind_type.hpp:49</a></div></div>
-<div class="ttc" id="adefine__cs__bind__type_8hpp_html_aacc63d380306bb0d6addde94eb4368e2"><div class="ttname"><a href="define__cs__bind__type_8hpp.html#aacc63d380306bb0d6addde94eb4368e2">DPM_DEFINE_PRE_REGISTRATION_TYPE</a></div><div class="ttdeci">#define DPM_DEFINE_PRE_REGISTRATION_TYPE(TYPE)</div><div class="ttdef"><b>Definition</b> <a href="define__cs__bind__type_8hpp_source.html#l00071">define_cs_bind_type.hpp:71</a></div></div>
+<div class="ttc" id="adefine__cs__bind__type_8hpp_html_a04c53a1ec0673166103fec7bd1cd1b50"><div class="ttname"><a href="define__cs__bind__type_8hpp.html#a04c53a1ec0673166103fec7bd1cd1b50">DPM_DEFINE_CURRENT_UPDATE_TYPE</a></div><div class="ttdeci">#define DPM_DEFINE_CURRENT_UPDATE_TYPE(TYPE, HANDLE)</div><div class="ttdef"><b>Definition</b> <a href="define__cs__bind__type_8hpp_source.html#l00051">define_cs_bind_type.hpp:51</a></div></div>
+<div class="ttc" id="adefine__cs__bind__type_8hpp_html_aacc63d380306bb0d6addde94eb4368e2"><div class="ttname"><a href="define__cs__bind__type_8hpp.html#aacc63d380306bb0d6addde94eb4368e2">DPM_DEFINE_PRE_REGISTRATION_TYPE</a></div><div class="ttdeci">#define DPM_DEFINE_PRE_REGISTRATION_TYPE(TYPE)</div><div class="ttdef"><b>Definition</b> <a href="define__cs__bind__type_8hpp_source.html#l00074">define_cs_bind_type.hpp:74</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_html"><div class="ttname"><a href="namespacedepicture__menu.html">depicture_menu</a></div><div class="ttdef"><b>Definition</b> <a href="constexpr__string_8hpp_source.html#l00012">constexpr_string.hpp:13</a></div></div>
-<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition</b> <a href="app__ids_8hpp_source.html#l00061">app_ids.hpp:62</a></div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition</b> <a href="app__ids_8hpp_source.html#l00060">app_ids.hpp:61</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

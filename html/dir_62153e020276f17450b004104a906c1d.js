@@ -5,6 +5,7 @@ var dir_62153e020276f17450b004104a906c1d =
     [ "command_line_option", "dir_b0a0d03b71a6b46b3f33ca88afb19b2e.html", "dir_b0a0d03b71a6b46b3f33ca88afb19b2e" ],
     [ "cs_binding_factory", "dir_6bc76a7ac06a3d117d11b93a0cd1820a.html", "dir_6bc76a7ac06a3d117d11b93a0cd1820a" ],
     [ "debug", "dir_db7fd1b1c514877b03b2e204705b23cb.html", "dir_db7fd1b1c514877b03b2e204705b23cb" ],
+    [ "usecase_dispatch", "dir_9b16a64387d68a55f2749859edf07bb6.html", "dir_9b16a64387d68a55f2749859edf07bb6" ],
     [ "app_transaction.cpp", "app__transaction_8cpp.html", "app__transaction_8cpp" ],
     [ "app_transaction.hpp", "app__transaction_8hpp.html", "app__transaction_8hpp" ],
     [ "app_worker.hpp", "app__worker_8hpp.html", "app__worker_8hpp" ],

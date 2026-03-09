@@ -119,7 +119,7 @@ $(function(){initNavTree('ipc__queue_8hpp_source.html','',''); });
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="foldopen" id="foldopen00022" data-start="{" data-end="}">
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structipc__queue.html#a336ff066b4acee0768c7591bcded6979">   22</a></span>    <a class="code hl_function" href="structipc__queue.html#a336ff066b4acee0768c7591bcded6979">ipc_queue</a>( <a class="code hl_enumeration" href="ipc__queue_8hpp.html#ac2161f7e2bb82a9905ca2a830b6c242f">ipc_constract</a> <span class="keyword">const</span> ipc_type, std::string_view <span class="keyword">const</span>&amp; n )</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>      : <a class="code hl_variable" href="structipc__queue.html#ac6e0dca65ea42a32e52c03ed29275f9a">name_</a>( n )</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        : <a class="code hl_variable" href="structipc__queue.html#ac6e0dca65ea42a32e52c03ed29275f9a">name_</a>( n )</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    {</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keyword">using </span>boost::interprocess::message_queue;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keywordtype">int</span> <span class="keyword">const</span> message_max_count = 1024;</div>
@@ -131,98 +131,99 @@ $(function(){initNavTree('ipc__queue_8hpp_source.html','',''); });
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                {</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                    message_queue::remove( <a class="code hl_variable" href="structipc__queue.html#ac6e0dca65ea42a32e52c03ed29275f9a">name_</a>.data( ) );</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                    <a class="code hl_variable" href="structipc__queue.html#a053af5f52063751cc8df88f9e8f1071f">ipc_queue_</a>.emplace(</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                      boost::interprocess::create_only,</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                      <a class="code hl_variable" href="structipc__queue.html#ac6e0dca65ea42a32e52c03ed29275f9a">name_</a>.data( ),</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                      message_max_count,</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                      <span class="keyword">sizeof</span>( T ) );</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                        boost::interprocess::create_only,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                        <a class="code hl_variable" href="structipc__queue.html#ac6e0dca65ea42a32e52c03ed29275f9a">name_</a>.data( ),</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                        message_max_count,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                        <span class="keyword">sizeof</span>( T ) );</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                }</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="ipc__queue_8hpp.html#ac2161f7e2bb82a9905ca2a830b6c242fa7cef8a734855777c2a9d0caf42666e69">ipc_constract::open</a> :</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                {</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                    <a class="code hl_variable" href="structipc__queue.html#a053af5f52063751cc8df88f9e8f1071f">ipc_queue_</a>.emplace(</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                      boost::interprocess::open_only, <a class="code hl_variable" href="structipc__queue.html#ac6e0dca65ea42a32e52c03ed29275f9a">name_</a>.data( ) );</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                }</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="ipc__queue_8hpp.html#ac2161f7e2bb82a9905ca2a830b6c242faf7a6e5d182e5d5a2e09302a5c3671daf">ipc_constract::open_or_create</a> :</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                {</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                    <a class="code hl_variable" href="structipc__queue.html#a053af5f52063751cc8df88f9e8f1071f">ipc_queue_</a>.emplace(</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                      boost::interprocess::open_or_create,</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                      <a class="code hl_variable" href="structipc__queue.html#ac6e0dca65ea42a32e52c03ed29275f9a">name_</a>.data( ),</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                      message_max_count,</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                      <span class="keyword">sizeof</span>( T ) );</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                }</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            }</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        }</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">catch</span> ( ... )</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        {</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            message_queue::remove( <a class="code hl_variable" href="structipc__queue.html#ac6e0dca65ea42a32e52c03ed29275f9a">name_</a>.data( ) );</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        }</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                        boost::interprocess::open_only,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                        <a class="code hl_variable" href="structipc__queue.html#ac6e0dca65ea42a32e52c03ed29275f9a">name_</a>.data( ) );</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="ipc__queue_8hpp.html#ac2161f7e2bb82a9905ca2a830b6c242faf7a6e5d182e5d5a2e09302a5c3671daf">ipc_constract::open_or_create</a> :</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                    <a class="code hl_variable" href="structipc__queue.html#a053af5f52063751cc8df88f9e8f1071f">ipc_queue_</a>.emplace(</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                        boost::interprocess::open_or_create,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                        <a class="code hl_variable" href="structipc__queue.html#ac6e0dca65ea42a32e52c03ed29275f9a">name_</a>.data( ),</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                        message_max_count,</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                        <span class="keyword">sizeof</span>( T ) );</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordflow">catch</span> ( ... )</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            message_queue::remove( <a class="code hl_variable" href="structipc__queue.html#ac6e0dca65ea42a32e52c03ed29275f9a">name_</a>.data( ) );</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
 </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="foldopen" id="foldopen00062" data-start="{" data-end="}">
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="structipc__queue.html#adcaedf6d8e31e3ec1d5b92001c1eff55">   62</a></span>    <a class="code hl_function" href="structipc__queue.html#adcaedf6d8e31e3ec1d5b92001c1eff55">~ipc_queue</a>( ) noexcept</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    {</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordflow">if</span> ( <a class="code hl_variable" href="structipc__queue.html#a053af5f52063751cc8df88f9e8f1071f">ipc_queue_</a> )</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            boost::interprocess::message_queue::remove( <a class="code hl_variable" href="structipc__queue.html#ac6e0dca65ea42a32e52c03ed29275f9a">name_</a>.data( ) );</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="structipc__queue.html#adcaedf6d8e31e3ec1d5b92001c1eff55">   63</a></span>    <a class="code hl_function" href="structipc__queue.html#adcaedf6d8e31e3ec1d5b92001c1eff55">~ipc_queue</a>( ) noexcept</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordflow">if</span> ( <a class="code hl_variable" href="structipc__queue.html#a053af5f52063751cc8df88f9e8f1071f">ipc_queue_</a> )</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            boost::interprocess::message_queue::remove( <a class="code hl_variable" href="structipc__queue.html#ac6e0dca65ea42a32e52c03ed29275f9a">name_</a>.data( ) );</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    }</div>
 </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="structipc__queue.html#aff653b5107bb4e1c7499382330a4db3d">   68</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structipc__queue.html#aff653b5107bb4e1c7499382330a4db3d">send</a>( T&amp;&amp; v )</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    {</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordflow">if</span> ( !<a class="code hl_variable" href="structipc__queue.html#a053af5f52063751cc8df88f9e8f1071f">ipc_queue_</a> ) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <a class="code hl_variable" href="structipc__queue.html#a053af5f52063751cc8df88f9e8f1071f">ipc_queue_</a>-&gt;send( &amp;v, <span class="keyword">sizeof</span>( T ), 0 );</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="structipc__queue.html#aff653b5107bb4e1c7499382330a4db3d">   69</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structipc__queue.html#aff653b5107bb4e1c7499382330a4db3d">send</a>( T&amp;&amp; v )</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordflow">if</span> ( !<a class="code hl_variable" href="structipc__queue.html#a053af5f52063751cc8df88f9e8f1071f">ipc_queue_</a> ) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <a class="code hl_variable" href="structipc__queue.html#a053af5f52063751cc8df88f9e8f1071f">ipc_queue_</a>-&gt;send( &amp;v, <span class="keyword">sizeof</span>( T ), 0 );</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    }</div>
 </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="foldopen" id="foldopen00076" data-start="{" data-end="}">
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="structipc__queue.html#a296b3f9f7410904eb31eb7b2e0481dd4">   76</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structipc__queue.html#a296b3f9f7410904eb31eb7b2e0481dd4">send</a>( T <span class="keyword">const</span>&amp; v )</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    {</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keyword">auto</span> copy_v = v;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="structipc__queue.html#aff653b5107bb4e1c7499382330a4db3d">send</a>( std::move( v ) );</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="foldopen" id="foldopen00077" data-start="{" data-end="}">
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="structipc__queue.html#a296b3f9f7410904eb31eb7b2e0481dd4">   77</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structipc__queue.html#a296b3f9f7410904eb31eb7b2e0481dd4">send</a>( T <span class="keyword">const</span>&amp; v )</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    {</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keyword">auto</span> copy_v = v;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="structipc__queue.html#aff653b5107bb4e1c7499382330a4db3d">send</a>( std::move( v ) );</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
 </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="foldopen" id="foldopen00082" data-start="{" data-end="}">
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="structipc__queue.html#aa6816b4e6c44458561b4d2ca6b87ba14">   82</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structipc__queue.html#aa6816b4e6c44458561b4d2ca6b87ba14">recive</a>( T&amp; v, std::size_t wait_millisec = 100u )</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    {</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordflow">if</span> ( !<a class="code hl_variable" href="structipc__queue.html#a053af5f52063751cc8df88f9e8f1071f">ipc_queue_</a> ) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        uint64_t     recive_size;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> recive_priority;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="structipc__queue.html#a053af5f52063751cc8df88f9e8f1071f">ipc_queue_</a>-&gt;timed_receive(</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>          &amp;v,</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>          <span class="keyword">sizeof</span>( T ),</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>          recive_size,</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>          recive_priority,</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>          boost::posix_time::second_clock::universal_time( ) +</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            boost::posix_time::milliseconds( wait_millisec ) );</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="foldopen" id="foldopen00083" data-start="{" data-end="}">
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="structipc__queue.html#aa6816b4e6c44458561b4d2ca6b87ba14">   83</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structipc__queue.html#aa6816b4e6c44458561b4d2ca6b87ba14">recive</a>( T&amp; v, std::size_t wait_millisec = 100u )</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordflow">if</span> ( !<a class="code hl_variable" href="structipc__queue.html#a053af5f52063751cc8df88f9e8f1071f">ipc_queue_</a> ) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        uint64_t     recive_size;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> recive_priority;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="structipc__queue.html#a053af5f52063751cc8df88f9e8f1071f">ipc_queue_</a>-&gt;timed_receive(</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            &amp;v,</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <span class="keyword">sizeof</span>( T ),</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            recive_size,</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            recive_priority,</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            boost::posix_time::second_clock::universal_time( ) +</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                boost::posix_time::milliseconds( wait_millisec ) );</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    }</div>
 </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="structipc__queue.html#a053af5f52063751cc8df88f9e8f1071f">   98</a></span>    std::optional&lt; boost::interprocess::message_queue &gt; <a class="code hl_variable" href="structipc__queue.html#a053af5f52063751cc8df88f9e8f1071f">ipc_queue_</a>;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="structipc__queue.html#ac6e0dca65ea42a32e52c03ed29275f9a">   99</a></span>    std::string_view                                    <a class="code hl_variable" href="structipc__queue.html#ac6e0dca65ea42a32e52c03ed29275f9a">name_</a>;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>};</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="structipc__queue.html#a053af5f52063751cc8df88f9e8f1071f">   99</a></span>    std::optional&lt; boost::interprocess::message_queue &gt; <a class="code hl_variable" href="structipc__queue.html#a053af5f52063751cc8df88f9e8f1071f">ipc_queue_</a>;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="structipc__queue.html#ac6e0dca65ea42a32e52c03ed29275f9a">  100</a></span>    std::string_view                                    <a class="code hl_variable" href="structipc__queue.html#ac6e0dca65ea42a32e52c03ed29275f9a">name_</a>;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>};</div>
 </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">#endif    </span><span class="comment">// TEST_WIN32_IPC_QUEUE_HPP_</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="preprocessor">#endif    </span><span class="comment">// TEST_WIN32_IPC_QUEUE_HPP_</span></div>
 <div class="ttc" id="aipc__queue_8hpp_html_ac2161f7e2bb82a9905ca2a830b6c242f"><div class="ttname"><a href="ipc__queue_8hpp.html#ac2161f7e2bb82a9905ca2a830b6c242f">ipc_constract</a></div><div class="ttdeci">ipc_constract</div><div class="ttdef"><b>Definition</b> <a href="#l00007">ipc_queue.hpp:8</a></div></div>
 <div class="ttc" id="aipc__queue_8hpp_html_ac2161f7e2bb82a9905ca2a830b6c242fa76ea0bebb3c22822b4f0dd9c9fd021c5"><div class="ttname"><a href="ipc__queue_8hpp.html#ac2161f7e2bb82a9905ca2a830b6c242fa76ea0bebb3c22822b4f0dd9c9fd021c5">ipc_constract::create</a></div><div class="ttdeci">@ create</div><div class="ttdef"><b>Definition</b> <a href="#l00009">ipc_queue.hpp:9</a></div></div>
 <div class="ttc" id="aipc__queue_8hpp_html_ac2161f7e2bb82a9905ca2a830b6c242fa7cef8a734855777c2a9d0caf42666e69"><div class="ttname"><a href="ipc__queue_8hpp.html#ac2161f7e2bb82a9905ca2a830b6c242fa7cef8a734855777c2a9d0caf42666e69">ipc_constract::open</a></div><div class="ttdeci">@ open</div><div class="ttdef"><b>Definition</b> <a href="#l00010">ipc_queue.hpp:10</a></div></div>
 <div class="ttc" id="aipc__queue_8hpp_html_ac2161f7e2bb82a9905ca2a830b6c242faf7a6e5d182e5d5a2e09302a5c3671daf"><div class="ttname"><a href="ipc__queue_8hpp.html#ac2161f7e2bb82a9905ca2a830b6c242faf7a6e5d182e5d5a2e09302a5c3671daf">ipc_constract::open_or_create</a></div><div class="ttdeci">@ open_or_create</div><div class="ttdef"><b>Definition</b> <a href="#l00011">ipc_queue.hpp:11</a></div></div>
 <div class="ttc" id="astructipc__queue_html_a0416f61726b2d5a9da8febd093a1f963"><div class="ttname"><a href="structipc__queue.html#a0416f61726b2d5a9da8febd093a1f963">ipc_queue::operator=</a></div><div class="ttdeci">ipc_queue &amp; operator=(ipc_queue &amp;&amp;)=delete</div></div>
-<div class="ttc" id="astructipc__queue_html_a053af5f52063751cc8df88f9e8f1071f"><div class="ttname"><a href="structipc__queue.html#a053af5f52063751cc8df88f9e8f1071f">ipc_queue::ipc_queue_</a></div><div class="ttdeci">std::optional&lt; boost::interprocess::message_queue &gt; ipc_queue_</div><div class="ttdef"><b>Definition</b> <a href="#l00098">ipc_queue.hpp:98</a></div></div>
-<div class="ttc" id="astructipc__queue_html_a296b3f9f7410904eb31eb7b2e0481dd4"><div class="ttname"><a href="structipc__queue.html#a296b3f9f7410904eb31eb7b2e0481dd4">ipc_queue::send</a></div><div class="ttdeci">bool send(T const &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="#l00076">ipc_queue.hpp:76</a></div></div>
+<div class="ttc" id="astructipc__queue_html_a053af5f52063751cc8df88f9e8f1071f"><div class="ttname"><a href="structipc__queue.html#a053af5f52063751cc8df88f9e8f1071f">ipc_queue::ipc_queue_</a></div><div class="ttdeci">std::optional&lt; boost::interprocess::message_queue &gt; ipc_queue_</div><div class="ttdef"><b>Definition</b> <a href="#l00099">ipc_queue.hpp:99</a></div></div>
+<div class="ttc" id="astructipc__queue_html_a296b3f9f7410904eb31eb7b2e0481dd4"><div class="ttname"><a href="structipc__queue.html#a296b3f9f7410904eb31eb7b2e0481dd4">ipc_queue::send</a></div><div class="ttdeci">bool send(T const &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="#l00077">ipc_queue.hpp:77</a></div></div>
 <div class="ttc" id="astructipc__queue_html_a336ff066b4acee0768c7591bcded6979"><div class="ttname"><a href="structipc__queue.html#a336ff066b4acee0768c7591bcded6979">ipc_queue::ipc_queue</a></div><div class="ttdeci">ipc_queue(ipc_constract const ipc_type, std::string_view const &amp;n)</div><div class="ttdef"><b>Definition</b> <a href="#l00022">ipc_queue.hpp:22</a></div></div>
 <div class="ttc" id="astructipc__queue_html_a576ca7f017653d51ad9fab2befae3397"><div class="ttname"><a href="structipc__queue.html#a576ca7f017653d51ad9fab2befae3397">ipc_queue::ipc_queue</a></div><div class="ttdeci">ipc_queue(const ipc_queue &amp;)=delete</div></div>
 <div class="ttc" id="astructipc__queue_html_a58609a319aaff85d3b13575feff55cfd"><div class="ttname"><a href="structipc__queue.html#a58609a319aaff85d3b13575feff55cfd">ipc_queue::ipc_queue</a></div><div class="ttdeci">ipc_queue(ipc_queue &amp;&amp;)=delete</div></div>
 <div class="ttc" id="astructipc__queue_html_a6f2900bf426c7cb4f1cf5790a53f3aa7"><div class="ttname"><a href="structipc__queue.html#a6f2900bf426c7cb4f1cf5790a53f3aa7">ipc_queue::operator=</a></div><div class="ttdeci">ipc_queue &amp; operator=(const ipc_queue &amp;)=delete</div></div>
-<div class="ttc" id="astructipc__queue_html_aa6816b4e6c44458561b4d2ca6b87ba14"><div class="ttname"><a href="structipc__queue.html#aa6816b4e6c44458561b4d2ca6b87ba14">ipc_queue::recive</a></div><div class="ttdeci">bool recive(T &amp;v, std::size_t wait_millisec=100u)</div><div class="ttdef"><b>Definition</b> <a href="#l00082">ipc_queue.hpp:82</a></div></div>
-<div class="ttc" id="astructipc__queue_html_ac6e0dca65ea42a32e52c03ed29275f9a"><div class="ttname"><a href="structipc__queue.html#ac6e0dca65ea42a32e52c03ed29275f9a">ipc_queue::name_</a></div><div class="ttdeci">std::string_view name_</div><div class="ttdef"><b>Definition</b> <a href="#l00099">ipc_queue.hpp:99</a></div></div>
-<div class="ttc" id="astructipc__queue_html_adcaedf6d8e31e3ec1d5b92001c1eff55"><div class="ttname"><a href="structipc__queue.html#adcaedf6d8e31e3ec1d5b92001c1eff55">ipc_queue::~ipc_queue</a></div><div class="ttdeci">~ipc_queue() noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00062">ipc_queue.hpp:62</a></div></div>
-<div class="ttc" id="astructipc__queue_html_aff653b5107bb4e1c7499382330a4db3d"><div class="ttname"><a href="structipc__queue.html#aff653b5107bb4e1c7499382330a4db3d">ipc_queue::send</a></div><div class="ttdeci">bool send(T &amp;&amp;v)</div><div class="ttdef"><b>Definition</b> <a href="#l00068">ipc_queue.hpp:68</a></div></div>
+<div class="ttc" id="astructipc__queue_html_aa6816b4e6c44458561b4d2ca6b87ba14"><div class="ttname"><a href="structipc__queue.html#aa6816b4e6c44458561b4d2ca6b87ba14">ipc_queue::recive</a></div><div class="ttdeci">bool recive(T &amp;v, std::size_t wait_millisec=100u)</div><div class="ttdef"><b>Definition</b> <a href="#l00083">ipc_queue.hpp:83</a></div></div>
+<div class="ttc" id="astructipc__queue_html_ac6e0dca65ea42a32e52c03ed29275f9a"><div class="ttname"><a href="structipc__queue.html#ac6e0dca65ea42a32e52c03ed29275f9a">ipc_queue::name_</a></div><div class="ttdeci">std::string_view name_</div><div class="ttdef"><b>Definition</b> <a href="#l00100">ipc_queue.hpp:100</a></div></div>
+<div class="ttc" id="astructipc__queue_html_adcaedf6d8e31e3ec1d5b92001c1eff55"><div class="ttname"><a href="structipc__queue.html#adcaedf6d8e31e3ec1d5b92001c1eff55">ipc_queue::~ipc_queue</a></div><div class="ttdeci">~ipc_queue() noexcept</div><div class="ttdef"><b>Definition</b> <a href="#l00063">ipc_queue.hpp:63</a></div></div>
+<div class="ttc" id="astructipc__queue_html_aff653b5107bb4e1c7499382330a4db3d"><div class="ttname"><a href="structipc__queue.html#aff653b5107bb4e1c7499382330a4db3d">ipc_queue::send</a></div><div class="ttdeci">bool send(T &amp;&amp;v)</div><div class="ttdef"><b>Definition</b> <a href="#l00069">ipc_queue.hpp:69</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

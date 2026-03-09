@@ -111,31 +111,21 @@ var concepts =
         [ "tuple_like", "conceptdepicture__menu_1_1concepts_1_1tuple__like.html", null ],
         [ "unique_identifier", "conceptdepicture__menu_1_1concepts_1_1unique__identifier.html", null ]
       ] ],
-      [ "presentations", "namespacedepicture__menu_1_1presentations.html", [
-        [ "view_models", "namespacedepicture__menu_1_1presentations_1_1view__models.html", [
-          [ "list_helpers", "namespacedepicture__menu_1_1presentations_1_1view__models_1_1list__helpers.html", [
-            [ "detail_list_helper", "namespacedepicture__menu_1_1presentations_1_1view__models_1_1list__helpers_1_1detail__list__helper.html", [
-              [ "concepts", "namespacedepicture__menu_1_1presentations_1_1view__models_1_1list__helpers_1_1detail__list__helper_1_1concepts.html", [
-                [ "entites_range", "conceptdepicture__menu_1_1presentations_1_1view__models_1_1list__helpers_1_1detail__list__helper_1_1concepts_1_1entites__range.html", null ],
-                [ "id_accessable", "conceptdepicture__menu_1_1presentations_1_1view__models_1_1list__helpers_1_1detail__list__helper_1_1concepts_1_1id__accessable.html", null ],
-                [ "id_accessable_view_range", "conceptdepicture__menu_1_1presentations_1_1view__models_1_1list__helpers_1_1detail__list__helperb062fbdfb215318e2b9659aedca8f124.html", null ]
-              ] ]
-            ] ]
-          ] ]
-        ] ]
-      ] ],
       [ "repositories", "namespacedepicture__menu_1_1repositories.html", [
         [ "is_result_forward", "conceptdepicture__menu_1_1repositories_1_1is__result__forward.html", null ]
       ] ],
       [ "usecase", "namespacedepicture__menu_1_1usecase.html", [
         [ "concepts", "namespacedepicture__menu_1_1usecase_1_1concepts.html", [
-          [ "menu_presentable", "conceptdepicture__menu_1_1usecase_1_1concepts_1_1menu__presentable.html", null ],
           [ "action_config_change_extractor", "conceptdepicture__menu_1_1usecase_1_1concepts_1_1action__config__change__extractor.html", null ],
+          [ "menu_changed_presentable", "conceptdepicture__menu_1_1usecase_1_1concepts_1_1menu__changed__presentable.html", null ],
+          [ "action_changed_presentable", "conceptdepicture__menu_1_1usecase_1_1concepts_1_1action__changed__presentable.html", null ],
+          [ "command_changed_presentable", "conceptdepicture__menu_1_1usecase_1_1concepts_1_1command__changed__presentable.html", null ],
+          [ "trigger_changed_presentable", "conceptdepicture__menu_1_1usecase_1_1concepts_1_1trigger__changed__presentable.html", null ],
+          [ "config_changed_presentable", "conceptdepicture__menu_1_1usecase_1_1concepts_1_1config__changed__presentable.html", null ],
+          [ "view_model_presentable", "conceptdepicture__menu_1_1usecase_1_1concepts_1_1view__model__presentable.html", null ],
           [ "config_changed_dependenceable", "conceptdepicture__menu_1_1usecase_1_1concepts_1_1config__changed__dependenceable.html", null ],
           [ "menu_creatable", "conceptdepicture__menu_1_1usecase_1_1concepts_1_1menu__creatable.html", null ],
           [ "menu_closable", "conceptdepicture__menu_1_1usecase_1_1concepts_1_1menu__closable.html", null ],
-          [ "menu_query", "conceptdepicture__menu_1_1usecase_1_1concepts_1_1menu__query.html", null ],
-          [ "remove_menu_item_presetable", "conceptdepicture__menu_1_1usecase_1_1concepts_1_1remove__menu__item__presetable.html", null ],
           [ "menu_config_extractor", "conceptdepicture__menu_1_1usecase_1_1concepts_1_1menu__config__extractor.html", null ],
           [ "trigger_data_generatable", "conceptdepicture__menu_1_1usecase_1_1concepts_1_1trigger__data__generatable.html", null ],
           [ "global_hotkey_presentable", "conceptdepicture__menu_1_1usecase_1_1concepts_1_1global__hotkey__presentable.html", null ],
@@ -149,10 +139,6 @@ var concepts =
           [ "convert_writer", "conceptdepicture__menu_1_1conv__mapping_1_1concepts_1_1convert__writer.html", null ]
         ] ]
       ] ]
-    ] ],
-    [ "detail", "namespacedetail.html", [
-      [ "id_access_handler", "conceptdetail_1_1id__access__handler.html", null ],
-      [ "entites_range", "conceptdetail_1_1entites__range.html", null ]
     ] ],
     [ "test_helper", "namespacetest__helper.html", [
       [ "describable", "concepttest__helper_1_1describable.html", null ]

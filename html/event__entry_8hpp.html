@@ -116,8 +116,8 @@ $(function(){initNavTree('event__entry_8hpp.html','',''); });
 <tr class="memitem:a16f40fdad1b7a3fa4f35c93e3af813ea" id="r_a16f40fdad1b7a3fa4f35c93e3af813ea"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a16f40fdad1b7a3fa4f35c93e3af813ea">DPM_EVENT_ENTRY_GENERATE_CPP_CLASS_AFTER</a>(GM_SEQS,  <a class="el" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a>,  NAME)</td></tr>
 <tr class="memitem:a4b33472d56ff554b4033d9c10ef6c528" id="r_a4b33472d56ff554b4033d9c10ef6c528"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a4b33472d56ff554b4033d9c10ef6c528">DPM_EVENT_ENTRY_GENERATE_CSHARP_CLASS_BODY</a>(GM_SEQS,  <a class="el" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a>,  NAME)</td></tr>
 <tr class="memitem:a95d733cb9c7ac7a828599c53d3880ed0" id="r_a95d733cb9c7ac7a828599c53d3880ed0"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a95d733cb9c7ac7a828599c53d3880ed0">DPM_EVENT_ENTRY_GENERATE_CSHARP_CONSTRACTOR</a>(GM_SEQS,  <a class="el" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a>,  NAME)</td></tr>
-<tr class="memitem:ab865aff84708d38b68a77ddc66f42f95" id="r_ab865aff84708d38b68a77ddc66f42f95"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab865aff84708d38b68a77ddc66f42f95">DPM_EVENT_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY</a>( GM_SEQS,  <a class="el" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a>,  NAME)</td></tr>
-<tr class="memitem:a10d7d6ab8e620f09abc222ec1dd09ce4" id="r_a10d7d6ab8e620f09abc222ec1dd09ce4"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a10d7d6ab8e620f09abc222ec1dd09ce4">DPM_EVENT_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR</a>( GM_SEQS,  CLAS,  NAME)</td></tr>
+<tr class="memitem:ab08a90b5903e5c65f3681714fd6c4581" id="r_ab08a90b5903e5c65f3681714fd6c4581"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ab08a90b5903e5c65f3681714fd6c4581">DPM_EVENT_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY</a>(GM_SEQS,  <a class="el" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a>,  NAME)</td></tr>
+<tr class="memitem:ac665910ab3defbba8dfce5acd0851e9d" id="r_ac665910ab3defbba8dfce5acd0851e9d"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ac665910ab3defbba8dfce5acd0851e9d">DPM_EVENT_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR</a>(GM_SEQS,  CLAS,  NAME)</td></tr>
 </table>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">マクロ定義詳解</h2>
 <a id="a33aaf4e4e2dfd2570a0da850b7e557fb" name="a33aaf4e4e2dfd2570a0da850b7e557fb"></a>
@@ -163,25 +163,25 @@ $(function(){initNavTree('event__entry_8hpp.html','',''); });
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">                                                                           \</div>
-<div class="line"><a class="code hl_define" href="cs__binding_2macro_2detail_2cpp_2config_8hpp.html#ade1ffb66dc056cd2c6f93b058398c958">DPM_CS_BINDING_INLINE</a> <span class="keywordtype">void</span> CLASS::BOOST_PP_CAT( regist_, NAME )(           \</div>
-<div class="line">  notify_callback_func_ptr_t callback )                                    \</div>
-<div class="line">{                                                                          \</div>
-<div class="line">    DPM_EVENT_ENTRY_CPP_SIGNAL_VALUE_NAME( NAME ).connect( callback );     \</div>
-<div class="line">}                                                                          \</div>
-<div class="line"><a class="code hl_define" href="cs__binding_2macro_2detail_2cpp_2config_8hpp.html#ade1ffb66dc056cd2c6f93b058398c958">DPM_CS_BINDING_INLINE</a> <span class="keywordtype">void</span> CLASS::BOOST_PP_CAT( swap_event_slot_, NAME )(  \</div>
-<div class="line">  <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> &amp; old )                                                            \</div>
-<div class="line">{                                                                          \</div>
-<div class="line">    <span class="keyword">using </span>std::swap;                                                       \</div>
-<div class="line">    swap(                                                                  \</div>
-<div class="line">      <a class="code hl_define" href="#a33aaf4e4e2dfd2570a0da850b7e557fb">DPM_EVENT_ENTRY_CPP_SIGNAL_VALUE_NAME</a>( NAME ),                       \</div>
-<div class="line">      old.DPM_EVENT_ENTRY_CPP_SIGNAL_VALUE_NAME( NAME ) );                 \</div>
+<b>値:</b><div class="fragment"><div class="line">                                                                          \</div>
+<div class="line"><a class="code hl_define" href="cs__binding_2macro_2detail_2cpp_2config_8hpp.html#ade1ffb66dc056cd2c6f93b058398c958">DPM_CS_BINDING_INLINE</a> <span class="keywordtype">void</span> CLASS::BOOST_PP_CAT( regist_, NAME )(          \</div>
+<div class="line">    notify_callback_func_ptr_t callback )                                 \</div>
+<div class="line">{                                                                         \</div>
+<div class="line">    DPM_EVENT_ENTRY_CPP_SIGNAL_VALUE_NAME( NAME ).connect( callback );    \</div>
+<div class="line">}                                                                         \</div>
+<div class="line"><a class="code hl_define" href="cs__binding_2macro_2detail_2cpp_2config_8hpp.html#ade1ffb66dc056cd2c6f93b058398c958">DPM_CS_BINDING_INLINE</a> <span class="keywordtype">void</span> CLASS::BOOST_PP_CAT( swap_event_slot_, NAME )( \</div>
+<div class="line">    <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> &amp; old )                                                         \</div>
+<div class="line">{                                                                         \</div>
+<div class="line">    <span class="keyword">using </span>std::swap;                                                      \</div>
+<div class="line">    swap(                                                                 \</div>
+<div class="line">        <a class="code hl_define" href="#a33aaf4e4e2dfd2570a0da850b7e557fb">DPM_EVENT_ENTRY_CPP_SIGNAL_VALUE_NAME</a>( NAME ),                    \</div>
+<div class="line">        old.DPM_EVENT_ENTRY_CPP_SIGNAL_VALUE_NAME( NAME ) );              \</div>
 <div class="line">}</div>
 <div class="ttc" id="acs__binding_2macro_2detail_2cpp_2config_8hpp_html_ade1ffb66dc056cd2c6f93b058398c958"><div class="ttname"><a href="cs__binding_2macro_2detail_2cpp_2config_8hpp.html#ade1ffb66dc056cd2c6f93b058398c958">DPM_CS_BINDING_INLINE</a></div><div class="ttdeci">#define DPM_CS_BINDING_INLINE</div><div class="ttdef"><b>Definition</b> <a href="cs__binding_2macro_2detail_2cpp_2config_8hpp_source.html#l00015">config.hpp:15</a></div></div>
 <div class="ttc" id="aevent__entry_8hpp_html_a33aaf4e4e2dfd2570a0da850b7e557fb"><div class="ttname"><a href="#a33aaf4e4e2dfd2570a0da850b7e557fb">DPM_EVENT_ENTRY_CPP_SIGNAL_VALUE_NAME</a></div><div class="ttdeci">#define DPM_EVENT_ENTRY_CPP_SIGNAL_VALUE_NAME(NAME)</div><div class="ttdef"><b>Definition</b> <a href="event__entry_8hpp_source.html#l00055">event_entry.hpp:55</a></div></div>
 <div class="ttc" id="atrigger_8hpp_html_aeb04f2e0012cb07d68538599161c9693"><div class="ttname"><a href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a></div><div class="ttdeci">#define CLASS</div><div class="ttdef"><b>Definition</b> <a href="trigger_8hpp_source.html#l00016">trigger.hpp:16</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="event__entry_8hpp_source.html">event_entry.hpp</a> の <a class="el" href="event__entry_8hpp_source.html#l00083">83</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="event__entry_8hpp_source.html">event_entry.hpp</a> の <a class="el" href="event__entry_8hpp_source.html#l00084">84</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -208,17 +208,17 @@ $(function(){initNavTree('event__entry_8hpp.html','',''); });
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line"><span class="keyword">public</span>:                                                                        \</div>
-<div class="line">    boost::signals2::signal&lt; void( ) &gt; <a class="code hl_define" href="#a33aaf4e4e2dfd2570a0da850b7e557fb">DPM_EVENT_ENTRY_CPP_SIGNAL_VALUE_NAME</a>(  \</div>
-<div class="line">      NAME );                                                                  \</div>
-<div class="line">                                                                               \</div>
-<div class="line"><span class="keyword">public</span>:                                                                        \</div>
-<div class="line">    <span class="keywordtype">void</span> NAME( )                                                               \</div>
-<div class="line">    {                                                                          \</div>
-<div class="line">        DPM_EVENT_ENTRY_CPP_SIGNAL_VALUE_NAME( NAME )( );                      \</div>
+<b>値:</b><div class="fragment"><div class="line"><span class="keyword">public</span>:                                                                       \</div>
+<div class="line">    boost::signals2::signal&lt; void( ) &gt; <a class="code hl_define" href="#a33aaf4e4e2dfd2570a0da850b7e557fb">DPM_EVENT_ENTRY_CPP_SIGNAL_VALUE_NAME</a>( \</div>
+<div class="line">        NAME );                                                               \</div>
+<div class="line">                                                                              \</div>
+<div class="line"><span class="keyword">public</span>:                                                                       \</div>
+<div class="line">    <span class="keywordtype">void</span> NAME( )                                                              \</div>
+<div class="line">    {                                                                         \</div>
+<div class="line">        DPM_EVENT_ENTRY_CPP_SIGNAL_VALUE_NAME( NAME )( );                     \</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="event__entry_8hpp_source.html">event_entry.hpp</a> の <a class="el" href="event__entry_8hpp_source.html#l00069">69</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="event__entry_8hpp_source.html">event_entry.hpp</a> の <a class="el" href="event__entry_8hpp_source.html#l00070">70</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -245,22 +245,22 @@ $(function(){initNavTree('event__entry_8hpp.html','',''); });
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">    [UnmanagedFunctionPointer(                                                 \</div>
-<div class="line">      CallingConvention.Cdecl )] <span class="keyword">private</span> delegate void                         \</div>
-<div class="line">      BOOST_PP_CAT( NAME, _event_callback_t )( );                              \</div>
-<div class="line">    BOOST_PP_CAT( NAME, _event_callback_t )                                    \</div>
-<div class="line">    BOOST_PP_CAT( NAME, _event_callback );                                     \</div>
-<div class="line">public                                                                         \</div>
-<div class="line">    delegate <span class="keywordtype">void</span> BOOST_PP_CAT( NAME, _event_delegate )( );                    \</div>
-<div class="line">public                                                                         \</div>
-<div class="line">    event BOOST_PP_CAT( NAME, _event_delegate ) NAME;                          \</div>
-<div class="line">public                                                                         \</div>
-<div class="line">    void BOOST_PP_CAT( Execute, NAME )( )                                      \</div>
-<div class="line">    {                                                                          \</div>
-<div class="line">        NAME ?.Invoke( );                                                      \</div>
+<b>値:</b><div class="fragment"><div class="line">    [UnmanagedFunctionPointer(                                             \</div>
+<div class="line">        CallingConvention.Cdecl )] <span class="keyword">private</span> delegate void                   \</div>
+<div class="line">        BOOST_PP_CAT( NAME, _event_callback_t )( );                        \</div>
+<div class="line">    BOOST_PP_CAT( NAME, _event_callback_t )                                \</div>
+<div class="line">    BOOST_PP_CAT( NAME, _event_callback );                                 \</div>
+<div class="line">public                                                                     \</div>
+<div class="line">    delegate <span class="keywordtype">void</span> BOOST_PP_CAT( NAME, _event_delegate )( );                \</div>
+<div class="line">public                                                                     \</div>
+<div class="line">    event BOOST_PP_CAT( NAME, _event_delegate ) NAME;                      \</div>
+<div class="line">public                                                                     \</div>
+<div class="line">    void BOOST_PP_CAT( Execute, NAME )( )                                  \</div>
+<div class="line">    {                                                                      \</div>
+<div class="line">        NAME ?.Invoke( );                                                  \</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="event__entry_8hpp_source.html">event_entry.hpp</a> の <a class="el" href="event__entry_8hpp_source.html#l00102">102</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="event__entry_8hpp_source.html">event_entry.hpp</a> の <a class="el" href="event__entry_8hpp_source.html#l00103">103</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -287,19 +287,19 @@ $(function(){initNavTree('event__entry_8hpp.html','',''); });
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">BOOST_PP_CAT( NAME, _event_callback ) = delegate( )                        \</div>
-<div class="line">{                                                                          \</div>
-<div class="line">    NAME ?.Invoke( );                                                      \</div>
-<div class="line">};                                                                         \</div>
-<div class="line">DPM_CS_GLUE_METHOD_NAME_AND_PREFIX( regist_, NAME )                        \</div>
+<b>値:</b><div class="fragment"><div class="line">BOOST_PP_CAT( NAME, _event_callback ) = delegate( )                     \</div>
+<div class="line">{                                                                       \</div>
+<div class="line">    NAME ?.Invoke( );                                                   \</div>
+<div class="line">};                                                                      \</div>
+<div class="line">DPM_CS_GLUE_METHOD_NAME_AND_PREFIX( regist_, NAME )                     \</div>
 <div class="line">( BOOST_PP_CAT( NAME, _event_callback ) );</div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="event__entry_8hpp_source.html">event_entry.hpp</a> の <a class="el" href="event__entry_8hpp_source.html#l00121">121</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="event__entry_8hpp_source.html">event_entry.hpp</a> の <a class="el" href="event__entry_8hpp_source.html#l00122">122</a> 行目に定義があります。</p>
 
 </div>
 </div>
-<a id="ab865aff84708d38b68a77ddc66f42f95" name="ab865aff84708d38b68a77ddc66f42f95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab865aff84708d38b68a77ddc66f42f95">&#9670;&#160;</a></span>DPM_EVENT_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY</h2>
+<a id="ab08a90b5903e5c65f3681714fd6c4581" name="ab08a90b5903e5c65f3681714fd6c4581"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab08a90b5903e5c65f3681714fd6c4581">&#9670;&#160;</a></span>DPM_EVENT_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -323,12 +323,12 @@ $(function(){initNavTree('event__entry_8hpp.html','',''); });
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">\</div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="event__entry_8hpp_source.html">event_entry.hpp</a> の <a class="el" href="event__entry_8hpp_source.html#l00132">132</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="event__entry_8hpp_source.html">event_entry.hpp</a> の <a class="el" href="event__entry_8hpp_source.html#l00133">133</a> 行目に定義があります。</p>
 
 </div>
 </div>
-<a id="a10d7d6ab8e620f09abc222ec1dd09ce4" name="a10d7d6ab8e620f09abc222ec1dd09ce4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10d7d6ab8e620f09abc222ec1dd09ce4">&#9670;&#160;</a></span>DPM_EVENT_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR</h2>
+<a id="ac665910ab3defbba8dfce5acd0851e9d" name="ac665910ab3defbba8dfce5acd0851e9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac665910ab3defbba8dfce5acd0851e9d">&#9670;&#160;</a></span>DPM_EVENT_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -351,7 +351,7 @@ $(function(){initNavTree('event__entry_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="event__entry_8hpp_source.html">event_entry.hpp</a> の <a class="el" href="event__entry_8hpp_source.html#l00138">138</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="event__entry_8hpp_source.html">event_entry.hpp</a> の <a class="el" href="event__entry_8hpp_source.html#l00141">141</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -369,10 +369,11 @@ $(function(){initNavTree('event__entry_8hpp.html','',''); });
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">( (DPM_METHOD_KIND_GLUE_METHOD)( regist_##NAME )(                          \</div>
-<div class="line">  void)( ( notify_callback_func_ptr_t ) )(void)( ( DPM_ATTR(               \</div>
-<div class="line">  NAME##_event_callback_t, MarshalAs( UnmanagedType.FunctionPtr ) ) ) ) )( \</div>
-<div class="line">  (DPM_METHOD_KIND_SUBJECT_SWAP_METHOD)( swap_event_slot_##NAME ) )</div>
+<b>値:</b><div class="fragment"><div class="line">( (DPM_METHOD_KIND_GLUE_METHOD)( regist_##NAME )(                     \</div>
+<div class="line">    void)( ( notify_callback_func_ptr_t ) )(void)( ( DPM_ATTR(        \</div>
+<div class="line">    NAME##_event_callback_t,                                          \</div>
+<div class="line">    MarshalAs( UnmanagedType.FunctionPtr ) ) ) ) )(                   \</div>
+<div class="line">    (DPM_METHOD_KIND_SUBJECT_SWAP_METHOD)( swap_event_slot_##NAME ) )</div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="event__entry_8hpp_source.html">event_entry.hpp</a> の <a class="el" href="event__entry_8hpp_source.html#l00061">61</a> 行目に定義があります。</p>
 
@@ -393,7 +394,7 @@ $(function(){initNavTree('event__entry_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">( (<a class="code hl_define" href="#ab83d328cc8b7fb4da5494d4b19770f4a">DPM_EVENT_ENTRY_GENERATE_CPP_CLASS_BODY</a>)( NAME ) )</div>
-<div class="ttc" id="aevent__entry_8hpp_html_ab83d328cc8b7fb4da5494d4b19770f4a"><div class="ttname"><a href="#ab83d328cc8b7fb4da5494d4b19770f4a">DPM_EVENT_ENTRY_GENERATE_CPP_CLASS_BODY</a></div><div class="ttdeci">#define DPM_EVENT_ENTRY_GENERATE_CPP_CLASS_BODY(GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="event__entry_8hpp_source.html#l00069">event_entry.hpp:69</a></div></div>
+<div class="ttc" id="aevent__entry_8hpp_html_ab83d328cc8b7fb4da5494d4b19770f4a"><div class="ttname"><a href="#ab83d328cc8b7fb4da5494d4b19770f4a">DPM_EVENT_ENTRY_GENERATE_CPP_CLASS_BODY</a></div><div class="ttdeci">#define DPM_EVENT_ENTRY_GENERATE_CPP_CLASS_BODY(GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="event__entry_8hpp_source.html#l00070">event_entry.hpp:70</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="event__entry_8hpp_source.html">event_entry.hpp</a> の <a class="el" href="event__entry_8hpp_source.html#l00018">18</a> 行目に定義があります。</p>
 
@@ -414,7 +415,7 @@ $(function(){initNavTree('event__entry_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">( (<a class="code hl_define" href="#a16f40fdad1b7a3fa4f35c93e3af813ea">DPM_EVENT_ENTRY_GENERATE_CPP_CLASS_AFTER</a>)( NAME ) )</div>
-<div class="ttc" id="aevent__entry_8hpp_html_a16f40fdad1b7a3fa4f35c93e3af813ea"><div class="ttname"><a href="#a16f40fdad1b7a3fa4f35c93e3af813ea">DPM_EVENT_ENTRY_GENERATE_CPP_CLASS_AFTER</a></div><div class="ttdeci">#define DPM_EVENT_ENTRY_GENERATE_CPP_CLASS_AFTER(GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="event__entry_8hpp_source.html#l00083">event_entry.hpp:83</a></div></div>
+<div class="ttc" id="aevent__entry_8hpp_html_a16f40fdad1b7a3fa4f35c93e3af813ea"><div class="ttname"><a href="#a16f40fdad1b7a3fa4f35c93e3af813ea">DPM_EVENT_ENTRY_GENERATE_CPP_CLASS_AFTER</a></div><div class="ttdeci">#define DPM_EVENT_ENTRY_GENERATE_CPP_CLASS_AFTER(GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="event__entry_8hpp_source.html#l00084">event_entry.hpp:84</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="event__entry_8hpp_source.html">event_entry.hpp</a> の <a class="el" href="event__entry_8hpp_source.html#l00024">24</a> 行目に定義があります。</p>
 
@@ -435,7 +436,7 @@ $(function(){initNavTree('event__entry_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">( (<a class="code hl_define" href="#a4b33472d56ff554b4033d9c10ef6c528">DPM_EVENT_ENTRY_GENERATE_CSHARP_CLASS_BODY</a>)( NAME ) )</div>
-<div class="ttc" id="aevent__entry_8hpp_html_a4b33472d56ff554b4033d9c10ef6c528"><div class="ttname"><a href="#a4b33472d56ff554b4033d9c10ef6c528">DPM_EVENT_ENTRY_GENERATE_CSHARP_CLASS_BODY</a></div><div class="ttdeci">#define DPM_EVENT_ENTRY_GENERATE_CSHARP_CLASS_BODY(GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="event__entry_8hpp_source.html#l00102">event_entry.hpp:102</a></div></div>
+<div class="ttc" id="aevent__entry_8hpp_html_a4b33472d56ff554b4033d9c10ef6c528"><div class="ttname"><a href="#a4b33472d56ff554b4033d9c10ef6c528">DPM_EVENT_ENTRY_GENERATE_CSHARP_CLASS_BODY</a></div><div class="ttdeci">#define DPM_EVENT_ENTRY_GENERATE_CSHARP_CLASS_BODY(GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="event__entry_8hpp_source.html#l00103">event_entry.hpp:103</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="event__entry_8hpp_source.html">event_entry.hpp</a> の <a class="el" href="event__entry_8hpp_source.html#l00030">30</a> 行目に定義があります。</p>
 
@@ -456,7 +457,7 @@ $(function(){initNavTree('event__entry_8hpp.html','',''); });
       </table>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">( (<a class="code hl_define" href="#a95d733cb9c7ac7a828599c53d3880ed0">DPM_EVENT_ENTRY_GENERATE_CSHARP_CONSTRACTOR</a>)( NAME ) )</div>
-<div class="ttc" id="aevent__entry_8hpp_html_a95d733cb9c7ac7a828599c53d3880ed0"><div class="ttname"><a href="#a95d733cb9c7ac7a828599c53d3880ed0">DPM_EVENT_ENTRY_GENERATE_CSHARP_CONSTRACTOR</a></div><div class="ttdeci">#define DPM_EVENT_ENTRY_GENERATE_CSHARP_CONSTRACTOR(GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="event__entry_8hpp_source.html#l00121">event_entry.hpp:121</a></div></div>
+<div class="ttc" id="aevent__entry_8hpp_html_a95d733cb9c7ac7a828599c53d3880ed0"><div class="ttname"><a href="#a95d733cb9c7ac7a828599c53d3880ed0">DPM_EVENT_ENTRY_GENERATE_CSHARP_CONSTRACTOR</a></div><div class="ttdeci">#define DPM_EVENT_ENTRY_GENERATE_CSHARP_CONSTRACTOR(GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="event__entry_8hpp_source.html#l00122">event_entry.hpp:122</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="event__entry_8hpp_source.html">event_entry.hpp</a> の <a class="el" href="event__entry_8hpp_source.html#l00036">36</a> 行目に定義があります。</p>
 
@@ -476,8 +477,8 @@ $(function(){initNavTree('event__entry_8hpp.html','',''); });
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">( (<a class="code hl_define" href="#a10d7d6ab8e620f09abc222ec1dd09ce4">DPM_EVENT_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR</a>)( NAME ) )</div>
-<div class="ttc" id="aevent__entry_8hpp_html_a10d7d6ab8e620f09abc222ec1dd09ce4"><div class="ttname"><a href="#a10d7d6ab8e620f09abc222ec1dd09ce4">DPM_EVENT_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR</a></div><div class="ttdeci">#define DPM_EVENT_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR( GM_SEQS, CLAS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="event__entry_8hpp_source.html#l00138">event_entry.hpp:138</a></div></div>
+<b>値:</b><div class="fragment"><div class="line">( (<a class="code hl_define" href="#ac665910ab3defbba8dfce5acd0851e9d">DPM_EVENT_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR</a>)( NAME ) )</div>
+<div class="ttc" id="aevent__entry_8hpp_html_ac665910ab3defbba8dfce5acd0851e9d"><div class="ttname"><a href="#ac665910ab3defbba8dfce5acd0851e9d">DPM_EVENT_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR</a></div><div class="ttdeci">#define DPM_EVENT_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR(GM_SEQS, CLAS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="event__entry_8hpp_source.html#l00141">event_entry.hpp:141</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="event__entry_8hpp_source.html">event_entry.hpp</a> の <a class="el" href="event__entry_8hpp_source.html#l00046">46</a> 行目に定義があります。</p>
 
@@ -497,8 +498,8 @@ $(function(){initNavTree('event__entry_8hpp.html','',''); });
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">( (<a class="code hl_define" href="#ab865aff84708d38b68a77ddc66f42f95">DPM_EVENT_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY</a>)( NAME ) )</div>
-<div class="ttc" id="aevent__entry_8hpp_html_ab865aff84708d38b68a77ddc66f42f95"><div class="ttname"><a href="#ab865aff84708d38b68a77ddc66f42f95">DPM_EVENT_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY</a></div><div class="ttdeci">#define DPM_EVENT_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY( GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="event__entry_8hpp_source.html#l00132">event_entry.hpp:132</a></div></div>
+<b>値:</b><div class="fragment"><div class="line">( (<a class="code hl_define" href="#ab08a90b5903e5c65f3681714fd6c4581">DPM_EVENT_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY</a>)( NAME ) )</div>
+<div class="ttc" id="aevent__entry_8hpp_html_ab08a90b5903e5c65f3681714fd6c4581"><div class="ttname"><a href="#ab08a90b5903e5c65f3681714fd6c4581">DPM_EVENT_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY</a></div><div class="ttdeci">#define DPM_EVENT_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY(GM_SEQS, CLASS, NAME)</div><div class="ttdef"><b>Definition</b> <a href="event__entry_8hpp_source.html#l00133">event_entry.hpp:133</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="event__entry_8hpp_source.html">event_entry.hpp</a> の <a class="el" href="event__entry_8hpp_source.html#l00041">41</a> 行目に定義があります。</p>
 

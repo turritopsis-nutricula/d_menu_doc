@@ -93,9 +93,13 @@ $(function(){initNavTree('show__menu__view_8hpp.html','',''); });
   <div class="headertitle"><div class="title">show_menu_view.hpp ファイル</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>メニュー表示ユースケース  
+<a href="#details">[詳解]</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="app__transaction_8hpp_source.html">core/application/app_transaction.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="gui__dispatch_8hpp_source.html">core/application/gui_dispatch.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="menu__ids_8hpp_source.html">core/domain/model/menu/menu_ids.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="menu__showed_8hpp_source.html">dto/menu_showed.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="menu__view__model__interface_8hpp_source.html">core/usecase/config_view/interface/menu_view_model_interface.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 show_menu_view.hpp の依存先関係図:</div>
@@ -113,6 +117,7 @@ show_menu_view.hpp の依存先関係図:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 クラス</h2></td></tr>
 <tr class="memitem:depicture_5Fmenu_3A_3Ausecase_3A_3Ashow_5Fmenu_5Fview_3C_20menu_5Fpresenter_20_3E" id="r_depicture_5Fmenu_3A_3Ausecase_3A_3Ashow_5Fmenu_5Fview_3C_20menu_5Fpresenter_20_3E"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classdepicture__menu_1_1usecase_1_1show__menu__view.html">depicture_menu::usecase::show_menu_view&lt; menu_presenter &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">メニュー表示ユースケース  <a href="classdepicture__menu_1_1usecase_1_1show__menu__view.html#details">[詳解]</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 名前空間</h2></td></tr>
@@ -126,8 +131,13 @@ show_menu_view.hpp の依存先関係図:</div>
 <tr class="memitem:a30a805872d1e1babe72014851ae4468f" id="r_a30a805872d1e1babe72014851ae4468f"><td class="memItemLeft">std::tuple&lt; <a class="el" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html">domain::menu::radialmenu</a>, int, int &gt;&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1detail__usecase.html#a30a805872d1e1babe72014851ae4468f">depicture_menu::usecase::detail_usecase::show_menu_view_impl</a> (<a class="el" href="namespacedepicture__menu_1_1applications.html#a1168dfec76130ba465ebed176eb5ba9e">applications::transaction_source_ptr_t</a>, <a class="el" href="namespacedepicture__menu_1_1domain_1_1menu.html#a2b51ff146c22769b74c23c37851fa801">domain::menu::menu_id</a>)</td></tr>
 <tr class="memitem:aced30424642ebcbb4c6add0520ef5a87" id="r_aced30424642ebcbb4c6add0520ef5a87"><td class="memItemLeft">std::tuple&lt; <a class="el" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html">domain::menu::radialmenu</a>, int, int &gt;&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1detail__usecase.html#aced30424642ebcbb4c6add0520ef5a87">depicture_menu::usecase::detail_usecase::show_default_menu_view_impl</a> (<a class="el" href="namespacedepicture__menu_1_1applications.html#a1168dfec76130ba465ebed176eb5ba9e">applications::transaction_source_ptr_t</a>)</td></tr>
 <tr class="memitem:a7b737605653c8cbbeb6f4a6bf95f01a7" id="r_a7b737605653c8cbbeb6f4a6bf95f01a7"><td class="memItemLeft">std::tuple&lt; <a class="el" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html">domain::menu::radialmenu</a>, int, int &gt;&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1detail__usecase.html#a7b737605653c8cbbeb6f4a6bf95f01a7">depicture_menu::usecase::detail_usecase::show_menu_view_by_trigger_impl</a> (<a class="el" href="namespacedepicture__menu_1_1applications.html#a1168dfec76130ba465ebed176eb5ba9e">applications::transaction_source_ptr_t</a>, <a class="el" href="namespacedepicture__menu_1_1domain_1_1triggers.html#ab0086bbfe1ea3c9e8ebf6e362ec544c3">domain::triggers::trigger_id</a>)</td></tr>
+<tr class="memitem:a9820c50bfcd072e7ea64e14cc94ad567" id="r_a9820c50bfcd072e7ea64e14cc94ad567"><td class="memItemLeft"><a class="el" href="namespacedepicture__menu_1_1repositories.html#a6cb6805f93a0f2b8ad0ac22e33b14263">repositories::transaction_result</a>&lt; <a class="el" href="structdepicture__menu_1_1usecase_1_1menu__view_1_1dto_1_1menu__showed.html">menu_view::dto::menu_showed</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1detail__usecase.html#a9820c50bfcd072e7ea64e14cc94ad567">depicture_menu::usecase::detail_usecase::do_show_menu</a> (<a class="el" href="namespacedepicture__menu_1_1applications.html#a1168dfec76130ba465ebed176eb5ba9e">applications::transaction_source_ptr_t</a>)</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>メニュー表示ユースケース </p>
+
+<p class="definition"> <a class="el" href="show__menu__view_8hpp_source.html">show_menu_view.hpp</a> に定義があります。</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
 <div id="page-nav-resize-handle"></div>

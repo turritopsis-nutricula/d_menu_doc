@@ -112,7 +112,7 @@ $(function(){initNavTree('_test_unmanaged_generator_8cpp_source.html','',''); })
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">//----------------------------------------//</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// test_unmanaged_generator : TestSuite</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><a class="code hl_function" href="menu__change__operation_8cpp.html#ae692b9f25c84027b486e3f198b05369c">BOOST_AUTO_TEST_SUITE</a>( test_unmanaged_generator )</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>BOOST_AUTO_TEST_SUITE( test_unmanaged_generator )</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">//----------------------------------------//</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// constract</span></div>
 <div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
@@ -124,28 +124,26 @@ $(function(){initNavTree('_test_unmanaged_generator_8cpp_source.html','',''); })
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        ref       = proc;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <a class="code hl_function" href="namespacedepicture__menu_1_1cs__binding.html#adf4d7ee0c05e4aca3822d725d7d65295">dc::assign_unmanaged_resource</a>( proc );</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( proc-&gt;resource_state_.glab_count( ) == 0 );</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        BOOST_TEST( proc-&gt;resource_state_.glab_count( ) == 0 );</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        proc-&gt;GlabUnmanagedInstance( );</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( proc-&gt;resource_state_.glab_count( ) == 1 );</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( proc.use_count( ) == 2 );</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        BOOST_TEST( proc-&gt;resource_state_.glab_count( ) == 1 );</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        BOOST_TEST( proc.use_count( ) == 2 );</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        proc-&gt;ReleaseUnmanagedInstance( );</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( proc-&gt;resource_state_.glab_count( ) == 0 );</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        BOOST_TEST( proc-&gt;resource_state_.glab_count( ) == 0 );</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( proc.use_count( ) == 1 );</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        BOOST_TEST( proc.use_count( ) == 1 );</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( !ref.lock( ) );</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    BOOST_TEST( !ref.lock( ) );</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>}</div>
 </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>BOOST_AUTO_TEST_SUITE_END( )    <span class="comment">// test_unmanaged_generator</span></div>
-<div class="ttc" id="a_test_backup_json_8cpp_html_ac60c25c7e7fe69dfd220f4fb5bc17c5d"><div class="ttname"><a href="_test_backup_json_8cpp.html#ac60c25c7e7fe69dfd220f4fb5bc17c5d">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(test_test_write_backup_json)</div><div class="ttdoc">test_write_backup_json : TestCase</div><div class="ttdef"><b>Definition</b> <a href="_test_backup_json_8cpp_source.html#l00200">TestBackupJson.cpp:200</a></div></div>
+<div class="ttc" id="a_test_backup_json_8cpp_html_ac60c25c7e7fe69dfd220f4fb5bc17c5d"><div class="ttname"><a href="_test_backup_json_8cpp.html#ac60c25c7e7fe69dfd220f4fb5bc17c5d">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(test_test_write_backup_json)</div><div class="ttdoc">test_write_backup_json : TestCase</div><div class="ttdef"><b>Definition</b> <a href="_test_backup_json_8cpp_source.html#l00202">TestBackupJson.cpp:202</a></div></div>
 <div class="ttc" id="a_test_binding_entry_8hpp_html"><div class="ttname"><a href="_test_binding_entry_8hpp.html">TestBindingEntry.hpp</a></div></div>
-<div class="ttc" id="a_test_config_view_presenter_8cpp_html_a7845eb0c68b997d6d329618f36f7e794"><div class="ttname"><a href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a></div><div class="ttdeci">BOOST_TEST(get_menu(config_arg, 0u) -&gt;get_MenuId()==m_id)</div></div>
-<div class="ttc" id="amenu__change__operation_8cpp_html_ae692b9f25c84027b486e3f198b05369c"><div class="ttname"><a href="menu__change__operation_8cpp.html#ae692b9f25c84027b486e3f198b05369c">BOOST_AUTO_TEST_SUITE</a></div><div class="ttdeci">BOOST_AUTO_TEST_SUITE(item_propertes, *bt::depends_on(&quot;test_config_view_presenter/add_menu_item&quot;)) dd</div><div class="ttdef"><b>Definition</b> <a href="menu__change__operation_8cpp_source.html#l00208">menu_change_operation.cpp:208</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1cs__binding_html"><div class="ttname"><a href="namespacedepicture__menu_1_1cs__binding.html">depicture_menu::cs_binding</a></div><div class="ttdef"><b>Definition</b> <a href="core__interface_8hpp_source.html#l00042">core_interface.hpp:43</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1cs__binding_html_adf4d7ee0c05e4aca3822d725d7d65295"><div class="ttname"><a href="namespacedepicture__menu_1_1cs__binding.html#adf4d7ee0c05e4aca3822d725d7d65295">depicture_menu::cs_binding::assign_unmanaged_resource</a></div><div class="ttdeci">void assign_unmanaged_resource(std::shared_ptr&lt; T &gt; m)</div><div class="ttdef"><b>Definition</b> <a href="unmanaged__generator_8hpp_source.html#l00218">unmanaged_generator.hpp:218</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1cs__binding_html_adf4d7ee0c05e4aca3822d725d7d65295"><div class="ttname"><a href="namespacedepicture__menu_1_1cs__binding.html#adf4d7ee0c05e4aca3822d725d7d65295">depicture_menu::cs_binding::assign_unmanaged_resource</a></div><div class="ttdeci">void assign_unmanaged_resource(std::shared_ptr&lt; T &gt; m)</div><div class="ttdef"><b>Definition</b> <a href="unmanaged__generator_8hpp_source.html#l00217">unmanaged_generator.hpp:217</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_html"><div class="ttname"><a href="namespacedepicture__menu.html">depicture_menu</a></div><div class="ttdef"><b>Definition</b> <a href="constexpr__string_8hpp_source.html#l00012">constexpr_string.hpp:13</a></div></div>
 <div class="ttc" id="aunmanaged__generator_8hpp_html"><div class="ttname"><a href="unmanaged__generator_8hpp.html">unmanaged_generator.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

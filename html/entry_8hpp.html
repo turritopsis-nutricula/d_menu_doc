@@ -223,11 +223,11 @@ $(function(){initNavTree('entry_8hpp.html','',''); });
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">BOOST_PP_EXPAND( BOOST_PP_SEQ_ELEM( 0, EN_INVOKE_SEQ )                     \</div>
-<div class="line">                   <a class="code hl_define" href="#a4c775df77d1ebc429c6ffc217adc052a">DPM_DETAIL_ENTRY_ARGS_EXPAND</a>(                           \</div>
-<div class="line">                     BOOST_PP_SEQ_ELEM( 0, D ),                            \</div>
-<div class="line">                     BOOST_PP_SEQ_ELEM( 1, D ),                            \</div>
-<div class="line">                     EN_INVOKE_SEQ ) )</div>
+<b>値:</b><div class="fragment"><div class="line">BOOST_PP_EXPAND( BOOST_PP_SEQ_ELEM( 0, EN_INVOKE_SEQ )       \</div>
+<div class="line">                     <a class="code hl_define" href="#a4c775df77d1ebc429c6ffc217adc052a">DPM_DETAIL_ENTRY_ARGS_EXPAND</a>(           \</div>
+<div class="line">                         BOOST_PP_SEQ_ELEM( 0, D ),          \</div>
+<div class="line">                         BOOST_PP_SEQ_ELEM( 1, D ),          \</div>
+<div class="line">                         EN_INVOKE_SEQ ) )</div>
 <div class="ttc" id="aentry_8hpp_html_a4c775df77d1ebc429c6ffc217adc052a"><div class="ttname"><a href="#a4c775df77d1ebc429c6ffc217adc052a">DPM_DETAIL_ENTRY_ARGS_EXPAND</a></div><div class="ttdeci">#define DPM_DETAIL_ENTRY_ARGS_EXPAND(GM_SEQS, CLASS, EN_IN_SEQ)</div><div class="ttdef"><b>Definition</b> <a href="entry_8hpp_source.html#l00044">entry.hpp:44</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="entry_8hpp_source.html">entry.hpp</a> の <a class="el" href="entry_8hpp_source.html#l00047">47</a> 行目に定義があります。</p>
@@ -303,11 +303,13 @@ $(function(){initNavTree('entry_8hpp.html','',''); });
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">BOOST_PP_SEQ_FOR_EACH(                                                     \</div>
-<div class="line">  <a class="code hl_define" href="#a5795f5a6ff8e555acaa55694d2fe9282">DPM_DETAIL_ENTRY_OPTION_INVOKE_OP</a>,                                       \</div>
-<div class="line">  (GM_SEQS)( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> ),                                                      \</div>
-<div class="line">  BOOST_PP_SEQ_FOR_EACH(                                                   \</div>
-<div class="line">    <a class="code hl_define" href="#ae490cf987fa97c234518e6aa22bf5d5e">DPM_DETAIL_ENTRY_OPTION_EXPAND_OP</a>, PREFIX, EN_SEQ ) )</div>
+<b>値:</b><div class="fragment"><div class="line">BOOST_PP_SEQ_FOR_EACH(                                         \</div>
+<div class="line">    <a class="code hl_define" href="#a5795f5a6ff8e555acaa55694d2fe9282">DPM_DETAIL_ENTRY_OPTION_INVOKE_OP</a>,                         \</div>
+<div class="line">    (GM_SEQS)( <a class="code hl_define" href="trigger_8hpp.html#aeb04f2e0012cb07d68538599161c9693">CLASS</a> ),                                        \</div>
+<div class="line">    BOOST_PP_SEQ_FOR_EACH(                                     \</div>
+<div class="line">        <a class="code hl_define" href="#ae490cf987fa97c234518e6aa22bf5d5e">DPM_DETAIL_ENTRY_OPTION_EXPAND_OP</a>,                     \</div>
+<div class="line">        PREFIX,                                                \</div>
+<div class="line">        EN_SEQ ) )</div>
 <div class="ttc" id="aentry_8hpp_html_a5795f5a6ff8e555acaa55694d2fe9282"><div class="ttname"><a href="#a5795f5a6ff8e555acaa55694d2fe9282">DPM_DETAIL_ENTRY_OPTION_INVOKE_OP</a></div><div class="ttdeci">#define DPM_DETAIL_ENTRY_OPTION_INVOKE_OP(_, D, EN_INVOKE_SEQ)</div><div class="ttdef"><b>Definition</b> <a href="entry_8hpp_source.html#l00047">entry.hpp:47</a></div></div>
 <div class="ttc" id="aentry_8hpp_html_ae490cf987fa97c234518e6aa22bf5d5e"><div class="ttname"><a href="#ae490cf987fa97c234518e6aa22bf5d5e">DPM_DETAIL_ENTRY_OPTION_EXPAND_OP</a></div><div class="ttdeci">#define DPM_DETAIL_ENTRY_OPTION_EXPAND_OP(_r, PREFIX, ENTRY)</div><div class="ttdef"><b>Definition</b> <a href="entry_8hpp_source.html#l00056">entry.hpp:56</a></div></div>
 </div><!-- fragment -->

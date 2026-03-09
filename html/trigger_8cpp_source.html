@@ -103,122 +103,123 @@ $(function(){initNavTree('trigger_8cpp_source.html','',''); });
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dd.html">dd</a></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">using namespace </span>depicture_menu::domain;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">using namespace </span>depicture_menu::domain;</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>};</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">auto</span></div>
 <div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1usecase_1_1backup.html#a00e9dec0688da5a9c60a8d4aefd6cb30">   15</a></span><a class="code hl_function" href="namespacedepicture__menu_1_1usecase_1_1backup.html#a00e9dec0688da5a9c60a8d4aefd6cb30">create_trigger_dto</a>( <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1triggers_1_1global__key__input__trigger.html">domain::triggers::global_key_input_trigger</a> <span class="keyword">const</span>&amp; ent )</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  -&gt; <a class="code hl_struct" href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1trigger__data.html">dto::trigger_data</a></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    -&gt; <a class="code hl_struct" href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1trigger__data.html">dto::trigger_data</a></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">using </span>ent_t = <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1triggers_1_1global__key__input__trigger.html">dd::triggers::global_key_input_trigger</a>;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">using </span>dto_t = <a class="code hl_struct" href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1trigger__data.html">dto::trigger_data</a>;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespacedepicture__menu_1_1util_1_1type__traits.html#a13878d303f96a8e146f6e91e02cb2732">type_traits::class_method_pointer_t</a>;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">namespace </span><a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#a29d27a04c76eb076c459566c379cdf8d">cm</a> = <a class="code hl_namespace" href="namespacedepicture__menu_1_1conv__mapping.html">depicture_menu::conv_mapping</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">namespace </span>cm = <a class="code hl_namespace" href="namespacedepicture__menu_1_1conv__mapping.html">depicture_menu::conv_mapping</a>;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">using </span>str_t     = std::string;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">using </span>str_vec_t = std::vector&lt; str_t &gt;;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">using </span>c_t = cm::converter&lt;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>      ent_t,</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>      dto_t,</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        ent_t,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        dto_t,</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>      <span class="comment">// id</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      <a class="code hl_typedef" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup.html#a92236d6670b01ae0f88e87725f800de0">detail_backup::entity_id_to_string_mapping</a>&lt; &amp;ent_t::entity_id, <span class="stringliteral">&quot;id&quot;</span> &gt;,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="comment">// id</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup.html#a7f7ed595048c944822a074ec83a10b55">detail_backup::entity_id_to_string_mapping</a>&lt; &amp;ent_t::entity_id, <span class="stringliteral">&quot;id&quot;</span> &gt;,</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      <span class="comment">// menu_id</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>      <a class="code hl_typedef" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup.html#a92236d6670b01ae0f88e87725f800de0">detail_backup::entity_id_to_string_mapping</a>&lt;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        class_method_pointer_t&lt; ent_t, dd::menu::menu_id( ) const &gt;(</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>          &amp;ent_t::show_menu_id ),</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="stringliteral">&quot;menu_id&quot;</span> &gt;,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="comment">// menu_id</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup.html#a7f7ed595048c944822a074ec83a10b55">detail_backup::entity_id_to_string_mapping</a>&lt;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            class_method_pointer_t&lt; ent_t, dd::menu::menu_id( ) const &gt;(</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                &amp;ent_t::show_menu_id ),</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <span class="stringliteral">&quot;menu_id&quot;</span> &gt;,</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      <span class="comment">// key_code</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      cm::read_method_mapping&lt;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        &amp;ent_t::get_hotkey_code,</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="stringliteral">&quot;key_code&quot;</span>,</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keyword">decltype</span>( []( <span class="keyword">auto</span> E ) -&gt; std::string {</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="namespacedepicture__menu_1_1util_1_1strconv.html#a08ee9762f61abb902eac449b23391fe1">util::strconv::wide_to_utf8</a>(</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>              std::wstring_view( get_virtual_key_name( E ) ) );</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        } ) &gt;,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="comment">// key_code</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        cm::read_method_mapping&lt;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            &amp;ent_t::get_hotkey_code,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="stringliteral">&quot;key_code&quot;</span>,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keyword">decltype</span>( []( <span class="keyword">auto</span> E ) -&gt; std::string {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespacedepicture__menu_1_1util_1_1strconv.html#a08ee9762f61abb902eac449b23391fe1">util::strconv::wide_to_utf8</a>(</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            std::wstring_view( get_virtual_key_name( E ) ) );</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    } ) &gt;,</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      <span class="comment">// key_modifier</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      <a class="code hl_namespace" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup.html">detail_backup</a>::</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        enum_to_string_mapping&lt; &amp;ent_t::get_hotkey_modifier, <span class="stringliteral">&quot;key_modifier&quot;</span> &gt;,</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      <span class="comment">// is_active</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      cm::read_method_mapping&lt;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        class_method_pointer_t&lt; ent_t, bool( ) const &gt;( &amp;ent_t::is_active ),</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="stringliteral">&quot;is_active&quot;</span> &gt; &gt;;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    dto_t <a class="code hl_namespace" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html">dto</a>;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    c_t { }.convert( ent, <a class="code hl_namespace" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html">dto</a> );</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">return</span> <a class="code hl_namespace" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html">dto</a>;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="comment">// key_modifier</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup.html#a86dd07aa22ef8b64f0e4adb863b00cba">detail_backup::enum_to_string_mapping</a>&lt;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            &amp;ent_t::get_hotkey_modifier,</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <span class="stringliteral">&quot;key_modifier&quot;</span> &gt;,</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="comment">// is_active</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        cm::read_method_mapping&lt;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            class_method_pointer_t&lt; ent_t, <span class="keywordtype">bool</span>( ) <span class="keyword">const</span> &gt;( &amp;ent_t::is_active ),</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="stringliteral">&quot;is_active&quot;</span> &gt; &gt;;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    dto_t <a class="code hl_namespace" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html">dto</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    c_t{ }.convert( ent, <a class="code hl_namespace" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html">dto</a> );</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">return</span> <a class="code hl_namespace" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html">dto</a>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
 </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">auto</span></div>
-<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1usecase_1_1backup.html#a5c64f7fcd330a6e17b0b2e29cadb2fc1">   64</a></span><a class="code hl_function" href="namespacedepicture__menu_1_1usecase_1_1backup.html#a5c64f7fcd330a6e17b0b2e29cadb2fc1">create_trigger_entity</a>( <a class="code hl_struct" href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1trigger__data.html">dto::trigger_data</a> <span class="keyword">const</span>&amp; <a class="code hl_namespace" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html">dto</a> )</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  -&gt; <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1triggers_1_1global__key__input__trigger.html">domain::triggers::global_key_input_trigger</a></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>{</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">using </span>ent_t = <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1triggers_1_1global__key__input__trigger.html">dd::triggers::global_key_input_trigger</a>;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">using </span>dto_t = <a class="code hl_struct" href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1trigger__data.html">dto::trigger_data</a>;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespacedepicture__menu_1_1util_1_1type__traits.html#a13878d303f96a8e146f6e91e02cb2732">type_traits::class_method_pointer_t</a>;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">namespace </span><a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#a29d27a04c76eb076c459566c379cdf8d">cm</a> = <a class="code hl_namespace" href="namespacedepicture__menu_1_1conv__mapping.html">depicture_menu::conv_mapping</a>;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">using </span>str_t     = std::string;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">using </span>str_vec_t = std::vector&lt; str_t &gt;;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">auto</span></div>
+<div class="foldopen" id="foldopen00065" data-start="{" data-end="}">
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1usecase_1_1backup.html#a5c64f7fcd330a6e17b0b2e29cadb2fc1">   65</a></span><a class="code hl_function" href="namespacedepicture__menu_1_1usecase_1_1backup.html#a5c64f7fcd330a6e17b0b2e29cadb2fc1">create_trigger_entity</a>( <a class="code hl_struct" href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1trigger__data.html">dto::trigger_data</a> <span class="keyword">const</span>&amp; <a class="code hl_namespace" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html">dto</a> )</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    -&gt; <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1triggers_1_1global__key__input__trigger.html">domain::triggers::global_key_input_trigger</a></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>{</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">using </span>ent_t = <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1triggers_1_1global__key__input__trigger.html">dd::triggers::global_key_input_trigger</a>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keyword">using </span>dto_t = <a class="code hl_struct" href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1trigger__data.html">dto::trigger_data</a>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespacedepicture__menu_1_1util_1_1type__traits.html#a13878d303f96a8e146f6e91e02cb2732">type_traits::class_method_pointer_t</a>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keyword">namespace </span>cm = <a class="code hl_namespace" href="namespacedepicture__menu_1_1conv__mapping.html">depicture_menu::conv_mapping</a>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">using </span>str_t     = std::string;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keyword">using </span>str_vec_t = std::vector&lt; str_t &gt;;</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keyword">using </span>c_t = cm::converter&lt;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>      dto_t,</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>      ent_t,</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      <span class="comment">// menu_id</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>      <a class="code hl_typedef" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup.html#aeb2ab8da028bdf4e4a9128714961c8fb">detail_backup::string_to_entity_id</a>&lt;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="stringliteral">&quot;menu_id&quot;</span>,</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        class_method_pointer_t&lt; ent_t, void( dd::menu::menu_id const&amp; ) &gt;(</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>          &amp;ent_t::show_menu_id ),</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1menu.html#a2b51ff146c22769b74c23c37851fa801">dd::menu::menu_id</a> &gt;,</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>      <span class="comment">// key_code</span></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>      cm::mapping_base&lt;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        cm::buildin::field_name_reader&lt; <span class="stringliteral">&quot;key_code&quot;</span> &gt;,</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keyword">decltype</span>( []( <span class="keyword">auto</span> v, <span class="keyword">auto</span>&amp; e ) {</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            e.set_hotkey( v, e.get_hotkey_modifier( ) );</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        } ),</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        <span class="keyword">decltype</span>( []( <span class="keyword">auto</span> str ) {</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <span class="keyword">auto</span> n = <a class="code hl_function" href="namespacedepicture__menu_1_1util_1_1strconv.html#a3b0e0ec8cb1e9fb3f6c3dd97c10bcac6">util::strconv::utf8_to_wide</a>( str );</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="namespacedepicture__menu_1_1domain_1_1actions_1_1send__keyinput.html#ab2138f21e09f50b1362f51df12036dcb">dd::actions::send_keyinput::get_virtua_key_from_name</a>(</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>              std::wstring_view( n ) );</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        } ) &gt;,</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>      <span class="comment">// key_modifier</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>      cm::mapping_base&lt;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        cm::buildin::field_name_reader&lt; &quot;key_modifier&quot; &gt;,</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keyword">decltype</span>( []( <span class="keyword">auto</span> v, <span class="keyword">auto</span>&amp; e ) {</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            e.set_hotkey( e.get_hotkey_code( ), v );</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        } ),</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        cm::buildin::string_to_enum_converter&lt;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>          <a class="code hl_enumeration" href="namespacedepicture__menu_1_1domain_1_1triggers.html#a24984f2cc2b00f579d1b8595195b47f9">dd::triggers::key_input_modifier</a> &gt; &gt;,</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">using </span>c_t = cm::converter&lt;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        dto_t,</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        ent_t,</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="comment">// menu_id</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup.html#abca093c1997c1d8d908ed4452d6f53ad">detail_backup::string_to_entity_id</a>&lt;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <span class="stringliteral">&quot;menu_id&quot;</span>,</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            class_method_pointer_t&lt; ent_t, void( dd::menu::menu_id const&amp; ) &gt;(</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>                &amp;ent_t::show_menu_id ),</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1menu.html#a2b51ff146c22769b74c23c37851fa801">dd::menu::menu_id</a> &gt;,</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="comment">// key_code</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        cm::mapping_base&lt;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            cm::buildin::field_name_reader&lt; <span class="stringliteral">&quot;key_code&quot;</span> &gt;,</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <span class="keyword">decltype</span>( []( <span class="keyword">auto</span> v, <span class="keyword">auto</span>&amp; e ) {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        e.set_hotkey( v, e.get_hotkey_modifier( ) );</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    } ),</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <span class="keyword">decltype</span>( []( <span class="keyword">auto</span> str ) {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="keyword">auto</span> n = <a class="code hl_function" href="namespacedepicture__menu_1_1util_1_1strconv.html#a3b0e0ec8cb1e9fb3f6c3dd97c10bcac6">util::strconv::utf8_to_wide</a>( str );</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespacedepicture__menu_1_1domain_1_1actions_1_1send__keyinput.html#ab2138f21e09f50b1362f51df12036dcb">dd::actions::send_keyinput::get_virtua_key_from_name</a>(</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            std::wstring_view( n ) );</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    } ) &gt;,</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="comment">// key_modifier</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        cm::mapping_base&lt;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            cm::buildin::field_name_reader&lt; &quot;key_modifier&quot; &gt;,</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <span class="keyword">decltype</span>( []( <span class="keyword">auto</span> v, <span class="keyword">auto</span>&amp; e ) {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        e.set_hotkey( e.get_hotkey_code( ), v );</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    } ),</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            cm::buildin::string_to_enum_converter&lt;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                <a class="code hl_enumeration" href="namespacedepicture__menu_1_1domain_1_1triggers.html#a24984f2cc2b00f579d1b8595195b47f9">dd::triggers::key_input_modifier</a> &gt; &gt;,</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>      <span class="comment">// is_active</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>      cm::write_method_mapping&lt;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        <span class="stringliteral">&quot;is_active&quot;</span>,</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        class_method_pointer_t&lt; ent_t, <span class="keywordtype">void</span>( <span class="keywordtype">bool</span> ) &gt;( &amp;ent_t::is_active ) &gt; &gt;;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    ent_t ent( <a class="code hl_function" href="structdepicture__menu_1_1domain_1_1models_1_1entity__id__base.html#ae3b811c5dd3aee7fcb017619d4dde476">dd::triggers::trigger_id::from</a>( <a class="code hl_namespace" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html">dto</a>.id ) );</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    c_t { }.convert( <a class="code hl_namespace" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html">dto</a>, ent );</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keywordflow">return</span> ent;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>}</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <span class="comment">// is_active</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        cm::write_method_mapping&lt;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            <span class="stringliteral">&quot;is_active&quot;</span>,</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            class_method_pointer_t&lt; ent_t, <span class="keywordtype">void</span>( <span class="keywordtype">bool</span> ) &gt;(</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                &amp;ent_t::is_active ) &gt; &gt;;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    ent_t ent( <a class="code hl_function" href="structdepicture__menu_1_1domain_1_1models_1_1entity__id__base.html#ae3b811c5dd3aee7fcb017619d4dde476">dd::triggers::trigger_id::from</a>( <a class="code hl_namespace" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html">dto</a>.id ) );</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    c_t{ }.convert( <a class="code hl_namespace" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html">dto</a>, ent );</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordflow">return</span> ent;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>}</div>
 </div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>}    <span class="comment">// namespace depicture_menu::usecase::backup</span></div>
-<div class="ttc" id="a_test_config_view_presenter_8cpp_html_a29d27a04c76eb076c459566c379cdf8d"><div class="ttname"><a href="_test_config_view_presenter_8cpp.html#a29d27a04c76eb076c459566c379cdf8d">cm</a></div><div class="ttdeci">dc::ConfMenu cm</div><div class="ttdef"><b>Definition</b> <a href="_test_config_view_presenter_8cpp_source.html#l00348">TestConfigViewPresenter.cpp:348</a></div></div>
-<div class="ttc" id="aaction_8hpp_html"><div class="ttname"><a href="action_8hpp.html">action.hpp</a></div></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>}    <span class="comment">// namespace depicture_menu::usecase::backup</span></div>
+<div class="ttc" id="aaction_8hpp_html"><div class="ttname"><a href="action_8hpp.html">action.hpp</a></div><div class="ttdoc">アクション DomainEntity</div></div>
 <div class="ttc" id="aclassdepicture__menu_1_1domain_1_1triggers_1_1global__key__input__trigger_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1triggers_1_1global__key__input__trigger.html">depicture_menu::domain::triggers::global_key_input_trigger</a></div><div class="ttdef"><b>Definition</b> <a href="trigger_8hpp_source.html#l00036">trigger.hpp:39</a></div></div>
 <div class="ttc" id="adto__converter_8hpp_html"><div class="ttname"><a href="dto__converter_8hpp.html">dto_converter.hpp</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1conv__mapping_html"><div class="ttname"><a href="namespacedepicture__menu_1_1conv__mapping.html">depicture_menu::conv_mapping</a></div><div class="ttdef"><b>Definition</b> <a href="conv__mapping_8hpp_source.html#l00014">conv_mapping.hpp:15</a></div></div>
@@ -226,16 +227,16 @@ $(function(){initNavTree('trigger_8cpp_source.html','',''); });
 <div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1menu_html_a2b51ff146c22769b74c23c37851fa801"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1menu.html#a2b51ff146c22769b74c23c37851fa801">depicture_menu::domain::menu::menu_id</a></div><div class="ttdeci">models::entity_id_base&lt; detail_menu::menu_id_tag &gt; menu_id</div><div class="ttdef"><b>Definition</b> <a href="menu__ids_8hpp_source.html#l00022">menu_ids.hpp:22</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1triggers_html_a24984f2cc2b00f579d1b8595195b47f9"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1triggers.html#a24984f2cc2b00f579d1b8595195b47f9">depicture_menu::domain::triggers::key_input_modifier</a></div><div class="ttdeci">key_input_modifier</div><div class="ttdef"><b>Definition</b> <a href="key__input__modifier_8hpp_source.html#l00009">key_input_modifier.hpp:10</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1backup_1_1dd_html"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dd.html">depicture_menu::usecase::backup::dd</a></div><div class="ttdef"><b>Definition</b> <a href="action_8cpp_source.html#l00014">action.cpp:15</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup_html"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup.html">depicture_menu::usecase::backup::detail_backup</a></div><div class="ttdef"><b>Definition</b> <a href="command_8cpp_source.html#l00156">command.cpp:157</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup_html_a92236d6670b01ae0f88e87725f800de0"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup.html#a92236d6670b01ae0f88e87725f800de0">depicture_menu::usecase::backup::detail_backup::entity_id_to_string_mapping</a></div><div class="ttdeci">conv_mapping::read_method_mapping&lt; EntID, Field, entity_id_to_string_conv &gt; entity_id_to_string_mapping</div><div class="ttdef"><b>Definition</b> <a href="dto__converter_8hpp_source.html#l00130">dto_converter.hpp:130</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup_html_aeb2ab8da028bdf4e4a9128714961c8fb"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup.html#aeb2ab8da028bdf4e4a9128714961c8fb">depicture_menu::usecase::backup::detail_backup::string_to_entity_id</a></div><div class="ttdeci">conv_mapping:: write_method_mapping&lt; Field, EntIDMP, decltype([](std::string const  &amp;id) { return ID::from(id); }) &gt; string_to_entity_id</div><div class="ttdef"><b>Definition</b> <a href="dto__converter_8hpp_source.html#l00156">dto_converter.hpp:156</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup_html_a7f7ed595048c944822a074ec83a10b55"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup.html#a7f7ed595048c944822a074ec83a10b55">depicture_menu::usecase::backup::detail_backup::entity_id_to_string_mapping</a></div><div class="ttdeci">conv_mapping:: read_method_mapping&lt; EntID, Field, entity_id_to_string_conv &gt; entity_id_to_string_mapping</div><div class="ttdef"><b>Definition</b> <a href="dto__converter_8hpp_source.html#l00130">dto_converter.hpp:130</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup_html_a86dd07aa22ef8b64f0e4adb863b00cba"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup.html#a86dd07aa22ef8b64f0e4adb863b00cba">depicture_menu::usecase::backup::detail_backup::enum_to_string_mapping</a></div><div class="ttdeci">conv_mapping:: read_method_mapping&lt; entityMP, Field, decltype([](auto const  &amp;e) { return boost::describe::enum_to_string(e, &quot;&quot;); }) &gt; enum_to_string_mapping</div><div class="ttdef"><b>Definition</b> <a href="dto__converter_8hpp_source.html#l00169">dto_converter.hpp:169</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup_html_abca093c1997c1d8d908ed4452d6f53ad"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1backup_1_1detail__backup.html#abca093c1997c1d8d908ed4452d6f53ad">depicture_menu::usecase::backup::detail_backup::string_to_entity_id</a></div><div class="ttdeci">conv_mapping::write_method_mapping&lt; Field, EntIDMP, decltype([](std::string const  &amp;id) { return ID::from(id);}) &gt; string_to_entity_id</div><div class="ttdef"><b>Definition</b> <a href="dto__converter_8hpp_source.html#l00158">dto_converter.hpp:158</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1backup_1_1dto_html"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html">depicture_menu::usecase::backup::dto</a></div><div class="ttdef"><b>Definition</b> <a href="backup__data_8hpp_source.html#l00010">backup_data.hpp:11</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1backup_html"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1backup.html">depicture_menu::usecase::backup</a></div><div class="ttdef"><b>Definition</b> <a href="action_8cpp_source.html#l00012">action.cpp:13</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1backup_html_a00e9dec0688da5a9c60a8d4aefd6cb30"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1backup.html#a00e9dec0688da5a9c60a8d4aefd6cb30">depicture_menu::usecase::backup::create_trigger_dto</a></div><div class="ttdeci">auto create_trigger_dto(domain::triggers::global_key_input_trigger const &amp;ent) -&gt; dto::trigger_data</div><div class="ttdef"><b>Definition</b> <a href="#l00015">trigger.cpp:15</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1backup_html_a5c64f7fcd330a6e17b0b2e29cadb2fc1"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1backup.html#a5c64f7fcd330a6e17b0b2e29cadb2fc1">depicture_menu::usecase::backup::create_trigger_entity</a></div><div class="ttdeci">auto create_trigger_entity(dto::trigger_data const &amp;dto) -&gt; domain::triggers::global_key_input_trigger</div><div class="ttdef"><b>Definition</b> <a href="#l00064">trigger.cpp:64</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1backup_html_a5c64f7fcd330a6e17b0b2e29cadb2fc1"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1backup.html#a5c64f7fcd330a6e17b0b2e29cadb2fc1">depicture_menu::usecase::backup::create_trigger_entity</a></div><div class="ttdeci">auto create_trigger_entity(dto::trigger_data const &amp;dto) -&gt; domain::triggers::global_key_input_trigger</div><div class="ttdef"><b>Definition</b> <a href="#l00065">trigger.cpp:65</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1util_1_1strconv_html_a08ee9762f61abb902eac449b23391fe1"><div class="ttname"><a href="namespacedepicture__menu_1_1util_1_1strconv.html#a08ee9762f61abb902eac449b23391fe1">depicture_menu::util::strconv::wide_to_utf8</a></div><div class="ttdeci">std::string wide_to_utf8(std::wstring const &amp;s)</div><div class="ttdef"><b>Definition</b> <a href="str__conv_8cpp_source.html#l00057">str_conv.cpp:57</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1util_1_1strconv_html_a3b0e0ec8cb1e9fb3f6c3dd97c10bcac6"><div class="ttname"><a href="namespacedepicture__menu_1_1util_1_1strconv.html#a3b0e0ec8cb1e9fb3f6c3dd97c10bcac6">depicture_menu::util::strconv::utf8_to_wide</a></div><div class="ttdeci">std::wstring utf8_to_wide(std::string const &amp;s)</div><div class="ttdef"><b>Definition</b> <a href="str__conv_8cpp_source.html#l00031">str_conv.cpp:31</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1util_1_1type__traits_html_a13878d303f96a8e146f6e91e02cb2732"><div class="ttname"><a href="namespacedepicture__menu_1_1util_1_1type__traits.html#a13878d303f96a8e146f6e91e02cb2732">depicture_menu::util::type_traits::class_method_pointer_t</a></div><div class="ttdeci">make_class_method_pointer_type&lt; T, FS &gt;::type class_method_pointer_t</div><div class="ttdef"><b>Definition</b> <a href="type__traits_8hpp_source.html#l00131">type_traits.hpp:131</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1util_1_1type__traits_html_a13878d303f96a8e146f6e91e02cb2732"><div class="ttname"><a href="namespacedepicture__menu_1_1util_1_1type__traits.html#a13878d303f96a8e146f6e91e02cb2732">depicture_menu::util::type_traits::class_method_pointer_t</a></div><div class="ttdeci">make_class_method_pointer_type&lt; T, FS &gt;::type class_method_pointer_t</div><div class="ttdef"><b>Definition</b> <a href="type__traits_8hpp_source.html#l00132">type_traits.hpp:132</a></div></div>
 <div class="ttc" id="astructdepicture__menu_1_1domain_1_1models_1_1entity__id__base_html_ae3b811c5dd3aee7fcb017619d4dde476"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1models_1_1entity__id__base.html#ae3b811c5dd3aee7fcb017619d4dde476">depicture_menu::domain::models::entity_id_base&lt; detail_triggers::trigger_id_tag &gt;::from</a></div><div class="ttdeci">static entity_id_base from(std::string const &amp;uuid_str)</div><div class="ttdef"><b>Definition</b> <a href="model_2entity__id_8hpp_source.html#l00083">entity_id.hpp:83</a></div></div>
 <div class="ttc" id="astructdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1trigger__data_html"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1trigger__data.html">depicture_menu::usecase::backup::dto::trigger_data</a></div><div class="ttdef"><b>Definition</b> <a href="backup__data_8hpp_source.html#l00133">backup_data.hpp:134</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

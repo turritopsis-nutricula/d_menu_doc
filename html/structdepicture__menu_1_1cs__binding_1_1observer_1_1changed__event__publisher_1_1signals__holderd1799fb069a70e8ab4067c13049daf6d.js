@@ -2,7 +2,7 @@ var structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publishe
 [
     [ "D", "structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher_1_1signals__holderd1799fb069a70e8ab4067c13049daf6d.html#ae87544ce0d2dd0634bec37010766611d", null ],
     [ "sig_t", "structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher_1_1signals__holderd1799fb069a70e8ab4067c13049daf6d.html#af1f37a1dda5cd384d90f3b5a8f865fd5", null ],
-    [ "value_t", "structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher_1_1signals__holderd1799fb069a70e8ab4067c13049daf6d.html#a1edc3045124d394ddfb3d509dd04cde0", null ],
+    [ "value_t", "structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher_1_1signals__holderd1799fb069a70e8ab4067c13049daf6d.html#a503a80e1ca070e500099057d1d3400a4", null ],
     [ "signal_", "structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher_1_1signals__holderd1799fb069a70e8ab4067c13049daf6d.html#a07f84703650cb3752ca84138c6506484", null ],
     [ "topic", "structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__event__publisher_1_1signals__holderd1799fb069a70e8ab4067c13049daf6d.html#af66ced3662000a2d462ab67bc2f15650", null ]
 ];

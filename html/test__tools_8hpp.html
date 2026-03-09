@@ -111,7 +111,7 @@ test_tools.hpp の依存先関係図:</div>
 </div><div class="textblock"><div class="dynheader">
 被依存関係図:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="test__tools_8hpp__dep__incl.svg" width="100%" height="524"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="test__tools_8hpp__dep__incl.svg" width="100%" height="512"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="test__tools_8hpp_source.html">[ソースコード]</a></p>
@@ -169,26 +169,27 @@ Concepts</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;&gt;                                                                 \</div>
-<div class="line"><span class="keyword">struct </span>boost::test_tools::tt_detail::print_log_value&lt; E &gt;                  \</div>
-<div class="line">{                                                                          \</div>
-<div class="line">    <span class="keywordtype">void</span> operator( )( std::ostream&amp; os, E <span class="keyword">const</span>&amp; value )                   \</div>
-<div class="line">    {                                                                      \</div>
-<div class="line">        os &lt;&lt; <span class="stringliteral">&quot;{&quot;</span>;                                                         \</div>
-<div class="line">        <span class="keywordtype">char</span> <span class="keyword">const</span>* com = <span class="stringliteral">&quot;&quot;</span>;                                              \</div>
-<div class="line">        boost::pfr::for_each_field_with_name(                              \</div>
-<div class="line">          value, [ &amp; ]( <span class="keyword">auto</span> <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a21b35e47ac3d8358063ede6968e59eaa">name</a>, <span class="keyword">auto</span> <span class="keyword">const</span>&amp; v ) {                       \</div>
-<div class="line">              os &lt;&lt; std::exchange( com, <span class="stringliteral">&quot;,&quot;</span> );                             \</div>
-<div class="line">              os &lt;&lt; <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a21b35e47ac3d8358063ede6968e59eaa">name</a> &lt;&lt; <span class="stringliteral">&quot;=&quot;</span>;                                           \</div>
-<div class="line">              print_log_value&lt; std::remove_cvref_t&lt; <span class="keyword">decltype</span>( v ) &gt; &gt; { }( \</div>
-<div class="line">                os, v );                                                   \</div>
-<div class="line">          } );                                                             \</div>
-<div class="line">        os &lt;&lt; <span class="stringliteral">&quot;}&quot;</span>;                                                         \</div>
-<div class="line">    }                                                                      \</div>
+<b>値:</b><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;&gt;                                                              \</div>
+<div class="line"><span class="keyword">struct </span>boost::test_tools::tt_detail::print_log_value&lt; E &gt;               \</div>
+<div class="line">{                                                                       \</div>
+<div class="line">    <span class="keywordtype">void</span> operator( )( std::ostream&amp; os, E <span class="keyword">const</span>&amp; value )                \</div>
+<div class="line">    {                                                                   \</div>
+<div class="line">        os &lt;&lt; <span class="stringliteral">&quot;{&quot;</span>;                                                      \</div>
+<div class="line">        <span class="keywordtype">char</span> <span class="keyword">const</span>* com = <span class="stringliteral">&quot;&quot;</span>;                                           \</div>
+<div class="line">        boost::pfr::for_each_field_with_name(                           \</div>
+<div class="line">            value,                                                      \</div>
+<div class="line">            [ &amp; ]( <span class="keyword">auto</span> name, <span class="keyword">auto</span> <span class="keyword">const</span>&amp; v ) {                         \</div>
+<div class="line">            os &lt;&lt; std::exchange( com, <span class="stringliteral">&quot;,&quot;</span> );                            \</div>
+<div class="line">            os &lt;&lt; name &lt;&lt; <span class="stringliteral">&quot;=&quot;</span>;                                          \</div>
+<div class="line">            print_log_value&lt; std::remove_cvref_t&lt; <span class="keyword">decltype</span>( v ) &gt; &gt;{ }( \</div>
+<div class="line">                os,                                                     \</div>
+<div class="line">                v );                                                    \</div>
+<div class="line">        } );                                                            \</div>
+<div class="line">        os &lt;&lt; <span class="stringliteral">&quot;}&quot;</span>;                                                      \</div>
+<div class="line">    }                                                                   \</div>
 <div class="line">};</div>
-<div class="ttc" id="a_test_config_view_presenter_8cpp_html_a21b35e47ac3d8358063ede6968e59eaa"><div class="ttname"><a href="_test_config_view_presenter_8cpp.html#a21b35e47ac3d8358063ede6968e59eaa">name</a></div><div class="ttdeci">act0 name(dd::actions::action_name(&quot;hogehoge&quot;))</div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="test__tools_8hpp_source.html">test_tools.hpp</a> の <a class="el" href="test__tools_8hpp_source.html#l00113">113</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="test__tools_8hpp_source.html">test_tools.hpp</a> の <a class="el" href="test__tools_8hpp_source.html#l00114">114</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -206,18 +207,19 @@ Concepts</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;&gt;                                                                 \</div>
-<div class="line"><span class="keyword">struct </span>boost::test_tools::tt_detail::print_log_value&lt; E &gt;                  \</div>
-<div class="line">{                                                                          \</div>
-<div class="line">    <span class="keywordtype">void</span> operator( )( std::ostream&amp; os, E <span class="keyword">const</span>&amp; value )                   \</div>
-<div class="line">    {                                                                      \</div>
-<div class="line">        boost::mp11::mp_for_each&lt; boost::describe::describe_enumerators&lt;   \</div>
-<div class="line">          std::remove_cvref_t&lt; <span class="keyword">decltype</span>( value ) &gt; &gt; &gt;( [ &amp; ]( <span class="keyword">auto</span> D ) {  \</div>
-<div class="line">            if ( D.value == value )                                        \</div>
-<div class="line">                os &lt;&lt; D.name &lt;&lt; <span class="stringliteral">&quot;(&quot;</span> &lt;&lt; <span class="keyword">static_cast&lt;</span> <span class="keywordtype">int</span> <span class="keyword">&gt;</span>( D.value )       \</div>
-<div class="line">                   &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;                                                 \</div>
-<div class="line">        } );                                                               \</div>
-<div class="line">    }                                                                      \</div>
+<b>値:</b><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;&gt;                                                               \</div>
+<div class="line"><span class="keyword">struct </span>boost::test_tools::tt_detail::print_log_value&lt; E &gt;                \</div>
+<div class="line">{                                                                        \</div>
+<div class="line">    <span class="keywordtype">void</span> operator( )( std::ostream&amp; os, E <span class="keyword">const</span>&amp; value )                 \</div>
+<div class="line">    {                                                                    \</div>
+<div class="line">        boost::mp11::mp_for_each&lt; boost::describe::describe_enumerators&lt; \</div>
+<div class="line">            std::remove_cvref_t&lt; <span class="keyword">decltype</span>( value ) &gt; &gt; &gt;(                \</div>
+<div class="line">            [ &amp; ]( <span class="keyword">auto</span> D ) {                                            \</div>
+<div class="line">            if ( D.value == value )                                      \</div>
+<div class="line">                os &lt;&lt; D.name &lt;&lt; <span class="stringliteral">&quot;(&quot;</span> &lt;&lt; <span class="keyword">static_cast&lt;</span> <span class="keywordtype">int</span> <span class="keyword">&gt;</span>( D.value )     \</div>
+<div class="line">                   &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;                                               \</div>
+<div class="line">        } );                                                             \</div>
+<div class="line">    }                                                                    \</div>
 <div class="line">};</div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="test__tools_8hpp_source.html">test_tools.hpp</a> の <a class="el" href="test__tools_8hpp_source.html#l00098">98</a> 行目に定義があります。</p>

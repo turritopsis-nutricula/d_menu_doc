@@ -98,27 +98,26 @@ $(function(){initNavTree('conceptdepicture__menu_1_1usecase_1_1concepts_1_1globa
 <h2 id="header-conceptdef" class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
 <div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptdepicture__menu_1_1usecase_1_1concepts_1_1global__hotkey__presentable.html">global_hotkey_presentable</a> =</div>
-<div class="line">  !boost::di::aux::is_complete&lt; T &gt;::value ||</div>
-<div class="line">  <span class="keyword">requires</span>(</div>
-<div class="line">    T                                          t,</div>
-<div class="line">    <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1triggers_1_1global__key__input__trigger.html">domain::triggers::global_key_input_trigger</a> <a class="code hl_variable" href="namespacedepicture__menu_1_1usecase_1_1concepts.html#afd6acba4c3bbb2c891cf092da1786565">v</a>,</div>
-<div class="line">    <a class="code hl_enumeration" href="namespacedepicture__menu_1_1domain_1_1triggers.html#a24984f2cc2b00f579d1b8595195b47f9">domain::triggers::key_input_modifier</a>       m,</div>
-<div class="line">    <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1triggers.html#ac29f54cd203a2de113696c3b1f59beda">domain::triggers::virtual_key_code</a>         k,</div>
-<div class="line">    dto::regist_global_hotkey_trigger          reg,</div>
-<div class="line">    dto::unregist_global_hotkey_trigger        unreg ) {</div>
-<div class="line">      <span class="comment">//             { t.regist( m, k, v ) };</span></div>
-<div class="line">      <span class="comment">//             { t.unregist( m, k ) };</span></div>
-<div class="line">      { t.regist( reg ) };</div>
-<div class="line">      { t.unregist( unreg ) };</div>
-<div class="line">  }</div>
+<div class="line">        !boost::di::aux::is_complete&lt; T &gt;::value ||</div>
+<div class="line">        <span class="keyword">requires</span>(</div>
+<div class="line">            T                                          t,</div>
+<div class="line">            <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1triggers_1_1global__key__input__trigger.html">domain::triggers::global_key_input_trigger</a> v,</div>
+<div class="line">            <a class="code hl_enumeration" href="namespacedepicture__menu_1_1domain_1_1triggers.html#a24984f2cc2b00f579d1b8595195b47f9">domain::triggers::key_input_modifier</a>       m,</div>
+<div class="line">            <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1triggers.html#ac29f54cd203a2de113696c3b1f59beda">domain::triggers::virtual_key_code</a>         k,</div>
+<div class="line">            dto::regist_global_hotkey_trigger          reg,</div>
+<div class="line">            dto::unregist_global_hotkey_trigger        unreg ) {</div>
+<div class="line">            <span class="comment">//           { t.regist( m, k, v ) };</span></div>
+<div class="line">            <span class="comment">//           { t.unregist( m, k ) };</span></div>
+<div class="line">            { t.regist( reg ) };</div>
+<div class="line">            { t.unregist( unreg ) };</div>
+<div class="line">        }</div>
 <div class="ttc" id="aclassdepicture__menu_1_1domain_1_1triggers_1_1global__key__input__trigger_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1triggers_1_1global__key__input__trigger.html">depicture_menu::domain::triggers::global_key_input_trigger</a></div><div class="ttdef"><b>Definition</b> <a href="trigger_8hpp_source.html#l00036">trigger.hpp:39</a></div></div>
-<div class="ttc" id="aconceptdepicture__menu_1_1usecase_1_1concepts_1_1global__hotkey__presentable_html"><div class="ttname"><a href="conceptdepicture__menu_1_1usecase_1_1concepts_1_1global__hotkey__presentable.html">depicture_menu::usecase::concepts::global_hotkey_presentable</a></div><div class="ttdef"><b>Definition</b> <a href="update__trigger__config_8hpp_source.html#l00020">update_trigger_config.hpp:20</a></div></div>
+<div class="ttc" id="aconceptdepicture__menu_1_1usecase_1_1concepts_1_1global__hotkey__presentable_html"><div class="ttname"><a href="conceptdepicture__menu_1_1usecase_1_1concepts_1_1global__hotkey__presentable.html">depicture_menu::usecase::concepts::global_hotkey_presentable</a></div><div class="ttdef"><b>Definition</b> <a href="update__trigger__config_8hpp_source.html#l00022">update_trigger_config.hpp:22</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1triggers_html_a24984f2cc2b00f579d1b8595195b47f9"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1triggers.html#a24984f2cc2b00f579d1b8595195b47f9">depicture_menu::domain::triggers::key_input_modifier</a></div><div class="ttdeci">key_input_modifier</div><div class="ttdef"><b>Definition</b> <a href="key__input__modifier_8hpp_source.html#l00009">key_input_modifier.hpp:10</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1triggers_html_ac29f54cd203a2de113696c3b1f59beda"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1triggers.html#ac29f54cd203a2de113696c3b1f59beda">depicture_menu::domain::triggers::virtual_key_code</a></div><div class="ttdeci">actions::send_keyinput::virtual_key_code virtual_key_code</div><div class="ttdef"><b>Definition</b> <a href="trigger_2virtual__key__code_8hpp_source.html#l00008">virtual_key_code.hpp:8</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1concepts_html_afd6acba4c3bbb2c891cf092da1786565"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1concepts.html#afd6acba4c3bbb2c891cf092da1786565">depicture_menu::usecase::concepts::v</a></div><div class="ttdeci">v</div><div class="ttdef"><b>Definition</b> <a href="config__view__model__interface_8hpp_source.html#l00410">config_view_model_interface.hpp:410</a></div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
 <div class="textblock">
-<p class="definition"> <a class="el" href="update__trigger__config_8hpp_source.html">update_trigger_config.hpp</a> の <a class="el" href="update__trigger__config_8hpp_source.html#l00020">20</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="update__trigger__config_8hpp_source.html">update_trigger_config.hpp</a> の <a class="el" href="update__trigger__config_8hpp_source.html#l00022">22</a> 行目に定義があります。</p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

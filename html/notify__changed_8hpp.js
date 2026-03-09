@@ -1,7 +1,7 @@
 var notify__changed_8hpp =
 [
-    [ "DPM_NOTIFY_CHANGED_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY", "notify__changed_8hpp.html#ad371339b593f8c54e4a88c0be4185eaa", null ],
-    [ "DPM_NOTIFY_CHANGED_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR", "notify__changed_8hpp.html#ae804f5aa78a856321f60cb3e36926422", null ],
+    [ "DPM_NOTIFY_CHANGED_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_BODY", "notify__changed_8hpp.html#ad1ffce5ef9c7432e013184b266738730", null ],
+    [ "DPM_NOTIFY_CHANGED_ENTRY_GENERATE_CSHARP_DUMMY_CLASS_CONSTRACTOR", "notify__changed_8hpp.html#a794ee4a20a899d126f1bd7d8a27d49a9", null ],
     [ "DPM_NOTIFY_CHANGED_ENTRY_GENERATE_SCHARP_CONSTRACTOR", "notify__changed_8hpp.html#a549ac1fef1dc717ffb2a9235f1238ed0", null ],
     [ "DPME_CPP_BODY_DPM_NOTIFY_CHANGED_ENTRY", "notify__changed_8hpp.html#a873393f397aee7371e66f1b5ee1a07fe", null ],
     [ "DPME_CPP_CLASS_AFTER_DPM_NOTIFY_CHANGED_ENTRY", "notify__changed_8hpp.html#a297a3bc514d134634c65961339bf3f75", null ],

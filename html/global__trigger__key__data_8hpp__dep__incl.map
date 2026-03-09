@@ -1,19 +1,35 @@
 <map id="depicture_menu/src/core/usecase/config_view/dto/global_trigger_key_data.hpp" name="depicture_menu/src/core/usecase/config_view/dto/global_trigger_key_data.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="368,5,526,80"/>
-<area shape="rect" id="Node000002" href="$config__view__arg__builder_8cpp.html" title="ConfigArg ファクトリー" alt="" coords="186,251,342,325"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="350,59,292,73,231,88,181,108,162,118,150,130,140,148,137,164,141,181,150,201,169,227,195,250,189,250,165,231,146,204,136,183,132,164,135,146,146,126,159,114,178,103,230,83,291,67,355,57"/>
-<area shape="rect" id="Node000003" href="$setup__core_8cpp.html" title=" " alt="" coords="372,251,521,325"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="506,89,521,107,532,127,539,148,541,165,539,183,532,204,517,230,496,252,494,248,512,227,527,202,534,182,536,165,534,149,527,129,517,110,505,94"/>
-<area shape="rect" id="Node000004" href="$global__hotkey__presenter_8hpp.html" title=" " alt="" coords="160,136,352,195"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="373,90,303,138,300,133,378,87"/>
-<area shape="rect" id="Node000006" href="$update__trigger__config_8hpp.html" title=" " alt="" coords="376,128,518,203"/>
-<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="448,94,449,129,444,126,445,98"/>
-<area shape="rect" id="Node000007" href="$deploy__default__setting_8cpp.html" title=" " alt="" coords="593,136,738,195"/>
-<area shape="poly" id="edge10_Node000001_Node000007" title=" " alt="" coords="527,85,616,135,610,135,526,91"/>
-<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="261,208,264,251,259,249,257,212"/>
-<area shape="poly" id="edge6_Node000004_Node000003" title=" " alt="" coords="315,201,391,250,386,250,313,206"/>
-<area shape="rect" id="Node000005" href="$initilize__core_8cpp.html" title=" " alt="" coords="5,251,163,325"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="205,202,138,252,135,248,201,205"/>
-<area shape="poly" id="edge8_Node000006_Node000002" title=" " alt="" coords="381,211,321,253,318,248,376,212"/>
-<area shape="poly" id="edge9_Node000006_Node000003" title=" " alt="" coords="448,217,449,252,445,249,445,221"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="323,5,482,80"/>
+<area shape="rect" id="Node000002" href="$config__view__arg__builder_8cpp.html" title="ConfigArg ファクトリー" alt="" coords="219,389,375,464"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="409,93,413,148,410,211,400,278,379,342,364,368,343,391,341,387,359,365,375,340,395,277,405,211,407,148,407,98"/>
+<area shape="rect" id="Node000003" href="$config__view__observer_8hpp.html" title="ConfigViewのObserver" alt="" coords="71,128,235,219"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="316,89,237,132,234,127,320,86"/>
+<area shape="rect" id="Node000005" href="$setup__core_8cpp.html" title=" " alt="" coords="46,389,196,464"/>
+<area shape="poly" id="edge11_Node000001_Node000005" title=" " alt="" coords="305,57,236,70,163,86,100,106,77,117,60,130,39,155,23,179,14,204,9,228,9,253,13,280,34,340,50,366,71,388,66,390,45,369,29,342,8,281,3,254,3,227,8,202,19,177,35,152,57,126,74,113,98,101,161,81,235,65,310,54"/>
+<area shape="rect" id="Node000006" href="$config__view__dispatch_8hpp.html" title="コンフィグビューのディスパッチ" alt="" coords="491,144,722,203"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="473,86,564,143,559,144,473,91"/>
+<area shape="rect" id="Node000009" href="$global__hotkey__presenter_8hpp.html" title=" " alt="" coords="440,275,631,333"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="422,92,449,154,481,217,517,275,512,274,476,220,444,156,420,97"/>
+<area shape="rect" id="Node000011" href="$update__trigger__config_8hpp.html" title=" " alt="" coords="223,267,366,341"/>
+<area shape="poly" id="edge17_Node000001_Node000011" title=" " alt="" coords="383,93,312,268,307,265,379,96"/>
+<area shape="rect" id="Node000012" href="$deploy__default__setting_8cpp.html" title=" " alt="" coords="746,144,891,203"/>
+<area shape="poly" id="edge21_Node000001_Node000012" title=" " alt="" coords="497,59,613,86,735,126,771,143,766,144,733,130,611,92,497,64"/>
+<area shape="rect" id="Node000004" href="$config__view__arg__builder_8hpp.html" title=" " alt="" coords="43,267,199,341"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="139,232,133,267,128,265,137,236"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="188,348,246,389,241,389,187,353"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="123,355,124,390,119,388,120,359"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="473,201,348,232,212,269,200,273,198,269,211,264,346,227,478,199"/>
+<area shape="rect" id="Node000007" href="$config__view__dispatch_8cpp.html" title=" " alt="" coords="580,397,811,456"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="626,215,646,266,690,398,685,396,641,268,623,219"/>
+<area shape="rect" id="Node000008" href="$stacked__views__presenter_8hpp.html" title="view_stackに対するビュープレセンター" alt="" coords="707,267,895,341"/>
+<area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="663,209,748,266,743,266,662,214"/>
+<area shape="poly" id="edge10_Node000008_Node000007" title=" " alt="" coords="761,352,722,399,719,395,756,355"/>
+<area shape="poly" id="edge13_Node000009_Node000002" title=" " alt="" coords="468,340,371,391,369,386,463,341"/>
+<area shape="poly" id="edge16_Node000009_Node000005" title=" " alt="" coords="422,333,303,365,209,392,197,396,195,391,207,387,301,360,428,331"/>
+<area shape="poly" id="edge14_Node000009_Node000007" title=" " alt="" coords="586,340,660,397,655,396,585,345"/>
+<area shape="rect" id="Node000010" href="$initilize__core_8cpp.html" title=" " alt="" coords="398,389,556,464"/>
+<area shape="poly" id="edge15_Node000009_Node000010" title=" " alt="" coords="517,346,497,391,493,387,513,349"/>
+<area shape="poly" id="edge18_Node000011_Node000002" title=" " alt="" coords="297,355,299,390,294,388,294,359"/>
+<area shape="poly" id="edge20_Node000011_Node000005" title=" " alt="" coords="231,349,175,391,172,387,227,352"/>
+<area shape="poly" id="edge19_Node000011_Node000007" title=" " alt="" coords="381,329,603,396,598,398,380,334"/>
 </map>

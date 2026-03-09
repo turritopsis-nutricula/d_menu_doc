@@ -1,27 +1,4 @@
 var config__view__presenter_8cpp =
 [
-    [ "detail::operators::operator_base&lt; CRTP &gt;", "structdetail_1_1operators_1_1operator__base.html", "structdetail_1_1operators_1_1operator__base" ],
-    [ "visiter_base&lt; T, Args &gt;", "structvisiter__base.html", "structvisiter__base" ],
-    [ "detail::id_access_handler", "conceptdetail_1_1id__access__handler.html", null ],
-    [ "detail::entites_range", "conceptdetail_1_1entites__range.html", null ],
-    [ "detail::operators::action_create_operator", "namespacedetail_1_1operators.html#abe1b20aee81fbe14999855e1826523b0", null ],
-    [ "detail::operators::action_erase_operator", "namespacedetail_1_1operators.html#a57b5d1fb1b054389568c622d6b38a020", null ],
-    [ "detail::action_query", "namespacedetail.html#a6e8f197205427704875f19d471273b34", null ],
-    [ "detail::operators::action_update_operator", "namespacedetail_1_1operators.html#a87f9246953cd2731c802b1f54889c1e3", null ],
-    [ "detail::operators::command_create_operator", "namespacedetail_1_1operators.html#ae710300de019e1d63bae6de0b80bb7f9", null ],
-    [ "detail::operators::command_erase_operator", "namespacedetail_1_1operators.html#abc7613f5099836272e5d2f855609e30a", null ],
-    [ "detail::command_query", "namespacedetail.html#af59d6a58d5e4f3d7bc0b2b308d218dc1", null ],
-    [ "detail::operators::command_update_operator", "namespacedetail_1_1operators.html#a69a5d519fd4d7c4cba36934cb9e1e269", null ],
-    [ "detail::operators::menu_create_operator_t", "namespacedetail_1_1operators.html#a027859647aff78d6b69b5f40499ff8c5", null ],
-    [ "detail::operators::menu_erase_operator_t", "namespacedetail_1_1operators.html#af2e5f8971f205378afaf79c141c25691", null ],
-    [ "detail::operators::menu_operator_t", "namespacedetail_1_1operators.html#af844a5db644c80bad0761c8e8227de54", null ],
-    [ "detail::operators::trigger_create_operator", "namespacedetail_1_1operators.html#aaf470445b8b97b7e517fb4d2b8b99b8a", null ],
-    [ "detail::operators::trigger_erase_operator", "namespacedetail_1_1operators.html#a1784618ccec75906fff5b194d7281f2d", null ],
-    [ "detail::operators::trigger_operator", "namespacedetail_1_1operators.html#a287eff4db743758a97ded27bae2e1365", null ],
-    [ "detail::operators::view_id_accumulator_operator", "namespacedetail_1_1operators.html#a1d0ae4bdff070bb9127c39248e08f8b2", null ],
-    [ "detail::id_buffer::add", "namespacedetail_1_1id__buffer.html#a40c60f3376b1be380acd059cf3818763", null ],
-    [ "detail::id_buffer::buffer_transform", "namespacedetail_1_1id__buffer.html#a75c64765d139e3063258f666d3fca251", null ],
-    [ "detail::id_buffer::contains", "namespacedetail_1_1id__buffer.html#ad551e32a3c0b04b6f45a1d71313b82bd", null ],
-    [ "dispatch_gui", "config__view__presenter_8cpp.html#a7d91b3379b8077f6349cdd78f8ad2c56", null ],
-    [ "detail::id_buffer::erase", "namespacedetail_1_1id__buffer.html#ad98701077096461aaae59c5a0d33b556", null ]
+    [ "dispatch_gui", "config__view__presenter_8cpp.html#a7d91b3379b8077f6349cdd78f8ad2c56", null ]
 ];

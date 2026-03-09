@@ -33,6 +33,6 @@ var structdepicture__menu_1_1domain_1_1menu_1_1radialmenu =
     [ "set_item_action_id", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html#a505e6d1c4e47e6a8cf87d2b724435280", null ],
     [ "set_item_action_id", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html#a6c060a129f6cc72a5b10cd87aedc7cd7", null ],
     [ "set_item_current_action", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html#a6b113cee4a82156268dd3362db5cdc46", null ],
-    [ "visit_item", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html#a2474dbd565962ea2fc4a1dab4fd10685", null ],
-    [ "visit_item", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html#ae68a8d8125badb13fc0ee2c3eab5ea60", null ]
+    [ "visit_item", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html#a7243b902bfc38662808ac09bb136ceea", null ],
+    [ "visit_item", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html#afaa388f4671993871021ea756f46d491", null ]
 ];

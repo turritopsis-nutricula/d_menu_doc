@@ -1,0 +1,5 @@
+var structdepicture__menu_1_1applications_1_1detail__applications_1_1gui__dispatch__impl_1_1mutable__dispatch__proxy =
+[
+    [ "member_pointer_t", "structdepicture__menu_1_1applications_1_1detail__applications_1_1gui__dispatch__impl_1_1mutable__dispatch__proxy.html#a4d2d5a5659b3b8fa8d9e99b994aa06c3", null ],
+    [ "func", "structdepicture__menu_1_1applications_1_1detail__applications_1_1gui__dispatch__impl_1_1mutable__dispatch__proxy.html#a4faf8d30bba9583ab511fef1e4e66fe5", null ]
+];

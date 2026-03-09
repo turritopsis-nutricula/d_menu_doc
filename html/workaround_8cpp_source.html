@@ -132,33 +132,33 @@ $(function(){initNavTree('workaround_8cpp_source.html','',''); });
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>{</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">constexpr</span> <span class="keywordtype">char</span> <span class="keyword">const</span>* class_name = <span class="stringliteral">&quot;HookTest&quot;</span>;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    WNDCLASS window_class {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>      .style         = CS_HREDRAW | CS_VREDRAW,</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      .lpfnWndProc   = <a class="code hl_function" href="workaround_8cpp.html#ab01c69758901cb8401e8b23b52b8c42b">WindowProc</a>,</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      .cbClsExtra    = 0,</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      .cbWndExtra    = 0,</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>      .hInstance     = hInstance,</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      .hIcon         = <span class="keyword">nullptr</span>,</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      .hCursor       = ::LoadCursor( NULL, IDC_ARROW ),</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      .hbrBackground = ( HBRUSH )::GetStockObject( WHITE_BRUSH ),</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      .lpszMenuName  = <span class="keyword">nullptr</span>,</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      .lpszClassName = class_name };</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    WNDCLASS window_class{</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        .style         = CS_HREDRAW | CS_VREDRAW,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        .lpfnWndProc   = <a class="code hl_function" href="workaround_8cpp.html#ab01c69758901cb8401e8b23b52b8c42b">WindowProc</a>,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        .cbClsExtra    = 0,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        .cbWndExtra    = 0,</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        .hInstance     = hInstance,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        .hIcon         = <span class="keyword">nullptr</span>,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        .hCursor       = ::LoadCursor( NULL, IDC_ARROW ),</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        .hbrBackground = ( HBRUSH )::GetStockObject( WHITE_BRUSH ),</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        .lpszMenuName  = <span class="keyword">nullptr</span>,</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        .lpszClassName = class_name };</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">if</span> ( !::RegisterClass( &amp;window_class ) ) <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">auto</span>* hwnd = ::CreateWindowEx(</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      WS_EX_LEFT,</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      class_name,</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      <span class="stringliteral">&quot;Hook Test&quot;</span>,</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      0,</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      CW_USEDEFAULT,</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      CW_USEDEFAULT,</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      400,</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      300,</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>      <span class="keyword">nullptr</span>,</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>      <span class="keyword">nullptr</span>,</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      hInstance,</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>      <span class="keyword">nullptr</span> );</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        WS_EX_LEFT,</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        class_name,</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="stringliteral">&quot;Hook Test&quot;</span>,</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        0,</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        CW_USEDEFAULT,</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        CW_USEDEFAULT,</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        400,</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        300,</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keyword">nullptr</span>,</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keyword">nullptr</span>,</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        hInstance,</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keyword">nullptr</span> );</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    ::ShowWindow( hwnd, SW_SHOW );</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
@@ -193,12 +193,12 @@ $(function(){initNavTree('workaround_8cpp_source.html','',''); });
 </div>
 <div class="foldopen" id="foldopen00089" data-start="{" data-end="}">
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="workaround_8cpp.html#a5d16a95068aeff0449ceda1aa99ec827">   89</a></span><a class="code hl_function" href="workaround_8cpp.html#a5d16a95068aeff0449ceda1aa99ec827">BOOST_DESCRIBE_STRUCT</a>(</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <a class="code hl_struct" href="structcpp__user__struct.html">cpp_user_struct</a>,</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  ( ),</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  ( value_, (<span class="keywordtype">int</span>( ) <span class="keyword">const</span>)func, (<span class="keywordtype">void</span>( <span class="keywordtype">int</span> ))value, std_out )</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="comment">//    cpp_user_struct,</span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="comment">//    ( ),</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="comment">//    ( (int( ))func )</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <a class="code hl_struct" href="structcpp__user__struct.html">cpp_user_struct</a>,</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    ( ),</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    ( value_, (<span class="keywordtype">int</span>( ) <span class="keyword">const</span>)func, (<span class="keywordtype">void</span>( <span class="keywordtype">int</span> ))value, std_out )</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="comment">//  cpp_user_struct,</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="comment">//  ( ),</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="comment">//  ( (int( ))func )</span></div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>)</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="keyword">static</span> <a class="code hl_struct" href="structcpp__user__struct.html">cpp_user_struct</a> user_data = { };</div>
@@ -260,7 +260,7 @@ $(function(){initNavTree('workaround_8cpp_source.html','',''); });
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    {</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        <span class="keyword">using </span>vtbl_t =</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>          <a class="code hl_struct" href="structdepicture__menu_1_1cs__binding_1_1vtbl__table.html">depicture_menu::cs_binding::vtbl_table&lt; cpp_user_struct &gt;</a>;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            <a class="code hl_struct" href="structdepicture__menu_1_1cs__binding_1_1vtbl__table.html">depicture_menu::cs_binding::vtbl_table&lt; cpp_user_struct &gt;</a>;</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        <span class="keywordtype">void</span>**         table = vtbl_t::get_function_pointer_table( );</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        <span class="keyword">constexpr</span> <span class="keyword">auto</span> count = vtbl_t::public_function_count;</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        <span class="keywordflow">for</span> ( std::remove_const_t&lt; <span class="keyword">decltype</span>( count ) &gt; i = 0;</div>
@@ -297,14 +297,14 @@ $(function(){initNavTree('workaround_8cpp_source.html','',''); });
 <div class="ttc" id="astruct_prox_html_a9664e2484c7afc41dbb6ad6245e3fafb"><div class="ttname"><a href="struct_prox.html#a9664e2484c7afc41dbb6ad6245e3fafb">Prox::Func</a></div><div class="ttdeci">static RT STDMETHODCALLTYPE Func(T *self, Args... args)</div><div class="ttdef"><b>Definition</b> <a href="#l00106">workaround.cpp:106</a></div></div>
 <div class="ttc" id="astruct_prox_html_ae07966483da58fffdfa434429b3e5065"><div class="ttname"><a href="struct_prox.html#ae07966483da58fffdfa434429b3e5065">Prox::TC</a></div><div class="ttdeci">std::remove_cvref_t&lt; T &gt; TC</div><div class="ttdef"><b>Definition</b> <a href="#l00103">workaround.cpp:103</a></div></div>
 <div class="ttc" id="astruct_prox_html_aefd706ec4e367b53a22df105eb0f087d"><div class="ttname"><a href="struct_prox.html#aefd706ec4e367b53a22df105eb0f087d">Prox::Func</a></div><div class="ttdeci">static RT STDMETHODCALLTYPE Func(TC const *self, Args... args)</div><div class="ttdef"><b>Definition</b> <a href="#l00112">workaround.cpp:112</a></div></div>
-<div class="ttc" id="astructb_html"><div class="ttname"><a href="structb.html">b</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00123">TestReflection.cpp:124</a></div></div>
-<div class="ttc" id="astructc_html"><div class="ttname"><a href="structc.html">c</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00145">TestReflection.cpp:146</a></div></div>
+<div class="ttc" id="astructb_html"><div class="ttname"><a href="structb.html">b</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00125">TestReflection.cpp:126</a></div></div>
+<div class="ttc" id="astructc_html"><div class="ttname"><a href="structc.html">c</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00147">TestReflection.cpp:148</a></div></div>
 <div class="ttc" id="astructcpp__user__struct_html"><div class="ttname"><a href="structcpp__user__struct.html">cpp_user_struct</a></div><div class="ttdef"><b>Definition</b> <a href="#l00070">workaround.cpp:71</a></div></div>
 <div class="ttc" id="astructcpp__user__struct_html_a05cd7cc6957c536022128d2c244a7214"><div class="ttname"><a href="structcpp__user__struct.html#a05cd7cc6957c536022128d2c244a7214">cpp_user_struct::std_out</a></div><div class="ttdeci">int std_out(char *b, int n)</div><div class="ttdef"><b>Definition</b> <a href="#l00081">workaround.cpp:81</a></div></div>
 <div class="ttc" id="astructcpp__user__struct_html_a402437d948980b5bb26f6ba34ba81a03"><div class="ttname"><a href="structcpp__user__struct.html#a402437d948980b5bb26f6ba34ba81a03">cpp_user_struct::value_</a></div><div class="ttdeci">int value_</div><div class="ttdef"><b>Definition</b> <a href="#l00072">workaround.cpp:72</a></div></div>
 <div class="ttc" id="astructcpp__user__struct_html_a4296cd0e18e606ca4d61686ae949b911"><div class="ttname"><a href="structcpp__user__struct.html#a4296cd0e18e606ca4d61686ae949b911">cpp_user_struct::func</a></div><div class="ttdeci">int func() const</div><div class="ttdef"><b>Definition</b> <a href="#l00073">workaround.cpp:73</a></div></div>
 <div class="ttc" id="astructcpp__user__struct_html_adcc680eb1b947048e2d65f58cad92e2b"><div class="ttname"><a href="structcpp__user__struct.html#adcc680eb1b947048e2d65f58cad92e2b">cpp_user_struct::value</a></div><div class="ttdeci">void value(int v)</div><div class="ttdef"><b>Definition</b> <a href="#l00079">workaround.cpp:79</a></div></div>
-<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1vtbl__table_html"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1vtbl__table.html">depicture_menu::cs_binding::vtbl_table</a></div><div class="ttdef"><b>Definition</b> <a href="vtbl_8hpp_source.html#l00219">vtbl.hpp:220</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1cs__binding_1_1vtbl__table_html"><div class="ttname"><a href="structdepicture__menu_1_1cs__binding_1_1vtbl__table.html">depicture_menu::cs_binding::vtbl_table</a></div><div class="ttdef"><b>Definition</b> <a href="vtbl_8hpp_source.html#l00222">vtbl.hpp:223</a></div></div>
 <div class="ttc" id="avtbl_8hpp_html"><div class="ttname"><a href="vtbl_8hpp.html">vtbl.hpp</a></div></div>
 <div class="ttc" id="aworkaround_8cpp_html_a0cc6667db42ed3f3bfe9cbced1e0639b"><div class="ttname"><a href="workaround_8cpp.html#a0cc6667db42ed3f3bfe9cbced1e0639b">hook_message_id</a></div><div class="ttdeci">static UINT hook_message_id</div><div class="ttdef"><b>Definition</b> <a href="#l00013">workaround.cpp:13</a></div></div>
 <div class="ttc" id="aworkaround_8cpp_html_a1503b2dfd832154cfcd32c771825d3b5"><div class="ttname"><a href="workaround_8cpp.html#a1503b2dfd832154cfcd32c771825d3b5">get_user_struct_vtbl_ex</a></div><div class="ttdeci">std::size_t DLL_EXPORT get_user_struct_vtbl_ex(void **result, std::size_t length)</div><div class="ttdef"><b>Definition</b> <a href="#l00141">workaround.cpp:141</a></div></div>

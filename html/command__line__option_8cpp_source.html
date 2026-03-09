@@ -105,15 +105,15 @@ $(function(){initNavTree('command__line__option_8cpp_source.html','',''); });
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="foldopen" id="foldopen00011" data-start="{" data-end="}">
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1applications_1_1command__line__options.html">   11</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1applications_1_1command__line__options.html">depicture_menu::applications::command_line_options</a>::</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <a class="code hl_namespace" href="namespacedepicture__menu_1_1applications_1_1command__line__options_1_1detail__command__line__options.html">detail_command_line_options</a></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <a class="code hl_namespace" href="namespacedepicture__menu_1_1applications_1_1command__line__options_1_1detail__command__line__options.html">detail_command_line_options</a></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keywordtype">void</span></div>
 <div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1applications_1_1command__line__options_1_1_01detail__command__line__options.html#afc61e565b9e1b2eb695674570ac11602">   16</a></span><a class="code hl_function" href="namespacedepicture__menu_1_1applications_1_1command__line__options_1_1_01detail__command__line__options.html#afc61e565b9e1b2eb695674570ac11602">program_option_descript</a>(</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  boost::signals2::signal&lt;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">void</span>( <a class="code hl_typedef" href="classdepicture__menu_1_1applications_1_1command__line__options_1_1detail__command__line__optionsb0090d3eff96da397228f4a865518a58.html#a59af16ec72ca4012c90a197bcc8d616f">command_line_option_distributer::arg_variant_t</a> <span class="keyword">const</span>&amp; ) &gt; <span class="keyword">const</span>&amp; sig,</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  std::vector&lt; std::string &gt; <span class="keyword">const</span>&amp; cmd_line )</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    boost::signals2::signal&lt; <span class="keywordtype">void</span>(</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <a class="code hl_typedef" href="classdepicture__menu_1_1applications_1_1command__line__options_1_1detail__command__line__optionsb0090d3eff96da397228f4a865518a58.html#a59af16ec72ca4012c90a197bcc8d616f">command_line_option_distributer::arg_variant_t</a> <span class="keyword">const</span>&amp; ) &gt; <span class="keyword">const</span>&amp; sig,</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    std::vector&lt; std::string &gt; <span class="keyword">const</span>&amp; cmd_line )</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    std::string help_doc_arg;</div>
@@ -127,17 +127,17 @@ $(function(){initNavTree('command__line__option_8cpp_source.html','',''); });
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="comment">// --open</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    desc.add_options( )(</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      <span class="stringliteral">&quot;open&quot;</span>,</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>      bp::value( &amp;open_arg )</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        -&gt;implicit_value( <span class="stringliteral">&quot;00000000-0000-0000-0000-000000000000&quot;</span> ),</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>      <span class="stringliteral">&quot;メニューを開く。ID指定可能&quot;</span> );</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="stringliteral">&quot;open&quot;</span>,</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        bp::value( &amp;open_arg )</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            -&gt;implicit_value( <span class="stringliteral">&quot;00000000-0000-0000-0000-000000000000&quot;</span> ),</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="stringliteral">&quot;メニューを開く。ID指定可能&quot;</span> );</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="comment">// --close</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    desc.add_options( )(</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      <span class="comment">//        &quot;close&quot;, bp::value( &amp;close_arg ), &quot;メニューを閉じる。ID指定可能&quot;</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      <span class="stringliteral">&quot;close&quot;</span>,</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      bp::value( &amp;close_arg )</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        -&gt;implicit_value( <span class="stringliteral">&quot;00000000-0000-0000-0000-000000000000&quot;</span> ),</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      <span class="stringliteral">&quot;メニューを閉じる。ID指定可能&quot;</span> );</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="comment">//      &quot;close&quot;, bp::value( &amp;close_arg ), &quot;メニューを閉じる。ID指定可能&quot;</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="stringliteral">&quot;close&quot;</span>,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        bp::value( &amp;close_arg )</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            -&gt;implicit_value( <span class="stringliteral">&quot;00000000-0000-0000-0000-000000000000&quot;</span> ),</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="stringliteral">&quot;メニューを閉じる。ID指定可能&quot;</span> );</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    bp::variables_map vm;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">try</span></div>
@@ -147,9 +147,9 @@ $(function(){initNavTree('command__line__option_8cpp_source.html','',''); });
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">catch</span> ( bp::error_with_option_name <span class="keyword">const</span>&amp; e )</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    {</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        sig(</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>          <a class="code hl_struct" href="structdepicture__menu_1_1applications_1_1command__line__options_1_1args_1_1command__line__description__error.html">args::command_line_description_error</a> {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            .error_name_ = e.get_option_name( ), .what_ = e.what( ) } );</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        sig( <a class="code hl_struct" href="structdepicture__menu_1_1applications_1_1command__line__options_1_1args_1_1command__line__description__error.html">args::command_line_description_error</a>{</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            .error_name_ = e.get_option_name( ),</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            .what_       = e.what( ) } );</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    }</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
@@ -160,33 +160,31 @@ $(function(){initNavTree('command__line__option_8cpp_source.html','',''); });
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        std::stringstream ss;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        ss &lt;&lt; desc;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        sig( <a class="code hl_struct" href="structdepicture__menu_1_1applications_1_1command__line__options_1_1args_1_1help__doc__arg.html">args::help_doc_arg</a> { .document_ = ss.str( ) } );</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        sig( <a class="code hl_struct" href="structdepicture__menu_1_1applications_1_1command__line__options_1_1args_1_1help__doc__arg.html">args::help_doc_arg</a>{ .document_ = ss.str( ) } );</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">// --close</span></div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordflow">if</span> ( vm.count( <span class="stringliteral">&quot;close&quot;</span> ) )</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    {</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        sig(</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>          <a class="code hl_struct" href="structdepicture__menu_1_1applications_1_1command__line__options_1_1args_1_1menu__close__arg.html">args::menu_close_arg</a> {</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            .menu_id_ = <a class="code hl_function" href="structdepicture__menu_1_1domain_1_1models_1_1entity__id__base.html#ae3b811c5dd3aee7fcb017619d4dde476">domain::menu::menu_id::from</a>( close_arg ) } );</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="comment">// --open</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordflow">if</span> ( vm.count( <span class="stringliteral">&quot;open&quot;</span> ) )</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    {</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordflow">if</span> ( !open_arg.empty( ) )</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            sig(</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>              <a class="code hl_struct" href="structdepicture__menu_1_1applications_1_1command__line__options_1_1args_1_1menu__open__arg.html">args::menu_open_arg</a> {</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                .menu_id_ = <a class="code hl_function" href="structdepicture__menu_1_1domain_1_1models_1_1entity__id__base.html#ae3b811c5dd3aee7fcb017619d4dde476">domain::menu::menu_id::from</a>( open_arg ) } );</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    }</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>}</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        sig( <a class="code hl_struct" href="structdepicture__menu_1_1applications_1_1command__line__options_1_1args_1_1menu__close__arg.html">args::menu_close_arg</a>{</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            .menu_id_ = <a class="code hl_function" href="structdepicture__menu_1_1domain_1_1models_1_1entity__id__base.html#ae3b811c5dd3aee7fcb017619d4dde476">domain::menu::menu_id::from</a>( close_arg ) } );</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    }</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="comment">// --open</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordflow">if</span> ( vm.count( <span class="stringliteral">&quot;open&quot;</span> ) )</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    {</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordflow">if</span> ( !open_arg.empty( ) )</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            sig( <a class="code hl_struct" href="structdepicture__menu_1_1applications_1_1command__line__options_1_1args_1_1menu__open__arg.html">args::menu_open_arg</a>{</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                .menu_id_ = <a class="code hl_function" href="structdepicture__menu_1_1domain_1_1models_1_1entity__id__base.html#ae3b811c5dd3aee7fcb017619d4dde476">domain::menu::menu_id::from</a>( open_arg ) } );</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    }</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>}</div>
 </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>}    <span class="comment">// namespace</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>}    <span class="comment">// namespace</span></div>
 </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>     <span class="comment">// depicture_menu::applications::command_line_options::detail_command_line_options</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>     <span class="comment">// depicture_menu::applications::command_line_options::detail_command_line_options</span></div>
 <div class="ttc" id="aclassdepicture__menu_1_1applications_1_1command__line__options_1_1detail__command__line__optionsb0090d3eff96da397228f4a865518a58_html_a59af16ec72ca4012c90a197bcc8d616f"><div class="ttname"><a href="classdepicture__menu_1_1applications_1_1command__line__options_1_1detail__command__line__optionsb0090d3eff96da397228f4a865518a58.html#a59af16ec72ca4012c90a197bcc8d616f">depicture_menu::applications::command_line_options::detail_command_line_options::command_line_option_distributer_impl&lt; args::command_line_description_error, args::help_doc_arg, args::menu_open_arg, args::menu_close_arg &gt;::arg_variant_t</a></div><div class="ttdeci">std::variant&lt; Args... &gt; arg_variant_t</div><div class="ttdef"><b>Definition</b> <a href="command__line__option_8hpp_source.html#l00056">command_line_option.hpp:56</a></div></div>
 <div class="ttc" id="acommand__line__option_8hpp_html"><div class="ttname"><a href="command__line__option_8hpp.html">command_line_option.hpp</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1applications_1_1command__line__options_1_1_01detail__command__line__options_html_afc61e565b9e1b2eb695674570ac11602"><div class="ttname"><a href="namespacedepicture__menu_1_1applications_1_1command__line__options_1_1_01detail__command__line__options.html#afc61e565b9e1b2eb695674570ac11602">depicture_menu::applications::command_line_options:: detail_command_line_options::program_option_descript</a></div><div class="ttdeci">void program_option_descript(boost::signals2::signal&lt; void(command_line_option_distributer::arg_variant_t const &amp;) &gt; const &amp;sig, std::vector&lt; std::string &gt; const &amp;cmd_line)</div><div class="ttdef"><b>Definition</b> <a href="#l00016">command_line_option.cpp:16</a></div></div>

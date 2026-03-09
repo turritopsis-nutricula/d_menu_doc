@@ -107,6 +107,9 @@ show_menu_view.cpp の依存先関係図:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 名前空間</h2></td></tr>
 <tr class="memitem:impl" id="r_impl"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespaceimpl.html">impl</a></td></tr>
+<tr class="memitem:depicture_5Fmenu" id="r_depicture_5Fmenu"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu.html">depicture_menu</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Ausecase" id="r_depicture_5Fmenu_3A_3Ausecase"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase.html">depicture_menu::usecase</a></td></tr>
+<tr class="memdesc:namespacedepicture__menu_1_1usecase"><td class="mdescLeft">&#160;</td><td class="mdescRight">メニュー更新 usecase <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 型定義</h2></td></tr>
@@ -158,14 +161,14 @@ show_menu_view.cpp の依存先関係図:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>初期値:</b><div class="fragment"><div class="line">                         =</div>
-<div class="line">std::make_tuple( <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html">dd::menu::radialmenu</a>( <a class="code hl_function" href="structdepicture__menu_1_1domain_1_1models_1_1entity__id__base.html#a71866154646981ed1213a76e8e7c9d6b">dd::menu::menu_id::nil_id</a>( ) ), 0, 0 )</div>
-<div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1radialmenu_html"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html">depicture_menu::domain::menu::radialmenu</a></div><div class="ttdef"><b>Definition</b> <a href="radialmenu_8hpp_source.html#l00027">radialmenu.hpp:28</a></div></div>
-<div class="ttc" id="astructdepicture__menu_1_1domain_1_1models_1_1entity__id__base_html_a71866154646981ed1213a76e8e7c9d6b"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1models_1_1entity__id__base.html#a71866154646981ed1213a76e8e7c9d6b">depicture_menu::domain::models::entity_id_base&lt; detail_menu::menu_id_tag &gt;::nil_id</a></div><div class="ttdeci">static constexpr entity_id_base nil_id()</div><div class="ttdef"><b>Definition</b> <a href="model_2entity__id_8hpp_source.html#l00089">entity_id.hpp:89</a></div></div>
+<b>初期値:</b><div class="fragment"><div class="line">                       = std::make_tuple(</div>
+<div class="line"><a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html">dd::menu::radialmenu</a>( <a class="code hl_function" href="structdepicture__menu_1_1domain_1_1models_1_1entity__id__base.html#a71866154646981ed1213a76e8e7c9d6b">dd::menu::menu_id::nil_id</a>( ) ), 0, 0 )</div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1radialmenu_html"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html">depicture_menu::domain::menu::radialmenu</a></div><div class="ttdoc">メニュー Domain entity</div><div class="ttdef"><b>Definition</b> <a href="radialmenu_8hpp_source.html#l00033">radialmenu.hpp:34</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1models_1_1entity__id__base_html_a71866154646981ed1213a76e8e7c9d6b"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1models_1_1entity__id__base.html#a71866154646981ed1213a76e8e7c9d6b">depicture_menu::domain::models::entity_id_base&lt; detail_menu::menu_id_tag &gt;::nil_id</a></div><div class="ttdeci">static constexpr entity_id_base nil_id()</div><div class="ttdef"><b>Definition</b> <a href="model_2entity__id_8hpp_source.html#l00088">entity_id.hpp:88</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="show__menu__view_8cpp_source.html">show_menu_view.cpp</a> の <a class="el" href="show__menu__view_8cpp_source.html#l00010">10</a> 行目に定義があります。</p>
 
-<p class="reference">参照元 <a class="el" href="show__menu__view_8cpp_source.html#l00038">impl::get_menu()</a>, <a class="el" href="show__menu__view_8cpp_source.html#l00077">depicture_menu::usecase::detail_usecase::show_default_menu_view_impl()</a>, <a class="el" href="show__menu__view_8cpp_source.html#l00097">depicture_menu::usecase::detail_usecase::show_menu_view_by_trigger_impl()</a>, <a class="el" href="show__menu__view_8cpp_source.html#l00061">depicture_menu::usecase::detail_usecase::show_menu_view_impl()</a>.</p>
+<p class="reference">参照元 <a class="el" href="show__menu__view_8cpp_source.html#l00038">impl::get_menu()</a>, <a class="el" href="show__menu__view_8cpp_source.html#l00079">depicture_menu::usecase::detail_usecase::show_default_menu_view_impl()</a>, <a class="el" href="show__menu__view_8cpp_source.html#l00103">depicture_menu::usecase::detail_usecase::show_menu_view_by_trigger_impl()</a>, <a class="el" href="show__menu__view_8cpp_source.html#l00061">depicture_menu::usecase::detail_usecase::show_menu_view_impl()</a>.</p>
 
 </div>
 </div>

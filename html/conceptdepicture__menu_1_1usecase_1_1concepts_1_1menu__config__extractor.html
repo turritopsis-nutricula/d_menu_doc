@@ -98,20 +98,23 @@ $(function(){initNavTree('conceptdepicture__menu_1_1usecase_1_1concepts_1_1menu_
 <h2 id="header-conceptdef" class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
 <div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptdepicture__menu_1_1usecase_1_1concepts_1_1menu__config__extractor.html">menu_config_extractor</a> =</div>
-<div class="line">  !boost::di::aux::is_complete&lt; T &gt;::value ||</div>
-<div class="line">  <span class="keyword">requires</span>(</div>
-<div class="line">    T <span class="keyword">const</span>                    t,</div>
-<div class="line">    <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1menu.html#aa7d3347d8daef21d1ee5d9f029632c0a">domain::menu::menu_item_id</a> <a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#a5556d681937bfe84551ccc58a983a871">m_id</a>,</div>
-<div class="line">    <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1menu.html#aa7d3347d8daef21d1ee5d9f029632c0a">domain::menu::menu_item_id</a> i_id ) {</div>
-<div class="line">      { t.extract_data( <a class="code hl_variable" href="_test_config_view_presenter_8cpp.html#a5556d681937bfe84551ccc58a983a871">m_id</a> ) } -&gt; std::same_as&lt; dto::menu_config_update &gt;;</div>
-<div class="line">      { t.extract_data( i_id ) } -&gt; std::same_as&lt; dto::menu_config_update &gt;;</div>
-<div class="line">  }</div>
-<div class="ttc" id="a_test_config_view_presenter_8cpp_html_a5556d681937bfe84551ccc58a983a871"><div class="ttname"><a href="_test_config_view_presenter_8cpp.html#a5556d681937bfe84551ccc58a983a871">m_id</a></div><div class="ttdeci">dd::menu::menu_id m_id</div><div class="ttdef"><b>Definition</b> <a href="_test_config_view_presenter_8cpp_source.html#l00196">TestConfigViewPresenter.cpp:196</a></div></div>
-<div class="ttc" id="aconceptdepicture__menu_1_1usecase_1_1concepts_1_1menu__config__extractor_html"><div class="ttname"><a href="conceptdepicture__menu_1_1usecase_1_1concepts_1_1menu__config__extractor.html">depicture_menu::usecase::concepts::menu_config_extractor</a></div><div class="ttdef"><b>Definition</b> <a href="update__menu__config_8hpp_source.html#l00043">update_menu_config.hpp:43</a></div></div>
+<div class="line">        !boost::di::aux::is_complete&lt; T &gt;::value ||</div>
+<div class="line">        <span class="keyword">requires</span>(</div>
+<div class="line">            T <span class="keyword">const</span>                    t,</div>
+<div class="line">            <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1menu.html#aa7d3347d8daef21d1ee5d9f029632c0a">domain::menu::menu_item_id</a> m_id,</div>
+<div class="line">            <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1menu.html#aa7d3347d8daef21d1ee5d9f029632c0a">domain::menu::menu_item_id</a> i_id ) {</div>
+<div class="line">            {</div>
+<div class="line">                t.extract_data( m_id )</div>
+<div class="line">            } -&gt; std::same_as&lt; dto::menu_config_update &gt;;</div>
+<div class="line">            {</div>
+<div class="line">                t.extract_data( i_id )</div>
+<div class="line">            } -&gt; std::same_as&lt; dto::menu_config_update &gt;;</div>
+<div class="line">        }</div>
+<div class="ttc" id="aconceptdepicture__menu_1_1usecase_1_1concepts_1_1menu__config__extractor_html"><div class="ttname"><a href="conceptdepicture__menu_1_1usecase_1_1concepts_1_1menu__config__extractor.html">depicture_menu::usecase::concepts::menu_config_extractor</a></div><div class="ttdef"><b>Definition</b> <a href="update__menu__config_8hpp_source.html#l00041">update_menu_config.hpp:41</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1menu_html_aa7d3347d8daef21d1ee5d9f029632c0a"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1menu.html#aa7d3347d8daef21d1ee5d9f029632c0a">depicture_menu::domain::menu::menu_item_id</a></div><div class="ttdeci">models::entity_id_base&lt; detail_menu::menu_item_id_tag &gt; menu_item_id</div><div class="ttdef"><b>Definition</b> <a href="menu__ids_8hpp_source.html#l00023">menu_ids.hpp:23</a></div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
 <div class="textblock">
-<p class="definition"> <a class="el" href="update__menu__config_8hpp_source.html">update_menu_config.hpp</a> の <a class="el" href="update__menu__config_8hpp_source.html#l00043">43</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="update__menu__config_8hpp_source.html">update_menu_config.hpp</a> の <a class="el" href="update__menu__config_8hpp_source.html#l00041">41</a> 行目に定義があります。</p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

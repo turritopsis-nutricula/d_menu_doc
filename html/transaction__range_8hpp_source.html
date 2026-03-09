@@ -147,7 +147,7 @@ $(function(){initNavTree('transaction__range_8hpp_source.html','',''); });
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        {</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="classdepicture__menu_1_1ranges_1_1closure__t.html">closure_t</a>(</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>              std::bind_back( <a class="code hl_variable" href="classdepicture__menu_1_1ranges_1_1adaptor__t.html#aa828a2373c64c42f034443238e880640">f</a>, std::forward&lt; Args &gt;( args )... ) );</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                std::bind_back( <a class="code hl_variable" href="classdepicture__menu_1_1ranges_1_1adaptor__t.html#aa828a2373c64c42f034443238e880640">f</a>, std::forward&lt; Args &gt;( args )... ) );</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        }</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
 </div>
@@ -163,229 +163,230 @@ $(function(){initNavTree('transaction__range_8hpp_source.html','',''); });
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1repositories_1_1ranges.html">   57</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1repositories_1_1ranges.html">ranges</a></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>{</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">//</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">// error wrapper</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">//</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keyword">requires</span>(</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>      domain::models::concepts::aggregable&lt; T &gt; ||</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      <a class="code hl_concept" href="conceptdepicture__menu_1_1domain_1_1models_1_1concepts_1_1identifiable__value.html">domain::models::concepts::identifiable_value&lt; T &gt;</a> )</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">// error wrapper</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keyword">requires</span>(</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            domain::models::concepts::aggregable&lt; T &gt; ||</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>            <a class="code hl_concept" href="conceptdepicture__menu_1_1domain_1_1models_1_1concepts_1_1identifiable__value.html">domain::models::concepts::identifiable_value&lt; T &gt;</a> )</div>
 <div class="foldopen" id="foldopen00069" data-start="{" data-end="};">
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1repositories_1_1ranges_1_1error__value.html">   69</a></span><span class="keyword">struct</span> <a class="code hl_struct" href="structdepicture__menu_1_1repositories_1_1ranges_1_1error__value.html">error_value</a></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>{</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1repositories_1_1ranges_1_1error__value.html#a8a6230aafe5adba83985d5a03063b26f">   71</a></span>    T <a class="code hl_variable" href="structdepicture__menu_1_1repositories_1_1ranges_1_1error__value.html#a8a6230aafe5adba83985d5a03063b26f">value</a>;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>};</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1repositories_1_1ranges_1_1error__value.html">   69</a></span>    <span class="keyword">struct</span> <a class="code hl_struct" href="structdepicture__menu_1_1repositories_1_1ranges_1_1error__value.html">error_value</a></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1repositories_1_1ranges_1_1error__value.html#a8a6230aafe5adba83985d5a03063b26f">   71</a></span>        T <a class="code hl_variable" href="structdepicture__menu_1_1repositories_1_1ranges_1_1error__value.html#a8a6230aafe5adba83985d5a03063b26f">value</a>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    };</div>
 </div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">//</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">// expected result types</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">//</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="keyword">template</span>&lt; domain::models::concepts::aggregable T &gt;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1repositories_1_1ranges.html#a5543ded06cfa493b9b2d855fbeff7271">   80</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespacedepicture__menu_1_1repositories_1_1ranges.html#a5543ded06cfa493b9b2d855fbeff7271">read_view_result_t</a> = std::expected&lt; T, error_value&lt; typename T::id_t &gt; &gt;;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="keyword">template</span>&lt; domain::models::concepts::aggregable T &gt;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1repositories_1_1ranges.html#afae10464fc1c8b5231c2935836a33121">   83</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespacedepicture__menu_1_1repositories_1_1ranges.html#afae10464fc1c8b5231c2935836a33121">create_view_result_t</a> =</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  std::expected&lt; typename T::id_t, error_value&lt; T &gt; &gt;;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keyword">template</span>&lt; domain::models::concepts::aggregable T &gt;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1repositories_1_1ranges.html#a68269d877d10ac21c172a927faf4462f">   87</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespacedepicture__menu_1_1repositories_1_1ranges.html#a68269d877d10ac21c172a927faf4462f">update_view_result_t</a> =</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  std::expected&lt; typename T::id_t, error_value&lt; T &gt; &gt;;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keyword">template</span>&lt; domain::models::concepts::aggregable T &gt;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1repositories_1_1ranges.html#afa957e031672d246b19e714d4b38aead">   91</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespacedepicture__menu_1_1repositories_1_1ranges.html#afa957e031672d246b19e714d4b38aead">remove_view_result_t</a> =</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  std::expected&lt; typename T::id_t, error_value&lt; typename T::id_t &gt; &gt;;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">//</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">// transacation_expected</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">//</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="comment">// expected result types</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">template</span>&lt; domain::models::concepts::aggregable T &gt;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1repositories_1_1ranges.html#ae013bf205f8b5b00a2d452d6cb2b187b">   80</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespacedepicture__menu_1_1repositories_1_1ranges.html#ae013bf205f8b5b00a2d452d6cb2b187b">read_view_result_t</a> =</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        std::expected&lt; T, error_value&lt; typename T::id_t &gt; &gt;;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keyword">template</span>&lt; domain::models::concepts::aggregable T &gt;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1repositories_1_1ranges.html#afae10464fc1c8b5231c2935836a33121">   84</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespacedepicture__menu_1_1repositories_1_1ranges.html#afae10464fc1c8b5231c2935836a33121">create_view_result_t</a> =</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        std::expected&lt; typename T::id_t, error_value&lt; T &gt; &gt;;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keyword">template</span>&lt; domain::models::concepts::aggregable T &gt;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1repositories_1_1ranges.html#a68269d877d10ac21c172a927faf4462f">   88</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespacedepicture__menu_1_1repositories_1_1ranges.html#a68269d877d10ac21c172a927faf4462f">update_view_result_t</a> =</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        std::expected&lt; typename T::id_t, error_value&lt; T &gt; &gt;;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keyword">template</span>&lt; domain::models::concepts::aggregable T &gt;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1repositories_1_1ranges.html#afa957e031672d246b19e714d4b38aead">   92</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespacedepicture__menu_1_1repositories_1_1ranges.html#afa957e031672d246b19e714d4b38aead">remove_view_result_t</a> =</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        std::expected&lt; typename T::id_t, error_value&lt; typename T::id_t &gt; &gt;;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="comment">// transacation_expected</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="comment">//----------------------------------------------------------------------//</span></div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">//</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">// range views</span></div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">//</span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="foldopen" id="foldopen00106" data-start="{" data-end="}">
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1repositories_1_1ranges_1_1views.html">  106</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1repositories_1_1ranges_1_1views.html">views</a></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>{</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="foldopen" id="foldopen00109" data-start="{" data-end="}">
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views.html">  109</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views.html">detail_views</a></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>{</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="preprocessor">#if 0</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment">//</span></div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">// views::create :implements</span></div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">//</span></div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="keyword">class </span>create_impl</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>{</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keyword">constexpr</span> create_impl( ) { }</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keyword">template</span> &lt; std::ranges::viewable_range R, <span class="keyword">typename</span>... Ts &gt;</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keyword">constexpr</span> <span class="keyword">auto</span></div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    operator( )( R&amp;&amp; r, <a class="code hl_struct" href="structdepicture__menu_1_1repositories_1_1transaction__ref.html">transaction_ref</a>&lt; Ts... &gt; tran ) <span class="keyword">const</span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    {</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <span class="keyword">using </span>value_t = std::ranges::range_value_t&lt; R &gt;;</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        <span class="keywordflow">return</span> std::ranges::transform_view(</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            std::forward&lt; R &gt;( r ),</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            [ t = std::move( tran ) ]( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; ent )</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>                -&gt; <a class="code hl_typedef" href="namespacedepicture__menu_1_1repositories_1_1ranges.html#afae10464fc1c8b5231c2935836a33121">create_view_result_t&lt; value_t &gt;</a></div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            {</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>                <span class="keywordflow">if</span> ( <span class="keyword">auto</span> <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> = <a class="code hl_function" href="namespacedepicture__menu_1_1repositories.html#ae8ed8998598da29303648e2e363aa034">get&lt; value_t &gt;</a>( *t ).create( ent );</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                     <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.is_valid( ) )</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                {</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                    <span class="keywordflow">return</span> <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>;</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                }</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                {</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                    <span class="keywordflow">return</span> std::unexpected( <a class="code hl_struct" href="structdepicture__menu_1_1repositories_1_1ranges_1_1error__value.html">error_value</a>{ ent } );</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                }</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            }</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        );</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    }</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>};</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="comment">//</span></div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="comment">// views::read : implements</span></div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="comment">//</span></div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="keyword">template</span>&lt; domain::models::concepts::aggregable T &gt;</div>
-<div class="foldopen" id="foldopen00154" data-start="{" data-end="};">
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views_1_1typed__read__impl.html">  154</a></span><span class="keyword">class </span><a class="code hl_function" href="classdepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views_1_1typed__read__impl.html#a531cb8ef5b6686a54686836207cd471c">typed_read_impl</a></div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>{</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views_1_1typed__read__impl.html#a531cb8ef5b6686a54686836207cd471c">  158</a></span>    <span class="keyword">constexpr</span> <a class="code hl_function" href="classdepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views_1_1typed__read__impl.html#a531cb8ef5b6686a54686836207cd471c">typed_read_impl</a>( ) { }</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <span class="keyword">template</span>&lt; std::ranges::viewable_range R, <span class="keyword">typename</span>... Ts &gt;</div>
-<div class="foldopen" id="foldopen00161" data-start="{" data-end="}">
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views_1_1typed__read__impl.html#a57e4f4c0ba7b1f057ca037b36e13aac2">  161</a></span>    <span class="keyword">constexpr</span> <span class="keyword">auto</span> operator( )( R&amp;&amp; r, <a class="code hl_struct" href="structdepicture__menu_1_1repositories_1_1transaction__ref.html">transaction_ref</a>&lt; Ts... &gt; tran ) <span class="keyword">const</span></div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    {</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        <span class="keywordflow">return</span> std::ranges::transform_view(</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>          std::forward&lt; R &gt;( r ),</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>          [ t =</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>              std::move( tran ) ]( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; <span class="keywordtype">id</span> ) -&gt; <a class="code hl_typedef" href="namespacedepicture__menu_1_1repositories_1_1ranges.html#a5543ded06cfa493b9b2d855fbeff7271">read_view_result_t&lt; T &gt;</a> {</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>              <span class="keywordflow">if</span> ( <span class="keyword">auto</span> <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> = <a class="code hl_function" href="namespacedepicture__menu_1_1repositories.html#ae8ed8998598da29303648e2e363aa034">get&lt; T &gt;</a>( *t ).read( <span class="keywordtype">id</span> ) ) { <span class="keywordflow">return</span> *<a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>; }</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>              <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>              {</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                  <span class="keywordflow">return</span> std::unexpected( <a class="code hl_struct" href="structdepicture__menu_1_1repositories_1_1ranges_1_1error__value.html">error_value</a> { <span class="keywordtype">id</span> } );</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>              }</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>          } );</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="comment">// range views</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="foldopen" id="foldopen00107" data-start="{" data-end="}">
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1repositories_1_1ranges_1_1views.html">  107</a></span>    <span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1repositories_1_1ranges_1_1views.html">views</a></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    {</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="foldopen" id="foldopen00110" data-start="{" data-end="}">
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views.html">  110</a></span>        <span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views.html">detail_views</a></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        {</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="preprocessor">#if 0</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">//</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">// views::create :implements</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">//</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="keyword">class </span>create_impl</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>{</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keyword">constexpr</span> create_impl( ) { }</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keyword">template</span> &lt; std::ranges::viewable_range R, <span class="keyword">typename</span>... Ts &gt;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keyword">constexpr</span> <span class="keyword">auto</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    operator( )( R&amp;&amp; r, <a class="code hl_struct" href="structdepicture__menu_1_1repositories_1_1transaction__ref.html">transaction_ref</a>&lt; Ts... &gt; tran ) <span class="keyword">const</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    {</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <span class="keyword">using </span>value_t = std::ranges::range_value_t&lt; R &gt;;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <span class="keywordflow">return</span> std::ranges::transform_view(</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            std::forward&lt; R &gt;( r ),</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            [ t = std::move( tran ) ]( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; ent )</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>                -&gt; <a class="code hl_typedef" href="namespacedepicture__menu_1_1repositories_1_1ranges.html#afae10464fc1c8b5231c2935836a33121">create_view_result_t&lt; value_t &gt;</a></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            {</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>                <span class="keywordflow">if</span> ( <span class="keyword">auto</span> <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> = <a class="code hl_function" href="namespacedepicture__menu_1_1repositories.html#ae8ed8998598da29303648e2e363aa034">get&lt; value_t &gt;</a>( *t ).create( ent );</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>                     <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.is_valid( ) )</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                {</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                    <span class="keywordflow">return</span> <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                }</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                {</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                    <span class="keywordflow">return</span> std::unexpected( <a class="code hl_struct" href="structdepicture__menu_1_1repositories_1_1ranges_1_1error__value.html">error_value</a>{ ent } );</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                }</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            }</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        );</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    }</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>};</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            <span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            <span class="comment">//</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            <span class="comment">// views::read : implements</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            <span class="comment">//</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            <span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>            <span class="keyword">template</span>&lt; domain::models::concepts::aggregable T &gt;</div>
+<div class="foldopen" id="foldopen00155" data-start="{" data-end="};">
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views_1_1typed__read__impl.html">  155</a></span>            <span class="keyword">class </span><a class="code hl_function" href="classdepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views_1_1typed__read__impl.html#a531cb8ef5b6686a54686836207cd471c">typed_read_impl</a></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            {</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>            <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views_1_1typed__read__impl.html#a531cb8ef5b6686a54686836207cd471c">  159</a></span>                <span class="keyword">constexpr</span> <a class="code hl_function" href="classdepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views_1_1typed__read__impl.html#a531cb8ef5b6686a54686836207cd471c">typed_read_impl</a>( ) { }</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>                <span class="keyword">template</span>&lt; std::ranges::viewable_range R, <span class="keyword">typename</span>... Ts &gt;</div>
+<div class="foldopen" id="foldopen00162" data-start="{" data-end="}">
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views_1_1typed__read__impl.html#a57e4f4c0ba7b1f057ca037b36e13aac2">  162</a></span>                <span class="keyword">constexpr</span> <span class="keyword">auto</span> operator( )(</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>                    R&amp;&amp; r, <a class="code hl_struct" href="structdepicture__menu_1_1repositories_1_1transaction__ref.html">transaction_ref</a>&lt; Ts... &gt; tran ) <span class="keyword">const</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>                {</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                    <span class="keywordflow">return</span> std::ranges::transform_view(</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>                        std::forward&lt; R &gt;( r ),</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                        [ t = std::move( tran ) ](</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>                            <span class="keyword">auto</span> <span class="keyword">const</span>&amp; <span class="keywordtype">id</span> ) -&gt; <a class="code hl_typedef" href="namespacedepicture__menu_1_1repositories_1_1ranges.html#ae013bf205f8b5b00a2d452d6cb2b187b">read_view_result_t&lt; T &gt;</a> {</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>                        <span class="keywordflow">if</span> ( <span class="keyword">auto</span> <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> = <a class="code hl_function" href="namespacedepicture__menu_1_1repositories.html#ae8ed8998598da29303648e2e363aa034">get&lt; T &gt;</a>( *t ).read( <span class="keywordtype">id</span> ) ) { <span class="keywordflow">return</span> *<a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>; }</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>                        {</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>                            <span class="keywordflow">return</span> std::unexpected( <a class="code hl_struct" href="structdepicture__menu_1_1repositories_1_1ranges_1_1error__value.html">error_value</a>{ <span class="keywordtype">id</span> } );</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>                        }</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>                    } );</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                }</div>
 </div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>};</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>            };</div>
 </div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>}    <span class="comment">// namespace detail_views</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        }    <span class="comment">// namespace detail_views</span></div>
 </div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">//</span></div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment">// read</span></div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment">//</span></div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="keyword">template</span>&lt; <span class="keyword">typename</span> V &gt;</div>
-<div class="foldopen" id="foldopen00183" data-start="{" data-end="};">
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1repositories_1_1ranges_1_1views.html#ab241293c3d6aa5cf82e1641dd3747bda">  183</a></span><span class="keyword">inline</span> constexpr ::depicture_menu::ranges::adaptor_t <a class="code hl_variable" href="namespacedepicture__menu_1_1repositories_1_1ranges_1_1views.html#ab241293c3d6aa5cf82e1641dd3747bda">read</a></div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="preprocessor">#if 1</span></div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>  = <a class="code hl_class" href="classdepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views_1_1typed__read__impl.html">detail_views::typed_read_impl&lt; V &gt;</a> { };</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        <span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        <span class="comment">//</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        <span class="comment">// read</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        <span class="comment">//</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        <span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>        <span class="keyword">template</span>&lt; <span class="keyword">typename</span> V &gt;</div>
+<div class="foldopen" id="foldopen00185" data-start="{" data-end="};">
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1repositories_1_1ranges_1_1views.html#ab241293c3d6aa5cf82e1641dd3747bda">  185</a></span>        <span class="keyword">inline</span> constexpr ::depicture_menu::ranges::adaptor_t <a class="code hl_variable" href="namespacedepicture__menu_1_1repositories_1_1ranges_1_1views.html#ab241293c3d6aa5cf82e1641dd3747bda">read</a></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="preprocessor">#if 1</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>            = <a class="code hl_class" href="classdepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views_1_1typed__read__impl.html">detail_views::typed_read_impl&lt; V &gt;</a>{ };</div>
 </div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>  = []&lt; std::ranges::viewable_range R, <span class="keyword">typename</span>... Ts &gt;(</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>      R&amp;&amp;                   r,</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>      <a class="code hl_struct" href="structdepicture__menu_1_1repositories_1_1transaction.html">transaction</a>&lt; Ts... &gt;* f ) {</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        <span class="keywordflow">return</span> std::ranges::transform_view(</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>          std::forward&lt; R &gt;( r ),</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>          [ f ]( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; <span class="keywordtype">id</span> )</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            -&gt; std::expected&lt; V, <a class="code hl_struct" href="structdepicture__menu_1_1repositories_1_1ranges_1_1error__value.html">error_value&lt; typename V::id_t &gt;</a> &gt; {</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>              <span class="keywordflow">if</span> ( <span class="keyword">auto</span> <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> = <a class="code hl_function" href="namespacedepicture__menu_1_1repositories.html#ae8ed8998598da29303648e2e363aa034">get&lt; V &gt;</a>( *f ).read( <span class="keywordtype">id</span> ) ) { <span class="keywordflow">return</span> *<a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>; }</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>              <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>              {</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>                  <span class="keywordflow">return</span> std::unexpected( error_value { <span class="keywordtype">id</span> } );</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>              }</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>          } );</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    };</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="preprocessor">#if 0</span></div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment">//</span></div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment">// create</span></div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment">//</span></div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="keyword">inline</span> constexpr ::depicture_menu::ranges::adaptor_t <a class="code hl_enumvalue" href="ipc__queue_8hpp.html#ac2161f7e2bb82a9905ca2a830b6c242fa76ea0bebb3c22822b4f0dd9c9fd021c5">create</a></div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    = detail_views::create_impl{ };</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="comment">//</span></div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="comment">// extract_value</span></div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="comment">//</span></div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="foldopen" id="foldopen00219" data-start="{" data-end="};">
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1repositories_1_1ranges_1_1views.html#a2470c016b6fbdd210f652f2de0cb7e37">  219</a></span><span class="keyword">inline</span> constexpr ::depicture_menu::ranges::closure_t <a class="code hl_variable" href="namespacedepicture__menu_1_1repositories_1_1ranges_1_1views.html#a2470c016b6fbdd210f652f2de0cb7e37">extract_value</a> =</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>  []&lt; std::ranges::viewable_range R &gt;( R&amp;&amp; r ) {</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>      <span class="keywordflow">return</span> std::views::filter(</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>               std::forward&lt; R &gt;( r ),</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>               []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; exp ) { <span class="keywordflow">return</span> exp.has_value( ); } ) |</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>             std::views::transform(</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>               []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; v ) { <span class="keywordflow">return</span> v.value( ); } );</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>  };</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>            = []&lt; std::ranges::viewable_range R, <span class="keyword">typename</span>... Ts &gt;(</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>                  R&amp;&amp; r, <a class="code hl_struct" href="structdepicture__menu_1_1repositories_1_1transaction.html">transaction</a>&lt; Ts... &gt;* f ) {</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>            <span class="keywordflow">return</span> std::ranges::transform_view(</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>                std::forward&lt; R &gt;( r ),</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>                [ f ]( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; <span class="keywordtype">id</span> )</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>                    -&gt; std::expected&lt; V, <a class="code hl_struct" href="structdepicture__menu_1_1repositories_1_1ranges_1_1error__value.html">error_value&lt; typename V::id_t &gt;</a> &gt; {</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>                <span class="keywordflow">if</span> ( <span class="keyword">auto</span> <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> = <a class="code hl_function" href="namespacedepicture__menu_1_1repositories.html#ae8ed8998598da29303648e2e363aa034">get&lt; V &gt;</a>( *f ).read( <span class="keywordtype">id</span> ) ) { <span class="keywordflow">return</span> *<a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>; }</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>                <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>                {</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                    <span class="keywordflow">return</span> std::unexpected( error_value{ <span class="keywordtype">id</span> } );</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>                }</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>            } );</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        };</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span> </div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="preprocessor">#if 0</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment">//</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment">// create</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment">//</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="keyword">inline</span> constexpr ::depicture_menu::ranges::adaptor_t <a class="code hl_enumvalue" href="ipc__queue_8hpp.html#ac2161f7e2bb82a9905ca2a830b6c242fa76ea0bebb3c22822b4f0dd9c9fd021c5">create</a></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    = detail_views::create_impl{ };</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        <span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        <span class="comment">//</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        <span class="comment">// extract_value</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        <span class="comment">//</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        <span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="foldopen" id="foldopen00220" data-start="{" data-end="};">
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1repositories_1_1ranges_1_1views.html#a2470c016b6fbdd210f652f2de0cb7e37">  220</a></span>        <span class="keyword">inline</span> constexpr ::depicture_menu::ranges::closure_t <a class="code hl_variable" href="namespacedepicture__menu_1_1repositories_1_1ranges_1_1views.html#a2470c016b6fbdd210f652f2de0cb7e37">extract_value</a> =</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>            []&lt; std::ranges::viewable_range R &gt;( R&amp;&amp; r ) {</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>            <span class="keywordflow">return</span> std::views::filter(</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>                       std::forward&lt; R &gt;( r ),</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>                       []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; exp ) { <span class="keywordflow">return</span> exp.has_value( ); } ) |</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>                   std::views::transform(</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>                       []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; v ) { <span class="keywordflow">return</span> v.value( ); } );</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        };</div>
 </div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span> </div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>}    <span class="comment">// namespace views</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    }    <span class="comment">// namespace views</span></div>
 </div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>}    <span class="comment">// namespace ranges</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>}    <span class="comment">// namespace ranges</span></div>
 </div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
-<div class="foldopen" id="foldopen00232" data-start="{" data-end="}">
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1repositories_1_1views.html">  232</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1repositories_1_1views.html">views</a></div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>{</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1repositories_1_1ranges_1_1views.html">ranges::views</a>;</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>}</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
+<div class="foldopen" id="foldopen00233" data-start="{" data-end="}">
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1repositories_1_1views.html">  233</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1repositories_1_1views.html">views</a></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>{</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1repositories_1_1ranges_1_1views.html">ranges::views</a>;</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>}</div>
 </div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>}    <span class="comment">// namespace depicture_menu::repositories</span></div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_CORE_REPOSITORY_TRANSACTION_TRANSACTION_RANGE_HPP_</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>}    <span class="comment">// namespace depicture_menu::repositories</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_CORE_REPOSITORY_TRANSACTION_TRANSACTION_RANGE_HPP_</span></div>
 <div class="ttc" id="aclassdepicture__menu_1_1ranges_1_1adaptor__t_html_a0fa19b4ca5fd40bf165b77d47d0d50fa"><div class="ttname"><a href="classdepicture__menu_1_1ranges_1_1adaptor__t.html#a0fa19b4ca5fd40bf165b77d47d0d50fa">depicture_menu::ranges::adaptor_t::adaptor_t</a></div><div class="ttdeci">constexpr adaptor_t(F f)</div><div class="ttdef"><b>Definition</b> <a href="#l00036">transaction_range.hpp:36</a></div></div>
 <div class="ttc" id="aclassdepicture__menu_1_1ranges_1_1adaptor__t_html_aa828a2373c64c42f034443238e880640"><div class="ttname"><a href="classdepicture__menu_1_1ranges_1_1adaptor__t.html#aa828a2373c64c42f034443238e880640">depicture_menu::ranges::adaptor_t::f</a></div><div class="ttdeci">F f</div><div class="ttdef"><b>Definition</b> <a href="#l00033">transaction_range.hpp:33</a></div></div>
 <div class="ttc" id="aclassdepicture__menu_1_1ranges_1_1closure__t_html"><div class="ttname"><a href="classdepicture__menu_1_1ranges_1_1closure__t.html">depicture_menu::ranges::closure_t</a></div><div class="ttdef"><b>Definition</b> <a href="#l00015">transaction_range.hpp:16</a></div></div>
 <div class="ttc" id="aclassdepicture__menu_1_1ranges_1_1closure__t_html_a04ac867763a19e52ec7d07ebd7bb7996"><div class="ttname"><a href="classdepicture__menu_1_1ranges_1_1closure__t.html#a04ac867763a19e52ec7d07ebd7bb7996">depicture_menu::ranges::closure_t::closure_t</a></div><div class="ttdeci">constexpr closure_t(F f)</div><div class="ttdef"><b>Definition</b> <a href="#l00020">transaction_range.hpp:20</a></div></div>
 <div class="ttc" id="aclassdepicture__menu_1_1ranges_1_1closure__t_html_a7ce18e229e2a3e7c76df85c3b133a10d"><div class="ttname"><a href="classdepicture__menu_1_1ranges_1_1closure__t.html#a7ce18e229e2a3e7c76df85c3b133a10d">depicture_menu::ranges::closure_t::f</a></div><div class="ttdeci">F f</div><div class="ttdef"><b>Definition</b> <a href="#l00017">transaction_range.hpp:17</a></div></div>
-<div class="ttc" id="aclassdepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views_1_1typed__read__impl_html"><div class="ttname"><a href="classdepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views_1_1typed__read__impl.html">depicture_menu::repositories::ranges::views::detail_views::typed_read_impl</a></div><div class="ttdef"><b>Definition</b> <a href="#l00154">transaction_range.hpp:155</a></div></div>
-<div class="ttc" id="aclassdepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views_1_1typed__read__impl_html_a531cb8ef5b6686a54686836207cd471c"><div class="ttname"><a href="classdepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views_1_1typed__read__impl.html#a531cb8ef5b6686a54686836207cd471c">depicture_menu::repositories::ranges::views::detail_views::typed_read_impl::typed_read_impl</a></div><div class="ttdeci">constexpr typed_read_impl()</div><div class="ttdef"><b>Definition</b> <a href="#l00158">transaction_range.hpp:158</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views_1_1typed__read__impl_html"><div class="ttname"><a href="classdepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views_1_1typed__read__impl.html">depicture_menu::repositories::ranges::views::detail_views::typed_read_impl</a></div><div class="ttdef"><b>Definition</b> <a href="#l00155">transaction_range.hpp:156</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views_1_1typed__read__impl_html_a531cb8ef5b6686a54686836207cd471c"><div class="ttname"><a href="classdepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views_1_1typed__read__impl.html#a531cb8ef5b6686a54686836207cd471c">depicture_menu::repositories::ranges::views::detail_views::typed_read_impl::typed_read_impl</a></div><div class="ttdeci">constexpr typed_read_impl()</div><div class="ttdef"><b>Definition</b> <a href="#l00159">transaction_range.hpp:159</a></div></div>
 <div class="ttc" id="aconceptdepicture__menu_1_1domain_1_1models_1_1concepts_1_1identifiable__value_html"><div class="ttname"><a href="conceptdepicture__menu_1_1domain_1_1models_1_1concepts_1_1identifiable__value.html">depicture_menu::domain::models::concepts::identifiable_value</a></div><div class="ttdef"><b>Definition</b> <a href="model__base__concepts_8hpp_source.html#l00048">model_base_concepts.hpp:48</a></div></div>
 <div class="ttc" id="aipc__queue_8hpp_html_ac2161f7e2bb82a9905ca2a830b6c242fa76ea0bebb3c22822b4f0dd9c9fd021c5"><div class="ttname"><a href="ipc__queue_8hpp.html#ac2161f7e2bb82a9905ca2a830b6c242fa76ea0bebb3c22822b4f0dd9c9fd021c5">ipc_constract::create</a></div><div class="ttdeci">@ create</div><div class="ttdef"><b>Definition</b> <a href="ipc__queue_8hpp_source.html#l00009">ipc_queue.hpp:9</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1domain_html"><div class="ttname"><a href="namespacedepicture__menu_1_1domain.html">depicture_menu::domain</a></div><div class="ttdef"><b>Definition</b> <a href="colors_8hpp_source.html#l00006">colors.hpp:7</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1ranges_html"><div class="ttname"><a href="namespacedepicture__menu_1_1ranges.html">depicture_menu::ranges</a></div><div class="ttdef"><b>Definition</b> <a href="#l00012">transaction_range.hpp:13</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views_html"><div class="ttname"><a href="namespacedepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views.html">depicture_menu::repositories::ranges::views::detail_views</a></div><div class="ttdef"><b>Definition</b> <a href="#l00109">transaction_range.hpp:110</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1repositories_1_1ranges_1_1views_html"><div class="ttname"><a href="namespacedepicture__menu_1_1repositories_1_1ranges_1_1views.html">depicture_menu::repositories::ranges::views</a></div><div class="ttdef"><b>Definition</b> <a href="#l00106">transaction_range.hpp:107</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1repositories_1_1ranges_1_1views_html_a2470c016b6fbdd210f652f2de0cb7e37"><div class="ttname"><a href="namespacedepicture__menu_1_1repositories_1_1ranges_1_1views.html#a2470c016b6fbdd210f652f2de0cb7e37">depicture_menu::repositories::ranges::views::extract_value</a></div><div class="ttdeci">constexpr ::depicture_menu::ranges::closure_t extract_value</div><div class="ttdef"><b>Definition</b> <a href="#l00219">transaction_range.hpp:219</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1repositories_1_1ranges_1_1views_html_ab241293c3d6aa5cf82e1641dd3747bda"><div class="ttname"><a href="namespacedepicture__menu_1_1repositories_1_1ranges_1_1views.html#ab241293c3d6aa5cf82e1641dd3747bda">depicture_menu::repositories::ranges::views::read</a></div><div class="ttdeci">constexpr ::depicture_menu::ranges::adaptor_t read</div><div class="ttdef"><b>Definition</b> <a href="#l00183">transaction_range.hpp:185</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views_html"><div class="ttname"><a href="namespacedepicture__menu_1_1repositories_1_1ranges_1_1views_1_1detail__views.html">depicture_menu::repositories::ranges::views::detail_views</a></div><div class="ttdef"><b>Definition</b> <a href="#l00110">transaction_range.hpp:111</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1repositories_1_1ranges_1_1views_html"><div class="ttname"><a href="namespacedepicture__menu_1_1repositories_1_1ranges_1_1views.html">depicture_menu::repositories::ranges::views</a></div><div class="ttdef"><b>Definition</b> <a href="#l00107">transaction_range.hpp:108</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1repositories_1_1ranges_1_1views_html_a2470c016b6fbdd210f652f2de0cb7e37"><div class="ttname"><a href="namespacedepicture__menu_1_1repositories_1_1ranges_1_1views.html#a2470c016b6fbdd210f652f2de0cb7e37">depicture_menu::repositories::ranges::views::extract_value</a></div><div class="ttdeci">constexpr ::depicture_menu::ranges::closure_t extract_value</div><div class="ttdef"><b>Definition</b> <a href="#l00220">transaction_range.hpp:220</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1repositories_1_1ranges_1_1views_html_ab241293c3d6aa5cf82e1641dd3747bda"><div class="ttname"><a href="namespacedepicture__menu_1_1repositories_1_1ranges_1_1views.html#ab241293c3d6aa5cf82e1641dd3747bda">depicture_menu::repositories::ranges::views::read</a></div><div class="ttdeci">constexpr ::depicture_menu::ranges::adaptor_t read</div><div class="ttdef"><b>Definition</b> <a href="#l00185">transaction_range.hpp:187</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1repositories_1_1ranges_html"><div class="ttname"><a href="namespacedepicture__menu_1_1repositories_1_1ranges.html">depicture_menu::repositories::ranges</a></div><div class="ttdef"><b>Definition</b> <a href="#l00057">transaction_range.hpp:58</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1repositories_1_1ranges_html_a5543ded06cfa493b9b2d855fbeff7271"><div class="ttname"><a href="namespacedepicture__menu_1_1repositories_1_1ranges.html#a5543ded06cfa493b9b2d855fbeff7271">depicture_menu::repositories::ranges::read_view_result_t</a></div><div class="ttdeci">std::expected&lt; T, error_value&lt; typename T::id_t &gt; &gt; read_view_result_t</div><div class="ttdef"><b>Definition</b> <a href="#l00080">transaction_range.hpp:80</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1repositories_1_1ranges_html_a68269d877d10ac21c172a927faf4462f"><div class="ttname"><a href="namespacedepicture__menu_1_1repositories_1_1ranges.html#a68269d877d10ac21c172a927faf4462f">depicture_menu::repositories::ranges::update_view_result_t</a></div><div class="ttdeci">std::expected&lt; typename T::id_t, error_value&lt; T &gt; &gt; update_view_result_t</div><div class="ttdef"><b>Definition</b> <a href="#l00087">transaction_range.hpp:87</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1repositories_1_1ranges_html_afa957e031672d246b19e714d4b38aead"><div class="ttname"><a href="namespacedepicture__menu_1_1repositories_1_1ranges.html#afa957e031672d246b19e714d4b38aead">depicture_menu::repositories::ranges::remove_view_result_t</a></div><div class="ttdeci">std::expected&lt; typename T::id_t, error_value&lt; typename T::id_t &gt; &gt; remove_view_result_t</div><div class="ttdef"><b>Definition</b> <a href="#l00091">transaction_range.hpp:91</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1repositories_1_1ranges_html_afae10464fc1c8b5231c2935836a33121"><div class="ttname"><a href="namespacedepicture__menu_1_1repositories_1_1ranges.html#afae10464fc1c8b5231c2935836a33121">depicture_menu::repositories::ranges::create_view_result_t</a></div><div class="ttdeci">std::expected&lt; typename T::id_t, error_value&lt; T &gt; &gt; create_view_result_t</div><div class="ttdef"><b>Definition</b> <a href="#l00083">transaction_range.hpp:83</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1repositories_1_1views_html"><div class="ttname"><a href="namespacedepicture__menu_1_1repositories_1_1views.html">depicture_menu::repositories::views</a></div><div class="ttdef"><b>Definition</b> <a href="#l00232">transaction_range.hpp:233</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1repositories_1_1ranges_html_a68269d877d10ac21c172a927faf4462f"><div class="ttname"><a href="namespacedepicture__menu_1_1repositories_1_1ranges.html#a68269d877d10ac21c172a927faf4462f">depicture_menu::repositories::ranges::update_view_result_t</a></div><div class="ttdeci">std::expected&lt; typename T::id_t, error_value&lt; T &gt; &gt; update_view_result_t</div><div class="ttdef"><b>Definition</b> <a href="#l00088">transaction_range.hpp:88</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1repositories_1_1ranges_html_ae013bf205f8b5b00a2d452d6cb2b187b"><div class="ttname"><a href="namespacedepicture__menu_1_1repositories_1_1ranges.html#ae013bf205f8b5b00a2d452d6cb2b187b">depicture_menu::repositories::ranges::read_view_result_t</a></div><div class="ttdeci">std::expected&lt; T, error_value&lt; typename T::id_t &gt; &gt; read_view_result_t</div><div class="ttdef"><b>Definition</b> <a href="#l00080">transaction_range.hpp:80</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1repositories_1_1ranges_html_afa957e031672d246b19e714d4b38aead"><div class="ttname"><a href="namespacedepicture__menu_1_1repositories_1_1ranges.html#afa957e031672d246b19e714d4b38aead">depicture_menu::repositories::ranges::remove_view_result_t</a></div><div class="ttdeci">std::expected&lt; typename T::id_t, error_value&lt; typename T::id_t &gt; &gt; remove_view_result_t</div><div class="ttdef"><b>Definition</b> <a href="#l00092">transaction_range.hpp:92</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1repositories_1_1ranges_html_afae10464fc1c8b5231c2935836a33121"><div class="ttname"><a href="namespacedepicture__menu_1_1repositories_1_1ranges.html#afae10464fc1c8b5231c2935836a33121">depicture_menu::repositories::ranges::create_view_result_t</a></div><div class="ttdeci">std::expected&lt; typename T::id_t, error_value&lt; T &gt; &gt; create_view_result_t</div><div class="ttdef"><b>Definition</b> <a href="#l00084">transaction_range.hpp:84</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1repositories_1_1views_html"><div class="ttname"><a href="namespacedepicture__menu_1_1repositories_1_1views.html">depicture_menu::repositories::views</a></div><div class="ttdef"><b>Definition</b> <a href="#l00233">transaction_range.hpp:234</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1repositories_html"><div class="ttname"><a href="namespacedepicture__menu_1_1repositories.html">depicture_menu::repositories</a></div><div class="ttdef"><b>Definition</b> <a href="diff__snapshots__repository_8hpp_source.html#l00008">diff_snapshots_repository.hpp:9</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1repositories_html_ae8ed8998598da29303648e2e363aa034"><div class="ttname"><a href="namespacedepicture__menu_1_1repositories.html#ae8ed8998598da29303648e2e363aa034">depicture_menu::repositories::get</a></div><div class="ttdeci">locked_repository&lt; T &gt; &amp; get(transaction&lt; Ts... &gt; &amp;t)</div><div class="ttdef"><b>Definition</b> <a href="get_8hpp_source.html#l00015">get.hpp:15</a></div></div>
 <div class="ttc" id="astructdepicture__menu_1_1repositories_1_1ranges_1_1error__value_html"><div class="ttname"><a href="structdepicture__menu_1_1repositories_1_1ranges_1_1error__value.html">depicture_menu::repositories::ranges::error_value</a></div><div class="ttdef"><b>Definition</b> <a href="#l00069">transaction_range.hpp:70</a></div></div>
 <div class="ttc" id="astructdepicture__menu_1_1repositories_1_1ranges_1_1error__value_html_a8a6230aafe5adba83985d5a03063b26f"><div class="ttname"><a href="structdepicture__menu_1_1repositories_1_1ranges_1_1error__value.html#a8a6230aafe5adba83985d5a03063b26f">depicture_menu::repositories::ranges::error_value::value</a></div><div class="ttdeci">T value</div><div class="ttdef"><b>Definition</b> <a href="#l00071">transaction_range.hpp:71</a></div></div>
 <div class="ttc" id="astructdepicture__menu_1_1repositories_1_1transaction__ref_html"><div class="ttname"><a href="structdepicture__menu_1_1repositories_1_1transaction__ref.html">depicture_menu::repositories::transaction_ref</a></div><div class="ttdef"><b>Definition</b> <a href="transaction__ref_8hpp_source.html#l00014">transaction_ref.hpp:15</a></div></div>
-<div class="ttc" id="astructdepicture__menu_1_1repositories_1_1transaction_html"><div class="ttname"><a href="structdepicture__menu_1_1repositories_1_1transaction.html">depicture_menu::repositories::transaction</a></div><div class="ttdef"><b>Definition</b> <a href="transaction_2transaction_8hpp_source.html#l00131">transaction.hpp:132</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1repositories_1_1transaction_html"><div class="ttname"><a href="structdepicture__menu_1_1repositories_1_1transaction.html">depicture_menu::repositories::transaction</a></div><div class="ttdef"><b>Definition</b> <a href="transaction_2transaction_8hpp_source.html#l00135">transaction.hpp:136</a></div></div>
 <div class="ttc" id="atransaction__ref_8hpp_html"><div class="ttname"><a href="transaction__ref_8hpp.html">transaction_ref.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

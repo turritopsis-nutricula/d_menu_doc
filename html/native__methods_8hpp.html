@@ -126,32 +126,34 @@ native_methods.hpp の依存先関係図:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">    [DllImport(                                                                \</div>
-<div class="line">      BOOST_PP_STRINGIZE(<a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a228103742d654f3370530428ca0c7ff3">CS_DLL_NAME</a>()),                                       \</div>
-<div class="line">                         EntryPoint = BOOST_PP_STRINGIZE( <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a891ebdd26667b456b28ec23e3b198f59">CS_INSTANCE_LOAD_FUNC_NAME</a>( CLASS_ ) ),                \</div>
-<div class="line">                           CharSet  = CharSet.Unicode )] <span class="keyword">static</span> <span class="keyword">extern</span> IntPtr   \</div>
-<div class="line">        CS_INSTANCE_LOAD_FUNC_NAME( CLASS_ )( );                               \</div>
-<div class="line">    [DllImport(                                                                \</div>
-<div class="line">      BOOST_PP_STRINGIZE(<a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a228103742d654f3370530428ca0c7ff3">CS_DLL_NAME</a>()),                                       \</div>
-<div class="line">                         EntryPoint = BOOST_PP_STRINGIZE( <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a9235d9b7679275bb15d8a603a3dcdd8d">CS_VTBL_LOAD_FUNC_NAME</a>( CLASS_ ) ),                    \</div>
-<div class="line">                           CharSet  = CharSet.Unicode )] <span class="keyword">static</span> <span class="keyword">extern</span> IntPtr   \</div>
-<div class="line">           CS_VTBL_LOAD_FUNC_NAME( CLASS_ )( IntPtr[] v, <span class="keywordtype">int</span> <a class="code hl_struct" href="structc.html">c</a> );              \</div>
-<div class="line">    IntPtr <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a923446da243c70caef68d52085a4b976">CS_INSTANCE_VALUE_NAME</a>( );                                          \</div>
-<div class="line">public                                                                         \</div>
-<div class="line">    IntPtr UnmanagedInstance                                                   \</div>
-<div class="line">    {                                                                          \</div>
-<div class="line">        get                                                                    \</div>
-<div class="line">        {                                                                      \</div>
-<div class="line">            <span class="keywordflow">return</span> <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a923446da243c70caef68d52085a4b976">CS_INSTANCE_VALUE_NAME</a>( );                                  \</div>
-<div class="line">        }                                                                      \</div>
-<div class="line">    }                                                                          \</div>
+<b>値:</b><div class="fragment"><div class="line">    [DllImport(                                                            \</div>
+<div class="line">        BOOST_PP_STRINGIZE(<a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a228103742d654f3370530428ca0c7ff3">CS_DLL_NAME</a>()),                                 \</div>
+<div class="line">                           EntryPoint = BOOST_PP_STRINGIZE( <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a891ebdd26667b456b28ec23e3b198f59">CS_INSTANCE_LOAD_FUNC_NAME</a>( CLASS_ ) ),        \</div>
+<div class="line">                               CharSet =                                   \</div>
+<div class="line">                                   CharSet.Unicode )] <span class="keyword">static</span> <span class="keyword">extern</span> IntPtr \</div>
+<div class="line">            CS_INSTANCE_LOAD_FUNC_NAME( CLASS_ )( );                       \</div>
+<div class="line">    [DllImport(                                                            \</div>
+<div class="line">        BOOST_PP_STRINGIZE(<a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a228103742d654f3370530428ca0c7ff3">CS_DLL_NAME</a>()),                                 \</div>
+<div class="line">                           EntryPoint = BOOST_PP_STRINGIZE( <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a9235d9b7679275bb15d8a603a3dcdd8d">CS_VTBL_LOAD_FUNC_NAME</a>( CLASS_ ) ),            \</div>
+<div class="line">                               CharSet =                                   \</div>
+<div class="line">                                   CharSet.Unicode )] <span class="keyword">static</span> <span class="keyword">extern</span> IntPtr \</div>
+<div class="line">            CS_VTBL_LOAD_FUNC_NAME( CLASS_ )( IntPtr[] v, <span class="keywordtype">int</span> <a class="code hl_struct" href="structc.html">c</a> );         \</div>
+<div class="line">    IntPtr  <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a923446da243c70caef68d52085a4b976">CS_INSTANCE_VALUE_NAME</a>( );                                     \</div>
+<div class="line">public                                                                     \</div>
+<div class="line">    IntPtr UnmanagedInstance                                               \</div>
+<div class="line">    {                                                                      \</div>
+<div class="line">        get                                                                \</div>
+<div class="line">        {                                                                  \</div>
+<div class="line">            <span class="keywordflow">return</span> <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a923446da243c70caef68d52085a4b976">CS_INSTANCE_VALUE_NAME</a>( );                              \</div>
+<div class="line">        }                                                                  \</div>
+<div class="line">    }                                                                      \</div>
 <div class="line">    IntPtr[] <a class="code hl_define" href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a1296a103006f7c7414fcf23a8c5ccf15">CS_VTBL_VALUE_NAME</a>( );</div>
 <div class="ttc" id="acs__binding_2macro_2detail_2csharp_2config_8hpp_html_a1296a103006f7c7414fcf23a8c5ccf15"><div class="ttname"><a href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a1296a103006f7c7414fcf23a8c5ccf15">CS_VTBL_VALUE_NAME</a></div><div class="ttdeci">#define CS_VTBL_VALUE_NAME()</div><div class="ttdef"><b>Definition</b> <a href="cs__binding_2macro_2detail_2csharp_2config_8hpp_source.html#l00048">config.hpp:48</a></div></div>
 <div class="ttc" id="acs__binding_2macro_2detail_2csharp_2config_8hpp_html_a228103742d654f3370530428ca0c7ff3"><div class="ttname"><a href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a228103742d654f3370530428ca0c7ff3">CS_DLL_NAME</a></div><div class="ttdeci">#define CS_DLL_NAME()</div><div class="ttdef"><b>Definition</b> <a href="cs__binding_2macro_2detail_2csharp_2config_8hpp_source.html#l00040">config.hpp:40</a></div></div>
 <div class="ttc" id="acs__binding_2macro_2detail_2csharp_2config_8hpp_html_a891ebdd26667b456b28ec23e3b198f59"><div class="ttname"><a href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a891ebdd26667b456b28ec23e3b198f59">CS_INSTANCE_LOAD_FUNC_NAME</a></div><div class="ttdeci">#define CS_INSTANCE_LOAD_FUNC_NAME(CLASS_)</div><div class="ttdef"><b>Definition</b> <a href="cs__binding_2macro_2detail_2csharp_2config_8hpp_source.html#l00042">config.hpp:42</a></div></div>
 <div class="ttc" id="acs__binding_2macro_2detail_2csharp_2config_8hpp_html_a923446da243c70caef68d52085a4b976"><div class="ttname"><a href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a923446da243c70caef68d52085a4b976">CS_INSTANCE_VALUE_NAME</a></div><div class="ttdeci">#define CS_INSTANCE_VALUE_NAME()</div><div class="ttdef"><b>Definition</b> <a href="cs__binding_2macro_2detail_2csharp_2config_8hpp_source.html#l00047">config.hpp:47</a></div></div>
 <div class="ttc" id="acs__binding_2macro_2detail_2csharp_2config_8hpp_html_a9235d9b7679275bb15d8a603a3dcdd8d"><div class="ttname"><a href="cs__binding_2macro_2detail_2csharp_2config_8hpp.html#a9235d9b7679275bb15d8a603a3dcdd8d">CS_VTBL_LOAD_FUNC_NAME</a></div><div class="ttdeci">#define CS_VTBL_LOAD_FUNC_NAME(CLASS_)</div><div class="ttdef"><b>Definition</b> <a href="cs__binding_2macro_2detail_2csharp_2config_8hpp_source.html#l00045">config.hpp:45</a></div></div>
-<div class="ttc" id="astructc_html"><div class="ttname"><a href="structc.html">c</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00145">TestReflection.cpp:146</a></div></div>
+<div class="ttc" id="astructc_html"><div class="ttname"><a href="structc.html">c</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00147">TestReflection.cpp:148</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="native__methods_8hpp_source.html">native_methods.hpp</a> の <a class="el" href="native__methods_8hpp_source.html#l00006">6</a> 行目に定義があります。</p>
 

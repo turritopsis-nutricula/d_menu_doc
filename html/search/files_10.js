@@ -18,9 +18,10 @@ var searchData=
   ['show_5fmenu_5fview_2ehpp_15',['show_menu_view.hpp',['../show__menu__view_8hpp.html',1,'']]],
   ['singleton_2ecpp_16',['singleton.cpp',['../singleton_8cpp.html',1,'']]],
   ['singleton_2ehpp_17',['singleton.hpp',['../singleton_8hpp.html',1,'']]],
-  ['str_5fconv_2ecpp_18',['str_conv.cpp',['../str__conv_8cpp.html',1,'']]],
-  ['str_5fconv_2ehpp_19',['str_conv.hpp',['../str__conv_8hpp.html',1,'']]],
-  ['struct_5fproperty_2ehpp_20',['struct_property.hpp',['../struct__property_8hpp.html',1,'']]],
-  ['sync_5franges_2ehpp_21',['sync_ranges.hpp',['../sync__ranges_8hpp.html',1,'']]],
-  ['system_5fwindows_5finput_2edef_22',['system_windows_input.def',['../system__windows__input_8def.html',1,'']]]
+  ['stacked_5fviews_5fpresenter_2ehpp_18',['stacked_views_presenter.hpp',['../stacked__views__presenter_8hpp.html',1,'']]],
+  ['str_5fconv_2ecpp_19',['str_conv.cpp',['../str__conv_8cpp.html',1,'']]],
+  ['str_5fconv_2ehpp_20',['str_conv.hpp',['../str__conv_8hpp.html',1,'']]],
+  ['struct_5fproperty_2ehpp_21',['struct_property.hpp',['../struct__property_8hpp.html',1,'']]],
+  ['sync_5franges_2ehpp_22',['sync_ranges.hpp',['../sync__ranges_8hpp.html',1,'']]],
+  ['system_5fwindows_5finput_2edef_23',['system_windows_input.def',['../system__windows__input_8def.html',1,'']]]
 ];

@@ -1,13 +1,18 @@
 var namespacedepicture__menu_1_1usecase =
 [
     [ "backup", "namespacedepicture__menu_1_1usecase_1_1backup.html", "namespacedepicture__menu_1_1usecase_1_1backup" ],
-    [ "concepts", "namespacedepicture__menu_1_1usecase_1_1concepts.html", "namespacedepicture__menu_1_1usecase_1_1concepts" ],
     [ "detail_usecase_add_menu_item", "namespacedepicture__menu_1_1usecase_1_1detail__usecase__add__menu__item.html", [
-      [ "add_menu_item_impl", "namespacedepicture__menu_1_1usecase_1_1detail__usecase__add__menu__item.html#a4049aaad32930fb264efe4e9f05fdb6d", null ]
+      [ "add_menu_item_impl", "namespacedepicture__menu_1_1usecase_1_1detail__usecase__add__menu__item.html#abb4279cb535fad5303d38566ee10504e", null ]
     ] ],
-    [ "detail_usecase_add_new_menu", "namespacedepicture__menu_1_1usecase_1_1detail__usecase__add__new__menu.html", "namespacedepicture__menu_1_1usecase_1_1detail__usecase__add__new__menu" ],
-    [ "detail_usecase_change", "namespacedepicture__menu_1_1usecase_1_1detail__usecase__change.html", "namespacedepicture__menu_1_1usecase_1_1detail__usecase__change" ],
+    [ "concepts", "namespacedepicture__menu_1_1usecase_1_1concepts.html", "namespacedepicture__menu_1_1usecase_1_1concepts" ],
+    [ "detail_usecase_add_new_menu", "namespacedepicture__menu_1_1usecase_1_1detail__usecase__add__new__menu.html", [
+      [ "add_new_menu", "namespacedepicture__menu_1_1usecase_1_1detail__usecase__add__new__menu.html#a870ac982c36ac1281de02a2b57791a54", null ]
+    ] ],
+    [ "detail_usecase_change", "namespacedepicture__menu_1_1usecase_1_1detail__usecase__change.html", [
+      [ "do_basic_action_config_change", "namespacedepicture__menu_1_1usecase_1_1detail__usecase__change.html#a0e4b172a15c14d4a44936240750f40fa", null ]
+    ] ],
     [ "detail_usecase_change_common_command", "namespacedepicture__menu_1_1usecase_1_1detail__usecase__change__common__command.html", [
+      [ "do_change_common_command", "namespacedepicture__menu_1_1usecase_1_1detail__usecase__change__common__command.html#a943bc0aa2289b826dee34e104cfeee3e", null ],
       [ "do_change_common_command", "namespacedepicture__menu_1_1usecase_1_1detail__usecase__change__common__command.html#a6d70f2af0a0fcfc0be6439756fa3cf9a", null ]
     ] ],
     [ "detail_usecase_change_menu_item", "namespacedepicture__menu_1_1usecase_1_1detail__usecase__change__menu__item.html", [
@@ -21,6 +26,7 @@ var namespacedepicture__menu_1_1usecase =
     [ "detail_usecase_invoke_action", "namespacedepicture__menu_1_1usecase_1_1detail__usecase__invoke__action.html", "namespacedepicture__menu_1_1usecase_1_1detail__usecase__invoke__action" ],
     [ "menu_view", "namespacedepicture__menu_1_1usecase_1_1menu__view.html", "namespacedepicture__menu_1_1usecase_1_1menu__view" ],
     [ "detail_usecase", "namespacedepicture__menu_1_1usecase_1_1detail__usecase.html", [
+      [ "do_show_menu", "namespacedepicture__menu_1_1usecase_1_1detail__usecase.html#a9820c50bfcd072e7ea64e14cc94ad567", null ],
       [ "show_default_menu_view_impl", "namespacedepicture__menu_1_1usecase_1_1detail__usecase.html#aced30424642ebcbb4c6add0520ef5a87", null ],
       [ "show_menu_view_by_trigger_impl", "namespacedepicture__menu_1_1usecase_1_1detail__usecase.html#a7b737605653c8cbbeb6f4a6bf95f01a7", null ],
       [ "show_menu_view_impl", "namespacedepicture__menu_1_1usecase_1_1detail__usecase.html#a30a805872d1e1babe72014851ae4468f", null ]
@@ -49,7 +55,6 @@ var namespacedepicture__menu_1_1usecase =
     [ "show_config_view", "classdepicture__menu_1_1usecase_1_1show__config__view.html", "classdepicture__menu_1_1usecase_1_1show__config__view" ],
     [ "menu_item_sync", "structdepicture__menu_1_1usecase_1_1menu__item__sync.html", "structdepicture__menu_1_1usecase_1_1menu__item__sync" ],
     [ "change_menu_config", "classdepicture__menu_1_1usecase_1_1change__menu__config.html", "classdepicture__menu_1_1usecase_1_1change__menu__config" ],
-    [ "change_trigger_config_", "classdepicture__menu_1_1usecase_1_1change__trigger__config__.html", "classdepicture__menu_1_1usecase_1_1change__trigger__config__" ],
     [ "change_trigger_config", "classdepicture__menu_1_1usecase_1_1change__trigger__config.html", "classdepicture__menu_1_1usecase_1_1change__trigger__config" ],
     [ "deploy_default_setting", "classdepicture__menu_1_1usecase_1_1deploy__default__setting.html", "classdepicture__menu_1_1usecase_1_1deploy__default__setting" ],
     [ "invoke_action", "structdepicture__menu_1_1usecase_1_1invoke__action.html", "structdepicture__menu_1_1usecase_1_1invoke__action" ],
@@ -69,7 +74,6 @@ var namespacedepicture__menu_1_1usecase =
       [ "commands", "namespacedepicture__menu_1_1usecase.html#ae89331f849c718b78833373f887fe801a5f6bc08c46cee6f21bfcdd08aff6e8aa", null ],
       [ "trigger", "namespacedepicture__menu_1_1usecase.html#ae89331f849c718b78833373f887fe801ac7d08e09a44d2b453e7eeecebf0a8daf", null ]
     ] ],
-    [ "do_change_menu_config_impl", "namespacedepicture__menu_1_1usecase.html#ad1756cbfc162285ee309da7c317256a4", null ],
     [ "make_query", "namespacedepicture__menu_1_1usecase.html#a1d29228ff820750a84c715f937456ce2", null ],
     [ "query_base", "namespacedepicture__menu_1_1usecase.html#a8a0ee5a4568b7f15cce851164aca15b3", null ],
     [ "query_base", "namespacedepicture__menu_1_1usecase.html#aae342d3065a0f78e8c6b515c7da77006", null ],

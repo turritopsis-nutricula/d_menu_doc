@@ -97,16 +97,17 @@ $(function(){initNavTree('conceptdepicture__menu_1_1domain_1_1commands_1_1concep
 <p><code>#include &lt;<a class="el" href="parameter_8hpp_source.html">parameter.hpp</a>&gt;</code></p>
 <h2 id="header-conceptdef" class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
-<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptdepicture__menu_1_1domain_1_1commands_1_1concepts_1_1parameter__range.html">parameter_range</a> =</div>
-<div class="line">  <span class="keyword">requires</span>( T t ) {</div>
-<div class="line">      <span class="keyword">requires</span> std::ranges::range&lt; T &gt;;</div>
-<div class="line">      <span class="keyword">requires</span> std::</div>
-<div class="line">        constructible_from&lt; parameter, std::ranges::range_value_t&lt; T &gt; &gt;;</div>
-<div class="line">  }</div>
-<div class="ttc" id="aconceptdepicture__menu_1_1domain_1_1commands_1_1concepts_1_1parameter__range_html"><div class="ttname"><a href="conceptdepicture__menu_1_1domain_1_1commands_1_1concepts_1_1parameter__range.html">depicture_menu::domain::commands::concepts::parameter_range</a></div><div class="ttdef"><b>Definition</b> <a href="parameter_8hpp_source.html#l00583">parameter.hpp:583</a></div></div>
+<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptdepicture__menu_1_1domain_1_1commands_1_1concepts_1_1parameter__range.html">parameter_range</a> = <span class="keyword">requires</span>( T t ) {</div>
+<div class="line">                                  <span class="keyword">requires</span> std::ranges::range&lt; T &gt;;</div>
+<div class="line">                                  <span class="keyword">requires</span> std::constructible_from&lt;</div>
+<div class="line">                                      <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1commands.html#a05a6d2cc89765973bb17067d7b18157f">parameter</a>,</div>
+<div class="line">                                      std::ranges::range_value_t&lt; T &gt; &gt;;</div>
+<div class="line">                              }</div>
+<div class="ttc" id="aconceptdepicture__menu_1_1domain_1_1commands_1_1concepts_1_1parameter__range_html"><div class="ttname"><a href="conceptdepicture__menu_1_1domain_1_1commands_1_1concepts_1_1parameter__range.html">depicture_menu::domain::commands::concepts::parameter_range</a></div><div class="ttdef"><b>Definition</b> <a href="parameter_8hpp_source.html#l00590">parameter.hpp:590</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1commands_html_a05a6d2cc89765973bb17067d7b18157f"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1commands.html#a05a6d2cc89765973bb17067d7b18157f">depicture_menu::domain::commands::parameter</a></div><div class="ttdeci">detail_commands::vari_t parameter</div><div class="ttdef"><b>Definition</b> <a href="parameter_8hpp_source.html#l00117">parameter.hpp:117</a></div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
 <div class="textblock">
-<p class="definition"> <a class="el" href="parameter_8hpp_source.html">parameter.hpp</a> の <a class="el" href="parameter_8hpp_source.html#l00583">583</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="parameter_8hpp_source.html">parameter.hpp</a> の <a class="el" href="parameter_8hpp_source.html#l00590">590</a> 行目に定義があります。</p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

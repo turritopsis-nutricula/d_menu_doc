@@ -18,6 +18,6 @@ var namespacedepicture__menu_1_1cs__binding_1_1detail__vtbl__table =
     [ "proxy_function_type", "structdepicture__menu_1_1cs__binding_1_1detail__vtbl__table_1_1proxy__function__type.html", null ],
     [ "proxy_function_type&lt; Vtbl, I &gt;", "structdepicture__menu_1_1cs__binding_1_1detail__vtbl__table_1_1proxy__function__type_3_01_vtbl_00_01_i_01_4.html", "structdepicture__menu_1_1cs__binding_1_1detail__vtbl__table_1_1proxy__function__type_3_01_vtbl_00_01_i_01_4" ],
     [ "proxy_function_type&lt; T, I &gt;", "structdepicture__menu_1_1cs__binding_1_1detail__vtbl__table_1_1proxy__function__type_3_01_t_00_01_i_01_4.html", "structdepicture__menu_1_1cs__binding_1_1detail__vtbl__table_1_1proxy__function__type_3_01_t_00_01_i_01_4" ],
-    [ "public_functions", "namespacedepicture__menu_1_1cs__binding_1_1detail__vtbl__table.html#a849979c0c90045630a7e8241c93bbe41", null ],
+    [ "public_functions", "namespacedepicture__menu_1_1cs__binding_1_1detail__vtbl__table.html#aa43254d6b880bb031da5e383817ede71", null ],
     [ "non_type_menber_pointer", "namespacedepicture__menu_1_1cs__binding_1_1detail__vtbl__table.html#a389016d2d6bc4e435e1490b99ad17f5c", null ]
 ];

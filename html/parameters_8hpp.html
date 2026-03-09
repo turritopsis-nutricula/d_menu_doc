@@ -135,14 +135,14 @@ parameters.hpp の依存先関係図:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">BOOST_PP_LIST_TRANSFORM(                                                   \</div>
-<div class="line">  <a class="code hl_define" href="#a2b8febec29a7ec3ded9c1a2ba17ec0bf">DPM_PARAMES_ERASE_ATTR_OP</a>,                                               \</div>
-<div class="line">  _,                                                                       \</div>
-<div class="line">  BOOST_PP_TUPLE_TO_LIST( <a class="code hl_define" href="#ac54c72134cdedce4c4663a92c3a1c79e">DPM_PARAMS_COUNT</a>( ARGS ), ARGS ) )</div>
-<div class="ttc" id="aparameters_8hpp_html_a2b8febec29a7ec3ded9c1a2ba17ec0bf"><div class="ttname"><a href="#a2b8febec29a7ec3ded9c1a2ba17ec0bf">DPM_PARAMES_ERASE_ATTR_OP</a></div><div class="ttdeci">#define DPM_PARAMES_ERASE_ATTR_OP(_, D, ELEM)</div><div class="ttdef"><b>Definition</b> <a href="parameters_8hpp_source.html#l00017">parameters.hpp:17</a></div></div>
+<b>値:</b><div class="fragment"><div class="line">BOOST_PP_LIST_TRANSFORM(                                       \</div>
+<div class="line">    <a class="code hl_define" href="#a2b8febec29a7ec3ded9c1a2ba17ec0bf">DPM_PARAMES_ERASE_ATTR_OP</a>,                                 \</div>
+<div class="line">    _,                                                         \</div>
+<div class="line">    BOOST_PP_TUPLE_TO_LIST( <a class="code hl_define" href="#ac54c72134cdedce4c4663a92c3a1c79e">DPM_PARAMS_COUNT</a>( ARGS ), ARGS ) )</div>
+<div class="ttc" id="aparameters_8hpp_html_a2b8febec29a7ec3ded9c1a2ba17ec0bf"><div class="ttname"><a href="#a2b8febec29a7ec3ded9c1a2ba17ec0bf">DPM_PARAMES_ERASE_ATTR_OP</a></div><div class="ttdeci">#define DPM_PARAMES_ERASE_ATTR_OP(_, D, ELEM)</div><div class="ttdef"><b>Definition</b> <a href="parameters_8hpp_source.html#l00019">parameters.hpp:19</a></div></div>
 <div class="ttc" id="aparameters_8hpp_html_ac54c72134cdedce4c4663a92c3a1c79e"><div class="ttname"><a href="#ac54c72134cdedce4c4663a92c3a1c79e">DPM_PARAMS_COUNT</a></div><div class="ttdeci">#define DPM_PARAMS_COUNT(ARGS)</div><div class="ttdef"><b>Definition</b> <a href="parameters_8hpp_source.html#l00011">parameters.hpp:11</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="parameters_8hpp_source.html">parameters.hpp</a> の <a class="el" href="parameters_8hpp_source.html#l00018">18</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="parameters_8hpp_source.html">parameters.hpp</a> の <a class="el" href="parameters_8hpp_source.html#l00020">20</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -192,7 +192,7 @@ parameters.hpp の依存先関係図:</div>
 <b>値:</b><div class="fragment"><div class="line"><a class="code hl_define" href="attr_8hpp.html#a0ce209e129c1ce87957905b7930dbd8f">DPM_ATTR_ERASE_ATTR</a>( ELEM )</div>
 <div class="ttc" id="aattr_8hpp_html_a0ce209e129c1ce87957905b7930dbd8f"><div class="ttname"><a href="attr_8hpp.html#a0ce209e129c1ce87957905b7930dbd8f">DPM_ATTR_ERASE_ATTR</a></div><div class="ttdeci">#define DPM_ATTR_ERASE_ATTR(ARG_)</div><div class="ttdef"><b>Definition</b> <a href="attr_8hpp_source.html#l00038">attr.hpp:38</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="parameters_8hpp_source.html">parameters.hpp</a> の <a class="el" href="parameters_8hpp_source.html#l00017">17</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="parameters_8hpp_source.html">parameters.hpp</a> の <a class="el" href="parameters_8hpp_source.html#l00019">19</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -214,18 +214,18 @@ parameters.hpp の依存先関係図:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">BOOST_PP_IF(                                                               \</div>
-<div class="line">  <a class="code hl_define" href="#ac54c72134cdedce4c4663a92c3a1c79e">DPM_PARAMS_COUNT</a>( ARGS ),                                                \</div>
-<div class="line">  BOOST_PP_LPAREN( ) BOOST_PP_SEQ_ENUM( BOOST_PP_SEQ_FOR_EACH_I(           \</div>
-<div class="line">    <a class="code hl_define" href="#a41c4ec73b002360a3cc686a972467f12">DPM_PARAMS_ARGUMENTS_OP</a>,                                               \</div>
-<div class="line">    PREFIX,                                                                \</div>
-<div class="line">    BOOST_PP_LIST_TO_SEQ( <a class="code hl_define" href="#ad33e43e33a7b70db1666c4cd21d351a5">DPM_PARAMES_DETAIL_ERASE_ATTR_TO_LIST</a>(           \</div>
-<div class="line">      ARGS ) ) ) ) BOOST_PP_RPAREN( ),                                     \</div>
-<div class="line">  ( ) )</div>
-<div class="ttc" id="aparameters_8hpp_html_a41c4ec73b002360a3cc686a972467f12"><div class="ttname"><a href="#a41c4ec73b002360a3cc686a972467f12">DPM_PARAMS_ARGUMENTS_OP</a></div><div class="ttdeci">#define DPM_PARAMS_ARGUMENTS_OP(R, D, I, ELEM)</div><div class="ttdef"><b>Definition</b> <a href="parameters_8hpp_source.html#l00036">parameters.hpp:36</a></div></div>
-<div class="ttc" id="aparameters_8hpp_html_ad33e43e33a7b70db1666c4cd21d351a5"><div class="ttname"><a href="#ad33e43e33a7b70db1666c4cd21d351a5">DPM_PARAMES_DETAIL_ERASE_ATTR_TO_LIST</a></div><div class="ttdeci">#define DPM_PARAMES_DETAIL_ERASE_ATTR_TO_LIST(ARGS)</div><div class="ttdef"><b>Definition</b> <a href="parameters_8hpp_source.html#l00018">parameters.hpp:18</a></div></div>
+<b>値:</b><div class="fragment"><div class="line">BOOST_PP_IF(                                                         \</div>
+<div class="line">    <a class="code hl_define" href="#ac54c72134cdedce4c4663a92c3a1c79e">DPM_PARAMS_COUNT</a>( ARGS ),                                        \</div>
+<div class="line">    BOOST_PP_LPAREN( ) BOOST_PP_SEQ_ENUM( BOOST_PP_SEQ_FOR_EACH_I(   \</div>
+<div class="line">        <a class="code hl_define" href="#a41c4ec73b002360a3cc686a972467f12">DPM_PARAMS_ARGUMENTS_OP</a>,                                     \</div>
+<div class="line">        PREFIX,                                                      \</div>
+<div class="line">        BOOST_PP_LIST_TO_SEQ( <a class="code hl_define" href="#ad33e43e33a7b70db1666c4cd21d351a5">DPM_PARAMES_DETAIL_ERASE_ATTR_TO_LIST</a>( \</div>
+<div class="line">            ARGS ) ) ) ) BOOST_PP_RPAREN( ),                         \</div>
+<div class="line">    ( ) )</div>
+<div class="ttc" id="aparameters_8hpp_html_a41c4ec73b002360a3cc686a972467f12"><div class="ttname"><a href="#a41c4ec73b002360a3cc686a972467f12">DPM_PARAMS_ARGUMENTS_OP</a></div><div class="ttdeci">#define DPM_PARAMS_ARGUMENTS_OP(R, D, I, ELEM)</div><div class="ttdef"><b>Definition</b> <a href="parameters_8hpp_source.html#l00038">parameters.hpp:38</a></div></div>
+<div class="ttc" id="aparameters_8hpp_html_ad33e43e33a7b70db1666c4cd21d351a5"><div class="ttname"><a href="#ad33e43e33a7b70db1666c4cd21d351a5">DPM_PARAMES_DETAIL_ERASE_ATTR_TO_LIST</a></div><div class="ttdeci">#define DPM_PARAMES_DETAIL_ERASE_ATTR_TO_LIST(ARGS)</div><div class="ttdef"><b>Definition</b> <a href="parameters_8hpp_source.html#l00020">parameters.hpp:20</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="parameters_8hpp_source.html">parameters.hpp</a> の <a class="el" href="parameters_8hpp_source.html#l00038">38</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="parameters_8hpp_source.html">parameters.hpp</a> の <a class="el" href="parameters_8hpp_source.html#l00040">40</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -259,7 +259,7 @@ parameters.hpp の依存先関係図:</div>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">( ELEM BOOST_PP_CAT( D, I ) )</div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="parameters_8hpp_source.html">parameters.hpp</a> の <a class="el" href="parameters_8hpp_source.html#l00036">36</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="parameters_8hpp_source.html">parameters.hpp</a> の <a class="el" href="parameters_8hpp_source.html#l00038">38</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -277,8 +277,10 @@ parameters.hpp の依存先関係図:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">BOOST_PP_IIF(                                                              \</div>
-<div class="line">  <a class="code hl_define" href="#a064a115fdd5878fca8b11ddbf4b862fb">DPM_PARAMES_DETAIL_IS_ZERO</a>( ARGS ), 0, BOOST_PP_TUPLE_SIZE( ARGS ) )</div>
+<b>値:</b><div class="fragment"><div class="line">BOOST_PP_IIF(                           \</div>
+<div class="line">    <a class="code hl_define" href="#a064a115fdd5878fca8b11ddbf4b862fb">DPM_PARAMES_DETAIL_IS_ZERO</a>( ARGS ), \</div>
+<div class="line">    0,                                  \</div>
+<div class="line">    BOOST_PP_TUPLE_SIZE( ARGS ) )</div>
 <div class="ttc" id="aparameters_8hpp_html_a064a115fdd5878fca8b11ddbf4b862fb"><div class="ttname"><a href="#a064a115fdd5878fca8b11ddbf4b862fb">DPM_PARAMES_DETAIL_IS_ZERO</a></div><div class="ttdeci">#define DPM_PARAMES_DETAIL_IS_ZERO(ARGS)</div><div class="ttdef"><b>Definition</b> <a href="parameters_8hpp_source.html#l00008">parameters.hpp:8</a></div></div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="parameters_8hpp_source.html">parameters.hpp</a> の <a class="el" href="parameters_8hpp_source.html#l00011">11</a> 行目に定義があります。</p>
@@ -299,14 +301,14 @@ parameters.hpp の依存先関係図:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">BOOST_PP_IF(                                                               \</div>
-<div class="line">  <a class="code hl_define" href="#ac54c72134cdedce4c4663a92c3a1c79e">DPM_PARAMS_COUNT</a>( ARGS ),                                                \</div>
-<div class="line">  BOOST_PP_LPAREN( )                                                       \</div>
-<div class="line">    BOOST_PP_LIST_ENUM( <a class="code hl_define" href="#ad33e43e33a7b70db1666c4cd21d351a5">DPM_PARAMES_DETAIL_ERASE_ATTR_TO_LIST</a>( ARGS ) )    \</div>
-<div class="line">      BOOST_PP_RPAREN( ),                                                  \</div>
-<div class="line">  BOOST_PP_LPAREN( ) BOOST_PP_RPAREN( ) )</div>
+<b>値:</b><div class="fragment"><div class="line">BOOST_PP_IF(                                            \</div>
+<div class="line">    <a class="code hl_define" href="#ac54c72134cdedce4c4663a92c3a1c79e">DPM_PARAMS_COUNT</a>( ARGS ),                           \</div>
+<div class="line">    BOOST_PP_LPAREN( ) BOOST_PP_LIST_ENUM(              \</div>
+<div class="line">        <a class="code hl_define" href="#ad33e43e33a7b70db1666c4cd21d351a5">DPM_PARAMES_DETAIL_ERASE_ATTR_TO_LIST</a>( ARGS ) ) \</div>
+<div class="line">        BOOST_PP_RPAREN( ),                             \</div>
+<div class="line">    BOOST_PP_LPAREN( ) BOOST_PP_RPAREN( ) )</div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="parameters_8hpp_source.html">parameters.hpp</a> の <a class="el" href="parameters_8hpp_source.html#l00024">24</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="parameters_8hpp_source.html">parameters.hpp</a> の <a class="el" href="parameters_8hpp_source.html#l00026">26</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -322,7 +324,7 @@ parameters.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="parameters_8hpp_source.html">parameters.hpp</a> の <a class="el" href="parameters_8hpp_source.html#l00055">55</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="parameters_8hpp_source.html">parameters.hpp</a> の <a class="el" href="parameters_8hpp_source.html#l00057">57</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -344,12 +346,12 @@ parameters.hpp の依存先関係図:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">BOOST_PP_EXPR_IF(                                                          \</div>
-<div class="line">  BOOST_PP_NOT( BOOST_PP_IS_EMPTY(                                         \</div>
-<div class="line">    BOOST_PP_CAT( DPM_PARAMS_FLAG_, <a class="code hl_define" href="attr_8hpp.html#a0ce209e129c1ce87957905b7930dbd8f">DPM_ATTR_ERASE_ATTR</a>( T ) ) ) ),        \</div>
-<div class="line">  W )</div>
+<b>値:</b><div class="fragment"><div class="line">BOOST_PP_EXPR_IF(                                                       \</div>
+<div class="line">    BOOST_PP_NOT( BOOST_PP_IS_EMPTY(                                    \</div>
+<div class="line">        BOOST_PP_CAT( DPM_PARAMS_FLAG_, <a class="code hl_define" href="attr_8hpp.html#a0ce209e129c1ce87957905b7930dbd8f">DPM_ATTR_ERASE_ATTR</a>( T ) ) ) ), \</div>
+<div class="line">    W )</div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="parameters_8hpp_source.html">parameters.hpp</a> の <a class="el" href="parameters_8hpp_source.html#l00057">57</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="parameters_8hpp_source.html">parameters.hpp</a> の <a class="el" href="parameters_8hpp_source.html#l00059">59</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -373,7 +375,7 @@ parameters.hpp の依存先関係図:</div>
 </div><div class="memdoc">
 <b>値:</b><div class="fragment"><div class="line">( BOOST_PP_ENUM_PARAMS( <a class="code hl_define" href="#ac54c72134cdedce4c4663a92c3a1c79e">DPM_PARAMS_COUNT</a>( ARGS ), PREFIX ) )</div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="parameters_8hpp_source.html">parameters.hpp</a> の <a class="el" href="parameters_8hpp_source.html#l00050">50</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="parameters_8hpp_source.html">parameters.hpp</a> の <a class="el" href="parameters_8hpp_source.html#l00052">52</a> 行目に定義があります。</p>
 
 </div>
 </div>

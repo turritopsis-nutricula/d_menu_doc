@@ -22,6 +22,5 @@ var namespacedepicture__menu_1_1domain =
     [ "operator<<", "namespacedepicture__menu_1_1domain.html#afa7637275d2253158e6a65619aeb9854", null ],
     [ "operator==", "namespacedepicture__menu_1_1domain.html#a9e5c84d63c3eb7c62a75b8207df3c85a", null ],
     [ "read_or_create", "namespacedepicture__menu_1_1domain.html#a8d3af72c4adc66e4a83b5f791e0e31d4", null ],
-    [ "show_view", "namespacedepicture__menu_1_1domain.html#a1f80bb52231be50a32dbb84c61837db0", null ],
     [ "show_view_", "namespacedepicture__menu_1_1domain.html#a5023336ba87d37789cdf3c55a9293c26", null ]
 ];

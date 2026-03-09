@@ -115,7 +115,7 @@ $(function(){initNavTree('_test_conv_mapping_8cpp_source.html','',''); });
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">// test_conv_mapping : TestSuite</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">//</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><a class="code hl_function" href="menu__change__operation_8cpp.html#ae692b9f25c84027b486e3f198b05369c">BOOST_AUTO_TEST_SUITE</a>( test_conv_mapping )</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>BOOST_AUTO_TEST_SUITE( test_conv_mapping )</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="_test_conv_mapping_8cpp.html#a3aea6eab1720900f9290668379eb1955">   26</a></span><a class="code hl_function" href="_test_conv_mapping_8cpp.html#a3aea6eab1720900f9290668379eb1955">BOOST_DEFINE_ENUM</a>( e_num, one, two, three );</div>
@@ -205,19 +205,19 @@ $(function(){initNavTree('_test_conv_mapping_8cpp_source.html','',''); });
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keyword">using </span>dc::field_mapping;</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keyword">using </span>to_string_t =</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>      <span class="keyword">decltype</span>( []( <span class="keywordtype">double</span> n ) { <span class="keywordflow">return</span> std::to_string( n ); } );</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="keyword">decltype</span>( []( <span class="keywordtype">double</span> n ) { <span class="keywordflow">return</span> std::to_string( n ); } );</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keyword">using </span>c_t = dc::converter&lt;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>      <a class="code hl_struct" href="structa__struct.html">a_struct</a>,</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>      <a class="code hl_struct" href="structb__struct.html">b_struct</a>,</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>      field_mapping&lt; <span class="stringliteral">&quot;int_value&quot;</span>, <span class="stringliteral">&quot;i_value&quot;</span> &gt;,</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>      field_mapping&lt; <span class="stringliteral">&quot;float_value&quot;</span>, <span class="stringliteral">&quot;str_value&quot;</span>, to_string_t &gt; &gt;;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <a class="code hl_struct" href="structa__struct.html">a_struct</a>,</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <a class="code hl_struct" href="structb__struct.html">b_struct</a>,</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        field_mapping&lt; <span class="stringliteral">&quot;int_value&quot;</span>, <span class="stringliteral">&quot;i_value&quot;</span> &gt;,</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        field_mapping&lt; <span class="stringliteral">&quot;float_value&quot;</span>, <span class="stringliteral">&quot;str_value&quot;</span>, to_string_t &gt; &gt;;</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <a class="code hl_struct" href="structa__struct.html">a_struct</a> <a class="code hl_struct" href="structa.html">a</a> { .int_value = 42, .float_value = 1.f };</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <a class="code hl_struct" href="structa__struct.html">a_struct</a> <a class="code hl_struct" href="structa.html">a</a>{ .int_value = 42, .float_value = 1.f };</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <a class="code hl_struct" href="structb__struct.html">b_struct</a> <a class="code hl_struct" href="structb.html">b</a>;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    c_t { }.convert( <a class="code hl_struct" href="structa.html">a</a>, <a class="code hl_struct" href="structb.html">b</a> );</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    c_t{ }.convert( <a class="code hl_struct" href="structa.html">a</a>, <a class="code hl_struct" href="structb.html">b</a> );</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( <a class="code hl_struct" href="structb.html">b</a>.i_value == 42 );</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( <a class="code hl_struct" href="structb.html">b</a>.str_value == <span class="stringliteral">&quot;1.000000&quot;</span> );</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    BOOST_TEST( <a class="code hl_struct" href="structb.html">b</a>.i_value == 42 );</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    BOOST_TEST( <a class="code hl_struct" href="structb.html">b</a>.str_value == <span class="stringliteral">&quot;1.000000&quot;</span> );</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>}</div>
 </div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
@@ -230,26 +230,26 @@ $(function(){initNavTree('_test_conv_mapping_8cpp_source.html','',''); });
 <div class="foldopen" id="foldopen00117" data-start="{" data-end="}">
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="_test_conv_mapping_8cpp.html#a36ddbd1b96f41b6917a18f08afe6b782">  117</a></span><a class="code hl_function" href="_test_conv_mapping_8cpp.html#a449d1a41e4d843509eab1bba20179439">BOOST_AUTO_TEST_CASE</a>( test_read_method_mapping )</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>{</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespacedepicture__menu_1_1conv__mapping.html#ab0d679a9a26962daadb3dfdd660b1c1c">d_menu::conv_mapping::read_method_mapping</a>;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespacedepicture__menu_1_1conv__mapping.html#aeb630d6bb9c2dabfd90831a166e37f4e">d_menu::conv_mapping::read_method_mapping</a>;</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keyword">using </span>dc::converter;</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keyword">using </span>to_string_t =</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>      <span class="keyword">decltype</span>( []( <span class="keywordtype">double</span> n ) { <span class="keywordflow">return</span> std::to_string( n ); } );</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <span class="keyword">decltype</span>( []( <span class="keywordtype">double</span> n ) { <span class="keywordflow">return</span> std::to_string( n ); } );</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keyword">using </span>c_t = converter&lt;</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>      <a class="code hl_class" href="classentity.html">entity</a>,</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>      <a class="code hl_struct" href="structb__struct.html">b_struct</a>,</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <a class="code hl_class" href="classentity.html">entity</a>,</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <a class="code hl_struct" href="structb__struct.html">b_struct</a>,</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>      read_method_mapping&lt;</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <span class="keyword">static_cast&lt;</span> <span class="keywordtype">int</span> ( <a class="code hl_class" href="classentity.html">entity</a>::* )( ) <span class="keyword">const </span><span class="keyword">&gt;</span>( &amp;<a class="code hl_function" href="classentity.html#a5c859a910814a565cc084327b68f8e2a">entity::value</a> ),</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        <span class="stringliteral">&quot;i_value&quot;</span> &gt;,</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>      read_method_mapping&lt; &amp;<a class="code hl_function" href="classentity.html#a323d2afa970acd575b14654c272ec1d2">entity::get_value</a>, <span class="stringliteral">&quot;str_value&quot;</span>, to_string_t &gt; &gt;;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        read_method_mapping&lt;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            <span class="keyword">static_cast&lt;</span> <span class="keywordtype">int</span> ( <a class="code hl_class" href="classentity.html">entity</a>::* )( ) <span class="keyword">const </span><span class="keyword">&gt;</span>( &amp;<a class="code hl_function" href="classentity.html#a5c859a910814a565cc084327b68f8e2a">entity::value</a> ),</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            <span class="stringliteral">&quot;i_value&quot;</span> &gt;,</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        read_method_mapping&lt; &amp;<a class="code hl_function" href="classentity.html#a323d2afa970acd575b14654c272ec1d2">entity::get_value</a>, <span class="stringliteral">&quot;str_value&quot;</span>, to_string_t &gt; &gt;;</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <a class="code hl_class" href="classentity.html">entity</a>   e( 42 );</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <a class="code hl_struct" href="structb__struct.html">b_struct</a> <a class="code hl_struct" href="structb.html">b</a>;</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    c_t { }.convert( e, <a class="code hl_struct" href="structb.html">b</a> );</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    c_t{ }.convert( e, <a class="code hl_struct" href="structb.html">b</a> );</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( <a class="code hl_struct" href="structb.html">b</a>.i_value == 42 );</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( <a class="code hl_struct" href="structb.html">b</a>.str_value == <span class="stringliteral">&quot;42.000000&quot;</span> );</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    BOOST_TEST( <a class="code hl_struct" href="structb.html">b</a>.i_value == 42 );</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    BOOST_TEST( <a class="code hl_struct" href="structb.html">b</a>.str_value == <span class="stringliteral">&quot;42.000000&quot;</span> );</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>}</div>
 </div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
@@ -263,16 +263,16 @@ $(function(){initNavTree('_test_conv_mapping_8cpp_source.html','',''); });
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>{</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="keyword">using </span>dc::write_method_mapping;</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keyword">using </span>c_t = dc::converter&lt;</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>      <a class="code hl_struct" href="structa__struct.html">a_struct</a>,</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>      <a class="code hl_class" href="classentity.html">entity</a>,</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>      write_method_mapping&lt; <span class="stringliteral">&quot;int_value&quot;</span>, &amp;<a class="code hl_function" href="classentity.html#a6c3fc0b7cec384423fa189be2f485dfb">entity::set_value</a> &gt; &gt;;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        <a class="code hl_struct" href="structa__struct.html">a_struct</a>,</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        <a class="code hl_class" href="classentity.html">entity</a>,</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        write_method_mapping&lt; <span class="stringliteral">&quot;int_value&quot;</span>, &amp;<a class="code hl_function" href="classentity.html#a6c3fc0b7cec384423fa189be2f485dfb">entity::set_value</a> &gt; &gt;;</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <a class="code hl_struct" href="structa__struct.html">a_struct</a> <a class="code hl_struct" href="structa.html">a</a> { .int_value = 42 };</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <a class="code hl_struct" href="structa__struct.html">a_struct</a> <a class="code hl_struct" href="structa.html">a</a>{ .int_value = 42 };</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    <a class="code hl_class" href="classentity.html">entity</a>   e( 7 );</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    c_t { }.convert( <a class="code hl_struct" href="structa.html">a</a>, e );</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    c_t{ }.convert( <a class="code hl_struct" href="structa.html">a</a>, e );</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( e.<a class="code hl_function" href="classentity.html#a323d2afa970acd575b14654c272ec1d2">get_value</a>( ) == 42 );</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    BOOST_TEST( e.<a class="code hl_function" href="classentity.html#a323d2afa970acd575b14654c272ec1d2">get_value</a>( ) == 42 );</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>}</div>
 </div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
@@ -291,7 +291,7 @@ $(function(){initNavTree('_test_conv_mapping_8cpp_source.html','',''); });
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    <span class="keyword">using </span>c_t = dc::converter&lt;</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        <a class="code hl_struct" href="structa__struct.html">a_struct</a>,</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        <a class="code hl_class" href="classentity.html">entity</a>,</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1conv__mapping.html#addf76b91abe5ad29fee026a658ab4649">write_method_mapping</a>&lt;</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1conv__mapping.html#a1bcd7a78cddb12f1a05c27b1f86d8912">write_method_mapping</a>&lt;</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>            <span class="stringliteral">&quot;int_value&quot;</span>,</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>            &amp;<a class="code hl_function" href="classentity.html#a5809a49f939b8bd2801908c1094b8483">entity::overwrite_value</a>,</div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>            <span class="keyword">decltype</span>( []( <span class="keyword">auto</span> i )</div>
@@ -302,7 +302,7 @@ $(function(){initNavTree('_test_conv_mapping_8cpp_source.html','',''); });
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    <a class="code hl_class" href="classentity.html">entity</a>   e( 7 );</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    c_t{ }.convert( <a class="code hl_struct" href="structa.html">a</a>, e );</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( e.get_value( ) == 42 );</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    BOOST_TEST( e.get_value( ) == 42 );</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>}</div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="preprocessor">#endif</span></div>
@@ -316,152 +316,150 @@ $(function(){initNavTree('_test_conv_mapping_8cpp_source.html','',''); });
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno"><a class="line" href="_test_conv_mapping_8cpp.html#a32000ed6a62b27e1025e77b07658b1f3">  198</a></span><a class="code hl_function" href="_test_conv_mapping_8cpp.html#a449d1a41e4d843509eab1bba20179439">BOOST_AUTO_TEST_CASE</a>( test_string_vecotor )</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>{</div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespacedepicture__menu_1_1conv__mapping.html#ab0d679a9a26962daadb3dfdd660b1c1c">d_menu::conv_mapping::read_method_mapping</a>;</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <span class="keyword">using </span><a class="code hl_typedef" href="namespacedepicture__menu_1_1conv__mapping.html#aeb630d6bb9c2dabfd90831a166e37f4e">d_menu::conv_mapping::read_method_mapping</a>;</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <span class="keyword">using </span>dc::converter;</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <span class="keyword">using </span>to_string_t =</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>      <span class="keyword">decltype</span>( []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; n ) -&gt; std::vector&lt; std::string &gt; {</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>          <span class="keywordflow">return</span> n | std::views::transform( []( <span class="keyword">auto</span> i ) {</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>                     <span class="keywordflow">return</span> std::to_string( i );</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>                 } ) |</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>                 std::ranges::to&lt; std::vector&lt; std::string &gt; &gt;( );</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>          <span class="comment">//                return { };</span></div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>      } );</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    <span class="keyword">using </span>c_t = converter&lt;</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>      <a class="code hl_class" href="classentity.html">entity</a>,</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>      <a class="code hl_struct" href="structc__struct.html">c_struct</a>,</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>      read_method_mapping&lt; &amp;<a class="code hl_function" href="classentity.html#ab6a8e277e595f69e750d8f99fdfdf895">entity::get_storage</a>, <span class="stringliteral">&quot;str_vec&quot;</span>, to_string_t &gt; &gt;;</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    <a class="code hl_class" href="classentity.html">entity</a>   e( 42 );</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    <a class="code hl_struct" href="structc__struct.html">c_struct</a> <a class="code hl_struct" href="structc.html">c</a>;</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    c_t { }.convert( e, <a class="code hl_struct" href="structc.html">c</a> );</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>    std::vector expect =</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>      std::views::iota( 0, 42 ) |</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>      std::views::transform( []( <span class="keyword">auto</span> i ) { <span class="keywordflow">return</span> std::to_string( i ); } ) |</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>      std::ranges::to&lt; std::vector&lt; std::string &gt; &gt;( );</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( <a class="code hl_struct" href="structc.html">c</a>.str_vec == expect );</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    <span class="comment">//  BOOST_TEST_MESSAGE( c.str_vec );</span></div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    <span class="comment">//  BOOST_TEST( b.i_value == 42 );</span></div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    <span class="comment">//  BOOST_TEST( b.str_value == &quot;42.000000&quot; );</span></div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>}</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        <span class="keyword">decltype</span>( []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; n ) -&gt; std::vector&lt; std::string &gt; {</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        <span class="keywordflow">return</span> n | std::views::transform( []( <span class="keyword">auto</span> i ) {</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>            <span class="keywordflow">return</span> std::to_string( i );</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        } ) | std::ranges::to&lt; std::vector&lt; std::string &gt; &gt;( );</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        <span class="comment">//              return { };</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    } );</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    <span class="keyword">using </span>c_t = converter&lt;</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        <a class="code hl_class" href="classentity.html">entity</a>,</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        <a class="code hl_struct" href="structc__struct.html">c_struct</a>,</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>        read_method_mapping&lt; &amp;<a class="code hl_function" href="classentity.html#ab6a8e277e595f69e750d8f99fdfdf895">entity::get_storage</a>, <span class="stringliteral">&quot;str_vec&quot;</span>, to_string_t &gt; &gt;;</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    <a class="code hl_class" href="classentity.html">entity</a>   e( 42 );</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    <a class="code hl_struct" href="structc__struct.html">c_struct</a> <a class="code hl_struct" href="structc.html">c</a>;</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    c_t{ }.convert( e, <a class="code hl_struct" href="structc.html">c</a> );</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>    std::vector expect =</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        std::views::iota( 0, 42 ) |</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>        std::views::transform( []( <span class="keyword">auto</span> i ) { <span class="keywordflow">return</span> std::to_string( i ); } ) |</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        std::ranges::to&lt; std::vector&lt; std::string &gt; &gt;( );</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>    BOOST_TEST( <a class="code hl_struct" href="structc.html">c</a>.str_vec == expect );</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    <span class="comment">//  BOOST_TEST_MESSAGE( c.str_vec );</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    <span class="comment">//  BOOST_TEST( b.i_value == 42 );</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>    <span class="comment">//  BOOST_TEST( b.str_value == &quot;42.000000&quot; );</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>}</div>
 </div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="comment">//</span></div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="comment">// tuple_apply_writer</span></div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="comment">//</span></div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="foldopen" id="foldopen00238" data-start="{" data-end="}">
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno"><a class="line" href="_test_conv_mapping_8cpp.html#ab1fe9fd663d4cb8a8ba90da617dd44de">  238</a></span><a class="code hl_function" href="_test_conv_mapping_8cpp.html#a449d1a41e4d843509eab1bba20179439">BOOST_AUTO_TEST_CASE</a>( test_apply_tuple_wirter )</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>{</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1cs__binding.html">dc</a>;</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    <span class="keyword">using </span>c_t = converter&lt;</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>      <a class="code hl_struct" href="structa__struct.html">a_struct</a>,</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>      <a class="code hl_struct" href="structd__struct.html">d_struct</a>,</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>      mapping_base&lt;</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        buildin::field_name_reader&lt; <span class="stringliteral">&quot;int_value&quot;</span> &gt;,</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        buildin::apply_tuple_writer&lt; &amp;d_struct::set_values &gt;,</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        <span class="keyword">decltype</span>( []( <span class="keywordtype">int</span> n ) { <span class="keywordflow">return</span> std::make_tuple( n, n * n ); } ) &gt; &gt;;</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    <a class="code hl_struct" href="structa__struct.html">a_struct</a> <a class="code hl_struct" href="structa.html">a</a> { .int_value = 3 };</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    <a class="code hl_struct" href="structd__struct.html">d_struct</a> <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> { .value0 = 0, .value1 = 0 };</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    c_t { }.convert( <a class="code hl_struct" href="structa.html">a</a>, <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> );</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.value0 == 3 );</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.value1 == 3 * 3 );</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>}</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="comment">//</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="comment">// tuple_apply_writer</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="comment">//</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="foldopen" id="foldopen00237" data-start="{" data-end="}">
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno"><a class="line" href="_test_conv_mapping_8cpp.html#ab1fe9fd663d4cb8a8ba90da617dd44de">  237</a></span><a class="code hl_function" href="_test_conv_mapping_8cpp.html#a449d1a41e4d843509eab1bba20179439">BOOST_AUTO_TEST_CASE</a>( test_apply_tuple_wirter )</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>{</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1cs__binding.html">dc</a>;</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    <span class="keyword">using </span>c_t = converter&lt;</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        <a class="code hl_struct" href="structa__struct.html">a_struct</a>,</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        <a class="code hl_struct" href="structd__struct.html">d_struct</a>,</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        mapping_base&lt;</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>            buildin::field_name_reader&lt; <span class="stringliteral">&quot;int_value&quot;</span> &gt;,</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>            buildin::apply_tuple_writer&lt; &amp;d_struct::set_values &gt;,</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>            <span class="keyword">decltype</span>( []( <span class="keywordtype">int</span> n ) { <span class="keywordflow">return</span> std::make_tuple( n, n * n ); } ) &gt; &gt;;</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    <a class="code hl_struct" href="structa__struct.html">a_struct</a> <a class="code hl_struct" href="structa.html">a</a>{ .int_value = 3 };</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    <a class="code hl_struct" href="structd__struct.html">d_struct</a> <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>{ .value0 = 0, .value1 = 0 };</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    c_t{ }.convert( <a class="code hl_struct" href="structa.html">a</a>, <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> );</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    BOOST_TEST( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.value0 == 3 );</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    BOOST_TEST( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>.value1 == 3 * 3 );</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>}</div>
 </div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span><span class="comment">//</span></div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="comment">// repeat_writer</span></div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="comment">//</span></div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
-<div class="foldopen" id="foldopen00263" data-start="{" data-end="}">
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno"><a class="line" href="_test_conv_mapping_8cpp.html#a899f8114ccceba915b62ca9a539a6885">  263</a></span><a class="code hl_function" href="_test_conv_mapping_8cpp.html#a449d1a41e4d843509eab1bba20179439">BOOST_AUTO_TEST_CASE</a>( test_repeat_writer )</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>{</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1cs__binding.html">dc</a>;</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    <span class="keyword">using </span>c_t = converter&lt;</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>      <a class="code hl_struct" href="structa__struct.html">a_struct</a>,</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>      <a class="code hl_class" href="classentity.html">entity</a>,</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>      mapping_base&lt;</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        buildin::field_name_reader&lt; <span class="stringliteral">&quot;int_value&quot;</span> &gt;,</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        buildin::range_repeater&lt;</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>          buildin::method_pointer_writer&lt; &amp;entity::add_storage &gt; &gt;,</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>        <span class="keyword">decltype</span>( []( <span class="keywordtype">int</span> n ) { <span class="keywordflow">return</span> std::views::iota( 0, n ); } ) &gt; &gt;;</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    <a class="code hl_struct" href="structa__struct.html">a_struct</a> <a class="code hl_struct" href="structa.html">a</a> { .int_value = 3 };</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <a class="code hl_class" href="classentity.html">entity</a>   e( 0 );</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    c_t { }.convert( <a class="code hl_struct" href="structa.html">a</a>, e );</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    std::vector expect = { 0, 1, 2 };</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>(</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>      ( e.<a class="code hl_function" href="classentity.html#ab6a8e277e595f69e750d8f99fdfdf895">get_storage</a>( ) | std::ranges::to&lt; <span class="keyword">decltype</span>( expect ) &gt;( ) ) ==</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>      expect );</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>}</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="comment">//</span></div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span><span class="comment">// repeat_writer</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="comment">//</span></div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
+<div class="foldopen" id="foldopen00262" data-start="{" data-end="}">
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno"><a class="line" href="_test_conv_mapping_8cpp.html#a899f8114ccceba915b62ca9a539a6885">  262</a></span><a class="code hl_function" href="_test_conv_mapping_8cpp.html#a449d1a41e4d843509eab1bba20179439">BOOST_AUTO_TEST_CASE</a>( test_repeat_writer )</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>{</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1cs__binding.html">dc</a>;</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    <span class="keyword">using </span>c_t = converter&lt;</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        <a class="code hl_struct" href="structa__struct.html">a_struct</a>,</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        <a class="code hl_class" href="classentity.html">entity</a>,</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>        mapping_base&lt;</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>            buildin::field_name_reader&lt; <span class="stringliteral">&quot;int_value&quot;</span> &gt;,</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>            buildin::range_repeater&lt;</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>                buildin::method_pointer_writer&lt; &amp;entity::add_storage &gt; &gt;,</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>            <span class="keyword">decltype</span>( []( <span class="keywordtype">int</span> n ) { <span class="keywordflow">return</span> std::views::iota( 0, n ); } ) &gt; &gt;;</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    <a class="code hl_struct" href="structa__struct.html">a_struct</a> <a class="code hl_struct" href="structa.html">a</a>{ .int_value = 3 };</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    <a class="code hl_class" href="classentity.html">entity</a>   e( 0 );</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    c_t{ }.convert( <a class="code hl_struct" href="structa.html">a</a>, e );</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    std::vector expect = { 0, 1, 2 };</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    BOOST_TEST(</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>        ( e.<a class="code hl_function" href="classentity.html#ab6a8e277e595f69e750d8f99fdfdf895">get_storage</a>( ) | std::ranges::to&lt; <span class="keyword">decltype</span>( expect ) &gt;( ) ) ==</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        expect );</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>}</div>
 </div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span><span class="comment">//</span></div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span><span class="comment">// enum_to_string_mapping</span></div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span><span class="comment">//</span></div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="foldopen" id="foldopen00291" data-start="{" data-end="}">
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno"><a class="line" href="_test_conv_mapping_8cpp.html#ab8a26b9f5c36cc9a48baca28cf954429">  291</a></span><a class="code hl_function" href="_test_conv_mapping_8cpp.html#a449d1a41e4d843509eab1bba20179439">BOOST_AUTO_TEST_CASE</a>( test_enum_to_string_mapping )</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>{</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1cs__binding.html">dc</a>;</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span> </div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    <span class="keyword">using </span>c_t = converter&lt;</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>      <a class="code hl_struct" href="structa__struct.html">a_struct</a>,</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>      <a class="code hl_struct" href="structb__struct.html">b_struct</a>,</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>      field_mapping&lt;</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>        <span class="stringliteral">&quot;enum_value&quot;</span>,</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>        <span class="stringliteral">&quot;str_value&quot;</span>,</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>        buildin::enum_to_string_converter &gt; &gt;;</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span> </div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    <a class="code hl_struct" href="structa__struct.html">a_struct</a> <a class="code hl_struct" href="structa.html">a</a> { .enum_value = e_num::two };</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    <a class="code hl_struct" href="structb__struct.html">b_struct</a> <a class="code hl_struct" href="structb.html">b</a>;</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>    c_t { }.convert( <a class="code hl_struct" href="structa.html">a</a>, <a class="code hl_struct" href="structb.html">b</a> );</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span> </div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( <a class="code hl_struct" href="structb.html">b</a>.str_value == <span class="stringliteral">&quot;two&quot;</span> );</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>}</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span> </div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span><span class="comment">//</span></div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span><span class="comment">// enum_to_string_mapping</span></div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span><span class="comment">//</span></div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="foldopen" id="foldopen00290" data-start="{" data-end="}">
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno"><a class="line" href="_test_conv_mapping_8cpp.html#ab8a26b9f5c36cc9a48baca28cf954429">  290</a></span><a class="code hl_function" href="_test_conv_mapping_8cpp.html#a449d1a41e4d843509eab1bba20179439">BOOST_AUTO_TEST_CASE</a>( test_enum_to_string_mapping )</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>{</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1cs__binding.html">dc</a>;</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    <span class="keyword">using </span>c_t = converter&lt;</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>        <a class="code hl_struct" href="structa__struct.html">a_struct</a>,</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>        <a class="code hl_struct" href="structb__struct.html">b_struct</a>,</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>        field_mapping&lt;</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>            <span class="stringliteral">&quot;enum_value&quot;</span>,</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>            <span class="stringliteral">&quot;str_value&quot;</span>,</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>            buildin::enum_to_string_converter &gt; &gt;;</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>    <a class="code hl_struct" href="structa__struct.html">a_struct</a> <a class="code hl_struct" href="structa.html">a</a>{ .enum_value = e_num::two };</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    <a class="code hl_struct" href="structb__struct.html">b_struct</a> <a class="code hl_struct" href="structb.html">b</a>;</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>    c_t{ }.convert( <a class="code hl_struct" href="structa.html">a</a>, <a class="code hl_struct" href="structb.html">b</a> );</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span> </div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    BOOST_TEST( <a class="code hl_struct" href="structb.html">b</a>.str_value == <span class="stringliteral">&quot;two&quot;</span> );</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>}</div>
 </div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span> </div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span><span class="comment">//</span></div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span><span class="comment">// string to enum mapping</span></div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span><span class="comment">//</span></div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span> </div>
-<div class="foldopen" id="foldopen00317" data-start="{" data-end="}">
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno"><a class="line" href="_test_conv_mapping_8cpp.html#ad916be36ec08bda5887cc47086c4b35a">  317</a></span><a class="code hl_function" href="_test_conv_mapping_8cpp.html#a449d1a41e4d843509eab1bba20179439">BOOST_AUTO_TEST_CASE</a>( test_string_to_enum )</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>{</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1cs__binding.html">dc</a>;</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>    <span class="keyword">using </span>c_t = converter&lt;</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>      <a class="code hl_struct" href="structb__struct.html">b_struct</a>,</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>      <a class="code hl_struct" href="structa__struct.html">a_struct</a>,</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>      field_mapping&lt;</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>        <span class="stringliteral">&quot;str_value&quot;</span>,</div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>        <span class="stringliteral">&quot;enum_value&quot;</span>,</div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>        buildin::string_to_enum_converter&lt; e_num &gt; &gt; &gt;;</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    <a class="code hl_struct" href="structb__struct.html">b_struct</a> <a class="code hl_struct" href="structb.html">b</a> { .str_value = <span class="stringliteral">&quot;three&quot;</span> };</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    <a class="code hl_struct" href="structa__struct.html">a_struct</a> <a class="code hl_struct" href="structa.html">a</a>;</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>    c_t { }.convert( <a class="code hl_struct" href="structb.html">b</a>, <a class="code hl_struct" href="structa.html">a</a> );</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( <a class="code hl_struct" href="structa.html">a</a>.enum_value == e_num::three );</div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>}</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span><span class="comment">//</span></div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span><span class="comment">// string to enum mapping</span></div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span><span class="comment">//</span></div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span> </div>
+<div class="foldopen" id="foldopen00316" data-start="{" data-end="}">
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno"><a class="line" href="_test_conv_mapping_8cpp.html#ad916be36ec08bda5887cc47086c4b35a">  316</a></span><a class="code hl_function" href="_test_conv_mapping_8cpp.html#a449d1a41e4d843509eab1bba20179439">BOOST_AUTO_TEST_CASE</a>( test_string_to_enum )</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>{</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span> </div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>    <span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1cs__binding.html">dc</a>;</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span> </div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>    <span class="keyword">using </span>c_t = converter&lt;</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>        <a class="code hl_struct" href="structb__struct.html">b_struct</a>,</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>        <a class="code hl_struct" href="structa__struct.html">a_struct</a>,</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>        field_mapping&lt;</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>            <span class="stringliteral">&quot;str_value&quot;</span>,</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>            <span class="stringliteral">&quot;enum_value&quot;</span>,</div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>            buildin::string_to_enum_converter&lt; e_num &gt; &gt; &gt;;</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span> </div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>    <a class="code hl_struct" href="structb__struct.html">b_struct</a> <a class="code hl_struct" href="structb.html">b</a>{ .str_value = <span class="stringliteral">&quot;three&quot;</span> };</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>    <a class="code hl_struct" href="structa__struct.html">a_struct</a> <a class="code hl_struct" href="structa.html">a</a>;</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>    c_t{ }.convert( <a class="code hl_struct" href="structb.html">b</a>, <a class="code hl_struct" href="structa.html">a</a> );</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>    BOOST_TEST( <a class="code hl_struct" href="structa.html">a</a>.enum_value == e_num::three );</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>}</div>
 </div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>BOOST_AUTO_TEST_SUITE_END( )    <span class="comment">// test_conv_mapping</span></div>
-<div class="ttc" id="a_test_config_view_presenter_8cpp_html_a7845eb0c68b997d6d329618f36f7e794"><div class="ttname"><a href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a></div><div class="ttdeci">BOOST_TEST(get_menu(config_arg, 0u) -&gt;get_MenuId()==m_id)</div></div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>BOOST_AUTO_TEST_SUITE_END( )    <span class="comment">// test_conv_mapping</span></div>
 <div class="ttc" id="a_test_conv_mapping_8cpp_html_a3aea6eab1720900f9290668379eb1955"><div class="ttname"><a href="_test_conv_mapping_8cpp.html#a3aea6eab1720900f9290668379eb1955">BOOST_DEFINE_ENUM</a></div><div class="ttdeci">BOOST_DEFINE_ENUM(e_num, one, two, three)</div></div>
 <div class="ttc" id="a_test_conv_mapping_8cpp_html_a449d1a41e4d843509eab1bba20179439"><div class="ttname"><a href="_test_conv_mapping_8cpp.html#a449d1a41e4d843509eab1bba20179439">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(test_field_mapping)</div><div class="ttdef"><b>Definition</b> <a href="#l00089">TestConvMapping.cpp:89</a></div></div>
 <div class="ttc" id="aclassentity_html"><div class="ttname"><a href="classentity.html">entity</a></div><div class="ttdef"><b>Definition</b> <a href="#l00045">TestConvMapping.cpp:46</a></div></div>
@@ -476,10 +474,9 @@ $(function(){initNavTree('_test_conv_mapping_8cpp_source.html','',''); });
 <div class="ttc" id="aclassentity_html_aec4636b683cdd10afd84634393ae2560"><div class="ttname"><a href="classentity.html#aec4636b683cdd10afd84634393ae2560">entity::value</a></div><div class="ttdeci">void value(int n)</div><div class="ttdef"><b>Definition</b> <a href="#l00067">TestConvMapping.cpp:67</a></div></div>
 <div class="ttc" id="aclassentity_html_aecc53c503b41757b1c1eb62c4df051fe"><div class="ttname"><a href="classentity.html#aecc53c503b41757b1c1eb62c4df051fe">entity::entity</a></div><div class="ttdeci">entity(int i)</div><div class="ttdef"><b>Definition</b> <a href="#l00051">TestConvMapping.cpp:51</a></div></div>
 <div class="ttc" id="aconv__mapping_8hpp_html"><div class="ttname"><a href="conv__mapping_8hpp.html">conv_mapping.hpp</a></div></div>
-<div class="ttc" id="amenu__change__operation_8cpp_html_ae692b9f25c84027b486e3f198b05369c"><div class="ttname"><a href="menu__change__operation_8cpp.html#ae692b9f25c84027b486e3f198b05369c">BOOST_AUTO_TEST_SUITE</a></div><div class="ttdeci">BOOST_AUTO_TEST_SUITE(item_propertes, *bt::depends_on(&quot;test_config_view_presenter/add_menu_item&quot;)) dd</div><div class="ttdef"><b>Definition</b> <a href="menu__change__operation_8cpp_source.html#l00208">menu_change_operation.cpp:208</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1conv__mapping_html"><div class="ttname"><a href="namespacedepicture__menu_1_1conv__mapping.html">depicture_menu::conv_mapping</a></div><div class="ttdef"><b>Definition</b> <a href="conv__mapping_8hpp_source.html#l00014">conv_mapping.hpp:15</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1conv__mapping_html_ab0d679a9a26962daadb3dfdd660b1c1c"><div class="ttname"><a href="namespacedepicture__menu_1_1conv__mapping.html#ab0d679a9a26962daadb3dfdd660b1c1c">depicture_menu::conv_mapping::read_method_mapping</a></div><div class="ttdeci">mapping_base&lt; buildin::method_pointer_reader&lt; read_method_pointer &gt;, buildin::field_name_writer&lt; target_field &gt;, Converter &gt; read_method_mapping</div><div class="ttdef"><b>Definition</b> <a href="conv__mapping_8hpp_source.html#l00326">conv_mapping.hpp:326</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1conv__mapping_html_addf76b91abe5ad29fee026a658ab4649"><div class="ttname"><a href="namespacedepicture__menu_1_1conv__mapping.html#addf76b91abe5ad29fee026a658ab4649">depicture_menu::conv_mapping::write_method_mapping</a></div><div class="ttdeci">mapping_base&lt; buildin::field_name_reader&lt; source_field &gt;, buildin::method_pointer_writer&lt; M &gt;, C &gt; write_method_mapping</div><div class="ttdef"><b>Definition</b> <a href="conv__mapping_8hpp_source.html#l00341">conv_mapping.hpp:341</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1conv__mapping_html_a1bcd7a78cddb12f1a05c27b1f86d8912"><div class="ttname"><a href="namespacedepicture__menu_1_1conv__mapping.html#a1bcd7a78cddb12f1a05c27b1f86d8912">depicture_menu::conv_mapping::write_method_mapping</a></div><div class="ttdeci">mapping_base&lt; buildin::field_name_reader&lt; source_field &gt;, buildin::method_pointer_writer&lt; M &gt;, C &gt; write_method_mapping</div><div class="ttdef"><b>Definition</b> <a href="conv__mapping_8hpp_source.html#l00342">conv_mapping.hpp:342</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1conv__mapping_html_aeb630d6bb9c2dabfd90831a166e37f4e"><div class="ttname"><a href="namespacedepicture__menu_1_1conv__mapping.html#aeb630d6bb9c2dabfd90831a166e37f4e">depicture_menu::conv_mapping::read_method_mapping</a></div><div class="ttdeci">mapping_base&lt; buildin::method_pointer_reader&lt; read_method_pointer &gt;, buildin::field_name_writer&lt; target_field &gt;, Converter &gt; read_method_mapping</div><div class="ttdef"><b>Definition</b> <a href="conv__mapping_8hpp_source.html#l00327">conv_mapping.hpp:327</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1cs__binding_html"><div class="ttname"><a href="namespacedepicture__menu_1_1cs__binding.html">depicture_menu::cs_binding</a></div><div class="ttdef"><b>Definition</b> <a href="core__interface_8hpp_source.html#l00042">core_interface.hpp:43</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1domain_html"><div class="ttname"><a href="namespacedepicture__menu_1_1domain.html">depicture_menu::domain</a></div><div class="ttdef"><b>Definition</b> <a href="colors_8hpp_source.html#l00006">colors.hpp:7</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_html"><div class="ttname"><a href="namespacedepicture__menu.html">depicture_menu</a></div><div class="ttdef"><b>Definition</b> <a href="constexpr__string_8hpp_source.html#l00012">constexpr_string.hpp:13</a></div></div>
@@ -487,14 +484,14 @@ $(function(){initNavTree('_test_conv_mapping_8cpp_source.html','',''); });
 <div class="ttc" id="astructa__struct_html_a623c8cecd1dab4c76b2d95cddb52524d"><div class="ttname"><a href="structa__struct.html#a623c8cecd1dab4c76b2d95cddb52524d">a_struct::float_value</a></div><div class="ttdeci">float float_value</div><div class="ttdef"><b>Definition</b> <a href="#l00031">TestConvMapping.cpp:31</a></div></div>
 <div class="ttc" id="astructa__struct_html_a62c74388fc2931bbc57eee9969898754"><div class="ttname"><a href="structa__struct.html#a62c74388fc2931bbc57eee9969898754">a_struct::int_value</a></div><div class="ttdeci">int int_value</div><div class="ttdef"><b>Definition</b> <a href="#l00030">TestConvMapping.cpp:30</a></div></div>
 <div class="ttc" id="astructa__struct_html_a682f8f4c4a094d4b5cbb8fd34ecd18af"><div class="ttname"><a href="structa__struct.html#a682f8f4c4a094d4b5cbb8fd34ecd18af">a_struct::enum_value</a></div><div class="ttdeci">e_num enum_value</div><div class="ttdef"><b>Definition</b> <a href="#l00032">TestConvMapping.cpp:32</a></div></div>
-<div class="ttc" id="astructa_html"><div class="ttname"><a href="structa.html">a</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00128">TestReflection.cpp:129</a></div></div>
+<div class="ttc" id="astructa_html"><div class="ttname"><a href="structa.html">a</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00130">TestReflection.cpp:131</a></div></div>
 <div class="ttc" id="astructb__struct_html"><div class="ttname"><a href="structb__struct.html">b_struct</a></div><div class="ttdef"><b>Definition</b> <a href="#l00034">TestConvMapping.cpp:35</a></div></div>
 <div class="ttc" id="astructb__struct_html_a22cb2125fa74bb9ec3f8d4801d7e95e9"><div class="ttname"><a href="structb__struct.html#a22cb2125fa74bb9ec3f8d4801d7e95e9">b_struct::i_value</a></div><div class="ttdeci">int i_value</div><div class="ttdef"><b>Definition</b> <a href="#l00036">TestConvMapping.cpp:36</a></div></div>
 <div class="ttc" id="astructb__struct_html_a79f4f964135efc6f53bc13d0172688f5"><div class="ttname"><a href="structb__struct.html#a79f4f964135efc6f53bc13d0172688f5">b_struct::str_value</a></div><div class="ttdeci">std::string str_value</div><div class="ttdef"><b>Definition</b> <a href="#l00037">TestConvMapping.cpp:37</a></div></div>
-<div class="ttc" id="astructb_html"><div class="ttname"><a href="structb.html">b</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00123">TestReflection.cpp:124</a></div></div>
+<div class="ttc" id="astructb_html"><div class="ttname"><a href="structb.html">b</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00125">TestReflection.cpp:126</a></div></div>
 <div class="ttc" id="astructc__struct_html"><div class="ttname"><a href="structc__struct.html">c_struct</a></div><div class="ttdef"><b>Definition</b> <a href="#l00040">TestConvMapping.cpp:41</a></div></div>
 <div class="ttc" id="astructc__struct_html_a48711434cafa5c28a2dddfd8e544da2a"><div class="ttname"><a href="structc__struct.html#a48711434cafa5c28a2dddfd8e544da2a">c_struct::str_vec</a></div><div class="ttdeci">std::vector&lt; std::string &gt; str_vec</div><div class="ttdef"><b>Definition</b> <a href="#l00042">TestConvMapping.cpp:42</a></div></div>
-<div class="ttc" id="astructc_html"><div class="ttname"><a href="structc.html">c</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00145">TestReflection.cpp:146</a></div></div>
+<div class="ttc" id="astructc_html"><div class="ttname"><a href="structc.html">c</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00147">TestReflection.cpp:148</a></div></div>
 <div class="ttc" id="astructd__struct_html"><div class="ttname"><a href="structd__struct.html">d_struct</a></div><div class="ttdef"><b>Definition</b> <a href="#l00074">TestConvMapping.cpp:75</a></div></div>
 <div class="ttc" id="astructd__struct_html_a01a2625406253dbac93b6b9445b3a429"><div class="ttname"><a href="structd__struct.html#a01a2625406253dbac93b6b9445b3a429">d_struct::set_values</a></div><div class="ttdeci">void set_values(int a, int b)</div><div class="ttdef"><b>Definition</b> <a href="#l00077">TestConvMapping.cpp:77</a></div></div>
 <div class="ttc" id="astructd__struct_html_ababbff6cd8f1298582fbd439a935e3c0"><div class="ttname"><a href="structd__struct.html#ababbff6cd8f1298582fbd439a935e3c0">d_struct::value1</a></div><div class="ttdeci">int value1</div><div class="ttdef"><b>Definition</b> <a href="#l00076">TestConvMapping.cpp:76</a></div></div>

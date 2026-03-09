@@ -1,0 +1,5 @@
+var namespacedepicture__menu_1_1applications_1_1config__view__factory =
+[
+    [ "config_view_observer", "classdepicture__menu_1_1applications_1_1config__view__factory_1_1config__view__observer.html", "classdepicture__menu_1_1applications_1_1config__view__factory_1_1config__view__observer" ],
+    [ "changed_value", "structdepicture__menu_1_1applications_1_1config__view__factory_1_1changed__value.html", "structdepicture__menu_1_1applications_1_1config__view__factory_1_1changed__value" ]
+];

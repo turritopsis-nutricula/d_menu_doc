@@ -1,0 +1,673 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu::presentations::stacked_views_presenter クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('classdepicture__menu_1_1presentations_1_1stacked__views__presenter.html','','classdepicture__menu_1_1presentations_1_1stacked__views__presenter-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">depicture_menu::presentations::stacked_views_presenter クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="stacked__views__presenter_8hpp_source.html">stacked_views_presenter.hpp</a>&gt;</code></p>
+<div class="dynheader">
+depicture_menu::presentations::stacked_views_presenter の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1presentations_1_1stacked__views__presenter__inherit__graph.svg" width="100%" height="490"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+depicture_menu::presentations::stacked_views_presenter 連携図</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1presentations_1_1stacked__views__presenter__coll__graph.svg" width="100%" height="490"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:abc01f6761fe672383e119983a75e23a5" id="r_abc01f6761fe672383e119983a75e23a5"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#abc01f6761fe672383e119983a75e23a5">stacked_views_presenter</a> (std::shared_ptr&lt; <a class="el" href="#a122359d583a18ad82f0bfbf9d77a66e4">view_stack_t</a> &gt; s)</td></tr>
+<tr class="memitem:a15ccef553dad95cc1809a08417aa503d" id="r_a15ccef553dad95cc1809a08417aa503d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a15ccef553dad95cc1809a08417aa503d">operator()</a> (<a class="el" href="structdepicture__menu_1_1usecase_1_1dto_1_1trigger__created.html">usecase::dto::trigger_created</a> const &amp;<a class="el" href="structd.html">d</a>) const override</td></tr>
+<tr class="memitem:a2883dfce5a7fffa8e6f1025c1f81a734" id="r_a2883dfce5a7fffa8e6f1025c1f81a734"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2883dfce5a7fffa8e6f1025c1f81a734">operator()</a> (<a class="el" href="structdepicture__menu_1_1usecase_1_1dto_1_1menu__created.html">usecase::dto::menu_created</a> const &amp;<a class="el" href="structd.html">d</a>) const override</td></tr>
+<tr class="memitem:abacec8ca8ffb01f437b9e98bd262176f" id="r_abacec8ca8ffb01f437b9e98bd262176f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abacec8ca8ffb01f437b9e98bd262176f">operator()</a> (<a class="el" href="structdepicture__menu_1_1usecase_1_1dto_1_1menu__item__created.html">usecase::dto::menu_item_created</a> const &amp;<a class="el" href="structd.html">d</a>) const override</td></tr>
+<tr class="memitem:aec268fe521bc37eeaa5ef7de3c547632" id="r_aec268fe521bc37eeaa5ef7de3c547632"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aec268fe521bc37eeaa5ef7de3c547632">operator()</a> (<a class="el" href="structdepicture__menu_1_1usecase_1_1dto_1_1command__created.html">usecase::dto::command_created</a> const &amp;<a class="el" href="structd.html">d</a>) const override</td></tr>
+<tr class="memitem:aca3ac7a86447435758140ed33eaff2a2" id="r_aca3ac7a86447435758140ed33eaff2a2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aca3ac7a86447435758140ed33eaff2a2">operator()</a> (<a class="el" href="structdepicture__menu_1_1usecase_1_1dto_1_1action__created.html">usecase::dto::action_created</a> const &amp;<a class="el" href="structd.html">d</a>) const override</td></tr>
+<tr class="memitem:ad2f3039a478b8eab61a10ccabcbbbedc" id="r_ad2f3039a478b8eab61a10ccabcbbbedc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad2f3039a478b8eab61a10ccabcbbbedc">operator()</a> (<a class="el" href="structdepicture__menu_1_1usecase_1_1dto_1_1menu__updated.html">usecase::dto::menu_updated</a> const &amp;<a class="el" href="structd.html">d</a>) const override</td></tr>
+<tr class="memitem:af78c7791f3d744f23483e72dd67920b6" id="r_af78c7791f3d744f23483e72dd67920b6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af78c7791f3d744f23483e72dd67920b6">operator()</a> (<a class="el" href="structdepicture__menu_1_1usecase_1_1dto_1_1menu__item__updated.html">usecase::dto::menu_item_updated</a> const &amp;<a class="el" href="structd.html">d</a>) const override</td></tr>
+<tr class="memitem:a59e5c64f3a95ad84e47aaa1140fdc1f2" id="r_a59e5c64f3a95ad84e47aaa1140fdc1f2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a59e5c64f3a95ad84e47aaa1140fdc1f2">operator()</a> (<a class="el" href="structdepicture__menu_1_1usecase_1_1dto_1_1menu__item__removed.html">usecase::dto::menu_item_removed</a> const &amp;<a class="el" href="structd.html">d</a>) const override</td></tr>
+<tr class="memitem:a55ec56a7511bb265b3f504c929b99fa7" id="r_a55ec56a7511bb265b3f504c929b99fa7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a55ec56a7511bb265b3f504c929b99fa7">operator()</a> (<a class="el" href="structdepicture__menu_1_1usecase_1_1dto_1_1command__updated.html">usecase::dto::command_updated</a> const &amp;<a class="el" href="structd.html">d</a>) const override</td></tr>
+<tr class="memitem:a9d09086021deb1d64f5dca92b11c567e" id="r_a9d09086021deb1d64f5dca92b11c567e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9d09086021deb1d64f5dca92b11c567e">operator()</a> (<a class="el" href="structdepicture__menu_1_1usecase_1_1dto_1_1common__action__select__changed.html">usecase::dto::common_action_select_changed</a> const &amp;<a class="el" href="structd.html">d</a>) const override</td></tr>
+<tr class="memitem:ab2ecc6732f626144b2d80b68bb80b336" id="r_ab2ecc6732f626144b2d80b68bb80b336"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab2ecc6732f626144b2d80b68bb80b336">reset_view</a> () const override</td></tr>
+<tr class="inherit_header pub_methods_classdepicture__menu_1_1usecase_1_1config__changed__interface"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classdepicture__menu_1_1usecase_1_1config__changed__interface')"><span class="dynarrow"><span class="arrowhead closed"></span></span>基底クラス <a class="el" href="classdepicture__menu_1_1usecase_1_1config__changed__interface.html">depicture_menu::usecase::config_changed_interface</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a0bb2ee47785b748326de08871654cb9e inherit pub_methods_classdepicture__menu_1_1usecase_1_1config__changed__interface" id="r_a0bb2ee47785b748326de08871654cb9e"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="classdepicture__menu_1_1usecase_1_1config__changed__interface.html#a0bb2ee47785b748326de08871654cb9e">~config_changed_interface</a> () noexcept=0</td></tr>
+<tr class="inherit_header pub_methods_classdepicture__menu_1_1usecase_1_1menu__config__interface"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classdepicture__menu_1_1usecase_1_1menu__config__interface')"><span class="dynarrow"><span class="arrowhead closed"></span></span>基底クラス <a class="el" href="classdepicture__menu_1_1usecase_1_1menu__config__interface.html">depicture_menu::usecase::menu_config_interface</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a4e0c2259def18ade55fa4531e91c96be inherit pub_methods_classdepicture__menu_1_1usecase_1_1menu__config__interface" id="r_a4e0c2259def18ade55fa4531e91c96be"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="classdepicture__menu_1_1usecase_1_1menu__config__interface.html#a4e0c2259def18ade55fa4531e91c96be">operator()</a> (dto::menu_created const &amp;) const =0</td></tr>
+<tr class="memitem:a29a207987326001eebbf04f4bdda57f7 inherit pub_methods_classdepicture__menu_1_1usecase_1_1menu__config__interface" id="r_a29a207987326001eebbf04f4bdda57f7"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="classdepicture__menu_1_1usecase_1_1menu__config__interface.html#a29a207987326001eebbf04f4bdda57f7">operator()</a> (dto::menu_updated const &amp;) const =0</td></tr>
+<tr class="memitem:a78e17cbf1298f9aa43bc8fead6b7a38a inherit pub_methods_classdepicture__menu_1_1usecase_1_1menu__config__interface" id="r_a78e17cbf1298f9aa43bc8fead6b7a38a"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="classdepicture__menu_1_1usecase_1_1menu__config__interface.html#a78e17cbf1298f9aa43bc8fead6b7a38a">operator()</a> (dto::menu_item_created const &amp;) const =0</td></tr>
+<tr class="memitem:a0c146c2b43cb1ac3c725001d3fcd53f3 inherit pub_methods_classdepicture__menu_1_1usecase_1_1menu__config__interface" id="r_a0c146c2b43cb1ac3c725001d3fcd53f3"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="classdepicture__menu_1_1usecase_1_1menu__config__interface.html#a0c146c2b43cb1ac3c725001d3fcd53f3">operator()</a> (dto::menu_item_updated const &amp;) const =0</td></tr>
+<tr class="memitem:a5a1daa8ee390dec4ff402b9da81857a4 inherit pub_methods_classdepicture__menu_1_1usecase_1_1menu__config__interface" id="r_a5a1daa8ee390dec4ff402b9da81857a4"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="classdepicture__menu_1_1usecase_1_1menu__config__interface.html#a5a1daa8ee390dec4ff402b9da81857a4">operator()</a> (dto::menu_item_removed const &amp;) const =0</td></tr>
+<tr class="memitem:a685f5ea4a37a249f829c37df9a761d63 inherit pub_methods_classdepicture__menu_1_1usecase_1_1menu__config__interface" id="r_a685f5ea4a37a249f829c37df9a761d63"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="classdepicture__menu_1_1usecase_1_1menu__config__interface.html#a685f5ea4a37a249f829c37df9a761d63">operator()</a> (dto::common_action_select_changed const &amp;) const =0</td></tr>
+<tr class="memitem:a2ea2781dcfda73eddd137f058fe41ecf inherit pub_methods_classdepicture__menu_1_1usecase_1_1menu__config__interface" id="r_a2ea2781dcfda73eddd137f058fe41ecf"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="classdepicture__menu_1_1usecase_1_1menu__config__interface.html#a2ea2781dcfda73eddd137f058fe41ecf">~menu_config_interface</a> () noexcept=0</td></tr>
+<tr class="inherit_header pub_methods_classdepicture__menu_1_1usecase_1_1trigger__config__interface"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classdepicture__menu_1_1usecase_1_1trigger__config__interface')"><span class="dynarrow"><span class="arrowhead closed"></span></span>基底クラス <a class="el" href="classdepicture__menu_1_1usecase_1_1trigger__config__interface.html">depicture_menu::usecase::trigger_config_interface</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a8d694752ce5394817d9f1668805397c1 inherit pub_methods_classdepicture__menu_1_1usecase_1_1trigger__config__interface" id="r_a8d694752ce5394817d9f1668805397c1"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="classdepicture__menu_1_1usecase_1_1trigger__config__interface.html#a8d694752ce5394817d9f1668805397c1">operator()</a> (dto::trigger_created const &amp;<a class="el" href="structd.html">d</a>) const =0</td></tr>
+<tr class="memitem:af68ff59735a22816838bfbbccca0afbd inherit pub_methods_classdepicture__menu_1_1usecase_1_1trigger__config__interface" id="r_af68ff59735a22816838bfbbccca0afbd"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="classdepicture__menu_1_1usecase_1_1trigger__config__interface.html#af68ff59735a22816838bfbbccca0afbd">~trigger_config_interface</a> () noexcept=0</td></tr>
+<tr class="inherit_header pub_methods_classdepicture__menu_1_1usecase_1_1action__config__interface"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classdepicture__menu_1_1usecase_1_1action__config__interface')"><span class="dynarrow"><span class="arrowhead closed"></span></span>基底クラス <a class="el" href="classdepicture__menu_1_1usecase_1_1action__config__interface.html">depicture_menu::usecase::action_config_interface</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a3f5a7e482385167fc209fc9e049de063 inherit pub_methods_classdepicture__menu_1_1usecase_1_1action__config__interface" id="r_a3f5a7e482385167fc209fc9e049de063"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="classdepicture__menu_1_1usecase_1_1action__config__interface.html#a3f5a7e482385167fc209fc9e049de063">operator()</a> (dto::action_created const &amp;) const =0</td></tr>
+<tr class="memitem:a9ec6460b756b4283a3a66debb38f6f7c inherit pub_methods_classdepicture__menu_1_1usecase_1_1action__config__interface" id="r_a9ec6460b756b4283a3a66debb38f6f7c"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="classdepicture__menu_1_1usecase_1_1action__config__interface.html#a9ec6460b756b4283a3a66debb38f6f7c">~action_config_interface</a> () noexcept=0</td></tr>
+<tr class="inherit_header pub_methods_classdepicture__menu_1_1usecase_1_1command__config__interface"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classdepicture__menu_1_1usecase_1_1command__config__interface')"><span class="dynarrow"><span class="arrowhead closed"></span></span>基底クラス <a class="el" href="classdepicture__menu_1_1usecase_1_1command__config__interface.html">depicture_menu::usecase::command_config_interface</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:acdb10cc0ea2d4ac629a78362d02ee1ef inherit pub_methods_classdepicture__menu_1_1usecase_1_1command__config__interface" id="r_acdb10cc0ea2d4ac629a78362d02ee1ef"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="classdepicture__menu_1_1usecase_1_1command__config__interface.html#acdb10cc0ea2d4ac629a78362d02ee1ef">operator()</a> (dto::command_created const &amp;) const =0</td></tr>
+<tr class="memitem:af951b9203bb9eb0bfd1221f184e3ebf0 inherit pub_methods_classdepicture__menu_1_1usecase_1_1command__config__interface" id="r_af951b9203bb9eb0bfd1221f184e3ebf0"><td class="memItemLeft">virtual void&#160;</td><td class="memItemRight"><a class="el" href="classdepicture__menu_1_1usecase_1_1command__config__interface.html#af951b9203bb9eb0bfd1221f184e3ebf0">operator()</a> (dto::command_updated const &amp;) const =0</td></tr>
+<tr class="memitem:a72e795a469266a20d07c2f0cdd44ec4d inherit pub_methods_classdepicture__menu_1_1usecase_1_1command__config__interface" id="r_a72e795a469266a20d07c2f0cdd44ec4d"><td class="memItemLeft">virtual&#160;</td><td class="memItemRight"><a class="el" href="classdepicture__menu_1_1usecase_1_1command__config__interface.html#a72e795a469266a20d07c2f0cdd44ec4d">~command_config_interface</a> () noexcept=0</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-types" class="groupheader"><a id="pri-types" name="pri-types"></a>
+非公開型</h2></td></tr>
+<tr class="memitem:a122359d583a18ad82f0bfbf9d77a66e4" id="r_a122359d583a18ad82f0bfbf9d77a66e4"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a122359d583a18ad82f0bfbf9d77a66e4">view_stack_t</a> = <a class="el" href="classdepicture__menu_1_1applications_1_1usecase__dispatch_1_1view__presenters__stack.html">applications::usecase_dispatch::view_presenters_stack</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a7e4a66c96ae6c4d72175877db09ef460" id="r_a7e4a66c96ae6c4d72175877db09ef460"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:a7e4a66c96ae6c4d72175877db09ef460 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7e4a66c96ae6c4d72175877db09ef460">relay</a> (Args &amp;&amp;... args) const</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a9dbd4ad70066d7bfb32f52a06a97c8be" id="r_a9dbd4ad70066d7bfb32f52a06a97c8be"><td class="memItemLeft">std::shared_ptr&lt; <a class="el" href="#a122359d583a18ad82f0bfbf9d77a66e4">view_stack_t</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a9dbd4ad70066d7bfb32f52a06a97c8be">stack_</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock">
+<p class="definition"> <a class="el" href="stacked__views__presenter_8hpp_source.html">stacked_views_presenter.hpp</a> の <a class="el" href="stacked__views__presenter_8hpp_source.html#l00013">13</a> 行目に定義があります。</p>
+</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">型定義メンバ詳解</h2>
+<a id="a122359d583a18ad82f0bfbf9d77a66e4" name="a122359d583a18ad82f0bfbf9d77a66e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a122359d583a18ad82f0bfbf9d77a66e4">&#9670;&#160;</a></span>view_stack_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#a122359d583a18ad82f0bfbf9d77a66e4">depicture_menu::presentations::stacked_views_presenter::view_stack_t</a> = <a class="el" href="classdepicture__menu_1_1applications_1_1usecase__dispatch_1_1view__presenters__stack.html">applications::usecase_dispatch::view_presenters_stack</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="stacked__views__presenter_8hpp_source.html">stacked_views_presenter.hpp</a> の <a class="el" href="stacked__views__presenter_8hpp_source.html#l00015">15</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">構築子と解体子</h2>
+<a id="abc01f6761fe672383e119983a75e23a5" name="abc01f6761fe672383e119983a75e23a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc01f6761fe672383e119983a75e23a5">&#9670;&#160;</a></span>stacked_views_presenter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">depicture_menu::presentations::stacked_views_presenter::stacked_views_presenter </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="#a122359d583a18ad82f0bfbf9d77a66e4">view_stack_t</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>s</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="stacked__views__presenter_8hpp_source.html">stacked_views_presenter.hpp</a> の <a class="el" href="stacked__views__presenter_8hpp_source.html#l00020">20</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="stacked__views__presenter_8hpp_source.html#l00017">stack_</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="aca3ac7a86447435758140ed33eaff2a2" name="aca3ac7a86447435758140ed33eaff2a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca3ac7a86447435758140ed33eaff2a2">&#9670;&#160;</a></span>operator()() <span class="overload">[1/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::presentations::stacked_views_presenter::operator() </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdepicture__menu_1_1usecase_1_1dto_1_1action__created.html">usecase::dto::action_created</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>d</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="stacked__views__presenter_8hpp_source.html">stacked_views_presenter.hpp</a> の <a class="el" href="stacked__views__presenter_8hpp_source.html#l00054">54</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="stacked__views__presenter_8hpp_source.html#l00026">relay()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1presentations_1_1stacked__views__presenter_aca3ac7a86447435758140ed33eaff2a2_cgraph.svg" width="472" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aec268fe521bc37eeaa5ef7de3c547632" name="aec268fe521bc37eeaa5ef7de3c547632"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec268fe521bc37eeaa5ef7de3c547632">&#9670;&#160;</a></span>operator()() <span class="overload">[2/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::presentations::stacked_views_presenter::operator() </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdepicture__menu_1_1usecase_1_1dto_1_1command__created.html">usecase::dto::command_created</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>d</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="stacked__views__presenter_8hpp_source.html">stacked_views_presenter.hpp</a> の <a class="el" href="stacked__views__presenter_8hpp_source.html#l00050">50</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="stacked__views__presenter_8hpp_source.html#l00026">relay()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1presentations_1_1stacked__views__presenter_aec268fe521bc37eeaa5ef7de3c547632_cgraph.svg" width="472" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a55ec56a7511bb265b3f504c929b99fa7" name="a55ec56a7511bb265b3f504c929b99fa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55ec56a7511bb265b3f504c929b99fa7">&#9670;&#160;</a></span>operator()() <span class="overload">[3/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::presentations::stacked_views_presenter::operator() </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdepicture__menu_1_1usecase_1_1dto_1_1command__updated.html">usecase::dto::command_updated</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>d</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="stacked__views__presenter_8hpp_source.html">stacked_views_presenter.hpp</a> の <a class="el" href="stacked__views__presenter_8hpp_source.html#l00071">71</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="stacked__views__presenter_8hpp_source.html#l00026">relay()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1presentations_1_1stacked__views__presenter_a55ec56a7511bb265b3f504c929b99fa7_cgraph.svg" width="472" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a9d09086021deb1d64f5dca92b11c567e" name="a9d09086021deb1d64f5dca92b11c567e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d09086021deb1d64f5dca92b11c567e">&#9670;&#160;</a></span>operator()() <span class="overload">[4/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::presentations::stacked_views_presenter::operator() </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdepicture__menu_1_1usecase_1_1dto_1_1common__action__select__changed.html">usecase::dto::common_action_select_changed</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>d</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="stacked__views__presenter_8hpp_source.html">stacked_views_presenter.hpp</a> の <a class="el" href="stacked__views__presenter_8hpp_source.html#l00075">75</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="stacked__views__presenter_8hpp_source.html#l00026">relay()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1presentations_1_1stacked__views__presenter_a9d09086021deb1d64f5dca92b11c567e_cgraph.svg" width="472" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a2883dfce5a7fffa8e6f1025c1f81a734" name="a2883dfce5a7fffa8e6f1025c1f81a734"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2883dfce5a7fffa8e6f1025c1f81a734">&#9670;&#160;</a></span>operator()() <span class="overload">[5/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::presentations::stacked_views_presenter::operator() </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdepicture__menu_1_1usecase_1_1dto_1_1menu__created.html">usecase::dto::menu_created</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>d</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="stacked__views__presenter_8hpp_source.html">stacked_views_presenter.hpp</a> の <a class="el" href="stacked__views__presenter_8hpp_source.html#l00042">42</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="stacked__views__presenter_8hpp_source.html#l00026">relay()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1presentations_1_1stacked__views__presenter_a2883dfce5a7fffa8e6f1025c1f81a734_cgraph.svg" width="472" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="abacec8ca8ffb01f437b9e98bd262176f" name="abacec8ca8ffb01f437b9e98bd262176f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abacec8ca8ffb01f437b9e98bd262176f">&#9670;&#160;</a></span>operator()() <span class="overload">[6/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::presentations::stacked_views_presenter::operator() </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdepicture__menu_1_1usecase_1_1dto_1_1menu__item__created.html">usecase::dto::menu_item_created</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>d</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="stacked__views__presenter_8hpp_source.html">stacked_views_presenter.hpp</a> の <a class="el" href="stacked__views__presenter_8hpp_source.html#l00046">46</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="stacked__views__presenter_8hpp_source.html#l00026">relay()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1presentations_1_1stacked__views__presenter_abacec8ca8ffb01f437b9e98bd262176f_cgraph.svg" width="472" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a59e5c64f3a95ad84e47aaa1140fdc1f2" name="a59e5c64f3a95ad84e47aaa1140fdc1f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59e5c64f3a95ad84e47aaa1140fdc1f2">&#9670;&#160;</a></span>operator()() <span class="overload">[7/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::presentations::stacked_views_presenter::operator() </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdepicture__menu_1_1usecase_1_1dto_1_1menu__item__removed.html">usecase::dto::menu_item_removed</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>d</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="stacked__views__presenter_8hpp_source.html">stacked_views_presenter.hpp</a> の <a class="el" href="stacked__views__presenter_8hpp_source.html#l00067">67</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="stacked__views__presenter_8hpp_source.html#l00026">relay()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1presentations_1_1stacked__views__presenter_a59e5c64f3a95ad84e47aaa1140fdc1f2_cgraph.svg" width="472" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="af78c7791f3d744f23483e72dd67920b6" name="af78c7791f3d744f23483e72dd67920b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af78c7791f3d744f23483e72dd67920b6">&#9670;&#160;</a></span>operator()() <span class="overload">[8/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::presentations::stacked_views_presenter::operator() </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdepicture__menu_1_1usecase_1_1dto_1_1menu__item__updated.html">usecase::dto::menu_item_updated</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>d</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="stacked__views__presenter_8hpp_source.html">stacked_views_presenter.hpp</a> の <a class="el" href="stacked__views__presenter_8hpp_source.html#l00063">63</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="stacked__views__presenter_8hpp_source.html#l00026">relay()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1presentations_1_1stacked__views__presenter_af78c7791f3d744f23483e72dd67920b6_cgraph.svg" width="472" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ad2f3039a478b8eab61a10ccabcbbbedc" name="ad2f3039a478b8eab61a10ccabcbbbedc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2f3039a478b8eab61a10ccabcbbbedc">&#9670;&#160;</a></span>operator()() <span class="overload">[9/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::presentations::stacked_views_presenter::operator() </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdepicture__menu_1_1usecase_1_1dto_1_1menu__updated.html">usecase::dto::menu_updated</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>d</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="stacked__views__presenter_8hpp_source.html">stacked_views_presenter.hpp</a> の <a class="el" href="stacked__views__presenter_8hpp_source.html#l00059">59</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="stacked__views__presenter_8hpp_source.html#l00026">relay()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1presentations_1_1stacked__views__presenter_ad2f3039a478b8eab61a10ccabcbbbedc_cgraph.svg" width="472" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a15ccef553dad95cc1809a08417aa503d" name="a15ccef553dad95cc1809a08417aa503d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15ccef553dad95cc1809a08417aa503d">&#9670;&#160;</a></span>operator()() <span class="overload">[10/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::presentations::stacked_views_presenter::operator() </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdepicture__menu_1_1usecase_1_1dto_1_1trigger__created.html">usecase::dto::trigger_created</a> const &amp;</td>          <td class="paramname"><span class="paramname"><em>d</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="stacked__views__presenter_8hpp_source.html">stacked_views_presenter.hpp</a> の <a class="el" href="stacked__views__presenter_8hpp_source.html#l00038">38</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="stacked__views__presenter_8hpp_source.html#l00026">relay()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1presentations_1_1stacked__views__presenter_a15ccef553dad95cc1809a08417aa503d_cgraph.svg" width="472" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a7e4a66c96ae6c4d72175877db09ef460" name="a7e4a66c96ae6c4d72175877db09ef460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e4a66c96ae6c4d72175877db09ef460">&#9670;&#160;</a></span>relay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::presentations::stacked_views_presenter::relay </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...</td>          <td class="paramname"><span class="paramname"><em>args</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="stacked__views__presenter_8hpp_source.html">stacked_views_presenter.hpp</a> の <a class="el" href="stacked__views__presenter_8hpp_source.html#l00026">26</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="stacked__views__presenter_8hpp_source.html#l00017">stack_</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="stacked__views__presenter_8hpp_source.html#l00054">operator()()</a>, <a class="el" href="stacked__views__presenter_8hpp_source.html#l00050">operator()()</a>, <a class="el" href="stacked__views__presenter_8hpp_source.html#l00071">operator()()</a>, <a class="el" href="stacked__views__presenter_8hpp_source.html#l00075">operator()()</a>, <a class="el" href="stacked__views__presenter_8hpp_source.html#l00042">operator()()</a>, <a class="el" href="stacked__views__presenter_8hpp_source.html#l00046">operator()()</a>, <a class="el" href="stacked__views__presenter_8hpp_source.html#l00067">operator()()</a>, <a class="el" href="stacked__views__presenter_8hpp_source.html#l00063">operator()()</a>, <a class="el" href="stacked__views__presenter_8hpp_source.html#l00059">operator()()</a>, <a class="el" href="stacked__views__presenter_8hpp_source.html#l00038">operator()()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1presentations_1_1stacked__views__presenter_a7e4a66c96ae6c4d72175877db09ef460_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="ab2ecc6732f626144b2d80b68bb80b336" name="ab2ecc6732f626144b2d80b68bb80b336"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2ecc6732f626144b2d80b68bb80b336">&#9670;&#160;</a></span>reset_view()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::presentations::stacked_views_presenter::reset_view </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="classdepicture__menu_1_1usecase_1_1config__changed__interface.html#a316a2870c356fedd9e1a61267a8b0b90">depicture_menu::usecase::config_changed_interface</a>を実装しています。</p>
+
+<p class="definition"> <a class="el" href="stacked__views__presenter_8hpp_source.html">stacked_views_presenter.hpp</a> の <a class="el" href="stacked__views__presenter_8hpp_source.html#l00081">81</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="stacked__views__presenter_8hpp_source.html#l00017">stack_</a>.</p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">メンバ詳解</h2>
+<a id="a9dbd4ad70066d7bfb32f52a06a97c8be" name="a9dbd4ad70066d7bfb32f52a06a97c8be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dbd4ad70066d7bfb32f52a06a97c8be">&#9670;&#160;</a></span>stack_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="#a122359d583a18ad82f0bfbf9d77a66e4">view_stack_t</a> &gt; depicture_menu::presentations::stacked_views_presenter::stack_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="stacked__views__presenter_8hpp_source.html">stacked_views_presenter.hpp</a> の <a class="el" href="stacked__views__presenter_8hpp_source.html#l00017">17</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="stacked__views__presenter_8hpp_source.html#l00026">relay()</a>, <a class="el" href="stacked__views__presenter_8hpp_source.html#l00081">reset_view()</a>, <a class="el" href="stacked__views__presenter_8hpp_source.html#l00020">stacked_views_presenter()</a>.</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>depicture_menu/src/core/presentation/change_view_model/<a class="el" href="stacked__views__presenter_8hpp_source.html">stacked_views_presenter.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespacedepicture__menu.html">depicture_menu</a></li><li class="navelem"><a href="namespacedepicture__menu_1_1presentations.html">presentations</a></li><li class="navelem"><a href="classdepicture__menu_1_1presentations_1_1stacked__views__presenter.html">stacked_views_presenter</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

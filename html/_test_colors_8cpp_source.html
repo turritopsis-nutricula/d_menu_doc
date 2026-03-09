@@ -123,7 +123,7 @@ $(function(){initNavTree('_test_colors_8cpp_source.html','',''); });
 </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">//----------------------------------------//</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">// test_common_rgbs_color : TestSuite</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><a class="code hl_function" href="menu__change__operation_8cpp.html#ae692b9f25c84027b486e3f198b05369c">BOOST_AUTO_TEST_SUITE</a>( test_common_rgbs_color )</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>BOOST_AUTO_TEST_SUITE( test_common_rgbs_color )</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">//----------------------------------------//</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">// constract</span></div>
 <div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
@@ -132,36 +132,36 @@ $(function(){initNavTree('_test_colors_8cpp_source.html','',''); });
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">static_assert</span>( std::is_aggregate_v&lt; dd::common::rgba_color &gt; );</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">static_assert</span>(</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>      dm::concepts::to_ref_tuple_callable&lt; dd::common::rgba_color &gt; );</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        dm::concepts::to_ref_tuple_callable&lt; dd::common::rgba_color &gt; );</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="comment">// value object concept</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">static_assert</span>(</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      dm::concepts::comparable_value_object&lt; dd::common::rgba_color &gt; );</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        dm::concepts::comparable_value_object&lt; dd::common::rgba_color &gt; );</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">// color concepts</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">static_assert</span>(</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      dd::common::concepts::convertible_rgba_color&lt; dd::common::rgba_color &gt; );</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">static_assert</span>( dd::common::concepts::convertible_rgba_color&lt;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                   <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1common_1_1rgba__color.html">dd::common::rgba_color</a> &gt; );</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">auto</span> <a class="code hl_struct" href="structc.html">c</a>   = <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1common_1_1rgba__color.html">dd::common::rgba_color</a>( );</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">auto</span> tup = to_ref_tuple( <a class="code hl_struct" href="structc.html">c</a> );</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">static_assert</span>( dd::models::concepts::reflection_tuple&lt; <span class="keyword">decltype</span>( tup ) &gt; );</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( get_opacity( <a class="code hl_struct" href="structc.html">c</a> ) == 255u );</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( get_red( <a class="code hl_struct" href="structc.html">c</a> ) == 0u );</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( get_blue( <a class="code hl_struct" href="structc.html">c</a> ) == 0u );</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( get_green( <a class="code hl_struct" href="structc.html">c</a> ) == 0u );</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    BOOST_TEST( get_opacity( <a class="code hl_struct" href="structc.html">c</a> ) == 255u );</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    BOOST_TEST( get_red( <a class="code hl_struct" href="structc.html">c</a> ) == 0u );</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    BOOST_TEST( get_blue( <a class="code hl_struct" href="structc.html">c</a> ) == 0u );</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    BOOST_TEST( get_green( <a class="code hl_struct" href="structc.html">c</a> ) == 0u );</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">auto</span> c1 = <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1common_1_1rgba__color.html">dd::common::rgba_color</a>( 1, 2, 3, 4 );</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( get_red( c1 ) == 1u );</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( get_green( c1 ) == 2u );</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( get_blue( c1 ) == 3u );</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( get_opacity( c1 ) == 4u );</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    BOOST_TEST( get_red( c1 ) == 1u );</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    BOOST_TEST( get_green( c1 ) == 2u );</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    BOOST_TEST( get_blue( c1 ) == 3u );</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    BOOST_TEST( get_opacity( c1 ) == 4u );</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">auto</span> [ r, g, <a class="code hl_struct" href="structb.html">b</a>, o ] = <a class="code hl_function" href="namespacedepicture__menu_1_1domain_1_1common.html#a46b88214d3ab05987fe467986610b8d4">dd::common::get_rgba&lt; int &gt;</a>( c1 );</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( r == 1 );</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( g == 2 );</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( <a class="code hl_struct" href="structb.html">b</a> == 3 );</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( o == 4 );</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    BOOST_TEST( r == 1 );</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    BOOST_TEST( g == 2 );</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    BOOST_TEST( <a class="code hl_struct" href="structb.html">b</a> == 3 );</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    BOOST_TEST( o == 4 );</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
 </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment"></span> </div>
@@ -190,25 +190,23 @@ $(function(){initNavTree('_test_colors_8cpp_source.html','',''); });
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    std::stringstream result;</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    result &lt;&lt; boost::pfr::io( actual ) &lt;&lt; <span class="stringliteral">&quot; : &quot;</span> &lt;&lt; boost::pfr::io( expect );</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( boost::pfr::eq( actual, expect ), result.str( ) );</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( ( actual == expect ), result.str( ) );</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    BOOST_TEST( boost::pfr::eq( actual, expect ), result.str( ) );</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    BOOST_TEST( ( actual == expect ), result.str( ) );</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>}</div>
 </div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>BOOST_AUTO_TEST_SUITE_END( )    <span class="comment">// test_common_rgbs_color</span></div>
-<div class="ttc" id="a_test_backup_json_8cpp_html_ac60c25c7e7fe69dfd220f4fb5bc17c5d"><div class="ttname"><a href="_test_backup_json_8cpp.html#ac60c25c7e7fe69dfd220f4fb5bc17c5d">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(test_test_write_backup_json)</div><div class="ttdoc">test_write_backup_json : TestCase</div><div class="ttdef"><b>Definition</b> <a href="_test_backup_json_8cpp_source.html#l00200">TestBackupJson.cpp:200</a></div></div>
+<div class="ttc" id="a_test_backup_json_8cpp_html_ac60c25c7e7fe69dfd220f4fb5bc17c5d"><div class="ttname"><a href="_test_backup_json_8cpp.html#ac60c25c7e7fe69dfd220f4fb5bc17c5d">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(test_test_write_backup_json)</div><div class="ttdoc">test_write_backup_json : TestCase</div><div class="ttdef"><b>Definition</b> <a href="_test_backup_json_8cpp_source.html#l00202">TestBackupJson.cpp:202</a></div></div>
 <div class="ttc" id="a_test_colors_8cpp_html_a0ba4ff3ec435915cea4dd0214e61051d"><div class="ttname"><a href="_test_colors_8cpp.html#a0ba4ff3ec435915cea4dd0214e61051d">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(constract)</div><div class="ttdef"><b>Definition</b> <a href="#l00032">TestColors.cpp:32</a></div></div>
-<div class="ttc" id="a_test_config_view_presenter_8cpp_html_a7845eb0c68b997d6d329618f36f7e794"><div class="ttname"><a href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a></div><div class="ttdeci">BOOST_TEST(get_menu(config_arg, 0u) -&gt;get_MenuId()==m_id)</div></div>
 <div class="ttc" id="acolors_8hpp_html"><div class="ttname"><a href="colors_8hpp.html">colors.hpp</a></div></div>
 <div class="ttc" id="aconcepthas__func_html"><div class="ttname"><a href="concepthas__func.html">has_func</a></div><div class="ttdef"><b>Definition</b> <a href="#l00024">TestColors.cpp:24</a></div></div>
-<div class="ttc" id="amenu__change__operation_8cpp_html_ae692b9f25c84027b486e3f198b05369c"><div class="ttname"><a href="menu__change__operation_8cpp.html#ae692b9f25c84027b486e3f198b05369c">BOOST_AUTO_TEST_SUITE</a></div><div class="ttdeci">BOOST_AUTO_TEST_SUITE(item_propertes, *bt::depends_on(&quot;test_config_view_presenter/add_menu_item&quot;)) dd</div><div class="ttdef"><b>Definition</b> <a href="menu__change__operation_8cpp_source.html#l00208">menu_change_operation.cpp:208</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1common_html_a46b88214d3ab05987fe467986610b8d4"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1common.html#a46b88214d3ab05987fe467986610b8d4">depicture_menu::domain::common::get_rgba</a></div><div class="ttdeci">auto get_rgba(C const &amp;c)</div><div class="ttdef"><b>Definition</b> <a href="colors_8hpp_source.html#l00040">colors.hpp:40</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1common_html_a46b88214d3ab05987fe467986610b8d4"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1common.html#a46b88214d3ab05987fe467986610b8d4">depicture_menu::domain::common::get_rgba</a></div><div class="ttdeci">auto get_rgba(C const &amp;c)</div><div class="ttdef"><b>Definition</b> <a href="colors_8hpp_source.html#l00042">colors.hpp:42</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1domain_html"><div class="ttname"><a href="namespacedepicture__menu_1_1domain.html">depicture_menu::domain</a></div><div class="ttdef"><b>Definition</b> <a href="colors_8hpp_source.html#l00006">colors.hpp:7</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_html"><div class="ttname"><a href="namespacedepicture__menu.html">depicture_menu</a></div><div class="ttdef"><b>Definition</b> <a href="constexpr__string_8hpp_source.html#l00012">constexpr_string.hpp:13</a></div></div>
 <div class="ttc" id="apresistence_8hpp_html"><div class="ttname"><a href="presistence_8hpp.html">presistence.hpp</a></div></div>
-<div class="ttc" id="astructb_html"><div class="ttname"><a href="structb.html">b</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00123">TestReflection.cpp:124</a></div></div>
-<div class="ttc" id="astructc_html"><div class="ttname"><a href="structc.html">c</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00145">TestReflection.cpp:146</a></div></div>
-<div class="ttc" id="astructdepicture__menu_1_1domain_1_1common_1_1rgba__color_html"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1common_1_1rgba__color.html">depicture_menu::domain::common::rgba_color</a></div><div class="ttdef"><b>Definition</b> <a href="colors_8hpp_source.html#l00058">colors.hpp:59</a></div></div>
+<div class="ttc" id="astructb_html"><div class="ttname"><a href="structb.html">b</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00125">TestReflection.cpp:126</a></div></div>
+<div class="ttc" id="astructc_html"><div class="ttname"><a href="structc.html">c</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00147">TestReflection.cpp:148</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1common_1_1rgba__color_html"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1common_1_1rgba__color.html">depicture_menu::domain::common::rgba_color</a></div><div class="ttdef"><b>Definition</b> <a href="colors_8hpp_source.html#l00060">colors.hpp:61</a></div></div>
 <div class="ttc" id="avalue__object_8hpp_html"><div class="ttname"><a href="value__object_8hpp.html">value_object.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

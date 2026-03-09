@@ -146,8 +146,8 @@ core_interface.hpp の依存先関係図:</div>
 型定義</h2></td></tr>
 <tr class="memitem:a92e463b70c341aa89e513e9a70727361" id="r_a92e463b70c341aa89e513e9a70727361"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu.html#a92e463b70c341aa89e513e9a70727361">depicture_menu::core_interface</a> = <a class="el" href="classdepicture__menu_1_1singleton.html">singleton</a>&lt; <a class="el" href="structdepicture__menu_1_1detail__d__menu_1_1core__interface__impl.html">detail_d_menu::core_interface_impl</a> &gt;</td></tr>
 <tr class="memitem:a3f5fb0c9223d976f61f05d356ca2908b" id="r_a3f5fb0c9223d976f61f05d356ca2908b"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu.html#a3f5fb0c9223d976f61f05d356ca2908b">depicture_menu::app_transacion_t</a></td></tr>
-<tr class="memitem:a2e7947483668318c86e19a21940ea7f9" id="r_a2e7947483668318c86e19a21940ea7f9"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu.html#a2e7947483668318c86e19a21940ea7f9">depicture_menu::application_option_repository_accesser</a></td></tr>
-<tr class="memitem:a907635a0c21b9ddbdeebeacc559a60c6" id="r_a907635a0c21b9ddbdeebeacc559a60c6"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu.html#a907635a0c21b9ddbdeebeacc559a60c6">depicture_menu::application_config_repository_accesser</a></td></tr>
+<tr class="memitem:a9c2ee957bc3a40702b300e15258e1d7d" id="r_a9c2ee957bc3a40702b300e15258e1d7d"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu.html#a9c2ee957bc3a40702b300e15258e1d7d">depicture_menu::application_option_repository_accesser</a></td></tr>
+<tr class="memitem:addd3fbdc760e41bfe5fcf939e33c36bf" id="r_addd3fbdc760e41bfe5fcf939e33c36bf"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu.html#addd3fbdc760e41bfe5fcf939e33c36bf">depicture_menu::application_config_repository_accesser</a></td></tr>
 </table>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">マクロ定義詳解</h2>
 <a id="a5e393e0185884175ca90ca7ac74840e6" name="a5e393e0185884175ca90ca7ac74840e6"></a>
@@ -168,8 +168,8 @@ core_interface.hpp の依存先関係図:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">std::shared_ptr&lt; repositories::on_memory_repository&lt; CLASS &gt; &gt; NAME =      \</div>
-<div class="line">  std::make_shared&lt; repositories::on_memory_repository&lt; CLASS &gt; &gt;( )</div>
+<b>値:</b><div class="fragment"><div class="line">std::shared_ptr&lt; repositories::on_memory_repository&lt; CLASS &gt; &gt; NAME =  \</div>
+<div class="line">    std::make_shared&lt; repositories::on_memory_repository&lt; CLASS &gt; &gt;( )</div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="core__interface_8hpp_source.html">core_interface.hpp</a> の <a class="el" href="core__interface_8hpp_source.html#l00031">31</a> 行目に定義があります。</p>
 
@@ -189,10 +189,10 @@ core_interface.hpp の依存先関係図:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line"><span class="keyword">using </span>NAME##_accesser = detail_d_menu::repository_accesser&lt;                \</div>
-<div class="line">  &amp;detail_d_menu::core_interface_impl::NAME##_ &gt;;</div>
+<b>値:</b><div class="fragment"><div class="line"><span class="keyword">using </span>NAME##_accesser = detail_d_menu::repository_accesser&lt; \</div>
+<div class="line">    &amp;detail_d_menu::core_interface_impl::NAME##_ &gt;;</div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="core__interface_8hpp_source.html">core_interface.hpp</a> の <a class="el" href="core__interface_8hpp_source.html#l00280">280</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="core__interface_8hpp_source.html">core_interface.hpp</a> の <a class="el" href="core__interface_8hpp_source.html#l00271">271</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -214,8 +214,8 @@ core_interface.hpp の依存先関係図:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">std::shared_ptr&lt; domain::crud_repository_interface&lt; CLASS &gt; &gt; NAME =       \</div>
-<div class="line">  std::make_shared&lt; repositories::volatile_repository&lt; CLASS &gt; &gt;( )</div>
+<b>値:</b><div class="fragment"><div class="line">std::shared_ptr&lt; domain::crud_repository_interface&lt; CLASS &gt; &gt; NAME =  \</div>
+<div class="line">    std::make_shared&lt; repositories::volatile_repository&lt; CLASS &gt; &gt;( )</div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="core__interface_8hpp_source.html">core_interface.hpp</a> の <a class="el" href="core__interface_8hpp_source.html#l00035">35</a> 行目に定義があります。</p>
 

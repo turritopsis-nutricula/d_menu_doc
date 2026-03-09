@@ -107,10 +107,10 @@ $(function(){initNavTree('namespacedepicture__menu_1_1repositories_1_1detail__re
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 型定義</h2></td></tr>
-<tr class="memitem:a24404d16d1f9ec87f8d991a126801379" id="r_a24404d16d1f9ec87f8d991a126801379"><td class="memTemplParams" colspan="2">template&lt;std::size_t N, class... Ts&gt; </td></tr>
-<tr class="memitem:a24404d16d1f9ec87f8d991a126801379 template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a24404d16d1f9ec87f8d991a126801379">nth_type</a></td></tr>
-<tr class="memitem:af8e7d9615f7d08a40932fa74ec4f2a4f" id="r_af8e7d9615f7d08a40932fa74ec4f2a4f"><td class="memTemplParams" colspan="2">template&lt;typename Id, typename... Args&gt; </td></tr>
-<tr class="memitem:af8e7d9615f7d08a40932fa74ec4f2a4f template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#af8e7d9615f7d08a40932fa74ec4f2a4f">get_entity_type_from_id</a></td></tr>
+<tr class="memitem:a9615d3234433561ce851f81efbf56ed0" id="r_a9615d3234433561ce851f81efbf56ed0"><td class="memTemplParams" colspan="2">template&lt;std::size_t N, class... Ts&gt; </td></tr>
+<tr class="memitem:a9615d3234433561ce851f81efbf56ed0 template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a9615d3234433561ce851f81efbf56ed0">nth_type</a></td></tr>
+<tr class="memitem:a87747cadff90b2fa03bfb923a21a519c" id="r_a87747cadff90b2fa03bfb923a21a519c"><td class="memTemplParams" colspan="2">template&lt;typename Id, typename... Args&gt; </td></tr>
+<tr class="memitem:a87747cadff90b2fa03bfb923a21a519c template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#a87747cadff90b2fa03bfb923a21a519c">get_entity_type_from_id</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 関数</h2></td></tr>
@@ -129,8 +129,8 @@ $(function(){initNavTree('namespacedepicture__menu_1_1repositories_1_1detail__re
 <tr class="memitem:ac395b77c4029d8c615fa3fbce36e9d7f template"><td class="memItemLeft">constexpr std::size_t&#160;</td><td class="memItemRight"><a class="el" href="#ac395b77c4029d8c615fa3fbce36e9d7f">find_if_type</a> = <a class="el" href="#acaaa30e048b92c9678802295929da459">find_if_type_impl</a>&lt; Qret, Args... &gt;( )</td></tr>
 </table>
 <a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">型定義詳解</h2>
-<a id="af8e7d9615f7d08a40932fa74ec4f2a4f" name="af8e7d9615f7d08a40932fa74ec4f2a4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8e7d9615f7d08a40932fa74ec4f2a4f">&#9670;&#160;</a></span>get_entity_type_from_id</h2>
+<a id="a87747cadff90b2fa03bfb923a21a519c" name="a87747cadff90b2fa03bfb923a21a519c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87747cadff90b2fa03bfb923a21a519c">&#9670;&#160;</a></span>get_entity_type_from_id</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -138,29 +138,29 @@ $(function(){initNavTree('namespacedepicture__menu_1_1repositories_1_1detail__re
 template&lt;typename Id, typename... Args&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#af8e7d9615f7d08a40932fa74ec4f2a4f">depicture_menu::repositories::detail_repositories::get_entity_type_from_id</a></td>
+          <td class="memname">using <a class="el" href="#a87747cadff90b2fa03bfb923a21a519c">depicture_menu::repositories::detail_repositories::get_entity_type_from_id</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>初期値:</b><div class="fragment"><div class="line"><a class="code hl_typedef" href="#a24404d16d1f9ec87f8d991a126801379">nth_type</a>&lt;</div>
-<div class="line"> <a class="code hl_variable" href="#ac395b77c4029d8c615fa3fbce36e9d7f">find_if_type</a>&lt;</div>
-<div class="line">   <span class="keyword">decltype</span>( []&lt; <span class="keyword">typename</span> T &gt;( T ) {</div>
+<b>初期値:</b><div class="fragment"><div class="line"><a class="code hl_typedef" href="#a9615d3234433561ce851f81efbf56ed0">nth_type</a>&lt;</div>
+<div class="line">       <a class="code hl_variable" href="#ac395b77c4029d8c615fa3fbce36e9d7f">find_if_type</a>&lt;</div>
+<div class="line">           <span class="keyword">decltype</span>( []&lt; <span class="keyword">typename</span> T &gt;( T ) {</div>
 <div class="line">       <span class="keywordflow">return</span> std::bool_constant&lt; std::is_same_v&lt;</div>
-<div class="line">         std::remove_cvref_t&lt; Id &gt;,</div>
-<div class="line">         std::remove_cvref_t&lt;</div>
-<div class="line">           <span class="keyword">decltype</span>( std::declval&lt; T &gt;( ).entity_id( ) ) &gt; &gt; &gt;( );</div>
+<div class="line">           std::remove_cvref_t&lt; Id &gt;,</div>
+<div class="line">           std::remove_cvref_t&lt;</div>
+<div class="line">               <span class="keyword">decltype</span>( std::declval&lt; T &gt;( ).entity_id( ) ) &gt; &gt; &gt;( );</div>
 <div class="line">   } ),</div>
-<div class="line">   Args... &gt;,</div>
-<div class="line"> Args... &gt;</div>
-<div class="ttc" id="anamespacedepicture__menu_1_1repositories_1_1detail__repositories_html_a24404d16d1f9ec87f8d991a126801379"><div class="ttname"><a href="#a24404d16d1f9ec87f8d991a126801379">depicture_menu::repositories::detail_repositories::nth_type</a></div><div class="ttdeci">decltype(Get&lt; N &gt;( std::declval&lt; get_impl&lt; std::index_sequence_for&lt; Ts... &gt;, Ts... &gt; &gt;())) nth_type</div><div class="ttdef"><b>Definition</b> <a href="crud__operations_8hpp_source.html#l00038">crud_operations.hpp:38</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1repositories_1_1detail__repositories_html_ac395b77c4029d8c615fa3fbce36e9d7f"><div class="ttname"><a href="#ac395b77c4029d8c615fa3fbce36e9d7f">depicture_menu::repositories::detail_repositories::find_if_type</a></div><div class="ttdeci">constexpr std::size_t find_if_type</div><div class="ttdef"><b>Definition</b> <a href="crud__operations_8hpp_source.html#l00063">crud_operations.hpp:63</a></div></div>
+<div class="line">           Args... &gt;,</div>
+<div class="line">       Args... &gt;</div>
+<div class="ttc" id="anamespacedepicture__menu_1_1repositories_1_1detail__repositories_html_a9615d3234433561ce851f81efbf56ed0"><div class="ttname"><a href="#a9615d3234433561ce851f81efbf56ed0">depicture_menu::repositories::detail_repositories::nth_type</a></div><div class="ttdeci">decltype(Get&lt; N &gt;( std::declval&lt; get_impl&lt; std::index_sequence_for&lt; Ts... &gt;, Ts... &gt; &gt;())) nth_type</div><div class="ttdef"><b>Definition</b> <a href="crud__operations_8hpp_source.html#l00043">crud_operations.hpp:43</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1repositories_1_1detail__repositories_html_ac395b77c4029d8c615fa3fbce36e9d7f"><div class="ttname"><a href="#ac395b77c4029d8c615fa3fbce36e9d7f">depicture_menu::repositories::detail_repositories::find_if_type</a></div><div class="ttdeci">constexpr std::size_t find_if_type</div><div class="ttdef"><b>Definition</b> <a href="crud__operations_8hpp_source.html#l00068">crud_operations.hpp:68</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="crud__operations_8hpp_source.html">crud_operations.hpp</a> の <a class="el" href="crud__operations_8hpp_source.html#l00071">71</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="crud__operations_8hpp_source.html">crud_operations.hpp</a> の <a class="el" href="crud__operations_8hpp_source.html#l00076">76</a> 行目に定義があります。</p>
 
 </div>
 </div>
-<a id="a24404d16d1f9ec87f8d991a126801379" name="a24404d16d1f9ec87f8d991a126801379"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24404d16d1f9ec87f8d991a126801379">&#9670;&#160;</a></span>nth_type</h2>
+<a id="a9615d3234433561ce851f81efbf56ed0" name="a9615d3234433561ce851f81efbf56ed0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9615d3234433561ce851f81efbf56ed0">&#9670;&#160;</a></span>nth_type</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -168,16 +168,17 @@ template&lt;typename Id, typename... Args&gt; </div>
 template&lt;std::size_t N, class... Ts&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a24404d16d1f9ec87f8d991a126801379">depicture_menu::repositories::detail_repositories::nth_type</a></td>
+          <td class="memname">using <a class="el" href="#a9615d3234433561ce851f81efbf56ed0">depicture_menu::repositories::detail_repositories::nth_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <b>初期値:</b><div class="fragment"><div class="line"><span class="keyword">decltype</span>( <a class="code hl_function" href="#af8775d6e10e4d0f85deeacea4042ab00">Get&lt; N &gt;</a>(</div>
-<div class="line"> std::declval&lt; <a class="code hl_struct" href="structdepicture__menu_1_1repositories_1_1detail__repositories_1_1get__impl.html">get_impl</a>&lt; std::index_sequence_for&lt; Ts... &gt;, Ts... &gt; &gt;( ) ) )</div>
+<div class="line">       std::declval&lt;</div>
+<div class="line">           <a class="code hl_struct" href="structdepicture__menu_1_1repositories_1_1detail__repositories_1_1get__impl.html">get_impl</a>&lt; std::index_sequence_for&lt; Ts... &gt;, Ts... &gt; &gt;( ) ) )</div>
 <div class="ttc" id="anamespacedepicture__menu_1_1repositories_1_1detail__repositories_html_af8775d6e10e4d0f85deeacea4042ab00"><div class="ttname"><a href="#af8775d6e10e4d0f85deeacea4042ab00">depicture_menu::repositories::detail_repositories::Get</a></div><div class="ttdeci">constexpr T Get(index_tag&lt; T, Index &gt;)</div></div>
-<div class="ttc" id="astructdepicture__menu_1_1repositories_1_1detail__repositories_1_1get__impl_html"><div class="ttname"><a href="structdepicture__menu_1_1repositories_1_1detail__repositories_1_1get__impl.html">depicture_menu::repositories::detail_repositories::get_impl</a></div><div class="ttdef"><b>Definition</b> <a href="crud__operations_8hpp_source.html#l00026">crud_operations.hpp:26</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1repositories_1_1detail__repositories_1_1get__impl_html"><div class="ttname"><a href="structdepicture__menu_1_1repositories_1_1detail__repositories_1_1get__impl.html">depicture_menu::repositories::detail_repositories::get_impl</a></div><div class="ttdef"><b>Definition</b> <a href="crud__operations_8hpp_source.html#l00031">crud_operations.hpp:31</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="crud__operations_8hpp_source.html">crud_operations.hpp</a> の <a class="el" href="crud__operations_8hpp_source.html#l00038">38</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="crud__operations_8hpp_source.html">crud_operations.hpp</a> の <a class="el" href="crud__operations_8hpp_source.html#l00043">43</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -199,9 +200,9 @@ template&lt;domain::models::concepts::aggregable T, typename... Ts&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="transaction_2transaction_8hpp_source.html">transaction.hpp</a> の <a class="el" href="transaction_2transaction_8hpp_source.html#l00048">48</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="transaction_2transaction_8hpp_source.html">transaction.hpp</a> の <a class="el" href="transaction_2transaction_8hpp_source.html#l00049">49</a> 行目に定義があります。</p>
 
-<p class="reference">参照元 <a class="el" href="transaction_2transaction_8hpp_source.html#l00141">depicture_menu::repositories::transaction&lt; Ts &gt;::get_repository()</a>.</p>
+<p class="reference">参照元 <a class="el" href="transaction_2transaction_8hpp_source.html#l00145">depicture_menu::repositories::transaction&lt; Ts &gt;::get_repository()</a>.</p>
 <div class="dynheader">
 被呼び出し関係図:</div>
 <div class="dyncontent">
@@ -227,7 +228,7 @@ template&lt;domain::models::concepts::aggregable T, typename... Ts&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="lockable__repository_8hpp_source.html">lockable_repository.hpp</a> の <a class="el" href="lockable__repository_8hpp_source.html#l00045">45</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="lockable__repository_8hpp_source.html">lockable_repository.hpp</a> の <a class="el" href="lockable__repository_8hpp_source.html#l00046">46</a> 行目に定義があります。</p>
 
 <p class="reference">参照先 <a class="el" href="transaction__source_8hpp_source.html#l00025">depicture_menu::repositories::transaction_source_base&lt; Ts &gt;::tuple_</a>.</p>
 
@@ -258,7 +259,7 @@ template&lt;typename Qret, typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="crud__operations_8hpp_source.html">crud_operations.hpp</a> の <a class="el" href="crud__operations_8hpp_source.html#l00048">48</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="crud__operations_8hpp_source.html">crud_operations.hpp</a> の <a class="el" href="crud__operations_8hpp_source.html#l00053">53</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -312,7 +313,7 @@ template&lt;typename Qret, typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="crud__operations_8hpp_source.html">crud_operations.hpp</a> の <a class="el" href="crud__operations_8hpp_source.html#l00063">63</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="crud__operations_8hpp_source.html">crud_operations.hpp</a> の <a class="el" href="crud__operations_8hpp_source.html#l00068">68</a> 行目に定義があります。</p>
 
 </div>
 </div>

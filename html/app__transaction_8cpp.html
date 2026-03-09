@@ -119,7 +119,7 @@ app_transaction.cpp の依存先関係図:</div>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 関数</h2></td></tr>
-<tr class="memitem:af2f3f1b3b5999de9758861d236b73323" id="r_af2f3f1b3b5999de9758861d236b73323"><td class="memItemLeft"><a class="el" href="namespacedepicture__menu_1_1applications.html#ac1ac0a4c4e9863cd213b74b983b717d8">di_transaction_source_t</a>&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1applications.html#af2f3f1b3b5999de9758861d236b73323">depicture_menu::applications::make_transaction_injector</a> ()</td></tr>
+<tr class="memitem:af2f3f1b3b5999de9758861d236b73323" id="r_af2f3f1b3b5999de9758861d236b73323"><td class="memItemLeft"><a class="el" href="namespacedepicture__menu_1_1applications.html#a8073ad0ab585e61c053471593e69fbeb">di_transaction_source_t</a>&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1applications.html#af2f3f1b3b5999de9758861d236b73323">depicture_menu::applications::make_transaction_injector</a> ()</td></tr>
 </table>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">マクロ定義詳解</h2>
 <a id="aa7dd1c3c1236a9cc2359383d9d1fdb8a" name="aa7dd1c3c1236a9cc2359383d9d1fdb8a"></a>
@@ -167,10 +167,10 @@ app_transaction.cpp の依存先関係図:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">boost::di::bind&lt;                                                           \</div>
-<div class="line">  <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1crud__repository__interface.html">depicture_menu::domain::crud_repository_interface&lt; ENTITY &gt;</a>,             \</div>
-<div class="line">  <a class="code hl_class" href="classdepicture__menu_1_1repositories_1_1serialization__interface.html">depicture_menu::repositories::serialization_interface&lt; ENTITY &gt;</a> &gt;( )     \</div>
-<div class="line">  .to( []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; ) { <span class="keywordflow">return</span> RET; } )</div>
+<b>値:</b><div class="fragment"><div class="line">boost::di::bind&lt;                                                         \</div>
+<div class="line">    <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1crud__repository__interface.html">depicture_menu::domain::crud_repository_interface&lt; ENTITY &gt;</a>,         \</div>
+<div class="line">    <a class="code hl_class" href="classdepicture__menu_1_1repositories_1_1serialization__interface.html">depicture_menu::repositories::serialization_interface&lt; ENTITY &gt;</a> &gt;( ) \</div>
+<div class="line">    .to( []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; ) { <span class="keywordflow">return</span> RET; } )</div>
 <div class="ttc" id="aclassdepicture__menu_1_1domain_1_1crud__repository__interface_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1crud__repository__interface.html">depicture_menu::domain::crud_repository_interface</a></div><div class="ttdef"><b>Definition</b> <a href="crud__repository_8hpp_source.html#l00036">crud_repository.hpp:38</a></div></div>
 <div class="ttc" id="aclassdepicture__menu_1_1repositories_1_1serialization__interface_html"><div class="ttname"><a href="classdepicture__menu_1_1repositories_1_1serialization__interface.html">depicture_menu::repositories::serialization_interface</a></div><div class="ttdef"><b>Definition</b> <a href="serialization__interface_8hpp_source.html#l00009">serialization_interface.hpp:10</a></div></div>
 </div><!-- fragment -->
@@ -196,11 +196,11 @@ app_transaction.cpp の依存先関係図:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">boost::di::bind&lt;                                                           \</div>
-<div class="line">  <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1crud__repository__interface.html">depicture_menu::domain::crud_repository_interface&lt; ENTITY &gt;</a>,             \</div>
-<div class="line">  <a class="code hl_class" href="classdepicture__menu_1_1repositories_1_1serialization__interface.html">depicture_menu::repositories::serialization_interface&lt; ENTITY &gt;</a> &gt;( )     \</div>
-<div class="line">  .to&lt; repositories::on_memory_repository&lt; ENTITY &gt; &gt;( )                   \</div>
-<div class="line">  .in( boost::di::singleton )</div>
+<b>値:</b><div class="fragment"><div class="line">boost::di::bind&lt;                                                         \</div>
+<div class="line">    <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1crud__repository__interface.html">depicture_menu::domain::crud_repository_interface&lt; ENTITY &gt;</a>,         \</div>
+<div class="line">    <a class="code hl_class" href="classdepicture__menu_1_1repositories_1_1serialization__interface.html">depicture_menu::repositories::serialization_interface&lt; ENTITY &gt;</a> &gt;( ) \</div>
+<div class="line">    .to&lt; repositories::on_memory_repository&lt; ENTITY &gt; &gt;( )               \</div>
+<div class="line">    .in( boost::di::singleton )</div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="app__transaction_8cpp_source.html">app_transaction.cpp</a> の <a class="el" href="app__transaction_8cpp_source.html#l00015">15</a> 行目に定義があります。</p>
 
@@ -224,9 +224,9 @@ app_transaction.cpp の依存先関係図:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">boost::di::bind&lt;                                                           \</div>
-<div class="line">  <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1crud__repository__interface.html">depicture_menu::domain::crud_repository_interface&lt; ENTITY &gt;</a> &gt;( )         \</div>
-<div class="line">  .to( []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; ) { <span class="keywordflow">return</span> RET; } )</div>
+<b>値:</b><div class="fragment"><div class="line">boost::di::bind&lt;                                                     \</div>
+<div class="line">    <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1crud__repository__interface.html">depicture_menu::domain::crud_repository_interface&lt; ENTITY &gt;</a> &gt;( ) \</div>
+<div class="line">    .to( []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; ) { <span class="keywordflow">return</span> RET; } )</div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="app__transaction_8cpp_source.html">app_transaction.cpp</a> の <a class="el" href="app__transaction_8cpp_source.html#l00010">10</a> 行目に定義があります。</p>
 
@@ -250,10 +250,10 @@ app_transaction.cpp の依存先関係図:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">boost::di::bind&lt;                                                           \</div>
-<div class="line">  <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1crud__repository__interface.html">depicture_menu::domain::crud_repository_interface&lt; ENTITY &gt;</a> &gt;( )         \</div>
-<div class="line">  .to&lt; repositories::volatile_repository&lt; ENTITY &gt; &gt;( )                    \</div>
-<div class="line">  .in( boost::di::singleton )</div>
+<b>値:</b><div class="fragment"><div class="line">boost::di::bind&lt;                                                     \</div>
+<div class="line">    <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1crud__repository__interface.html">depicture_menu::domain::crud_repository_interface&lt; ENTITY &gt;</a> &gt;( ) \</div>
+<div class="line">    .to&lt; repositories::volatile_repository&lt; ENTITY &gt; &gt;( )            \</div>
+<div class="line">    .in( boost::di::singleton )</div>
 </div><!-- fragment -->
 <p class="definition"> <a class="el" href="app__transaction_8cpp_source.html">app_transaction.cpp</a> の <a class="el" href="app__transaction_8cpp_source.html#l00022">22</a> 行目に定義があります。</p>
 

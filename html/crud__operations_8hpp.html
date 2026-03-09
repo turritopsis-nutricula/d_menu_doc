@@ -93,7 +93,11 @@ $(function(){initNavTree('crud__operations_8hpp.html','',''); });
   <div class="headertitle"><div class="title">crud_operations.hpp ファイル</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>トランザクションリポジトリーオペレーション  
+<a href="#details">[詳解]</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="transaction_2transaction_8hpp_source.html">transaction.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="transaction__error_8hpp_source.html">transaction_error.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 crud_operations.hpp の依存先関係図:</div>
 <div class="dyncontent">
@@ -121,12 +125,12 @@ crud_operations.hpp の依存先関係図:</div>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 型定義</h2></td></tr>
-<tr class="memitem:a24404d16d1f9ec87f8d991a126801379" id="r_a24404d16d1f9ec87f8d991a126801379"><td class="memTemplParams" colspan="2">template&lt;std::size_t N, class... Ts&gt; </td></tr>
-<tr class="memitem:a24404d16d1f9ec87f8d991a126801379 template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1repositories_1_1detail__repositories.html#a24404d16d1f9ec87f8d991a126801379">depicture_menu::repositories::detail_repositories::nth_type</a></td></tr>
-<tr class="memitem:af8e7d9615f7d08a40932fa74ec4f2a4f" id="r_af8e7d9615f7d08a40932fa74ec4f2a4f"><td class="memTemplParams" colspan="2">template&lt;typename Id, typename... Args&gt; </td></tr>
-<tr class="memitem:af8e7d9615f7d08a40932fa74ec4f2a4f template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1repositories_1_1detail__repositories.html#af8e7d9615f7d08a40932fa74ec4f2a4f">depicture_menu::repositories::detail_repositories::get_entity_type_from_id</a></td></tr>
+<tr class="memitem:a9615d3234433561ce851f81efbf56ed0" id="r_a9615d3234433561ce851f81efbf56ed0"><td class="memTemplParams" colspan="2">template&lt;std::size_t N, class... Ts&gt; </td></tr>
+<tr class="memitem:a9615d3234433561ce851f81efbf56ed0 template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1repositories_1_1detail__repositories.html#a9615d3234433561ce851f81efbf56ed0">depicture_menu::repositories::detail_repositories::nth_type</a></td></tr>
+<tr class="memitem:a87747cadff90b2fa03bfb923a21a519c" id="r_a87747cadff90b2fa03bfb923a21a519c"><td class="memTemplParams" colspan="2">template&lt;typename Id, typename... Args&gt; </td></tr>
+<tr class="memitem:a87747cadff90b2fa03bfb923a21a519c template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1repositories_1_1detail__repositories.html#a87747cadff90b2fa03bfb923a21a519c">depicture_menu::repositories::detail_repositories::get_entity_type_from_id</a></td></tr>
 <tr class="memitem:a0f7e5ea2e1a9b1e338b17e1311421ec8" id="r_a0f7e5ea2e1a9b1e338b17e1311421ec8"><td class="memTemplParams" colspan="2">template&lt;std::size_t N, class... Ts&gt; </td></tr>
-<tr class="memitem:a0f7e5ea2e1a9b1e338b17e1311421ec8 template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1repositories_1_1ppmp.html#a0f7e5ea2e1a9b1e338b17e1311421ec8">depicture_menu::repositories::ppmp::nth_type</a> = <a class="el" href="namespacedepicture__menu_1_1repositories_1_1detail__repositories.html#a24404d16d1f9ec87f8d991a126801379">detail_repositories::nth_type</a>&lt; N, Ts... &gt;</td></tr>
+<tr class="memitem:a0f7e5ea2e1a9b1e338b17e1311421ec8 template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1repositories_1_1ppmp.html#a0f7e5ea2e1a9b1e338b17e1311421ec8">depicture_menu::repositories::ppmp::nth_type</a> = <a class="el" href="namespacedepicture__menu_1_1repositories_1_1detail__repositories.html#a9615d3234433561ce851f81efbf56ed0">detail_repositories::nth_type</a>&lt; N, Ts... &gt;</td></tr>
 <tr class="memitem:ae7deaba478ccf28cc8d7e0341c4a68b1" id="r_ae7deaba478ccf28cc8d7e0341c4a68b1"><td class="memTemplParams" colspan="2">template&lt;typename Id, typename... Args&gt; </td></tr>
 <tr class="memitem:ae7deaba478ccf28cc8d7e0341c4a68b1 template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1repositories_1_1ppmp.html#ae7deaba478ccf28cc8d7e0341c4a68b1">depicture_menu::repositories::ppmp::get_entity_type_from_id</a></td></tr>
 </table><table class="memberdecls">
@@ -144,6 +148,12 @@ crud_operations.hpp の依存先関係図:</div>
 <tr class="memitem:a2cec9c535b62fb531f34ee45051c9b02 template"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1repositories.html#a2cec9c535b62fb531f34ee45051c9b02">depicture_menu::repositories::update_entity</a> (<a class="el" href="structdepicture__menu_1_1repositories_1_1transaction.html">transaction</a>&lt; Ts... &gt; &amp;t, T const &amp;new_entity)</td></tr>
 <tr class="memitem:a886f9cfae7e952015b4d259d155c73c1" id="r_a886f9cfae7e952015b4d259d155c73c1"><td class="memTemplParams" colspan="2">template&lt;typename E, typename... Ts&gt; </td></tr>
 <tr class="memitem:a886f9cfae7e952015b4d259d155c73c1 template"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1repositories.html#a886f9cfae7e952015b4d259d155c73c1">depicture_menu::repositories::erase_entity</a> (<a class="el" href="structdepicture__menu_1_1repositories_1_1transaction.html">transaction</a>&lt; Ts... &gt; &amp;t, E &amp;&amp;id)</td></tr>
+<tr class="memitem:ad7a0e7324592b351ef56c816fbd80570" id="r_ad7a0e7324592b351ef56c816fbd80570"><td class="memTemplParams" colspan="2">template&lt;typename T, typename... Ts&gt; </td></tr>
+<tr class="memitem:ad7a0e7324592b351ef56c816fbd80570 template"><td class="memItemLeft"><a class="el" href="namespacedepicture__menu_1_1repositories.html#a6cb6805f93a0f2b8ad0ac22e33b14263">transaction_result</a>&lt; typename T::id_t &gt;&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1repositories.html#ad7a0e7324592b351ef56c816fbd80570">depicture_menu::repositories::create_transaction</a> (<a class="el" href="structdepicture__menu_1_1repositories_1_1transaction.html">transaction</a>&lt; Ts... &gt; &amp;t, T const &amp;new_entity)</td></tr>
+<tr class="memdesc:ad7a0e7324592b351ef56c816fbd80570"><td class="mdescLeft">&#160;</td><td class="mdescRight">トランザクションに新規エンティティを追加  <br /></td></tr>
+<tr class="memitem:a80aa76233828c13002fca2cd72036baa" id="r_a80aa76233828c13002fca2cd72036baa"><td class="memTemplParams" colspan="2">template&lt;typename E, typename... Ts&gt; </td></tr>
+<tr class="memitem:a80aa76233828c13002fca2cd72036baa template"><td class="memItemLeft"><a class="el" href="namespacedepicture__menu_1_1repositories.html#a6cb6805f93a0f2b8ad0ac22e33b14263">transaction_result</a>&lt; <a class="el" href="namespacedepicture__menu_1_1repositories_1_1ppmp.html#ae7deaba478ccf28cc8d7e0341c4a68b1">ppmp::get_entity_type_from_id</a>&lt; E, Ts... &gt; &gt;&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1repositories.html#a80aa76233828c13002fca2cd72036baa">depicture_menu::repositories::read_transaction</a> (<a class="el" href="structdepicture__menu_1_1repositories_1_1transaction.html">transaction</a>&lt; Ts... &gt; &amp;t, E &amp;&amp;id)</td></tr>
+<tr class="memdesc:a80aa76233828c13002fca2cd72036baa"><td class="mdescLeft">&#160;</td><td class="mdescRight">トランザクションから読み取る  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 変数</h2></td></tr>
@@ -152,7 +162,11 @@ crud_operations.hpp の依存先関係図:</div>
 <tr class="memitem:a69daf63cb58d39ffa038e6d2f9c5ad79" id="r_a69daf63cb58d39ffa038e6d2f9c5ad79"><td class="memTemplParams" colspan="2">template&lt;typename Qret, typename... Args&gt; </td></tr>
 <tr class="memitem:a69daf63cb58d39ffa038e6d2f9c5ad79 template"><td class="memItemLeft">constexpr std::size_t&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1repositories_1_1ppmp.html#a69daf63cb58d39ffa038e6d2f9c5ad79">depicture_menu::repositories::ppmp::find_if_type</a></td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>トランザクションリポジトリーオペレーション </p>
+
+<p class="definition"> <a class="el" href="crud__operations_8hpp_source.html">crud_operations.hpp</a> に定義があります。</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
 <div id="page-nav-resize-handle"></div>

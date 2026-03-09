@@ -115,12 +115,12 @@ $(function(){initNavTree('entry_8hpp_source.html','',''); });
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">//----------------------------------------------------------------------//</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">//  * DPM_GLUE_METHOD_EXPAND( Entry seqence )</span></div>
 <div class="foldopen" id="foldopen00022" data-start="" data-end="">
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="entry_8hpp.html#ab3c61ce87a4d85a7adab49811d3deea9">   22</a></span><span class="preprocessor">#define DPM_DETAIL_ENTITY_GLUE_METHOD_EXPAND_OP( _r, _d, ENTRY )               \</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="entry_8hpp.html#ab3c61ce87a4d85a7adab49811d3deea9">   22</a></span><span class="preprocessor">#define DPM_DETAIL_ENTITY_GLUE_METHOD_EXPAND_OP( _r, _d, ENTRY ) \</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">    BOOST_PP_CAT( DPME_GM_SEQ_, ENTRY )</span></div>
 </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="foldopen" id="foldopen00025" data-start="" data-end="">
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="entry_8hpp.html#a5bc53b826a6688b08231351ff28809af">   25</a></span><span class="preprocessor">#define DPM_ENTRY_EXPAND_GLUE_METHOD_SEQ( ENT_SEQ )                            \</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="entry_8hpp.html#a5bc53b826a6688b08231351ff28809af">   25</a></span><span class="preprocessor">#define DPM_ENTRY_EXPAND_GLUE_METHOD_SEQ( ENT_SEQ ) \</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">    BOOST_PP_SEQ_FOR_EACH( DPM_DETAIL_ENTITY_GLUE_METHOD_EXPAND_OP, _, ENT_SEQ )</span></div>
 </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
@@ -133,7 +133,7 @@ $(function(){initNavTree('entry_8hpp_source.html','',''); });
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">*/</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
 <div class="foldopen" id="foldopen00036" data-start="" data-end="">
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="entry_8hpp.html#af5e129f5f2a193eecb76a8c1d2ff8458">   36</a></span><span class="preprocessor">#define DPM_ENTRY_EXPAND_OPTION_SEQ( ... )                                     \</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="entry_8hpp.html#af5e129f5f2a193eecb76a8c1d2ff8458">   36</a></span><span class="preprocessor">#define DPM_ENTRY_EXPAND_OPTION_SEQ( ... )   \</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">    BOOST_PP_TUPLE_TO_SEQ( ( __VA_ARGS__ ) )</span></div>
 </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
@@ -143,36 +143,38 @@ $(function(){initNavTree('entry_8hpp_source.html','',''); });
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">//----------------------------------------------------------------------//</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">// DPM_DETAIL_ENTRY_DO</span></div>
 <div class="foldopen" id="foldopen00044" data-start="" data-end="">
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="entry_8hpp.html#a4c775df77d1ebc429c6ffc217adc052a">   44</a></span><span class="preprocessor">#define DPM_DETAIL_ENTRY_ARGS_EXPAND( GM_SEQS, CLASS, EN_IN_SEQ )              \</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="entry_8hpp.html#a4c775df77d1ebc429c6ffc217adc052a">   44</a></span><span class="preprocessor">#define DPM_DETAIL_ENTRY_ARGS_EXPAND( GM_SEQS, CLASS, EN_IN_SEQ ) \</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">    BOOST_PP_SEQ_TO_TUPLE( (GM_SEQS)(CLASS)BOOST_PP_SEQ_POP_FRONT( EN_IN_SEQ ) )</span></div>
 </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
 <div class="foldopen" id="foldopen00047" data-start="" data-end="">
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="entry_8hpp.html#a5795f5a6ff8e555acaa55694d2fe9282">   47</a></span><span class="preprocessor">#define DPM_DETAIL_ENTRY_OPTION_INVOKE_OP( _, D, EN_INVOKE_SEQ )               \</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">    BOOST_PP_EXPAND( BOOST_PP_SEQ_ELEM( 0, EN_INVOKE_SEQ )                     \</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">                       DPM_DETAIL_ENTRY_ARGS_EXPAND(                           \</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">                         BOOST_PP_SEQ_ELEM( 0, D ),                            \</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">                         BOOST_PP_SEQ_ELEM( 1, D ),                            \</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">                         EN_INVOKE_SEQ ) )</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="entry_8hpp.html#a5795f5a6ff8e555acaa55694d2fe9282">   47</a></span><span class="preprocessor">#define DPM_DETAIL_ENTRY_OPTION_INVOKE_OP( _, D, EN_INVOKE_SEQ ) \</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">    BOOST_PP_EXPAND( BOOST_PP_SEQ_ELEM( 0, EN_INVOKE_SEQ )       \</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">                         DPM_DETAIL_ENTRY_ARGS_EXPAND(           \</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">                             BOOST_PP_SEQ_ELEM( 0, D ),          \</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">                             BOOST_PP_SEQ_ELEM( 1, D ),          \</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">                             EN_INVOKE_SEQ ) )</span></div>
 </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">//----------------------------------------------------------------------//</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">//  DPM_DETAIL_CPP_ENTRY_EXPAND( EntriesSeq )</span></div>
 <div class="foldopen" id="foldopen00056" data-start="" data-end="">
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="entry_8hpp.html#ae490cf987fa97c234518e6aa22bf5d5e">   56</a></span><span class="preprocessor">#define DPM_DETAIL_ENTRY_OPTION_EXPAND_OP( _r, PREFIX, ENTRY )                 \</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="entry_8hpp.html#ae490cf987fa97c234518e6aa22bf5d5e">   56</a></span><span class="preprocessor">#define DPM_DETAIL_ENTRY_OPTION_EXPAND_OP( _r, PREFIX, ENTRY ) \</span></div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">    BOOST_PP_CAT( PREFIX, ENTRY )</span></div>
 </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="foldopen" id="foldopen00059" data-start="" data-end="">
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="entry_8hpp.html#a6d82f6729f1fa92890e508d503ad3a33">   59</a></span><span class="preprocessor">#define DPM_ENTRY_OPTIONS_EXPAND( PREFIX, CLASS, GM_SEQS, EN_SEQ )             \</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">    BOOST_PP_SEQ_FOR_EACH(                                                     \</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">      DPM_DETAIL_ENTRY_OPTION_INVOKE_OP,                                       \</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">      (GM_SEQS)( CLASS ),                                                      \</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">      BOOST_PP_SEQ_FOR_EACH(                                                   \</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">        DPM_DETAIL_ENTRY_OPTION_EXPAND_OP, PREFIX, EN_SEQ ) )</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="entry_8hpp.html#a6d82f6729f1fa92890e508d503ad3a33">   59</a></span><span class="preprocessor">#define DPM_ENTRY_OPTIONS_EXPAND( PREFIX, CLASS, GM_SEQS, EN_SEQ ) \</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">    BOOST_PP_SEQ_FOR_EACH(                                         \</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">        DPM_DETAIL_ENTRY_OPTION_INVOKE_OP,                         \</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">        (GM_SEQS)( CLASS ),                                        \</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">        BOOST_PP_SEQ_FOR_EACH(                                     \</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">            DPM_DETAIL_ENTRY_OPTION_EXPAND_OP,                     \</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">            PREFIX,                                                \</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">            EN_SEQ ) )</span></div>
 </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_CORE_CS_BINDING_MACRO_DETAIL_ENTRY_HPP_</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_CORE_CS_BINDING_MACRO_DETAIL_ENTRY_HPP_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

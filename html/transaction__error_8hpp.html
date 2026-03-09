@@ -93,11 +93,16 @@ $(function(){initNavTree('transaction__error_8hpp.html','',''); });
   <div class="headertitle"><div class="title">transaction_error.hpp ファイル</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;expected&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="model__base__concepts_8hpp_source.html">core/domain/model/model_base_concepts.hpp</a>&quot;</code><br />
+<code>#include &lt;boost/describe/enum.hpp&gt;</code><br />
+<code>#include &lt;boost/uuid/constants.hpp&gt;</code><br />
+<code>#include &lt;boost/uuid/uuid.hpp&gt;</code><br />
+<code>#include &lt;expected&gt;</code><br />
+<code>#include &lt;variant&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 transaction_error.hpp の依存先関係図:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="transaction__error_8hpp__incl.svg" width="191" height="144"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="transaction__error_8hpp__incl.svg" width="100%" height="476"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 被依存関係図:</div>
@@ -109,17 +114,46 @@ transaction_error.hpp の依存先関係図:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 クラス</h2></td></tr>
-<tr class="memitem:depicture_5Fmenu_3A_3Arepositories_3A_3Atransaction_5Ferror" id="r_depicture_5Fmenu_3A_3Arepositories_3A_3Atransaction_5Ferror"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1repositories_1_1transaction__error.html">depicture_menu::repositories::transaction_error</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Arepositories_3A_3Atransaction_5Ferrors_3A_3Aundefined_5Ferror" id="r_depicture_5Fmenu_3A_3Arepositories_3A_3Atransaction_5Ferrors_3A_3Aundefined_5Ferror"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1repositories_1_1transaction__errors_1_1undefined__error.html">depicture_menu::repositories::transaction_errors::undefined_error</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Arepositories_3A_3Atransaction_5Ferrors_3A_3Atransaction_5Ferror" id="r_depicture_5Fmenu_3A_3Arepositories_3A_3Atransaction_5Ferrors_3A_3Atransaction_5Ferror"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1repositories_1_1transaction__errors_1_1transaction__error.html">depicture_menu::repositories::transaction_errors::transaction_error</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">トランザクションエラー  <a href="structdepicture__menu_1_1repositories_1_1transaction__errors_1_1transaction__error.html#details">[詳解]</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 名前空間</h2></td></tr>
 <tr class="memitem:depicture_5Fmenu" id="r_depicture_5Fmenu"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu.html">depicture_menu</a></td></tr>
 <tr class="memitem:depicture_5Fmenu_3A_3Arepositories" id="r_depicture_5Fmenu_3A_3Arepositories"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1repositories.html">depicture_menu::repositories</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Arepositories_3A_3Atransaction_5Ferrors" id="r_depicture_5Fmenu_3A_3Arepositories_3A_3Atransaction_5Ferrors"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1repositories_1_1transaction__errors.html">depicture_menu::repositories::transaction_errors</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 型定義</h2></td></tr>
 <tr class="memitem:a6cb6805f93a0f2b8ad0ac22e33b14263" id="r_a6cb6805f93a0f2b8ad0ac22e33b14263"><td class="memTemplParams" colspan="2">template&lt;typename Result&gt; </td></tr>
-<tr class="memitem:a6cb6805f93a0f2b8ad0ac22e33b14263 template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1repositories.html#a6cb6805f93a0f2b8ad0ac22e33b14263">depicture_menu::repositories::transaction_result</a> = std::expected&lt; Result, <a class="el" href="structdepicture__menu_1_1repositories_1_1transaction__error.html">transaction_error</a> &gt;</td></tr>
+<tr class="memitem:a6cb6805f93a0f2b8ad0ac22e33b14263 template"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1repositories.html#a6cb6805f93a0f2b8ad0ac22e33b14263">depicture_menu::repositories::transaction_result</a> = std::expected&lt; Result, <a class="el" href="structdepicture__menu_1_1repositories_1_1transaction__errors_1_1transaction__error.html">transaction_error</a> &gt;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+関数</h2></td></tr>
+<tr id="func-members-0" class="groupHeader"><td colspan="2"><div class="groupHeader">リポジトリエラー</div></td></tr>
+<tr class="memitem:a67dedc53e657f3397432ceed922875bb" id="r_a67dedc53e657f3397432ceed922875bb"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1repositories_1_1transaction__errors.html#a67dedc53e657f3397432ceed922875bb">depicture_menu::repositories::transaction_errors::BOOST_DEFINE_ENUM_CLASS</a> (repository_error_operation_kind, none, create, read, update, remove) struct repository_error</td></tr>
+<tr class="memdesc:a67dedc53e657f3397432ceed922875bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">リポジトリオペレーションエラー  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-member-group" class="groupheader"><a id="member-group" name="member-group"></a>
+トランザクションエラー基本定義</h2></td></tr>
+<tr class="memitem:aa397a121460b4e8890c9874132bcad9d" id="r_aa397a121460b4e8890c9874132bcad9d"><td class="memItemLeft">constexpr auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1repositories_1_1transaction__errors.html#aa397a121460b4e8890c9874132bcad9d">depicture_menu::repositories::transaction_errors::undefined_transaction_error</a></td></tr>
+<tr class="memdesc:aa397a121460b4e8890c9874132bcad9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">未定義エラー  <br /></td></tr>
+<tr class="memitem:acd5b26399e3b88086389b0800b277b1d" id="r_acd5b26399e3b88086389b0800b277b1d"><td class="memTemplParams" colspan="2">template&lt;repository_error_operation_kind K, domain::models::concepts::identifiable_value ID&gt; </td></tr>
+<tr class="memitem:acd5b26399e3b88086389b0800b277b1d template"><td class="memItemLeft">std::unexpected&lt; <a class="el" href="structdepicture__menu_1_1repositories_1_1transaction__errors_1_1transaction__error.html">transaction_error</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1repositories_1_1transaction__errors.html#acd5b26399e3b88086389b0800b277b1d">depicture_menu::repositories::transaction_errors::transaction_repository_error</a> (ID const &amp;id)</td></tr>
+<tr class="memdesc:acd5b26399e3b88086389b0800b277b1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">リポジトリエラー  <br /></td></tr>
+<tr class="memitem:ac5a91e732b6344df61f5c13a3a34d5ca" id="r_ac5a91e732b6344df61f5c13a3a34d5ca"><td class="memTemplParams" colspan="2">template&lt;domain::models::concepts::identifiable_value ID&gt; </td></tr>
+<tr class="memitem:ac5a91e732b6344df61f5c13a3a34d5ca template"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1repositories_1_1transaction__errors.html#ac5a91e732b6344df61f5c13a3a34d5ca">depicture_menu::repositories::transaction_errors::create_repository_error</a> (ID const &amp;id)</td></tr>
+<tr class="memdesc:ac5a91e732b6344df61f5c13a3a34d5ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">リポジトリクリエイトエラー  <br /></td></tr>
+<tr class="memitem:aa9992ae6f6bb4491033d2260cb63806e" id="r_aa9992ae6f6bb4491033d2260cb63806e"><td class="memTemplParams" colspan="2">template&lt;domain::models::concepts::identifiable_value ID&gt; </td></tr>
+<tr class="memitem:aa9992ae6f6bb4491033d2260cb63806e template"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1repositories_1_1transaction__errors.html#aa9992ae6f6bb4491033d2260cb63806e">depicture_menu::repositories::transaction_errors::read_repository_error</a> (ID const &amp;id)</td></tr>
+<tr class="memdesc:aa9992ae6f6bb4491033d2260cb63806e"><td class="mdescLeft">&#160;</td><td class="mdescRight">リポジトリリードエラー  <br /></td></tr>
+<tr class="memitem:a8406a0bcfa31a9a128642257efa213b1" id="r_a8406a0bcfa31a9a128642257efa213b1"><td class="memTemplParams" colspan="2">template&lt;domain::models::concepts::identifiable_value ID&gt; </td></tr>
+<tr class="memitem:a8406a0bcfa31a9a128642257efa213b1 template"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1repositories_1_1transaction__errors.html#a8406a0bcfa31a9a128642257efa213b1">depicture_menu::repositories::transaction_errors::update_repository_error</a> (ID const &amp;id)</td></tr>
+<tr class="memdesc:a8406a0bcfa31a9a128642257efa213b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">リポジトリアップデートエラー  <br /></td></tr>
+<tr class="memitem:a822eb97ab5812473d83f043ced098180" id="r_a822eb97ab5812473d83f043ced098180"><td class="memTemplParams" colspan="2">template&lt;domain::models::concepts::identifiable_value ID&gt; </td></tr>
+<tr class="memitem:a822eb97ab5812473d83f043ced098180 template"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1repositories_1_1transaction__errors.html#a822eb97ab5812473d83f043ced098180">depicture_menu::repositories::transaction_errors::erase_repository_error</a> (ID const &amp;id)</td></tr>
+<tr class="memdesc:a822eb97ab5812473d83f043ced098180"><td class="mdescLeft">&#160;</td><td class="mdescRight">リポジトリリムーブエラー  <br /></td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

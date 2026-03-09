@@ -115,82 +115,86 @@ $(function(){initNavTree('injection__mock_8hpp_source.html','',''); });
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structinjection__mock.html#acdcd7e1f964bfc7f20eca2578d619e84">   18</a></span>    <span class="keyword">auto</span> <a class="code hl_function" href="structinjection__mock.html#acdcd7e1f964bfc7f20eca2578d619e84">get</a>( )</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    {</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> ( aa::concepts::kind_as_signatured_tag&lt;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                         Tag,</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                         aa::injection_kind::repository &gt; )</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                           Tag,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                           aa::injection_kind::repository &gt; )</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            <span class="keywordflow">return</span> aa::add_repository&lt; Tag &gt;( func );</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordflow">else</span> <span class="keywordflow">return</span> aa::add_presenter&lt; Tag &gt;( func );</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    }</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            <span class="keywordflow">return</span> aa::add_presenter&lt; Tag &gt;( func );</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    }</div>
 </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>};</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>};</div>
 </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="injection__mock_8hpp.html#af53f58f5ce24a77b8c7257ef48330146">   28</a></span><span class="preprocessor">#define IMPLEMENT_INJECTION( tag_name ) BOOST_PP_CAT( mock_func_, tag_name )</span></div>
-<div class="foldopen" id="foldopen00029" data-start="" data-end="">
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="injection__mock_8hpp.html#ad09eac2d4d1dcc249abd7012893e6d8c">   29</a></span><span class="preprocessor">#define DEFINE_INJECTION( NS_, tag_name )                                      \</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">    injection_mock&lt; NS_ tag_name &gt; IMPLEMENT_INJECTION( tag_name );</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="injection__mock_8hpp.html#af53f58f5ce24a77b8c7257ef48330146">   29</a></span><span class="preprocessor">#define IMPLEMENT_INJECTION( tag_name ) BOOST_PP_CAT( mock_func_, tag_name )</span></div>
+<div class="foldopen" id="foldopen00030" data-start="" data-end="">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="injection__mock_8hpp.html#ad09eac2d4d1dcc249abd7012893e6d8c">   30</a></span><span class="preprocessor">#define DEFINE_INJECTION( NS_, tag_name )                           \</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">    injection_mock&lt; NS_ tag_name &gt; IMPLEMENT_INJECTION( tag_name );</span></div>
 </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">// fixture macro</span></div>
-<div class="foldopen" id="foldopen00034" data-start="" data-end="">
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="injection__mock_8hpp.html#a805b743fd929a1224460557ad6c1f9b8">   34</a></span><span class="preprocessor">#define INJECTIONS_OP( _, I_, data_ )                                          \</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">    DEFINE_INJECTION( du::tag::, BOOST_PP_SEQ_ELEM( I_, data_ ) )</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">// fixture macro</span></div>
+<div class="foldopen" id="foldopen00035" data-start="" data-end="">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="injection__mock_8hpp.html#a805b743fd929a1224460557ad6c1f9b8">   35</a></span><span class="preprocessor">#define INJECTIONS_OP( _, I_, data_ )                             \</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">    DEFINE_INJECTION( du::tag::, BOOST_PP_SEQ_ELEM( I_, data_ ) )</span></div>
 </div>
-<div class="foldopen" id="foldopen00036" data-start="" data-end="">
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="injection__mock_8hpp.html#a79d8c56053e935b95fdbcc68c1ae3641">   36</a></span><span class="preprocessor">#define DEFINE_FIXTURE_INJECTIONS( NS_, TAGS )                                 \</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">    BOOST_PP_REPEAT( BOOST_PP_SEQ_SIZE( TAGS ), INJECTIONS_OP, TAGS )</span></div>
+<div class="foldopen" id="foldopen00037" data-start="" data-end="">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="injection__mock_8hpp.html#a79d8c56053e935b95fdbcc68c1ae3641">   37</a></span><span class="preprocessor">#define DEFINE_FIXTURE_INJECTIONS( NS_, TAGS )                        \</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">    BOOST_PP_REPEAT( BOOST_PP_SEQ_SIZE( TAGS ), INJECTIONS_OP, TAGS )</span></div>
 </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="foldopen" id="foldopen00039" data-start="" data-end="">
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="injection__mock_8hpp.html#a267721b4a609eb4d72d9fdc31adcbe7d">   39</a></span><span class="preprocessor">#define ING_ARGS( _, I_, SEQ_ )                                                \</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">    IMPLEMENT_INJECTION( BOOST_PP_SEQ_ELEM( I_, SEQ_ ) ).get( )</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="foldopen" id="foldopen00040" data-start="" data-end="">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="injection__mock_8hpp.html#a267721b4a609eb4d72d9fdc31adcbe7d">   40</a></span><span class="preprocessor">#define ING_ARGS( _, I_, SEQ_ )                                 \</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">    IMPLEMENT_INJECTION( BOOST_PP_SEQ_ELEM( I_, SEQ_ ) ).get( )</span></div>
 </div>
-<div class="foldopen" id="foldopen00041" data-start="" data-end="">
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="injection__mock_8hpp.html#a9310765f8052309ce1d20167ad4c6db4">   41</a></span><span class="preprocessor">#define KICK_INJECTION( usecase_functor_, TAGS )                               \</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">    aa::invoke(                                                                \</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">      usecase_functor_,                                                        \</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">      BOOST_PP_ENUM( BOOST_PP_SEQ_SIZE( TAGS ), ING_ARGS, TAGS ) );</span></div>
+<div class="foldopen" id="foldopen00042" data-start="" data-end="">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="injection__mock_8hpp.html#a9310765f8052309ce1d20167ad4c6db4">   42</a></span><span class="preprocessor">#define KICK_INJECTION( usecase_functor_, TAGS )                      \</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">    aa::invoke(                                                       \</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">        usecase_functor_,                                             \</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">        BOOST_PP_ENUM( BOOST_PP_SEQ_SIZE( TAGS ), ING_ARGS, TAGS ) );</span></div>
 </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="injection__mock_8hpp.html#a24c569ca4c7d40018e3ea02b79eb9578">   47</a></span><span class="preprocessor">#define INJECTION_INVOKE_FIXUTURE(                                             \</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">  fixuture_name_, usecase_functor_, tag_name_space_, ... )                     \</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">    struct fixuture_name_                                                      \</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">    {                                                                          \</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">        DEFINE_FIXTURE_INJECTIONS(                                             \</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">          tag_name_space_,                                                     \</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">          BOOST_PP_VARIADIC_TO_SEQ( __VA_ARGS__ ) )                            \</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">        void kick_invoke( )                                                    \</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">        {                                                                      \</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">            KICK_INJECTION(                                                    \</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">              usecase_functor_, BOOST_PP_VARIADIC_TO_SEQ( __VA_ARGS__ ) )      \</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">        }                                                                      \</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">        ~fixuture_name_( )                                                     \</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">        {                                                                      \</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">            kick_invoke( );                                                    \</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">            mock::verify( );                                                   \</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">        }                                                                      \</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">    };</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">// mock acccess</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="injection__mock_8hpp.html#aa2ffed84b5b116a940c85a2f3032db89">   67</a></span><span class="preprocessor">#define INJ_MOCK( tag_name ) MOCK_EXPECT( IMPLEMENT_INJECTION( tag_name ).func )</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">/*</span><span class="comment"></span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">/// fixutre example</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>INJECTION_INVOKE_FIXUTURE( fixture_name,</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    usecase_functor{ .arg = 3 },</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    tag_namespace::,</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>     action_repository ,</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>     send_keyinput ,</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>     top_window_enum ,</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>     get_process_by_window )</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>BOOST_FIXTURE_TEST_CASE( test_name, fixture_name ){</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>     INJ_MOCK( action_repository ).once();</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="injection__mock_8hpp.html#ace2a28bdc0fc1c0f8a792dd472905e8a">   48</a></span><span class="preprocessor">#define INJECTION_INVOKE_FIXUTURE(                                     \</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">    fixuture_name_,                                                    \</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">    usecase_functor_,                                                  \</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">    tag_name_space_,                                                   \</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">    ... )                                                              \</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">    struct fixuture_name_                                              \</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">    {                                                                  \</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">        DEFINE_FIXTURE_INJECTIONS(                                     \</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">            tag_name_space_, BOOST_PP_VARIADIC_TO_SEQ( __VA_ARGS__ ) ) \</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">        void kick_invoke( )                                            \</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">        {                                                              \</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">            KICK_INJECTION(                                            \</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">                usecase_functor_,                                      \</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">                BOOST_PP_VARIADIC_TO_SEQ( __VA_ARGS__ ) )              \</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">        }                                                              \</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">        ~fixuture_name_( )                                             \</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">        {                                                              \</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">            kick_invoke( );                                            \</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">            mock::verify( );                                           \</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">        }                                                              \</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">    };</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">// mock acccess</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="injection__mock_8hpp.html#aa2ffed84b5b116a940c85a2f3032db89">   71</a></span><span class="preprocessor">#define INJ_MOCK( tag_name ) MOCK_EXPECT( IMPLEMENT_INJECTION( tag_name ).func )</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">/*</span><span class="comment"></span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">/// fixutre example</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>INJECTION_INVOKE_FIXUTURE( fixture_name,</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    usecase_functor{ .arg = 3 },</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    tag_namespace::,</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>     action_repository ,</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>     send_keyinput ,</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>     top_window_enum ,</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>     get_process_by_window )</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>*/</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">#endif    </span><span class="comment">// TEST_CORE_USECASE_INJECTION_MOCK_HPP_</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>BOOST_FIXTURE_TEST_CASE( test_name, fixture_name ){</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>     INJ_MOCK( action_repository ).once();</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>}</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>*/</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">#endif    </span><span class="comment">// TEST_CORE_USECASE_INJECTION_MOCK_HPP_</span></div>
 <div class="ttc" id="astructinjection__mock_html"><div class="ttname"><a href="structinjection__mock.html">injection_mock</a></div><div class="ttdef"><b>Definition</b> <a href="#l00012">injection_mock.hpp:13</a></div></div>
 <div class="ttc" id="astructinjection__mock_html_a38d1bb4a58b5fa4a4ae5cde035bfddfd"><div class="ttname"><a href="structinjection__mock.html#a38d1bb4a58b5fa4a4ae5cde035bfddfd">injection_mock::sig_t</a></div><div class="ttdeci">aa::tag_utility::with_signature&lt; Tag &gt;::type sig_t</div><div class="ttdef"><b>Definition</b> <a href="#l00015">injection_mock.hpp:15</a></div></div>
 <div class="ttc" id="astructinjection__mock_html_acdcd7e1f964bfc7f20eca2578d619e84"><div class="ttname"><a href="structinjection__mock.html#acdcd7e1f964bfc7f20eca2578d619e84">injection_mock::get</a></div><div class="ttdeci">auto get()</div><div class="ttdef"><b>Definition</b> <a href="#l00018">injection_mock.hpp:18</a></div></div>

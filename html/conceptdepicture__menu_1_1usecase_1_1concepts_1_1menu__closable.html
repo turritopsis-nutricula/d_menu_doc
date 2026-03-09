@@ -98,10 +98,10 @@ $(function(){initNavTree('conceptdepicture__menu_1_1usecase_1_1concepts_1_1menu_
 <h2 id="header-conceptdef" class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
 <div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptdepicture__menu_1_1usecase_1_1concepts_1_1menu__closable.html">menu_closable</a> =</div>
-<div class="line">  !boost::di::aux::is_complete&lt; T &gt;::value ||</div>
-<div class="line">  <span class="keyword">requires</span>( T t, <a class="code hl_struct" href="structdepicture__menu_1_1usecase_1_1menu__view_1_1dto_1_1close__menu__dto.html">menu_view::dto::close_menu_dto</a> <span class="keyword">const</span>&amp; <a class="code hl_namespace" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html">dto</a> ) {</div>
-<div class="line">      { t.close_menu( <a class="code hl_namespace" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html">dto</a> ) };</div>
-<div class="line">  }</div>
+<div class="line">        !boost::di::aux::is_complete&lt; T &gt;::value ||</div>
+<div class="line">        <span class="keyword">requires</span>( T t, <a class="code hl_struct" href="structdepicture__menu_1_1usecase_1_1menu__view_1_1dto_1_1close__menu__dto.html">menu_view::dto::close_menu_dto</a> <span class="keyword">const</span>&amp; <a class="code hl_namespace" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html">dto</a> ) {</div>
+<div class="line">            { t.close_menu( <a class="code hl_namespace" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html">dto</a> ) };</div>
+<div class="line">        }</div>
 <div class="ttc" id="aconceptdepicture__menu_1_1usecase_1_1concepts_1_1menu__closable_html"><div class="ttname"><a href="conceptdepicture__menu_1_1usecase_1_1concepts_1_1menu__closable.html">depicture_menu::usecase::concepts::menu_closable</a></div><div class="ttdef"><b>Definition</b> <a href="menu__view__model__interface_8hpp_source.html#l00027">menu_view_model_interface.hpp:27</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1backup_1_1dto_html"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html">depicture_menu::usecase::backup::dto</a></div><div class="ttdef"><b>Definition</b> <a href="backup__data_8hpp_source.html#l00010">backup_data.hpp:11</a></div></div>
 <div class="ttc" id="astructdepicture__menu_1_1usecase_1_1menu__view_1_1dto_1_1close__menu__dto_html"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1menu__view_1_1dto_1_1close__menu__dto.html">depicture_menu::usecase::menu_view::dto::close_menu_dto</a></div><div class="ttdef"><b>Definition</b> <a href="menu__view__dto_8hpp_source.html#l00008">menu_view_dto.hpp:9</a></div></div>

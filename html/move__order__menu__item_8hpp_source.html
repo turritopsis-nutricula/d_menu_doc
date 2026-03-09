@@ -95,7 +95,7 @@ $(function(){initNavTree('move__order__menu__item_8hpp_source.html','',''); });
 <div class="contents">
 <a href="move__order__menu__item_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//----------------------------------------------------------------------//</span><span class="comment"></span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">/** @file move_order_menu_item.hpp</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * @brief メニューアイテム入れ替えinput DTO</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * @brief メニューアイテム入れ替え usecase</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//----------------------------------------------------------------------//</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef SRC_CORE_USECASE_CONFIG_VIEW_MOVE_ORDER_MENU_ITEM_HPP_</span></div>
@@ -111,18 +111,18 @@ $(function(){initNavTree('move__order__menu__item_8hpp_source.html','',''); });
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">template</span>&lt; <span class="keyword">typename</span> presenter_t = <span class="keyword">class</span> t_move_menu_item_presenter &gt;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">requires</span>(</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>      !boost::di::aux::is_complete&lt; presenter_t &gt;::value ||</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>      concepts::menu_changed_presentable&lt; presenter_t &gt; )</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">//  requires(</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">//      !boost::di::aux::is_complete&lt; presenter_t &gt;::value ||</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">//      concepts::menu_changed_presentable&lt; presenter_t &gt; )</span></div>
 <div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1usecase_1_1move__order__menu__item.html">   22</a></span><span class="keyword">struct</span> <a class="code hl_function" href="structdepicture__menu_1_1usecase_1_1move__order__menu__item.html#ad4eab8787d5d6d9bc40a45937994d619">move_order_menu_item</a></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1usecase_1_1move__order__menu__item.html">   22</a></span><span class="keyword">struct </span><a class="code hl_function" href="structdepicture__menu_1_1usecase_1_1move__order__menu__item.html#ad4eab8787d5d6d9bc40a45937994d619">move_order_menu_item</a></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1usecase_1_1move__order__menu__item.html#ad4eab8787d5d6d9bc40a45937994d619">   25</a></span>    <a class="code hl_function" href="structdepicture__menu_1_1usecase_1_1move__order__menu__item.html#ad4eab8787d5d6d9bc40a45937994d619">move_order_menu_item</a>(</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>      <a class="code hl_typedef" href="namespacedepicture__menu_1_1applications.html#a1168dfec76130ba465ebed176eb5ba9e">applications::transaction_source_ptr_t</a> t,</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>      presenter_t                            presenter )</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>      : <a class="code hl_variable" href="structdepicture__menu_1_1usecase_1_1move__order__menu__item.html#a0060be2cdd84b0a18da35b5bdb152ffb">transaction_source_</a>( t ), <a class="code hl_variable" href="structdepicture__menu_1_1usecase_1_1move__order__menu__item.html#aef45788935aa16b9904c296ffa5cb6a2">presenter_</a>( presenter )</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1applications.html#a1168dfec76130ba465ebed176eb5ba9e">applications::transaction_source_ptr_t</a> t, presenter_t presenter )</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        : <a class="code hl_variable" href="structdepicture__menu_1_1usecase_1_1move__order__menu__item.html#a0060be2cdd84b0a18da35b5bdb152ffb">transaction_source_</a>( t )</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        , <a class="code hl_variable" href="structdepicture__menu_1_1usecase_1_1move__order__menu__item.html#aef45788935aa16b9904c296ffa5cb6a2">presenter_</a>( presenter )</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    { }</div>
 </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
@@ -130,34 +130,34 @@ $(function(){initNavTree('move__order__menu__item_8hpp_source.html','',''); });
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1usecase_1_1move__order__menu__item.html#a19675c3961f0029781c43bb647135684">   31</a></span>    <span class="keywordtype">void</span> operator( )( dto::menu_item_order_change <span class="keyword">const</span>&amp; <a class="code hl_namespace" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html">dto</a> ) <span class="keyword">const</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    {</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keyword">auto</span> ret = <a class="code hl_function" href="namespacedepicture__menu_1_1repositories.html#a245ba008949ea92721d80817fea6a2c8">repositories::do_transaction&lt; domain::menu::radialmenu &gt;</a>(</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>          *<a class="code hl_variable" href="structdepicture__menu_1_1usecase_1_1move__order__menu__item.html#a0060be2cdd84b0a18da35b5bdb152ffb">transaction_source_</a>,</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>          [ <a class="code hl_namespace" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html">dto</a> ]( <span class="keyword">auto</span> t ) -&gt; std::optional&lt; domain::menu::radialmenu &gt; {</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>              <span class="keyword">auto</span> [ _, id, from_index, to_index ] =</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            *<a class="code hl_variable" href="structdepicture__menu_1_1usecase_1_1move__order__menu__item.html#a0060be2cdd84b0a18da35b5bdb152ffb">transaction_source_</a>,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            [ <a class="code hl_namespace" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html">dto</a> ]( <span class="keyword">auto</span> t ) -&gt; std::optional&lt; domain::menu::radialmenu &gt; {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <span class="keyword">auto</span> [ _, id, from_index, to_index ] =</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                boost::pfr::structure_tie( <a class="code hl_namespace" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html">dto</a> );</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>              <span class="keyword">auto</span>&amp; repos = get&lt; domain::menu::radialmenu &gt;( t );</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>              <span class="keyword">auto</span>  m     = repos.read( <span class="keywordtype">id</span> );</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="keyword">auto</span>&amp; repos = get&lt; domain::menu::radialmenu &gt;( t );</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keyword">auto</span>  m     = repos.read( <span class="keywordtype">id</span> );</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>              <span class="keywordflow">if</span> ( !m ) <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keywordflow">if</span> ( !m ) <span class="keywordflow">return</span> std::nullopt;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>              <span class="keyword">auto</span>&amp; l = m-&gt;items( );</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <span class="keyword">auto</span>&amp; l = m-&gt;items( );</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>              <span class="keywordflow">if</span> ( !( from_index &lt; std::ranges::ssize( l ) &amp;&amp;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                      to_index &lt; std::ranges::ssize( l ) ) )</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                  <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <span class="keywordflow">if</span> ( !( from_index &lt; std::ranges::ssize( l ) &amp;&amp;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                    to_index &lt; std::ranges::ssize( l ) ) )</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                <span class="keywordflow">return</span> std::nullopt;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>              <span class="keyword">auto</span> iter = ( l.begin( ) + from_index );</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>              <span class="keyword">auto</span> item = *iter;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keyword">auto</span> iter = ( l.begin( ) + from_index );</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <span class="keyword">auto</span> item = *iter;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>              l.erase( iter );</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>              l.insert( l.begin( ) + to_index, std::move( item ) );</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            l.erase( iter );</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            l.insert( l.begin( ) + to_index, std::move( item ) );</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>              <span class="keywordflow">if</span> ( repos.update( *m ) ) { <span class="keywordflow">return</span> *m; }</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>              <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>              {</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                  <span class="keywordflow">return</span> std::nullopt;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>              }</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>          } );</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keywordflow">if</span> ( repos.update( *m ) ) { <span class="keywordflow">return</span> *m; }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        } );</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
 </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
@@ -171,10 +171,10 @@ $(function(){initNavTree('move__order__menu__item_8hpp_source.html','',''); });
 <div class="ttc" id="aconfig__view__model__interface_8hpp_html"><div class="ttname"><a href="config__view__model__interface_8hpp.html">config_view_model_interface.hpp</a></div></div>
 <div class="ttc" id="amenu__item__order__change_8hpp_html"><div class="ttname"><a href="menu__item__order__change_8hpp.html">menu_item_order_change.hpp</a></div><div class="ttdoc">menu order change dto</div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1applications_html_a1168dfec76130ba465ebed176eb5ba9e"><div class="ttname"><a href="namespacedepicture__menu_1_1applications.html#a1168dfec76130ba465ebed176eb5ba9e">depicture_menu::applications::transaction_source_ptr_t</a></div><div class="ttdeci">std::shared_ptr&lt; transaction_source &gt; transaction_source_ptr_t</div><div class="ttdef"><b>Definition</b> <a href="app__transaction_8hpp_source.html#l00032">app_transaction.hpp:32</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1repositories_html_a245ba008949ea92721d80817fea6a2c8"><div class="ttname"><a href="namespacedepicture__menu_1_1repositories.html#a245ba008949ea92721d80817fea6a2c8">depicture_menu::repositories::do_transaction</a></div><div class="ttdeci">auto do_transaction(transaction_source_base&lt; Ss... &gt; &amp;source, F &amp;&amp;f) -&gt; transaction_result_t&lt; F, transaction&lt; Ts... &gt; &gt;</div><div class="ttdef"><b>Definition</b> <a href="do__transaction_8hpp_source.html#l00058">do_transaction.hpp:58</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1repositories_html_a245ba008949ea92721d80817fea6a2c8"><div class="ttname"><a href="namespacedepicture__menu_1_1repositories.html#a245ba008949ea92721d80817fea6a2c8">depicture_menu::repositories::do_transaction</a></div><div class="ttdeci">auto do_transaction(transaction_source_base&lt; Ss... &gt; &amp;source, F &amp;&amp;f) -&gt; transaction_result_t&lt; F, transaction&lt; Ts... &gt; &gt;</div><div class="ttdef"><b>Definition</b> <a href="do__transaction_8hpp_source.html#l00057">do_transaction.hpp:57</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1backup_1_1dto_html"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html">depicture_menu::usecase::backup::dto</a></div><div class="ttdef"><b>Definition</b> <a href="backup__data_8hpp_source.html#l00010">backup_data.hpp:11</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1usecase_html"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase.html">depicture_menu::usecase</a></div><div class="ttdoc">メニュー更新 usecase</div><div class="ttdef"><b>Definition</b> <a href="action__command__invoker__interface_8hpp_source.html#l00012">action_command_invoker_interface.hpp:13</a></div></div>
-<div class="ttc" id="aradialmenu_8hpp_html"><div class="ttname"><a href="radialmenu_8hpp.html">radialmenu.hpp</a></div></div>
+<div class="ttc" id="aradialmenu_8hpp_html"><div class="ttname"><a href="radialmenu_8hpp.html">radialmenu.hpp</a></div><div class="ttdoc">メニュー Domain Entity</div></div>
 <div class="ttc" id="astructdepicture__menu_1_1usecase_1_1move__order__menu__item_html_a0060be2cdd84b0a18da35b5bdb152ffb"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1move__order__menu__item.html#a0060be2cdd84b0a18da35b5bdb152ffb">depicture_menu::usecase::move_order_menu_item::transaction_source_</a></div><div class="ttdeci">applications::transaction_source_ptr_t transaction_source_</div><div class="ttdef"><b>Definition</b> <a href="#l00064">move_order_menu_item.hpp:64</a></div></div>
 <div class="ttc" id="astructdepicture__menu_1_1usecase_1_1move__order__menu__item_html_ad4eab8787d5d6d9bc40a45937994d619"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1move__order__menu__item.html#ad4eab8787d5d6d9bc40a45937994d619">depicture_menu::usecase::move_order_menu_item::move_order_menu_item</a></div><div class="ttdeci">move_order_menu_item(applications::transaction_source_ptr_t t, presenter_t presenter)</div><div class="ttdef"><b>Definition</b> <a href="#l00025">move_order_menu_item.hpp:25</a></div></div>
 <div class="ttc" id="astructdepicture__menu_1_1usecase_1_1move__order__menu__item_html_aef45788935aa16b9904c296ffa5cb6a2"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1move__order__menu__item.html#aef45788935aa16b9904c296ffa5cb6a2">depicture_menu::usecase::move_order_menu_item::presenter_</a></div><div class="ttdeci">presenter_t presenter_</div><div class="ttdef"><b>Definition</b> <a href="#l00065">move_order_menu_item.hpp:65</a></div></div>

@@ -56,14 +56,33 @@
 </a>
 </g>
 </g>
+<!-- Node4 -->
+<g id="Node000004" class="node">
+<title>Node4</title>
+<g id="a_Node000004"><a xlink:href="classdepicture__menu_1_1singleton.html#ab3a8df96e817c8ccb1ab61434f90c416" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="513,-60 357.5,-60 357.5,-16 513,-16 513,-60"/>
+<text xml:space="preserve" text-anchor="start" x="365.5" y="-46.5" font-family="Helvetica,sans-Serif" font-size="10.00">depicture_menu::singleton</text>
+<text xml:space="preserve" text-anchor="start" x="365.5" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; detail_d_menu::core_interface</text>
+<text xml:space="preserve" text-anchor="middle" x="435.25" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00">_impl &gt;::get_instance</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node4 -->
+<g id="edge3_Node000001_Node000004" class="edge">
+<title>Node1&#45;&gt;Node4</title>
+<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M143.01,-73.41C201,-66.36 283.44,-56.34 345.82,-48.75"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="346.22,-52.23 355.72,-47.55 345.37,-45.28 346.22,-52.23"/>
+</a>
+</g>
+</g>
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classdepicture__menu_1_1singleton.html#ab3a8df96e817c8ccb1ab61434f90c416" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="513,-57 357.5,-57 357.5,-13 513,-13 513,-57"/>
-<text xml:space="preserve" text-anchor="start" x="365.5" y="-43.5" font-family="Helvetica,sans-Serif" font-size="10.00">depicture_menu::singleton</text>
-<text xml:space="preserve" text-anchor="start" x="365.5" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; detail_d_menu::core_interface</text>
-<text xml:space="preserve" text-anchor="middle" x="435.25" y="-19.5" font-family="Helvetica,sans-Serif" font-size="10.00">_impl &gt;::get_instance</text>
+<g id="a_Node000005"><a xlink:href="namespacedepicture__menu_1_1applications.html#af2f3f1b3b5999de9758861d236b73323" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="321.5,-32 178.75,-32 178.75,0 321.5,0 321.5,-32"/>
+<text xml:space="preserve" text-anchor="start" x="186.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">depicture_menu::applications</text>
+<text xml:space="preserve" text-anchor="middle" x="250.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">::make_transaction_injector</text>
 </a>
 </g>
 </g>
@@ -71,54 +90,17 @@
 <g id="edge4_Node000001_Node000005" class="edge">
 <title>Node1&#45;&gt;Node5</title>
 <g id="a_edge4_Node000001_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M143.01,-72.83C201,-65.29 283.44,-54.59 345.82,-46.49"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="346.26,-49.96 355.72,-45.2 345.35,-43.02 346.26,-49.96"/>
-</a>
-</g>
-</g>
-<!-- Node6 -->
-<g id="Node000006" class="node">
-<title>Node6</title>
-<g id="a_Node000006"><a xlink:href="namespacedepicture__menu_1_1applications.html#af2f3f1b3b5999de9758861d236b73323" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="321.5,-32 178.75,-32 178.75,0 321.5,0 321.5,-32"/>
-<text xml:space="preserve" text-anchor="start" x="186.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">depicture_menu::applications</text>
-<text xml:space="preserve" text-anchor="middle" x="250.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">::make_transaction_injector</text>
-</a>
-</g>
-</g>
-<!-- Node1&#45;&gt;Node6 -->
-<g id="edge5_Node000001_Node000006" class="edge">
-<title>Node1&#45;&gt;Node6</title>
-<g id="a_edge5_Node000001_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M116.52,-65.52C140.23,-56.66 169.66,-45.67 194.77,-36.3"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="195.67,-39.7 203.82,-32.92 193.23,-33.14 195.67,-39.7"/>
 </a>
 </g>
 </g>
-<!-- Node4 -->
-<g id="Node000004" class="node">
-<title>Node4</title>
-<g id="a_Node000004"><a xlink:href="_test_config_view_presenter_8cpp.html#a21b35e47ac3d8358063ede6968e59eaa" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="455.25,-114 415.25,-114 415.25,-94 455.25,-94 455.25,-114"/>
-<text xml:space="preserve" text-anchor="middle" x="435.25" y="-100.5" font-family="Helvetica,sans-Serif" font-size="10.00">name</text>
-</a>
-</g>
-</g>
-<!-- Node3&#45;&gt;Node4 -->
-<g id="edge3_Node000003_Node000004" class="edge">
-<title>Node3&#45;&gt;Node4</title>
-<g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M321.93,-104C350.12,-104 381.09,-104 403.35,-104"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="403.24,-107.5 413.24,-104 403.24,-100.5 403.24,-107.5"/>
-</a>
-</g>
-</g>
-<!-- Node6&#45;&gt;Node5 -->
-<g id="edge6_Node000006_Node000005" class="edge">
-<title>Node6&#45;&gt;Node5</title>
-<g id="a_edge6_Node000006_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M321.93,-23.35C329.79,-24.16 337.88,-25 345.93,-25.84"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="345.44,-29.3 355.75,-26.86 346.17,-22.34 345.44,-29.3"/>
+<!-- Node5&#45;&gt;Node4 -->
+<g id="edge5_Node000005_Node000004" class="edge">
+<title>Node5&#45;&gt;Node4</title>
+<g id="a_edge5_Node000005_Node000004"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M321.93,-24.51C329.79,-25.45 337.88,-26.42 345.93,-27.39"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="345.41,-30.85 355.75,-28.57 346.24,-23.9 345.41,-30.85"/>
 </a>
 </g>
 </g>

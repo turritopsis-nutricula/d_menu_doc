@@ -124,7 +124,7 @@ $(function(){initNavTree('format__version_8hpp_source.html','',''); });
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1stab__format__converter.html#a58f4137c2dfea48bf706e5395e1af5b3">   24</a></span>    T operator( )( T&amp;&amp; ) <span class="keyword">const</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    {</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        assert( <span class="keyword">false</span> );</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordflow">return</span> T { };</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordflow">return</span> T{ };</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    }</div>
 </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
@@ -140,19 +140,21 @@ $(function(){initNavTree('format__version_8hpp_source.html','',''); });
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">// CONV                  : converter : type</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">//</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="format__version_8hpp.html#ab35474d8616ac50de4225bc367bfc3d2">   40</a></span><span class="preprocessor">#define DPM_BACKUP_JSON_FORMAT_DEFINE(                                         \</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">  FORMAT_TYPE_NAMESPACE, VERSION_NUM, CONV )                                   \</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">    namespace depicture_menu::applications::backup_json::formats               \</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">    {                                                                          \</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">    template&lt;&gt;                                                                 \</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">    struct format_version&lt; FORMAT_TYPE_NAMESPACE::backup_json &gt;                \</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">    {                                                                          \</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">        constexpr static int version = VERSION_NUM;                            \</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">        using converter_t            = CONV;                                   \</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">    };                                                                         \</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">    }</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_CORE_APPLICATION_BACKUP_JSON_FORMAT_FORMAT_VERSION_HPP_</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="format__version_8hpp.html#ab35474d8616ac50de4225bc367bfc3d2">   40</a></span><span class="preprocessor">#define DPM_BACKUP_JSON_FORMAT_DEFINE(                              \</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">    FORMAT_TYPE_NAMESPACE,                                          \</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">    VERSION_NUM,                                                    \</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">    CONV )                                                          \</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">    namespace depicture_menu::applications::backup_json::formats    \</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">    {                                                               \</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">        template&lt;&gt;                                                  \</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">        struct format_version&lt; FORMAT_TYPE_NAMESPACE::backup_json &gt; \</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">        {                                                           \</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">            constexpr static int version = VERSION_NUM;             \</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">            using converter_t            = CONV;                    \</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">        };                                                          \</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">    }</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_CORE_APPLICATION_BACKUP_JSON_FORMAT_FORMAT_VERSION_HPP_</span></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_html"><div class="ttname"><a href="namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats.html">depicture_menu::applications::backup_json::formats</a></div><div class="ttdef"><b>Definition</b> <a href="#l00006">format_version.hpp:7</a></div></div>
 <div class="ttc" id="astructdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1format__version_html"><div class="ttname"><a href="structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1format__version.html">depicture_menu::applications::backup_json::formats::format_version</a></div><div class="ttdef"><b>Definition</b> <a href="#l00009">format_version.hpp:10</a></div></div>
 <div class="ttc" id="astructdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1format__version_html_a32d8c632ab2f06e0793aca40f318b530"><div class="ttname"><a href="structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1format__version.html#a32d8c632ab2f06e0793aca40f318b530">depicture_menu::applications::backup_json::formats::format_version::version</a></div><div class="ttdeci">static constexpr int version</div><div class="ttdef"><b>Definition</b> <a href="#l00011">format_version.hpp:11</a></div></div>

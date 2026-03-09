@@ -113,9 +113,9 @@ $(function(){initNavTree('_test_unmanaged_memory_manager_8cpp_source.html','',''
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">auto</span> s = std::make_shared&lt; dc::ParentStruct &gt;( );</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">auto</span> t = s-&gt;shared_from_this( );</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( s.get( ) == t.get( ) );</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( s-&gt;weak_from_this( ).lock( ).get( ) != <span class="keyword">nullptr</span> );</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( s-&gt;Value( ).weak_from_this( ).lock( ).get( ) != <span class="keyword">nullptr</span> );</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    BOOST_TEST( s.get( ) == t.get( ) );</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    BOOST_TEST( s-&gt;weak_from_this( ).lock( ).get( ) != <span class="keyword">nullptr</span> );</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    BOOST_TEST( s-&gt;Value( ).weak_from_this( ).lock( ).get( ) != <span class="keyword">nullptr</span> );</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
 </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"></span> </div>
@@ -124,8 +124,8 @@ $(function(){initNavTree('_test_unmanaged_memory_manager_8cpp_source.html','',''
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="_test_unmanaged_memory_manager_8cpp.html#a581fa340d7fb0fcdff24df44e6603bc6">   26</a></span><a class="code hl_function" href="_test_unmanaged_memory_manager_8cpp.html#a7adc554e78ffcdecc54518cb010eda4d">BOOST_AUTO_TEST_CASE</a>( test_cs_binding_composite )</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">auto</span> <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a> = std::make_shared&lt; dc::TestComposite &gt;( );</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>-&gt;weak_from_this( ).lock( ).get( ) != <span class="keyword">nullptr</span> );</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_function" href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a>( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>-&gt;Parent( ).weak_from_this( ).lock( ).get( ) != <span class="keyword">nullptr</span> );</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    BOOST_TEST( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>-&gt;weak_from_this( ).lock( ).get( ) != <span class="keyword">nullptr</span> );</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    BOOST_TEST( <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>-&gt;Parent( ).weak_from_this( ).lock( ).get( ) != <span class="keyword">nullptr</span> );</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <a class="code hl_namespace" href="namespacedepicture__menu_1_1domain.html">d</a>-&gt;pre_regist_Parent( );</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="comment">//  d-&gt;Parent_.pre_regist_Value( );</span></div>
@@ -133,7 +133,6 @@ $(function(){initNavTree('_test_unmanaged_memory_manager_8cpp_source.html','',''
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="comment">//  auto child = d-&gt;Children().add( dc::TestComposite{} );</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
 </div>
-<div class="ttc" id="a_test_config_view_presenter_8cpp_html_a7845eb0c68b997d6d329618f36f7e794"><div class="ttname"><a href="_test_config_view_presenter_8cpp.html#a7845eb0c68b997d6d329618f36f7e794">BOOST_TEST</a></div><div class="ttdeci">BOOST_TEST(get_menu(config_arg, 0u) -&gt;get_MenuId()==m_id)</div></div>
 <div class="ttc" id="a_test_struct_8hpp_html"><div class="ttname"><a href="_test_struct_8hpp.html">TestStruct.hpp</a></div></div>
 <div class="ttc" id="a_test_unmanaged_memory_manager_8cpp_html_a7adc554e78ffcdecc54518cb010eda4d"><div class="ttname"><a href="_test_unmanaged_memory_manager_8cpp.html#a7adc554e78ffcdecc54518cb010eda4d">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(test_cs_binding_struct)</div><div class="ttdoc">test_composite_struct : TestCase</div><div class="ttdef"><b>Definition</b> <a href="#l00016">TestUnmanagedMemoryManager.cpp:16</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1cs__binding_html"><div class="ttname"><a href="namespacedepicture__menu_1_1cs__binding.html">depicture_menu::cs_binding</a></div><div class="ttdef"><b>Definition</b> <a href="core__interface_8hpp_source.html#l00042">core_interface.hpp:43</a></div></div>

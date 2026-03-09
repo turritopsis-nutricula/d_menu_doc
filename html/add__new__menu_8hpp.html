@@ -93,9 +93,12 @@ $(function(){initNavTree('add__new__menu_8hpp.html','',''); });
   <div class="headertitle"><div class="title">add_new_menu.hpp ファイル</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>新規メニュー追加 usecase  
+<a href="#details">[詳解]</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="app__transaction_8hpp_source.html">core/application/app_transaction.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="gui__dispatch_8hpp_source.html">core/application/gui_dispatch.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="radialmenu_8hpp_source.html">core/domain/model/menu/radialmenu.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="menu__add_8hpp_source.html">dto/menu_add.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="menu__created_8hpp_source.html">dto/menu_created.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="config__view__model__interface_8hpp_source.html">interface/config_view_model_interface.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 add_new_menu.hpp の依存先関係図:</div>
@@ -105,15 +108,15 @@ add_new_menu.hpp の依存先関係図:</div>
 </div><div class="textblock"><div class="dynheader">
 被依存関係図:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="add__new__menu_8hpp__dep__incl.svg" width="366" height="192"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="add__new__menu_8hpp__dep__incl.svg" width="622" height="192"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="add__new__menu_8hpp_source.html">[ソースコード]</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 クラス</h2></td></tr>
-<tr class="memitem:depicture_5Fmenu_3A_3Ausecase_3A_3Adetail_5Fusecase_5Fadd_5Fnew_5Fmenu_3A_3Aadd_5Fmenu_5Fresult" id="r_depicture_5Fmenu_3A_3Ausecase_3A_3Adetail_5Fusecase_5Fadd_5Fnew_5Fmenu_3A_3Aadd_5Fmenu_5Fresult"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="structdepicture__menu_1_1usecase_1_1detail__usecase__add__new__menu_1_1add__menu__result.html">depicture_menu::usecase::detail_usecase_add_new_menu::add_menu_result</a></td></tr>
-<tr class="memitem:depicture_5Fmenu_3A_3Ausecase_3A_3Aadd_5Fnew_5Fmenu_3C_20P_20_3E" id="r_depicture_5Fmenu_3A_3Ausecase_3A_3Aadd_5Fnew_5Fmenu_3C_20P_20_3E"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classdepicture__menu_1_1usecase_1_1add__new__menu.html">depicture_menu::usecase::add_new_menu&lt; P &gt;</a></td></tr>
+<tr class="memitem:depicture_5Fmenu_3A_3Ausecase_3A_3Aadd_5Fnew_5Fmenu" id="r_depicture_5Fmenu_3A_3Ausecase_3A_3Aadd_5Fnew_5Fmenu"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classdepicture__menu_1_1usecase_1_1add__new__menu.html">depicture_menu::usecase::add_new_menu</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">新規メニュー追加  <a href="classdepicture__menu_1_1usecase_1_1add__new__menu.html#details">[詳解]</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
 名前空間</h2></td></tr>
@@ -124,9 +127,13 @@ add_new_menu.hpp の依存先関係図:</div>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 関数</h2></td></tr>
-<tr class="memitem:adcccdacee0183f07572ac2dd2543bc88" id="r_adcccdacee0183f07572ac2dd2543bc88"><td class="memItemLeft">std::optional&lt; <a class="el" href="structdepicture__menu_1_1usecase_1_1detail__usecase__add__new__menu_1_1add__menu__result.html">add_menu_result</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1detail__usecase__add__new__menu.html#adcccdacee0183f07572ac2dd2543bc88">depicture_menu::usecase::detail_usecase_add_new_menu::add_new_menu_impl</a> (<a class="el" href="namespacedepicture__menu_1_1applications.html#a56ab3d011a2d037c9f109af4e1723a67">applications::transaction_source</a> &amp;t)</td></tr>
+<tr class="memitem:a870ac982c36ac1281de02a2b57791a54" id="r_a870ac982c36ac1281de02a2b57791a54"><td class="memItemLeft"><a class="el" href="namespacedepicture__menu_1_1repositories.html#a6cb6805f93a0f2b8ad0ac22e33b14263">repositories::transaction_result</a>&lt; dto::menu_created &gt;&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1usecase_1_1detail__usecase__add__new__menu.html#a870ac982c36ac1281de02a2b57791a54">depicture_menu::usecase::detail_usecase_add_new_menu::add_new_menu</a> (<a class="el" href="namespacedepicture__menu_1_1applications.html#a1168dfec76130ba465ebed176eb5ba9e">applications::transaction_source_ptr_t</a> <a class="el" href="namespacett.html">tt</a>)</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>新規メニュー追加 usecase </p>
+
+<p class="definition"> <a class="el" href="add__new__menu_8hpp_source.html">add_new_menu.hpp</a> に定義があります。</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
 <div id="page-nav-resize-handle"></div>

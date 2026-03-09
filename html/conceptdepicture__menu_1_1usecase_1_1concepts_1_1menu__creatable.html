@@ -98,18 +98,18 @@ $(function(){initNavTree('conceptdepicture__menu_1_1usecase_1_1concepts_1_1menu_
 <h2 id="header-conceptdef" class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
 <div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptdepicture__menu_1_1usecase_1_1concepts_1_1menu__creatable.html">menu_creatable</a> =</div>
-<div class="line">  !boost::di::aux::is_complete&lt; T &gt;::value ||</div>
-<div class="line">  <span class="keyword">requires</span>(</div>
-<div class="line">    T t,</div>
-<div class="line">    std::function&lt;</div>
-<div class="line">      void( <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1menu.html#a2b51ff146c22769b74c23c37851fa801">domain::menu::menu_id</a>, <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">domain::actions::publisher_id</a> ) &gt; h,</div>
-<div class="line">    <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html">domain::menu::radialmenu</a>                                         m ) {</div>
-<div class="line">      { t.create_menu( m, <span class="comment">/* h,*/</span> 0, 0 ) };</div>
-<div class="line">  }</div>
+<div class="line">        !boost::di::aux::is_complete&lt; T &gt;::value ||</div>
+<div class="line">        <span class="keyword">requires</span>(</div>
+<div class="line">            T                                                            t,</div>
+<div class="line">            std::function&lt; void(</div>
+<div class="line">                <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1menu.html#a2b51ff146c22769b74c23c37851fa801">domain::menu::menu_id</a>, <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">domain::actions::publisher_id</a> ) &gt; h,</div>
+<div class="line">            <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html">domain::menu::radialmenu</a>                                     m ) {</div>
+<div class="line">            { t.create_menu( m, <span class="comment">/* h,*/</span> 0, 0 ) };</div>
+<div class="line">        }</div>
 <div class="ttc" id="aconceptdepicture__menu_1_1usecase_1_1concepts_1_1menu__creatable_html"><div class="ttname"><a href="conceptdepicture__menu_1_1usecase_1_1concepts_1_1menu__creatable.html">depicture_menu::usecase::concepts::menu_creatable</a></div><div class="ttdef"><b>Definition</b> <a href="menu__view__model__interface_8hpp_source.html#l00016">menu_view_model_interface.hpp:16</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1actions_html_af913742220f232fcc0d0433f4e0da3f3"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">depicture_menu::domain::actions::publisher_id</a></div><div class="ttdeci">models::entity_id_base&lt; action_publisher_id_tag &gt; publisher_id</div><div class="ttdef"><b>Definition</b> <a href="action__ids_8hpp_source.html#l00017">action_ids.hpp:17</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1menu_html_a2b51ff146c22769b74c23c37851fa801"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1menu.html#a2b51ff146c22769b74c23c37851fa801">depicture_menu::domain::menu::menu_id</a></div><div class="ttdeci">models::entity_id_base&lt; detail_menu::menu_id_tag &gt; menu_id</div><div class="ttdef"><b>Definition</b> <a href="menu__ids_8hpp_source.html#l00022">menu_ids.hpp:22</a></div></div>
-<div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1radialmenu_html"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html">depicture_menu::domain::menu::radialmenu</a></div><div class="ttdef"><b>Definition</b> <a href="radialmenu_8hpp_source.html#l00027">radialmenu.hpp:28</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1radialmenu_html"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html">depicture_menu::domain::menu::radialmenu</a></div><div class="ttdoc">メニュー Domain entity</div><div class="ttdef"><b>Definition</b> <a href="radialmenu_8hpp_source.html#l00033">radialmenu.hpp:34</a></div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
 <div class="textblock">
 <p class="definition"> <a class="el" href="menu__view__model__interface_8hpp_source.html">menu_view_model_interface.hpp</a> の <a class="el" href="menu__view__model__interface_8hpp_source.html#l00016">16</a> 行目に定義があります。</p>

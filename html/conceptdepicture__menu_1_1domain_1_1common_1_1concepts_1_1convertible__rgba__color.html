@@ -98,22 +98,24 @@ $(function(){initNavTree('conceptdepicture__menu_1_1domain_1_1common_1_1concepts
 <h2 id="header-conceptdef" class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
 <div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptdepicture__menu_1_1domain_1_1common_1_1concepts_1_1convertible__rgba__color.html">convertible_rgba_color</a> = <span class="keyword">requires</span>( T t ) {</div>
-<div class="line">                                     { <a class="code hl_function" href="namespacedepicture__menu_1_1domain_1_1common.html#ab4b27cc2185c71245297ce80d1d0d0b6">get_red</a>( t ) } -&gt; std::unsigned_integral;</div>
-<div class="line">                                     {</div>
-<div class="line">                                         <a class="code hl_function" href="namespacedepicture__menu_1_1domain_1_1common.html#abefc340f5a9d97d203d9e4e2fd1862b2">get_green</a>( t )</div>
-<div class="line">                                     } -&gt; std::unsigned_integral;</div>
-<div class="line">                                     {</div>
-<div class="line">                                         <a class="code hl_function" href="namespacedepicture__menu_1_1domain_1_1common.html#a7a8a203d5f7160e38f0fda099821e9ee">get_blue</a>( t )</div>
-<div class="line">                                     } -&gt; std::unsigned_integral;</div>
-<div class="line">                                     {</div>
-<div class="line">                                         <a class="code hl_function" href="namespacedepicture__menu_1_1domain_1_1common.html#a73a6ad603cfac88bf1deac0564051453">get_opacity</a>( t )</div>
-<div class="line">                                     } -&gt; std::unsigned_integral;</div>
-<div class="line">                                 }</div>
+<div class="line">                                         {</div>
+<div class="line">                                             <a class="code hl_function" href="namespacedepicture__menu_1_1domain_1_1common.html#ab4b27cc2185c71245297ce80d1d0d0b6">get_red</a>( t )</div>
+<div class="line">                                         } -&gt; std::unsigned_integral;</div>
+<div class="line">                                         {</div>
+<div class="line">                                             <a class="code hl_function" href="namespacedepicture__menu_1_1domain_1_1common.html#abefc340f5a9d97d203d9e4e2fd1862b2">get_green</a>( t )</div>
+<div class="line">                                         } -&gt; std::unsigned_integral;</div>
+<div class="line">                                         {</div>
+<div class="line">                                             <a class="code hl_function" href="namespacedepicture__menu_1_1domain_1_1common.html#a7a8a203d5f7160e38f0fda099821e9ee">get_blue</a>( t )</div>
+<div class="line">                                         } -&gt; std::unsigned_integral;</div>
+<div class="line">                                         {</div>
+<div class="line">                                             <a class="code hl_function" href="namespacedepicture__menu_1_1domain_1_1common.html#a73a6ad603cfac88bf1deac0564051453">get_opacity</a>( t )</div>
+<div class="line">                                         } -&gt; std::unsigned_integral;</div>
+<div class="line">                                     }</div>
 <div class="ttc" id="aconceptdepicture__menu_1_1domain_1_1common_1_1concepts_1_1convertible__rgba__color_html"><div class="ttname"><a href="conceptdepicture__menu_1_1domain_1_1common_1_1concepts_1_1convertible__rgba__color.html">depicture_menu::domain::common::concepts::convertible_rgba_color</a></div><div class="ttdef"><b>Definition</b> <a href="colors_8hpp_source.html#l00023">colors.hpp:23</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1common_html_a73a6ad603cfac88bf1deac0564051453"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1common.html#a73a6ad603cfac88bf1deac0564051453">depicture_menu::domain::common::get_opacity</a></div><div class="ttdeci">auto get_opacity(rgba_color const &amp;c) noexcept</div><div class="ttdef"><b>Definition</b> <a href="colors_8hpp_source.html#l00108">colors.hpp:108</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1common_html_a7a8a203d5f7160e38f0fda099821e9ee"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1common.html#a7a8a203d5f7160e38f0fda099821e9ee">depicture_menu::domain::common::get_blue</a></div><div class="ttdeci">auto get_blue(rgba_color const &amp;c) noexcept</div><div class="ttdef"><b>Definition</b> <a href="colors_8hpp_source.html#l00103">colors.hpp:103</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1common_html_ab4b27cc2185c71245297ce80d1d0d0b6"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1common.html#ab4b27cc2185c71245297ce80d1d0d0b6">depicture_menu::domain::common::get_red</a></div><div class="ttdeci">auto get_red(rgba_color const &amp;c) noexcept</div><div class="ttdef"><b>Definition</b> <a href="colors_8hpp_source.html#l00093">colors.hpp:93</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1common_html_abefc340f5a9d97d203d9e4e2fd1862b2"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1common.html#abefc340f5a9d97d203d9e4e2fd1862b2">depicture_menu::domain::common::get_green</a></div><div class="ttdeci">auto get_green(rgba_color const &amp;c) noexcept</div><div class="ttdef"><b>Definition</b> <a href="colors_8hpp_source.html#l00098">colors.hpp:98</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1common_html_a73a6ad603cfac88bf1deac0564051453"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1common.html#a73a6ad603cfac88bf1deac0564051453">depicture_menu::domain::common::get_opacity</a></div><div class="ttdeci">auto get_opacity(rgba_color const &amp;c) noexcept</div><div class="ttdef"><b>Definition</b> <a href="colors_8hpp_source.html#l00110">colors.hpp:110</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1common_html_a7a8a203d5f7160e38f0fda099821e9ee"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1common.html#a7a8a203d5f7160e38f0fda099821e9ee">depicture_menu::domain::common::get_blue</a></div><div class="ttdeci">auto get_blue(rgba_color const &amp;c) noexcept</div><div class="ttdef"><b>Definition</b> <a href="colors_8hpp_source.html#l00105">colors.hpp:105</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1common_html_ab4b27cc2185c71245297ce80d1d0d0b6"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1common.html#ab4b27cc2185c71245297ce80d1d0d0b6">depicture_menu::domain::common::get_red</a></div><div class="ttdeci">auto get_red(rgba_color const &amp;c) noexcept</div><div class="ttdef"><b>Definition</b> <a href="colors_8hpp_source.html#l00095">colors.hpp:95</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1common_html_abefc340f5a9d97d203d9e4e2fd1862b2"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1common.html#abefc340f5a9d97d203d9e4e2fd1862b2">depicture_menu::domain::common::get_green</a></div><div class="ttdeci">auto get_green(rgba_color const &amp;c) noexcept</div><div class="ttdef"><b>Definition</b> <a href="colors_8hpp_source.html#l00100">colors.hpp:100</a></div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
 <div class="textblock">
 <p class="definition"> <a class="el" href="colors_8hpp_source.html">colors.hpp</a> の <a class="el" href="colors_8hpp_source.html#l00023">23</a> 行目に定義があります。</p>

@@ -105,116 +105,114 @@ $(function(){initNavTree('hotkey__event__source_8cpp_source.html','',''); });
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">// constructor</span></div>
 <div class="foldopen" id="foldopen00011" data-start="{" data-end="}">
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1hotkey__event__source.html#a092ab54db23e4766a3c1593fddb6fc91">   11</a></span><a class="code hl_function" href="classdepicture__menu_1_1hotkey__event__source.html#a092ab54db23e4766a3c1593fddb6fc91">depicture_menu::hotkey_event_source::hotkey_event_source</a>(</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <a class="code hl_typedef" href="classdepicture__menu_1_1hotkey__event__source.html#a2a941d45fec99e555dfd2f79326412a2">hotkey_id_t</a>     <span class="keywordtype">id</span>,</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  <a class="code hl_typedef" href="classdepicture__menu_1_1hotkey__event__source.html#a61428e3730a6e2ce1dac0b6f57a50c57">vk_key_code_t</a>   <a class="code hl_struct" href="structc.html">c</a>,</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  <a class="code hl_typedef" href="classdepicture__menu_1_1hotkey__event__source.html#a307c8798376ab5edede3771ef043db11">modifier_code_t</a> m )</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  : <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#ad533bfdb6602511e14b88d77774f0cff">id_</a>( id )</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  , <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#aff35a42e3a68294d9921583f3f42fcf0">key_code_</a>( <a class="code hl_struct" href="structc.html">c</a> )</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  , <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#a3e251221cdffc0ab0a288ca9235db8ca">modifier_code_</a>( m )</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  , <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#aab92a00b99bc318c0ea4282e530395ed">sig_</a>( <a class="code hl_namespace" href="namespacestd.html">std</a>::make_shared&lt; <a class="code hl_typedef" href="classdepicture__menu_1_1hotkey__event__source.html#a067873204fb7510803e2949f7a6ad793">sig_t</a> &gt;( ) )</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  , <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#a55f3d3b35efccb1ac869e47fff443a79">thread_condithion_</a>( <a class="code hl_namespace" href="namespacestd.html">std</a>::make_shared&lt; <a class="code hl_namespace" href="namespacestd.html">std</a>::atomic&lt; bool &gt; &gt;( false ) )</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_function" href="classdepicture__menu_1_1hotkey__event__source.html#a5f26d9e259a542d15520e4aabe213579">setup_hotkey</a>( );</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <a class="code hl_typedef" href="classdepicture__menu_1_1hotkey__event__source.html#a2a941d45fec99e555dfd2f79326412a2">hotkey_id_t</a> <span class="keywordtype">id</span>, <a class="code hl_typedef" href="classdepicture__menu_1_1hotkey__event__source.html#a61428e3730a6e2ce1dac0b6f57a50c57">vk_key_code_t</a> <a class="code hl_struct" href="structc.html">c</a>, <a class="code hl_typedef" href="classdepicture__menu_1_1hotkey__event__source.html#a307c8798376ab5edede3771ef043db11">modifier_code_t</a> m )</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    : <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#ad533bfdb6602511e14b88d77774f0cff">id_</a>( id )</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    , <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#aff35a42e3a68294d9921583f3f42fcf0">key_code_</a>( <a class="code hl_struct" href="structc.html">c</a> )</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    , <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#a3e251221cdffc0ab0a288ca9235db8ca">modifier_code_</a>( m )</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    , <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#aab92a00b99bc318c0ea4282e530395ed">sig_</a>( <a class="code hl_namespace" href="namespacestd.html">std</a>::make_shared&lt; <a class="code hl_typedef" href="classdepicture__menu_1_1hotkey__event__source.html#a067873204fb7510803e2949f7a6ad793">sig_t</a> &gt;( ) )</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    , <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#a55f3d3b35efccb1ac869e47fff443a79">thread_condithion_</a>( <a class="code hl_namespace" href="namespacestd.html">std</a>::make_shared&lt; <a class="code hl_namespace" href="namespacestd.html">std</a>::atomic&lt; bool &gt; &gt;( false ) )</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_function" href="classdepicture__menu_1_1hotkey__event__source.html#a5f26d9e259a542d15520e4aabe213579">setup_hotkey</a>( );</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
 </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">// unregist_hotkey</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keywordtype">void</span></div>
-<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1hotkey__event__source.html#a645433fff63255dc08bfd8c2bd20bee6">   27</a></span><a class="code hl_function" href="classdepicture__menu_1_1hotkey__event__source.html#a645433fff63255dc08bfd8c2bd20bee6">depicture_menu::hotkey_event_source::unregist_hotkey</a>( )</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    assert( <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#ae076600803e9923170eee955b8100338">thread_id_</a> );</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">// unregist_hotkey</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1hotkey__event__source.html#a645433fff63255dc08bfd8c2bd20bee6">   25</a></span><a class="code hl_function" href="classdepicture__menu_1_1hotkey__event__source.html#a645433fff63255dc08bfd8c2bd20bee6">depicture_menu::hotkey_event_source::unregist_hotkey</a>( )</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    assert( <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#ae076600803e9923170eee955b8100338">thread_id_</a> );</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordflow">if</span> ( !<a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#a55f3d3b35efccb1ac869e47fff443a79">thread_condithion_</a>-&gt;load( ) ) <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordflow">if</span> ( !<a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#a55f3d3b35efccb1ac869e47fff443a79">thread_condithion_</a>-&gt;load( ) ) <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    [[maybe_unused]] <span class="keyword">auto</span> result =</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>      ::PostThreadMessageA( *<a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#ae076600803e9923170eee955b8100338">thread_id_</a>, WM_QUIT, 0, 0 );</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="comment">// TODO : result = ERROR_INVALID_THREAD_ID</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">if</span> ( !result ) { std::cout &lt;&lt; ::GetLastError( ) &lt;&lt; std::endl; }</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="comment">/*</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">    if ( !result )</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">    {</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">        std::cout &lt;&lt; ::GetLastError( ) &lt;&lt; std::endl;</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">    }</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">    assert( result );</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment"></span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">    // thread end wait</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">    auto now_c = thread_condithion_-&gt;load( );</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">    while ( thread_condithion_-&gt;exchange( now_c ) == true )</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">    {</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">        thread_condithion_-&gt;wait( now_c );</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">        now_c = thread_condithion_-&gt;load( );</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">    }</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">    */</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    [[maybe_unused]] <span class="keyword">auto</span> result =</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        ::PostThreadMessageA( *<a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#ae076600803e9923170eee955b8100338">thread_id_</a>, WM_QUIT, 0, 0 );</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="comment">// TODO : result = ERROR_INVALID_THREAD_ID</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordflow">if</span> ( !result ) { std::cout &lt;&lt; ::GetLastError( ) &lt;&lt; std::endl; }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="comment">/*</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">    if ( !result )</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">    {</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">        std::cout &lt;&lt; ::GetLastError( ) &lt;&lt; std::endl;</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">    }</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">    assert( result );</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"></span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">    // thread end wait</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">    auto now_c = thread_condithion_-&gt;load( );</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">    while ( thread_condithion_-&gt;exchange( now_c ) == true )</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">    {</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">        thread_condithion_-&gt;wait( now_c );</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">        now_c = thread_condithion_-&gt;load( );</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">    }</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">    */</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
 </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">// setup_hotkey</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keywordtype">void</span></div>
-<div class="foldopen" id="foldopen00058" data-start="{" data-end="}">
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1hotkey__event__source.html#a5f26d9e259a542d15520e4aabe213579">   58</a></span><a class="code hl_function" href="classdepicture__menu_1_1hotkey__event__source.html#a5f26d9e259a542d15520e4aabe213579">depicture_menu::hotkey_event_source::setup_hotkey</a>( )</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>{</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">// setup_hotkey</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keywordtype">void</span></div>
+<div class="foldopen" id="foldopen00056" data-start="{" data-end="}">
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1hotkey__event__source.html#a5f26d9e259a542d15520e4aabe213579">   56</a></span><a class="code hl_function" href="classdepicture__menu_1_1hotkey__event__source.html#a5f26d9e259a542d15520e4aabe213579">depicture_menu::hotkey_event_source::setup_hotkey</a>( )</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>{</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    std::promise&lt; win32_thread_id_t &gt; thread_id_p;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    std::promise&lt; win32_thread_id_t &gt; thread_id_p;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keyword">auto</span> future      = thread_id_p.get_future( );</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">auto</span> hotkey_id   = <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#ad533bfdb6602511e14b88d77774f0cff">id_</a>;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">auto</span> signal_ptr  = <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#aab92a00b99bc318c0ea4282e530395ed">sig_</a>;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keyword">auto</span> key_code    = <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#aff35a42e3a68294d9921583f3f42fcf0">key_code_</a>;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">auto</span> modifi_code = <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#a3e251221cdffc0ab0a288ca9235db8ca">modifier_code_</a>;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">auto</span> condition   = <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#a55f3d3b35efccb1ac869e47fff443a79">thread_condithion_</a>;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    std::thread t( [ =, th_p = std::move( thread_id_p ) ]( ) <span class="keyword">mutable</span> {</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        MSG msg;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="comment">// メッセージキューを強制的に作成</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        ::PeekMessage( &amp;msg, <span class="keyword">nullptr</span>, WM_USER, WM_USER, PM_NOREMOVE );</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordflow">if</span> ( !::RegisterHotKey( <span class="keyword">nullptr</span>, hotkey_id, modifi_code, key_code ) )</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        {</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <span class="comment">// RegistHotKey failde</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            ( *signal_ptr )( false );</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        }</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="comment">// ここからホットキーが有効化</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        condition-&gt;store( <span class="keyword">true</span> );</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        condition-&gt;notify_all( );</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        th_p.set_value( ::GetCurrentThreadId( ) );</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="comment">// メッセージループ</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordflow">while</span> ( ::GetMessage( &amp;msg, <span class="keyword">nullptr</span>, 0u, 0u ) != 0 )</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        {</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            <span class="keywordflow">if</span> ( msg.message == WM_HOTKEY )</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            {</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                <span class="keywordflow">try</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                {</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                    ( *signal_ptr )( true );</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                }</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                <span class="keywordflow">catch</span> ( ... )</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                {</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                    <span class="comment">// 例外をキャッチでループ終了</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                    <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                }</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            }</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        }</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        <span class="comment">// hotkey unregist</span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        ::UnregisterHotKey( <span class="keyword">nullptr</span>, hotkey_id );</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <span class="comment">// signal end</span></div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        ( *signal_ptr )( false );</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        condition-&gt;store( <span class="keyword">false</span> );</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        condition-&gt;notify_all( );</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    } );</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keyword">auto</span> future      = thread_id_p.get_future( );</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">auto</span> hotkey_id   = <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#ad533bfdb6602511e14b88d77774f0cff">id_</a>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keyword">auto</span> signal_ptr  = <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#aab92a00b99bc318c0ea4282e530395ed">sig_</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">auto</span> key_code    = <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#aff35a42e3a68294d9921583f3f42fcf0">key_code_</a>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">auto</span> modifi_code = <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#a3e251221cdffc0ab0a288ca9235db8ca">modifier_code_</a>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keyword">auto</span> condition   = <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#a55f3d3b35efccb1ac869e47fff443a79">thread_condithion_</a>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    std::thread t( [ =, th_p = std::move( thread_id_p ) ]( ) <span class="keyword">mutable</span> {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        MSG msg;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="comment">// メッセージキューを強制的に作成</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        ::PeekMessage( &amp;msg, <span class="keyword">nullptr</span>, WM_USER, WM_USER, PM_NOREMOVE );</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">if</span> ( !::RegisterHotKey( <span class="keyword">nullptr</span>, hotkey_id, modifi_code, key_code ) )</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="comment">// RegistHotKey failde</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            ( *signal_ptr )( false );</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="comment">// ここからホットキーが有効化</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        condition-&gt;store( <span class="keyword">true</span> );</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        condition-&gt;notify_all( );</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        th_p.set_value( ::GetCurrentThreadId( ) );</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="comment">// メッセージループ</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        <span class="keywordflow">while</span> ( ::GetMessage( &amp;msg, <span class="keyword">nullptr</span>, 0u, 0u ) != 0 )</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        {</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <span class="keywordflow">if</span> ( msg.message == WM_HOTKEY )</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                <span class="keywordflow">try</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                    ( *signal_ptr )( true );</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                <span class="keywordflow">catch</span> ( ... )</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                    <span class="comment">// 例外をキャッチでループ終了</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            }</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="comment">// hotkey unregist</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        ::UnregisterHotKey( <span class="keyword">nullptr</span>, hotkey_id );</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <span class="comment">// signal end</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        ( *signal_ptr )( false );</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        condition-&gt;store( <span class="keyword">false</span> );</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        condition-&gt;notify_all( );</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    } );</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#ae076600803e9923170eee955b8100338">thread_id_</a> = future.get( );</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <a class="code hl_variable" href="classdepicture__menu_1_1hotkey__event__source.html#ae076600803e9923170eee955b8100338">thread_id_</a> = future.get( );</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    t.detach( );</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>}</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    t.detach( );</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>}</div>
 </div>
 <div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_a067873204fb7510803e2949f7a6ad793"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#a067873204fb7510803e2949f7a6ad793">depicture_menu::hotkey_event_source::sig_t</a></div><div class="ttdeci">boost::signals2::signal&lt; sig_func_t &gt; sig_t</div><div class="ttdef"><b>Definition</b> <a href="hotkey__event__source_8hpp_source.html#l00019">hotkey_event_source.hpp:19</a></div></div>
 <div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_a092ab54db23e4766a3c1593fddb6fc91"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#a092ab54db23e4766a3c1593fddb6fc91">depicture_menu::hotkey_event_source::hotkey_event_source</a></div><div class="ttdeci">hotkey_event_source(hotkey_id_t id, vk_key_code_t c, modifier_code_t m)</div><div class="ttdef"><b>Definition</b> <a href="#l00011">hotkey_event_source.cpp:11</a></div></div>
@@ -222,16 +220,16 @@ $(function(){initNavTree('hotkey__event__source_8cpp_source.html','',''); });
 <div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_a307c8798376ab5edede3771ef043db11"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#a307c8798376ab5edede3771ef043db11">depicture_menu::hotkey_event_source::modifier_code_t</a></div><div class="ttdeci">unsigned int modifier_code_t</div><div class="ttdef"><b>Definition</b> <a href="hotkey__event__source_8hpp_source.html#l00015">hotkey_event_source.hpp:15</a></div></div>
 <div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_a3e251221cdffc0ab0a288ca9235db8ca"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#a3e251221cdffc0ab0a288ca9235db8ca">depicture_menu::hotkey_event_source::modifier_code_</a></div><div class="ttdeci">modifier_code_t modifier_code_</div><div class="ttdef"><b>Definition</b> <a href="hotkey__event__source_8hpp_source.html#l00024">hotkey_event_source.hpp:24</a></div></div>
 <div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_a55f3d3b35efccb1ac869e47fff443a79"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#a55f3d3b35efccb1ac869e47fff443a79">depicture_menu::hotkey_event_source::thread_condithion_</a></div><div class="ttdeci">thread_condition_t thread_condithion_</div><div class="ttdef"><b>Definition</b> <a href="hotkey__event__source_8hpp_source.html#l00029">hotkey_event_source.hpp:29</a></div></div>
-<div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_a5f26d9e259a542d15520e4aabe213579"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#a5f26d9e259a542d15520e4aabe213579">depicture_menu::hotkey_event_source::setup_hotkey</a></div><div class="ttdeci">void setup_hotkey()</div><div class="ttdef"><b>Definition</b> <a href="#l00058">hotkey_event_source.cpp:58</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_a5f26d9e259a542d15520e4aabe213579"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#a5f26d9e259a542d15520e4aabe213579">depicture_menu::hotkey_event_source::setup_hotkey</a></div><div class="ttdeci">void setup_hotkey()</div><div class="ttdef"><b>Definition</b> <a href="#l00056">hotkey_event_source.cpp:56</a></div></div>
 <div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_a61428e3730a6e2ce1dac0b6f57a50c57"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#a61428e3730a6e2ce1dac0b6f57a50c57">depicture_menu::hotkey_event_source::vk_key_code_t</a></div><div class="ttdeci">unsigned int vk_key_code_t</div><div class="ttdef"><b>Definition</b> <a href="hotkey__event__source_8hpp_source.html#l00014">hotkey_event_source.hpp:14</a></div></div>
-<div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_a645433fff63255dc08bfd8c2bd20bee6"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#a645433fff63255dc08bfd8c2bd20bee6">depicture_menu::hotkey_event_source::unregist_hotkey</a></div><div class="ttdeci">void unregist_hotkey()</div><div class="ttdef"><b>Definition</b> <a href="#l00027">hotkey_event_source.cpp:27</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_a645433fff63255dc08bfd8c2bd20bee6"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#a645433fff63255dc08bfd8c2bd20bee6">depicture_menu::hotkey_event_source::unregist_hotkey</a></div><div class="ttdeci">void unregist_hotkey()</div><div class="ttdef"><b>Definition</b> <a href="#l00025">hotkey_event_source.cpp:25</a></div></div>
 <div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_aab92a00b99bc318c0ea4282e530395ed"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#aab92a00b99bc318c0ea4282e530395ed">depicture_menu::hotkey_event_source::sig_</a></div><div class="ttdeci">std::shared_ptr&lt; sig_t &gt; sig_</div><div class="ttdef"><b>Definition</b> <a href="hotkey__event__source_8hpp_source.html#l00028">hotkey_event_source.hpp:28</a></div></div>
 <div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_ad533bfdb6602511e14b88d77774f0cff"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#ad533bfdb6602511e14b88d77774f0cff">depicture_menu::hotkey_event_source::id_</a></div><div class="ttdeci">hotkey_id_t id_</div><div class="ttdef"><b>Definition</b> <a href="hotkey__event__source_8hpp_source.html#l00022">hotkey_event_source.hpp:22</a></div></div>
 <div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_ae076600803e9923170eee955b8100338"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#ae076600803e9923170eee955b8100338">depicture_menu::hotkey_event_source::thread_id_</a></div><div class="ttdeci">std::optional&lt; win32_thread_id_t &gt; thread_id_</div><div class="ttdef"><b>Definition</b> <a href="hotkey__event__source_8hpp_source.html#l00027">hotkey_event_source.hpp:27</a></div></div>
 <div class="ttc" id="aclassdepicture__menu_1_1hotkey__event__source_html_aff35a42e3a68294d9921583f3f42fcf0"><div class="ttname"><a href="classdepicture__menu_1_1hotkey__event__source.html#aff35a42e3a68294d9921583f3f42fcf0">depicture_menu::hotkey_event_source::key_code_</a></div><div class="ttdeci">vk_key_code_t key_code_</div><div class="ttdef"><b>Definition</b> <a href="hotkey__event__source_8hpp_source.html#l00023">hotkey_event_source.hpp:23</a></div></div>
 <div class="ttc" id="ahotkey__event__source_8hpp_html"><div class="ttname"><a href="hotkey__event__source_8hpp.html">hotkey_event_source.hpp</a></div></div>
-<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition</b> <a href="app__ids_8hpp_source.html#l00061">app_ids.hpp:62</a></div></div>
-<div class="ttc" id="astructc_html"><div class="ttname"><a href="structc.html">c</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00145">TestReflection.cpp:146</a></div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition</b> <a href="app__ids_8hpp_source.html#l00060">app_ids.hpp:61</a></div></div>
+<div class="ttc" id="astructc_html"><div class="ttname"><a href="structc.html">c</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00147">TestReflection.cpp:148</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

@@ -98,15 +98,17 @@ $(function(){initNavTree('conceptdepicture__menu_1_1usecase_1_1concepts_1_1actio
 <h2 id="header-conceptdef" class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt; <span class="keyword">typename</span> T &gt;</div>
 <div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="conceptdepicture__menu_1_1usecase_1_1concepts_1_1action__config__change__extractor.html">action_config_change_extractor</a> =</div>
-<div class="line">  !boost::di::aux::is_complete&lt; T &gt;::value ||</div>
-<div class="line">  <span class="keyword">requires</span>( T t, <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">domain::actions::publisher_id</a> id ) {</div>
-<div class="line">      { t.extract_data( <span class="keywordtype">id</span> ) } -&gt; std::same_as&lt; basic_action_config_update &gt;;</div>
-<div class="line">  }</div>
-<div class="ttc" id="aconceptdepicture__menu_1_1usecase_1_1concepts_1_1action__config__change__extractor_html"><div class="ttname"><a href="conceptdepicture__menu_1_1usecase_1_1concepts_1_1action__config__change__extractor.html">depicture_menu::usecase::concepts::action_config_change_extractor</a></div><div class="ttdef"><b>Definition</b> <a href="change__action__config_8hpp_source.html#l00031">change_action_config.hpp:31</a></div></div>
+<div class="line">        !boost::di::aux::is_complete&lt; T &gt;::value ||</div>
+<div class="line">        <span class="keyword">requires</span>( T t, <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">domain::actions::publisher_id</a> id ) {</div>
+<div class="line">            {</div>
+<div class="line">                t.extract_data( <span class="keywordtype">id</span> )</div>
+<div class="line">            } -&gt; std::same_as&lt; dto::basic_action_config_update &gt;;</div>
+<div class="line">        }</div>
+<div class="ttc" id="aconceptdepicture__menu_1_1usecase_1_1concepts_1_1action__config__change__extractor_html"><div class="ttname"><a href="conceptdepicture__menu_1_1usecase_1_1concepts_1_1action__config__change__extractor.html">depicture_menu::usecase::concepts::action_config_change_extractor</a></div><div class="ttdef"><b>Definition</b> <a href="change__action__config_8hpp_source.html#l00030">change_action_config.hpp:30</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1actions_html_af913742220f232fcc0d0433f4e0da3f3"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">depicture_menu::domain::actions::publisher_id</a></div><div class="ttdeci">models::entity_id_base&lt; action_publisher_id_tag &gt; publisher_id</div><div class="ttdef"><b>Definition</b> <a href="action__ids_8hpp_source.html#l00017">action_ids.hpp:17</a></div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
 <div class="textblock">
-<p class="definition"> <a class="el" href="change__action__config_8hpp_source.html">change_action_config.hpp</a> の <a class="el" href="change__action__config_8hpp_source.html#l00031">31</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="change__action__config_8hpp_source.html">change_action_config.hpp</a> の <a class="el" href="change__action__config_8hpp_source.html#l00030">30</a> 行目に定義があります。</p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

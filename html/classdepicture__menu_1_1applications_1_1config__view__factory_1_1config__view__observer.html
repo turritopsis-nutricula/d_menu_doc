@@ -1,0 +1,1135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu::applications::config_view_factory::config_view_observer クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('classdepicture__menu_1_1applications_1_1config__view__factory_1_1config__view__observer.html','','classdepicture__menu_1_1applications_1_1config__view__factory_1_1config__view__observer-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">depicture_menu::applications::config_view_factory::config_view_observer クラス</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>ConfigArgのObserver  
+ <a href="#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="config__view__observer_8hpp_source.html">config_view_observer.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a2796b47586bd411d25f61d92a596e126" id="r_a2796b47586bd411d25f61d92a596e126"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a2796b47586bd411d25f61d92a596e126">config_view_observer</a> (<a class="el" href="namespacedepicture__menu_1_1domain_1_1app.html#af0e6c7311ee1bb69c424c9ee029bf91e">domain::app::option_id</a> id)</td></tr>
+<tr class="memitem:a09b0faf34a0252e99cafe597bddd9a2a" id="r_a09b0faf34a0252e99cafe597bddd9a2a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a09b0faf34a0252e99cafe597bddd9a2a">set_view</a> (std::shared_ptr&lt; ConfigArg &gt; view)</td></tr>
+<tr class="memitem:add6a6c2c783f466321b341dcc25485db" id="r_add6a6c2c783f466321b341dcc25485db"><td class="memTemplParams" colspan="2">template&lt;typename D&gt; </td></tr>
+<tr class="memitem:add6a6c2c783f466321b341dcc25485db template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#add6a6c2c783f466321b341dcc25485db">set_dispatch</a> (std::shared_ptr&lt; D &gt; const &amp;<a class="el" href="structd.html">d</a>)</td></tr>
+<tr class="memdesc:add6a6c2c783f466321b341dcc25485db"><td class="mdescLeft">&#160;</td><td class="mdescRight">dispather set  <br /></td></tr>
+<tr id="pub-methods-0" class="groupHeader"><td colspan="2"><div class="groupHeader">ConfMenu Observe</div></td></tr>
+<tr class="memitem:aaa3143abf36b93ee7f3db60cb717ffc1" id="r_aaa3143abf36b93ee7f3db60cb717ffc1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aaa3143abf36b93ee7f3db60cb717ffc1">operator()</a> (ConfMenu const &amp;v, <a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__value.html">changed_value</a>&lt; L&quot;Name&quot;, std::string &gt; arg) const</td></tr>
+<tr class="memdesc:aaa3143abf36b93ee7f3db60cb717ffc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">ConfMenu "Name"  <br /></td></tr>
+<tr id="pub-methods-1" class="groupHeader"><td colspan="2"><div class="groupHeader">ConfMenuItem Observe</div></td></tr>
+<tr class="memitem:abd81afb503bd5d78eda20206f5cd4f85" id="r_abd81afb503bd5d78eda20206f5cd4f85"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abd81afb503bd5d78eda20206f5cd4f85">operator()</a> (ConfMenuItem const &amp;v, <a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__value.html">changed_value</a>&lt; L&quot;ActionKind&quot;, BasicItemActionKind &gt; arg) const</td></tr>
+<tr class="memdesc:abd81afb503bd5d78eda20206f5cd4f85"><td class="mdescLeft">&#160;</td><td class="mdescRight">ConfMenuItem "ActionKind"  <br /></td></tr>
+<tr class="memitem:a0bf9aab15faa92f1a83d7560b1d8b52e" id="r_a0bf9aab15faa92f1a83d7560b1d8b52e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0bf9aab15faa92f1a83d7560b1d8b52e">operator()</a> (ConfMenuItem const &amp;v, <a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__value.html">changed_value</a>&lt; L&quot;Name&quot;, std::wstring &gt; arg) const</td></tr>
+<tr class="memdesc:a0bf9aab15faa92f1a83d7560b1d8b52e"><td class="mdescLeft">&#160;</td><td class="mdescRight">ConfMenuItem "Name" 更新  <br /></td></tr>
+<tr id="pub-methods-2" class="groupHeader"><td colspan="2"><div class="groupHeader">ConfBasicMenuShowAction</div></td></tr>
+<tr class="memitem:ab8f58fb20e9fe4a495a7dcf610dacbd1" id="r_ab8f58fb20e9fe4a495a7dcf610dacbd1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab8f58fb20e9fe4a495a7dcf610dacbd1">operator()</a> (ConfBasicMenuShowAction const &amp;, <a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__value.html">changed_value</a>&lt; L&quot;ShowMenuId&quot;, boost::uuids::uuid &gt; arg) const</td></tr>
+<tr class="memdesc:ab8f58fb20e9fe4a495a7dcf610dacbd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">ConfBasicMenuShowAction "ShowMenuId" 更新  <br /></td></tr>
+<tr id="pub-methods-3" class="groupHeader"><td colspan="2"><div class="groupHeader">ConfTrigger</div></td></tr>
+<tr class="memitem:a4aa1c243e254359b03ef54c48ba853dd" id="r_a4aa1c243e254359b03ef54c48ba853dd"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4aa1c243e254359b03ef54c48ba853dd">operator()</a> (ConfTrigger const &amp;v, <a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__value.html">changed_value</a>&lt; L&quot;IsActive&quot;, bool &gt; arg) const</td></tr>
+<tr class="memdesc:a4aa1c243e254359b03ef54c48ba853dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">ConfMenuItem "IsActive"  <br /></td></tr>
+<tr id="pub-methods-4" class="groupHeader"><td colspan="2"><div class="groupHeader">ConfMenuItem</div></td></tr>
+<tr class="memitem:af1f44ebd2b37b0dfc6f2d9410daef158" id="r_af1f44ebd2b37b0dfc6f2d9410daef158"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af1f44ebd2b37b0dfc6f2d9410daef158">operator()</a> (ConfMenuItem const &amp;item, int idx0, int idx1, ConfMenu *parent) const</td></tr>
+<tr id="pub-methods-5" class="groupHeader"><td colspan="2"><div class="groupHeader">stab</div></td></tr>
+<tr class="memitem:adebd63b1723ec3aa684a67869e930f71" id="r_adebd63b1723ec3aa684a67869e930f71"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="structdepicture__menu_1_1util_1_1constexpr__wstring.html">util::constexpr_wstring</a> N, typename T&gt; </td></tr>
+<tr class="memitem:adebd63b1723ec3aa684a67869e930f71 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adebd63b1723ec3aa684a67869e930f71">operator()</a> (auto const &amp;, <a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__value.html">changed_value</a>&lt; N, T &gt; const &amp;<a class="el" href="structa.html">a</a>) const</td></tr>
+<tr class="memitem:a850ba45eba4800acdb330a36574dfc47" id="r_a850ba45eba4800acdb330a36574dfc47"><td class="memTemplParams" colspan="2">template&lt;typename T, typename R&gt; </td></tr>
+<tr class="memitem:a850ba45eba4800acdb330a36574dfc47 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a850ba45eba4800acdb330a36574dfc47">operator()</a> (T const &amp;item, int from, int to, R *root) const</td></tr>
+<tr class="memitem:a19a947c0aaa67e559d1d0bd3a21cc2c0" id="r_a19a947c0aaa67e559d1d0bd3a21cc2c0"><td class="memTemplParams" colspan="2">template&lt;typename T, typename R&gt; </td></tr>
+<tr class="memitem:a19a947c0aaa67e559d1d0bd3a21cc2c0 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a19a947c0aaa67e559d1d0bd3a21cc2c0">operator()</a> (T const &amp;item, int idx, R *root) const</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-types" class="groupheader"><a id="pri-types" name="pri-types"></a>
+非公開型</h2></td></tr>
+<tr class="memitem:ad97bb9a3e26696b63649fa1d767d2b4b" id="r_ad97bb9a3e26696b63649fa1d767d2b4b"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="#ad97bb9a3e26696b63649fa1d767d2b4b">dispatch_t</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+非公開メンバ関数</h2></td></tr>
+<tr class="memitem:a10fcb18a39c679e36e7b77c59c3c4f4f" id="r_a10fcb18a39c679e36e7b77c59c3c4f4f"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="#a10fcb18a39c679e36e7b77c59c3c4f4f">cfg_id</a> () const</td></tr>
+<tr class="memdesc:a10fcb18a39c679e36e7b77c59c3c4f4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">config_idの取得  <br /></td></tr>
+<tr class="memitem:ad1303825ceb3a5f56ac7fd8bc1120377" id="r_ad1303825ceb3a5f56ac7fd8bc1120377"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="#ad1303825ceb3a5f56ac7fd8bc1120377">opt_id</a> () const</td></tr>
+<tr class="memdesc:ad1303825ceb3a5f56ac7fd8bc1120377"><td class="mdescLeft">&#160;</td><td class="mdescRight">dispaterを呼び出す  <br /></td></tr>
+<tr class="memitem:a6368a0a839dd3d9074361f068bf77de3" id="r_a6368a0a839dd3d9074361f068bf77de3"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:a6368a0a839dd3d9074361f068bf77de3 template"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6368a0a839dd3d9074361f068bf77de3">relay</a> (T const &amp;<a class="el" href="structc.html">c</a>) const</td></tr>
+<tr class="memitem:a2f0ac575c5e8977675ed262e74d8ffbc" id="r_a2f0ac575c5e8977675ed262e74d8ffbc"><td class="memItemLeft">std::shared_ptr&lt; ConfMenu &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a2f0ac575c5e8977675ed262e74d8ffbc">find_menu_from_item_id</a> (boost::uuids::uuid const &amp;menu_item_id) const</td></tr>
+<tr class="memdesc:a2f0ac575c5e8977675ed262e74d8ffbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">メニューアイテムIDからメニューをFind  <br /></td></tr>
+<tr class="memitem:a50e79ca701db1ae0a788275a53527e16" id="r_a50e79ca701db1ae0a788275a53527e16"><td class="memItemLeft">std::shared_ptr&lt; ConfMenu &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a50e79ca701db1ae0a788275a53527e16">find_menu_from_item_id</a> (ConfMenuItem const &amp;i) const</td></tr>
+<tr class="memdesc:a50e79ca701db1ae0a788275a53527e16"><td class="mdescLeft">&#160;</td><td class="mdescRight">ConfMenuItemからメニューをFind  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:aae36a0e8f17bd03909838bcd15dbe258" id="r_aae36a0e8f17bd03909838bcd15dbe258"><td class="memItemLeft"><a class="el" href="namespacedepicture__menu_1_1domain_1_1app.html#af0e6c7311ee1bb69c424c9ee029bf91e">domain::app::option_id</a>&#160;</td><td class="memItemRight"><a class="el" href="#aae36a0e8f17bd03909838bcd15dbe258">opt_id_</a></td></tr>
+<tr class="memitem:ad8a5971947f65bc39d37e98694344906" id="r_ad8a5971947f65bc39d37e98694344906"><td class="memItemLeft">std::weak_ptr&lt; ConfigArg &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ad8a5971947f65bc39d37e98694344906">view_ptr_</a></td></tr>
+<tr class="memitem:a26768a3ff81ff0de27ede88572d6153e" id="r_a26768a3ff81ff0de27ede88572d6153e"><td class="memItemLeft">boost::signals2::signal&lt; void(<a class="el" href="#ad97bb9a3e26696b63649fa1d767d2b4b">dispatch_t</a> const  &amp;) &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a26768a3ff81ff0de27ede88572d6153e">dispater_</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-member-group" class="groupheader"><a id="member-group" name="member-group"></a>
+ConfBascShellExecuteAction</h2></td></tr>
+<tr class="memitem:a62fa4f3094eb96a15592068779f42c0a" id="r_a62fa4f3094eb96a15592068779f42c0a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a62fa4f3094eb96a15592068779f42c0a">operator()</a> (ConfBasicShellExecuteAction const &amp;, <a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__value.html">changed_value</a>&lt; L&quot;RunPath&quot;, std::wstring &gt; arg) const</td></tr>
+<tr class="memdesc:a62fa4f3094eb96a15592068779f42c0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ConfBasicShellExecuteAction "RunPath" 更新  <br /></td></tr>
+<tr class="memitem:a658204c06f35b919508c58a984226a10" id="r_a658204c06f35b919508c58a984226a10"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a658204c06f35b919508c58a984226a10">operator()</a> (ConfBasicShellExecuteAction const &amp;, <a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__value.html">changed_value</a>&lt; L&quot;Option&quot;, std::wstring &gt; arg) const</td></tr>
+<tr class="memdesc:a658204c06f35b919508c58a984226a10"><td class="mdescLeft">&#160;</td><td class="mdescRight">ConfBasicShellExecuteAction "Option" 更新  <br /></td></tr>
+<tr class="memitem:a36e5ca19f9424b7ea5edeb98f5ae6e90" id="r_a36e5ca19f9424b7ea5edeb98f5ae6e90"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a36e5ca19f9424b7ea5edeb98f5ae6e90">operator()</a> (ConfBasicShellExecuteAction const &amp;, <a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__value.html">changed_value</a>&lt; L&quot;IsAutoMenuClose&quot;, bool &gt; arg) const</td></tr>
+<tr class="memdesc:a36e5ca19f9424b7ea5edeb98f5ae6e90"><td class="mdescLeft">&#160;</td><td class="mdescRight">ConfBasicShellExecuteAction "IsAutoMenuClose" 更新  <br /></td></tr>
+<tr class="memitem:a09ae68d615cb02965881233f3fdd034f" id="r_a09ae68d615cb02965881233f3fdd034f"><td class="memItemLeft"><a class="el" href="structdepicture__menu_1_1usecase_1_1dto_1_1shellexecute__command__update.html">usecase::dto::shellexecute_command_update</a>&#160;</td><td class="memItemRight"><a class="el" href="#a09ae68d615cb02965881233f3fdd034f">build_shellexe_com_update</a> (ConfBasicShellExecuteAction const &amp;v) const</td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
+<div class="textblock"><p>ConfigArgのObserver </p>
+<dl class="tparams"><dt>テンプレート引数</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">dispatcher</td><td>DTOの受け手 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition"> <a class="el" href="config__view__observer_8hpp_source.html">config_view_observer.hpp</a> の <a class="el" href="config__view__observer_8hpp_source.html#l00039">39</a> 行目に定義があります。</p>
+</div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">型定義メンバ詳解</h2>
+<a id="ad97bb9a3e26696b63649fa1d767d2b4b" name="ad97bb9a3e26696b63649fa1d767d2b4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad97bb9a3e26696b63649fa1d767d2b4b">&#9670;&#160;</a></span>dispatch_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="#ad97bb9a3e26696b63649fa1d767d2b4b">depicture_menu::applications::config_view_factory::config_view_observer::dispatch_t</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>初期値:</b><div class="fragment"><div class="line">std::variant&lt;</div>
+<div class="line">       <a class="code hl_struct" href="structdepicture__menu_1_1usecase_1_1dto_1_1menu__item__order__change.html">usecase::dto::menu_item_order_change</a>,</div>
+<div class="line">       <a class="code hl_struct" href="structdepicture__menu_1_1usecase_1_1dto_1_1menu__item__update.html">usecase::dto::menu_item_update</a>,</div>
+<div class="line">       <a class="code hl_struct" href="structdepicture__menu_1_1usecase_1_1dto_1_1menu__update.html">usecase::dto::menu_update</a>,</div>
+<div class="line">       <a class="code hl_struct" href="structdepicture__menu_1_1usecase_1_1dto_1_1trigger__activate.html">usecase::dto::trigger_activate</a>,</div>
+<div class="line">       <a class="code hl_struct" href="structdepicture__menu_1_1usecase_1_1dto_1_1trigger__inactivate.html">usecase::dto::trigger_inactivate</a>,</div>
+<div class="line">       <a class="code hl_struct" href="structdepicture__menu_1_1usecase_1_1dto_1_1common__action__select.html">usecase::dto::common_action_select</a>,</div>
+<div class="line">       <a class="code hl_struct" href="structdepicture__menu_1_1usecase_1_1dto_1_1shellexecute__command__update.html">usecase::dto::shellexecute_command_update</a>,</div>
+<div class="line">       <a class="code hl_struct" href="structdepicture__menu_1_1usecase_1_1dto_1_1open__sub__menu__command__update.html">usecase::dto::open_sub_menu_command_update</a> &gt;</div>
+<div class="ttc" id="astructdepicture__menu_1_1usecase_1_1dto_1_1common__action__select_html"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1dto_1_1common__action__select.html">depicture_menu::usecase::dto::common_action_select</a></div><div class="ttdef"><b>Definition</b> <a href="common__action__select_8hpp_source.html#l00010">common_action_select.hpp:11</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1usecase_1_1dto_1_1menu__item__order__change_html"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1dto_1_1menu__item__order__change.html">depicture_menu::usecase::dto::menu_item_order_change</a></div><div class="ttdef"><b>Definition</b> <a href="menu__item__order__change_8hpp_source.html#l00012">menu_item_order_change.hpp:13</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1usecase_1_1dto_1_1menu__item__update_html"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1dto_1_1menu__item__update.html">depicture_menu::usecase::dto::menu_item_update</a></div><div class="ttdef"><b>Definition</b> <a href="menu__item__update_8hpp_source.html#l00014">menu_item_update.hpp:15</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1usecase_1_1dto_1_1menu__update_html"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1dto_1_1menu__update.html">depicture_menu::usecase::dto::menu_update</a></div><div class="ttdef"><b>Definition</b> <a href="menu__update_8hpp_source.html#l00012">menu_update.hpp:13</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1usecase_1_1dto_1_1open__sub__menu__command__update_html"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1dto_1_1open__sub__menu__command__update.html">depicture_menu::usecase::dto::open_sub_menu_command_update</a></div><div class="ttdoc">サブメニュー呼び出しコマンド input DTO</div><div class="ttdef"><b>Definition</b> <a href="open__sub__menu__command__update_8hpp_source.html#l00018">open_sub_menu_command_update.hpp:19</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1usecase_1_1dto_1_1shellexecute__command__update_html"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1dto_1_1shellexecute__command__update.html">depicture_menu::usecase::dto::shellexecute_command_update</a></div><div class="ttdoc">シェル実行コマンド更新 input DTO</div><div class="ttdef"><b>Definition</b> <a href="shellexecute__command__update_8hpp_source.html#l00021">shellexecute_command_update.hpp:22</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1usecase_1_1dto_1_1trigger__activate_html"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1dto_1_1trigger__activate.html">depicture_menu::usecase::dto::trigger_activate</a></div><div class="ttdoc">trigger_activate</div><div class="ttdef"><b>Definition</b> <a href="global__trigger__key__data_8hpp_source.html#l00034">global_trigger_key_data.hpp:35</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1usecase_1_1dto_1_1trigger__inactivate_html"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1dto_1_1trigger__inactivate.html">depicture_menu::usecase::dto::trigger_inactivate</a></div><div class="ttdoc">trigger_inactivate</div><div class="ttdef"><b>Definition</b> <a href="global__trigger__key__data_8hpp_source.html#l00045">global_trigger_key_data.hpp:46</a></div></div>
+</div><!-- fragment -->
+<p class="definition"> <a class="el" href="config__view__observer_8hpp_source.html">config_view_observer.hpp</a> の <a class="el" href="config__view__observer_8hpp_source.html#l00045">45</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">構築子と解体子</h2>
+<a id="a2796b47586bd411d25f61d92a596e126" name="a2796b47586bd411d25f61d92a596e126"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2796b47586bd411d25f61d92a596e126">&#9670;&#160;</a></span>config_view_observer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">depicture_menu::applications::config_view_factory::config_view_observer::config_view_observer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacedepicture__menu_1_1domain_1_1app.html#af0e6c7311ee1bb69c424c9ee029bf91e">domain::app::option_id</a></td>          <td class="paramname"><span class="paramname"><em>id</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="config__view__observer_8hpp_source.html">config_view_observer.hpp</a> の <a class="el" href="config__view__observer_8hpp_source.html#l00058">58</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="config__view__observer_8hpp_source.html#l00042">opt_id_</a>.</p>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
+<a id="a09ae68d615cb02965881233f3fdd034f" name="a09ae68d615cb02965881233f3fdd034f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09ae68d615cb02965881233f3fdd034f">&#9670;&#160;</a></span>build_shellexe_com_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structdepicture__menu_1_1usecase_1_1dto_1_1shellexecute__command__update.html">usecase::dto::shellexecute_command_update</a> depicture_menu::applications::config_view_factory::config_view_observer::build_shellexe_com_update </td>
+          <td>(</td>
+          <td class="paramtype">ConfBasicShellExecuteAction const &amp;</td>          <td class="paramname"><span class="paramname"><em>v</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="config__view__observer_8hpp_source.html">config_view_observer.hpp</a> の <a class="el" href="config__view__observer_8hpp_source.html#l00155">155</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="str__conv_8cpp_source.html#l00057">depicture_menu::util::strconv::wide_to_utf8()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="config__view__observer_8hpp_source.html#l00392">operator()()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00378">operator()()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00364">operator()()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1applications_1_1config__view__factory_1_1config__view__observer_a09ae68d615cb02965881233f3fdd034f_cgraph.svg" width="416" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1applications_1_1config__view__factory_1_1config__view__observer_a09ae68d615cb02965881233f3fdd034f_icgraph.svg" width="452" height="235"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a10fcb18a39c679e36e7b77c59c3c4f4f" name="a10fcb18a39c679e36e7b77c59c3c4f4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10fcb18a39c679e36e7b77c59c3c4f4f">&#9670;&#160;</a></span>cfg_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto depicture_menu::applications::config_view_factory::config_view_observer::cfg_id </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>config_idの取得 </p>
+
+<p class="definition"> <a class="el" href="config__view__observer_8hpp_source.html">config_view_observer.hpp</a> の <a class="el" href="config__view__observer_8hpp_source.html#l00064">64</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="model_2entity__id_8hpp_source.html#l00030">depicture_menu::domain::id_tags::nil_uuid</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00043">view_ptr_</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="config__view__observer_8hpp_source.html#l00279">operator()()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00195">operator()()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00316">operator()()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00246">operator()()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00297">operator()()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1applications_1_1config__view__factory_1_1config__view__observer_a10fcb18a39c679e36e7b77c59c3c4f4f_icgraph.svg" width="440" height="400"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a2f0ac575c5e8977675ed262e74d8ffbc" name="a2f0ac575c5e8977675ed262e74d8ffbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f0ac575c5e8977675ed262e74d8ffbc">&#9670;&#160;</a></span>find_menu_from_item_id() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; ConfMenu &gt; depicture_menu::applications::config_view_factory::config_view_observer::find_menu_from_item_id </td>
+          <td>(</td>
+          <td class="paramtype">boost::uuids::uuid const &amp;</td>          <td class="paramname"><span class="paramname"><em>menu_item_id</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>メニューアイテムIDからメニューをFind </p>
+
+<p class="definition"> <a class="el" href="config__view__observer_8hpp_source.html">config_view_observer.hpp</a> の <a class="el" href="config__view__observer_8hpp_source.html#l00086">86</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="config__view__observer_8hpp_source.html#l00043">view_ptr_</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="config__view__observer_8hpp_source.html#l00108">find_menu_from_item_id()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00316">operator()()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1applications_1_1config__view__factory_1_1config__view__observer_a2f0ac575c5e8977675ed262e74d8ffbc_icgraph.svg" width="584" height="152"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a50e79ca701db1ae0a788275a53527e16" name="a50e79ca701db1ae0a788275a53527e16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50e79ca701db1ae0a788275a53527e16">&#9670;&#160;</a></span>find_menu_from_item_id() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; ConfMenu &gt; depicture_menu::applications::config_view_factory::config_view_observer::find_menu_from_item_id </td>
+          <td>(</td>
+          <td class="paramtype">ConfMenuItem const &amp;</td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ConfMenuItemからメニューをFind </p>
+
+<p class="definition"> <a class="el" href="config__view__observer_8hpp_source.html">config_view_observer.hpp</a> の <a class="el" href="config__view__observer_8hpp_source.html#l00108">108</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="config__view__observer_8hpp_source.html#l00086">find_menu_from_item_id()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1applications_1_1config__view__factory_1_1config__view__observer_a50e79ca701db1ae0a788275a53527e16_cgraph.svg" width="584" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="adebd63b1723ec3aa684a67869e930f71" name="adebd63b1723ec3aa684a67869e930f71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adebd63b1723ec3aa684a67869e930f71">&#9670;&#160;</a></span>operator()() <span class="overload">[1/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="structdepicture__menu_1_1util_1_1constexpr__wstring.html">util::constexpr_wstring</a> N, typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::applications::config_view_factory::config_view_observer::operator() </td>
+          <td>(</td>
+          <td class="paramtype">auto const &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__value.html">changed_value</a>&lt; N, T &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>a</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="config__view__observer_8hpp_source.html">config_view_observer.hpp</a> の <a class="el" href="config__view__observer_8hpp_source.html#l00213">213</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="log_8hpp_source.html#l00034">DPM_LOG_DEBUG</a>, <a class="el" href="str__conv_8cpp_source.html#l00057">depicture_menu::util::strconv::wide_to_utf8()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1applications_1_1config__view__factory_1_1config__view__observer_adebd63b1723ec3aa684a67869e930f71_cgraph.svg" width="404" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ab8f58fb20e9fe4a495a7dcf610dacbd1" name="ab8f58fb20e9fe4a495a7dcf610dacbd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8f58fb20e9fe4a495a7dcf610dacbd1">&#9670;&#160;</a></span>operator()() <span class="overload">[2/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::applications::config_view_factory::config_view_observer::operator() </td>
+          <td>(</td>
+          <td class="paramtype">ConfBasicMenuShowAction const &amp;</td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__value.html">changed_value</a>&lt; L&quot;ShowMenuId&quot;, boost::uuids::uuid &gt;</td>          <td class="paramname"><span class="paramname"><em>arg</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ConfBasicMenuShowAction "ShowMenuId" 更新 </p>
+
+<p class="definition"> <a class="el" href="config__view__observer_8hpp_source.html">config_view_observer.hpp</a> の <a class="el" href="config__view__observer_8hpp_source.html#l00406">406</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="config__view__observer_8hpp_source.html#l00079">relay()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1applications_1_1config__view__factory_1_1config__view__observer_ab8f58fb20e9fe4a495a7dcf610dacbd1_cgraph.svg" width="100%" height="402"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a36e5ca19f9424b7ea5edeb98f5ae6e90" name="a36e5ca19f9424b7ea5edeb98f5ae6e90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36e5ca19f9424b7ea5edeb98f5ae6e90">&#9670;&#160;</a></span>operator()() <span class="overload">[3/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::applications::config_view_factory::config_view_observer::operator() </td>
+          <td>(</td>
+          <td class="paramtype">ConfBasicShellExecuteAction const &amp;</td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__value.html">changed_value</a>&lt; L&quot;IsAutoMenuClose&quot;, bool &gt;</td>          <td class="paramname"><span class="paramname"><em>arg</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ConfBasicShellExecuteAction "IsAutoMenuClose" 更新 </p>
+
+<p class="definition"> <a class="el" href="config__view__observer_8hpp_source.html">config_view_observer.hpp</a> の <a class="el" href="config__view__observer_8hpp_source.html#l00392">392</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="config__view__observer_8hpp_source.html#l00155">build_shellexe_com_update()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00079">relay()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1applications_1_1config__view__factory_1_1config__view__observer_a36e5ca19f9424b7ea5edeb98f5ae6e90_cgraph.svg" width="100%" height="448"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a658204c06f35b919508c58a984226a10" name="a658204c06f35b919508c58a984226a10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a658204c06f35b919508c58a984226a10">&#9670;&#160;</a></span>operator()() <span class="overload">[4/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::applications::config_view_factory::config_view_observer::operator() </td>
+          <td>(</td>
+          <td class="paramtype">ConfBasicShellExecuteAction const &amp;</td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__value.html">changed_value</a>&lt; L&quot;Option&quot;, std::wstring &gt;</td>          <td class="paramname"><span class="paramname"><em>arg</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ConfBasicShellExecuteAction "Option" 更新 </p>
+
+<p class="definition"> <a class="el" href="config__view__observer_8hpp_source.html">config_view_observer.hpp</a> の <a class="el" href="config__view__observer_8hpp_source.html#l00378">378</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="config__view__observer_8hpp_source.html#l00155">build_shellexe_com_update()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00079">relay()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1applications_1_1config__view__factory_1_1config__view__observer_a658204c06f35b919508c58a984226a10_cgraph.svg" width="100%" height="448"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a62fa4f3094eb96a15592068779f42c0a" name="a62fa4f3094eb96a15592068779f42c0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62fa4f3094eb96a15592068779f42c0a">&#9670;&#160;</a></span>operator()() <span class="overload">[5/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::applications::config_view_factory::config_view_observer::operator() </td>
+          <td>(</td>
+          <td class="paramtype">ConfBasicShellExecuteAction const &amp;</td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__value.html">changed_value</a>&lt; L&quot;RunPath&quot;, std::wstring &gt;</td>          <td class="paramname"><span class="paramname"><em>arg</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ConfBasicShellExecuteAction "RunPath" 更新 </p>
+
+<p class="definition"> <a class="el" href="config__view__observer_8hpp_source.html">config_view_observer.hpp</a> の <a class="el" href="config__view__observer_8hpp_source.html#l00364">364</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="config__view__observer_8hpp_source.html#l00155">build_shellexe_com_update()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00079">relay()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1applications_1_1config__view__factory_1_1config__view__observer_a62fa4f3094eb96a15592068779f42c0a_cgraph.svg" width="100%" height="448"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="aaa3143abf36b93ee7f3db60cb717ffc1" name="aaa3143abf36b93ee7f3db60cb717ffc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa3143abf36b93ee7f3db60cb717ffc1">&#9670;&#160;</a></span>operator()() <span class="overload">[6/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::applications::config_view_factory::config_view_observer::operator() </td>
+          <td>(</td>
+          <td class="paramtype">ConfMenu const &amp;</td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__value.html">changed_value</a>&lt; L&quot;Name&quot;, std::string &gt;</td>          <td class="paramname"><span class="paramname"><em>arg</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ConfMenu "Name" </p>
+
+<p class="definition"> <a class="el" href="config__view__observer_8hpp_source.html">config_view_observer.hpp</a> の <a class="el" href="config__view__observer_8hpp_source.html#l00279">279</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="config__view__observer_8hpp_source.html#l00064">cfg_id()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00079">relay()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1applications_1_1config__view__factory_1_1config__view__observer_aaa3143abf36b93ee7f3db60cb717ffc1_cgraph.svg" width="100%" height="436"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="af1f44ebd2b37b0dfc6f2d9410daef158" name="af1f44ebd2b37b0dfc6f2d9410daef158"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1f44ebd2b37b0dfc6f2d9410daef158">&#9670;&#160;</a></span>operator()() <span class="overload">[7/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::applications::config_view_factory::config_view_observer::operator() </td>
+          <td>(</td>
+          <td class="paramtype">ConfMenuItem const &amp;</td>          <td class="paramname"><span class="paramname"><em>item</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>idx0</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>idx1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ConfMenu *</td>          <td class="paramname"><span class="paramname"><em>parent</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="config__view__observer_8hpp_source.html">config_view_observer.hpp</a> の <a class="el" href="config__view__observer_8hpp_source.html#l00195">195</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="config__view__observer_8hpp_source.html#l00064">cfg_id()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00079">relay()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1applications_1_1config__view__factory_1_1config__view__observer_af1f44ebd2b37b0dfc6f2d9410daef158_cgraph.svg" width="100%" height="436"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="abd81afb503bd5d78eda20206f5cd4f85" name="abd81afb503bd5d78eda20206f5cd4f85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd81afb503bd5d78eda20206f5cd4f85">&#9670;&#160;</a></span>operator()() <span class="overload">[8/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::applications::config_view_factory::config_view_observer::operator() </td>
+          <td>(</td>
+          <td class="paramtype">ConfMenuItem const &amp;</td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__value.html">changed_value</a>&lt; L&quot;ActionKind&quot;, BasicItemActionKind &gt;</td>          <td class="paramname"><span class="paramname"><em>arg</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ConfMenuItem "ActionKind" </p>
+
+<p class="definition"> <a class="el" href="config__view__observer_8hpp_source.html">config_view_observer.hpp</a> の <a class="el" href="config__view__observer_8hpp_source.html#l00316">316</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="config__view__observer_8hpp_source.html#l00064">cfg_id()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00086">find_menu_from_item_id()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00073">opt_id()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00079">relay()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1applications_1_1config__view__factory_1_1config__view__observer_abd81afb503bd5d78eda20206f5cd4f85_cgraph.svg" width="100%" height="560"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a0bf9aab15faa92f1a83d7560b1d8b52e" name="a0bf9aab15faa92f1a83d7560b1d8b52e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bf9aab15faa92f1a83d7560b1d8b52e">&#9670;&#160;</a></span>operator()() <span class="overload">[9/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::applications::config_view_factory::config_view_observer::operator() </td>
+          <td>(</td>
+          <td class="paramtype">ConfMenuItem const &amp;</td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__value.html">changed_value</a>&lt; L&quot;Name&quot;, std::wstring &gt;</td>          <td class="paramname"><span class="paramname"><em>arg</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ConfMenuItem "Name" 更新 </p>
+
+<p class="definition"> <a class="el" href="config__view__observer_8hpp_source.html">config_view_observer.hpp</a> の <a class="el" href="config__view__observer_8hpp_source.html#l00246">246</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="config__view__observer_8hpp_source.html#l00064">cfg_id()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00079">relay()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00043">view_ptr_</a>, <a class="el" href="str__conv_8cpp_source.html#l00200">depicture_menu::util::strconv::wstring_to_u8string()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1applications_1_1config__view__factory_1_1config__view__observer_a0bf9aab15faa92f1a83d7560b1d8b52e_cgraph.svg" width="100%" height="476"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a4aa1c243e254359b03ef54c48ba853dd" name="a4aa1c243e254359b03ef54c48ba853dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4aa1c243e254359b03ef54c48ba853dd">&#9670;&#160;</a></span>operator()() <span class="overload">[10/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::applications::config_view_factory::config_view_observer::operator() </td>
+          <td>(</td>
+          <td class="paramtype">ConfTrigger const &amp;</td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structdepicture__menu_1_1cs__binding_1_1observer_1_1changed__value.html">changed_value</a>&lt; L&quot;IsActive&quot;, bool &gt;</td>          <td class="paramname"><span class="paramname"><em>arg</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ConfMenuItem "IsActive" </p>
+
+<p class="definition"> <a class="el" href="config__view__observer_8hpp_source.html">config_view_observer.hpp</a> の <a class="el" href="config__view__observer_8hpp_source.html#l00297">297</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="config__view__observer_8hpp_source.html#l00064">cfg_id()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00073">opt_id()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00079">relay()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1applications_1_1config__view__factory_1_1config__view__observer_a4aa1c243e254359b03ef54c48ba853dd_cgraph.svg" width="100%" height="498"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a850ba45eba4800acdb330a36574dfc47" name="a850ba45eba4800acdb330a36574dfc47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a850ba45eba4800acdb330a36574dfc47">&#9670;&#160;</a></span>operator()() <span class="overload">[11/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, typename R&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::applications::config_view_factory::config_view_observer::operator() </td>
+          <td>(</td>
+          <td class="paramtype">T const &amp;</td>          <td class="paramname"><span class="paramname"><em>item</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>from</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>to</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">R *</td>          <td class="paramname"><span class="paramname"><em>root</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="config__view__observer_8hpp_source.html">config_view_observer.hpp</a> の <a class="el" href="config__view__observer_8hpp_source.html#l00224">224</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a19a947c0aaa67e559d1d0bd3a21cc2c0" name="a19a947c0aaa67e559d1d0bd3a21cc2c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19a947c0aaa67e559d1d0bd3a21cc2c0">&#9670;&#160;</a></span>operator()() <span class="overload">[12/12]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T, typename R&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::applications::config_view_factory::config_view_observer::operator() </td>
+          <td>(</td>
+          <td class="paramtype">T const &amp;</td>          <td class="paramname"><span class="paramname"><em>item</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>idx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">R *</td>          <td class="paramname"><span class="paramname"><em>root</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="config__view__observer_8hpp_source.html">config_view_observer.hpp</a> の <a class="el" href="config__view__observer_8hpp_source.html#l00231">231</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="ad1303825ceb3a5f56ac7fd8bc1120377" name="ad1303825ceb3a5f56ac7fd8bc1120377"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1303825ceb3a5f56ac7fd8bc1120377">&#9670;&#160;</a></span>opt_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto depicture_menu::applications::config_view_factory::config_view_observer::opt_id </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>dispaterを呼び出す </p>
+
+<p class="definition"> <a class="el" href="config__view__observer_8hpp_source.html">config_view_observer.hpp</a> の <a class="el" href="config__view__observer_8hpp_source.html#l00073">73</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="config__view__observer_8hpp_source.html#l00042">opt_id_</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="config__view__observer_8hpp_source.html#l00316">operator()()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00297">operator()()</a>.</p>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1applications_1_1config__view__factory_1_1config__view__observer_ad1303825ceb3a5f56ac7fd8bc1120377_icgraph.svg" width="440" height="152"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a6368a0a839dd3d9074361f068bf77de3" name="a6368a0a839dd3d9074361f068bf77de3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6368a0a839dd3d9074361f068bf77de3">&#9670;&#160;</a></span>relay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::applications::config_view_factory::config_view_observer::relay </td>
+          <td>(</td>
+          <td class="paramtype">T const &amp;</td>          <td class="paramname"><span class="paramname"><em>c</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="config__view__observer_8hpp_source.html">config_view_observer.hpp</a> の <a class="el" href="config__view__observer_8hpp_source.html#l00079">79</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="app__worker_8hpp_source.html#l00039">depicture_menu::applications::run_worker()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="config__view__observer_8hpp_source.html#l00406">operator()()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00392">operator()()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00378">operator()()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00364">operator()()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00279">operator()()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00195">operator()()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00316">operator()()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00246">operator()()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00297">operator()()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1applications_1_1config__view__factory_1_1config__view__observer_a6368a0a839dd3d9074361f068bf77de3_cgraph.svg" width="100%" height="402"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classdepicture__menu_1_1applications_1_1config__view__factory_1_1config__view__observer_a6368a0a839dd3d9074361f068bf77de3_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="add6a6c2c783f466321b341dcc25485db" name="add6a6c2c783f466321b341dcc25485db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add6a6c2c783f466321b341dcc25485db">&#9670;&#160;</a></span>set_dispatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename D&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::applications::config_view_factory::config_view_observer::set_dispatch </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; D &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>d</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>dispather set </p>
+<p>@BUG Dispatchを解放していない</p>
+
+<p class="definition"> <a class="el" href="config__view__observer_8hpp_source.html">config_view_observer.hpp</a> の <a class="el" href="config__view__observer_8hpp_source.html#l00120">120</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="config__view__observer_8hpp_source.html#l00055">dispater_</a>.</p>
+
+</div>
+</div>
+<a id="a09b0faf34a0252e99cafe597bddd9a2a" name="a09b0faf34a0252e99cafe597bddd9a2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09b0faf34a0252e99cafe597bddd9a2a">&#9670;&#160;</a></span>set_view()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void depicture_menu::applications::config_view_factory::config_view_observer::set_view </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; ConfigArg &gt;</td>          <td class="paramname"><span class="paramname"><em>view</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="config__view__observer_8hpp_source.html">config_view_observer.hpp</a> の <a class="el" href="config__view__observer_8hpp_source.html#l00060">60</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="config__view__observer_8hpp_source.html#l00043">view_ptr_</a>.</p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">メンバ詳解</h2>
+<a id="a26768a3ff81ff0de27ede88572d6153e" name="a26768a3ff81ff0de27ede88572d6153e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26768a3ff81ff0de27ede88572d6153e">&#9670;&#160;</a></span>dispater_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::signals2::signal&lt; void( <a class="el" href="#ad97bb9a3e26696b63649fa1d767d2b4b">dispatch_t</a> const&amp; ) &gt; depicture_menu::applications::config_view_factory::config_view_observer::dispater_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="config__view__observer_8hpp_source.html">config_view_observer.hpp</a> の <a class="el" href="config__view__observer_8hpp_source.html#l00055">55</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="config__view__observer_8hpp_source.html#l00120">set_dispatch()</a>.</p>
+
+</div>
+</div>
+<a id="aae36a0e8f17bd03909838bcd15dbe258" name="aae36a0e8f17bd03909838bcd15dbe258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae36a0e8f17bd03909838bcd15dbe258">&#9670;&#160;</a></span>opt_id_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacedepicture__menu_1_1domain_1_1app.html#af0e6c7311ee1bb69c424c9ee029bf91e">domain::app::option_id</a> depicture_menu::applications::config_view_factory::config_view_observer::opt_id_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="config__view__observer_8hpp_source.html">config_view_observer.hpp</a> の <a class="el" href="config__view__observer_8hpp_source.html#l00042">42</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="config__view__observer_8hpp_source.html#l00058">config_view_observer()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00073">opt_id()</a>.</p>
+
+</div>
+</div>
+<a id="ad8a5971947f65bc39d37e98694344906" name="ad8a5971947f65bc39d37e98694344906"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8a5971947f65bc39d37e98694344906">&#9670;&#160;</a></span>view_ptr_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::weak_ptr&lt; ConfigArg &gt; depicture_menu::applications::config_view_factory::config_view_observer::view_ptr_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="config__view__observer_8hpp_source.html">config_view_observer.hpp</a> の <a class="el" href="config__view__observer_8hpp_source.html#l00043">43</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="config__view__observer_8hpp_source.html#l00064">cfg_id()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00086">find_menu_from_item_id()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00246">operator()()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00060">set_view()</a>.</p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>depicture_menu/src/core/application/cs_binding_factory/config_view_arg_builder/<a class="el" href="config__view__observer_8hpp_source.html">config_view_observer.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="namespacedepicture__menu.html">depicture_menu</a></li><li class="navelem"><a href="namespacedepicture__menu_1_1applications.html">applications</a></li><li class="navelem"><a href="namespacedepicture__menu_1_1applications_1_1config__view__factory.html">config_view_factory</a></li><li class="navelem"><a href="classdepicture__menu_1_1applications_1_1config__view__factory_1_1config__view__observer.html">config_view_observer</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

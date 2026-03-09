@@ -12,7 +12,7 @@ var _testvtbl_8cpp =
     [ "user::index_t", "namespaceuser.html#a8b759165ffa7302329b80508fd30004c", null ],
     [ "user::proxy_func_t", "namespaceuser.html#a9894cd4418d4b25b3ca4c1c2014ae7fb", null ],
     [ "test_des", "_testvtbl_8cpp.html#a3cff1a374cb141414f1bbadb63d66207", null ],
-    [ "user_structs", "_testvtbl_8cpp.html#a3c63efb588a8cd1ffec3f3822cc86c6d", null ],
+    [ "user_structs", "_testvtbl_8cpp.html#a1d87b0d3da0eb3ad75145cd5e843b6b7", null ],
     [ "BOOST_AUTO_TEST_CASE", "_testvtbl_8cpp.html#a61606f35cd51509a4eb3fd7cd16e1407", null ],
     [ "BOOST_AUTO_TEST_CASE", "_testvtbl_8cpp.html#a9228fe28b55732ea4ea8a0b4b46c8722", null ],
     [ "BOOST_AUTO_TEST_CASE", "_testvtbl_8cpp.html#a3c312b9bff7e4386182856b01e223b7e", null ],
