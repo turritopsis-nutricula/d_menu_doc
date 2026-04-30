@@ -91,8 +91,9 @@ var annotated_dup =
         [ "backup_json", "namespacedepicture__menu_1_1applications_1_1backup__json.html", [
           [ "detail", "namespacedepicture__menu_1_1applications_1_1backup__json_1_1detail.html", [
             [ "format_convert", "namespacedepicture__menu_1_1applications_1_1backup__json_1_1detail_1_1format__convert.html", [
-              [ "cascade_converter", "structdepicture__menu_1_1applications_1_1backup__json_1_1detail_1_1format__convert_1_1cascade__converter.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1detail_1_1format__convert_1_1cascade__converter" ]
-            ] ]
+              [ "cascade_converter", "classdepicture__menu_1_1applications_1_1backup__json_1_1detail_1_1format__convert_1_1cascade__converter.html", "classdepicture__menu_1_1applications_1_1backup__json_1_1detail_1_1format__convert_1_1cascade__converter" ]
+            ] ],
+            [ "backup_dto_reader", "structdepicture__menu_1_1applications_1_1backup__json_1_1detail_1_1backup__dto__reader.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1detail_1_1backup__dto__reader" ]
           ] ],
           [ "formats", "namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats.html", [
             [ "minimum", "namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1minimum.html", [
@@ -110,6 +111,19 @@ var annotated_dup =
               [ "option_data", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v002_1_1option__data.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v002_1_1option__data" ],
               [ "backup_data_data", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v002_1_1backup__data__data.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v002_1_1backup__data__data" ],
               [ "backup_data", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v002_1_1backup__data.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v002_1_1backup__data" ]
+            ] ],
+            [ "v003", "namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v003.html", [
+              [ "color_data", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v003_1_1color__data.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v003_1_1color__data" ],
+              [ "menu_item_data", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v003_1_1menu__item__data.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v003_1_1menu__item__data" ],
+              [ "menu_data", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v003_1_1menu__data.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v003_1_1menu__data" ],
+              [ "action_data", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v003_1_1action__data.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v003_1_1action__data" ],
+              [ "command_parameter_data", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v003_1_1command__parameter__data.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v003_1_1command__parameter__data" ],
+              [ "command_data", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v003_1_1command__data.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v003_1_1command__data" ],
+              [ "trigger_data", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v003_1_1trigger__data.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v003_1_1trigger__data" ],
+              [ "config_data", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v003_1_1config__data.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v003_1_1config__data" ],
+              [ "option_data", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v003_1_1option__data.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v003_1_1option__data" ],
+              [ "backup_data_data", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v003_1_1backup__data__data.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v003_1_1backup__data__data" ],
+              [ "backup_data", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v003_1_1backup__data.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v003_1_1backup__data" ]
             ] ],
             [ "v001", "namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001.html", [
               [ "color_data", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001_1_1color__data.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v001_1_1color__data" ],
@@ -129,7 +143,8 @@ var annotated_dup =
             [ "to_v001_converter", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1to__v001__converter.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1to__v001__converter" ],
             [ "uuid_compare_visiter", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1uuid__compare__visiter.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1uuid__compare__visiter" ],
             [ "to_v002_converter", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1to__v002__converter.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1to__v002__converter" ],
-            [ "to_v003_converter", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1to__v003__converter.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1to__v003__converter" ]
+            [ "to_v003_converter", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1to__v003__converter.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1to__v003__converter" ],
+            [ "to_v004_converter", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1to__v004__converter.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1to__v004__converter" ]
           ] ],
           [ "error_ctx", "structdepicture__menu_1_1applications_1_1backup__json_1_1error__ctx.html", "structdepicture__menu_1_1applications_1_1backup__json_1_1error__ctx" ]
         ] ],
@@ -151,6 +166,9 @@ var annotated_dup =
         [ "config_view_factory", "namespacedepicture__menu_1_1applications_1_1config__view__factory.html", [
           [ "config_view_observer", "classdepicture__menu_1_1applications_1_1config__view__factory_1_1config__view__observer.html", "classdepicture__menu_1_1applications_1_1config__view__factory_1_1config__view__observer" ],
           [ "changed_value", "structdepicture__menu_1_1applications_1_1config__view__factory_1_1changed__value.html", "structdepicture__menu_1_1applications_1_1config__view__factory_1_1changed__value" ]
+        ] ],
+        [ "log", "namespacedepicture__menu_1_1applications_1_1log.html", [
+          [ "logger", "classdepicture__menu_1_1applications_1_1log_1_1logger.html", "classdepicture__menu_1_1applications_1_1log_1_1logger" ]
         ] ],
         [ "usecase_dispatch", "namespacedepicture__menu_1_1applications_1_1usecase__dispatch.html", [
           [ "view_presenters_stack", "classdepicture__menu_1_1applications_1_1usecase__dispatch_1_1view__presenters__stack.html", "classdepicture__menu_1_1applications_1_1usecase__dispatch_1_1view__presenters__stack" ],
@@ -289,35 +307,6 @@ var annotated_dup =
         [ "menu_config_controler", "classdepicture__menu_1_1controls_1_1menu__config__controler.html", "classdepicture__menu_1_1controls_1_1menu__config__controler" ]
       ] ],
       [ "domain", "namespacedepicture__menu_1_1domain.html", [
-        [ "common", "namespacedepicture__menu_1_1domain_1_1common.html", [
-          [ "rgba_color", "structdepicture__menu_1_1domain_1_1common_1_1rgba__color.html", "structdepicture__menu_1_1domain_1_1common_1_1rgba__color" ]
-        ] ],
-        [ "models", "namespacedepicture__menu_1_1domain_1_1models.html", [
-          [ "detail_models", "namespacedepicture__menu_1_1domain_1_1models_1_1detail__models.html", [
-            [ "compare_equal_check", "structdepicture__menu_1_1domain_1_1models_1_1detail__models_1_1compare__equal__check.html", null ],
-            [ "compare_equal_check&lt; T &gt;", "structdepicture__menu_1_1domain_1_1models_1_1detail__models_1_1compare__equal__check_3_01_t_01_4.html", "structdepicture__menu_1_1domain_1_1models_1_1detail__models_1_1compare__equal__check_3_01_t_01_4" ],
-            [ "compare_equal_check&lt; std::vector&lt; T &gt; &gt;", "structdepicture__menu_1_1domain_1_1models_1_1detail__models_1_1compare__equal__check_3_01std_1_1vector_3_01_t_01_4_01_4.html", "structdepicture__menu_1_1domain_1_1models_1_1detail__models_1_1compare__equal__check_3_01std_1_1vector_3_01_t_01_4_01_4" ],
-            [ "to_ref_tuple_impl", "structdepicture__menu_1_1domain_1_1models_1_1detail__models_1_1to__ref__tuple__impl.html", "structdepicture__menu_1_1domain_1_1models_1_1detail__models_1_1to__ref__tuple__impl" ]
-          ] ],
-          [ "base", "namespacedepicture__menu_1_1domain_1_1models_1_1base.html", [
-            [ "entity_base", "structdepicture__menu_1_1domain_1_1models_1_1base_1_1entity__base.html", "structdepicture__menu_1_1domain_1_1models_1_1base_1_1entity__base" ],
-            [ "value_object_base", "structdepicture__menu_1_1domain_1_1models_1_1base_1_1value__object__base.html", "structdepicture__menu_1_1domain_1_1models_1_1base_1_1value__object__base" ]
-          ] ],
-          [ "detail_domain", "namespacedepicture__menu_1_1domain_1_1models_1_1detail__domain.html", [
-            [ "convertable_to_tuple_type_getter", "structdepicture__menu_1_1domain_1_1models_1_1detail__domain_1_1convertable__to__tuple__type__getter.html", null ],
-            [ "convertable_to_tuple_type_getter&lt; T &gt;", "structdepicture__menu_1_1domain_1_1models_1_1detail__domain_1_1convertable__to__tuple__type__getter_3_01_t_01_4.html", "structdepicture__menu_1_1domain_1_1models_1_1detail__domain_1_1convertable__to__tuple__type__getter_3_01_t_01_4" ],
-            [ "tuple_serializer", "structdepicture__menu_1_1domain_1_1models_1_1detail__domain_1_1tuple__serializer.html", "structdepicture__menu_1_1domain_1_1models_1_1detail__domain_1_1tuple__serializer" ],
-            [ "presistance_expand", "structdepicture__menu_1_1domain_1_1models_1_1detail__domain_1_1presistance__expand.html", null ],
-            [ "presistance_expand&lt; T &gt;", "structdepicture__menu_1_1domain_1_1models_1_1detail__domain_1_1presistance__expand_3_01_t_01_4.html", "structdepicture__menu_1_1domain_1_1models_1_1detail__domain_1_1presistance__expand_3_01_t_01_4" ]
-          ] ],
-          [ "empty_event", "structdepicture__menu_1_1domain_1_1models_1_1empty__event.html", "structdepicture__menu_1_1domain_1_1models_1_1empty__event" ],
-          [ "event_factory", "structdepicture__menu_1_1domain_1_1models_1_1event__factory.html", null ],
-          [ "event_store", "structdepicture__menu_1_1domain_1_1models_1_1event__store.html", "structdepicture__menu_1_1domain_1_1models_1_1event__store" ],
-          [ "aggregate_base", "structdepicture__menu_1_1domain_1_1models_1_1aggregate__base.html", "structdepicture__menu_1_1domain_1_1models_1_1aggregate__base" ],
-          [ "standard_tag", "structdepicture__menu_1_1domain_1_1models_1_1standard__tag.html", null ],
-          [ "entity_id_base", "structdepicture__menu_1_1domain_1_1models_1_1entity__id__base.html", "structdepicture__menu_1_1domain_1_1models_1_1entity__id__base" ],
-          [ "presistence_tuple", "structdepicture__menu_1_1domain_1_1models_1_1presistence__tuple.html", "structdepicture__menu_1_1domain_1_1models_1_1presistence__tuple" ]
-        ] ],
         [ "events", "namespacedepicture__menu_1_1domain_1_1events.html", [
           [ "detail_events", "namespacedepicture__menu_1_1domain_1_1events_1_1detail__events.html", [
             [ "envents_holder_transform", "structdepicture__menu_1_1domain_1_1events_1_1detail__events_1_1envents__holder__transform.html", null ],
@@ -367,6 +356,37 @@ var annotated_dup =
           [ "action", "classdepicture__menu_1_1domain_1_1actions_1_1v2_1_1action.html", "classdepicture__menu_1_1domain_1_1actions_1_1v2_1_1action" ],
           [ "action_sequence", "classdepicture__menu_1_1domain_1_1actions_1_1v2_1_1action__sequence.html", "classdepicture__menu_1_1domain_1_1actions_1_1v2_1_1action__sequence" ],
           [ "publisher", "classdepicture__menu_1_1domain_1_1actions_1_1v2_1_1publisher.html", "classdepicture__menu_1_1domain_1_1actions_1_1v2_1_1publisher" ]
+        ] ],
+        [ "models", "namespacedepicture__menu_1_1domain_1_1models.html", [
+          [ "detail_models", "namespacedepicture__menu_1_1domain_1_1models_1_1detail__models.html", [
+            [ "compare_equal_check", "structdepicture__menu_1_1domain_1_1models_1_1detail__models_1_1compare__equal__check.html", null ],
+            [ "compare_equal_check&lt; T &gt;", "structdepicture__menu_1_1domain_1_1models_1_1detail__models_1_1compare__equal__check_3_01_t_01_4.html", "structdepicture__menu_1_1domain_1_1models_1_1detail__models_1_1compare__equal__check_3_01_t_01_4" ],
+            [ "compare_equal_check&lt; std::vector&lt; T &gt; &gt;", "structdepicture__menu_1_1domain_1_1models_1_1detail__models_1_1compare__equal__check_3_01std_1_1vector_3_01_t_01_4_01_4.html", "structdepicture__menu_1_1domain_1_1models_1_1detail__models_1_1compare__equal__check_3_01std_1_1vector_3_01_t_01_4_01_4" ],
+            [ "to_ref_tuple_impl", "structdepicture__menu_1_1domain_1_1models_1_1detail__models_1_1to__ref__tuple__impl.html", "structdepicture__menu_1_1domain_1_1models_1_1detail__models_1_1to__ref__tuple__impl" ]
+          ] ],
+          [ "base", "namespacedepicture__menu_1_1domain_1_1models_1_1base.html", [
+            [ "v2", "namespacedepicture__menu_1_1domain_1_1models_1_1base_1_1v2.html", [
+              [ "value_object_base", "structdepicture__menu_1_1domain_1_1models_1_1base_1_1v2_1_1value__object__base.html", "structdepicture__menu_1_1domain_1_1models_1_1base_1_1v2_1_1value__object__base" ]
+            ] ],
+            [ "entity_base", "structdepicture__menu_1_1domain_1_1models_1_1base_1_1entity__base.html", "structdepicture__menu_1_1domain_1_1models_1_1base_1_1entity__base" ]
+          ] ],
+          [ "detail_domain", "namespacedepicture__menu_1_1domain_1_1models_1_1detail__domain.html", [
+            [ "convertable_to_tuple_type_getter", "structdepicture__menu_1_1domain_1_1models_1_1detail__domain_1_1convertable__to__tuple__type__getter.html", null ],
+            [ "convertable_to_tuple_type_getter&lt; T &gt;", "structdepicture__menu_1_1domain_1_1models_1_1detail__domain_1_1convertable__to__tuple__type__getter_3_01_t_01_4.html", "structdepicture__menu_1_1domain_1_1models_1_1detail__domain_1_1convertable__to__tuple__type__getter_3_01_t_01_4" ],
+            [ "tuple_serializer", "structdepicture__menu_1_1domain_1_1models_1_1detail__domain_1_1tuple__serializer.html", "structdepicture__menu_1_1domain_1_1models_1_1detail__domain_1_1tuple__serializer" ],
+            [ "presistance_expand", "structdepicture__menu_1_1domain_1_1models_1_1detail__domain_1_1presistance__expand.html", null ],
+            [ "presistance_expand&lt; T &gt;", "structdepicture__menu_1_1domain_1_1models_1_1detail__domain_1_1presistance__expand_3_01_t_01_4.html", "structdepicture__menu_1_1domain_1_1models_1_1detail__domain_1_1presistance__expand_3_01_t_01_4" ]
+          ] ],
+          [ "v1", "namespacedepicture__menu_1_1domain_1_1models_1_1v1.html", [
+            [ "value_object_base", "structdepicture__menu_1_1domain_1_1models_1_1v1_1_1value__object__base.html", "structdepicture__menu_1_1domain_1_1models_1_1v1_1_1value__object__base" ]
+          ] ],
+          [ "empty_event", "structdepicture__menu_1_1domain_1_1models_1_1empty__event.html", "structdepicture__menu_1_1domain_1_1models_1_1empty__event" ],
+          [ "event_factory", "structdepicture__menu_1_1domain_1_1models_1_1event__factory.html", null ],
+          [ "event_store", "structdepicture__menu_1_1domain_1_1models_1_1event__store.html", "structdepicture__menu_1_1domain_1_1models_1_1event__store" ],
+          [ "aggregate_base", "structdepicture__menu_1_1domain_1_1models_1_1aggregate__base.html", "structdepicture__menu_1_1domain_1_1models_1_1aggregate__base" ],
+          [ "standard_tag", "structdepicture__menu_1_1domain_1_1models_1_1standard__tag.html", null ],
+          [ "entity_id_base", "structdepicture__menu_1_1domain_1_1models_1_1entity__id__base.html", "structdepicture__menu_1_1domain_1_1models_1_1entity__id__base" ],
+          [ "presistence_tuple", "structdepicture__menu_1_1domain_1_1models_1_1presistence__tuple.html", "structdepicture__menu_1_1domain_1_1models_1_1presistence__tuple" ]
         ] ],
         [ "app", "namespacedepicture__menu_1_1domain_1_1app.html", [
           [ "detail_app", "namespacedepicture__menu_1_1domain_1_1app_1_1detail__app.html", [
@@ -420,9 +440,21 @@ var annotated_dup =
           [ "parameter_pack", "structdepicture__menu_1_1domain_1_1commands_1_1parameter__pack.html", "structdepicture__menu_1_1domain_1_1commands_1_1parameter__pack" ],
           [ "parameters_define", "classdepicture__menu_1_1domain_1_1commands_1_1parameters__define.html", "classdepicture__menu_1_1domain_1_1commands_1_1parameters__define" ]
         ] ],
+        [ "common", "namespacedepicture__menu_1_1domain_1_1common.html", [
+          [ "rgba_color", "structdepicture__menu_1_1domain_1_1common_1_1rgba__color.html", "structdepicture__menu_1_1domain_1_1common_1_1rgba__color" ],
+          [ "radius", "classdepicture__menu_1_1domain_1_1common_1_1radius.html", "classdepicture__menu_1_1domain_1_1common_1_1radius" ]
+        ] ],
         [ "id_tags", "namespacedepicture__menu_1_1domain_1_1id__tags.html", [
           [ "nil_uuid_t", "structdepicture__menu_1_1domain_1_1id__tags_1_1nil__uuid__t.html", "structdepicture__menu_1_1domain_1_1id__tags_1_1nil__uuid__t" ],
           [ "random_uuid_t", "structdepicture__menu_1_1domain_1_1id__tags_1_1random__uuid__t.html", "structdepicture__menu_1_1domain_1_1id__tags_1_1random__uuid__t" ]
+        ] ],
+        [ "icons", "namespacedepicture__menu_1_1domain_1_1icons.html", [
+          [ "detail_icons", "namespacedepicture__menu_1_1domain_1_1icons_1_1detail__icons.html", [
+            [ "icon_id_tag", "structdepicture__menu_1_1domain_1_1icons_1_1detail__icons_1_1icon__id__tag.html", null ],
+            [ "menu_action_icon_data", "structdepicture__menu_1_1domain_1_1icons_1_1detail__icons_1_1menu__action__icon__data.html", "structdepicture__menu_1_1domain_1_1icons_1_1detail__icons_1_1menu__action__icon__data" ]
+          ] ],
+          [ "menu_action_icon", "classdepicture__menu_1_1domain_1_1icons_1_1menu__action__icon.html", "classdepicture__menu_1_1domain_1_1icons_1_1menu__action__icon" ],
+          [ "svg_source", "classdepicture__menu_1_1domain_1_1icons_1_1svg__source.html", "classdepicture__menu_1_1domain_1_1icons_1_1svg__source" ]
         ] ],
         [ "menu", "namespacedepicture__menu_1_1domain_1_1menu.html", [
           [ "detail_menu", "namespacedepicture__menu_1_1domain_1_1menu_1_1detail__menu.html", [
@@ -436,6 +468,8 @@ var annotated_dup =
             [ "menu_label_data", "structdepicture__menu_1_1domain_1_1menu_1_1detail__menu_1_1menu__label__data.html", "structdepicture__menu_1_1domain_1_1menu_1_1detail__menu_1_1menu__label__data" ]
           ] ],
           [ "app_command_ids", "classdepicture__menu_1_1domain_1_1menu_1_1app__command__ids.html", "classdepicture__menu_1_1domain_1_1menu_1_1app__command__ids" ],
+          [ "menu_color", "classdepicture__menu_1_1domain_1_1menu_1_1menu__color.html", "classdepicture__menu_1_1domain_1_1menu_1_1menu__color" ],
+          [ "menu_dimension", "classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html", "classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension" ],
           [ "radialmenu", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu" ],
           [ "radialmenu_centralitem", "classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem.html", "classdepicture__menu_1_1domain_1_1menu_1_1radialmenu__centralitem" ],
           [ "radialmenu_item", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item" ],
@@ -569,6 +603,7 @@ var annotated_dup =
           [ "open_sub_menu_command_parameter", "structdepicture__menu_1_1usecase_1_1dto_1_1open__sub__menu__command__parameter.html", "structdepicture__menu_1_1usecase_1_1dto_1_1open__sub__menu__command__parameter" ],
           [ "config_save", "structdepicture__menu_1_1usecase_1_1dto_1_1config__save.html", null ],
           [ "config_view_created", "structdepicture__menu_1_1usecase_1_1dto_1_1config__view__created.html", "structdepicture__menu_1_1usecase_1_1dto_1_1config__view__created" ],
+          [ "default_menu_config_update", "structdepicture__menu_1_1usecase_1_1dto_1_1default__menu__config__update.html", "structdepicture__menu_1_1usecase_1_1dto_1_1default__menu__config__update" ],
           [ "view_changed_notify", "structdepicture__menu_1_1usecase_1_1dto_1_1view__changed__notify.html", "structdepicture__menu_1_1usecase_1_1dto_1_1view__changed__notify" ],
           [ "view_changed_notify_with_kind", "structdepicture__menu_1_1usecase_1_1dto_1_1view__changed__notify__with__kind.html", "structdepicture__menu_1_1usecase_1_1dto_1_1view__changed__notify__with__kind" ],
           [ "view_changed_notify_with_kind_event", "structdepicture__menu_1_1usecase_1_1dto_1_1view__changed__notify__with__kind__event.html", "structdepicture__menu_1_1usecase_1_1dto_1_1view__changed__notify__with__kind__event" ],
@@ -576,6 +611,7 @@ var annotated_dup =
           [ "trigger_inactivate", "structdepicture__menu_1_1usecase_1_1dto_1_1trigger__inactivate.html", "structdepicture__menu_1_1usecase_1_1dto_1_1trigger__inactivate" ],
           [ "regist_global_hotkey_trigger", "structdepicture__menu_1_1usecase_1_1dto_1_1regist__global__hotkey__trigger.html", "structdepicture__menu_1_1usecase_1_1dto_1_1regist__global__hotkey__trigger" ],
           [ "unregist_global_hotkey_trigger", "structdepicture__menu_1_1usecase_1_1dto_1_1unregist__global__hotkey__trigger.html", "structdepicture__menu_1_1usecase_1_1dto_1_1unregist__global__hotkey__trigger" ],
+          [ "icon_created", "structdepicture__menu_1_1usecase_1_1dto_1_1icon__created.html", "structdepicture__menu_1_1usecase_1_1dto_1_1icon__created" ],
           [ "menu_add", "structdepicture__menu_1_1usecase_1_1dto_1_1menu__add.html", null ],
           [ "menu_config_update", "structdepicture__menu_1_1usecase_1_1dto_1_1menu__config__update.html", "structdepicture__menu_1_1usecase_1_1dto_1_1menu__config__update" ],
           [ "menu_created", "structdepicture__menu_1_1usecase_1_1dto_1_1menu__created.html", "structdepicture__menu_1_1usecase_1_1dto_1_1menu__created" ],
@@ -591,7 +627,9 @@ var annotated_dup =
           [ "menu_updated", "structdepicture__menu_1_1usecase_1_1dto_1_1menu__updated.html", "structdepicture__menu_1_1usecase_1_1dto_1_1menu__updated" ],
           [ "open_sub_menu_command_update", "structdepicture__menu_1_1usecase_1_1dto_1_1open__sub__menu__command__update.html", "structdepicture__menu_1_1usecase_1_1dto_1_1open__sub__menu__command__update" ],
           [ "shellexecute_command_update", "structdepicture__menu_1_1usecase_1_1dto_1_1shellexecute__command__update.html", "structdepicture__menu_1_1usecase_1_1dto_1_1shellexecute__command__update" ],
-          [ "trigger_created", "structdepicture__menu_1_1usecase_1_1dto_1_1trigger__created.html", "structdepicture__menu_1_1usecase_1_1dto_1_1trigger__created" ]
+          [ "trigger_created", "structdepicture__menu_1_1usecase_1_1dto_1_1trigger__created.html", "structdepicture__menu_1_1usecase_1_1dto_1_1trigger__created" ],
+          [ "rgb", "structdepicture__menu_1_1usecase_1_1dto_1_1rgb.html", "structdepicture__menu_1_1usecase_1_1dto_1_1rgb" ],
+          [ "rgba", "structdepicture__menu_1_1usecase_1_1dto_1_1rgba.html", "structdepicture__menu_1_1usecase_1_1dto_1_1rgba" ]
         ] ],
         [ "query", "namespacedepicture__menu_1_1usecase_1_1query.html", [
           [ "default_menu_item_label_query", "structdepicture__menu_1_1usecase_1_1query_1_1default__menu__item__label__query.html", "structdepicture__menu_1_1usecase_1_1query_1_1default__menu__item__label__query" ]
@@ -619,6 +657,7 @@ var annotated_dup =
         [ "add_new_menu", "classdepicture__menu_1_1usecase_1_1add__new__menu.html", "classdepicture__menu_1_1usecase_1_1add__new__menu" ],
         [ "update_basic_action_config", "classdepicture__menu_1_1usecase_1_1update__basic__action__config.html", "classdepicture__menu_1_1usecase_1_1update__basic__action__config" ],
         [ "change_common_command", "classdepicture__menu_1_1usecase_1_1change__common__command.html", "classdepicture__menu_1_1usecase_1_1change__common__command" ],
+        [ "change_default_menu_config", "classdepicture__menu_1_1usecase_1_1change__default__menu__config.html", "classdepicture__menu_1_1usecase_1_1change__default__menu__config" ],
         [ "change_menu_item", "classdepicture__menu_1_1usecase_1_1change__menu__item.html", "classdepicture__menu_1_1usecase_1_1change__menu__item" ],
         [ "global_trigger_key_data", "structdepicture__menu_1_1usecase_1_1global__trigger__key__data.html", "structdepicture__menu_1_1usecase_1_1global__trigger__key__data" ],
         [ "menu_name_update", "structdepicture__menu_1_1usecase_1_1menu__name__update.html", "structdepicture__menu_1_1usecase_1_1menu__name__update" ],
@@ -673,11 +712,15 @@ var annotated_dup =
           ] ],
           [ "base_pair_factory", "classdepicture__menu_1_1test_1_1test__tools_1_1base__pair__factory.html", "classdepicture__menu_1_1test_1_1test__tools_1_1base__pair__factory" ],
           [ "field_accesser", "structdepicture__menu_1_1test_1_1test__tools_1_1field__accesser.html", "structdepicture__menu_1_1test_1_1test__tools_1_1field__accesser" ],
+          [ "dynamic_field_accesser", "structdepicture__menu_1_1test_1_1test__tools_1_1dynamic__field__accesser.html", "structdepicture__menu_1_1test_1_1test__tools_1_1dynamic__field__accesser" ],
           [ "mp_accesser", "structdepicture__menu_1_1test_1_1test__tools_1_1mp__accesser.html", "structdepicture__menu_1_1test_1_1test__tools_1_1mp__accesser" ],
+          [ "static_invoker_access", "structdepicture__menu_1_1test_1_1test__tools_1_1static__invoker__access.html", "structdepicture__menu_1_1test_1_1test__tools_1_1static__invoker__access" ],
           [ "invoker_access", "structdepicture__menu_1_1test_1_1test__tools_1_1invoker__access.html", "structdepicture__menu_1_1test_1_1test__tools_1_1invoker__access" ],
           [ "checker", "structdepicture__menu_1_1test_1_1test__tools_1_1checker.html", "structdepicture__menu_1_1test_1_1test__tools_1_1checker" ],
+          [ "modifers_checker", "structdepicture__menu_1_1test_1_1test__tools_1_1modifers__checker.html", "structdepicture__menu_1_1test_1_1test__tools_1_1modifers__checker" ],
           [ "init_checker", "structdepicture__menu_1_1test_1_1test__tools_1_1init__checker.html", "structdepicture__menu_1_1test_1_1test__tools_1_1init__checker" ],
           [ "field_checker", "structdepicture__menu_1_1test_1_1test__tools_1_1field__checker.html", "structdepicture__menu_1_1test_1_1test__tools_1_1field__checker" ],
+          [ "dynamic_field_checker", "structdepicture__menu_1_1test_1_1test__tools_1_1dynamic__field__checker.html", "structdepicture__menu_1_1test_1_1test__tools_1_1dynamic__field__checker" ],
           [ "aggregate_repository_mock", "classdepicture__menu_1_1test_1_1test__tools_1_1aggregate__repository__mock.html", "classdepicture__menu_1_1test_1_1test__tools_1_1aggregate__repository__mock" ],
           [ "mock_entity_buffer", "structdepicture__menu_1_1test_1_1test__tools_1_1mock__entity__buffer.html", "structdepicture__menu_1_1test_1_1test__tools_1_1mock__entity__buffer" ],
           [ "test_repository", "structdepicture__menu_1_1test_1_1test__tools_1_1test__repository.html", "structdepicture__menu_1_1test_1_1test__tools_1_1test__repository" ],
@@ -708,6 +751,14 @@ var annotated_dup =
       [ "menu_query", "structdetail__query_1_1menu__query.html", "structdetail__query_1_1menu__query" ],
       [ "trigger_query", "structdetail__query_1_1trigger__query.html", "structdetail__query_1_1trigger__query" ]
     ] ],
+    [ "DPM_NAMESPACE", "namespace_d_p_m___n_a_m_e_s_p_a_c_e.html", [
+      [ "win32", "namespace_d_p_m___n_a_m_e_s_p_a_c_e_1_1win32.html", [
+        [ "impl", "namespace_d_p_m___n_a_m_e_s_p_a_c_e_1_1win32_1_1impl.html", [
+          [ "enum_window_holder", "struct_d_p_m___n_a_m_e_s_p_a_c_e_1_1win32_1_1impl_1_1enum__window__holder.html", "struct_d_p_m___n_a_m_e_s_p_a_c_e_1_1win32_1_1impl_1_1enum__window__holder" ]
+        ] ],
+        [ "process", "class_d_p_m___n_a_m_e_s_p_a_c_e_1_1win32_1_1process.html", "class_d_p_m___n_a_m_e_s_p_a_c_e_1_1win32_1_1process" ]
+      ] ]
+    ] ],
     [ "ids", "namespaceids.html", [
       [ "root_tag", "structids_1_1root__tag.html", null ],
       [ "child_tag", "structids_1_1child__tag.html", null ],
@@ -718,6 +769,7 @@ var annotated_dup =
       [ "mock_free_func_value", "structns_1_1mock__free__func__value.html", "structns_1_1mock__free__func__value" ],
       [ "mock_get_tuple_method_value", "structns_1_1mock__get__tuple__method__value.html", "structns_1_1mock__get__tuple__method__value" ],
       [ "mock_to_ref_tuple_value", "structns_1_1mock__to__ref__tuple__value.html", "structns_1_1mock__to__ref__tuple__value" ],
+      [ "vo_v2", "classns_1_1vo__v2.html", "classns_1_1vo__v2" ],
       [ "aggregate_struct", "structns_1_1aggregate__struct.html", "structns_1_1aggregate__struct" ],
       [ "default_constract", "structns_1_1default__constract.html", "structns_1_1default__constract" ],
       [ "explicit_constract", "structns_1_1explicit__constract.html", "structns_1_1explicit__constract" ],
@@ -763,6 +815,7 @@ var annotated_dup =
     [ "command_changed", "structcommand__changed.html", "structcommand__changed" ],
     [ "command_data_factory", "structcommand__data__factory.html", "structcommand__data__factory" ],
     [ "command_line_trans", "classcommand__line__trans.html", "classcommand__line__trans" ],
+    [ "config_data_initializer", "classconfig__data__initializer.html", "classconfig__data__initializer" ],
     [ "config_data_test", "structconfig__data__test.html", "structconfig__data__test" ],
     [ "config_view_fixture", "structconfig__view__fixture.html", "structconfig__view__fixture" ],
     [ "core_interface_impl", "structcore__interface__impl.html", "structcore__interface__impl" ],

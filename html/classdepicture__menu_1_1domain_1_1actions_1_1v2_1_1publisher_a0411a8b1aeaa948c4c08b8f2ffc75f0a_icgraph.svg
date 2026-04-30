@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 851;
+var viewWidth = 672;
 var viewHeight = 290;
 var sectionId = 'dynsection-7';
 </script>
@@ -59,10 +59,10 @@ var sectionId = 'dynsection-7';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title=" ">
-<polygon fill="#999999" stroke="#666666" points="842.75,-232 720.25,-232 720.25,-188 842.75,-188 842.75,-232"/>
-<text xml:space="preserve" text-anchor="start" x="728.25" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">depicture_menu::domain</text>
-<text xml:space="preserve" text-anchor="start" x="728.25" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">::actions::v2::publisher</text>
-<text xml:space="preserve" text-anchor="middle" x="781.5" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">::add_command_id</text>
+<polygon fill="#999999" stroke="#666666" points="664,-232 541.5,-232 541.5,-188 664,-188 664,-232"/>
+<text xml:space="preserve" text-anchor="start" x="549.5" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">depicture_menu::domain</text>
+<text xml:space="preserve" text-anchor="start" x="549.5" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">::actions::v2::publisher</text>
+<text xml:space="preserve" text-anchor="middle" x="602.75" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">::add_command_id</text>
 </a>
 </g>
 </g>
@@ -70,8 +70,8 @@ var sectionId = 'dynsection-7';
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="deploy__default__setting_8cpp.html#a638e25877528b95de44e4fcd07a8c45a" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="489.75,-220 394.25,-220 394.25,-200 489.75,-200 489.75,-220"/>
-<text xml:space="preserve" text-anchor="middle" x="442" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">add_default_menu</text>
+<polygon fill="white" stroke="#666666" points="311,-220 215.5,-220 215.5,-200 311,-200 311,-220"/>
+<text xml:space="preserve" text-anchor="middle" x="263.25" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">add_default_menu</text>
 </a>
 </g>
 </g>
@@ -79,19 +79,39 @@ var sectionId = 'dynsection-7';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M708.64,-210C642.7,-210 546.92,-210 490.19,-210"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="708.26,-213.5 718.26,-210 708.26,-206.5 708.26,-213.5"/>
+<path fill="none" stroke="#63b8ff" d="M529.89,-210C463.95,-210 368.17,-210 311.44,-210"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="529.51,-213.5 539.51,-210 529.51,-206.5 529.51,-213.5"/>
+</a>
+</g>
+</g>
+<!-- Node3 -->
+<g id="Node000003" class="node">
+<title>Node3</title>
+<g id="a_Node000003"><a xlink:href="namespacedepicture__menu_1_1domain_1_1services.html#ac9a5a8c1e1f4e196526b573aa89c870d" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="505.5,-282 383,-282 383,-238 505.5,-238 505.5,-282"/>
+<text xml:space="preserve" text-anchor="start" x="391" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00">depicture_menu::domain</text>
+<text xml:space="preserve" text-anchor="start" x="391" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00">::services::build_action</text>
+<text xml:space="preserve" text-anchor="middle" x="444.25" y="-244.5" font-family="Helvetica,sans-Serif" font-size="10.00">_service</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node3 -->
+<g id="edge2_Node000001_Node000003" class="edge">
+<title>Node1&#45;&gt;Node3</title>
+<g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M530.51,-232.76C522.27,-235.39 513.93,-238.06 505.85,-240.64"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="531.34,-236.17 539.8,-229.79 529.21,-229.5 531.34,-236.17"/>
 </a>
 </g>
 </g>
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="namespacedepicture__menu_1_1domain_1_1services.html#ac9a5a8c1e1f4e196526b573aa89c870d" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="684.25,-282 561.75,-282 561.75,-238 684.25,-238 684.25,-282"/>
-<text xml:space="preserve" text-anchor="start" x="569.75" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00">depicture_menu::domain</text>
-<text xml:space="preserve" text-anchor="start" x="569.75" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00">::services::build_action</text>
-<text xml:space="preserve" text-anchor="middle" x="623" y="-244.5" font-family="Helvetica,sans-Serif" font-size="10.00">_service</text>
+<g id="a_Node000005"><a xlink:href="classdepicture__menu_1_1domain_1_1actions_1_1v2_1_1publisher.html#ac87ae212e4c608a41c323e825c5de6e2" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="505.5,-151 383,-151 383,-107 505.5,-107 505.5,-151"/>
+<text xml:space="preserve" text-anchor="start" x="391" y="-137.5" font-family="Helvetica,sans-Serif" font-size="10.00">depicture_menu::domain</text>
+<text xml:space="preserve" text-anchor="start" x="391" y="-125.5" font-family="Helvetica,sans-Serif" font-size="10.00">::actions::v2::publisher</text>
+<text xml:space="preserve" text-anchor="middle" x="444.25" y="-113.5" font-family="Helvetica,sans-Serif" font-size="10.00">::set_command_id</text>
 </a>
 </g>
 </g>
@@ -99,57 +119,19 @@ var sectionId = 'dynsection-7';
 <g id="edge4_Node000001_Node000005" class="edge">
 <title>Node1&#45;&gt;Node5</title>
 <g id="a_edge4_Node000001_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M709.26,-232.76C701.02,-235.39 692.68,-238.06 684.6,-240.64"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="710.09,-236.17 718.55,-229.79 707.96,-229.5 710.09,-236.17"/>
-</a>
-</g>
-</g>
-<!-- Node7 -->
-<g id="Node000007" class="node">
-<title>Node7</title>
-<g id="a_Node000007"><a xlink:href="classdepicture__menu_1_1domain_1_1actions_1_1v2_1_1publisher.html#ac87ae212e4c608a41c323e825c5de6e2" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="684.25,-151 561.75,-151 561.75,-107 684.25,-107 684.25,-151"/>
-<text xml:space="preserve" text-anchor="start" x="569.75" y="-137.5" font-family="Helvetica,sans-Serif" font-size="10.00">depicture_menu::domain</text>
-<text xml:space="preserve" text-anchor="start" x="569.75" y="-125.5" font-family="Helvetica,sans-Serif" font-size="10.00">::actions::v2::publisher</text>
-<text xml:space="preserve" text-anchor="middle" x="623" y="-113.5" font-family="Helvetica,sans-Serif" font-size="10.00">::set_command_id</text>
-</a>
-</g>
-</g>
-<!-- Node1&#45;&gt;Node7 -->
-<g id="edge6_Node000001_Node000007" class="edge">
-<title>Node1&#45;&gt;Node7</title>
-<g id="a_edge6_Node000001_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M727.34,-182.49C707.78,-172.36 685.89,-161.03 667.31,-151.42"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="725.49,-185.47 735.98,-186.96 728.71,-179.25 725.49,-185.47"/>
-</a>
-</g>
-</g>
-<!-- Node3 -->
-<g id="Node000003" class="node">
-<title>Node3</title>
-<g id="a_Node000003"><a xlink:href="deploy__default__setting_8cpp.html#a3311dba8e4af11d1e7973601fd991d43" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="303.5,-220 197.5,-220 197.5,-200 303.5,-200 303.5,-220"/>
-<text xml:space="preserve" text-anchor="middle" x="250.5" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">add_default_settings</text>
-</a>
-</g>
-</g>
-<!-- Node2&#45;&gt;Node3 -->
-<g id="edge2_Node000002_Node000003" class="edge">
-<title>Node2&#45;&gt;Node3</title>
-<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M382.89,-210C357.66,-210 328.34,-210 303.81,-210"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="382.64,-213.5 392.64,-210 382.64,-206.5 382.64,-213.5"/>
+<path fill="none" stroke="#63b8ff" d="M548.59,-182.49C529.03,-172.36 507.14,-161.03 488.56,-151.42"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="546.74,-185.47 557.23,-186.96 549.96,-179.25 546.74,-185.47"/>
 </a>
 </g>
 </g>
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="structdepicture__menu_1_1usecase_1_1detail__usecases_1_1deploy__default__setting__impl.html#a2c116aa98cc322e474ee99a84a130a94" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="142.75,-232 0,-232 0,-188 142.75,-188 142.75,-232"/>
-<text xml:space="preserve" text-anchor="start" x="8" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">depicture_menu::usecase</text>
-<text xml:space="preserve" text-anchor="start" x="8" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">::detail_usecases::deploy</text>
-<text xml:space="preserve" text-anchor="middle" x="71.38" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">_default_setting_impl::deploy</text>
+<g id="a_Node000004"><a xlink:href="namespacedepicture__menu_1_1domain_1_1services.html#a8b23757a00f9f8bfb1a02293d84fa0d7" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="324.5,-282 202,-282 202,-238 324.5,-238 324.5,-282"/>
+<text xml:space="preserve" text-anchor="start" x="210" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00">depicture_menu::domain</text>
+<text xml:space="preserve" text-anchor="start" x="210" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00">::services::build_action</text>
+<text xml:space="preserve" text-anchor="middle" x="263.25" y="-244.5" font-family="Helvetica,sans-Serif" font-size="10.00">_service</text>
 </a>
 </g>
 </g>
@@ -157,132 +139,112 @@ var sectionId = 'dynsection-7';
 <g id="edge3_Node000003_Node000004" class="edge">
 <title>Node3&#45;&gt;Node4</title>
 <g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M185.92,-210C172.07,-210 157.33,-210 143.22,-210"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="185.8,-213.5 195.8,-210 185.8,-206.5 185.8,-213.5"/>
+<path fill="none" stroke="#63b8ff" d="M371.53,-260C356.04,-260 339.8,-260 324.79,-260"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="371.14,-263.5 381.14,-260 371.14,-256.5 371.14,-263.5"/>
+</a>
+</g>
+</g>
+<!-- Node5&#45;&gt;Node2 -->
+<g id="edge5_Node000005_Node000002" class="edge">
+<title>Node5&#45;&gt;Node2</title>
+<g id="a_edge5_Node000005_Node000002"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M405.33,-157.77C388.27,-169.55 367.4,-182.4 347,-191 335.73,-195.75 323.06,-199.42 311.1,-202.21"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="407.01,-160.87 413.16,-152.25 402.97,-155.15 407.01,-160.87"/>
 </a>
 </g>
 </g>
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="namespacedepicture__menu_1_1domain_1_1services.html#a8b23757a00f9f8bfb1a02293d84fa0d7" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="503.25,-282 380.75,-282 380.75,-238 503.25,-238 503.25,-282"/>
-<text xml:space="preserve" text-anchor="start" x="388.75" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00">depicture_menu::domain</text>
-<text xml:space="preserve" text-anchor="start" x="388.75" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00">::services::build_action</text>
-<text xml:space="preserve" text-anchor="middle" x="442" y="-244.5" font-family="Helvetica,sans-Serif" font-size="10.00">_service</text>
+<g id="a_Node000006"><a xlink:href="test__action_8cpp.html#ac843104626db825913be7e480f5db544" target="_top" xlink:title="build_action_sequence : TestCase">
+<polygon fill="white" stroke="#666666" points="336.88,-58 189.62,-58 189.62,-38 336.88,-38 336.88,-58"/>
+<text xml:space="preserve" text-anchor="middle" x="263.25" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">BOOST_AUTO_TEST_CASE</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
-<g id="edge5_Node000005_Node000006" class="edge">
+<g id="edge6_Node000005_Node000006" class="edge">
 <title>Node5&#45;&gt;Node6</title>
-<g id="a_edge5_Node000005_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M550.28,-260C534.79,-260 518.55,-260 503.54,-260"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="549.89,-263.5 559.89,-260 549.89,-256.5 549.89,-263.5"/>
+<g id="a_edge6_Node000005_Node000006"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M405.33,-100.23C388.27,-88.45 367.4,-75.6 347,-67 338.99,-63.62 330.27,-60.79 321.6,-58.44"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="402.97,-102.85 413.16,-105.75 407.01,-97.13 402.97,-102.85"/>
 </a>
 </g>
 </g>
-<!-- Node7&#45;&gt;Node2 -->
-<g id="edge7_Node000007_Node000002" class="edge">
-<title>Node7&#45;&gt;Node2</title>
-<g id="a_edge7_Node000007_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M584.08,-157.77C567.02,-169.55 546.15,-182.4 525.75,-191 514.48,-195.75 501.81,-199.42 489.85,-202.21"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="585.76,-160.87 591.91,-152.25 581.72,-155.15 585.76,-160.87"/>
+<!-- Node7 -->
+<g id="Node000007" class="node">
+<title>Node7</title>
+<g id="a_Node000007"><a xlink:href="test-config__view_8cpp.html#a9593fb0b3c614953ed8545b960aed921" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="336.88,-20 189.62,-20 189.62,0 336.88,0 336.88,-20"/>
+<text xml:space="preserve" text-anchor="middle" x="263.25" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">BOOST_AUTO_TEST_CASE</text>
+</a>
+</g>
+</g>
+<!-- Node5&#45;&gt;Node7 -->
+<g id="edge7_Node000005_Node000007" class="edge">
+<title>Node5&#45;&gt;Node7</title>
+<g id="a_edge7_Node000005_Node000007"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M420.94,-97.49C403.37,-75.04 376.91,-45.93 347,-29 340.97,-25.59 334.37,-22.79 327.6,-20.49"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="418.15,-99.61 426.99,-105.45 423.72,-95.37 418.15,-99.61"/>
 </a>
 </g>
 </g>
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="test__action_8cpp.html#ac843104626db825913be7e480f5db544" target="_top" xlink:title="build_action_sequence : TestCase">
-<polygon fill="white" stroke="#666666" points="515.62,-58 368.38,-58 368.38,-38 515.62,-38 515.62,-58"/>
-<text xml:space="preserve" text-anchor="middle" x="442" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">BOOST_AUTO_TEST_CASE</text>
+<g id="a_Node000008"><a xlink:href="classdepicture__menu_1_1domain_1_1services_1_1common__action__builder.html#a2dac5a8e67552ecb027185e75210d586" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="347,-182 179.5,-182 179.5,-138 347,-138 347,-182"/>
+<text xml:space="preserve" text-anchor="start" x="187.5" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">depicture_menu::domain</text>
+<text xml:space="preserve" text-anchor="start" x="187.5" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">::services::common_action</text>
+<text xml:space="preserve" text-anchor="middle" x="263.25" y="-144.5" font-family="Helvetica,sans-Serif" font-size="10.00">_builder::build_shellexecute_action</text>
 </a>
 </g>
 </g>
-<!-- Node7&#45;&gt;Node8 -->
-<g id="edge8_Node000007_Node000008" class="edge">
-<title>Node7&#45;&gt;Node8</title>
-<g id="a_edge8_Node000007_Node000008"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M584.08,-100.23C567.02,-88.45 546.15,-75.6 525.75,-67 517.74,-63.62 509.02,-60.79 500.35,-58.44"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="581.72,-102.85 591.91,-105.75 585.76,-97.13 581.72,-102.85"/>
+<!-- Node5&#45;&gt;Node8 -->
+<g id="edge8_Node000005_Node000008" class="edge">
+<title>Node5&#45;&gt;Node8</title>
+<g id="a_edge8_Node000005_Node000008"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M371.55,-141.42C363.58,-142.8 355.42,-144.21 347.33,-145.61"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="371.9,-144.91 381.16,-139.75 370.71,-138.01 371.9,-144.91"/>
 </a>
 </g>
 </g>
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="test-config__view_8cpp.html#a9593fb0b3c614953ed8545b960aed921" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="515.62,-20 368.38,-20 368.38,0 515.62,0 515.62,-20"/>
-<text xml:space="preserve" text-anchor="middle" x="442" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">BOOST_AUTO_TEST_CASE</text>
+<g id="a_Node000009"><a xlink:href="structdepicture__menu_1_1usecase_1_1menu__item__sync.html#ad4a294098777093d4900b371810b3842" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="327.88,-120 198.62,-120 198.62,-76 327.88,-76 327.88,-120"/>
+<text xml:space="preserve" text-anchor="start" x="206.62" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">depicture_menu::usecase</text>
+<text xml:space="preserve" text-anchor="start" x="206.62" y="-94.5" font-family="Helvetica,sans-Serif" font-size="10.00">::menu_item_sync::create</text>
+<text xml:space="preserve" text-anchor="middle" x="263.25" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">_new_action</text>
 </a>
 </g>
 </g>
-<!-- Node7&#45;&gt;Node9 -->
-<g id="edge9_Node000007_Node000009" class="edge">
-<title>Node7&#45;&gt;Node9</title>
-<g id="a_edge9_Node000007_Node000009"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M599.69,-97.49C582.12,-75.04 555.66,-45.93 525.75,-29 519.72,-25.59 513.12,-22.79 506.35,-20.49"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="596.9,-99.61 605.74,-105.45 602.47,-95.37 596.9,-99.61"/>
+<!-- Node5&#45;&gt;Node9 -->
+<g id="edge9_Node000005_Node000009" class="edge">
+<title>Node5&#45;&gt;Node9</title>
+<g id="a_edge9_Node000005_Node000009"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M371.35,-116.55C357.06,-114.07 342.15,-111.49 328.15,-109.07"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="370.71,-119.99 381.16,-118.25 371.9,-113.09 370.71,-119.99"/>
 </a>
 </g>
 </g>
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="classdepicture__menu_1_1domain_1_1services_1_1common__action__builder.html#a2dac5a8e67552ecb027185e75210d586" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="525.75,-182 358.25,-182 358.25,-138 525.75,-138 525.75,-182"/>
-<text xml:space="preserve" text-anchor="start" x="366.25" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">depicture_menu::domain</text>
-<text xml:space="preserve" text-anchor="start" x="366.25" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">::services::common_action</text>
-<text xml:space="preserve" text-anchor="middle" x="442" y="-144.5" font-family="Helvetica,sans-Serif" font-size="10.00">_builder::build_shellexecute_action</text>
+<g id="a_Node000010"><a xlink:href="structdepicture__menu_1_1usecase_1_1menu__item__sync.html#a9fd674e4ea4f37a1275b7fcf15ad2ae5" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="143.5,-114 0,-114 0,-82 143.5,-82 143.5,-114"/>
+<text xml:space="preserve" text-anchor="start" x="8" y="-100.5" font-family="Helvetica,sans-Serif" font-size="10.00">depicture_menu::usecase</text>
+<text xml:space="preserve" text-anchor="middle" x="71.75" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">::menu_item_sync::operator()</text>
 </a>
 </g>
 </g>
-<!-- Node7&#45;&gt;Node10 -->
-<g id="edge10_Node000007_Node000010" class="edge">
-<title>Node7&#45;&gt;Node10</title>
-<g id="a_edge10_Node000007_Node000010"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M550.3,-141.42C542.33,-142.8 534.17,-144.21 526.08,-145.61"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="550.65,-144.91 559.91,-139.75 549.46,-138.01 550.65,-144.91"/>
-</a>
-</g>
-</g>
-<!-- Node11 -->
-<g id="Node000011" class="node">
-<title>Node11</title>
-<g id="a_Node000011"><a xlink:href="structdepicture__menu_1_1usecase_1_1menu__item__sync.html#ad4a294098777093d4900b371810b3842" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="506.62,-120 377.38,-120 377.38,-76 506.62,-76 506.62,-120"/>
-<text xml:space="preserve" text-anchor="start" x="385.38" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">depicture_menu::usecase</text>
-<text xml:space="preserve" text-anchor="start" x="385.38" y="-94.5" font-family="Helvetica,sans-Serif" font-size="10.00">::menu_item_sync::create</text>
-<text xml:space="preserve" text-anchor="middle" x="442" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">_new_action</text>
-</a>
-</g>
-</g>
-<!-- Node7&#45;&gt;Node11 -->
-<g id="edge11_Node000007_Node000011" class="edge">
-<title>Node7&#45;&gt;Node11</title>
-<g id="a_edge11_Node000007_Node000011"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M550.1,-116.55C535.81,-114.07 520.9,-111.49 506.9,-109.07"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="549.46,-119.99 559.91,-118.25 550.65,-113.09 549.46,-119.99"/>
-</a>
-</g>
-</g>
-<!-- Node12 -->
-<g id="Node000012" class="node">
-<title>Node12</title>
-<g id="a_Node000012"><a xlink:href="structdepicture__menu_1_1usecase_1_1menu__item__sync.html#a9fd674e4ea4f37a1275b7fcf15ad2ae5" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="322.25,-114 178.75,-114 178.75,-82 322.25,-82 322.25,-114"/>
-<text xml:space="preserve" text-anchor="start" x="186.75" y="-100.5" font-family="Helvetica,sans-Serif" font-size="10.00">depicture_menu::usecase</text>
-<text xml:space="preserve" text-anchor="middle" x="250.5" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">::menu_item_sync::operator()</text>
-</a>
-</g>
-</g>
-<!-- Node11&#45;&gt;Node12 -->
-<g id="edge12_Node000011_Node000012" class="edge">
-<title>Node11&#45;&gt;Node12</title>
-<g id="a_edge12_Node000011_Node000012"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M365.84,-98C351.59,-98 336.73,-98 322.61,-98"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="365.59,-101.5 375.59,-98 365.59,-94.5 365.59,-101.5"/>
+<!-- Node9&#45;&gt;Node10 -->
+<g id="edge10_Node000009_Node000010" class="edge">
+<title>Node9&#45;&gt;Node10</title>
+<g id="a_edge10_Node000009_Node000010"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M187.09,-98C172.84,-98 157.98,-98 143.86,-98"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="186.84,-101.5 196.84,-98 186.84,-94.5 186.84,-101.5"/>
 </a>
 </g>
 </g>

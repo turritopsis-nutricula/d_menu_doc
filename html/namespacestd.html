@@ -103,15 +103,19 @@ $(function(){initNavTree('namespacestd.html','',''); });
 関数</h2></td></tr>
 <tr class="memitem:a4771946e433ae02b9460ede8931431cf" id="r_a4771946e433ae02b9460ede8931431cf"><td class="memTemplParams" colspan="2">template&lt;typename F, typename S&gt; </td></tr>
 <tr class="memitem:a4771946e433ae02b9460ede8931431cf template"><td class="memItemLeft">std::ostream &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a4771946e433ae02b9460ede8931431cf">operator&lt;&lt;</a> (std::ostream &amp;stream, std::pair&lt; F, S &gt; const &amp;value)</td></tr>
+<tr class="memitem:a4e24c7810bfbbb87452391beac695a5b" id="r_a4e24c7810bfbbb87452391beac695a5b"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
+<tr class="memitem:a4e24c7810bfbbb87452391beac695a5b template"><td class="memItemLeft">std::ostream &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a4e24c7810bfbbb87452391beac695a5b">operator&lt;&lt;</a> (std::ostream &amp;stream, tuple&lt; Ts... &gt; const &amp;value)</td></tr>
 <tr class="memitem:a9d7abc5835e2892486f61a872e641e60" id="r_a9d7abc5835e2892486f61a872e641e60"><td class="memTemplParams" colspan="2">template&lt;typename T, typename O&gt; </td></tr>
 <tr class="memitem:a9d7abc5835e2892486f61a872e641e60 template"><td class="memItemLeft">std::ostream &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a9d7abc5835e2892486f61a872e641e60">operator&lt;&lt;</a> (std::ostream &amp;stream, std::vector&lt; T, O &gt; const &amp;value)</td></tr>
 <tr class="memitem:a319f3a3f81900eb02653bc043698c89e" id="r_a319f3a3f81900eb02653bc043698c89e"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:a319f3a3f81900eb02653bc043698c89e template"><td class="memItemLeft">std::ostream &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a319f3a3f81900eb02653bc043698c89e">operator&lt;&lt;</a> (std::ostream &amp;stream, std::variant&lt; Args... &gt; const &amp;value)</td></tr>
 <tr class="memitem:ab2c18dd60f52567ae97486b805571653" id="r_ab2c18dd60f52567ae97486b805571653"><td class="memItemLeft">std::ostream &amp;&#160;</td><td class="memItemRight"><a class="el" href="#ab2c18dd60f52567ae97486b805571653">operator&lt;&lt;</a> (std::ostream &amp;os, std::wstring const &amp;v)</td></tr>
+<tr class="memitem:a35fbdbeda60773788c3b8a8db5aa66a0" id="r_a35fbdbeda60773788c3b8a8db5aa66a0"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
+<tr class="memitem:a35fbdbeda60773788c3b8a8db5aa66a0 template"><td class="memItemLeft">std::ostream &amp;&#160;</td><td class="memItemRight"><a class="el" href="#a35fbdbeda60773788c3b8a8db5aa66a0">operator&lt;&lt;</a> (std::ostream &amp;stream, std::optional&lt; T &gt; const &amp;value)</td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
 <a id="ab2c18dd60f52567ae97486b805571653" name="ab2c18dd60f52567ae97486b805571653"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2c18dd60f52567ae97486b805571653">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2c18dd60f52567ae97486b805571653">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -141,8 +145,33 @@ $(function(){initNavTree('namespacestd.html','',''); });
 
 </div>
 </div>
+<a id="a35fbdbeda60773788c3b8a8db5aa66a0" name="a35fbdbeda60773788c3b8a8db5aa66a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35fbdbeda60773788c3b8a8db5aa66a0">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; std::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;</td>          <td class="paramname"><span class="paramname"><em>stream</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::optional&lt; T &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="test__tools_8hpp_source.html">test_tools.hpp</a> の <a class="el" href="test__tools_8hpp_source.html#l00097">97</a> 行目に定義があります。</p>
+
+</div>
+</div>
 <a id="a4771946e433ae02b9460ede8931431cf" name="a4771946e433ae02b9460ede8931431cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4771946e433ae02b9460ede8931431cf">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4771946e433ae02b9460ede8931431cf">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -162,12 +191,12 @@ template&lt;typename F, typename S&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_test_backup_data_presenter_8cpp_source.html">TestBackupDataPresenter.cpp</a> の <a class="el" href="_test_backup_data_presenter_8cpp_source.html#l00033">33</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_test_backup_data_presenter_8cpp_source.html">TestBackupDataPresenter.cpp</a> の <a class="el" href="_test_backup_data_presenter_8cpp_source.html#l00036">36</a> 行目に定義があります。</p>
 
 </div>
 </div>
 <a id="a319f3a3f81900eb02653bc043698c89e" name="a319f3a3f81900eb02653bc043698c89e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a319f3a3f81900eb02653bc043698c89e">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a319f3a3f81900eb02653bc043698c89e">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -187,12 +216,12 @@ template&lt;typename... Args&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_test_backup_data_presenter_8cpp_source.html">TestBackupDataPresenter.cpp</a> の <a class="el" href="_test_backup_data_presenter_8cpp_source.html#l00056">56</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_test_backup_data_presenter_8cpp_source.html">TestBackupDataPresenter.cpp</a> の <a class="el" href="_test_backup_data_presenter_8cpp_source.html#l00067">67</a> 行目に定義があります。</p>
 
 </div>
 </div>
 <a id="a9d7abc5835e2892486f61a872e641e60" name="a9d7abc5835e2892486f61a872e641e60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d7abc5835e2892486f61a872e641e60">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d7abc5835e2892486f61a872e641e60">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -212,7 +241,32 @@ template&lt;typename T, typename O&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="_test_backup_data_presenter_8cpp_source.html">TestBackupDataPresenter.cpp</a> の <a class="el" href="_test_backup_data_presenter_8cpp_source.html#l00041">41</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="_test_backup_data_presenter_8cpp_source.html">TestBackupDataPresenter.cpp</a> の <a class="el" href="_test_backup_data_presenter_8cpp_source.html#l00052">52</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a4e24c7810bfbbb87452391beac695a5b" name="a4e24c7810bfbbb87452391beac695a5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e24c7810bfbbb87452391beac695a5b">&#9670;&#160;</a></span>operator&lt;&lt;() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Ts&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; std::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;</td>          <td class="paramname"><span class="paramname"><em>stream</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">tuple&lt; Ts... &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="_test_backup_data_presenter_8cpp_source.html">TestBackupDataPresenter.cpp</a> の <a class="el" href="_test_backup_data_presenter_8cpp_source.html#l00044">44</a> 行目に定義があります。</p>
 
 </div>
 </div>

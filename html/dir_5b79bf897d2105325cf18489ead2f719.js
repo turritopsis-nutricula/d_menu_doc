@@ -5,5 +5,6 @@ var dir_5b79bf897d2105325cf18489ead2f719 =
     [ "minimum.hpp", "minimum_8hpp.html", "minimum_8hpp" ],
     [ "to_vxxx_converter.cpp", "to__vxxx__converter_8cpp.html", "to__vxxx__converter_8cpp" ],
     [ "v001.hpp", "v001_8hpp.html", "v001_8hpp" ],
-    [ "v002.hpp", "v002_8hpp.html", "v002_8hpp" ]
+    [ "v002.hpp", "v002_8hpp.html", "v002_8hpp" ],
+    [ "v003.hpp", "v003_8hpp.html", "v003_8hpp" ]
 ];

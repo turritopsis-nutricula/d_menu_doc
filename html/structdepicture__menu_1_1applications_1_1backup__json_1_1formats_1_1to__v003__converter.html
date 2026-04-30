@@ -94,45 +94,53 @@ $(function(){initNavTree('structdepicture__menu_1_1applications_1_1backup__json_
 </div><!--header-->
 <div class="contents">
 
+<p>v003へのバックアップコンバート  
+ <a href="#details">[詳解]</a></p>
+
 <p><code>#include &lt;<a class="el" href="v002_8hpp_source.html">v002.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 公開メンバ関数</h2></td></tr>
-<tr class="memitem:aba61af4255a48a37364d810ce00eb5be" id="r_aba61af4255a48a37364d810ce00eb5be"><td class="memItemLeft"><a class="el" href="namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v002.html#af583a814e54b9f5a35a5bd5e5e018fa6">v002::backup_json</a>&#160;</td><td class="memItemRight"><a class="el" href="#aba61af4255a48a37364d810ce00eb5be">operator()</a> (<a class="el" href="namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v002.html#af583a814e54b9f5a35a5bd5e5e018fa6">v002::backup_json</a> &amp;&amp;old) const</td></tr>
+<tr class="memitem:a45f3d14509b0a77f16dd93d25d909559" id="r_a45f3d14509b0a77f16dd93d25d909559"><td class="memItemLeft"><a class="el" href="structdepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v003_1_1backup__data.html">v003::backup_data</a>&#160;</td><td class="memItemRight"><a class="el" href="#a45f3d14509b0a77f16dd93d25d909559">operator()</a> (<a class="el" href="namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v002.html#af583a814e54b9f5a35a5bd5e5e018fa6">v002::backup_json</a> &amp;&amp;old) const</td></tr>
+<tr class="memdesc:a45f3d14509b0a77f16dd93d25d909559"><td class="mdescLeft">&#160;</td><td class="mdescRight">v002からv003へのコンバート実装  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
-<div class="textblock">
-<p class="definition"> <a class="el" href="v002_8hpp_source.html">v002.hpp</a> の <a class="el" href="v002_8hpp_source.html#l00286">286</a> 行目に定義があります。</p>
+<div class="textblock"><p>v003へのバックアップコンバート </p>
+
+<p class="definition"> <a class="el" href="v002_8hpp_source.html">v002.hpp</a> の <a class="el" href="v002_8hpp_source.html#l00297">297</a> 行目に定義があります。</p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
-<a id="aba61af4255a48a37364d810ce00eb5be" name="aba61af4255a48a37364d810ce00eb5be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba61af4255a48a37364d810ce00eb5be">&#9670;&#160;</a></span>operator()()</h2>
+<a id="a45f3d14509b0a77f16dd93d25d909559" name="a45f3d14509b0a77f16dd93d25d909559"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45f3d14509b0a77f16dd93d25d909559">&#9670;&#160;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v002.html#af583a814e54b9f5a35a5bd5e5e018fa6">v002::backup_json</a> depicture_menu::applications::backup_json::formats::to_v003_converter::operator() </td>
+          <td class="memname"><a class="el" href="namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v003.html#a6dae45517e3923b432d07d58f8ab30d7">v003::backup_json</a> depicture_menu::applications::backup_json::formats::to_v003_converter::operator() </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v002.html#af583a814e54b9f5a35a5bd5e5e018fa6">v002::backup_json</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>old</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="namespacedepicture__menu_1_1applications_1_1backup__json_1_1formats_1_1v002.html#af583a814e54b9f5a35a5bd5e5e018fa6">v002::backup_json</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>v1</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="v002_8hpp_source.html">v002.hpp</a> の <a class="el" href="v002_8hpp_source.html#l00288">288</a> 行目に定義があります。</p>
+<p>v002からv003へのコンバート実装 </p>
+<p>バージョン2から以下の追加</p><ul>
+<li>menu_item::icon_id</li>
+<li>config::icon_ids</li>
+<li>config::def_menu_dim</li>
+<li>config::def_menu_color </li>
+</ul>
+
+<p class="definition"> <a class="el" href="to__vxxx__converter_8cpp_source.html">to_vxxx_converter.cpp</a> の <a class="el" href="to__vxxx__converter_8cpp_source.html#l00153">153</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="v003_8hpp_source.html#l00207">depicture_menu::applications::backup_json::formats::v003::backup_data_data::config</a>, <a class="el" href="v003_8hpp_source.html#l00233">depicture_menu::applications::backup_json::formats::v003::backup_data::data</a>.</p>
 
 </div>
 </div>
 <hr/>この構造体詳解は次のファイルから抽出されました:<ul>
 <li>depicture_menu/src/core/application/backup_json/format/<a class="el" href="v002_8hpp_source.html">v002.hpp</a></li>
+<li>depicture_menu/src/core/application/backup_json/format/<a class="el" href="to__vxxx__converter_8cpp_source.html">to_vxxx_converter.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

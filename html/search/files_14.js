@@ -8,7 +8,8 @@ var searchData=
   ['win32_5fvirtual_5fkey_5fcode_5flist_2edef_5',['win32_virtual_key_code_list.def',['../win32__virtual__key__code__list_8def.html',1,'']]],
   ['win32_5fwindow_5fobserver_2ecpp_6',['win32_window_observer.cpp',['../win32__window__observer_8cpp.html',1,'']]],
   ['win32_5fwindow_5fobserver_2ehpp_7',['win32_window_observer.hpp',['../win32__window__observer_8hpp.html',1,'']]],
-  ['workaround_2ecpp_8',['workaround.cpp',['../workaround_8cpp.html',1,'']]],
-  ['worker_5fpool_2ehpp_9',['worker_pool.hpp',['../worker__pool_8hpp.html',1,'']]],
-  ['wpf_5fkey_5fcode_2ehpp_10',['wpf_key_code.hpp',['../wpf__key__code_8hpp.html',1,'']]]
+  ['window_5fhandlings_2ehpp_8',['window_handlings.hpp',['../window__handlings_8hpp.html',1,'']]],
+  ['workaround_2ecpp_9',['workaround.cpp',['../workaround_8cpp.html',1,'']]],
+  ['worker_5fpool_2ehpp_10',['worker_pool.hpp',['../worker__pool_8hpp.html',1,'']]],
+  ['wpf_5fkey_5fcode_2ehpp_11',['wpf_key_code.hpp',['../wpf__key__code_8hpp.html',1,'']]]
 ];

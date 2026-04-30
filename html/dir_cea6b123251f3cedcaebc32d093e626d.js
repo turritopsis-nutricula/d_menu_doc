@@ -12,7 +12,10 @@ var dir_cea6b123251f3cedcaebc32d093e626d =
     [ "core_info.hpp", "core__info_8hpp.html", null ],
     [ "CoreModel.hpp", "_core_model_8hpp.html", "_core_model_8hpp" ],
     [ "HotKeyControler.hpp", "_hot_key_controler_8hpp.html", null ],
+    [ "MenuColor.hpp", "_menu_color_8hpp.html", null ],
+    [ "MenuDimension.hpp", "_menu_dimension_8hpp.html", null ],
     [ "RadialMenuArgs.hpp", "_radial_menu_args_8hpp.html", null ],
+    [ "SvgIcon.hpp", "_svg_icon_8hpp.html", null ],
     [ "TestStruct.hpp", "_test_struct_8hpp.html", null ],
     [ "ViewEventNotify.hpp", "_view_event_notify_8hpp.html", null ]
 ];

@@ -17,5 +17,6 @@ var test__tools_8hpp =
     [ "boost_pfr_able", "conceptboost__pfr__able.html", null ],
     [ "DPM_TT_DTO_PRINT", "test__tools_8hpp.html#ad02d0b0388f0e20ec752619c223f74e0", null ],
     [ "DPM_TT_ENUM_PRINT", "test__tools_8hpp.html#a02f91e26e1a617c25997bf6da111655d", null ],
-    [ "std::operator<<", "namespacestd.html#ab2c18dd60f52567ae97486b805571653", null ]
+    [ "std::operator<<", "namespacestd.html#ab2c18dd60f52567ae97486b805571653", null ],
+    [ "std::operator<<", "namespacestd.html#a35fbdbeda60773788c3b8a8db5aa66a0", null ]
 ];

@@ -4,14 +4,14 @@ var indexSectionsWithContent =
   1: "abcdefghijklmnopqrstuvw",
   2: "bcdinpstuド",
   3: "abcdefghiklmnoprstuvw",
-  4: "abcdefghiklmnopqrstuvw~",
-  5: "_abcdefghiklmnoprstuvwy",
+  4: "abcdefghijklmnopqrstuvw~",
+  5: "_abcdefghijklmnoprstuvwxy",
   6: "abcdefghiklmnopqrstuvw",
-  7: "cdikopvw",
+  7: "cdiklopvw",
   8: "_abcdefghijklmnopqrstuvwxyz",
   9: "bgort",
   10: "_abcdefikmnprst",
-  11: "バ",
+  11: "tバ",
   12: "abcdeghilmoprstuv"
 };
 

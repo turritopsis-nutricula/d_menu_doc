@@ -94,10 +94,13 @@ $(function(){initNavTree('domain_2model_2app_2config_8hpp.html','',''); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="action__ids_8hpp_source.html">../action/action_ids.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="menu__color_8hpp_source.html">../menu/menu_color.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="menu__dimension_8hpp_source.html">../menu/menu_dimension.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="menu__ids_8hpp_source.html">../menu/menu_ids.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="command__ids_8hpp_source.html">../command/command_ids.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="command__kind_8hpp_source.html">../command/command_kind.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="common__command__kind_8hpp_source.html">../command/common_command_kind.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="menu__action__icon_8hpp_source.html">../icon/menu_action_icon.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="trigger__ids_8hpp_source.html">../trigger/trigger_ids.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="app__ids_8hpp_source.html">app_ids.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="model_2entity_8hpp_source.html">core/domain/model/entity.hpp</a>&quot;</code><br />
@@ -126,6 +129,7 @@ config.hpp の依存先関係図:</div>
 <tr class="memitem:depicture_5Fmenu" id="r_depicture_5Fmenu"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu.html">depicture_menu</a></td></tr>
 <tr class="memitem:depicture_5Fmenu_3A_3Adomain" id="r_depicture_5Fmenu_3A_3Adomain"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1domain.html">depicture_menu::domain</a></td></tr>
 <tr class="memitem:depicture_5Fmenu_3A_3Adomain_3A_3Aapp" id="r_depicture_5Fmenu_3A_3Adomain_3A_3Aapp"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1domain_1_1app.html">depicture_menu::domain::app</a></td></tr>
+<tr class="memdesc:namespacedepicture__menu_1_1domain_1_1app"><td class="mdescLeft">&#160;</td><td class="mdescRight">オプションエンティティ <br /></td></tr>
 <tr class="memitem:depicture_5Fmenu_3A_3Adomain_3A_3Aapp_3A_3Adetail_5Fapp" id="r_depicture_5Fmenu_3A_3Adomain_3A_3Aapp_3A_3Adetail_5Fapp"><td class="memItemLeft">namespace &#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1domain_1_1app_1_1detail__app.html">depicture_menu::domain::app::detail_app</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
@@ -172,20 +176,21 @@ config.hpp の依存先関係図:</div>
 <div class="line">{                                                             \</div>
 <div class="line">    LIST_VALUE.clear( );                                      \</div>
 <div class="line">}                                                             \</div>
-<div class="line">config&amp; <a class="code hl_enumvalue" href="namespacedepicture__menu_1_1cs__binding.html#a88ea3f39108358172e2ca8a065b93695a34ec78fcc91ffb1e54cd85e4a0924332">add</a>( ID_TYPE <span class="keyword">const</span>&amp; <span class="keywordtype">id</span> )                              \</div>
+<div class="line"><a class="code hl_variable" href="default__svg__contents_8hpp.html#a2183fe861ed04c9a14e05bb738280bb8">config</a>&amp; <a class="code hl_enumvalue" href="namespacedepicture__menu_1_1cs__binding.html#a88ea3f39108358172e2ca8a065b93695a34ec78fcc91ffb1e54cd85e4a0924332">add</a>( ID_TYPE <span class="keyword">const</span>&amp; <span class="keywordtype">id</span> )                              \</div>
 <div class="line">{                                                             \</div>
 <div class="line">    add_##NAME( <span class="keywordtype">id</span> );                                         \</div>
 <div class="line">    <span class="keywordflow">return</span> *<span class="keyword">this</span>;                                             \</div>
 <div class="line">}                                                             \</div>
-<div class="line">config&amp; <a class="code hl_enumvalue" href="namespacedepicture__menu_1_1cs__binding.html#a88ea3f39108358172e2ca8a065b93695a0f6969d7052da9261e31ddb6e88c136e">remove</a>( ID_TYPE <span class="keyword">const</span>&amp; <span class="keywordtype">id</span> )                           \</div>
+<div class="line"><a class="code hl_variable" href="default__svg__contents_8hpp.html#a2183fe861ed04c9a14e05bb738280bb8">config</a>&amp; <a class="code hl_enumvalue" href="namespacedepicture__menu_1_1cs__binding.html#a88ea3f39108358172e2ca8a065b93695a0f6969d7052da9261e31ddb6e88c136e">remove</a>( ID_TYPE <span class="keyword">const</span>&amp; <span class="keywordtype">id</span> )                           \</div>
 <div class="line">{                                                             \</div>
 <div class="line">    erase_##NAME( <span class="keywordtype">id</span> );                                       \</div>
 <div class="line">    <span class="keywordflow">return</span> *<span class="keyword">this</span>;                                             \</div>
 <div class="line">}</div>
+<div class="ttc" id="adefault__svg__contents_8hpp_html_a2183fe861ed04c9a14e05bb738280bb8"><div class="ttname"><a href="default__svg__contents_8hpp.html#a2183fe861ed04c9a14e05bb738280bb8">config</a></div><div class="ttdeci">constexpr char const  * config</div><div class="ttdef"><b>Definition</b> <a href="default__svg__contents_8hpp_source.html#l00088">default_svg_contents.hpp:88</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1cs__binding_html_a88ea3f39108358172e2ca8a065b93695a0f6969d7052da9261e31ddb6e88c136e"><div class="ttname"><a href="namespacedepicture__menu_1_1cs__binding.html#a88ea3f39108358172e2ca8a065b93695a0f6969d7052da9261e31ddb6e88c136e">depicture_menu::cs_binding::cs_notify_collection_changed_action::remove</a></div><div class="ttdeci">@ remove</div><div class="ttdef"><b>Definition</b> <a href="list__wrapper_8hpp_source.html#l00052">list_wrapper.hpp:52</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1cs__binding_html_a88ea3f39108358172e2ca8a065b93695a34ec78fcc91ffb1e54cd85e4a0924332"><div class="ttname"><a href="namespacedepicture__menu_1_1cs__binding.html#a88ea3f39108358172e2ca8a065b93695a34ec78fcc91ffb1e54cd85e4a0924332">depicture_menu::cs_binding::cs_notify_collection_changed_action::add</a></div><div class="ttdeci">@ add</div><div class="ttdef"><b>Definition</b> <a href="list__wrapper_8hpp_source.html#l00050">list_wrapper.hpp:50</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="domain_2model_2app_2config_8hpp_source.html">config.hpp</a> の <a class="el" href="domain_2model_2app_2config_8hpp_source.html#l00017">17</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="domain_2model_2app_2config_8hpp_source.html">config.hpp</a> の <a class="el" href="domain_2model_2app_2config_8hpp_source.html#l00020">20</a> 行目に定義があります。</p>
 
 </div>
 </div>

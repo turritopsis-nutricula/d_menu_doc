@@ -3,6 +3,7 @@ var structdetail_1_1config__view__dispatch =
     [ "operator()", "structdetail_1_1config__view__dispatch.html#aa3a108804e4e17af423a152d8a5b6b6e", null ],
     [ "operator()", "structdetail_1_1config__view__dispatch.html#a41903c01ec35f58bb05db603f661d495", null ],
     [ "operator()", "structdetail_1_1config__view__dispatch.html#ab153bd4e90b8c6058b92be00888b603a", null ],
+    [ "operator()", "structdetail_1_1config__view__dispatch.html#a56b302315ab59b4ac76481cc1bd4c9db", null ],
     [ "operator()", "structdetail_1_1config__view__dispatch.html#a6813a6c35a9eb1d397bef9213d55d6db", null ],
     [ "operator()", "structdetail_1_1config__view__dispatch.html#a76b30ceed9f44c7486fe6ce723b0d586", null ],
     [ "operator()", "structdetail_1_1config__view__dispatch.html#a626371d6da54a29abcfb88ee0da91038", null ],

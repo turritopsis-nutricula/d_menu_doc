@@ -94,14 +94,28 @@ $(function(){initNavTree('structdepicture__menu_1_1domain_1_1common_1_1rgba__col
 </div><!--header-->
 <div class="contents">
 
+<p>カラー表現 ValueObject  
+ <a href="#details">[詳解]</a></p>
+
 <p><code>#include &lt;<a class="el" href="colors_8hpp_source.html">colors.hpp</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a183027d60566324d551ad43c8258c2e0" id="r_a183027d60566324d551ad43c8258c2e0"><td class="memTemplParams" colspan="2">template&lt;concepts::rgba_channel_color T&gt; </td></tr>
+<tr class="memitem:a183027d60566324d551ad43c8258c2e0 template"><td class="memItemLeft">constexpr&#160;</td><td class="memItemRight"><a class="el" href="#a183027d60566324d551ad43c8258c2e0">operator T</a> () const</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 静的公開メンバ関数</h2></td></tr>
-<tr class="memitem:a7afadb51061aa16e4b659f643b4b2e65" id="r_a7afadb51061aa16e4b659f643b4b2e65"><td class="memTemplParams" colspan="2">template&lt;std::integral I&gt; </td></tr>
-<tr class="memitem:a7afadb51061aa16e4b659f643b4b2e65 template"><td class="memItemLeft">static <a class="el" href="structdepicture__menu_1_1domain_1_1common_1_1rgba__color.html">rgba_color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a7afadb51061aa16e4b659f643b4b2e65">from_rgba_tuple</a> (I <a class="el" href="structa.html">a</a>[4])</td></tr>
-<tr class="memitem:a90c43aeb02c3c64cb999bda82dbea693" id="r_a90c43aeb02c3c64cb999bda82dbea693"><td class="memTemplParams" colspan="2">template&lt;std::integral I&gt; </td></tr>
-<tr class="memitem:a90c43aeb02c3c64cb999bda82dbea693 template"><td class="memItemLeft">static <a class="el" href="structdepicture__menu_1_1domain_1_1common_1_1rgba__color.html">rgba_color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a90c43aeb02c3c64cb999bda82dbea693">from_rgba_tuple</a> (std::array&lt; I, 4 &gt; const &amp;<a class="el" href="structa.html">a</a>)</td></tr>
+<tr class="memitem:a8b050dcb1e4453a347837173ad2ba75d" id="r_a8b050dcb1e4453a347837173ad2ba75d"><td class="memTemplParams" colspan="2">template&lt;std::integral I&gt; </td></tr>
+<tr class="memitem:a8b050dcb1e4453a347837173ad2ba75d template"><td class="memItemLeft">static constexpr <a class="el" href="structdepicture__menu_1_1domain_1_1common_1_1rgba__color.html">rgba_color</a>&#160;</td><td class="memItemRight"><a class="el" href="#a8b050dcb1e4453a347837173ad2ba75d">from_rgba_tuple</a> (I <a class="el" href="structa.html">a</a>[4])</td></tr>
+<tr class="memdesc:a8b050dcb1e4453a347837173ad2ba75d"><td class="mdescLeft">&#160;</td><td class="mdescRight">配列から構成  <br /></td></tr>
+<tr class="memitem:afdda32a97aef8b5e74e6c536d13127dd" id="r_afdda32a97aef8b5e74e6c536d13127dd"><td class="memTemplParams" colspan="2">template&lt;std::integral I&gt; </td></tr>
+<tr class="memitem:afdda32a97aef8b5e74e6c536d13127dd template"><td class="memItemLeft">static constexpr <a class="el" href="structdepicture__menu_1_1domain_1_1common_1_1rgba__color.html">rgba_color</a>&#160;</td><td class="memItemRight"><a class="el" href="#afdda32a97aef8b5e74e6c536d13127dd">from_rgba_tuple</a> (std::array&lt; I, 4 &gt; const &amp;<a class="el" href="structa.html">a</a>)</td></tr>
+<tr class="memdesc:afdda32a97aef8b5e74e6c536d13127dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">配列から構成  <br /></td></tr>
+<tr class="memitem:af628cd8308653e5f05ee6bbdd070e054" id="r_af628cd8308653e5f05ee6bbdd070e054"><td class="memItemLeft">static constexpr <a class="el" href="structdepicture__menu_1_1domain_1_1common_1_1rgba__color.html">rgba_color</a>&#160;</td><td class="memItemRight"><a class="el" href="#af628cd8308653e5f05ee6bbdd070e054">from_rgba</a> (concepts::rgba_channel_color auto const &amp;<a class="el" href="structa.html">a</a>)</td></tr>
+<tr class="memdesc:af628cd8308653e5f05ee6bbdd070e054"><td class="mdescLeft">&#160;</td><td class="mdescRight">RGBAカラーコンセプトから構成  <br /></td></tr>
+<tr class="memitem:ae88437eac8806ea4ec0b09f9b71f7185" id="r_ae88437eac8806ea4ec0b09f9b71f7185"><td class="memItemLeft">static constexpr <a class="el" href="structdepicture__menu_1_1domain_1_1common_1_1rgba__color.html">rgba_color</a>&#160;</td><td class="memItemRight"><a class="el" href="#ae88437eac8806ea4ec0b09f9b71f7185">from_rgb</a> (concepts::rgb_channel_color auto const &amp;<a class="el" href="structa.html">a</a>, unsigned int opacity=255u)</td></tr>
+<tr class="memdesc:ae88437eac8806ea4ec0b09f9b71f7185"><td class="mdescLeft">&#160;</td><td class="mdescRight">RGBカラーコンセプトから構成  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 公開変数類</h2></td></tr>
@@ -113,13 +127,106 @@ $(function(){initNavTree('structdepicture__menu_1_1domain_1_1common_1_1rgba__col
 <tr class="heading"><td colspan="2"><h2 id="header-friends" class="groupheader"><a id="friends" name="friends"></a>
 フレンド</h2></td></tr>
 <tr class="memitem:ae57f1278925fbb0e13ee214c3b502926" id="r_ae57f1278925fbb0e13ee214c3b502926"><td class="memItemLeft">auto&#160;</td><td class="memItemRight"><a class="el" href="#ae57f1278925fbb0e13ee214c3b502926">to_ref_tuple</a> (<a class="el" href="structdepicture__menu_1_1domain_1_1common_1_1rgba__color.html">rgba_color</a> &amp;<a class="el" href="structc.html">c</a>)</td></tr>
+<tr class="memdesc:ae57f1278925fbb0e13ee214c3b502926"><td class="mdescLeft">&#160;</td><td class="mdescRight">シリアライズメソッド  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">詳解</h2>
-<div class="textblock">
-<p class="definition"> <a class="el" href="colors_8hpp_source.html">colors.hpp</a> の <a class="el" href="colors_8hpp_source.html#l00060">60</a> 行目に定義があります。</p>
+<div class="textblock"><p>カラー表現 ValueObject </p>
+<p>カラーコンセプトを実装 </p>
+
+<p class="definition"> <a class="el" href="colors_8hpp_source.html">colors.hpp</a> の <a class="el" href="colors_8hpp_source.html#l00252">252</a> 行目に定義があります。</p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">関数詳解</h2>
-<a id="a7afadb51061aa16e4b659f643b4b2e65" name="a7afadb51061aa16e4b659f643b4b2e65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7afadb51061aa16e4b659f643b4b2e65">&#9670;&#160;</a></span>from_rgba_tuple() <span class="overload">[1/2]</span></h2>
+<a id="ae88437eac8806ea4ec0b09f9b71f7185" name="ae88437eac8806ea4ec0b09f9b71f7185"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae88437eac8806ea4ec0b09f9b71f7185">&#9670;&#160;</a></span>from_rgb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="structdepicture__menu_1_1domain_1_1common_1_1rgba__color.html">rgba_color</a> depicture_menu::domain::common::rgba_color::from_rgb </td>
+          <td>(</td>
+          <td class="paramtype">concepts::rgb_channel_color auto const &amp;</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>opacity</em></span><span class="paramdefsep"> = </span><span class="paramdefval">255u</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>RGBカラーコンセプトから構成 </p>
+
+<p class="definition"> <a class="el" href="colors_8hpp_source.html">colors.hpp</a> の <a class="el" href="colors_8hpp_source.html#l00313">313</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="colors_8hpp_source.html#l00341">depicture_menu::domain::common::get_blue()</a>, <a class="el" href="colors_8hpp_source.html#l00336">depicture_menu::domain::common::get_green()</a>, <a class="el" href="colors_8hpp_source.html#l00331">depicture_menu::domain::common::get_red()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="menu__view__presenter_8cpp_source.html#l00218">depicture_menu::presentations::menu_view_presenter::operator()()</a>, <a class="el" href="menu__color_8hpp_source.html#l00081">depicture_menu::domain::menu::menu_color::with_back_color()</a>, <a class="el" href="menu__color_8hpp_source.html#l00064">depicture_menu::domain::menu::menu_color::with_fore_color()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1domain_1_1common_1_1rgba__color_ae88437eac8806ea4ec0b09f9b71f7185_cgraph.svg" width="386" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1domain_1_1common_1_1rgba__color_ae88437eac8806ea4ec0b09f9b71f7185_icgraph.svg" width="442" height="219"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="af628cd8308653e5f05ee6bbdd070e054" name="af628cd8308653e5f05ee6bbdd070e054"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af628cd8308653e5f05ee6bbdd070e054">&#9670;&#160;</a></span>from_rgba()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="structdepicture__menu_1_1domain_1_1common_1_1rgba__color.html">rgba_color</a> depicture_menu::domain::common::rgba_color::from_rgba </td>
+          <td>(</td>
+          <td class="paramtype">concepts::rgba_channel_color auto const &amp;</td>          <td class="paramname"><span class="paramname"><em>a</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>RGBAカラーコンセプトから構成 </p>
+
+<p class="definition"> <a class="el" href="colors_8hpp_source.html">colors.hpp</a> の <a class="el" href="colors_8hpp_source.html#l00301">301</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="colors_8hpp_source.html#l00341">depicture_menu::domain::common::get_blue()</a>, <a class="el" href="colors_8hpp_source.html#l00336">depicture_menu::domain::common::get_green()</a>, <a class="el" href="colors_8hpp_source.html#l00346">depicture_menu::domain::common::get_opacity()</a>, <a class="el" href="colors_8hpp_source.html#l00331">depicture_menu::domain::common::get_red()</a>.</p>
+
+<p class="reference">参照元 <a class="el" href="config_8cpp_source.html#l00121">depicture_menu::usecase::backup::create_config_entity()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1domain_1_1common_1_1rgba__color_af628cd8308653e5f05ee6bbdd070e054_cgraph.svg" width="386" height="254"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1domain_1_1common_1_1rgba__color_af628cd8308653e5f05ee6bbdd070e054_icgraph.svg" width="638" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a8b050dcb1e4453a347837173ad2ba75d" name="a8b050dcb1e4453a347837173ad2ba75d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b050dcb1e4453a347837173ad2ba75d">&#9670;&#160;</a></span>from_rgba_tuple() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -130,7 +237,7 @@ template&lt;std::integral I&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdepicture__menu_1_1domain_1_1common_1_1rgba__color.html">rgba_color</a> depicture_menu::domain::common::rgba_color::from_rgba_tuple </td>
+          <td class="memname">constexpr <a class="el" href="structdepicture__menu_1_1domain_1_1common_1_1rgba__color.html">rgba_color</a> depicture_menu::domain::common::rgba_color::from_rgba_tuple </td>
           <td>(</td>
           <td class="paramtype">I</td>          <td class="paramname"><span class="paramname"><em>a</em></span>[4]</td><td>)</td>
           <td></td>
@@ -138,17 +245,19 @@ template&lt;std::integral I&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel constexpr">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="colors_8hpp_source.html">colors.hpp</a> の <a class="el" href="colors_8hpp_source.html#l00071">71</a> 行目に定義があります。</p>
+<p>配列から構成 </p>
+
+<p class="definition"> <a class="el" href="colors_8hpp_source.html">colors.hpp</a> の <a class="el" href="colors_8hpp_source.html#l00278">278</a> 行目に定義があります。</p>
 
 </div>
 </div>
-<a id="a90c43aeb02c3c64cb999bda82dbea693" name="a90c43aeb02c3c64cb999bda82dbea693"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90c43aeb02c3c64cb999bda82dbea693">&#9670;&#160;</a></span>from_rgba_tuple() <span class="overload">[2/2]</span></h2>
+<a id="afdda32a97aef8b5e74e6c536d13127dd" name="afdda32a97aef8b5e74e6c536d13127dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdda32a97aef8b5e74e6c536d13127dd">&#9670;&#160;</a></span>from_rgba_tuple() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -159,7 +268,7 @@ template&lt;std::integral I&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdepicture__menu_1_1domain_1_1common_1_1rgba__color.html">rgba_color</a> depicture_menu::domain::common::rgba_color::from_rgba_tuple </td>
+          <td class="memname">constexpr <a class="el" href="structdepicture__menu_1_1domain_1_1common_1_1rgba__color.html">rgba_color</a> depicture_menu::domain::common::rgba_color::from_rgba_tuple </td>
           <td>(</td>
           <td class="paramtype">std::array&lt; I, 4 &gt; const &amp;</td>          <td class="paramname"><span class="paramname"><em>a</em></span></td><td>)</td>
           <td></td>
@@ -167,12 +276,50 @@ template&lt;std::integral I&gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span><span class="mlabel constexpr">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="colors_8hpp_source.html">colors.hpp</a> の <a class="el" href="colors_8hpp_source.html#l00082">82</a> 行目に定義があります。</p>
+<p>配列から構成 </p>
+
+<p class="definition"> <a class="el" href="colors_8hpp_source.html">colors.hpp</a> の <a class="el" href="colors_8hpp_source.html#l00290">290</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a183027d60566324d551ad43c8258c2e0" name="a183027d60566324d551ad43c8258c2e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a183027d60566324d551ad43c8258c2e0">&#9670;&#160;</a></span>operator T()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;concepts::rgba_channel_color T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">depicture_menu::domain::common::rgba_color::operator T </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="colors_8hpp_source.html">colors.hpp</a> の <a class="el" href="colors_8hpp_source.html#l00264">264</a> 行目に定義があります。</p>
+
+<p class="reference">参照先 <a class="el" href="colors_8hpp_source.html#l00254">a_</a>, <a class="el" href="colors_8hpp_source.html#l00254">b_</a>, <a class="el" href="colors_8hpp_source.html#l00254">g_</a>, <a class="el" href="colors_8hpp_source.html#l00254">r_</a>, <a class="el" href="colors_8hpp_source.html#l00369">depicture_menu::domain::common::set_blue()</a>, <a class="el" href="colors_8hpp_source.html#l00364">depicture_menu::domain::common::set_green()</a>, <a class="el" href="colors_8hpp_source.html#l00374">depicture_menu::domain::common::set_opacity()</a>, <a class="el" href="colors_8hpp_source.html#l00359">depicture_menu::domain::common::set_red()</a>.</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="structdepicture__menu_1_1domain_1_1common_1_1rgba__color_a183027d60566324d551ad43c8258c2e0_cgraph.svg" width="386" height="254"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -200,7 +347,9 @@ template&lt;std::integral I&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="colors_8hpp_source.html">colors.hpp</a> の <a class="el" href="colors_8hpp_source.html#l00064">64</a> 行目に定義があります。</p>
+<p>シリアライズメソッド </p>
+
+<p class="definition"> <a class="el" href="colors_8hpp_source.html">colors.hpp</a> の <a class="el" href="colors_8hpp_source.html#l00257">257</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -217,7 +366,9 @@ template&lt;std::integral I&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="colors_8hpp_source.html">colors.hpp</a> の <a class="el" href="colors_8hpp_source.html#l00062">62</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="colors_8hpp_source.html">colors.hpp</a> の <a class="el" href="colors_8hpp_source.html#l00254">254</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="colors_8hpp_source.html#l00264">operator T()</a>.</p>
 
 </div>
 </div>
@@ -233,7 +384,9 @@ template&lt;std::integral I&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="colors_8hpp_source.html">colors.hpp</a> の <a class="el" href="colors_8hpp_source.html#l00062">62</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="colors_8hpp_source.html">colors.hpp</a> の <a class="el" href="colors_8hpp_source.html#l00254">254</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="colors_8hpp_source.html#l00264">operator T()</a>.</p>
 
 </div>
 </div>
@@ -249,7 +402,9 @@ template&lt;std::integral I&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="colors_8hpp_source.html">colors.hpp</a> の <a class="el" href="colors_8hpp_source.html#l00062">62</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="colors_8hpp_source.html">colors.hpp</a> の <a class="el" href="colors_8hpp_source.html#l00254">254</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="colors_8hpp_source.html#l00264">operator T()</a>.</p>
 
 </div>
 </div>
@@ -265,12 +420,14 @@ template&lt;std::integral I&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="colors_8hpp_source.html">colors.hpp</a> の <a class="el" href="colors_8hpp_source.html#l00062">62</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="colors_8hpp_source.html">colors.hpp</a> の <a class="el" href="colors_8hpp_source.html#l00254">254</a> 行目に定義があります。</p>
+
+<p class="reference">参照元 <a class="el" href="colors_8hpp_source.html#l00264">operator T()</a>.</p>
 
 </div>
 </div>
 <hr/>この構造体詳解は次のファイルから抽出されました:<ul>
-<li>depicture_menu/src/core/domain/common/<a class="el" href="colors_8hpp_source.html">colors.hpp</a></li>
+<li>depicture_menu/src/core/domain/model/common/<a class="el" href="colors_8hpp_source.html">colors.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

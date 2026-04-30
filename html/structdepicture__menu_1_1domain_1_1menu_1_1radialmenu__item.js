@@ -6,6 +6,7 @@ var structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item =
     [ "background", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#ae8f1f7832a191a73802bf54d3b35bce4", null ],
     [ "background", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#a8eba68344da6fb2bce085404df9ff831", null ],
     [ "can_execute_action", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#a50540040ec22c17a0a151d3f246fba90", null ],
+    [ "clear_icon_id", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#a959b5c5618f65205321fc0acde6ecaec", null ],
     [ "com_kind_to_index", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#adee607b452fafcf8b6aa3ce5471f87a4", null ],
     [ "current_action_id", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#a401fbb41b8231960bb8443168ddb56a5", null ],
     [ "current_action_kind", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#a52d5e1205071cbf2b6db44de193bcfd7", null ],
@@ -18,6 +19,7 @@ var structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item =
     [ "get_action_ids_range", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#a5f68ba3ad911890c83dcbdfd719ef1a8", null ],
     [ "get_background", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#a6f5466e6c3314ecf59f91acd78aed94f", null ],
     [ "get_current_action_kind", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#a489ad4b2bd1faa0ba2930a8c6846486e", null ],
+    [ "get_icon_id", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#a7a523e07ec109d483be9a606a086c2e0", null ],
     [ "get_label", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#a88ff93a95491491736c7c092fa79fbdd", null ],
     [ "index_to_com_kind", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#aa0e97f38af9771dbd2da8db6ade2cb86", null ],
     [ "label", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#a082fb83008994ee61b6b77928d38a688", null ],
@@ -26,6 +28,7 @@ var structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item =
     [ "set_action_id", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#a8c4c4fb516ddc27ca04ae1f8babe76f3", null ],
     [ "set_background", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#a117800dd303a19b11b7cf46c28ee2141", null ],
     [ "set_current_action_kind", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#a47ea3ed0096b322367b6f057937cf100", null ],
+    [ "set_icon_id", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#ad0646da90237028d1509d62ade4cb4b2", null ],
     [ "set_label", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#ad5c082241d16472e7c095c639957d587", null ],
     [ "nil_id", "structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#a9c33476203a0afeaafe434f74b0a4442", null ]
 ];

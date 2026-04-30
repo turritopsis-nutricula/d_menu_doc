@@ -11,6 +11,8 @@ var dir_63e3b4c20525be311d786392d608ffa7 =
     [ "change_action_config.hpp", "change__action__config_8hpp.html", "change__action__config_8hpp" ],
     [ "change_common_command.cpp", "change__common__command_8cpp.html", null ],
     [ "change_common_command.hpp", "change__common__command_8hpp.html", "change__common__command_8hpp" ],
+    [ "change_default_menu_config.cpp", "change__default__menu__config_8cpp.html", null ],
+    [ "change_default_menu_config.hpp", "change__default__menu__config_8hpp.html", "change__default__menu__config_8hpp" ],
     [ "change_menu_item.cpp", "change__menu__item_8cpp.html", "change__menu__item_8cpp" ],
     [ "change_menu_item.hpp", "change__menu__item_8hpp.html", "change__menu__item_8hpp" ],
     [ "duplicate_menu_item.cpp", "duplicate__menu__item_8cpp.html", null ],

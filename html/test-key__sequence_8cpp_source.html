@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/test/tools/post_key_input/test-key_sequence.cpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('test-key__sequence_8cpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">test-key_sequence.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="test-key__sequence_8cpp.html">[詳解]</a><div class="fragment"><div class="foldopen" id="foldopen00001" data-start="" data-end="">
+<div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="test-key__sequence_8cpp.html#a6b2a3852db8bb19ab6909bac01859985">    1</a></span><span class="preprocessor">#define BOOST_TEST_MODULE                                     \</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">    test - tools - post_key_input - test - key_sequence - cpp</span></div>
+</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;boost/test/unit_test.hpp&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;tools/post_key_input/key_sequence.hpp&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;boost/parser/parser.hpp&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><a class="code hl_function" href="_test_cs_binding_8cpp.html#a61eb2a9459b9bb28aabe2573f6bb7f94">BOOST_TEST_DONT_PRINT_LOG_VALUE</a>( key_code )</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><a class="code hl_function" href="_test_cs_binding_8cpp.html#a61eb2a9459b9bb28aabe2573f6bb7f94">BOOST_TEST_DONT_PRINT_LOG_VALUE</a>( modifier_atom )</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">//</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">// parse_key_seq : TestCase</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">//</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="}">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="test-key__sequence_8cpp.html#ad54ac5ff0b05b0016c99e0e1848c2942">   17</a></span><a class="code hl_function" href="_test_backup_json_8cpp.html#a7e34729c6c239f42bdca84da1ecfbca1">BOOST_AUTO_TEST_CASE</a>( test_parse_key_seq )</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">auto</span> result = get_sequence( <span class="stringliteral">&quot;[win][#70][shift][Alt][#7d][#0]&quot;</span> );</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">using </span>buf_t         = <span class="keyword">decltype</span>( result-&gt;seq_ );</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">auto</span> expected_value = buf_t{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        { generate_modifier( modifier_atom::win ), key_code::F1 },</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        { generate_modifier( modifier_atom::shift, modifier_atom::alt ),</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>         key_code::F14 },</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        { generate_modifier( modifier_atom::none ), key_code::NUP }</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    };</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    BOOST_TEST_REQUIRE( !!result );</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    BOOST_TEST( result-&gt;seq_.size( ) == 3u );</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    BOOST_TEST( ( result-&gt;seq_ == expected_value ) );</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="comment">//  BOOST_TEST( ( value == modifier_atom::ctrl ) );</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
+</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">//</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">// key_name : TestCase</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">//</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="foldopen" id="foldopen00039" data-start="{" data-end="}">
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="test-key__sequence_8cpp.html#a6e6514b0d48ea1ea104f1d179dc46fe9">   39</a></span><a class="code hl_function" href="test-key__sequence_8cpp.html#ad54ac5ff0b05b0016c99e0e1848c2942">BOOST_AUTO_TEST_CASE</a>( test_key_name )</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">auto</span> result         = get_sequence( <span class="stringliteral">&quot;${HOME}[shift][Alt]${SPACE}${UP}&quot;</span> );</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">using </span>buf_t         = <span class="keyword">decltype</span>( result-&gt;seq_ );</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">auto</span> expected_value = buf_t{</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        { generate_modifier( modifier_atom::none ), key_code::HOME },</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        { generate_modifier( modifier_atom::shift, modifier_atom::alt ),</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>         key_code::SPACE },</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        { generate_modifier( modifier_atom::none ), key_code::UP }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    };</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    BOOST_TEST_REQUIRE( !!result );</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    BOOST_TEST( result-&gt;seq_.size( ) == 3u );</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    BOOST_TEST( ( result-&gt;seq_ == expected_value ) );</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
+</div>
+<div class="ttc" id="a_test_backup_json_8cpp_html_a7e34729c6c239f42bdca84da1ecfbca1"><div class="ttname"><a href="_test_backup_json_8cpp.html#a7e34729c6c239f42bdca84da1ecfbca1">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(test_read_backup_version)</div><div class="ttdoc">read_backup_format version</div><div class="ttdef"><b>Definition</b> <a href="_test_backup_json_8cpp_source.html#l00081">TestBackupJson.cpp:81</a></div></div>
+<div class="ttc" id="a_test_cs_binding_8cpp_html_a61eb2a9459b9bb28aabe2573f6bb7f94"><div class="ttname"><a href="_test_cs_binding_8cpp.html#a61eb2a9459b9bb28aabe2573f6bb7f94">BOOST_TEST_DONT_PRINT_LOG_VALUE</a></div><div class="ttdeci">BOOST_TEST_DONT_PRINT_LOG_VALUE(dc::TestEnum)</div></div>
+<div class="ttc" id="atest-key__sequence_8cpp_html_ad54ac5ff0b05b0016c99e0e1848c2942"><div class="ttname"><a href="test-key__sequence_8cpp.html#ad54ac5ff0b05b0016c99e0e1848c2942">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(test_parse_key_seq)</div><div class="ttdef"><b>Definition</b> <a href="#l00017">test-key_sequence.cpp:17</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_0281b912293b0150165693b325cfab25.html">test</a></li><li class="navelem"><a href="dir_c1a8e26fccc7406cdb03e42c3f9068f4.html">tools</a></li><li class="navelem"><a href="dir_8e8558ec3ee5aae5eff55cd35e948534.html">post_key_input</a></li><li class="navelem"><a href="test-key__sequence_8cpp.html">test-key_sequence.cpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

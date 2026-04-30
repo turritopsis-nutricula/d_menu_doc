@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/src/core/domain/model/menu/menu_dimension.hpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('menu__dimension_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">menu_dimension.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="menu__dimension_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/** @file menu_dimension.hpp</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * @brief ラジアルメニュー形状の表現</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#ifndef SRC_CORE_DOMAIN_MODEL_MENU_MENU_DIMENSION_HPP_</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#define SRC_CORE_DOMAIN_MODEL_MENU_MENU_DIMENSION_HPP_</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="radius_8hpp.html">../common/radius.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1domain_1_1menu.html">depicture_menu::domain::menu</a></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html">   12</a></span><span class="keyword">class </span><a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#a4f611ac3e65d76860367b6cd2e1bef22">menu_dimension</a> : <span class="keyword">public</span> <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1models_1_1base_1_1v2_1_1value__object__base.html">models::base::v2::value_object_base</a></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">friend</span> <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1models_1_1base_1_1v2_1_1value__object__base.html">models::base::v2::value_object_base</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#ad936f200d23a832c82623bd6355aa1c8">   16</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#ad936f200d23a832c82623bd6355aa1c8">rad_t</a> = <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1common_1_1radius.html">common::radius</a>;</div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1domain_1_1menu_1_1menu__dimension_1_1value__t.html">   17</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1menu_1_1menu__dimension_1_1value__t.html">value_t</a></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1domain_1_1menu_1_1menu__dimension_1_1value__t.html#ad258b331201f258936ac710cc99256b5">   19</a></span>        <a class="code hl_typedef" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#ad936f200d23a832c82623bd6355aa1c8">rad_t</a> <a class="code hl_variable" href="structdepicture__menu_1_1domain_1_1menu_1_1menu__dimension_1_1value__t.html#ad258b331201f258936ac710cc99256b5">outer_</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1domain_1_1menu_1_1menu__dimension_1_1value__t.html#a2f965b479563d5d3b7d482642d9fe919">   20</a></span>        <a class="code hl_typedef" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#ad936f200d23a832c82623bd6355aa1c8">rad_t</a> <a class="code hl_variable" href="structdepicture__menu_1_1domain_1_1menu_1_1menu__dimension_1_1value__t.html#a2f965b479563d5d3b7d482642d9fe919">contents_</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structdepicture__menu_1_1domain_1_1menu_1_1menu__dimension_1_1value__t.html#a0f8be8bef2c550a015282f49b8570d79">   21</a></span>        <a class="code hl_typedef" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#ad936f200d23a832c82623bd6355aa1c8">rad_t</a> <a class="code hl_variable" href="structdepicture__menu_1_1domain_1_1menu_1_1menu__dimension_1_1value__t.html#a0f8be8bef2c550a015282f49b8570d79">inner_</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    };</div>
+</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#aea9e8b3d310597502291bd0e465ff9d2">   23</a></span>    <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1menu_1_1menu__dimension_1_1value__t.html">value_t</a> <a class="code hl_variable" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#aea9e8b3d310597502291bd0e465ff9d2">value_</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">    //! @brief 初期化コンストラクタ</span></div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#a4f611ac3e65d76860367b6cd2e1bef22">   27</a></span>    <span class="keyword">constexpr</span> <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#a4f611ac3e65d76860367b6cd2e1bef22">menu_dimension</a>( )</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        : <a class="code hl_variable" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#aea9e8b3d310597502291bd0e465ff9d2">value_</a>(</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>              { .outer_    = <a class="code hl_typedef" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#ad936f200d23a832c82623bd6355aa1c8">rad_t</a>( 180u ),</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                .contents_ = <a class="code hl_typedef" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#ad936f200d23a832c82623bd6355aa1c8">rad_t</a>( 110u ),</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                .inner_    = <a class="code hl_typedef" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#ad936f200d23a832c82623bd6355aa1c8">rad_t</a>( 40u ) } )</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    { }</div>
+</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="comment">//----------------------------------------------------------------------//</span><span class="comment"></span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">    /**</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">     * @brief 外径とセンターボタン径指定コンストラクタ</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">     * 二つの半径の内大きい方を外径にする。</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">     * メニューアイテムコンテンツはlerpの位置に設定される。</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">     * @param rad0 半径</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">     * @param rad1 半径</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">     * @param lerp コンテンツ位置。0.0から1.0にクリップされる。</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">     * 0の時センターボタン径と重なり1の時外径と等しくなる。</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">     * 初期値は0.5。</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#ad50a018661ddbe6363e4074a32b5946d">   49</a></span>    <span class="keyword">constexpr</span> <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#ad50a018661ddbe6363e4074a32b5946d">menu_dimension</a>(</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <a class="code hl_typedef" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#ad936f200d23a832c82623bd6355aa1c8">rad_t</a> <span class="keyword">const</span>&amp; rad0, <a class="code hl_typedef" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#ad936f200d23a832c82623bd6355aa1c8">rad_t</a> <span class="keyword">const</span>&amp; rad1, <span class="keywordtype">float</span> lerp = 0.5f )</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        : <a class="code hl_variable" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#aea9e8b3d310597502291bd0e465ff9d2">value_</a>(</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>              { .outer_ = rad0 &gt; rad1 ? rad0 : rad1,</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                .contents_ =</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                    rad0 &gt; rad1</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                        ? ( ( rad0 - rad1 ) * std::clamp( lerp, 0.f, 1.f ) +</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                            rad1 )</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                        : ( ( rad1 - rad0 ) * std::clamp( lerp, 0.f, 1.f ) +</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                            rad0 ),</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                .inner_ = rad1 &lt; rad0 ? rad1 : rad0 } )</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    { }</div>
+</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment"></span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">    //! @brief メニュー外径</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#a22d84df2e5e152399b3736547bd78c5a">   64</a></span>    <span class="keyword">auto</span> <span class="keyword">const</span>&amp; <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#a22d84df2e5e152399b3736547bd78c5a">outer</a>( )<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#aea9e8b3d310597502291bd0e465ff9d2">value_</a>.outer_; }<span class="comment"></span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">    //! @brief センターボタン半径</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#afd39c972cb373622e40b9d4cb807e055">   66</a></span>    <span class="keyword">auto</span> <span class="keyword">const</span>&amp; <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#afd39c972cb373622e40b9d4cb807e055">inner</a>( )<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#aea9e8b3d310597502291bd0e465ff9d2">value_</a>.inner_; }<span class="comment"></span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">    //! @brief メニューアイテム表示位置半径</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#ac3084175f8b7d28ba083923baffdf25c">   68</a></span>    <span class="keyword">auto</span> <span class="keyword">const</span>&amp; <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#ac3084175f8b7d28ba083923baffdf25c">contents</a>( )<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#aea9e8b3d310597502291bd0e465ff9d2">value_</a>.contents_; }</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"></span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">    //! @brief コンテンツ半径を引数近い位置にして再生成</span></div>
+<div class="foldopen" id="foldopen00071" data-start="{" data-end="}">
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#a510e3fc06bdac9d9c3daa85bb5193629">   71</a></span>    <span class="keyword">auto</span> <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#a510e3fc06bdac9d9c3daa85bb5193629">with_contents_radius</a>( <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1common_1_1radius.html">common::radius</a> <a class="code hl_struct" href="structc.html">c</a> )<span class="keyword"> const</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keyword">using </span><a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1menu_1_1menu__dimension_1_1value__t.html">value_t</a> = <span class="keyword">decltype</span>( <a class="code hl_struct" href="structc.html">c</a>.get_radius( ) );</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keyword">auto</span> n_c      = std::clamp(</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <a class="code hl_struct" href="structc.html">c</a>.get_radius( ),</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="keyword">static_cast&lt;</span> <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1menu_1_1menu__dimension_1_1value__t.html">value_t</a> <span class="keyword">&gt;</span>( <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#afd39c972cb373622e40b9d4cb807e055">inner</a>( ).get_radius( ) ),</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <span class="keyword">static_cast&lt;</span> <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1menu_1_1menu__dimension_1_1value__t.html">value_t</a> <span class="keyword">&gt;</span>( <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#a22d84df2e5e152399b3736547bd78c5a">outer</a>( ).get_radius( ) ) );</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keyword">auto</span> <span class="keyword">const</span> len = <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#a22d84df2e5e152399b3736547bd78c5a">outer</a>( ).get_radius( ) - <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#afd39c972cb373622e40b9d4cb807e055">inner</a>( ).get_radius( );</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordflow">if</span> ( len == 0 ) <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keyword">auto</span> <span class="keyword">const</span> larp = <span class="keyword">static_cast&lt;</span> <span class="keywordtype">float</span> <span class="keyword">&gt;</span>( n_c - <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#afd39c972cb373622e40b9d4cb807e055">inner</a>( ).get_radius( ) ) /</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                          <span class="keyword">static_cast&lt;</span> <span class="keywordtype">float</span> <span class="keyword">&gt;</span>( len );</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#a4f611ac3e65d76860367b6cd2e1bef22">menu_dimension</a>( <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#a22d84df2e5e152399b3736547bd78c5a">outer</a>( ), <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#afd39c972cb373622e40b9d4cb807e055">inner</a>( ), larp );</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    }</div>
+</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment"></span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">    //! @brief 外径を変えて再生成</span></div>
+<div class="foldopen" id="foldopen00088" data-start="{" data-end="}">
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#aa558f3c5526e000c169d2e891447a717">   88</a></span>    <span class="keyword">auto</span> <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#aa558f3c5526e000c169d2e891447a717">with_outer</a>( <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1common_1_1radius.html">common::radius</a> i )<span class="keyword"> const</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordflow">if</span> ( <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#afd39c972cb373622e40b9d4cb807e055">inner</a>( ) &lt; i )</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#a4f611ac3e65d76860367b6cd2e1bef22">menu_dimension</a>( <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#afd39c972cb373622e40b9d4cb807e055">inner</a>( ), i )</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                .with_contents_radius( <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#ac3084175f8b7d28ba083923baffdf25c">contents</a>( ) );</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#a4f611ac3e65d76860367b6cd2e1bef22">menu_dimension</a>( i, i );</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    }</div>
+</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment"></span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">    //! @brief 内径を変えて再生成</span></div>
+<div class="foldopen" id="foldopen00100" data-start="{" data-end="}">
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#aa7a8e310481865550d953f35dd842aac">  100</a></span>    <span class="keyword">auto</span> <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#aa7a8e310481865550d953f35dd842aac">with_inner</a>( <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1common_1_1radius.html">common::radius</a> i )<span class="keyword"> const</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="keyword">    </span>{</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keywordflow">if</span> ( <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#a22d84df2e5e152399b3736547bd78c5a">outer</a>( ) &gt; i )</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        {</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#a4f611ac3e65d76860367b6cd2e1bef22">menu_dimension</a>( <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#a22d84df2e5e152399b3736547bd78c5a">outer</a>( ), i )</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                .with_contents_radius( <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#ac3084175f8b7d28ba083923baffdf25c">contents</a>( ) );</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        }</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#a4f611ac3e65d76860367b6cd2e1bef22">menu_dimension</a>( i, i );</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    }</div>
+</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>};</div>
+</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>}    <span class="comment">// namespace depicture_menu::domain::menu</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_CORE_DOMAIN_MODEL_MENU_MENU_DIMENSION_HPP_</span></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1common_1_1radius_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1common_1_1radius.html">depicture_menu::domain::common::radius</a></div><div class="ttdef"><b>Definition</b> <a href="radius_8hpp_source.html#l00017">radius.hpp:18</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1menu_1_1menu__dimension_html_a22d84df2e5e152399b3736547bd78c5a"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#a22d84df2e5e152399b3736547bd78c5a">depicture_menu::domain::menu::menu_dimension::outer</a></div><div class="ttdeci">auto const &amp; outer() const</div><div class="ttdoc">メニュー外径</div><div class="ttdef"><b>Definition</b> <a href="#l00064">menu_dimension.hpp:64</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1menu_1_1menu__dimension_html_a4f611ac3e65d76860367b6cd2e1bef22"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#a4f611ac3e65d76860367b6cd2e1bef22">depicture_menu::domain::menu::menu_dimension::menu_dimension</a></div><div class="ttdeci">constexpr menu_dimension()</div><div class="ttdoc">初期化コンストラクタ</div><div class="ttdef"><b>Definition</b> <a href="#l00027">menu_dimension.hpp:27</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1menu_1_1menu__dimension_html_a510e3fc06bdac9d9c3daa85bb5193629"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#a510e3fc06bdac9d9c3daa85bb5193629">depicture_menu::domain::menu::menu_dimension::with_contents_radius</a></div><div class="ttdeci">auto with_contents_radius(common::radius c) const</div><div class="ttdoc">コンテンツ半径を引数近い位置にして再生成</div><div class="ttdef"><b>Definition</b> <a href="#l00071">menu_dimension.hpp:71</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1menu_1_1menu__dimension_html_aa558f3c5526e000c169d2e891447a717"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#aa558f3c5526e000c169d2e891447a717">depicture_menu::domain::menu::menu_dimension::with_outer</a></div><div class="ttdeci">auto with_outer(common::radius i) const</div><div class="ttdoc">外径を変えて再生成</div><div class="ttdef"><b>Definition</b> <a href="#l00088">menu_dimension.hpp:88</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1menu_1_1menu__dimension_html_aa7a8e310481865550d953f35dd842aac"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#aa7a8e310481865550d953f35dd842aac">depicture_menu::domain::menu::menu_dimension::with_inner</a></div><div class="ttdeci">auto with_inner(common::radius i) const</div><div class="ttdoc">内径を変えて再生成</div><div class="ttdef"><b>Definition</b> <a href="#l00100">menu_dimension.hpp:100</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1menu_1_1menu__dimension_html_ac3084175f8b7d28ba083923baffdf25c"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#ac3084175f8b7d28ba083923baffdf25c">depicture_menu::domain::menu::menu_dimension::contents</a></div><div class="ttdeci">auto const &amp; contents() const</div><div class="ttdoc">メニューアイテム表示位置半径</div><div class="ttdef"><b>Definition</b> <a href="#l00068">menu_dimension.hpp:68</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1menu_1_1menu__dimension_html_ad50a018661ddbe6363e4074a32b5946d"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#ad50a018661ddbe6363e4074a32b5946d">depicture_menu::domain::menu::menu_dimension::menu_dimension</a></div><div class="ttdeci">constexpr menu_dimension(rad_t const &amp;rad0, rad_t const &amp;rad1, float lerp=0.5f)</div><div class="ttdoc">外径とセンターボタン径指定コンストラクタ</div><div class="ttdef"><b>Definition</b> <a href="#l00049">menu_dimension.hpp:49</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1menu_1_1menu__dimension_html_ad936f200d23a832c82623bd6355aa1c8"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#ad936f200d23a832c82623bd6355aa1c8">depicture_menu::domain::menu::menu_dimension::rad_t</a></div><div class="ttdeci">common::radius rad_t</div><div class="ttdef"><b>Definition</b> <a href="#l00016">menu_dimension.hpp:16</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1menu_1_1menu__dimension_html_aea9e8b3d310597502291bd0e465ff9d2"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#aea9e8b3d310597502291bd0e465ff9d2">depicture_menu::domain::menu::menu_dimension::value_</a></div><div class="ttdeci">value_t value_</div><div class="ttdef"><b>Definition</b> <a href="#l00023">menu_dimension.hpp:23</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1menu_1_1menu__dimension_html_afd39c972cb373622e40b9d4cb807e055"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1menu_1_1menu__dimension.html#afd39c972cb373622e40b9d4cb807e055">depicture_menu::domain::menu::menu_dimension::inner</a></div><div class="ttdeci">auto const &amp; inner() const</div><div class="ttdoc">センターボタン半径</div><div class="ttdef"><b>Definition</b> <a href="#l00066">menu_dimension.hpp:66</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1menu_html"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1menu.html">depicture_menu::domain::menu</a></div><div class="ttdef"><b>Definition</b> <a href="app__command__ids_8hpp_source.html#l00007">app_command_ids.hpp:8</a></div></div>
+<div class="ttc" id="aradius_8hpp_html"><div class="ttname"><a href="radius_8hpp.html">radius.hpp</a></div><div class="ttdoc">円半径の表現</div></div>
+<div class="ttc" id="astructc_html"><div class="ttname"><a href="structc.html">c</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00147">TestReflection.cpp:148</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1menu__dimension_1_1value__t_html"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1menu__dimension_1_1value__t.html">depicture_menu::domain::menu::menu_dimension::value_t</a></div><div class="ttdef"><b>Definition</b> <a href="#l00017">menu_dimension.hpp:18</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1menu__dimension_1_1value__t_html_a0f8be8bef2c550a015282f49b8570d79"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1menu__dimension_1_1value__t.html#a0f8be8bef2c550a015282f49b8570d79">depicture_menu::domain::menu::menu_dimension::value_t::inner_</a></div><div class="ttdeci">rad_t inner_</div><div class="ttdef"><b>Definition</b> <a href="#l00021">menu_dimension.hpp:21</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1menu__dimension_1_1value__t_html_a2f965b479563d5d3b7d482642d9fe919"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1menu__dimension_1_1value__t.html#a2f965b479563d5d3b7d482642d9fe919">depicture_menu::domain::menu::menu_dimension::value_t::contents_</a></div><div class="ttdeci">rad_t contents_</div><div class="ttdef"><b>Definition</b> <a href="#l00020">menu_dimension.hpp:20</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1menu__dimension_1_1value__t_html_ad258b331201f258936ac710cc99256b5"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1menu__dimension_1_1value__t.html#ad258b331201f258936ac710cc99256b5">depicture_menu::domain::menu::menu_dimension::value_t::outer_</a></div><div class="ttdeci">rad_t outer_</div><div class="ttdef"><b>Definition</b> <a href="#l00019">menu_dimension.hpp:19</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1models_1_1base_1_1v2_1_1value__object__base_html"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1models_1_1base_1_1v2_1_1value__object__base.html">depicture_menu::domain::models::base::v2::value_object_base</a></div><div class="ttdef"><b>Definition</b> <a href="model_2value__object_8hpp_source.html#l00055">value_object.hpp:56</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_d26f0ed8b287a778d960ad2241e01057.html">src</a></li><li class="navelem"><a href="dir_eb29242f55d2489f6c4d008365c270b7.html">core</a></li><li class="navelem"><a href="dir_4099da298ded5c89b37f083ec42d8d40.html">domain</a></li><li class="navelem"><a href="dir_0c83dee58a23f235db9b63a843b5b568.html">model</a></li><li class="navelem"><a href="dir_150ce6554b3660d99dae94d27df6b111.html">menu</a></li><li class="navelem"><a href="menu__dimension_8hpp.html">menu_dimension.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -3,6 +3,7 @@ var namespacens =
     [ "mock_free_func_value", "structns_1_1mock__free__func__value.html", "structns_1_1mock__free__func__value" ],
     [ "mock_get_tuple_method_value", "structns_1_1mock__get__tuple__method__value.html", "structns_1_1mock__get__tuple__method__value" ],
     [ "mock_to_ref_tuple_value", "structns_1_1mock__to__ref__tuple__value.html", "structns_1_1mock__to__ref__tuple__value" ],
+    [ "vo_v2", "classns_1_1vo__v2.html", "classns_1_1vo__v2" ],
     [ "aggregate_struct", "structns_1_1aggregate__struct.html", "structns_1_1aggregate__struct" ],
     [ "default_constract", "structns_1_1default__constract.html", "structns_1_1default__constract" ],
     [ "explicit_constract", "structns_1_1explicit__constract.html", "structns_1_1explicit__constract" ],

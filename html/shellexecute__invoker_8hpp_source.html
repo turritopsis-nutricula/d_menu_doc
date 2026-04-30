@@ -276,70 +276,48 @@ $(function(){initNavTree('shellexecute__invoker_8hpp_source.html','',''); });
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        <a class="code hl_typedef" href="classdepicture__menu_1_1usecase_1_1action__command__invoker__interface.html#a0e21c185429ed80d040a45b463712205">command_version_t</a>,</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1commands_1_1invoke__arg.html">domain::commands::invoke_arg</a> <span class="keyword">const</span>&amp; arg )<span class="keyword"> const override</span></div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="preprocessor">#if 0</span></div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        std::cout &lt;&lt; std::format(</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            <span class="stringliteral">&quot; param count : {}\n&quot;</span>, arg.<a class="code hl_function" href="structdepicture__menu_1_1domain_1_1commands_1_1invoke__arg.html#a628f93d107311e05b2a0466b0fcbeb93">get_parameters_count</a>( )</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        );</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="preprocessor">#if 0</span></div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <span class="keywordflow">for</span> ( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; p : arg )</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        {</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>            domain::commands::parameter_kind k;</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            std::visit( [ &amp;k ]( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; r ) { k = r.kind; }, p );</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            std::cout &lt;&lt; std::format(</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>                <span class="stringliteral">&quot;variant index : {} , param kind : {}\n&quot;</span>,</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>                p.index( ),</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>                <span class="keyword">static_cast&lt;</span> <span class="keywordtype">int</span> <span class="keyword">&gt;</span>( k )</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>            );</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>            <span class="keywordflow">if</span> ( <span class="keyword">auto</span>* value_p = std::get_if&lt; 2 &gt;( &amp;p ) )</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                std::cout &lt;&lt; <span class="stringliteral">&quot;value: &quot;</span> &lt;&lt; value_p-&gt;value;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        std::wstring path, opt;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        <span class="keywordtype">bool</span>         is_path_access = arg.<a class="code hl_function" href="structdepicture__menu_1_1domain_1_1commands_1_1invoke__arg.html#a14d2c714975aed6da4ff6e9f2dd9b7b2">access_parameter</a>( 0, path );</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        <span class="keywordtype">bool</span>         is_opt_access  = arg.<a class="code hl_function" href="structdepicture__menu_1_1domain_1_1commands_1_1invoke__arg.html#a14d2c714975aed6da4ff6e9f2dd9b7b2">access_parameter</a>( 1, opt );</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="keywordflow">if</span> ( !( is_path_access &amp;&amp; is_opt_access ) )</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        {</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>            <a class="code hl_define" href="log_8hpp.html#a6a81e4b32bb7210d0366ac20d9fe82f7">DPM_LOG_DEBUG</a>(</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>                std::format(</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>                    <span class="stringliteral">&quot;param get failed.exe={} opt={}&quot;</span>,</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>                    is_path_access,</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>                    is_opt_access ) );</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        }</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        <a class="code hl_define" href="log_8hpp.html#a0c47ffca1ee7d31686b4b8b42af3311b">DPM_LOG_DEBUG_W</a>( std::format( L<span class="stringliteral">&quot;exe={} opt={}&quot;</span>, path, opt ) )</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        <span class="keyword">using </span>exe_info_t = ::SHELLEXECUTEINFOW;</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>            std::cout &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        }</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        std::wstring path, opt;</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        <span class="keywordtype">bool</span>         is_path_access = arg.<a class="code hl_function" href="structdepicture__menu_1_1domain_1_1commands_1_1invoke__arg.html#a14d2c714975aed6da4ff6e9f2dd9b7b2">access_parameter</a>( 0, path );</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        <span class="keywordtype">bool</span>         is_opt_access  = arg.<a class="code hl_function" href="structdepicture__menu_1_1domain_1_1commands_1_1invoke__arg.html#a14d2c714975aed6da4ff6e9f2dd9b7b2">access_parameter</a>( 1, opt );</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        <span class="keywordflow">if</span> ( !( is_path_access &amp;&amp; is_opt_access ) )</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        {</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>            <a class="code hl_define" href="log_8hpp.html#a6a81e4b32bb7210d0366ac20d9fe82f7">DPM_LOG_DEBUG</a>(</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>                std::format(</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>                    <span class="stringliteral">&quot;param get failed.exe={} opt={}&quot;</span>,</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>                    is_path_access,</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>                    is_opt_access ) );</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        }</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>        <a class="code hl_define" href="log_8hpp.html#a0c47ffca1ee7d31686b4b8b42af3311b">DPM_LOG_DEBUG_W</a>( std::format( L<span class="stringliteral">&quot;exe={} opt={}&quot;</span>, path, opt ) )</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>        <span class="keyword">using </span>exe_info_t = ::SHELLEXECUTEINFOW;</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span> </div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>        exe_info_t exe_info{</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>            .cbSize       = <span class="keyword">sizeof</span>( exe_info_t ),</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>            .fMask        = 0u,</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>            .hwnd         = <span class="keyword">nullptr</span>,</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>            .lpVerb       = L<span class="stringliteral">&quot;open&quot;</span>,</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            .lpFile       = path.c_str( ),</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>            .lpParameters = opt.c_str( ),</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>            .lpDirectory  = L<span class="stringliteral">&quot;&quot;</span>,</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>            .nShow        = SW_SHOW,</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            .hInstApp     = <span class="keyword">nullptr</span>,</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>            .lpIDList     = <span class="keyword">nullptr</span>,</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>            .lpClass      = L<span class="stringliteral">&quot;&quot;</span>,</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>            .hkeyClass    = <span class="keyword">nullptr</span>,</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>            .dwHotKey     = 0,</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            .hIcon        = <span class="keyword">nullptr</span>,</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            .hProcess     = <span class="keyword">nullptr</span> };</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        <span class="keyword">auto</span> result = ::ShellExecuteExW( &amp;exe_info );</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>        <span class="keywordflow">return</span> result;</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    }</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        exe_info_t exe_info{</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>            .cbSize       = <span class="keyword">sizeof</span>( exe_info_t ),</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>            .fMask        = 0u,</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>            .hwnd         = <span class="keyword">nullptr</span>,</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>            .lpVerb       = L<span class="stringliteral">&quot;open&quot;</span>,</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>            .lpFile       = path.c_str( ),</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>            .lpParameters = opt.c_str( ),</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>            .lpDirectory  = L<span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>            .nShow        = SW_SHOW,</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>            .hInstApp     = <span class="keyword">nullptr</span>,</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>            .lpIDList     = <span class="keyword">nullptr</span>,</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>            .lpClass      = L<span class="stringliteral">&quot;&quot;</span>,</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>            .hkeyClass    = <span class="keyword">nullptr</span>,</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>            .dwHotKey     = 0,</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>            .hIcon        = <span class="keyword">nullptr</span>,</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>            .hProcess     = <span class="keyword">nullptr</span> };</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>        <span class="keyword">auto</span> result = ::ShellExecuteExW( &amp;exe_info );</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    }</div>
 </div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>};</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>};</div>
 </div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>}    <span class="comment">// namespace depicture_menu::presentations</span></div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_CORE_PRESENTATION_SHELLEXECUTE_INVOKER_HPP_</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>}    <span class="comment">// namespace depicture_menu::presentations</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_CORE_PRESENTATION_SHELLEXECUTE_INVOKER_HPP_</span></div>
 <div class="ttc" id="aaction__command__invoker__interface_8hpp_html"><div class="ttname"><a href="action__command__invoker__interface_8hpp.html">action_command_invoker_interface.hpp</a></div></div>
 <div class="ttc" id="aclassdepicture__menu_1_1presentations_1_1shellexecute__command__name__generator_html"><div class="ttname"><a href="classdepicture__menu_1_1presentations_1_1shellexecute__command__name__generator.html">depicture_menu::presentations::shellexecute_command_name_generator</a></div><div class="ttdef"><b>Definition</b> <a href="#l00016">shellexecute_invoker.hpp:18</a></div></div>
 <div class="ttc" id="aclassdepicture__menu_1_1presentations_1_1shellexecute__command__name__generator_html_a2469822515eaf8bdae0f57f54f047450"><div class="ttname"><a href="classdepicture__menu_1_1presentations_1_1shellexecute__command__name__generator.html#a2469822515eaf8bdae0f57f54f047450">depicture_menu::presentations::shellexecute_command_name_generator::set_parameter</a></div><div class="ttdeci">virtual void set_parameter(unsigned int parameter_index, parameter_kind_t k, boost::uuids::uuid const &amp;) override</div><div class="ttdef"><b>Definition</b> <a href="#l00055">shellexecute_invoker.hpp:55</a></div></div>
@@ -370,12 +348,11 @@ $(function(){initNavTree('shellexecute__invoker_8hpp_source.html','',''); });
 <div class="ttc" id="aclassdepicture__menu_1_1usecase_1_1action__command__invoker__interface_html_afce6df88b68ab7d276ea92c44851c464"><div class="ttname"><a href="classdepicture__menu_1_1usecase_1_1action__command__invoker__interface.html#afce6df88b68ab7d276ea92c44851c464">depicture_menu::usecase::action_command_invoker_interface::command_index_t</a></div><div class="ttdeci">unsigned int command_index_t</div><div class="ttdef"><b>Definition</b> <a href="action__command__invoker__interface_8hpp_source.html#l00042">action_command_invoker_interface.hpp:42</a></div></div>
 <div class="ttc" id="aclassdepicture__menu_1_1usecase_1_1command__name__generator__interface_html"><div class="ttname"><a href="classdepicture__menu_1_1usecase_1_1command__name__generator__interface.html">depicture_menu::usecase::command_name_generator_interface</a></div><div class="ttdef"><b>Definition</b> <a href="action__command__invoker__interface_8hpp_source.html#l00021">action_command_invoker_interface.hpp:22</a></div></div>
 <div class="ttc" id="alog_8hpp_html"><div class="ttname"><a href="log_8hpp.html">log.hpp</a></div></div>
-<div class="ttc" id="alog_8hpp_html_a0c47ffca1ee7d31686b4b8b42af3311b"><div class="ttname"><a href="log_8hpp.html#a0c47ffca1ee7d31686b4b8b42af3311b">DPM_LOG_DEBUG_W</a></div><div class="ttdeci">#define DPM_LOG_DEBUG_W(X)</div><div class="ttdef"><b>Definition</b> <a href="log_8hpp_source.html#l00039">log.hpp:39</a></div></div>
-<div class="ttc" id="alog_8hpp_html_a6a81e4b32bb7210d0366ac20d9fe82f7"><div class="ttname"><a href="log_8hpp.html#a6a81e4b32bb7210d0366ac20d9fe82f7">DPM_LOG_DEBUG</a></div><div class="ttdeci">#define DPM_LOG_DEBUG(X)</div><div class="ttdef"><b>Definition</b> <a href="log_8hpp_source.html#l00034">log.hpp:34</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a0c47ffca1ee7d31686b4b8b42af3311b"><div class="ttname"><a href="log_8hpp.html#a0c47ffca1ee7d31686b4b8b42af3311b">DPM_LOG_DEBUG_W</a></div><div class="ttdeci">#define DPM_LOG_DEBUG_W(X)</div><div class="ttdef"><b>Definition</b> <a href="log_8hpp_source.html#l00073">log.hpp:73</a></div></div>
+<div class="ttc" id="alog_8hpp_html_a6a81e4b32bb7210d0366ac20d9fe82f7"><div class="ttname"><a href="log_8hpp.html#a6a81e4b32bb7210d0366ac20d9fe82f7">DPM_LOG_DEBUG</a></div><div class="ttdeci">#define DPM_LOG_DEBUG(X)</div><div class="ttdef"><b>Definition</b> <a href="log_8hpp_source.html#l00068">log.hpp:68</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1presentations_html"><div class="ttname"><a href="namespacedepicture__menu_1_1presentations.html">depicture_menu::presentations</a></div><div class="ttdef"><b>Definition</b> <a href="app__option__window__presenter_8hpp_source.html#l00005">app_option_window_presenter.hpp:6</a></div></div>
 <div class="ttc" id="astructdepicture__menu_1_1domain_1_1commands_1_1invoke__arg_html"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1commands_1_1invoke__arg.html">depicture_menu::domain::commands::invoke_arg</a></div><div class="ttdef"><b>Definition</b> <a href="invoke__arg_8hpp_source.html#l00012">invoke_arg.hpp:13</a></div></div>
 <div class="ttc" id="astructdepicture__menu_1_1domain_1_1commands_1_1invoke__arg_html_a14d2c714975aed6da4ff6e9f2dd9b7b2"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1commands_1_1invoke__arg.html#a14d2c714975aed6da4ff6e9f2dd9b7b2">depicture_menu::domain::commands::invoke_arg::access_parameter</a></div><div class="ttdeci">bool access_parameter(std::size_t n, T &amp;ret) const</div><div class="ttdef"><b>Definition</b> <a href="invoke__arg_8hpp_source.html#l00067">invoke_arg.hpp:67</a></div></div>
-<div class="ttc" id="astructdepicture__menu_1_1domain_1_1commands_1_1invoke__arg_html_a628f93d107311e05b2a0466b0fcbeb93"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1commands_1_1invoke__arg.html#a628f93d107311e05b2a0466b0fcbeb93">depicture_menu::domain::commands::invoke_arg::get_parameters_count</a></div><div class="ttdeci">auto get_parameters_count() const</div><div class="ttdef"><b>Definition</b> <a href="invoke__arg_8hpp_source.html#l00035">invoke_arg.hpp:35</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

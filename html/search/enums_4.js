@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['obserable_5ftraits_5fkind_0',['obserable_traits_kind',['../namespacedepicture__menu_1_1cs__binding.html#a201073c80b5f34eb202460660975c2f3',1,'depicture_menu::cs_binding']]]
+  ['log_5flevel_0',['log_level',['../namespacedepicture__menu_1_1applications_1_1log.html#af5138f798c98b5ef35ed2c45c6b88408',1,'depicture_menu::applications::log']]]
 ];

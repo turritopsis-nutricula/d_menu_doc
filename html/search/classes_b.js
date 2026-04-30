@@ -8,5 +8,6 @@ var searchData=
   ['lock_5fgenerator_3c_20cs_5fbinding_3a_3aconfigarg_20_3e_5',['lock_generator&lt; cs_binding::ConfigArg &gt;',['../classdepicture__menu_1_1cs__binding_1_1observer_1_1lock__generator.html',1,'depicture_menu::cs_binding::observer']]],
   ['locked_5frepository_6',['locked_repository',['../structdepicture__menu_1_1repositories_1_1locked__repository.html',1,'depicture_menu::repositories']]],
   ['locked_5frepository_3c_20c_20_3e_7',['locked_repository&lt; C &gt;',['../structdepicture__menu_1_1repositories_1_1locked__repository.html',1,'depicture_menu::repositories']]],
-  ['locked_5frepository_5fextractor_8',['locked_repository_extractor',['../structdepicture__menu_1_1repositories_1_1detail__repositories_1_1locked__repository__extractor.html',1,'depicture_menu::repositories::detail_repositories']]]
+  ['locked_5frepository_5fextractor_8',['locked_repository_extractor',['../structdepicture__menu_1_1repositories_1_1detail__repositories_1_1locked__repository__extractor.html',1,'depicture_menu::repositories::detail_repositories']]],
+  ['logger_9',['logger',['../classdepicture__menu_1_1applications_1_1log_1_1logger.html',1,'depicture_menu::applications::log']]]
 ];

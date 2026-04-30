@@ -98,12 +98,12 @@ $(function(){initNavTree('app__transaction_8hpp.html','',''); });
 <code>#include &quot;<a class="el" href="option_8hpp_source.html">core/domain/model/app/option.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="command_8hpp_source.html">core/domain/model/command/command.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="invoker_8hpp_source.html">core/domain/model/command/invoker.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="menu__action__icon_8hpp_source.html">core/domain/model/icon/menu_action_icon.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="radialmenu_8hpp_source.html">core/domain/model/menu/radialmenu.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="trigger_8hpp_source.html">core/domain/model/trigger/trigger.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="on__memory__repository_8hpp_source.html">core/repository/on_memory_repository.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="serialization__interface_8hpp_source.html">core/repository/serialization_interface.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="transaction_8hpp_source.html">core/repository/transaction.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="core__interface_8hpp_source.html">core_interface.hpp</a>&quot;</code><br />
 <code>#include &lt;boost/di.hpp&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 app_transaction.hpp の依存先関係図:</div>
@@ -129,14 +129,14 @@ app_transaction.hpp の依存先関係図:</div>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 型定義</h2></td></tr>
-<tr class="memitem:a7ad4555d291e465d3b2bcf98db57e6da" id="r_a7ad4555d291e465d3b2bcf98db57e6da"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1applications.html#a7ad4555d291e465d3b2bcf98db57e6da">depicture_menu::applications::transaction_source</a></td></tr>
-<tr class="memitem:a1168dfec76130ba465ebed176eb5ba9e" id="r_a1168dfec76130ba465ebed176eb5ba9e"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1applications.html#a1168dfec76130ba465ebed176eb5ba9e">depicture_menu::applications::transaction_source_ptr_t</a> = std::shared_ptr&lt; <a class="el" href="namespacedepicture__menu_1_1applications.html#a7ad4555d291e465d3b2bcf98db57e6da">transaction_source</a> &gt;</td></tr>
-<tr class="memitem:aeea0b3212d509c0dc02feb2b0dc31580" id="r_aeea0b3212d509c0dc02feb2b0dc31580"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1applications.html#aeea0b3212d509c0dc02feb2b0dc31580">depicture_menu::applications::transaction_source_ref_ptr_t</a> = std::weak_ptr&lt; <a class="el" href="namespacedepicture__menu_1_1applications.html#a7ad4555d291e465d3b2bcf98db57e6da">transaction_source</a> &gt;</td></tr>
-<tr class="memitem:a8073ad0ab585e61c053471593e69fbeb" id="r_a8073ad0ab585e61c053471593e69fbeb"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1applications.html#a8073ad0ab585e61c053471593e69fbeb">depicture_menu::applications::di_transaction_source_t</a></td></tr>
+<tr class="memitem:ad4c8756ca2a2729f4d6572d51bf62ae0" id="r_ad4c8756ca2a2729f4d6572d51bf62ae0"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1applications.html#ad4c8756ca2a2729f4d6572d51bf62ae0">depicture_menu::applications::transaction_source</a></td></tr>
+<tr class="memitem:a1168dfec76130ba465ebed176eb5ba9e" id="r_a1168dfec76130ba465ebed176eb5ba9e"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1applications.html#a1168dfec76130ba465ebed176eb5ba9e">depicture_menu::applications::transaction_source_ptr_t</a> = std::shared_ptr&lt; <a class="el" href="namespacedepicture__menu_1_1applications.html#ad4c8756ca2a2729f4d6572d51bf62ae0">transaction_source</a> &gt;</td></tr>
+<tr class="memitem:aeea0b3212d509c0dc02feb2b0dc31580" id="r_aeea0b3212d509c0dc02feb2b0dc31580"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1applications.html#aeea0b3212d509c0dc02feb2b0dc31580">depicture_menu::applications::transaction_source_ref_ptr_t</a> = std::weak_ptr&lt; <a class="el" href="namespacedepicture__menu_1_1applications.html#ad4c8756ca2a2729f4d6572d51bf62ae0">transaction_source</a> &gt;</td></tr>
+<tr class="memitem:a21f0056cb713303102437f7811584c84" id="r_a21f0056cb713303102437f7811584c84"><td class="memItemLeft">using&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1applications.html#a21f0056cb713303102437f7811584c84">depicture_menu::applications::di_transaction_source_t</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 関数</h2></td></tr>
-<tr class="memitem:af2f3f1b3b5999de9758861d236b73323" id="r_af2f3f1b3b5999de9758861d236b73323"><td class="memItemLeft"><a class="el" href="namespacedepicture__menu_1_1applications.html#a8073ad0ab585e61c053471593e69fbeb">di_transaction_source_t</a>&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1applications.html#af2f3f1b3b5999de9758861d236b73323">depicture_menu::applications::make_transaction_injector</a> ()</td></tr>
+<tr class="memitem:af2f3f1b3b5999de9758861d236b73323" id="r_af2f3f1b3b5999de9758861d236b73323"><td class="memItemLeft"><a class="el" href="namespacedepicture__menu_1_1applications.html#a21f0056cb713303102437f7811584c84">di_transaction_source_t</a>&#160;</td><td class="memItemRight"><a class="el" href="namespacedepicture__menu_1_1applications.html#af2f3f1b3b5999de9758861d236b73323">depicture_menu::applications::make_transaction_injector</a> ()</td></tr>
 </table>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">マクロ定義詳解</h2>
 <a id="a7b812a9143819548d41493052df48ce3" name="a7b812a9143819548d41493052df48ce3"></a>
@@ -156,7 +156,7 @@ app_transaction.hpp の依存先関係図:</div>
 <b>値:</b><div class="fragment"><div class="line">domain::crud_repository_ptr&lt; ENTITY &gt;,                                 \</div>
 <div class="line">    std::shared_ptr&lt; repositories::serialization_interface&lt; ENTITY &gt; &gt;</div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="app__transaction_8hpp_source.html">app_transaction.hpp</a> の <a class="el" href="app__transaction_8hpp_source.html#l00035">35</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="app__transaction_8hpp_source.html">app_transaction.hpp</a> の <a class="el" href="app__transaction_8hpp_source.html#l00036">36</a> 行目に定義があります。</p>
 
 </div>
 </div>

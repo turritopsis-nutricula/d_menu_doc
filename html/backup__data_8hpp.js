@@ -11,6 +11,7 @@ var backup__data_8hpp =
     [ "depicture_menu::usecase::backup::dto::option_data", "structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1option__data.html", "structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1option__data" ],
     [ "depicture_menu::usecase::backup::dto::backup_data_data", "structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1backup__data__data.html", "structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1backup__data__data" ],
     [ "depicture_menu::usecase::backup::dto::backup_data", "structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1backup__data.html", "structdepicture__menu_1_1usecase_1_1backup_1_1dto_1_1backup__data" ],
+    [ "DECL", "backup__data_8hpp.html#ad4b3bd2c7cb40a5494e94fa6761b0166", null ],
     [ "depicture_menu::usecase::backup::dto::operator==", "namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html#a876314980c3a034b752e469d92712ab3", null ],
     [ "depicture_menu::usecase::backup::dto::operator==", "namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html#a0a99723ff9dfcf20374dc12783dd71b3", null ],
     [ "depicture_menu::usecase::backup::dto::operator==", "namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html#aa466f4f3480ae098879e06edc56e6983", null ],

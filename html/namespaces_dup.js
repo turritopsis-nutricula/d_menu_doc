@@ -18,10 +18,9 @@ var namespaces_dup =
       [ "convert_menu_unit", "namespacedetail__menu__convert__.html#a9fc2e3b0f7655248ad23645a76321d4a", null ]
     ] ],
     [ "detail_query", "namespacedetail__query.html", "namespacedetail__query" ],
+    [ "DPM_NAMESPACE", "namespace_d_p_m___n_a_m_e_s_p_a_c_e.html", "namespace_d_p_m___n_a_m_e_s_p_a_c_e" ],
     [ "ids", "namespaceids.html", "namespaceids" ],
     [ "impl", "namespaceimpl.html", [
-      [ "get_default_menu_id", "namespaceimpl.html#acd2e53047ed61a2ec83aaa41949d06c3", null ],
-      [ "get_menu", "namespaceimpl.html#a10dc9eb9f8beea4d404cf047bc3b7848", null ],
       [ "get_menu_view_injection", "namespaceimpl.html#a9339ce762762854d6234993b7ecb0e72", null ]
     ] ],
     [ "ns", "namespacens.html", "namespacens" ],

@@ -1,0 +1,4 @@
+var namespace_d_p_m___n_a_m_e_s_p_a_c_e_1_1win32_1_1impl =
+[
+    [ "enum_window_holder", "struct_d_p_m___n_a_m_e_s_p_a_c_e_1_1win32_1_1impl_1_1enum__window__holder.html", "struct_d_p_m___n_a_m_e_s_p_a_c_e_1_1win32_1_1impl_1_1enum__window__holder" ]
+];

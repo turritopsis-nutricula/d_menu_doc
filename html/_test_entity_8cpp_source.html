@@ -262,37 +262,35 @@ $(function(){initNavTree('_test_entity_8cpp_source.html','',''); });
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        boost::test_tools::per_element( ) );</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>}</div>
 </div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="preprocessor">#if 0</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">// to_ref_tuple_cpo : TestSuite</span></div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment">//----------------------------------------------------------------------//</span></div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>BOOST_AUTO_TEST_SUITE( test_to_ref_tuple_cpo )</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment">/// aggregate_struct : TestCase</span></div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><a class="code hl_function" href="_test_entity_8cpp.html#a1e06a7ac6fa5581420b068472feb23d6">BOOST_AUTO_TEST_CASE</a>( test_aggregate_struct )</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>{</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <a class="code hl_struct" href="structns_1_1aggregate__struct.html">ns::aggregate_struct</a> aggr_value;</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    <span class="keyword">auto</span> v      = dm::cpo::to_ref_tuple( aggr_value );</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keyword">using </span>ret_t = <span class="keyword">decltype</span>( v );</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keyword">static_assert</span>( std::is_same_v&lt;</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>                   ret_t,</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                   std::tuple&lt; int&amp;, bool&amp;, std::vector&lt; bool &gt;&amp; &gt; &gt; );</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>}<span class="comment"></span></div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment">/// to_ref_tuple_cpo : TestCase</span></div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><a class="code hl_function" href="_test_entity_8cpp.html#a1e06a7ac6fa5581420b068472feb23d6">BOOST_AUTO_TEST_CASE</a>( test_to_ref_tuple_cpo )</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>{</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">//</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment">// reconstract : TestCase</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment">//</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment">//----------------------------------------------------------------------//</span></div>
+<div class="foldopen" id="foldopen00160" data-start="{" data-end="}">
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="_test_entity_8cpp.html#a8254837a5d97f9080b157a7f316f33d6">  160</a></span><a class="code hl_function" href="_test_entity_8cpp.html#a1e06a7ac6fa5581420b068472feb23d6">BOOST_AUTO_TEST_CASE</a>( test_reconstract )</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>{</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="keyword">using </span>id_t = ns::test_entity::id_t;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <a class="code hl_class" href="classns_1_1test__entity.html">ns::test_entity</a> ent0(</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        id_t::from( <span class="stringliteral">&quot;00000000-0000-0000-0000-000000000000&quot;</span> ) );</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    ent0.<a class="code hl_function" href="classns_1_1test__entity.html#a9b4baaf319098f850a458a5ea2fd9206">func</a>( 42 );</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    BOOST_TEST(</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        ent0.entity_id( ) ==</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        id_t::from( <span class="stringliteral">&quot;00000000-0000-0000-0000-000000000000&quot;</span> ) );</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    BOOST_TEST( ent0.<a class="code hl_function" href="classns_1_1test__entity.html#a9b00075f27063eefedec6cc98aca8886">value</a>( ) == 42 );</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>    <span class="keyword">auto</span> ent1 = ent0.reconstruct(</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        id_t::from( <span class="stringliteral">&quot;11111111-1111-1111-1111-111111111111&quot;</span> ) );</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <a class="code hl_class" href="classns_1_1test__entity.html">ns::test_entity</a> ent0;</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <span class="keyword">auto</span>            v = dm::cpo::to_ref_tuple( ent0 );</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    <span class="keyword">using </span>ret_t       = <span class="keyword">decltype</span>( v );</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <span class="keyword">static_assert</span>( std::is_same_v&lt;</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>                   ret_t,</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>                   std::tuple&lt; dm::entity_id&amp;, int&amp;, std::vector&lt; int &gt;&amp; &gt; &gt; );</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>}</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>BOOST_AUTO_TEST_SUITE_END( )    <span class="comment">// test_to_ref_tuple_cpo</span></div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    BOOST_TEST(</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>        ent1.entity_id( ) ==</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        id_t::from( <span class="stringliteral">&quot;11111111-1111-1111-1111-111111111111&quot;</span> ) );</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    BOOST_TEST( ent1.value( ) == 42 );</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>}</div>
+</div>
 <div class="ttc" id="a_test_entity_8cpp_html_a1e06a7ac6fa5581420b068472feb23d6"><div class="ttname"><a href="_test_entity_8cpp.html#a1e06a7ac6fa5581420b068472feb23d6">BOOST_AUTO_TEST_CASE</a></div><div class="ttdeci">BOOST_AUTO_TEST_CASE(test_entity_construct)</div><div class="ttdoc">test_entity_construct : TestCase</div><div class="ttdef"><b>Definition</b> <a href="#l00080">TestEntity.cpp:80</a></div></div>
 <div class="ttc" id="aclassns_1_1test__entity_html"><div class="ttname"><a href="classns_1_1test__entity.html">ns::test_entity</a></div><div class="ttdef"><b>Definition</b> <a href="#l00061">TestEntity.cpp:62</a></div></div>
 <div class="ttc" id="aclassns_1_1test__entity_html_a0872f01311c4e81bba1647f9827af643"><div class="ttname"><a href="classns_1_1test__entity.html#a0872f01311c4e81bba1647f9827af643">ns::test_entity::test_entity</a></div><div class="ttdeci">test_entity()</div><div class="ttdef"><b>Definition</b> <a href="#l00064">TestEntity.cpp:64</a></div></div>
@@ -304,8 +302,8 @@ $(function(){initNavTree('_test_entity_8cpp_source.html','',''); });
 <div class="ttc" id="aclassns_1_1test__entity_html_ad632aaf38d7fd1440ec85c685668031b"><div class="ttname"><a href="classns_1_1test__entity.html#ad632aaf38d7fd1440ec85c685668031b">ns::test_entity::add</a></div><div class="ttdeci">void add(int v)</div><div class="ttdef"><b>Definition</b> <a href="#l00068">TestEntity.cpp:68</a></div></div>
 <div class="ttc" id="aclassvalue__list_html"><div class="ttname"><a href="classvalue__list.html">value_list</a></div><div class="ttdef"><b>Definition</b> <a href="test__compare_8cpp_source.html#l00074">test_compare.cpp:76</a></div></div>
 <div class="ttc" id="amodel_2entity_8hpp_html"><div class="ttname"><a href="model_2entity_8hpp.html">entity.hpp</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1models_html"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1models.html">depicture_menu::domain::models</a></div><div class="ttdef"><b>Definition</b> <a href="colors_8hpp_source.html#l00144">colors.hpp:145</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1domain_html"><div class="ttname"><a href="namespacedepicture__menu_1_1domain.html">depicture_menu::domain</a></div><div class="ttdef"><b>Definition</b> <a href="colors_8hpp_source.html#l00006">colors.hpp:7</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1models_html"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1models.html">depicture_menu::domain::models</a></div><div class="ttdef"><b>Definition</b> <a href="aggregate_8hpp_source.html#l00007">aggregate.hpp:8</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_html"><div class="ttname"><a href="namespacedepicture__menu_1_1domain.html">depicture_menu::domain</a></div><div class="ttdef"><b>Definition</b> <a href="crud__repository_8hpp_source.html#l00008">crud_repository.hpp:9</a></div></div>
 <div class="ttc" id="anamespacens_html"><div class="ttname"><a href="namespacens.html">ns</a></div><div class="ttdef"><b>Definition</b> <a href="test__presistence_8cpp_source.html#l00118">test_presistence.cpp:119</a></div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition</b> <a href="app__ids_8hpp_source.html#l00060">app_ids.hpp:61</a></div></div>
 <div class="ttc" id="astructa_html"><div class="ttname"><a href="structa.html">a</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00130">TestReflection.cpp:131</a></div></div>

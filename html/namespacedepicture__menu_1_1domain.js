@@ -1,12 +1,13 @@
 var namespacedepicture__menu_1_1domain =
 [
-    [ "common", "namespacedepicture__menu_1_1domain_1_1common.html", "namespacedepicture__menu_1_1domain_1_1common" ],
-    [ "models", "namespacedepicture__menu_1_1domain_1_1models.html", "namespacedepicture__menu_1_1domain_1_1models" ],
     [ "events", "namespacedepicture__menu_1_1domain_1_1events.html", "namespacedepicture__menu_1_1domain_1_1events" ],
     [ "actions", "namespacedepicture__menu_1_1domain_1_1actions.html", "namespacedepicture__menu_1_1domain_1_1actions" ],
+    [ "models", "namespacedepicture__menu_1_1domain_1_1models.html", "namespacedepicture__menu_1_1domain_1_1models" ],
     [ "app", "namespacedepicture__menu_1_1domain_1_1app.html", "namespacedepicture__menu_1_1domain_1_1app" ],
     [ "commands", "namespacedepicture__menu_1_1domain_1_1commands.html", "namespacedepicture__menu_1_1domain_1_1commands" ],
+    [ "common", "namespacedepicture__menu_1_1domain_1_1common.html", "namespacedepicture__menu_1_1domain_1_1common" ],
     [ "id_tags", "namespacedepicture__menu_1_1domain_1_1id__tags.html", "namespacedepicture__menu_1_1domain_1_1id__tags" ],
+    [ "icons", "namespacedepicture__menu_1_1domain_1_1icons.html", "namespacedepicture__menu_1_1domain_1_1icons" ],
     [ "menu", "namespacedepicture__menu_1_1domain_1_1menu.html", "namespacedepicture__menu_1_1domain_1_1menu" ],
     [ "triggers", "namespacedepicture__menu_1_1domain_1_1triggers.html", "namespacedepicture__menu_1_1domain_1_1triggers" ],
     [ "services", "namespacedepicture__menu_1_1domain_1_1services.html", "namespacedepicture__menu_1_1domain_1_1services" ],

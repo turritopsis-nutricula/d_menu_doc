@@ -241,7 +241,7 @@ $(function(){initNavTree('show__config__view_8cpp_source.html','',''); });
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        .selected  = <span class="keyword">false</span>,</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        .action_id = e.<a class="code hl_function" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#a401fbb41b8231960bb8443168ddb56a5">current_action_id</a>( ),</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        .kind      = e.<a class="code hl_function" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#a489ad4b2bd1faa0ba2930a8c6846486e">get_current_action_kind</a>( ),</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    };</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        .icon_id   = e.<a class="code hl_function" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#a7a523e07ec109d483be9a606a086c2e0">get_icon_id</a>( ) };</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>}</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment">//----------------------------------------------------------------------//</span></div>
@@ -345,160 +345,194 @@ $(function(){initNavTree('show__config__view_8cpp_source.html','',''); });
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        <a class="code hl_struct" href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html">domain::menu::radialmenu</a>,</div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1actions_1_1v2_1_1publisher.html">domain::actions::publisher</a>,</div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1commands_1_1command.html">domain::commands::command</a>,</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1triggers_1_1global__key__input__trigger.html">domain::triggers::global_key_input_trigger</a> &gt;( *<a class="code hl_variable" href="classdepicture__menu_1_1usecase_1_1show__config__view.html#a397f155f99c90bcf7de1d8d4b82f9c49">trans_</a>, []( <span class="keyword">auto</span> t ) {</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        std::vector&lt; domain::menu::radialmenu &gt;                   <a class="code hl_enumvalue" href="namespacedepicture__menu_1_1usecase.html#ae89331f849c718b78833373f887fe801a81ca0b7c951be89184c130d2860a5b00">menus</a>;</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        std::vector&lt; domain::actions::publisher &gt;                 act_buf;</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        std::vector&lt; domain::commands::command &gt;                  com_buf;</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        std::vector&lt; domain::triggers::global_key_input_trigger &gt; tri_buf;</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        dto::config_view_created                                  result;</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>        <span class="keyword">auto</span> <span class="keyword">const</span> op = get&lt; domain::app::option &gt;( t ).read(</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>            <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1app.html#af0e6c7311ee1bb69c424c9ee029bf91e">domain::app::option_id</a>( <span class="stringliteral">&quot;default&quot;</span> ) );</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>        assert( op.has_value( ) );</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> </div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        result.option_id = op-&gt;entity_id( );</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        result.cfg_id    = op-&gt;get_config_id( );</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        <span class="keyword">auto</span> <span class="keyword">const</span> <span class="keywordtype">id</span> = op-&gt;get_config_id( );</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span> </div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        <span class="keyword">auto</span> <span class="keyword">const</span> conf = get&lt; domain::app::config &gt;( t ).read( <span class="keywordtype">id</span> );</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span> </div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>        <span class="keywordflow">if</span> ( conf.has_value( ) )</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        {</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>            <span class="comment">// action_id -&gt; { domain command s }</span></div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>            <span class="keyword">auto</span> com_query = [ &amp;t ]( <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">domain::actions::publisher_id</a> id ) {</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>                <span class="keywordflow">return</span> read_entity( t, <span class="keywordtype">id</span> )</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>                    .and_then( []( <span class="keyword">auto</span> o ) {</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>                    <span class="keywordflow">return</span> std::make_optional( o.get_command_id_range( ) );</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>                } )</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>                    .and_then(</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>                        []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; o )</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>                            -&gt; std::optional&lt; domain::commands::command_id &gt; {</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>                    <span class="keywordflow">if</span> ( !o.empty( ) )</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>                        <span class="keywordflow">return</span> std::make_optional( std::move( o[ 0 ] ) );</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>                    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>                        <span class="keywordflow">return</span> std::nullopt;</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>                } ).and_then( [ &amp;t ]( <span class="keyword">auto</span>&amp;&amp; <span class="keywordtype">id</span> ) {</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>                    <span class="keywordflow">return</span> read_entity( t, <span class="keywordtype">id</span> );</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>                } );</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>            };</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="preprocessor">#if 1</span></div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1triggers_1_1global__key__input__trigger.html">domain::triggers::global_key_input_trigger</a>,</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1icons_1_1menu__action__icon.html">domain::icons::menu_action_icon</a> &gt;( *<a class="code hl_variable" href="classdepicture__menu_1_1usecase_1_1show__config__view.html#a397f155f99c90bcf7de1d8d4b82f9c49">trans_</a>, []( <span class="keyword">auto</span> t ) {</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        std::vector&lt; domain::menu::radialmenu &gt;                   <a class="code hl_enumvalue" href="namespacedepicture__menu_1_1usecase.html#ae89331f849c718b78833373f887fe801a81ca0b7c951be89184c130d2860a5b00">menus</a>;</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        std::vector&lt; domain::actions::publisher &gt;                 act_buf;</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        std::vector&lt; domain::commands::command &gt;                  com_buf;</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        std::vector&lt; domain::triggers::global_key_input_trigger &gt; tri_buf;</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>        dto::config_view_created                                  result;</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>        <span class="keyword">auto</span> <span class="keyword">const</span> op = get&lt; domain::app::option &gt;( t ).read(</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>            <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1app.html#af0e6c7311ee1bb69c424c9ee029bf91e">domain::app::option_id</a>( <span class="stringliteral">&quot;default&quot;</span> ) );</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        assert( op.has_value( ) );</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>        result.option_id = op-&gt;entity_id( );</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        result.cfg_id    = op-&gt;get_config_id( );</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        <span class="keyword">auto</span> <span class="keyword">const</span> <span class="keywordtype">id</span> = op-&gt;get_config_id( );</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        <span class="keyword">auto</span> <span class="keyword">const</span> conf = get&lt; domain::app::config &gt;( t ).read( <span class="keywordtype">id</span> );</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        <span class="keywordflow">if</span> ( conf.has_value( ) )</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        {</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>            <span class="keyword">auto</span> <span class="keyword">const</span>&amp; menu_dim = conf-&gt;get_default_menu_dimension( );</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>            result.default_menu_outer_radius = menu_dim.outer( ).get_radius( );</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>            result.default_menu_inner_radius = menu_dim.inner( ).get_radius( );</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>            <span class="keyword">auto</span> <span class="keyword">const</span>&amp; back_color =</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>                conf-&gt;get_default_menu_color( ).back_color( );</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>            result.default_menu_opacity = get_opacity( back_color );</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>            result.default_base_color   = {</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>                  .red   = <span class="keyword">static_cast&lt;</span> uint8_t <span class="keyword">&gt;</span>( get_red( back_color ) ),</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>                  .green = <span class="keyword">static_cast&lt;</span> uint8_t <span class="keyword">&gt;</span>( get_green( back_color ) ),</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>                  .blue  = <span class="keyword">static_cast&lt;</span> uint8_t <span class="keyword">&gt;</span>( get_blue( back_color ) ) };</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>            <span class="comment">// fore_color</span></div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>            <span class="keyword">auto</span> <span class="keyword">const</span>&amp; fore_color =</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>                conf-&gt;get_default_menu_color( ).fore_color( );</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>            result.default_fore_color = {</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>                .red   = <span class="keyword">static_cast&lt;</span> uint8_t <span class="keyword">&gt;</span>( get_red( fore_color ) ),</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>                .green = <span class="keyword">static_cast&lt;</span> uint8_t <span class="keyword">&gt;</span>( get_green( fore_color ) ),</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>                .blue  = <span class="keyword">static_cast&lt;</span> uint8_t <span class="keyword">&gt;</span>( get_blue( fore_color ) ) };</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span> </div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>            <span class="comment">// menu</span></div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>            <span class="keyword">auto</span> new_menu_range =</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>                conf-&gt;get_menu_ids( ) |</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>                read&lt; domain::menu::radialmenu &gt;( t_ref( t ) ) | extract_value |</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>                std::views::transform( &amp;convert_menu );</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>            std::ranges::for_each(</div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                new_menu_range,</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>                [ <span class="keywordtype">id</span> = conf-&gt;entity_id( ), &amp;<a class="code hl_struct" href="structb.html">b</a> = result.menus, &amp;com_query ](</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>                    <span class="keyword">auto</span> i ) {</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>                i.cfg_id = id;</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>                std::ranges::for_each( i.items, [ &amp;com_query ]( auto&amp; item ) {</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>                    if ( auto com_opt = com_query( item.action_id ) )</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>                    {</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>                        item.leader_command_id = com_opt-&gt;entity_id( );</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>                    }</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>                } );</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>                <a class="code hl_struct" href="structb.html">b</a>.push_back( std::move( i ) );</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>            } );</div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span> </div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span><span class="preprocessor">#if 1</span></div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>            <span class="comment">// commands</span></div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>            result.commands =</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>                result.menus | std::views::transform( []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; m ) {</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>                <span class="keywordflow">return</span> m.items;</div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>            } ) |</div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>                std::views::join |</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>                std::views::transform( [ &amp;com_query ]( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; item ) {</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>                <span class="keywordflow">return</span> std::make_tuple(</div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>                    item.kind,</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>                    item.action_id,</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>                    com_query( item.action_id ) );</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>            } ) |</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>                std::views::transform(</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>                    [ &amp;t ]( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; value ) -&gt; dto::command_created {</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>                <span class="keyword">auto</span> <span class="keyword">const</span> [ kind, act_id, com ] = value;</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>                <span class="keywordflow">if</span> ( !com )</div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>                    <span class="keywordflow">return</span> {</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>                        .command_id = <a class="code hl_function" href="structdepicture__menu_1_1domain_1_1models_1_1entity__id__base.html#a71866154646981ed1213a76e8e7c9d6b">domain::commands::command_id::nil_id</a>( ) };</div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>                <span class="keyword">auto</span> <span class="keyword">const</span>&amp; pp = com-&gt;parameters( );</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>                <span class="keywordflow">switch</span> ( kind )</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>                {</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>                    <span class="keywordflow">case</span> common_command_kind::shellexecute :</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>                    {</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span> </div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>                        <span class="keywordtype">bool</span> is_auto_close =</div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>                            read_entity( t, act_id )</div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>                                .transform( []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; <a class="code hl_struct" href="structa.html">a</a> ) {</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>                            <span class="keywordflow">return</span> <a class="code hl_struct" href="structa.html">a</a>.is_complete_close_action( );</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>                        } ).value_or( <span class="keyword">false</span> );</div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span> </div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>                        <span class="keywordflow">return</span> {</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>                            .command_id = com-&gt;entity_id( ),</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>                            .value      = { dto::shellexecute_command_parameter{</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>                                     .exe_path = pp.template get_value&lt;</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>                                         parameter_kind::wide_string &gt;( 0u, L<span class="stringliteral">&quot;&quot;</span> ),</div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>                                     .opt = <a class="code hl_function" href="namespacedepicture__menu_1_1util_1_1strconv.html#a08ee9762f61abb902eac449b23391fe1">util::strconv::wide_to_utf8</a>(</div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>                                    pp.template get_value&lt;</div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>                                             parameter_kind::wide_string &gt;(</div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>                                        1u,</div>
-<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>                                        L<span class="stringliteral">&quot;&quot;</span> ) ),</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>                                     .is_auto_close = is_auto_close } } };</div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>                    }</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>                    <span class="keywordflow">case</span> common_command_kind::open_sub_menu :</div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>                    {</div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>                        <span class="keywordflow">return</span> {</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>                            .command_id = com-&gt;entity_id( ),</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>                            .value = { dto::open_sub_menu_command_parameter{</div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>                                <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1menu.html#a2b51ff146c22769b74c23c37851fa801">domain::menu::menu_id</a>( pp.template get_value&lt;</div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>                                                       parameter_kind::uuid &gt;(</div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>                                    0u,</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>                                    boost::uuids::nil_uuid( ) ) ) } } };</div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>                    }</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>                    default : <span class="keywordflow">return</span> { .command_id = com-&gt;entity_id( ) };</div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>                }</div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>            } ) |</div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>                std::ranges::to&lt; <span class="keyword">decltype</span>( result.commands ) &gt;( );</div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span><span class="preprocessor">#if 1</span></div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>            <span class="comment">// trigger</span></div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>            <span class="keyword">auto</span> new_tri_range =</div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>                conf-&gt;get_trigger_ids( ) |</div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>                read&lt; domain::triggers::global_key_input_trigger &gt;(</div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>                    t_ref( t ) ) |</div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>                extract_value | std::views::transform( &amp;convert_trigger );</div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span> </div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>            std::ranges::for_each(</div>
-<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>                new_tri_range,</div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>                [ <span class="keywordtype">id</span> = conf-&gt;entity_id( ), &amp;<a class="code hl_struct" href="structb.html">b</a> = result.triggers ]( <span class="keyword">auto</span> i ) {</div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>                i.cfg_id = id;</div>
-<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>                b.push_back( std::move( i ) );</div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>            } );</div>
-<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span> </div>
-<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>        }</div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span> </div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span>        <span class="keywordflow">return</span> std::make_tuple( <a class="code hl_enumvalue" href="namespacedepicture__menu_1_1usecase.html#ae89331f849c718b78833373f887fe801a81ca0b7c951be89184c130d2860a5b00">menus</a>, act_buf, com_buf, tri_buf, result );</div>
-<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span>    } );</div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span> </div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span> </div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>    <span class="keywordflow">if</span> ( ret.has_value( ) )</div>
-<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>    {</div>
-<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>        <a class="code hl_function" href="namespacedepicture__menu_1_1domain.html#a5023336ba87d37789cdf3c55a9293c26">domain::show_view_</a>( std::move( ret.value( ) ), config_view_presenter_ );</div>
-<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>    }</div>
-<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>}</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>            <span class="comment">// action_id -&gt; { domain command s }</span></div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>            <span class="keyword">auto</span> com_query = [ &amp;t ]( <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1actions.html#af913742220f232fcc0d0433f4e0da3f3">domain::actions::publisher_id</a> id ) {</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>                <span class="keywordflow">return</span> read_entity( t, <span class="keywordtype">id</span> )</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>                    .and_then( []( <span class="keyword">auto</span> o ) {</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>                    <span class="keywordflow">return</span> std::make_optional( o.get_command_id_range( ) );</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>                } )</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>                    .and_then(</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>                        []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; o )</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>                            -&gt; std::optional&lt; domain::commands::command_id &gt; {</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>                    <span class="keywordflow">if</span> ( !o.empty( ) )</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>                        <span class="keywordflow">return</span> std::make_optional( std::move( o[ 0 ] ) );</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>                    <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>                        <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>                } ).and_then( [ &amp;t ]( <span class="keyword">auto</span>&amp;&amp; <span class="keywordtype">id</span> ) {</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>                    <span class="keywordflow">return</span> read_entity( t, <span class="keywordtype">id</span> );</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>                } );</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>            };</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span><span class="preprocessor">#if 1</span></div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span> </div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>            <span class="comment">// menu</span></div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>            <span class="keyword">auto</span> new_menu_range =</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>                conf-&gt;get_menu_ids( ) |</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>                read&lt; domain::menu::radialmenu &gt;( t_ref( t ) ) | extract_value |</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>                std::views::transform( &amp;convert_menu );</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span> </div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>            std::ranges::for_each(</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>                new_menu_range,</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>                [ <span class="keywordtype">id</span> = conf-&gt;entity_id( ), &amp;<a class="code hl_struct" href="structb.html">b</a> = result.menus, &amp;com_query ](</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>                    <span class="keyword">auto</span> i ) {</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>                i.cfg_id = id;</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>                std::ranges::for_each( i.items, [ &amp;com_query ]( auto&amp; item ) {</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>                    if ( auto com_opt = com_query( item.action_id ) )</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>                    {</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>                        item.leader_command_id = com_opt-&gt;entity_id( );</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>                    }</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>                } );</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>                <a class="code hl_struct" href="structb.html">b</a>.push_back( std::move( i ) );</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>            } );</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span> </div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span><span class="preprocessor">#if 1</span></div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>            <span class="comment">// commands</span></div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>            result.commands =</div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>                result.menus | std::views::transform( []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; m ) {</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>                <span class="keywordflow">return</span> m.items;</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>            } ) |</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>                std::views::join |</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>                std::views::transform( [ &amp;com_query ]( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; item ) {</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>                <span class="keywordflow">return</span> std::make_tuple(</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>                    item.kind,</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>                    item.action_id,</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>                    com_query( item.action_id ) );</div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>            } ) |</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>                std::views::transform(</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>                    [ &amp;t ]( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; value ) -&gt; dto::command_created {</div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>                <span class="keyword">auto</span> <span class="keyword">const</span> [ kind, act_id, com ] = value;</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>                <span class="keywordflow">if</span> ( !com )</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>                    <span class="keywordflow">return</span> {</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>                        .command_id = <a class="code hl_function" href="structdepicture__menu_1_1domain_1_1models_1_1entity__id__base.html#a71866154646981ed1213a76e8e7c9d6b">domain::commands::command_id::nil_id</a>( ) };</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span> </div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>                <span class="keyword">auto</span> <span class="keyword">const</span>&amp; pp = com-&gt;parameters( );</div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span> </div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>                <span class="keywordflow">switch</span> ( kind )</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>                {</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>                    <span class="keywordflow">case</span> common_command_kind::shellexecute :</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>                    {</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span> </div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>                        <span class="keywordtype">bool</span> is_auto_close =</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>                            read_entity( t, act_id )</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>                                .transform( []( <span class="keyword">auto</span> <span class="keyword">const</span>&amp; <a class="code hl_struct" href="structa.html">a</a> ) {</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>                            <span class="keywordflow">return</span> <a class="code hl_struct" href="structa.html">a</a>.is_complete_close_action( );</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>                        } ).value_or( <span class="keyword">false</span> );</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span> </div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>                        <span class="keywordflow">return</span> {</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>                            .command_id = com-&gt;entity_id( ),</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>                            .value      = { dto::shellexecute_command_parameter{</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>                                     .exe_path = pp.template get_value&lt;</div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>                                         parameter_kind::wide_string &gt;( 0u, L<span class="stringliteral">&quot;&quot;</span> ),</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>                                     .opt = <a class="code hl_function" href="namespacedepicture__menu_1_1util_1_1strconv.html#a08ee9762f61abb902eac449b23391fe1">util::strconv::wide_to_utf8</a>(</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>                                    pp.template get_value&lt;</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>                                             parameter_kind::wide_string &gt;(</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>                                        1u,</div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>                                        L<span class="stringliteral">&quot;&quot;</span> ) ),</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>                                     .is_auto_close = is_auto_close } } };</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>                    }</div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>                    <span class="keywordflow">case</span> common_command_kind::open_sub_menu :</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>                    {</div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>                        <span class="keywordflow">return</span> {</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>                            .command_id = com-&gt;entity_id( ),</div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>                            .value = { dto::open_sub_menu_command_parameter{</div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>                                <a class="code hl_typedef" href="namespacedepicture__menu_1_1domain_1_1menu.html#a2b51ff146c22769b74c23c37851fa801">domain::menu::menu_id</a>( pp.template get_value&lt;</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>                                                       parameter_kind::uuid &gt;(</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>                                    0u,</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>                                    boost::uuids::nil_uuid( ) ) ) } } };</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>                    }</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>                    default : <span class="keywordflow">return</span> { .command_id = com-&gt;entity_id( ) };</div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>                }</div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>            } ) |</div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>                std::ranges::to&lt; <span class="keyword">decltype</span>( result.commands ) &gt;( );</div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span><span class="preprocessor">#if 1</span></div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>            <span class="comment">// trigger</span></div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>            <span class="keyword">auto</span> new_tri_range =</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>                conf-&gt;get_trigger_ids( ) |</div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>                read&lt; domain::triggers::global_key_input_trigger &gt;(</div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>                    t_ref( t ) ) |</div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>                extract_value | std::views::transform( &amp;convert_trigger );</div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span> </div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>            std::ranges::for_each(</div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>                new_tri_range,</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>                [ <span class="keywordtype">id</span> = conf-&gt;entity_id( ), &amp;<a class="code hl_struct" href="structb.html">b</a> = result.triggers ]( <span class="keyword">auto</span> i ) {</div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span>                i.cfg_id = id;</div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>                b.push_back( std::move( i ) );</div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>            } );</div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span> </div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>            <span class="comment">// icons</span></div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span>            result.icons =</div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>                conf-&gt;get_icon_ids( ) |</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>                read&lt; domain::icons::menu_action_icon &gt;( t_ref( t ) ) |</div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>                extract_value |</div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span>                std::views::transform(</div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>                    []( <a class="code hl_class" href="classdepicture__menu_1_1domain_1_1icons_1_1menu__action__icon.html">domain::icons::menu_action_icon</a> <span class="keyword">const</span>&amp; ico ) {</div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>                <span class="keywordflow">return</span> <a class="code hl_struct" href="structdepicture__menu_1_1usecase_1_1dto_1_1icon__created.html">usecase::dto::icon_created</a>{</div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>                    .icon_id     = ico.entity_id( ),</div>
+<div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>                    .hash        = ico.entity_id( ).uuid( ),</div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>                    .<a class="code hl_function" href="classdepicture__menu_1_1domain_1_1icons_1_1menu__action__icon.html#ae5032cbdb810ed42f1f417a8f07bf374">svg_content</a> = ico.<a class="code hl_function" href="classdepicture__menu_1_1domain_1_1icons_1_1menu__action__icon.html#ae5032cbdb810ed42f1f417a8f07bf374">svg_content</a>( ) };</div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>            } ) |</div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span>                std::ranges::to&lt; std::vector&lt; usecase::dto::icon_created &gt; &gt;( );</div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>        }</div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span> </div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>        <span class="keywordflow">return</span> std::make_tuple( <a class="code hl_enumvalue" href="namespacedepicture__menu_1_1usecase.html#ae89331f849c718b78833373f887fe801a81ca0b7c951be89184c130d2860a5b00">menus</a>, act_buf, com_buf, tri_buf, result );</div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>    } );</div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span> </div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span> </div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>    <span class="keywordflow">if</span> ( ret.has_value( ) )</div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>    {</div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>        <a class="code hl_function" href="namespacedepicture__menu_1_1domain.html#a5023336ba87d37789cdf3c55a9293c26">domain::show_view_</a>( std::move( ret.value( ) ), config_view_presenter_ );</div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>    }</div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>}</div>
 </div>
-<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1actions_1_1v2_1_1publisher_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1actions_1_1v2_1_1publisher.html">depicture_menu::domain::actions::v2::publisher</a></div><div class="ttdoc">アクション DomainEntity</div><div class="ttdef"><b>Definition</b> <a href="action_8hpp_source.html#l00188">action.hpp:190</a></div></div>
-<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1app_1_1config_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1app_1_1config.html">depicture_menu::domain::app::config</a></div><div class="ttdef"><b>Definition</b> <a href="domain_2model_2app_2config_8hpp_source.html#l00074">config.hpp:75</a></div></div>
-<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1app_1_1option_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1app_1_1option.html">depicture_menu::domain::app::option</a></div><div class="ttdef"><b>Definition</b> <a href="option_8hpp_source.html#l00026">option.hpp:27</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1actions_1_1v2_1_1publisher_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1actions_1_1v2_1_1publisher.html">depicture_menu::domain::actions::v2::publisher</a></div><div class="ttdoc">アクション DomainEntity</div><div class="ttdef"><b>Definition</b> <a href="action_8hpp_source.html#l00190">action.hpp:192</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1app_1_1config_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1app_1_1config.html">depicture_menu::domain::app::config</a></div><div class="ttdef"><b>Definition</b> <a href="domain_2model_2app_2config_8hpp_source.html#l00082">config.hpp:83</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1app_1_1option_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1app_1_1option.html">depicture_menu::domain::app::option</a></div><div class="ttdoc">オプションエンティティ</div><div class="ttdef"><b>Definition</b> <a href="option_8hpp_source.html#l00028">option.hpp:29</a></div></div>
 <div class="ttc" id="aclassdepicture__menu_1_1domain_1_1commands_1_1command_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1commands_1_1command.html">depicture_menu::domain::commands::command</a></div><div class="ttdef"><b>Definition</b> <a href="command_8hpp_source.html#l00036">command.hpp:38</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1icons_1_1menu__action__icon_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1icons_1_1menu__action__icon.html">depicture_menu::domain::icons::menu_action_icon</a></div><div class="ttdoc">メニューアクションアイコン</div><div class="ttdef"><b>Definition</b> <a href="menu__action__icon_8hpp_source.html#l00030">menu_action_icon.hpp:33</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1domain_1_1icons_1_1menu__action__icon_html_ae5032cbdb810ed42f1f417a8f07bf374"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1icons_1_1menu__action__icon.html#ae5032cbdb810ed42f1f417a8f07bf374">depicture_menu::domain::icons::menu_action_icon::svg_content</a></div><div class="ttdeci">std::string const &amp; svg_content() const</div><div class="ttdef"><b>Definition</b> <a href="menu__action__icon_8hpp_source.html#l00050">menu_action_icon.hpp:50</a></div></div>
 <div class="ttc" id="aclassdepicture__menu_1_1domain_1_1menu_1_1menu__label_html_acea5cf913f0c3e18e4f3f473a33be1d0"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1menu_1_1menu__label.html#acea5cf913f0c3e18e4f3f473a33be1d0">depicture_menu::domain::menu::menu_label::to_ansi_str</a></div><div class="ttdeci">auto to_ansi_str() const</div><div class="ttdef"><b>Definition</b> <a href="radialmenu__label_8hpp_source.html#l00047">radialmenu_label.hpp:47</a></div></div>
 <div class="ttc" id="aclassdepicture__menu_1_1domain_1_1triggers_1_1global__key__input__trigger_html"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1triggers_1_1global__key__input__trigger.html">depicture_menu::domain::triggers::global_key_input_trigger</a></div><div class="ttdef"><b>Definition</b> <a href="trigger_8hpp_source.html#l00036">trigger.hpp:39</a></div></div>
 <div class="ttc" id="aclassdepicture__menu_1_1domain_1_1triggers_1_1global__key__input__trigger_html_a02ab5414e89c0ce3fca6febb505280dc"><div class="ttname"><a href="classdepicture__menu_1_1domain_1_1triggers_1_1global__key__input__trigger.html#a02ab5414e89c0ce3fca6febb505280dc">depicture_menu::domain::triggers::global_key_input_trigger::show_menu_id</a></div><div class="ttdeci">void show_menu_id(auto const &amp;v)</div><div class="ttdef"><b>Definition</b> <a href="trigger_8hpp_source.html#l00095">trigger.hpp:95</a></div></div>
@@ -517,7 +551,7 @@ $(function(){initNavTree('show__config__view_8cpp_source.html','',''); });
 <div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1app_html_a86ba4957782ffa7d60cfa8b3e4a67914"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1app.html#a86ba4957782ffa7d60cfa8b3e4a67914">depicture_menu::domain::app::config_id</a></div><div class="ttdeci">models::entity_id_base&lt; detail_app::config_id_tag &gt; config_id</div><div class="ttdef"><b>Definition</b> <a href="app__ids_8hpp_source.html#l00056">app_ids.hpp:56</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1app_html_af0e6c7311ee1bb69c424c9ee029bf91e"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1app.html#af0e6c7311ee1bb69c424c9ee029bf91e">depicture_menu::domain::app::option_id</a></div><div class="ttdeci">detail_app::option_id_base option_id</div><div class="ttdef"><b>Definition</b> <a href="app__ids_8hpp_source.html#l00055">app_ids.hpp:55</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1domain_1_1menu_html_a2b51ff146c22769b74c23c37851fa801"><div class="ttname"><a href="namespacedepicture__menu_1_1domain_1_1menu.html#a2b51ff146c22769b74c23c37851fa801">depicture_menu::domain::menu::menu_id</a></div><div class="ttdeci">models::entity_id_base&lt; detail_menu::menu_id_tag &gt; menu_id</div><div class="ttdef"><b>Definition</b> <a href="menu__ids_8hpp_source.html#l00022">menu_ids.hpp:22</a></div></div>
-<div class="ttc" id="anamespacedepicture__menu_1_1domain_html"><div class="ttname"><a href="namespacedepicture__menu_1_1domain.html">depicture_menu::domain</a></div><div class="ttdef"><b>Definition</b> <a href="colors_8hpp_source.html#l00006">colors.hpp:7</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1domain_html"><div class="ttname"><a href="namespacedepicture__menu_1_1domain.html">depicture_menu::domain</a></div><div class="ttdef"><b>Definition</b> <a href="crud__repository_8hpp_source.html#l00008">crud_repository.hpp:9</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1domain_html_a5023336ba87d37789cdf3c55a9293c26"><div class="ttname"><a href="namespacedepicture__menu_1_1domain.html#a5023336ba87d37789cdf3c55a9293c26">depicture_menu::domain::show_view_</a></div><div class="ttdeci">auto show_view_(TransactionResult &amp;&amp;ret_value, std::shared_ptr&lt; usecase::config_view_model_interface &gt; const &amp;presenter)</div><div class="ttdef"><b>Definition</b> <a href="#l00077">show_config_view.cpp:77</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1domain_html_aedcb86fbc703a4490f8e3940ea7c8aa5"><div class="ttname"><a href="namespacedepicture__menu_1_1domain.html#aedcb86fbc703a4490f8e3940ea7c8aa5">depicture_menu::domain::make_query</a></div><div class="ttdeci">usecase::query_base&lt; T &gt; make_query(std::vector&lt; T &gt; &amp;&amp;vec)</div><div class="ttdef"><b>Definition</b> <a href="#l00013">show_config_view.cpp:13</a></div></div>
 <div class="ttc" id="anamespacedepicture__menu_1_1repositories_1_1ranges_1_1views_html_a2470c016b6fbdd210f652f2de0cb7e37"><div class="ttname"><a href="namespacedepicture__menu_1_1repositories_1_1ranges_1_1views.html#a2470c016b6fbdd210f652f2de0cb7e37">depicture_menu::repositories::ranges::views::extract_value</a></div><div class="ttdeci">constexpr ::depicture_menu::ranges::closure_t extract_value</div><div class="ttdef"><b>Definition</b> <a href="transaction__range_8hpp_source.html#l00220">transaction_range.hpp:220</a></div></div>
@@ -532,14 +566,16 @@ $(function(){initNavTree('show__config__view_8cpp_source.html','',''); });
 <div class="ttc" id="astructa_html"><div class="ttname"><a href="structa.html">a</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00130">TestReflection.cpp:131</a></div></div>
 <div class="ttc" id="astructb_html"><div class="ttname"><a href="structb.html">b</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00125">TestReflection.cpp:126</a></div></div>
 <div class="ttc" id="astructc_html"><div class="ttname"><a href="structc.html">c</a></div><div class="ttdef"><b>Definition</b> <a href="_test_reflection_8cpp_source.html#l00147">TestReflection.cpp:148</a></div></div>
-<div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item_html"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html">depicture_menu::domain::menu::radialmenu_item</a></div><div class="ttdoc">メニューアイテム DomainEntity</div><div class="ttdef"><b>Definition</b> <a href="radialmenu__item_8hpp_source.html#l00050">radialmenu_item.hpp:53</a></div></div>
-<div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item_html_a401fbb41b8231960bb8443168ddb56a5"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#a401fbb41b8231960bb8443168ddb56a5">depicture_menu::domain::menu::radialmenu_item::current_action_id</a></div><div class="ttdeci">auto const &amp; current_action_id() const noexcept</div><div class="ttdef"><b>Definition</b> <a href="radialmenu__item_8hpp_source.html#l00127">radialmenu_item.hpp:127</a></div></div>
-<div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item_html_a489ad4b2bd1faa0ba2930a8c6846486e"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#a489ad4b2bd1faa0ba2930a8c6846486e">depicture_menu::domain::menu::radialmenu_item::get_current_action_kind</a></div><div class="ttdeci">commands::common_command_kind const &amp; get_current_action_kind() const noexcept</div><div class="ttdef"><b>Definition</b> <a href="radialmenu__item_8hpp_source.html#l00184">radialmenu_item.hpp:184</a></div></div>
-<div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item_html_a88ff93a95491491736c7c092fa79fbdd"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#a88ff93a95491491736c7c092fa79fbdd">depicture_menu::domain::menu::radialmenu_item::get_label</a></div><div class="ttdeci">menu_label const &amp; get_label() const noexcept</div><div class="ttdef"><b>Definition</b> <a href="radialmenu__item_8hpp_source.html#l00101">radialmenu_item.hpp:101</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item_html"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html">depicture_menu::domain::menu::radialmenu_item</a></div><div class="ttdoc">メニューアイテム DomainEntity</div><div class="ttdef"><b>Definition</b> <a href="radialmenu__item_8hpp_source.html#l00053">radialmenu_item.hpp:56</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item_html_a401fbb41b8231960bb8443168ddb56a5"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#a401fbb41b8231960bb8443168ddb56a5">depicture_menu::domain::menu::radialmenu_item::current_action_id</a></div><div class="ttdeci">auto const &amp; current_action_id() const noexcept</div><div class="ttdef"><b>Definition</b> <a href="radialmenu__item_8hpp_source.html#l00149">radialmenu_item.hpp:149</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item_html_a489ad4b2bd1faa0ba2930a8c6846486e"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#a489ad4b2bd1faa0ba2930a8c6846486e">depicture_menu::domain::menu::radialmenu_item::get_current_action_kind</a></div><div class="ttdeci">commands::common_command_kind const &amp; get_current_action_kind() const noexcept</div><div class="ttdef"><b>Definition</b> <a href="radialmenu__item_8hpp_source.html#l00206">radialmenu_item.hpp:206</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item_html_a7a523e07ec109d483be9a606a086c2e0"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#a7a523e07ec109d483be9a606a086c2e0">depicture_menu::domain::menu::radialmenu_item::get_icon_id</a></div><div class="ttdeci">icons::icon_id get_icon_id() const noexcept</div><div class="ttdef"><b>Definition</b> <a href="radialmenu__item_8hpp_source.html#l00116">radialmenu_item.hpp:116</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item_html_a88ff93a95491491736c7c092fa79fbdd"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu__item.html#a88ff93a95491491736c7c092fa79fbdd">depicture_menu::domain::menu::radialmenu_item::get_label</a></div><div class="ttdeci">menu_label const &amp; get_label() const noexcept</div><div class="ttdef"><b>Definition</b> <a href="radialmenu__item_8hpp_source.html#l00104">radialmenu_item.hpp:104</a></div></div>
 <div class="ttc" id="astructdepicture__menu_1_1domain_1_1menu_1_1radialmenu_html"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1menu_1_1radialmenu.html">depicture_menu::domain::menu::radialmenu</a></div><div class="ttdoc">メニュー Domain entity</div><div class="ttdef"><b>Definition</b> <a href="radialmenu_8hpp_source.html#l00033">radialmenu.hpp:34</a></div></div>
 <div class="ttc" id="astructdepicture__menu_1_1domain_1_1models_1_1entity__id__base_html_a71866154646981ed1213a76e8e7c9d6b"><div class="ttname"><a href="structdepicture__menu_1_1domain_1_1models_1_1entity__id__base.html#a71866154646981ed1213a76e8e7c9d6b">depicture_menu::domain::models::entity_id_base&lt; detail_commands::command_id_tag &gt;::nil_id</a></div><div class="ttdeci">static constexpr entity_id_base nil_id()</div><div class="ttdef"><b>Definition</b> <a href="model_2entity__id_8hpp_source.html#l00088">entity_id.hpp:88</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1usecase_1_1dto_1_1icon__created_html"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1dto_1_1icon__created.html">depicture_menu::usecase::dto::icon_created</a></div><div class="ttdoc">アイコン生成 output DTO</div><div class="ttdef"><b>Definition</b> <a href="icon__created_8hpp_source.html#l00015">icon_created.hpp:16</a></div></div>
 <div class="ttc" id="astructdepicture__menu_1_1usecase_1_1dto_1_1menu__created_html"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1dto_1_1menu__created.html">depicture_menu::usecase::dto::menu_created</a></div><div class="ttdef"><b>Definition</b> <a href="menu__created_8hpp_source.html#l00010">menu_created.hpp:11</a></div></div>
-<div class="ttc" id="astructdepicture__menu_1_1usecase_1_1dto_1_1menu__item__created_html"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1dto_1_1menu__item__created.html">depicture_menu::usecase::dto::menu_item_created</a></div><div class="ttdoc">メニューアイテム</div><div class="ttdef"><b>Definition</b> <a href="menu__item__created_8hpp_source.html#l00018">menu_item_created.hpp:19</a></div></div>
+<div class="ttc" id="astructdepicture__menu_1_1usecase_1_1dto_1_1menu__item__created_html"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1dto_1_1menu__item__created.html">depicture_menu::usecase::dto::menu_item_created</a></div><div class="ttdoc">メニューアイテム</div><div class="ttdef"><b>Definition</b> <a href="menu__item__created_8hpp_source.html#l00019">menu_item_created.hpp:20</a></div></div>
 <div class="ttc" id="astructdepicture__menu_1_1usecase_1_1dto_1_1trigger__created_html"><div class="ttname"><a href="structdepicture__menu_1_1usecase_1_1dto_1_1trigger__created.html">depicture_menu::usecase::dto::trigger_created</a></div><div class="ttdoc">trigger_created</div><div class="ttdef"><b>Definition</b> <a href="trigger__created_8hpp_source.html#l00019">trigger_created.hpp:20</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

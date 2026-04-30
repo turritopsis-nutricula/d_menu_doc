@@ -8,6 +8,7 @@ var namespacedepicture__menu_1_1domain_1_1models =
     [ "cpo", "namespacedepicture__menu_1_1domain_1_1models_1_1cpo.html", [
       [ "to_ref_tuple", "namespacedepicture__menu_1_1domain_1_1models_1_1cpo.html#acbedbb92165865c0a40a711381e0265a", null ]
     ] ],
+    [ "v1", "namespacedepicture__menu_1_1domain_1_1models_1_1v1.html", "namespacedepicture__menu_1_1domain_1_1models_1_1v1" ],
     [ "empty_event", "structdepicture__menu_1_1domain_1_1models_1_1empty__event.html", "structdepicture__menu_1_1domain_1_1models_1_1empty__event" ],
     [ "event_factory", "structdepicture__menu_1_1domain_1_1models_1_1event__factory.html", null ],
     [ "event_store", "structdepicture__menu_1_1domain_1_1models_1_1event__store.html", "structdepicture__menu_1_1domain_1_1models_1_1event__store" ],

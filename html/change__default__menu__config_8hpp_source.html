@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: depicture_menu/src/core/usecase/config_view/change_default_menu_config.hpp ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('change__default__menu__config_8hpp_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">読み取り中…</div>
+<div class="SRStatus" id="Searching">検索中…</div>
+<div class="SRStatus" id="NoMatches">一致する文字列を見つけられません</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">change_default_menu_config.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="change__default__menu__config_8hpp.html">[詳解]</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/** @file change_default_menu_config.hpp</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#ifndef SRC_CORE_USECASE_CONFIG_VIEW_CHANGE_DEFAULT_MENU_CONFIG_HPP_</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#define SRC_CORE_USECASE_CONFIG_VIEW_CHANGE_DEFAULT_MENU_CONFIG_HPP_</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="app__transaction_8hpp.html">core/application/app_transaction.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="default__menu__config__update_8hpp.html">dto/default_menu_config_update.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="config__view__model__interface_8hpp.html">interface/config_view_model_interface.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1usecase.html">depicture_menu::usecase</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="namespacedepicture__menu_1_1usecase_1_1detail__usecase__change__default__menu__config.html">   13</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedepicture__menu_1_1usecase_1_1detail__usecase__change__default__menu__config.html">detail_usecase_change_default_menu_config</a></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="namespacedepicture__menu_1_1usecase_1_1detail__usecase__change__default__menu__config.html#a6ca09f3a98f26dc6655842ff0476ca5d">do_transaction</a>(</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <a class="code hl_typedef" href="namespacedepicture__menu_1_1applications.html#a1168dfec76130ba465ebed176eb5ba9e">applications::transaction_source_ptr_t</a>,</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        dto::default_menu_config_update <span class="keyword">const</span>&amp; );</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>}    <span class="comment">// namespace detail_usecase_change_default_menu_config</span><span class="comment"></span></div>
+</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">//! @todo 仮置きクラス名</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">template</span>&lt;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="comment">//  concepts::config_changed_presentable presenter_t =</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">typename</span> presenter_t = <span class="keyword">class </span>t_change_command_view &gt;</div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1usecase_1_1change__default__menu__config.html">   24</a></span><span class="keyword">class </span><a class="code hl_function" href="classdepicture__menu_1_1usecase_1_1change__default__menu__config.html#a48ddc3a9c147fd7c0152bec9d7f6239d">change_default_menu_config</a></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1usecase_1_1change__default__menu__config.html#aa0934a670ce0289ebbbca81529257df4">   26</a></span>    std::shared_ptr&lt; applications::transaction_source &gt; <a class="code hl_variable" href="classdepicture__menu_1_1usecase_1_1change__default__menu__config.html#aa0934a670ce0289ebbbca81529257df4">source_</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1usecase_1_1change__default__menu__config.html#a0b533e2310d114788d1767fd5aa2d68d">   27</a></span>    std::shared_ptr&lt; presenter_t &gt;                      <a class="code hl_variable" href="classdepicture__menu_1_1usecase_1_1change__default__menu__config.html#a0b533e2310d114788d1767fd5aa2d68d">presenter_</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1usecase_1_1change__default__menu__config.html#a48ddc3a9c147fd7c0152bec9d7f6239d">   30</a></span>    <a class="code hl_function" href="classdepicture__menu_1_1usecase_1_1change__default__menu__config.html#a48ddc3a9c147fd7c0152bec9d7f6239d">change_default_menu_config</a>(</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        std::shared_ptr&lt; applications::transaction_source &gt; transaction,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        std::shared_ptr&lt; presenter_t &gt;                      p )</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        : <a class="code hl_variable" href="classdepicture__menu_1_1usecase_1_1change__default__menu__config.html#aa0934a670ce0289ebbbca81529257df4">source_</a>( transaction )</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        , <a class="code hl_variable" href="classdepicture__menu_1_1usecase_1_1change__default__menu__config.html#a0b533e2310d114788d1767fd5aa2d68d">presenter_</a>( p )</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    { }</div>
+</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classdepicture__menu_1_1usecase_1_1change__default__menu__config.html#a211db0f791ba97e3c8643812d0b9a7b1">   38</a></span>    <span class="keywordtype">void</span> operator( )( dto::default_menu_config_update <span class="keyword">const</span>&amp; <a class="code hl_namespace" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html">dto</a> ) <span class="keyword">const</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    {<span class="comment"></span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">        //! @todo not impl</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <a class="code hl_function" href="namespacedepicture__menu_1_1usecase_1_1detail__usecase__change__default__menu__config.html#a6ca09f3a98f26dc6655842ff0476ca5d">detail_usecase_change_default_menu_config::do_transaction</a>(</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <a class="code hl_variable" href="classdepicture__menu_1_1usecase_1_1change__default__menu__config.html#aa0934a670ce0289ebbbca81529257df4">source_</a>,</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <a class="code hl_namespace" href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html">dto</a> );</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
+</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>};</div>
+</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}    <span class="comment">// namespace depicture_menu::usecase</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#endif    </span><span class="comment">// SRC_CORE_USECASE_CONFIG_VIEW_CHANGE_DEFAULT_MENU_CONFIG_HPP_</span></div>
+<div class="ttc" id="aapp__transaction_8hpp_html"><div class="ttname"><a href="app__transaction_8hpp.html">app_transaction.hpp</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1usecase_1_1change__default__menu__config_html_a0b533e2310d114788d1767fd5aa2d68d"><div class="ttname"><a href="classdepicture__menu_1_1usecase_1_1change__default__menu__config.html#a0b533e2310d114788d1767fd5aa2d68d">depicture_menu::usecase::change_default_menu_config::presenter_</a></div><div class="ttdeci">std::shared_ptr&lt; presenter_t &gt; presenter_</div><div class="ttdef"><b>Definition</b> <a href="#l00027">change_default_menu_config.hpp:27</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1usecase_1_1change__default__menu__config_html_a48ddc3a9c147fd7c0152bec9d7f6239d"><div class="ttname"><a href="classdepicture__menu_1_1usecase_1_1change__default__menu__config.html#a48ddc3a9c147fd7c0152bec9d7f6239d">depicture_menu::usecase::change_default_menu_config::change_default_menu_config</a></div><div class="ttdeci">change_default_menu_config(std::shared_ptr&lt; applications::transaction_source &gt; transaction, std::shared_ptr&lt; presenter_t &gt; p)</div><div class="ttdef"><b>Definition</b> <a href="#l00030">change_default_menu_config.hpp:30</a></div></div>
+<div class="ttc" id="aclassdepicture__menu_1_1usecase_1_1change__default__menu__config_html_aa0934a670ce0289ebbbca81529257df4"><div class="ttname"><a href="classdepicture__menu_1_1usecase_1_1change__default__menu__config.html#aa0934a670ce0289ebbbca81529257df4">depicture_menu::usecase::change_default_menu_config::source_</a></div><div class="ttdeci">std::shared_ptr&lt; applications::transaction_source &gt; source_</div><div class="ttdef"><b>Definition</b> <a href="#l00026">change_default_menu_config.hpp:26</a></div></div>
+<div class="ttc" id="aconfig__view__model__interface_8hpp_html"><div class="ttname"><a href="config__view__model__interface_8hpp.html">config_view_model_interface.hpp</a></div></div>
+<div class="ttc" id="adefault__menu__config__update_8hpp_html"><div class="ttname"><a href="default__menu__config__update_8hpp.html">default_menu_config_update.hpp</a></div><div class="ttdoc">デフォルトのメニュー設定値の更新 input DTO</div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1applications_html_a1168dfec76130ba465ebed176eb5ba9e"><div class="ttname"><a href="namespacedepicture__menu_1_1applications.html#a1168dfec76130ba465ebed176eb5ba9e">depicture_menu::applications::transaction_source_ptr_t</a></div><div class="ttdeci">std::shared_ptr&lt; transaction_source &gt; transaction_source_ptr_t</div><div class="ttdef"><b>Definition</b> <a href="app__transaction_8hpp_source.html#l00033">app_transaction.hpp:33</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1backup_1_1dto_html"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1backup_1_1dto.html">depicture_menu::usecase::backup::dto</a></div><div class="ttdoc">バックアップデータ定義</div><div class="ttdef"><b>Definition</b> <a href="backup__data_8hpp_source.html#l00011">backup_data.hpp:12</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1detail__usecase__change__default__menu__config_html"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1detail__usecase__change__default__menu__config.html">depicture_menu::usecase::detail_usecase_change_default_menu_config</a></div><div class="ttdef"><b>Definition</b> <a href="#l00013">change_default_menu_config.hpp:14</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_1_1detail__usecase__change__default__menu__config_html_a6ca09f3a98f26dc6655842ff0476ca5d"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase_1_1detail__usecase__change__default__menu__config.html#a6ca09f3a98f26dc6655842ff0476ca5d">depicture_menu::usecase::detail_usecase_change_default_menu_config::do_transaction</a></div><div class="ttdeci">void do_transaction(applications::transaction_source_ptr_t, dto::default_menu_config_update const &amp;)</div><div class="ttdef"><b>Definition</b> <a href="change__default__menu__config_8cpp_source.html#l00008">change_default_menu_config.cpp:8</a></div></div>
+<div class="ttc" id="anamespacedepicture__menu_1_1usecase_html"><div class="ttname"><a href="namespacedepicture__menu_1_1usecase.html">depicture_menu::usecase</a></div><div class="ttdoc">メニュー更新 usecase</div><div class="ttdef"><b>Definition</b> <a href="action__command__invoker__interface_8hpp_source.html#l00012">action_command_invoker_interface.hpp:13</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_dfa242f2932e510d976a142b496443a7.html">depicture_menu</a></li><li class="navelem"><a href="dir_d26f0ed8b287a778d960ad2241e01057.html">src</a></li><li class="navelem"><a href="dir_eb29242f55d2489f6c4d008365c270b7.html">core</a></li><li class="navelem"><a href="dir_43f8aa2529ec47ad37b553a33a2ea717.html">usecase</a></li><li class="navelem"><a href="dir_63e3b4c20525be311d786392d608ffa7.html">config_view</a></li><li class="navelem"><a href="change__default__menu__config_8hpp.html">change_default_menu_config.hpp</a></li>
+    <li class="footer">構築: <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

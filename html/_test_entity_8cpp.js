@@ -9,5 +9,6 @@ var _test_entity_8cpp =
     [ "BOOST_TEST_MAIN", "_test_entity_8cpp.html#ab340a5e76af466a5f20ec5500d30a80b", null ],
     [ "BOOST_AUTO_TEST_CASE", "_test_entity_8cpp.html#a1e06a7ac6fa5581420b068472feb23d6", null ],
     [ "BOOST_AUTO_TEST_CASE", "_test_entity_8cpp.html#a7fef184e89791f4addaca435161ffa76", null ],
+    [ "BOOST_AUTO_TEST_CASE", "_test_entity_8cpp.html#a8254837a5d97f9080b157a7f316f33d6", null ],
     [ "BOOST_AUTO_TEST_CASE", "_test_entity_8cpp.html#a5b32c6724c51497dc516dc7493611a73", null ]
 ];

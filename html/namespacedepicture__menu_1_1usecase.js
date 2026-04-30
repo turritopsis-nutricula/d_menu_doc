@@ -15,6 +15,9 @@ var namespacedepicture__menu_1_1usecase =
       [ "do_change_common_command", "namespacedepicture__menu_1_1usecase_1_1detail__usecase__change__common__command.html#a943bc0aa2289b826dee34e104cfeee3e", null ],
       [ "do_change_common_command", "namespacedepicture__menu_1_1usecase_1_1detail__usecase__change__common__command.html#a6d70f2af0a0fcfc0be6439756fa3cf9a", null ]
     ] ],
+    [ "detail_usecase_change_default_menu_config", "namespacedepicture__menu_1_1usecase_1_1detail__usecase__change__default__menu__config.html", [
+      [ "do_transaction", "namespacedepicture__menu_1_1usecase_1_1detail__usecase__change__default__menu__config.html#a6ca09f3a98f26dc6655842ff0476ca5d", null ]
+    ] ],
     [ "detail_usecase_change_menu_item", "namespacedepicture__menu_1_1usecase_1_1detail__usecase__change__menu__item.html", [
       [ "create_new_common_action", "namespacedepicture__menu_1_1usecase_1_1detail__usecase__change__menu__item.html#a71aa2b69403ad7d607bbbe3f38bef608", null ],
       [ "do_change_menu_item", "namespacedepicture__menu_1_1usecase_1_1detail__usecase__change__menu__item.html#a33f2eb463d5188cefc19022e234eb172", null ],
@@ -26,10 +29,9 @@ var namespacedepicture__menu_1_1usecase =
     [ "detail_usecase_invoke_action", "namespacedepicture__menu_1_1usecase_1_1detail__usecase__invoke__action.html", "namespacedepicture__menu_1_1usecase_1_1detail__usecase__invoke__action" ],
     [ "menu_view", "namespacedepicture__menu_1_1usecase_1_1menu__view.html", "namespacedepicture__menu_1_1usecase_1_1menu__view" ],
     [ "detail_usecase", "namespacedepicture__menu_1_1usecase_1_1detail__usecase.html", [
-      [ "do_show_menu", "namespacedepicture__menu_1_1usecase_1_1detail__usecase.html#a9820c50bfcd072e7ea64e14cc94ad567", null ],
-      [ "show_default_menu_view_impl", "namespacedepicture__menu_1_1usecase_1_1detail__usecase.html#aced30424642ebcbb4c6add0520ef5a87", null ],
-      [ "show_menu_view_by_trigger_impl", "namespacedepicture__menu_1_1usecase_1_1detail__usecase.html#a7b737605653c8cbbeb6f4a6bf95f01a7", null ],
-      [ "show_menu_view_impl", "namespacedepicture__menu_1_1usecase_1_1detail__usecase.html#a30a805872d1e1babe72014851ae4468f", null ]
+      [ "do_show_menu", "namespacedepicture__menu_1_1usecase_1_1detail__usecase.html#a49bc45c3f8a0847ee61940795dea9a87", null ],
+      [ "do_show_menu", "namespacedepicture__menu_1_1usecase_1_1detail__usecase.html#ac34341cfb2ac4ad33e5af167e6ea1495", null ],
+      [ "do_show_menu", "namespacedepicture__menu_1_1usecase_1_1detail__usecase.html#acb049f29da8ee9deefc766d3b5788bae", null ]
     ] ],
     [ "tag", "namespacedepicture__menu_1_1usecase_1_1tag.html", "namespacedepicture__menu_1_1usecase_1_1tag" ],
     [ "command_name_generator_interface", "classdepicture__menu_1_1usecase_1_1command__name__generator__interface.html", "classdepicture__menu_1_1usecase_1_1command__name__generator__interface" ],
@@ -38,6 +40,7 @@ var namespacedepicture__menu_1_1usecase =
     [ "add_new_menu", "classdepicture__menu_1_1usecase_1_1add__new__menu.html", "classdepicture__menu_1_1usecase_1_1add__new__menu" ],
     [ "update_basic_action_config", "classdepicture__menu_1_1usecase_1_1update__basic__action__config.html", "classdepicture__menu_1_1usecase_1_1update__basic__action__config" ],
     [ "change_common_command", "classdepicture__menu_1_1usecase_1_1change__common__command.html", "classdepicture__menu_1_1usecase_1_1change__common__command" ],
+    [ "change_default_menu_config", "classdepicture__menu_1_1usecase_1_1change__default__menu__config.html", "classdepicture__menu_1_1usecase_1_1change__default__menu__config" ],
     [ "change_menu_item", "classdepicture__menu_1_1usecase_1_1change__menu__item.html", "classdepicture__menu_1_1usecase_1_1change__menu__item" ],
     [ "global_trigger_key_data", "structdepicture__menu_1_1usecase_1_1global__trigger__key__data.html", "structdepicture__menu_1_1usecase_1_1global__trigger__key__data" ],
     [ "menu_name_update", "structdepicture__menu_1_1usecase_1_1menu__name__update.html", "structdepicture__menu_1_1usecase_1_1menu__name__update" ],
@@ -61,6 +64,7 @@ var namespacedepicture__menu_1_1usecase =
     [ "show_menu_view", "classdepicture__menu_1_1usecase_1_1show__menu__view.html", "classdepicture__menu_1_1usecase_1_1show__menu__view" ],
     [ "show_app_option_window", "structdepicture__menu_1_1usecase_1_1show__app__option__window.html", "structdepicture__menu_1_1usecase_1_1show__app__option__window" ],
     [ "command_invoker_ptr_t", "namespacedepicture__menu_1_1usecase.html#a25df6a72a1e5e1e5a1ad9d6789f5e462", null ],
+    [ "tuple_result_t", "namespacedepicture__menu_1_1usecase.html#a5e508d686283166851bae330a52dc191", null ],
     [ "domain_update_event", "namespacedepicture__menu_1_1usecase.html#aef21ae05476e651e7e1dd16ff96cd6cd", [
       [ "none", "namespacedepicture__menu_1_1usecase.html#aef21ae05476e651e7e1dd16ff96cd6cda334c4a4c42fdb79d7ebc3e73b517e6f8", null ],
       [ "create", "namespacedepicture__menu_1_1usecase.html#aef21ae05476e651e7e1dd16ff96cd6cda76ea0bebb3c22822b4f0dd9c9fd021c5", null ],
@@ -74,8 +78,10 @@ var namespacedepicture__menu_1_1usecase =
       [ "commands", "namespacedepicture__menu_1_1usecase.html#ae89331f849c718b78833373f887fe801a5f6bc08c46cee6f21bfcdd08aff6e8aa", null ],
       [ "trigger", "namespacedepicture__menu_1_1usecase.html#ae89331f849c718b78833373f887fe801ac7d08e09a44d2b453e7eeecebf0a8daf", null ]
     ] ],
+    [ "convert_to_dto", "namespacedepicture__menu_1_1usecase.html#a2c254e4837bdea923a00c9bb9387ea05", null ],
     [ "make_query", "namespacedepicture__menu_1_1usecase.html#a1d29228ff820750a84c715f937456ce2", null ],
     [ "query_base", "namespacedepicture__menu_1_1usecase.html#a8a0ee5a4568b7f15cce851164aca15b3", null ],
     [ "query_base", "namespacedepicture__menu_1_1usecase.html#aae342d3065a0f78e8c6b515c7da77006", null ],
-    [ "query_base", "namespacedepicture__menu_1_1usecase.html#aa7a2906d4f0d46a4a06b555ca34854d7", null ]
+    [ "query_base", "namespacedepicture__menu_1_1usecase.html#aa7a2906d4f0d46a4a06b555ca34854d7", null ],
+    [ "read_config", "namespacedepicture__menu_1_1usecase.html#a78ab40879db553602c7ed77957722162", null ]
 ];

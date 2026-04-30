@@ -6,5 +6,6 @@ var _test_backup_data_presenter_8cpp =
     [ "BOOST_AUTO_TEST_CASE", "_test_backup_data_presenter_8cpp.html#a37d027b7a52259848199a9d268628d19", null ],
     [ "std::operator<<", "namespacestd.html#a4771946e433ae02b9460ede8931431cf", null ],
     [ "std::operator<<", "namespacestd.html#a319f3a3f81900eb02653bc043698c89e", null ],
-    [ "std::operator<<", "namespacestd.html#a9d7abc5835e2892486f61a872e641e60", null ]
+    [ "std::operator<<", "namespacestd.html#a9d7abc5835e2892486f61a872e641e60", null ],
+    [ "std::operator<<", "namespacestd.html#a4e24c7810bfbbb87452391beac695a5b", null ]
 ];

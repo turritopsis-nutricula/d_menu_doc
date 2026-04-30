@@ -95,10 +95,11 @@ $(function(){initNavTree('log_8hpp.html','',''); });
 <div class="contents">
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;source_location&gt;</code><br />
+<code>#include &quot;<a class="el" href="log_2log_8hpp_source.html">log/log.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 log.hpp の依存先関係図:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="log_8hpp__incl.svg" width="219" height="128"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="log_8hpp__incl.svg" width="351" height="203"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 被依存関係図:</div>
@@ -110,8 +111,10 @@ log.hpp の依存先関係図:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
 マクロ定義</h2></td></tr>
-<tr class="memitem:abc1ed92a47502763ce1348b052d995ca" id="r_abc1ed92a47502763ce1348b052d995ca"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#abc1ed92a47502763ce1348b052d995ca">DPM_DETAIL_LOG_IMPL</a>(S,  X)</td></tr>
-<tr class="memitem:a0e5c3fbaba4e904d11a3b45f7ef47c1a" id="r_a0e5c3fbaba4e904d11a3b45f7ef47c1a"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a0e5c3fbaba4e904d11a3b45f7ef47c1a">DPM_DETAIL_LOG_IMPL_W</a>(S,  X)</td></tr>
+<tr class="memitem:af04e07837ccc213d713c5fb223367b83" id="r_af04e07837ccc213d713c5fb223367b83"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#af04e07837ccc213d713c5fb223367b83">DPM_LOGGER_FORCE_ACTIVATE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:a7b65ed1c6910b22f6679f6d3356e6c3e" id="r_a7b65ed1c6910b22f6679f6d3356e6c3e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a7b65ed1c6910b22f6679f6d3356e6c3e">DPM_DETAIL_LOG_IMPL</a>(S,  E,  X)</td></tr>
+<tr class="memitem:a0151dfbbceb6b7c6e0f0e09817cb5e9b" id="r_a0151dfbbceb6b7c6e0f0e09817cb5e9b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a0151dfbbceb6b7c6e0f0e09817cb5e9b">DPM_DETAIL_LOG_IMPL_W</a>(S,  E,  X)</td></tr>
+<tr class="memitem:a9018d4722c2e6441899317521c4ed7a3" id="r_a9018d4722c2e6441899317521c4ed7a3"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a9018d4722c2e6441899317521c4ed7a3">DPM_LOGGER_ACTIVATE</a>&#160;&#160;&#160;0</td></tr>
 <tr class="memitem:a3b6caf5bb776302aacc06de15b389b66" id="r_a3b6caf5bb776302aacc06de15b389b66"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a3b6caf5bb776302aacc06de15b389b66">DPM_LOG_TRACE</a>(X)</td></tr>
 <tr class="memitem:a6a81e4b32bb7210d0366ac20d9fe82f7" id="r_a6a81e4b32bb7210d0366ac20d9fe82f7"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a6a81e4b32bb7210d0366ac20d9fe82f7">DPM_LOG_DEBUG</a>(X)</td></tr>
 <tr class="memitem:aab404ff912acd168e0342f9b7f641131" id="r_aab404ff912acd168e0342f9b7f641131"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#aab404ff912acd168e0342f9b7f641131">DPM_LOG_WRAN</a>(X)</td></tr>
@@ -122,8 +125,8 @@ log.hpp の依存先関係図:</div>
 <tr class="memitem:a62196923190b6b69a253e8734c0226fc" id="r_a62196923190b6b69a253e8734c0226fc"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a62196923190b6b69a253e8734c0226fc">DPM_LOG_ERROR_W</a>(X)</td></tr>
 </table>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">マクロ定義詳解</h2>
-<a id="abc1ed92a47502763ce1348b052d995ca" name="abc1ed92a47502763ce1348b052d995ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc1ed92a47502763ce1348b052d995ca">&#9670;&#160;</a></span>DPM_DETAIL_LOG_IMPL</h2>
+<a id="a7b65ed1c6910b22f6679f6d3356e6c3e" name="a7b65ed1c6910b22f6679f6d3356e6c3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b65ed1c6910b22f6679f6d3356e6c3e">&#9670;&#160;</a></span>DPM_DETAIL_LOG_IMPL</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -136,22 +139,30 @@ log.hpp の依存先関係図:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>E</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>X</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>値:</b><div class="fragment"><div class="line">{                                                                          \</div>
-<div class="line">    <span class="keyword">auto</span> loc = std::source_location::current( );                           \</div>
-<div class="line">    std::cout &lt;&lt; S &lt;&lt; X &lt;&lt; <span class="stringliteral">&quot;  &lt;&quot;</span> &lt;&lt; loc.file_name( ) &lt;&lt; <span class="stringliteral">&quot;:&quot;</span> &lt;&lt; loc.line( ) \</div>
-<div class="line">              &lt;&lt; <span class="stringliteral">&quot;&gt;&quot;</span> &lt;&lt; std::endl;                                         \</div>
+<b>値:</b><div class="fragment"><div class="line">{                                                            \</div>
+<div class="line">    <span class="keyword">auto</span> loc = std::source_location::current( );             \</div>
+<div class="line">    <a class="code hl_class" href="classdepicture__menu_1_1applications_1_1log_1_1logger.html">::depicture_menu::applications::log::logger</a> l(           \</div>
+<div class="line">        std::move( loc ),                                    \</div>
+<div class="line">        ::depicture_menu::applications::log::log_level::E ); \</div>
+<div class="line">    l &lt;&lt; X;                                                  \</div>
 <div class="line">}</div>
+<div class="ttc" id="aclassdepicture__menu_1_1applications_1_1log_1_1logger_html"><div class="ttname"><a href="classdepicture__menu_1_1applications_1_1log_1_1logger.html">depicture_menu::applications::log::logger</a></div><div class="ttdef"><b>Definition</b> <a href="log_2log_8hpp_source.html#l00022">log.hpp:23</a></div></div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00008">8</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00015">15</a> 行目に定義があります。</p>
 
 </div>
 </div>
-<a id="a0e5c3fbaba4e904d11a3b45f7ef47c1a" name="a0e5c3fbaba4e904d11a3b45f7ef47c1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e5c3fbaba4e904d11a3b45f7ef47c1a">&#9670;&#160;</a></span>DPM_DETAIL_LOG_IMPL_W</h2>
+<a id="a0151dfbbceb6b7c6e0f0e09817cb5e9b" name="a0151dfbbceb6b7c6e0f0e09817cb5e9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0151dfbbceb6b7c6e0f0e09817cb5e9b">&#9670;&#160;</a></span>DPM_DETAIL_LOG_IMPL_W</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -160,6 +171,11 @@ log.hpp の依存先関係図:</div>
           <td class="memname">#define DPM_DETAIL_LOG_IMPL_W</td>
           <td>(</td>
           <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>S</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>E</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -174,7 +190,7 @@ log.hpp の依存先関係図:</div>
 <div class="line">               &lt;&lt; loc.line( ) &lt;&lt; L<span class="stringliteral">&quot;&gt;&quot;</span> &lt;&lt; std::endl;            \</div>
 <div class="line">}</div>
 </div><!-- fragment -->
-<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00015">15</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00024">24</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -193,9 +209,9 @@ log.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00034">34</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00068">68</a> 行目に定義があります。</p>
 
-<p class="reference">参照元 <a class="el" href="deploy__default__setting_8cpp_source.html#l00119">add_default_menu()</a>, <a class="el" href="deploy__default__setting_8cpp_source.html#l00261">add_default_settings()</a>, <a class="el" href="config__view__arg__builder_8cpp_source.html#l00286">depicture_menu::applications::view_factories::config_view_arg_builder::build()</a>, <a class="el" href="menu__view__arg__builder_8cpp_source.html#l00037">depicture_menu::applications::view_factories::menu_view_arg_builder::build()</a>, <a class="el" href="common__action__builder_8hpp_source.html#l00233">depicture_menu::domain::services::common_action_builder::build_open_sub_menu_action()</a>, <a class="el" href="config__view__presenter_8cpp_source.html#l00076">depicture_menu::presentations::config_view_presenter::change_common_action_select()</a>, <a class="el" href="update__menu__config_8cpp_source.html#l00138">depicture_menu::usecase::menu_item_sync::create_new_action()</a>, <a class="el" href="update__menu__config_8cpp_source.html#l00154">depicture_menu::usecase::menu_item_sync::create_new_command()</a>, <a class="el" href="action__invoke_8cpp_source.html#l00051">depicture_menu::usecase::detail_usecase_invoke_action::do_invoke_action()</a>, <a class="el" href="configview__observer_8cpp_source.html#l00470">depicture_menu::cs_binding::observer::generate_observe_configview()</a>, <a class="el" href="command__invoker_8cpp_source.html#l00010">depicture_menu::presentations::command_invoker::invoke()</a>, <a class="el" href="shellexecute__invoker_8hpp_source.html#l00150">depicture_menu::presentations::shellexecute_invoker::invoke()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00213">depicture_menu::applications::config_view_factory::config_view_observer::operator()()</a>, <a class="el" href="remove__menu__item_8hpp_source.html#l00042">depicture_menu::usecase::remove_menu_item&lt; presenter_t &gt;::operator()()</a>, <a class="el" href="config__view__dispatch_8cpp_source.html#l00337">detail::config_view_dispatch::operator()()</a>, <a class="el" href="config__view__dispatch_8cpp_source.html#l00330">detail::config_view_dispatch::operator()()</a>, <a class="el" href="config__view__dispatch_8cpp_source.html#l00257">detail::config_view_dispatch::operator()()</a>, <a class="el" href="config__view__dispatch_8cpp_source.html#l00245">detail::config_view_dispatch::operator()()</a>, <a class="el" href="config__view__dispatch_8cpp_source.html#l00263">detail::config_view_dispatch::operator()()</a>, <a class="el" href="config__view__dispatch_8cpp_source.html#l00283">detail::config_view_dispatch::operator()()</a>, <a class="el" href="config__view__dispatch_8cpp_source.html#l00276">detail::config_view_dispatch::operator()()</a>, <a class="el" href="config__view__dispatch_8cpp_source.html#l00269">detail::config_view_dispatch::operator()()</a>, <a class="el" href="config__view__dispatch_8cpp_source.html#l00250">detail::config_view_dispatch::operator()()</a>, <a class="el" href="config__view__dispatch_8cpp_source.html#l00302">detail::config_view_dispatch::operator()()</a>, <a class="el" href="config__view__dispatch_8cpp_source.html#l00294">detail::config_view_dispatch::operator()()</a>, <a class="el" href="config__view__dispatch_8cpp_source.html#l00314">detail::config_view_dispatch::operator()()</a>, <a class="el" href="config__view__dispatch_8cpp_source.html#l00320">detail::config_view_dispatch::operator()()</a>, <a class="el" href="global__hotkey__presenter_8hpp_source.html#l00019">depicture_menu::presentations::global_hotkey_presenter::regist()</a>, <a class="el" href="global__hotkey__presenter_8hpp_source.html#l00046">depicture_menu::presentations::global_hotkey_presenter::regist()</a>, <a class="el" href="unmanaged__generator_8hpp_source.html#l00167">depicture_menu::cs_binding::detail_cs_binding::unmanaged_generator_impl&lt; T &gt;::release_resource()</a>, <a class="el" href="deploy__default__setting_8cpp_source.html#l00038">setup_application_command()</a>, <a class="el" href="setup__core_8cpp_source.html#l00134">setup_core()</a>, <a class="el" href="config__view__presenter_8cpp_source.html#l00057">depicture_menu::presentations::config_view_presenter::show_config_view()</a>, <a class="el" href="global__hotkey__presenter_8hpp_source.html#l00034">depicture_menu::presentations::global_hotkey_presenter::unregist()</a>, <a class="el" href="global__hotkey__presenter_8hpp_source.html#l00056">depicture_menu::presentations::global_hotkey_presenter::unregist()</a>, <a class="el" href="config__view__dispatch_8hpp_source.html#l00042">depicture_menu::applications::usecase_dispatch::view_presenters_stack::view_presenters_stack()</a> (計36項目).</p>
+<p class="reference">参照元 <a class="el" href="deploy__default__setting_8cpp_source.html#l00120">add_default_menu()</a>, <a class="el" href="config__view__arg__builder_8cpp_source.html#l00286">depicture_menu::applications::view_factories::config_view_arg_builder::build()</a>, <a class="el" href="menu__view__arg__builder_8cpp_source.html#l00037">depicture_menu::applications::view_factories::menu_view_arg_builder::build()</a>, <a class="el" href="common__action__builder_8hpp_source.html#l00233">depicture_menu::domain::services::common_action_builder::build_open_sub_menu_action()</a>, <a class="el" href="config__view__presenter_8cpp_source.html#l00076">depicture_menu::presentations::config_view_presenter::change_common_action_select()</a>, <a class="el" href="update__menu__config_8cpp_source.html#l00138">depicture_menu::usecase::menu_item_sync::create_new_action()</a>, <a class="el" href="update__menu__config_8cpp_source.html#l00154">depicture_menu::usecase::menu_item_sync::create_new_command()</a>, <a class="el" href="action__invoke_8cpp_source.html#l00051">depicture_menu::usecase::detail_usecase_invoke_action::do_invoke_action()</a>, <a class="el" href="import__backup_8hpp_source.html#l00032">depicture_menu::usecase::backup::import_backup&lt; P &gt;::done_import()</a>, <a class="el" href="cs__bindings_8cpp_source.html#l00030">DPM_DEFINE_CURRENT_UPDATE_TYPE()</a>, <a class="el" href="configview__observer_8cpp_source.html#l00470">depicture_menu::cs_binding::observer::generate_observe_configview()</a>, <a class="el" href="cs__bindings_8cpp_source.html#l00048">hotkey_controler_binding()</a>, <a class="el" href="command__invoker_8cpp_source.html#l00010">depicture_menu::presentations::command_invoker::invoke()</a>, <a class="el" href="shellexecute__invoker_8hpp_source.html#l00150">depicture_menu::presentations::shellexecute_invoker::invoke()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00241">depicture_menu::applications::config_view_factory::config_view_observer::operator()()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00252">depicture_menu::applications::config_view_factory::config_view_observer::operator()()</a>, <a class="el" href="config__view__observer_8hpp_source.html#l00264">depicture_menu::applications::config_view_factory::config_view_observer::operator()()</a>, <a class="el" href="action_8hpp_source.html#l00082">depicture_menu::domain::actions::v2::action::invoke_visiter::operator()()</a>, <a class="el" href="remove__menu__item_8hpp_source.html#l00042">depicture_menu::usecase::remove_menu_item&lt; presenter_t &gt;::operator()()</a>, <a class="el" href="config__view__dispatch_8cpp_source.html#l00346">detail::config_view_dispatch::operator()()</a>, <a class="el" href="config__view__dispatch_8cpp_source.html#l00339">detail::config_view_dispatch::operator()()</a>, <a class="el" href="config__view__dispatch_8cpp_source.html#l00266">detail::config_view_dispatch::operator()()</a>, <a class="el" href="config__view__dispatch_8cpp_source.html#l00243">detail::config_view_dispatch::operator()()</a>, <a class="el" href="config__view__dispatch_8cpp_source.html#l00254">detail::config_view_dispatch::operator()()</a>, <a class="el" href="config__view__dispatch_8cpp_source.html#l00272">detail::config_view_dispatch::operator()()</a>, <a class="el" href="config__view__dispatch_8cpp_source.html#l00292">detail::config_view_dispatch::operator()()</a>, <a class="el" href="config__view__dispatch_8cpp_source.html#l00285">detail::config_view_dispatch::operator()()</a>, <a class="el" href="config__view__dispatch_8cpp_source.html#l00278">detail::config_view_dispatch::operator()()</a>, <a class="el" href="config__view__dispatch_8cpp_source.html#l00259">detail::config_view_dispatch::operator()()</a>, <a class="el" href="config__view__dispatch_8cpp_source.html#l00311">detail::config_view_dispatch::operator()()</a>, <a class="el" href="config__view__dispatch_8cpp_source.html#l00303">detail::config_view_dispatch::operator()()</a>, <a class="el" href="config__view__dispatch_8cpp_source.html#l00323">detail::config_view_dispatch::operator()()</a>, <a class="el" href="config__view__dispatch_8cpp_source.html#l00329">detail::config_view_dispatch::operator()()</a>, <a class="el" href="global__hotkey__presenter_8hpp_source.html#l00019">depicture_menu::presentations::global_hotkey_presenter::regist()</a>, <a class="el" href="global__hotkey__presenter_8hpp_source.html#l00046">depicture_menu::presentations::global_hotkey_presenter::regist()</a>, <a class="el" href="unmanaged__generator_8hpp_source.html#l00167">depicture_menu::cs_binding::detail_cs_binding::unmanaged_generator_impl&lt; T &gt;::release_resource()</a>, <a class="el" href="deploy__default__setting_8cpp_source.html#l00039">setup_application_command()</a>, <a class="el" href="setup__core_8cpp_source.html#l00134">setup_core()</a>, <a class="el" href="config__view__presenter_8cpp_source.html#l00057">depicture_menu::presentations::config_view_presenter::show_config_view()</a>, <a class="el" href="global__hotkey__presenter_8hpp_source.html#l00034">depicture_menu::presentations::global_hotkey_presenter::unregist()</a>, <a class="el" href="global__hotkey__presenter_8hpp_source.html#l00056">depicture_menu::presentations::global_hotkey_presenter::unregist()</a>, <a class="el" href="config__view__dispatch_8hpp_source.html#l00043">depicture_menu::applications::usecase_dispatch::view_presenters_stack::view_presenters_stack()</a> (計42項目).</p>
 
 </div>
 </div>
@@ -214,7 +230,7 @@ log.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00039">39</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00073">73</a> 行目に定義があります。</p>
 
 <p class="reference">参照元 <a class="el" href="shellexecute__invoker_8hpp_source.html#l00150">depicture_menu::presentations::shellexecute_invoker::invoke()</a>.</p>
 
@@ -235,7 +251,7 @@ log.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00036">36</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00070">70</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -254,7 +270,7 @@ log.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00041">41</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00075">75</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -273,9 +289,9 @@ log.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00033">33</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00067">67</a> 行目に定義があります。</p>
 
-<p class="reference">参照元 <a class="el" href="show__menu__view_8hpp_source.html#l00088">depicture_menu::usecase::show_menu_view&lt; menu_presenter &gt;::dispatch_show_menu()</a>, <a class="el" href="action__invoke_8cpp_source.html#l00051">depicture_menu::usecase::detail_usecase_invoke_action::do_invoke_action()</a>.</p>
+<p class="reference">参照元 <a class="el" href="action__invoke_8cpp_source.html#l00051">depicture_menu::usecase::detail_usecase_invoke_action::do_invoke_action()</a>.</p>
 
 </div>
 </div>
@@ -294,7 +310,7 @@ log.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00038">38</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00072">72</a> 行目に定義があります。</p>
 
 </div>
 </div>
@@ -313,7 +329,7 @@ log.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00035">35</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00069">69</a> 行目に定義があります。</p>
 
 <p class="reference">参照元 <a class="el" href="on__memory__repository_8hpp_source.html#l00041">depicture_menu::repositories::on_memory_repository&lt; T &gt;::create()</a>.</p>
 
@@ -334,7 +350,39 @@ log.hpp の依存先関係図:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00040">40</a> 行目に定義があります。</p>
+<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00074">74</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="a9018d4722c2e6441899317521c4ed7a3" name="a9018d4722c2e6441899317521c4ed7a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9018d4722c2e6441899317521c4ed7a3">&#9670;&#160;</a></span>DPM_LOGGER_ACTIVATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_LOGGER_ACTIVATE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00052">52</a> 行目に定義があります。</p>
+
+</div>
+</div>
+<a id="af04e07837ccc213d713c5fb223367b83" name="af04e07837ccc213d713c5fb223367b83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af04e07837ccc213d713c5fb223367b83">&#9670;&#160;</a></span>DPM_LOGGER_FORCE_ACTIVATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DPM_LOGGER_FORCE_ACTIVATE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition"> <a class="el" href="log_8hpp_source.html">log.hpp</a> の <a class="el" href="log_8hpp_source.html#l00008">8</a> 行目に定義があります。</p>
 
 </div>
 </div>

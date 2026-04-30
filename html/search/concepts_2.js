@@ -15,5 +15,7 @@ var searchData=
   ['convert_5fwriter_12',['convert_writer',['../conceptdepicture__menu_1_1conv__mapping_1_1concepts_1_1convert__writer.html',1,'depicture_menu::conv_mapping::concepts']]],
   ['convertable_5fto_5felement_13',['convertable_to_element',['../conceptdepicture__menu_1_1cs__binding_1_1detail__cs__binding_1_1convertable__to__element.html',1,'depicture_menu::cs_binding::detail_cs_binding']]],
   ['convertable_5fto_5ftuple_5fby_5fboost_5fpfr_14',['convertable_to_tuple_by_boost_pfr',['../conceptdepicture__menu_1_1domain_1_1models_1_1concepts_1_1convertable__to__tuple__by__boost__pfr.html',1,'depicture_menu::domain::models::concepts']]],
-  ['convertible_5frgba_5fcolor_15',['convertible_rgba_color',['../conceptdepicture__menu_1_1domain_1_1common_1_1concepts_1_1convertible__rgba__color.html',1,'depicture_menu::domain::common::concepts']]]
+  ['convertible_5frgb_5fcolor_5ffrom_15',['convertible_rgb_color_from',['../conceptdepicture__menu_1_1domain_1_1common_1_1concepts_1_1convertible__rgb__color__from.html',1,'depicture_menu::domain::common::concepts']]],
+  ['convertible_5frgba_5fcolor_16',['convertible_rgba_color',['../conceptdepicture__menu_1_1domain_1_1common_1_1concepts_1_1convertible__rgba__color.html',1,'depicture_menu::domain::common::concepts']]],
+  ['convertible_5frgba_5fcolor_5ffrom_17',['convertible_rgba_color_from',['../conceptdepicture__menu_1_1domain_1_1common_1_1concepts_1_1convertible__rgba__color__from.html',1,'depicture_menu::domain::common::concepts']]]
 ];
